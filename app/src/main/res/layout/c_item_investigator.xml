@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_investigator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/investigator_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textScaleX="1.2"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="end"
+            android:includeFontPadding="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/decklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decklist"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/arnopro_textsize"/>
+
+    <TextView
+        android:id="@+id/killed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/killed"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="75sp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/investigator_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/physical_trauma"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/physical_trauma"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+
+            <TextView
+                android:id="@+id/physical_trauma_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mental_trauma"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:includeFontPadding="false"
+                android:text="@string/mental_trauma"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+
+            <TextView
+                android:id="@+id/mental_trauma_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/available_xp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/available_xp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+
+            <TextView
+                android:id="@+id/available_xp_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xp_spent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/xp_spent"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+
+            <ImageView
+                android:id="@+id/xp_spent_decrement"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/button_decrement"/>
+
+            <TextView
+                android:id="@+id/xp_spent_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+
+            <ImageView
+                android:id="@+id/xp_spent_increment"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/button_increment"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:src="@drawable/underline"/>
+</LinearLayout>

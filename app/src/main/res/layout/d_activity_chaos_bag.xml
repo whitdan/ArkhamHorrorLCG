@@ -1,0 +1,304 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_screen_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/current_scenario_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/night_campaign"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.2"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/chaos_bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/chaos_bag"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.2"
+                android:textSize="20sp"/>
+
+            <RadioGroup
+                android:id="@+id/difficulty_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/easy_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:text="@string/easy"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"/>
+
+                <RadioButton
+                    android:id="@+id/standard_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:text="@string/standard"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"/>
+
+                <RadioButton
+                    android:id="@+id/hard_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:text="@string/hard"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"/>
+
+                <RadioButton
+                    android:id="@+id/expert_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:text="@string/expert"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/current_token_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:orientation="horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/token_layout"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/draw_token"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_style"
+                    android:includeFontPadding="false"
+                    android:layout_marginLeft="@dimen/checkbox_padding"
+                    android:layout_marginRight="@dimen/checkbox_padding"
+                    android:text="@string/draw_token"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="1.2"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/add_token"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_style"
+                    android:includeFontPadding="false"
+                    android:text="@string/plus_one"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="1.2"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chaos_bag_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/chaos_bag_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <RadioButton
+                    android:id="@+id/chaos_bag_option_one"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"/>
+                <RadioButton
+                    android:id="@+id/chaos_bag_option_two"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"/>
+                <RadioButton
+                    android:id="@+id/chaos_bag_option_three"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"/>
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/underline"/>
+
+            <TextView
+                android:id="@+id/current_setup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/current_setup"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.2"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/current_chaos_bag_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/current_chaos_bag_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/current_chaos_bag_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/button_style"
+                    android:includeFontPadding="false"
+                    android:text="@string/back"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="1.2"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/continue_button"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_style"
+                    android:includeFontPadding="false"
+                    android:text="@string/scenario_resolution"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="1.2"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

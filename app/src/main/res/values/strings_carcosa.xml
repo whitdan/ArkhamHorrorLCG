@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="carcosa_campaign">The Path to Carcosa</string>
+    <string name="carcosa_scenario_one">Scenario 1: Curtain Call</string>
+    <string name="carcosa_scenario_two">Scenario 2: The Last King</string>
+    <string name="carcosa_scenario_three">Scenario 3: Echoes of the Past</string>
+    <string name="carcosa_scenario_four">Scenario 4: The Unspeakable Oath</string>
+    <string name="carcosa_scenario_five">Scenario 5: A Phantom of Truth</string>
+    <string name="carcosa_scenario_six">Scenario 6: The Pallid Mask</string>
+    <string name="carcosa_scenario_seven">Scenario 7: Black Stars Rise</string>
+    <string name="carcosa_scenario_eight">Scenario 8: Dim Carcosa</string>
+    <string name="carcosa_interlude_zero">Lola Prologue</string>
+    <string name="carcosa_interlude_one">Interlude 1: Lunacy\'s Reward</string>
+    <string name="carcosa_interlude_two">Interlude 2: Lost Soul</string>
+    <string name="carcosa_epilogue">Epilogue</string>
+
+
+    <!--Miscellaneous-->
+    <string name="stranger_counter">Chasing the Stranger: </string>
+    <string name="box_office">Stole from the box office</string>
+    <string name="advanced_2b">Advanced to Act 2b</string>
+    <string name="city_aflame">A City Aflame</string>
+    <string name="path_mine">The Path Is Mine</string>
+    <string name="shores_hail">The Shores of Hail</string>
+    <string name="vips_interviewed">VIPs interviewed</string>
+    <string name="vips_slain">VIPs slain</string>
+    <string name="constance">Constance Dumaine</string>
+    <string name="ishimaru">Ishimaru Haruko</string>
+    <string name="jordan">Jordan Perry</string>
+    <string name="sebastien">Sebastien Moreau</string>
+    <string name="ashleigh">Ashleigh Clarke</string>
+    <string name="allocated_experience">Allocated experience</string>
+
+
+    <!--Campaign Log-->
+    <string name="doubt">Doubt: </string>
+    <string name="conviction">Conviction: </string>
+    <string name="stranger">The Stranger is on to you.\n\n</string>
+    <string name="warned_police">You tried to warn the police.\n\n</string>
+    <string name="not_police">You chose not to go to the police.\n\n</string>
+    <string name="police_suspicious">The police are suspicious of you.\n\n</string>
+    <string name="vips_interviewed_log">VIPs interviewed: \n</string>
+    <string name="vips_slain_log">VIPs slain: \n</string>
+    <string name="constance_log">\t\tConstance Dumaine\n</string>
+    <string name="ishimaru_log">\t\tIshimaru Haruko\n</string>
+    <string name="jordan_log">\t\tJordan Perry\n</string>
+    <string name="sebastien_log">\t\tSebastien Moreau\n</string>
+    <string name="ashleigh_log">\t\tAshleigh Clarke\n</string>
+    <string name="no_vips">\t\tNone\n</string>
+    <string name="intruded">You intruded on a secret meeting.\n\n</string>
+    <string name="fled">You fled the dinner party.\n\n</string>
+    <string name="slayed">You slayed the monsters at the dinner party.\n\n</string>
+
+
+    <!-- Campaign introduction-->
+    <string name="carcosa_introduction"><b>Prologue</b>\n
+    \nYou turn over the folded program in your hand, reading it for what seems like the hundredth time. “Miskatonic
+        Playhouse presents: <i>The King in Yellow</i>,” it reads. “A special one-night engagement at Arkham’s very own Ward
+        Theatre. An irresistible drama in two acts. Production staged and directed by Nigel Engram.” The cast is a
+        small ensemble, with one unattributed credit at the end: “The Stranger.”\n
+    \nTo have such a highly anticipated play come to Arkham all the way from Paris is a noteworthy event, even if it
+        is just for one night. For weeks leading up to the show, it was the talk of the town. It seemed so
+        unassuming…and yet, you have evidence something sinister is at work. It started with the disappearance of one
+        of the stagehands at the theatre—a boy of only seventeen who missed rehearsal one night and was never seen
+        again. Then, less than two weeks before the performance, there was the musician whose corpse was found with a
+        gun in its mouth. Perhaps most chilling was the crazed man the coppers had picked up in Independence Square
+        who had been ranting and raving about the “King’s return.” He was brought to Arkham Asylum, and you were
+        surprised to discover that he was not alone in his delusions.\n
+    \nFinding these events suspicious, you and your companions have delved deeper into the matter. Although no
+        connection can be proven, these weren’t the only strange events surrounding the up-and-coming play. Instances
+        of suicide and madness have followed in its wake, and you are determined to discover why.\n
+    \nThe lights in the auditorium dim, and a spotlight shines on the stage. What unfolds is not quite what you
+        expected. Slow-paced and monotonous, the first act of <i>The King in Yellow</i> is a tedious bore. The setting and
+        characters are compelling, but the meandering and nonsensical story does little to entertain or inform. You
+        begin to wonder whether the dreadful events surrounding <i>The King in Yellow</i> aren’t connected, after all.
+        Perhaps it was just your overactive imagination; how could such a trivial and unassuming show cause such
+        pandemonium? You are surprised when the first act closes without any rising action or revelation. The lights
+        rise for the intermission, and you consider leaving early, stifling a yawn. Before you are able to decide,
+        however, you find yourself drifting…drifting…to sleep.</string>
+
+    <string name="carcosa_lola_prologue">Act I came and went without a hitch, as it often did in rehearsal. You
+        couldn’t help but note the blank, dismissive expressions on many of the audience members’ faces, and you
+        wonder how the audience will react to the play’s disturbing second half. The role of Cassilda is tiresomely
+        boring for the first half of the play, although you enjoy portraying her regal charm. You find yourself
+        missing your previous co-star, Miriam Twain, and suddenly the dread and regret you had felt in Paris comes
+        flooding back. With a sigh, you retreat to a dark corner backstage to escape the sounds of stagehands
+        preparing for the next scene. You try to quell your emotions and replace your thoughts with those of
+        Cassilda’s—her hopes, her fears, her fate.\n
+    \nJust then, you catch the Stranger staring at you from afar, and you find yourself shaking at the mere sight of
+        him. Even though they continue to replace the actor who plays the Stranger before each show (and indeed many
+        times during rehearsals), you know that this last-minute replacement is the most horrid of them all.
+        Realizing you never caught his name, a shiver of terror courses through your spine. Have you found your way
+        back to the wolves, like a lost lamb? You cannot look away—his gaze is inescapable. Everything goes black
+        .</string>
+
+
+    <!--Scenario introductions-->
+    <string name="curtain_introduction">You awaken with a start, as though shaken by an unseen force. You must have
+        slept for quite some time, for there are only a few other patrons in the audience, and no performers on
+        stage. The lights are dimmed, and the stage curtains are tattered and ripped, though you do not remember that
+        being the case during the first act. You wait a moment before you are sure this isn’t part of the
+        performance. As you wait, a foul but unrecognizable smell permeates the air. How long have you been asleep?
+        Shaking off your drowsiness, you walk toward one of the seated patrons and ask for the time, but he does not
+        respond. It is then that you realize you are speaking to a corpse.</string>
+
+    <string name="king_introduction">If anyone has the answers to the questions that burn in your mind, it’s the cast
+        and crew of <i>The King in Yellow</i>. With no other leads to pursue, you put on your best clothes and head to 1452
+        Atlantic Avenue, where a woman named Constance Dumaine is hosting an event in celebration of the play’s
+        one-night engagement in Arkham.</string>
+
+    <string name="carcosa_interlude_one_option_one">Things seem to have calmed down. Perhaps we should go back inside
+        and investigate further.</string>
+    <string name="carcosa_interlude_one_option_two">I don’t trust this place one bit. Let’s block the door and get
+        the hell out of here!</string>
+    <string name="carcosa_interlude_one_option_three">If these people are allowed to live, these horrors will only
+        repeat themselves. We have to put an end to this. We have to <i>kill them</i>.</string>
+    <string name="carcosa_interlude_one_one">The change in the atmosphere has you curious. What if it was all a trick
+        of your mind? What if the hauntings that follow <i>The King in Yellow</i> are but transitory? The answers to
+        all of your questions might lie inside. Cautiously, you open the front door to the manor once again.
+        Reassuring jazz and the clamor of casual conversation grow louder as you step inside. The enticing smell of
+        roasted pork wafts through the air. As you suspected, the signs of struggle and oddities you noticed before
+        have vanished without explanation. Then, as you turn the corner into the dining room, you find the Stranger
+        speaking with another man—tall, mustached, wearing a fine black suit, and holding a silver-handled cane. The
+        Stranger turns to you, his gaze drills through your mind, and your vision swims with agony. Before you
+        realize it, you are running as fast as you can, toppling through the front doorway in a haze of pain and
+        disorientation. Without time to catch your breath, you race to your vehicle and speed away, hands trembling
+        upon the steering wheel.\n
+    \n<b>Why would you go back inside?</b>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Elder Thing tokens to the chaos
+            bag.</b></string>
+    <string name="carcosa_interlude_one_two">You can’t trust your senses. This is all a trick, an attempt to lure you
+        back inside. You’re no safer now than you were before. Swallowing your fear, you set to work barricading the
+        front door of the manor using several of the heavy stone benches lining the cobblestone path in the front
+        yard. You hope it’s enough, but you aren’t willing to stick around to find out. As soon as you’re done, you
+        head back to your vehicle and drive toward Southside, where you hope to find answers.\n
+    \n<b>That door isn’t going to stop them.</b>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Tablet tokens to the chaos
+            bag.</b></string>
+    <string name="carcosa_interlude_one_three">You dare not risk stepping back inside that madhouse. But you can’t
+        let the monstrosities run amok, either. You root through the open garage for a few supplies, finding an old
+        hose, an empty gasoline canister, and some matches. Knowing what you must do, you first siphon some gas from
+        Mrs. Dumaine’s Oakland 6-54A. You spread the gasoline across the front porch, inside the garage, and around
+        the manor’s outer walls. From there, all it takes is several matches to start the blaze. You watch from the
+        front yard as the manor is eventually consumed by the flames. The sounds of crackling fire and snapping wood
+        and the screeching of dying horrors fills the street. Satisfied, you head back to your vehicle and tear off
+        toward Southside, full of grim determination.\n
+    \n<b>You did what had to be done… Right?</b>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Cultist tokens to the chaos
+            bag.</b></string>
+
+
+
+    <!--Scenario set-up instructions-->
+    <string name="curtain_sets">Curtain Call, Evil Portents, Delusions, Hauntings, Cult of the Yellow Sign, Striking
+        Fear, and Rats.</string>
+    <string name="curtain_locations">Put the Theatre, Lobby, Balcony, and Backstage locations into play.\n
+        \nEach investigator begins play at the Theatre.\n</string>
+    <string name="curtain_locations_lola">Put the Theatre, Lobby, Balcony, and Backstage locations into play.\n
+        \nLola Hayes begins play at Backstage. Each other investigator begins play at the Theatre.\n</string>
+    <string name="curtain_set_aside">The Man in the Pallid Mask, Royal Emissary, each copy of Lobby Doorway, and each
+        copy of Backstage Doorway.\n</string>
+
+    <string name="king_sets">The Last King, Hastur’s Gift, Decay &amp; Filth, The Stranger, and Ancient Evils.</string>
+    <string name="king_locations">Put all 6 locations into play (Foyer, Courtyard, Living Room, Ballroom, Dining
+        Room, and Gallery).\n
+        \nEach investigator begins play in the Foyer.\n</string>
+    <string name="king_set_aside">Dianne Devine.\n</string>
+    <string name="king_additional_one">Shuffle the 5 Bystander assets (Constance Dumaine, Jordan Perry, Ishimaru Haruko,
+        Sebastien Moreau, and Ashleigh Clarke) and randomly place one in each location except for the Foyer. Place 2
+        clues on each of these assets.\n
+    \nPlace the 5 “Sickening Reality” story cards underneath the scenario reference card.</string>
+    <string name="king_additional_two">Shuffle the 5 Bystander assets (Constance Dumaine, Jordan Perry, Ishimaru Haruko,
+        Sebastien Moreau, and Ashleigh Clarke) and randomly place one in each location except for the Foyer. Place 3
+        clues on each of these assets.\n
+    \nPlace the 5 “Sickening Reality” story cards underneath the scenario reference card.</string>
+    <string name="king_additional_three">Shuffle the 5 Bystander assets (Constance Dumaine, Jordan Perry, Ishimaru
+        Haruko, Sebastien Moreau, and Ashleigh Clarke) and randomly place one in each location except for the Foyer.
+        Place 4 clues on each of these assets.\n
+    \nPlace the 5 “Sickening Reality” story cards underneath the scenario reference card.</string>
+    <string name="king_additional_four">Shuffle the 5 Bystander assets (Constance Dumaine, Jordan Perry, Ishimaru
+        Haruko, Sebastien Moreau, and Ashleigh Clarke) and randomly place one in each location except for the Foyer.
+        Place 5 clues on each of these assets.\n
+    \nPlace the 5 “Sickening Reality” story cards underneath the scenario reference card.</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="curtain_no_resolution">Once again you are startled awake, this time by the cold, clammy fingers of
+        a hand on your shoulder. “Are you alright?” an elderly man asks, helping you to your feet. Your mind is a
+        flurry of memories. Last you remember, the Ward Theatre had become a place of nightmares, filled with
+        dangerous fanatics and strange terrors. Worried, you glance at your surroundings, only to find yourself on
+        the rain-slicked curb outside the theatre. Despite the events from earlier, the city seems normal to your
+        eyes—or at least, what passes as normal for Arkham. The bright glare of headlights drills into your eyes as
+        cars pass on the street, splashing dirty rainwater onto the sidewalk beside you. The old man wears an
+        expression of concern, noting the terror in your eyes. “Were you mugged? Damn those trouble boys!” he
+        exclaims. “Dry-gulching folk on a night out to the the-a-tre! Not a single street those hooligans haven’t
+        staked a claim on, I tell you.”\n
+    \nYou stand and walk over to the front window of the Ward Theatre to tentatively peer through, but it is too dark
+        to see anything inside. The elderly man eyes you curiously for a moment, then shrugs and continues walking.
+        “Well, I’d best be on my way. I would do the same, if I were you,” he says, rounding the street corner. You
+        quickly follow, hoping to warn him to stay away from the theatre. But when you turn the corner, it is not the
+        elderly man you see, but the familiar sight of the Stranger in his featureless, pallid mask. His unwavering
+        gaze bears down upon you. “Who are you?” you call out. The Stranger does not respond, but instead turns and
+        disappears into the alleyway behind the theatre. You give chase, hoping for answers, but by the time you
+        reach the alleyway, it is empty—save for a notice on the wall near the theatre’s employee entrance. “Don’t be
+        a wet blanket! Come to <i>The King in Yellow</i> cast party. 8pm, at the home of Constance Dumaine, 1452 Atlantic
+        Avenue. Formal dress only.” You tear the notice from the wall and take it with you, frustrated and lost
+        .\n
+    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
+            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
+            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
+            and add it to that investigator’s deck.</b>\n
+    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
+            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
+            closer to the truth.</b></string>
+    <string name="curtain_resolution_one">Fleeing from the theatre, you head straight to the police station in
+        Easttown. Bursting through the door, to the stares of onlookers and police officers alike, you demand to see
+        Sheriff Engle, stressing the importance of your visit. The desk sergeant, who is lazily working through a
+        stack of paperwork, shakes his head and raises a finger in silence, then points to a nearby chair. The wait
+        is excruciating. Every moment is an eternity. The hands of the nearby clock crawl. You drum your fingers on
+        the desk. You tap your feet. You constantly peer over your shoulder to make sure the pallid mask of the
+        Stranger is not watching you through the front window. Finally, the desk sergeant puts his pen down and sits
+        up, beckoning you. “Alright, what’s so important now?” You are only halfway through your explanation of the
+        night’s events when he sighs and shakes his head. “Look, if this is some kind of joke, it ain’t funny,” he
+        says. “We had officers downtown all night. Don’t try to feed me some hooey straight to my face.” You insist,
+        but the desk sergeant rises to his feet and opens the door, motioning for you to leave. He raises his voice.
+        “What, you think we’re not busy enough or something? Beat it!” He mumbles about “blind birds” behind your
+        back as he escorts you out of the station.\n
+    \nYou <b>know</b> what you saw earlier that night. Frustrated, you head back to the Ward Theatre to find some
+        kind of proof you can take to the police. You are surprised to find that the front door of the theatre is
+        locked. You are about to decide whether or not to break down the door when you see a notice on the wall near
+        the entrance. “Don’t be a wet blanket! Come to <i>The King in Yellow</i> cast party. 8pm, at the home of Constance
+        Dumaine, 1452 Atlantic Avenue. Formal dress only.” You tear the notice from the wall and fold it into your
+        coat pocket, hoping it will lead you to the answers you seek.\n
+        \n<b>Did you really think the police would help you?</b>\n
+    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
+            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
+            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
+            and add it to that investigator’s deck.</b>\n
+    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
+            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
+            closer to the truth.</b></string>
+    <string name="curtain_resolution_two">You think about going to the police, but considering the horrors in the
+        theatre, they’re more likely to think you’re mad than to believe your story. A small part of you wonders if
+        this is still some kind of prank, but that can’t be the case—it was all too real, too terrifying to forget.
+        Wondering what course of action to take, you find yourself backtracking over your escape route, returning to
+        the theatre with cautious steps. The bright glare of headlights drills into your eyes as cars pass on the
+        street, splashing dirty rainwater onto the sidewalk beside you. Soon the Ward Theatre comes into sight, its
+        bright lights dominating the streets of Downtown. You expected the theatre to be in ruins, but its exterior
+        looks the same as it did when you arrived to see <i>The King in Yellow</i> earlier that night. You walk to the front
+        window of the Ward Theatre and tentatively peer through, but it is too dark to see anything inside.\n
+    \nJust then, a chill brushes the nape of your neck, and you feel that you are being watched. You turn, and spot a
+        shadow fleeing around the corner. A swarm of roaches skitters across the sidewalk, following in the shadow’s
+        wake. Your muscles tense with uncertainty, and you round the corner in pursuit. Standing unconcerned on the
+        sidewalk is a familiar-looking man in a featureless pallid mask.\n
+    \nHis unwavering gaze bears down upon you. “Who are you?” you call out. The Stranger does not respond, and
+        instead turns and disappears into the alleyway behind the theatre. You give chase, hoping for answers, but by
+        the time you reach the alleyway, it is empty—save for a notice on the wall near the theatre’s employee
+        entrance. “Don’t be a wet blanket! Come to <i>The King in Yellow</i> cast party. 8pm, at the home of Constance
+        Dumaine, 1452 Atlantic Avenue. Formal dress only.” You tear the notice from the wall and take it with you,
+        hoping it will lead you to the answers you seek.\n
+        \n<b>Do you think it was wise not to warn anyone?</b>\n
+    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
+            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
+            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
+            and add it to that investigator’s deck.</b>\n
+    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
+            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
+            closer to the truth.</b></string>
+
+    <string name="king_resolution_one">The brisk autumn air embraces you as you exit the manor. There is no doubt in
+        your mind that the cast and crew of <i>The King in Yellow</i> have become affected by madness. Perhaps it’s getting
+        to you, as well. You feel an encroaching darkness, a presence in your mind not unlike the gaze of the
+        Stranger. Startled, you peer about the front yard for the first time since escaping the manor. The scene
+        is…different. The front windows are not smashed as they were when you first approached. The trail of blood
+        you had noticed on the porch has been wiped clean, and instead of the disturbingly warped music you had heard
+        upon entering, the soothing tones of slow jazz drift out from the courtyard.\n
+    \n<b>For every 2 clues that were on the act deck when the game ended, choose an investigator to earn 1 additional
+        experience point. Experience from this reward must be divided as evenly among the investigators as possible
+        . Record this experience below.</b></string>
+    <string name="king_resolution_two">“Excuse me, but it’s very late,” you hear a server say as he gently taps you
+        on your shoulder. You realize that you are sitting on a couch in the manor’s living room, and that you have
+        been asleep for some time. The party appears to be winding down. No music fills the halls, the food is all
+        but gone, and only a few guests remain. “Perhaps you would like for me to get your coat?” the server asks
+        with a trained smile. You wobble as you rise to your feet, leaning against the couch’s armrest. Your head
+        pounds with a dizzying intensity, and your vision is spotted. You insist that you are fine, and begin walking
+        toward the foyer.\n
+    \nYou no longer see any of the guests you were searching for earlier, not even the hostess, Mrs. Dumaine. All
+        traces of the madness and horror you’ve experienced are gone. Even the oddities you witnessed upon entering
+        the manor have vanished—the signs of struggle, the broken windows, the blood trail on the porch… Every piece
+        of evidence has been erased. But you still remember the night’s events, and in your memory you will find your
+        answers.\n
+    \n<b>For every 2 clues that were on the act deck when the game ended, choose an investigator to earn 1 additional
+        experience point. Experience from this reward must be divided as evenly among the investigators as possible
+        . Record this experience below.</b>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 1 Cultist token, 1 Tablet token,
+            and 1 Elder Thing token to the chaos bag.</b></string>
+    <string name="king_resolution_three">Several days later, you find yourself reminiscing about the party you
+        attended at 1452 Atlantic Avenue. What a roaring good time you had! And yet, your memory is hazy. You can’t
+        help but feel you are forgetting something important. Something about the play you’d watched earlier that
+        night—<i>The King in Yellow</i>. That nagging sensation pursues you in every waking moment. Try as you might to
+        recall the night’s events in full, there remains a gaping hole in your memory. As you strain to remember,
+        your concern grows, almost to the point of obsession. Deciding that you absolutely must know what occurred
+        that night, you head toward the manor of the Historical Society in Southside. Perhaps there you can learn
+        more about <i>The King in Yellow</i> play…\n
+    \n<b>For every 2 clues that were on the act deck when the game ended, choose an investigator to earn 1 additional
+        experience point. Experience from this reward must be divided as evenly among the investigators as possible
+        . Record this experience below.</b>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 1 Cultist token, 1 Tablet token,
+            and 1 Elder Thing token to the chaos bag.</b></string>
+</resources>

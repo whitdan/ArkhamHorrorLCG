@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="side_stories">Side Stories</string>
+    <string name="rougarou_scenario">Curse of the Rougarou</string>
+    <string name="carnevale_scenario">Carnevale of Horrors</string>
+
+    <!--Campaign log-->
+    <string name="rougarou_alive">The Rougarou continues to haunt the bayou. Curse of the Rougarou weakness added to
+        an investigator\'s deck.\n\n</string>
+    <string name="rougarou_destroyed">The Rougarou is destroyed, and the curse is lifted. Lady Esprit added to an
+        investigator\'s deck.\n\n</string>
+    <string name="rougarou_escaped">The Rougarou escaped, and you embraced the curse. Curse of the Rougarou weakness
+        and Monstrous Transformation added to an investigator\'s deck.\n\n</string>
+
+    <string name="carnevale_many_sacrificed">Many were sacrificed to Cnidathqua during the Carnevale. <i>Mask</i>
+        card added to each investigator\'s deck.\n\n</string>
+    <string name="carnevale_banished">The sun banished Cnidathqua into the depths. <i>Mask</i> card added to each
+        investigator\'s deck.\n\n</string>
+    <string name="carnevale_retreated">Cnidathqua retreated to nurse its wounds. <i>Mask</i> card added to each
+        investigator\'s deck.\n\n</string>
+    <string name="carnevale_sacrifice_made">Random basic <i>Madness</i>, <i>Injury</i>, or <i>Monster</i> weakness
+        added to each investigator\'s deck.\n\n</string>
+    <string name="carnevale_abbess_satisfied">Abbess Allegria Di Biase added to an investigator\'s deck.\n\n</string>
+
+    <!--Scenario introductions-->
+    <string name="rougarou_introduction"><b>Terror Grips New Orleans!</b>\n
+    \nMinnie Klein, your contact at the Arkham Advertiser, had slipped you a draft of the article over a cup of
+        coffee at Velma\'s Diner. It would have gone to print had Doyle Jeffries, the lead editor, not scoffed at
+        the concept. \"I believe his exact words were, \'I ain\'t printing the ravings of some Voodoo lunatic
+        and passing it off as news,\'\" she explained. From the sly grin spreading across her face, you could
+        tell she smelled a story.\n
+    \nThe headline was sensationalist. Three killings in nine days was enough to spook a town, sure. But you
+        doubt all of New Orleans is gripped by terror, or even knows about the killings. Still, something
+        piqued your interest. \"Lady Esprit,\" the Voodoo priestess from the article, claimed that a malign
+        curse had taken root in the bayou.\n
+    \n\"There\'s something to this, isn\'t there? I know that look,\" Minnie said. You weren\'t sure. If Lady
+        Esprit was right, this \"roux-ga-roux\" wouldn\'t stop killing at three, that\'s for sure. But curses?
+        Wolf-people? How could such things be real? Only one way to find out. You put on your coat and head for
+        the Northside station&#8230;</string>
+
+    <string name="carnevale_introduction"><b>The Carnevale is Coming&#8230;</b>\n
+    \n\"Look,\" Sheriff Engel insists, \"I know it sounds crazy, but that\'s all there is to it.\" He sighs and
+    sits back down, pouring a cup of joe for you and one for himself. \"A dame in Uptown spotted a cracked egg
+        wearing this mask and holdin\' a bloody butcher\'s cleaver,\" he says, motioning to the black leather
+        mask sitting on his desk. It has a comically long nose and a strange symbol scrawled in yellow on its
+        forehead. \"So, she calls it in. My boys and I picked him up on the corner of Saltonstall &amp;
+        Garrison.\" The sheriff\'s jaw clenches and his brows furrow as he recounts the story. \"Fella did
+        nothing but laugh as we slapped the bracelets on him. Called himself Zanni. Said nothing except the
+        \'carnival is coming,\' whatever the hell that meant. Wasn\'t until the next day we found the victim\'s
+    body. Defense wanted him in a straitjacket. We were happy to oblige.\"\n
+    \nThere isn\'t much time to spare. If your research is right, there is more to this case than meets the eye
+        . This \"Zanni\" wasn\'t talking about Darke\'s Carnival, but rather, the Carnevale of Venice, which
+        begins just before the next full moon&#8230;</string>
+
+
+    <!--Scenario setup instructions-->
+    <string name="rougarou_sets">The Bayou.</string>
+    <string name="rougarou_locations">Sort each of the locations into 4 piles, by trait (New Orleans,
+        Riverside, Wilderness, and Unhallowed). Randomly choose 1 of these piles and remove those locations
+        from the game. Randomly choose another 1 of these piles and put those locations into play.\n
+        \nEach investigator begins play at a Bayou location in play.\n</string>
+    <string name="rougarou_set_aside">Curse of the Rougarou encounter set.\n</string>
+    <string name="rougarou_set_aside_two">Each location in the other 2 piles, Lady Esprit, Bear Trap, and Fishing Net.\n</string>
+
+    <string name="carnevale_sets">Carnevale of Horrors</string>
+    <string name="carnevale_locations">Choose 1 location at random and remove it from the game. If San Marco
+        Basilica or Canal-side is chosen, randomly choose a different location instead.
+        \nPut the other 8 locations into play, in a random circular formation.\n
+    \nEach investigator begins play at San Marco Basilica.\n</string>
+    <string name="carnevale_set_aside">Cnidathqua, Pantalone, Medico Della Peste, Bauta, and Gilded Volto.\n</string>
+    <string name="carnevale_additional">Put Abbess Allegria Di Biase into play at San Marco Basilica.\n
+    \nShuffle the 7 Masked Carnevale-Goers and put 1 into play at each location other than San Marco Basilica,
+        Masked Carnevale-Goer side face-up. Do not look at their other sides.</string>
+
+
+    <!--Scenario Resolutions-->
+    <string name="rougarou_no_resolution">Somehow, you manage to make it back to safety before daybreak,
+        resting until late afternoon. It isn\'t until you seek out Lady Esprit the next day that you realize
+        who last night\'s victim was. With a heavy heart and an unshakeable dread, you choose to bury her body
+        instead of contacting the authorities - the less people who delve this deep into the bayou, the better.</string>
+    <string name="rougarou_resolution_one">Somehow, you manage to make it back to safety before daybreak,
+        resting until late afternoon. It isn\'t until you seek out Lady Esprit the next day that you realize
+        who last night\'s victim was. With a heavy heart and an unshakeable dread, you choose to bury her body
+        instead of contacting the authorities - the less people who delve this deep into the bayou, the better.</string>
+    <string name="rougarou_resolution_two">The creature gives a pitiful wail as dark miry blood oozes from its
+        wounds. By the time its body collapses into the mud, it has transformed back into its original form -
+        the form of a young dark-skinned man, his expression twisted in agony. You bring his body back to Lady
+        Esprit and she works her strange magic, removing the stain of the curse from the land. \"Call on me
+        should you ever need my help,\" the mysterious woman tells you.\n
+        \n<b>Remove the Curse of the Rougarou weakness from it\'s bearer\'s deck.</b>\n
+    \n<b>Any one investigator may choose to add Lady Esprit to his or her deck.</b></string>
+    <string name="rougarou_resolution_three">Somehow, you have managed to quell the rage and bloodlust of the
+        curse within the creature, and in moments the shape of a young, dark-skinned man stands before you,
+        panting and sweating. He seems to only just now understand everything he\'s done, and agrees to flee to
+    a secluded corner of the earth where he can harm no one. However, the curse lives on. He sees it in your
+        eyes and grips your arm tightly. \"Don\'t let it take control,\" he warns. \"I was weak, but you - I
+        can tell you are strong. Control the curse as I could not.\"\n
+    \n<b>The bearer of the Curse of the Rougarou weakness must add Monstrous Transformation to his or her deck.</b></string>
+
+    <string name="carnevale_no_resolution">You sputter awake as an oar gently taps your shoulder.
+        \"<i>Tutto bene</i>?\" The gondolier holding the oar says with a concerned expression. You nod and drag
+    yourself onto the docks from his gondola, drenched and aching all over. The city is devastated. Most of the
+    boats in the canal are wrecked, and the streets are covered not in confetti, but in blood&#8230;\n
+    \n<b>Move 1 Innocent Reveler from underneath the act deck to underneath the agenda deck, if able.</b>\n
+    \n<b>In player order, each investigator may choose one of the following <i>Mask</i> cards to add to his or
+            her deck: Pantalone, Medico Della Peste, Bauta, or Gilded Volto.</b>\n
+    \n<b>If there are no Innocent Revelers underneath the act deck and at least 1 underneath the agenda deck,
+            select <i>Sacrifice Made</i>.</b>\n
+    \n<b>If there are no Innocent Revelers underneath the agenda deck and 3 underneath the act deck, select
+            <i>Abbess Satisfied</i>.</b></string>
+    <string name="carnevale_resolution_one">The city is still recovering from the events during the eclipse.
+        With nearly all evidence of the creature melted away by the hot sun, many attribute the violence during
+    the Carnevale to local crime lord Cascio Di Boerio and his crew. Those that know the truth know better than
+    the speak of the elder creature that lives in Laguna Veneta. With any luck, its name will never be spoken
+        again.\n
+    \n<b>In player order, each investigator may choose one of the following <i>Mask</i> cards to add to his or
+            her deck: Pantalone, Medico Della Peste, Bauta, or Gilded Volto.</b>\n
+    \n<b>If there are no Innocent Revelers underneath the act deck and at least 1 underneath the agenda deck,
+            select <i>Sacrifice Made</i>.</b>\n
+    \n<b>If there are no Innocent Revelers underneath the agenda deck and 3 underneath the act deck, select
+            <i>Abbess Satisfied</i>.</b></string>
+    <string name="carnevale_resolution_two">The creature recoils as globules of its jelly-like flesh rip and
+        tear from its body, splashing into the lagoon. It makes no sound as its torn body sinks into the depths
+        . The chanting in the city plunges into mournful silence. As you return it to the canal-side streets,
+        black feathers fall from the sky where bright confetti once fluttered. You can only wonder how long it
+        will take for the creature to recover.\n
+    \n<b>In player order, each investigator may choose one of the following <i>Mask</i> cards to add to his or
+            her deck: Pantalone, Medico Della Peste, Bauta, or Gilded Volto.</b>\n
+    \n<b>If there are no Innocent Revelers underneath the act deck and at least 1 underneath the agenda deck,
+            select <i>Sacrifice Made</i>.</b>\n
+    \n<b>If there are no Innocent Revelers underneath the agenda deck and 3 underneath the act deck, select
+            <i>Abbess Satisfied</i>.</b></string>
+    <string name="carnevale_sacrifice">Sacrifice made</string>
+    <string name="carnevale_reward_sacrifice">Too many lives were lost during the eclipse to stop the
+        machinations of Cindathqua\'s servants. The beast has been fed, its minions empowered. You find
+        yourself hoping you don\'t live long enough to see the fallout of your failure.\n
+    \n<b>Each investigator searches the collection for a random basic <i>Madness</i>, <i>Injury</i>, or
+            <i>Monster</i> weakness and adds it to his or her deck for the remainder of the campaign.</b></string>
+    <string name="carnevale_abbess">Abbess satisfied</string>
+    <string name="carnevale_reward_abbess">"<i>Grazie mille</i> - thank you for all your help,\" Allegria says
+        as you return to the basilica. \"Thanks to you, there were few casualties. I shudder to think what
+        might have happened had you not arrived. Should you ever require assistance, please do not hesitate to
+        ask.\"\n
+    \n<b>Any one investigator may choose to add Abbess Allegria Di Biase to his or her deck.</b></string>
+</resources>

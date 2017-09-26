@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="night_campaign">Night of the Zealot</string>
+
+    <string name="night_scenario_one">Scenario 1: The Gathering</string>
+    <string name="night_scenario_two">Scenario 2: The Midnight Masks</string>
+    <string name="night_scenario_three">Scenario 3: The Devourer Below</string>
+
+
+    <!--Miscellaneous-->
+    <string name="ghoul_priest_additional">Shuffle the Ghoul Priest into the encounter deck.\n\n</string>
+    <string name="ghoul_priest_checkbox">Ghoul Priest killed</string>
+    <string name="cultists_interrogated">Cultists interrogated: \n</string>
+    <string name="cultists_interrogated_resolution">Cultists interrogated</string>
+    <string name="cultists_got_away">\nCultists got away: \n</string>
+    <string name="drew">"Wolf-Man" Drew</string>
+    <string name="herman">Herman Collins</string>
+    <string name="peter">Peter Warren</string>
+    <string name="victoria">Victoria Devereux</string>
+    <string name="ruth">Ruth Turner</string>
+    <string name="masked_hunter">The Masked Hunter</string>
+
+    <!--Campaign log-->
+    <string name="house_standing">Your house is still standing.\n\n</string>
+    <string name="house_burned">Your house has burned to the ground.\n\n</string>
+    <string name="ghoul_priest_alive">The Ghoul Priest is still alive.\n\n</string>
+    <string name="lita_forced">Lita was forced to find others to help her cause.\n\n</string>
+    <string name="past_midnight">It is past midnight.\n\n</string>
+    <string name="drew_log">\t\t"Wolf-Man" Drew\n</string>
+    <string name="herman_log">\t\tHerman Collins\n</string>
+    <string name="peter_log">\t\tPeter Warren\n</string>
+    <string name="victoria_log">\t\tVictoria Devereux\n</string>
+    <string name="ruth_log">\t\tRuth Turner\n</string>
+    <string name="masked_hunter_log">\t\tThe Masked Hunter\n</string>
+    <string name="no_cultist">\t\tNone\n</string>
+    <string name="umordhoth_succumbed">\nArkham succumbed to Umordhoth\'s terrible vengeance.\n</string>
+    <string name="umordhoth_broken">\nThe ritual to summon Umordhoth was broken.\n</string>
+    <string name="umordhoth_repelled">\nThe investigators repelled Umordhoth.\n</string>
+    <string name="umordhoth_sacrificed">\nThe investigators sacrificed Lita Chantler to Umordhoth. Random <i>Madness
+    </i> weakness added to each investigator\'s deck.\n</string>
+
+
+    <!--Campaign introduction-->
+    <string name="night_introduction"><b>The Ghouls Hunger…</b>\n
+        \nFriday, September 18, 1925. Arkham, Massachusetts. It is the end of a long and
+        abnormally hot summer. The first hints of autumn beckon, but a heavy heat persists, relentless. A silent,
+        unspoken anger grips the town. Tempers are short, and in the last week alone there have been numerous reports
+        of townspeople coming to heated, violent blows with one another over simple misunderstandings.\n
+    \nAnd now, a call from James Hankerson. He claims to have found a dismembered body in his barn.\n
+    \nBlaming the weather would be too easy. There is something wrong with this town, and not a whole lot this old
+        soothsayer can do to stop the slide. My auguries indicate a small group of investigators will soon take note
+        of these strange happenings and set forth to make things right. I’ll be watching their progress…but I won’t
+        be holding my breath.</string>
+
+
+    <!--Scenario introductions-->
+    <string name="gathering_introduction">You and your partners have been investigating strange events taking place
+        in your home city of Arkham, Massachusetts. Over the past few weeks, several townspeople have mysteriously
+        gone missing. Recently, their corpses turned up in the woods, savaged and half-eaten. The police and
+        newspapers have stated that wild animals are responsible, but you believe there is something else going on.
+        You are gathered together at the lead investigator’s home to discuss these bizarre events.</string>
+
+    <string name="midnight_introduction_one">The woman came to you in a panic, raving about monsters emerging from the
+        ground in a home near Rivertown. “I managed to trap them,” she explains, “but there are others. Other pits.
+        Other domains.” Only last week, you would have thought she was a lunatic. Recent events, however, have
+        challenged your preconceptions of normality. You decide to hear her out.\n
+    \nShe introduces herself as Lita Chantler and lays out a tale that strains the limits of your belief. “The
+        creatures I speak of ,” she claims, “are called ghouls—cruel beings who plague the crypts, caverns, and
+        tunnels beneath the city of Arkham…”\n
+    \n“These creatures feed on the corpses of humans, and they are served by a dark cult within Arkham whose members
+        have inexplicably come to worship the ancient master of the ghouls. This cult has been killing innocent
+        people and feeding them to the ghouls, satiating a monstrous hunger. A dark balance was maintained. Until
+        now. Recently,” Lita continues, “one of their lairs, where the corpses were stored, was destroyed. Since
+        then, the ghouls have been more active than usual. I have tracked their movements and tried my best to stop
+        them from running amok throughout the city. But I think there is something worse going on. The cult has been
+        planning something darker, and more ominous, than anything I have yet observed. Indications are that this
+        plan shall come to fruition tonight, shortly after midnight. Beyond that, I cannot fathom what to expect.\n
+    \n“Many of the cultists,” Lita continues, “will seem like everyday people, despite their foul intentions.
+        Whenever the cult meets, its members don masks shaped like the skulls of various animals to protect their
+        identities from one another. These masks are our mark. Symbols of death and decay. We must unmask the
+        cultists to expose and derail their plans. We have but a few hours. The more cultists we find before
+        midnight, the better.”</string>
+    <string name="midnight_introduction_two">In the wake of the disaster at your home, Lita Chantler, the red-haired
+        woman from your parlor, lays out a tale that—even in light of what you have just witnessed—strains the limits
+        of your belief. “The creatures in your home,” she claims, “are called ghouls—cruel beings who plague the
+        crypts, caverns, and tunnels beneath the city of Arkham…”\n
+    \n“These creatures feed on the corpses of humans, and they are served by a dark cult within Arkham whose members
+        have inexplicably come to worship the ancient master of the ghouls. This cult has been killing innocent
+        people and feeding them to the ghouls, satiating a monstrous hunger. A dark balance was maintained. Until
+        now. Recently,” Lita continues, “one of their lairs, where the corpses were stored, was destroyed. Since
+        then, the ghouls have been more active than usual. I have tracked their movements and tried my best to stop
+        them from running amok throughout the city. But I think there is something worse going on. The cult has been
+        planning something darker, and more ominous, than anything I have yet observed. Indications are that this
+        plan shall come to fruition tonight, shortly after midnight. Beyond that, I cannot fathom what to expect.\n
+    \n“Many of the cultists,” Lita continues, “will seem like everyday people, despite their foul intentions.
+        Whenever the cult meets, its members don masks shaped like the skulls of various animals to protect their
+        identities from one another. These masks are our mark. Symbols of death and decay. We must unmask the
+        cultists to expose and derail their plans. We have but a few hours. The more cultists we find before
+        midnight, the better.”</string>
+
+    <string name="devourer_introduction">After a frantic nighttime search throughout Arkham, you have tracked down
+        and questioned several members of the cult. Your findings are disturbing: they claim to worship a being known
+        as Umôrdhoth, a monstrous entity from another realm.\n
+    \nYou are able to confirm much of Lita’s story: the cult is agitated over the destruction of a ghoul lair.
+        However, a surprising detail also turns up: the one who invaded the lair and set this night’s events in
+        motion was none other than Lita Chantler herself! You are not sure why this important detail was omitted from
+        Lita’s story—did she tell you only as much as was necessary to draw you into her conflict? But in another
+        light, she seems to be fighting to protect the city of Arkham from a terrible menace.\n
+    \nThe final piece of the puzzle was found written in a journal possessed by one of the cultists. It describes a
+        dark ritual to be performed deep within the woods south of Arkham, this very night. According to the journal,
+        the ritual’s completion will open a gate and bring forth the cult’s dark master into this world. “If the cult
+        is not stopped,” Lita warns, “there is a possibility that Umôrdhoth’s vengeance will consume all in its
+        path.” Frightened but determined to stop the ritual, you head into the woods…</string>
+
+
+    <!--Scenario setup instructions-->
+    <string name="gathering_sets">The Gathering, Rats, Ghouls, Striking Fear, Ancient Evils, and Chilling Cold.</string>
+    <string name="gathering_locations">Put the Study location into play.\n
+    \nEach investigator begins play in the Study.\n</string>
+    <string name="gathering_set_aside">All other locations, the Ghoul Priest and Lita Chantler.\n</string>
+
+    <string name="midnight_sets">The Midnight Masks, Chilling Cold, Nightgaunts, Dark Cult, and Locked Doors.</string>
+    <string name="midnight_locations">Choose one of the two Downtown locations and one of the two Southside
+        locations at random and put them into play. Remove the other versions of Downtown and Southside from
+        the game.\n
+        \nPut the Northside, Easttown, Rivertown, St. Mary\'s Hospital, Graveyard, Miskatonic
+        University, and Your House locations into play.\n
+    \Each investigator begins play at Your House.\n</string>
+    <string name="midnight_locations_no_house">Choose one of the two Downtown locations and one of the two Southside
+        locations at random and put them into play. Remove the other versions of Downtown and Southside from
+        the game.\n
+        \nPut the Northside, Easttown, Rivertown, St. Mary\'s Hospital, Graveyard, and Miskatonic
+        University locations into play.\n
+        \nRemove Your House from the game.\n
+    \Each investigator begins play at Rivertown.\n</string>
+    <string name="midnight_set_aside">Cult of Umordhoth encounter set as a separate \"Cultist
+        Deck\".\n</string>
+    <string name="midnight_additional_two">Search the gathered encounter sets for 1 copy of Acolyte and spawn
+        it at Southside.\n\n</string>
+    <string name="midnight_additional_three">Search the gathered encounter sets for 2 copies of Acolyte. Spawn
+        1 at Southside and 1 at Downtown.\n\n</string>
+    <string name="midnight_additional_four">Search the gathered encounter sets for 3 copies of Acolyte. Spawn
+        1 at Southside,  1 at Downtown, and 1 at the Graveyard.\n\n</string>
+
+    <string name="devourer_sets">The Devourer Below, Ancient Evils, Striking Fear, Ghouls, and Dark
+        Cult.</string>
+    <string name="devourer_sets_two">Randomly choose one of the following 4 encounter sets:\n
+    \nAgents of Yog-Sothoth, Agents of Shub-Niggurath, Agents of Cthulhu, or Agents of Hastur.</string>
+    <string name="devourer_locations">Put the Main Path location into play. Shuffle the 6 copies of Arkham
+        Woods, choose 4 of them at random, and put them into play without looking at their revealed sides.
+        Remove the other 2 from the game.\n
+        \nEach investigator begins play at the Main Path.\n</string>
+    <string name="devourer_set_aside">The Ritual Site and Umordhoth cards.\n</string>
+    <string name="devourer_additional">Add 1 Elder Thing chaos token to the chaos bag for the remainder of the
+        campaign.\n\n</string>
+    <string name="devourer_additional_midnight">Each player discards 2 random cards from his or her starting
+        hand.\n\n</string>
+    <string name="devourer_cultists_one">Place 1 doom on Agenda 1a.\n\n</string>
+    <string name="devourer_cultists_two">Place 2 doom on Agenda 1a.\n\n</string>
+    <string name="devourer_cultists_three">Place 3 doom on Agenda 1a.\n\n</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="gathering_no_resolution">You barely manage to escape your house with your lives. The woman from
+        your parlor follows you out the front door, slamming it behind her. “You fools! See what you have done?” She
+        pushes a chair in front of the door, lodging it beneath the doorknob. “We must get out of here. Come with me,
+        and I will tell you what I know. We are the only ones who can stop the threat that lurks beneath from being
+        unleashed throughout the city.” You’re in no state to argue. Nodding, you follow the woman as she runs from
+        your front porch out into the rainy street, toward Rivertown.\n
+    \n<b>The lead investigator earns the Lita Chantler card.</b></string>
+    <string name="gathering_resolution_one">You nod and allow the red-haired woman to set the walls and floor of your
+        house ablaze. The fire spreads quickly, and you run out the front door to avoid being caught in the inferno.
+        From the sidewalk, you watch as everything you own is consumed by the flames. “Come with me,” the woman says.
+        “You must be told of the threat that lurks below. Alone, we are surely doomed…but together, we can stop it
+        .”\n
+    \n<b>The lead investigator earns the Lita Chantler card.</b></string>
+    <string name="gathering_resolution_two">You refuse to follow the overzealous woman’s order and kick her out of
+        your home for fear that she will set it ablaze without your permission. “Fools! You are making a grave
+        mistake!” she warns. “You do not understand the threat that lurks below…the grave danger we are all in!”
+        Still shaken by the night’s events, you decide to hear the woman out. Perhaps she can shed some light on
+        these bizarre events…but she doesn’t seem to trust you very much.</string>
+    <string name="gathering_resolution_three">You run to the hallway to try to find a way to escape the house, but
+        the burning-hot barrier still blocks your path. Trapped, the horde of feral creatures that have invaded your
+        home close in, and you have nowhere to run.\n
+    \n<b>All investigators who haven’t resigned are killed.</b>\n
+    \n<b>If the lead investigator is killed, choose an investigator to earn the Lita Chantler card.</b></string>
+
+    <string name="midnight_no_resolution">You’ve managed to obtain some useful information about the cult and its
+        plans. You can only hope it’s enough.</string>
+    <string name="midnight_resolution_one">You’ve managed to obtain some useful information about the cult and its
+        plans. You can only hope it’s enough.</string>
+    <string name="midnight_resolution_two">Twelve bells ring out, signaling midnight. You’re out of time; the cult’s
+        ritual will begin shortly. You’ve managed to obtain some useful information about the cult and its plans. You
+        can only hope it’s enough.</string>
+
+    <string name="devourer_no_resolution">Too frightened to face her fate, Lita flees into the night. She realizes
+        that she has failed and Umôrdhoth’s vengeance will pursue her wherever she goes. The creature’s tendrils
+        spread throughout the city of Arkham, searching for her. It lurks in the darkness of every corner, tugging at
+        the seams of reality. But Lita is nowhere to be found, so the creature dwells in the shadows to this day,
+        searching…killing.\n
+    \n<b>The investigators lose.</b></string>
+    <string name="devourer_resolution_one">You have managed to prevent the cult from summoning its master. Although
+        you’re unsure what would have happened had the cult succeeded, you’re relieved that—at least for the time
+        being—Arkham is safe. You capture as many cultists as you can find, but very few townspeople believe your
+        tale. Perhaps it was all in your head, after all.\n
+    \n<b>The investigators win!</b></string>
+    <string name="devourer_resolution_two">Through force of arms and strength of will, you are somehow able to harm
+        Umôrdhoth enough to send it reeling back to the dimension from which it emerged. Warmth and light return to
+        the woods as the void-like mass is sucked in upon itself, vanishing in an instant. You aren’t sure if a being
+        such as this can be killed, but for the time being it seems to have retreated. As their master vanishes, the
+        ghouls nearby climb into the open pit below, fleeing with terrible cries and shrieks. You have stopped an
+        evil plot, but the fight has taken its toll on your body and mind. Worse, you can’t help but feel
+        insignificant in the face of the world’s mysteries. What other terrors exist in the deep, dark corners of
+        reality?\n
+    \n<b>The investigators win!</b></string>
+    <string name="devourer_resolution_three">In the face of this horror, you don’t believe there is anything you can
+        do to stop it. You have but one hope if you are to survive. You turn on Lita and throw her at the terrible
+        monstrosity, watching in dread as its swirling void-like mass consumes her. She cries out in torment as the
+        life is sucked from her body. “Umôrdhoth…Umôrdhoth…” the cultists chant. Lita Chantler vanishes without a
+        trace. For a moment, you fear that the creature will now turn on you, but you hear one of the cultists say,
+        “Umôrdhoth is a just god who claims only the guilty and the dead. Go, and you shall be spared.” The
+        swirling mass vanishes, and warmth and light return to the woods. The cultists slink away, leaving you alive.
+        Lita’s last moments are forever etched upon your memory.\n
+    \n<b>The guilt over sacrificing Lita forever haunts your memory. Each investigator must search the collection for
+            a random Madness weakness and add it to his or her deck.</b>\n
+    \n<b>The investigators have survived, but their actions weigh heavily on their consciences.</b></string>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Arkham Horror LCG</string>
+
+
+    <!-- Main Menu -->
+    <string name="new_campaign">New Campaign</string>
+    <string name="load_campaign">Load Campaign</string>
+    <string name="standalone_scenarios">Standalone Scenario</string>
+    <string name="expansions_owned">Expansions Owned</string>
+    <string name="saved_campaigns">Saved Campaigns</string>
+    <string name="scenario_not_available">This scenario is not yet available.</string>
+    <string name="current_campaign">Current Campaign: </string>
+    <string name="current_scenario">Current Scenario: </string>
+    <string name="campaign_completed">Campaign Completed</string>
+    <string name="delete_campaign">Delete Campaign</string>
+    <string name="confirm_delete_campaign">Are you sure you want to delete this campaign?</string>
+
+
+    <string name="scenario_setup">Scenario Setup</string>
+    <string name="setup_instructions">Setup Instructions</string>
+    <string name="add_side_story">Add side story</string>
+    <string name="campaign_log">Campaign Log</string>
+    <string name="edit_team">Edit Team</string>
+    <string name="scenario_resolution">Scenario Resolution</string>
+    <string name="main_menu">Main\nMenu</string>
+
+    <string name="decklist">Decklist</string>
+    <string name="killed">Killed</string>
+    <string name="insane">Insane</string>
+    <string name="physical_trauma">Physical Trauma: </string>
+    <string name="mental_trauma">Mental Trauma: </string>
+    <string name="available_xp">Available XP: </string>
+    <string name="xp_spent">XP Spent: </string>
+
+    <string name="encounter_sets">Encounter Sets</string>
+    <string name="locations">Locations</string>
+    <string name="set_aside">Set Aside</string>
+    <string name="additional_setup">Additional Setup</string>
+    <string name="no_additional">No changes are made.</string>
+
+    <!--General-->
+    <string name="back">Back</string>
+    <string name="continue_button">Continue</string>
+    <string name="difficulty">Chaos Bag Setup</string>
+    <string name="chaos_bag">Chaos Bag</string>
+    <string name="campaign_name">Campaign name (required)</string>
+    <string name="saved_investigators">Saved Investigators</string>
+    <string name="select_investigators">Select Investigators</string>
+    <string name="new_investigators">New Investigators</string>
+    <string name="current_team">Current Team</string>
+    <string name="finish_setup">Finish Setup</string>
+    <string name="next_scenario">Next Scenario</string>
+    <string name="edit_info">Edit info</string>
+    <string name="player_name">Player name</string>
+    <string name="decklist_name">Decklist name</string>
+    <string name="decklist_url">Decklist link</string>
+    <string name="start_campaign">Start Campaign</string>
+    <string name="confirm_start_campaign">Save and start the campaign?</string>
+    <string name="confirm_changes">Confirm Changes</string>
+    <string name="okay">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="nothing">Nothing to show.</string>
+
+    <string name="campaign_finished">Campaign Finished</string>
+    <string name="finish_campaign">Finish Campaign</string>
+    <string name="finish_delete_campaign">Finish and delete campaign</string>
+    <string name="finish_save_campaign">Finish and save campaign</string>
+
+    <string name="player_cards">Player Cards</string>
+    <string name="strange_solution_dialog">You have identified the solution</string>
+    <string name="strange_solution">You have identified the solution.\n\n</string>
+    <string name="archaic_glyphs_dialog">You have translated the glyphs</string>
+    <string name="archaic_glyphs">You have translated the glyphs.\n\n</string>
+
+
+    <!--Toast messages-->
+    <string name="must_option">You must select an option.</string>
+    <string name="must_investigator">You must select an investigator.</string>
+    <string name="must_campaign_name">You must enter a campaign name.</string>
+    <string name="must_scenario_setup">You must go through scenario setup.</string>
+    <string name="must_replace_investigators">Any killed or insane investigators must be removed or replaced.</string>
+    <string name="must_resolution">You must select a resolution.</string>
+    <string name="must_lead_investigator">You must select a lead investigator.</string>
+    <string name="must_engine_car">You must select which investigator entered the engine car.</string>
+    <string name="must_act_ended">You must select the Act when the scenario ended.</string>
+    <string name="already_completed_scenario">You have already completed this scenario.</string>
+    <string name="already_completed_campaign">You have already completed this campaign.</string>
+    <string name="not_enough_xp_one">You do not have enough XP (cost: 1 per investigator).</string>
+    <string name="not_enough_xp_three">You do not have enough XP (cost: 3 per investigator).</string>
+    <string name="cannot_back">You cannot go back.</string>
+
+
+    <!--Resolution screen-->
+    <string name="investigators_defeated">Investigators Defeated</string>
+    <string name="resigned">Resigned</string>
+    <string name="not_defeated">Not defeated</string>
+    <string name="defeated">Defeated</string>
+    <string name="defeated_damage">Defeated by damage</string>
+    <string name="defeated_horror">Defeated by horror</string>
+    <string name="select_resolution">Select Resolution</string>
+    <string name="no_r">None</string>
+    <string name="r_one">R1</string>
+    <string name="r_two">R2</string>
+    <string name="r_three">R3</string>
+    <string name="r_four">R4</string>
+    <string name="no_resolution">No Resolution</string>
+    <string name="resolution_one">Resolution One</string>
+    <string name="resolution_two">Resolution Two</string>
+    <string name="resolution_three">Resolution Three</string>
+    <string name="resolution_four">Resolution Four</string>
+    <string name="victory_display">Victory Display: </string>
+    <string name="finish_scenario">Finish Scenario</string>
+    <string name="select_lead_investigator">Select Lead Investigator</string>
+    <string name="confirm_finish_scenario">Finish the scenario and save the campaign?</string>
+    <string name="investigator_weaknesses">Investigator Weaknesses</string>
+
+
+    <!--Difficulties-->
+    <string name="easy">Easy</string>
+    <string name="standard">Standard</string>
+    <string name="hard">Hard</string>
+    <string name="expert">Expert</string>
+    <string name="current_setup">Current Setup</string>
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+    <string name="draw_token">Draw token</string>
+    <string name="add_token">Add</string>
+    <string name="plus_two" translatable="false">+2</string>
+    <string name="plus_one" translatable="false">+1</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="minus_one" translatable="false">-1</string>
+    <string name="minus_two" translatable="false">-2</string>
+    <string name="minus_three" translatable="false">-3</string>
+    <string name="minus_four" translatable="false">-4</string>
+    <string name="minus_five" translatable="false">-5</string>
+    <string name="minus_six" translatable="false">-6</string>
+    <string name="minus_seven" translatable="false">-7</string>
+    <string name="minus_eight" translatable="false">-8</string>
+    <string name="skull">Skull</string>
+    <string name="cultist">Cultist</string>
+    <string name="tablet">Tablet</string>
+    <string name="elder_thing">Elder Thing</string>
+    <string name="tentacles">Tentacles</string>
+    <string name="elder_sign">Elder Sign</string>
+
+
+
+
+    <!--Investigator names-->
+    <string-array name="investigators">
+        <item>None</item>
+        <item>Roland Banks</item>
+        <item>Daisy Walker</item>
+        <item>Skids O\'Toole</item>
+        <item>Agnes Baker</item>
+        <item>Wendy Adams</item>
+        <item>Zoey Samaras</item>
+        <item>Rex Murphy</item>
+        <item>Jenny Barnes</item>
+        <item>Jim Culver</item>
+        <item>\"Ashcan\" Pete</item>
+        <item>Mark Harrigan</item>
+        <item>Minh Thi Phan</item>
+        <item>Sefina Rousseau</item>
+        <item>Akachi Onyele</item>
+        <item>William Yorick</item>
+        <item>Lola Hayes</item>
+    </string-array>
+    <string name="roland_banks">Roland Banks</string>
+    <string name="daisy_walker">Daisy Walker</string>
+    <string name="skids_otoole">Skids O\'Toole</string>
+    <string name="agnes_baker">Agnes Baker</string>
+    <string name="wendy_adams">Wendy Adams</string>
+    <string name="zoey_samaras">Zoey Samaras</string>
+    <string name="rex_murphy">Rex Murphy</string>
+    <string name="jenny_barnes">Jenny Barnes</string>
+    <string name="jim_culver">Jim Culver</string>
+    <string name="ashcan_pete">\"Ashcan\" Pete</string>
+    <string name="mark_harrigan">Mark Harrigan</string>
+    <string name="minh_thi_phan">Minh Thi Phan</string>
+    <string name="sefina_rousseau">Sefina Rousseau</string>
+    <string name="akachi_onyele">Akachi Onyele</string>
+    <string name="william_yorick">William Yorick</string>
+    <string name="lola_hayes">Lola Hayes</string>
+
+    <string name="cover_up">Unresolved Cover Up in play</string>
+    <string name="hospital_debts">Unresolved Hospital Debts in play</string>
+    <string name="smite_the_wicked">Unresolved Smite the Wicked in play</string>
+    <string name="searching_for_izzie">Unresolved Searching for Izzie in play</string>
+    <string name="angered_spirits">Unresolved Angered Spirits in play</string>
+</resources>

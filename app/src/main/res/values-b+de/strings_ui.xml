@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Arkham Horror - Das Kartenspiel</string>
+
+
+    <!-- Main Menu -->
+    <string name="new_campaign">Neue Kampagne</string>
+    <string name="load_campaign">Kampagne laden</string>
+    <string name="standalone_scenarios">Einzelspiel-\nszenario</string>
+    <string name="expansions_owned">Sammlung</string>
+    <string name="saved_campaigns">Gespeicherte Kampagnen</string>
+    <string name="scenario_not_available">Dieses Szenario ist noch nicht verfügbar.</string>
+    <string name="current_campaign">Aktuelle Kampagne: </string>
+    <string name="current_scenario">Aktuelles Szenario: </string>
+    <string name="campaign_completed">Kampagne abgeschlossen</string>
+    <string name="delete_campaign">Kampagne löschen</string>
+    <string name="confirm_delete_campaign">Bist du sicher, dass du diese Kampagne löschen willst?</string>
+
+
+    <string name="scenario_setup">Szenarienaufbau</string>
+    <string name="setup_instructions">Aufbau</string>
+    <string name="add_side_story">Nebengeschichte beginnen</string>
+    <string name="campaign_log">Kampagnenlogbuch</string>
+    <string name="edit_team">Ermittler wählen</string>
+    <string name="scenario_resolution">Szenario-Auflösung</string>
+    <string name="main_menu">Hauptmenü</string>
+
+    <string name="decklist">Deckliste</string>
+    <string name="killed">Getötet</string>
+    <string name="insane">Wahnsinnig</string>
+    <string name="physical_trauma">Körperliche Traumata: </string>
+    <string name="mental_trauma">Seelische Traumata: </string>
+    <string name="available_xp">Verfügbare EP: </string>
+    <string name="xp_spent">Ausgegebene EP: </string>
+
+    <string name="encounter_sets">Begegnungssets</string>
+    <string name="locations">Orte</string>
+    <string name="set_aside">Beiseitelegen</string>
+    <string name="additional_setup">Sonstiges</string>
+    <string name="no_additional">Keine weiteren Änderungen.</string>
+
+    <!--General-->
+    <string name="back">Zurück</string>
+    <string name="continue_button">Fortsetzen</string>
+    <string name="difficulty">Zusammenstellung des Chaosbeutels</string>
+    <string name="chaos_bag">Chaos-\nbeutel</string>
+    <string name="campaign_name">Name der Kampagne (erforderlich)</string>
+    <string name="saved_investigators">Gespeicherte Ermittler</string>
+    <string name="select_investigators">Ermittler auswählen</string>
+    <string name="new_investigators">Neue Ermittler</string>
+    <string name="current_team">Aktuelle Ermittlergruppe</string>
+    <string name="finish_setup">Aufbau abschließen</string>
+    <string name="next_scenario">Nächstes Szenario</string>
+    <string name="edit_info">Bearbeiten</string>
+    <string name="player_name">Spielername</string>
+    <string name="decklist_name">Name des Decks</string>
+    <string name="decklist_url">Link zur Deckliste</string>
+    <string name="start_campaign">Kampagne beginnen</string>
+    <string name="confirm_start_campaign">Speichern und Kampagne beginnen?</string>
+    <string name="confirm_changes">Änderungen speichern</string>
+    <string name="okay">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="nothing">Hier steht nichts.</string>
+
+    <string name="campaign_finished">Kampagne abgeschlossen</string>
+    <string name="finish_campaign">Kampagne beenden</string>
+    <string name="finish_delete_campaign">Kampagne beenden und löschen</string>
+    <string name="finish_save_campaign">Kampagne beenden und speichern</string>
+
+    <string name="player_cards">Spielerkarten</string>
+    <string name="strange_solution_dialog">Du hast die Lösung identifiziert</string>
+    <string name="strange_solution">Du hast die Lösung identifiziert.\n\n</string>
+    <string name="archaic_glyphs_dialog">You have translated the glyphs</string>
+    <string name="archaic_glyphs">You have translated the glyphs.\n\n</string>
+
+    <!--Resolution screen-->
+    <string name="investigators_defeated">Besiegte Ermittler</string>
+    <string name="resigned">Aufgegeben</string>
+    <string name="not_defeated">Nicht besiegt</string>
+    <string name="defeated">Besiegt</string>
+    <string name="defeated_damage">Durch Schaden besiegt</string>
+    <string name="defeated_horror">Durch Horror besiegt</string>
+    <string name="select_resolution">Auflösung wählen</string>
+    <string name="no_r">Keine</string>
+    <string name="r_one">A1</string>
+    <string name="r_two">A2</string>
+    <string name="r_three">A3</string>
+    <string name="r_four">A4</string>
+    <string name="no_resolution">Keine Auflösung</string>
+    <string name="resolution_one">Auflösung 1</string>
+    <string name="resolution_two">Auflösung 2</string>
+    <string name="resolution_three">Auflösung 3</string>
+    <string name="resolution_four">Auflösung 4</string>
+    <string name="victory_display">Siegpunkte: </string>
+    <string name="finish_scenario">Szenario beenden</string>
+    <string name="select_lead_investigator">Ermittlungsleiter wählen</string>
+    <string name="confirm_finish_scenario">Szenario beenden und Kampagne speichern?</string>
+    <string name="investigator_weaknesses">Schwächen der Ermittler</string>
+
+
+    <!--Difficulties-->
+    <string name="easy">Einfach</string>
+    <string name="standard">Normal</string>
+    <string name="hard">Schwer</string>
+    <string name="expert">Experte</string>
+    <string name="current_setup">Aktueller Chaosbeutel</string>
+    <!--<string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>-->
+    <string name="draw_token">Chaosmarker ziehen</string>
+    <string name="add_token">Chaosmarker hinzufügen</string>
+    <!--<string name="plus_two" translatable="false">+2</string>
+    <string name="plus_one" translatable="false">+1</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="minus_one" translatable="false">-1</string>
+    <string name="minus_two" translatable="false">-2</string>
+    <string name="minus_three" translatable="false">-3</string>
+    <string name="minus_four" translatable="false">-4</string>
+    <string name="minus_five" translatable="false">-5</string>
+    <string name="minus_six" translatable="false">-6</string>
+    <string name="minus_seven" translatable="false">-7</string>
+    <string name="minus_eight" translatable="false">-8</string>-->
+    <string name="skull">Schädel</string>
+    <string name="cultist">Kultist</string>
+    <string name="tablet">Tafel</string>
+    <string name="elder_thing">Älteres Wesen</string>
+    <string name="tentacles">Tentakel</string>
+    <string name="elder_sign">Älteres Zeichen</string>
+
+
+
+
+    <!--Investigator names-->
+    <string-array name="investigators">
+        <item>Keine</item>
+        <item>Roland Banks</item>
+        <item>Daisy Walker</item>
+        <item>Skids O\'Toole</item>
+        <item>Agnes Baker</item>
+        <item>Wendy Adams</item>
+        <item>Zoey Samaras</item>
+        <item>Rex Murphy</item>
+        <item>Jenny Barnes</item>
+        <item>Jim Culver</item>
+        <item>\"Ashcan\" Pete</item>
+        <item>Mark Harrigan</item>
+        <item>Minh Thi Phan</item>
+        <item>Sefina Rousseau</item>
+        <item>Akachi Onyele</item>
+        <item>William Yorrick</item>
+        <item>Lola Hayes</item>
+    </string-array>
+    <string name="roland_banks">Roland Banks</string>
+    <string name="daisy_walker">Daisy Walker</string>
+    <string name="skids_otoole">Skids O\'Toole</string>
+    <string name="agnes_baker">Agnes Baker</string>
+    <string name="wendy_adams">Wendy Adams</string>
+    <string name="zoey_samaras">Zoey Samaras</string>
+    <string name="rex_murphy">Rex Murphy</string>
+    <string name="jenny_barnes">Jenny Barnes</string>
+    <string name="jim_culver">Jim Culver</string>
+    <string name="ashcan_pete">\"Ashcan\" Pete</string>
+    <string name="mark_harrigan">Mark Harrigan</string>
+    <string name="minh_thi_phan">Minh Thi Phan</string>
+    <string name="sefina_rousseau">Sefina Rousseau</string>
+    <string name="akachi_onyele">Akachi Onyele</string>
+    <string name="william_yorrick">William Yorrick</string>
+    <string name="lola_hayes">Lola Hayes</string>
+
+    <string name="cover_up">Nicht abgeschlossenes <i>Vertuschen</i> im Spiel</string>
+    <string name="hospital_debts">Nicht abgeschlossene <i>Krankenhausrechnungen</i> im Spiel</string>
+    <string name="smite_the_wicked">Nicht abgeschlossenes <i>Zerschmettere die Gottlosen</i> im Spiel</string>
+    <string name="searching_for_izzie">Nicht abgeschlossenes <i>Auf der Suche nach Izzie</i> im Spiel</string>
+    <string name="angered_spirits">Unresolved Angered Spirits in play</string>
+</resources>

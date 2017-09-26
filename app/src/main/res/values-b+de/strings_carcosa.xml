@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="carcosa_campaign">Der Pfad nach Carcosa</string>
+    <string name="carcosa_scenario_one">Scenario 1: Curtain Call</string>
+    <string name="carcosa_scenario_two">Scenario 2: The Last King</string>
+    <string name="carcosa_scenario_three">Scenario 3: Echoes of the Past</string>
+    <string name="carcosa_scenario_four">Scenario 4: The Unspeakable Oath</string>
+    <string name="carcosa_scenario_five">Scenario 5: A Phantom of Truth</string>
+    <string name="carcosa_scenario_six">Scenario 6: The Pallid Mask</string>
+    <string name="carcosa_scenario_seven">Scenario 7: Black Stars Rise</string>
+    <string name="carcosa_scenario_eight">Scenario 8: Dim Carcosa</string>
+    <string name="carcosa_interlude_one">Interlude 1: Lunacy\'s Reward</string>
+    <string name="carcosa_interlude_two">Interlude 2: Lost Soul</string>
+    <string name="carcosa_epilogue">Epilogue</string>
+</resources>

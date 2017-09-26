@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_menu_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/main_menu_icon"/>
+
+        <Button
+            android:id="@+id/new_campaign_button"
+            android:layout_width="240dp"
+            android:layout_height="@dimen/main_menu_button_height"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_style"
+            android:text="@string/new_campaign"
+            android:textColor="@android:color/black"
+            android:textScaleX="1.2"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/load_campaign_button"
+            android:layout_width="240dp"
+            android:layout_height="@dimen/main_menu_button_height"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_style"
+            android:text="@string/load_campaign"
+            android:textColor="@android:color/black"
+            android:textScaleX="1.2"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/standalone_scenario_button"
+            android:layout_width="240dp"
+            android:layout_height="@dimen/main_menu_button_height"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_style"
+            android:text="@string/standalone_scenarios"
+            android:textColor="@android:color/black"
+            android:textScaleX="1.2"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/expansions_owned_button"
+            android:layout_width="160dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/button_style"
+            android:text="@string/expansions_owned"
+            android:textColor="@android:color/black"
+            android:textScaleX="1.2"
+            android:textSize="20sp"/>
+</LinearLayout>

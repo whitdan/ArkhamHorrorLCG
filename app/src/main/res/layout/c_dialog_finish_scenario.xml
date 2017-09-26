@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_screen_bg"
+              android:orientation="vertical"
+              android:padding="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/current_scenario_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textScaleX="1.2"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/current_resolution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/arnopro_textsize"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/current_victory_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/arnopro_textsize"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:src="@drawable/underline"/>
+
+    <LinearLayout
+        android:id="@+id/investigator_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/investigator_one_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/investigator_one_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/investigator_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/investigator_two_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/investigator_two_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/investigator_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/investigator_three_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/investigator_three_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/investigator_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/investigator_four_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/investigator_four_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:src="@drawable/underline"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/confirm_finish_scenario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:text="@string/confirm_finish_scenario"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/arnopro_textsize"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@drawable/button_style"
+            android:includeFontPadding="false"
+            android:text="@string/cancel"
+            android:textColor="@android:color/black"
+            android:textScaleX="1.2"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/okay_button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/button_style"
+            android:includeFontPadding="false"
+            android:text="@string/okay"
+            android:textColor="@android:color/black"
+            android:textScaleX="1.2"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</LinearLayout>
