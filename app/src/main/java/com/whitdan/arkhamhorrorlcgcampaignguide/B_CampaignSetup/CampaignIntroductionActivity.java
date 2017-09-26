@@ -57,10 +57,10 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
         globalVariables = (GlobalVariables) this.getApplication();
 
         // Set campaign title and introduction text and fonts
-        TextView title = (TextView) findViewById(R.id.campaign_name);
+        TextView title = findViewById(R.id.campaign_name);
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         title.setTypeface(teutonic);
-        TextView introduction = (TextView) findViewById(R.id.introduction_text);
+        TextView introduction = findViewById(R.id.introduction_text);
         Typeface arnoproitalic = Typeface.createFromAsset(getAssets(), "fonts/arnoproitalic.otf");
         introduction.setTypeface(arnoproitalic);
         switch (globalVariables.CurrentCampaign) {
@@ -79,7 +79,7 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
         }
 
         // Back button
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +89,7 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
         });
 
         // Continue button
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         if (globalVariables.NightCompleted == 1 || globalVariables.DunwichCompleted == 1) {
             continueButton.setText(R.string.next_scenario);
@@ -133,15 +133,15 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
             Typeface arnoprobold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
-            TextView confirm = (TextView) v.findViewById(R.id.confirm_start_campaign);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
+            TextView confirm = v.findViewById(R.id.confirm_start_campaign);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);
             confirm.setTypeface(arnoprobold);
 
             // Set campaign title
-            TextView campaignName = (TextView) v.findViewById(R.id.campaign_name);
+            TextView campaignName = v.findViewById(R.id.campaign_name);
             campaignName.setTypeface(teutonic);
             campaignName.setAllCaps(true);
             campaignName.setTextScaleX((float) 1.2);
@@ -150,12 +150,12 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
             /*
                 Show the right views for the number of investigators and set the right font to the name
              */
-            LinearLayout investigatorOne = (LinearLayout) v.findViewById(R.id.investigator_one);
-            LinearLayout investigatorTwo = (LinearLayout) v.findViewById(R.id.investigator_two);
-            LinearLayout investigatorThree = (LinearLayout) v.findViewById(R.id.investigator_three);
-            LinearLayout investigatorFour = (LinearLayout) v.findViewById(R.id.investigator_four);
-            ImageView lineOne = (ImageView) v.findViewById(R.id.line_one);
-            ImageView lineTwo = (ImageView) v.findViewById(R.id.line_two);
+            LinearLayout investigatorOne = v.findViewById(R.id.investigator_one);
+            LinearLayout investigatorTwo = v.findViewById(R.id.investigator_two);
+            LinearLayout investigatorThree = v.findViewById(R.id.investigator_three);
+            LinearLayout investigatorFour = v.findViewById(R.id.investigator_four);
+            ImageView lineOne = v.findViewById(R.id.line_one);
+            ImageView lineTwo = v.findViewById(R.id.line_two);
             investigatorOne.setVisibility(GONE);
             investigatorTwo.setVisibility(GONE);
             investigatorThree.setVisibility(GONE);
@@ -168,9 +168,9 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
              */
             if (globalVariables.CurrentCampaign == 2) {
                 globalVariables.FirstScenario = 0;
-                RadioGroup options = (RadioGroup) v.findViewById(R.id.start_campaign_options);
-                RadioButton optionOne = (RadioButton) v.findViewById(R.id.start_campaign_option_one);
-                RadioButton optionTwo = (RadioButton) v.findViewById(R.id.start_campaign_option_two);
+                RadioGroup options = v.findViewById(R.id.start_campaign_options);
+                RadioButton optionOne = v.findViewById(R.id.start_campaign_option_one);
+                RadioButton optionTwo = v.findViewById(R.id.start_campaign_option_two);
                 options.setVisibility(VISIBLE);
                 optionOne.setText(R.string.dunwich_start_option_one);
                 optionOne.setTypeface(arnopro);

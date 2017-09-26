@@ -39,27 +39,27 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
         globalVariables = (GlobalVariables) this.getApplication();
 
         // Set typefaces
-        TextView title = (TextView) findViewById(R.id.current_scenario_name);
+        TextView title = findViewById(R.id.current_scenario_name);
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         title.setTypeface(teutonic);
-        TextView introduction = (TextView) findViewById(R.id.introduction_text);
+        TextView introduction = findViewById(R.id.introduction_text);
         Typeface arnoproitalic = Typeface.createFromAsset(getAssets(), "fonts/arnoproitalic.otf");
         introduction.setTypeface(arnoproitalic);
-        final TextView introductionOne = (TextView) findViewById(R.id.introduction_text_additional_one);
-        TextView introductionTwo = (TextView) findViewById(R.id.introduction_text_additional_two);
-        TextView introductionThree = (TextView) findViewById(R.id.introduction_text_additional_three);
-        TextView introductionFour = (TextView) findViewById(R.id.introduction_text_additional_four);
-        TextView introductionFive = (TextView) findViewById(R.id.introduction_text_additional_five);
-        TextView introductionSix = (TextView) findViewById(R.id.introduction_text_additional_six);
+        final TextView introductionOne = findViewById(R.id.introduction_text_additional_one);
+        TextView introductionTwo = findViewById(R.id.introduction_text_additional_two);
+        TextView introductionThree = findViewById(R.id.introduction_text_additional_three);
+        TextView introductionFour = findViewById(R.id.introduction_text_additional_four);
+        TextView introductionFive = findViewById(R.id.introduction_text_additional_five);
+        TextView introductionSix = findViewById(R.id.introduction_text_additional_six);
         introductionOne.setTypeface(arnoproitalic);
         introductionTwo.setTypeface(arnoproitalic);
         introductionThree.setTypeface(arnoproitalic);
         introductionFour.setTypeface(arnoproitalic);
         introductionFive.setTypeface(arnoproitalic);
         introductionSix.setTypeface(arnoproitalic);
-        RadioGroup introductionOptions = (RadioGroup) findViewById(R.id.introduction_options);
-        RadioButton introductionOptionOne = (RadioButton) findViewById(R.id.introduction_option_one);
-        RadioButton introductionOptionTwo = (RadioButton) findViewById(R.id.introduction_option_two);
+        RadioGroup introductionOptions = findViewById(R.id.introduction_options);
+        RadioButton introductionOptionOne = findViewById(R.id.introduction_option_one);
+        RadioButton introductionOptionTwo = findViewById(R.id.introduction_option_two);
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         introductionOptionOne.setTypeface(arnopro);
         introductionOptionTwo.setTypeface(arnopro);
@@ -225,7 +225,7 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
             }
         }
 
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -234,7 +234,7 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
             }
         });
 
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override

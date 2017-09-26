@@ -45,30 +45,30 @@ public class ScenarioSetupActivity extends AppCompatActivity {
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
 
-        TextView title = (TextView) findViewById(R.id.current_scenario_name);
+        TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        TextView subTitle = (TextView) findViewById(R.id.scenario_setup);
+        TextView subTitle = findViewById(R.id.scenario_setup);
         subTitle.setTypeface(teutonic);
-        TextView setsHeading = (TextView) findViewById(R.id.sets_heading);
+        TextView setsHeading = findViewById(R.id.sets_heading);
         setsHeading.setTypeface(teutonic);
-        TextView locationsHeading = (TextView) findViewById(R.id.locations_heading);
+        TextView locationsHeading = findViewById(R.id.locations_heading);
         locationsHeading.setTypeface(teutonic);
-        TextView setAsideHeading = (TextView) findViewById(R.id.set_aside_heading);
+        TextView setAsideHeading = findViewById(R.id.set_aside_heading);
         setAsideHeading.setTypeface(teutonic);
-        TextView additionalHeading = (TextView) findViewById(R.id.additional_heading);
+        TextView additionalHeading = findViewById(R.id.additional_heading);
         additionalHeading.setTypeface(teutonic);
 
-        TextView sets = (TextView) findViewById(R.id.sets_one);
-        TextView setsTwo = (TextView) findViewById(R.id.sets_two);
-        ImageView setsImage = (ImageView) findViewById(R.id.sets_one_image);
-        ImageView setsTwoImage = (ImageView) findViewById(R.id.sets_two_image);
-        TextView locations = (TextView) findViewById(R.id.locations);
-        ImageView locationPlacement = (ImageView) findViewById(R.id.locations_image);
-        TextView setAside = (TextView) findViewById(R.id.set_aside);
-        TextView setAsideTwo = (TextView) findViewById(R.id.set_aside_two);
-        ImageView setAsideImage = (ImageView) findViewById(R.id.set_aside_image);
-        TextView additional = (TextView) findViewById(R.id.additional);
-        TextView additionalTwo = (TextView) findViewById(R.id.additional_two);
+        TextView sets = findViewById(R.id.sets_one);
+        TextView setsTwo = findViewById(R.id.sets_two);
+        ImageView setsImage = findViewById(R.id.sets_one_image);
+        ImageView setsTwoImage = findViewById(R.id.sets_two_image);
+        TextView locations = findViewById(R.id.locations);
+        ImageView locationPlacement = findViewById(R.id.locations_image);
+        TextView setAside = findViewById(R.id.set_aside);
+        TextView setAsideTwo = findViewById(R.id.set_aside_two);
+        ImageView setAsideImage = findViewById(R.id.set_aside_image);
+        TextView additional = findViewById(R.id.additional);
+        TextView additionalTwo = findViewById(R.id.additional_two);
 
         sets.setTypeface(arnopro);
         setsTwo.setTypeface(arnopro);
@@ -471,7 +471,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
 
 
         // Set buttons
-        Button log = (Button) findViewById(R.id.campaign_log_button);
+        Button log = findViewById(R.id.campaign_log_button);
         log.setTypeface(teutonic);
         log.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -481,7 +481,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
             }
         });
 
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -490,7 +490,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
             }
         });
 
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override

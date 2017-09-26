@@ -65,14 +65,14 @@ public class ChaosBagActivity extends AppCompatActivity {
         // Set title and setup checkbox if necessary
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
-        TextView title = (TextView) findViewById(R.id.current_scenario_name);
+        TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        CheckBox box = (CheckBox) findViewById(R.id.chaos_bag_checkbox);
+        CheckBox box = findViewById(R.id.chaos_bag_checkbox);
         box.setTypeface(arnopro);
-        final RadioGroup options = (RadioGroup) findViewById(R.id.chaos_bag_options);
-        final RadioButton optionOne = (RadioButton) findViewById(R.id.chaos_bag_option_one);
-        final RadioButton optionTwo = (RadioButton) findViewById(R.id.chaos_bag_option_two);
-        final RadioButton optionThree = (RadioButton) findViewById(R.id.chaos_bag_option_three);
+        final RadioGroup options = findViewById(R.id.chaos_bag_options);
+        final RadioButton optionOne = findViewById(R.id.chaos_bag_option_one);
+        final RadioButton optionTwo = findViewById(R.id.chaos_bag_option_two);
+        final RadioButton optionThree = findViewById(R.id.chaos_bag_option_three);
         optionOne.setTypeface(arnopro);
         optionTwo.setTypeface(arnopro);
         optionThree.setTypeface(arnopro);
@@ -240,13 +240,13 @@ public class ChaosBagActivity extends AppCompatActivity {
                     break;
             }
         }
-        TextView chaosBag = (TextView) findViewById(R.id.chaos_bag);
+        TextView chaosBag = findViewById(R.id.chaos_bag);
         chaosBag.setTypeface(teutonic);
-        TextView currentSetup = (TextView) findViewById(R.id.current_setup);
+        TextView currentSetup = findViewById(R.id.current_setup);
         currentSetup.setTypeface(teutonic);
 
         // Set fonts and listeners to radio buttons
-        RadioGroup difficulty = (RadioGroup) findViewById(R.id.difficulty_selection);
+        RadioGroup difficulty = findViewById(R.id.difficulty_selection);
         for (int i = 0; i < difficulty.getChildCount(); i++) {
             View view = difficulty.getChildAt(i);
             if (view instanceof RadioButton) {
@@ -256,10 +256,10 @@ public class ChaosBagActivity extends AppCompatActivity {
         }
 
         // Hide relevant radiobuttons on standalone scenarios
-        RadioButton easy = (RadioButton) findViewById(R.id.easy_button);
-        RadioButton standard = (RadioButton) findViewById(R.id.standard_button);
-        RadioButton hard = (RadioButton) findViewById(R.id.hard_button);
-        RadioButton expert = (RadioButton) findViewById(R.id.expert_button);
+        RadioButton easy = findViewById(R.id.easy_button);
+        RadioButton standard = findViewById(R.id.standard_button);
+        RadioButton hard = findViewById(R.id.hard_button);
+        RadioButton expert = findViewById(R.id.expert_button);
         if (globalVariables.CurrentCampaign == 999) {
             easy.setVisibility(GONE);
             expert.setVisibility(GONE);
@@ -280,7 +280,7 @@ public class ChaosBagActivity extends AppCompatActivity {
         }
 
         // Setup chaos drawing buttons
-        Button drawButton = (Button) findViewById(R.id.draw_token);
+        Button drawButton = findViewById(R.id.draw_token);
         drawButton.setTypeface(teutonic);
         drawButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -289,7 +289,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                 drawToken(view);
             }
         });
-        LinearLayout currentTokenLayout = (LinearLayout) findViewById(R.id.current_token_layout);
+        LinearLayout currentTokenLayout = findViewById(R.id.current_token_layout);
         currentTokenLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -297,7 +297,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                 drawToken(view);
             }
         });
-        Button addButton = (Button) findViewById(R.id.add_token);
+        Button addButton = findViewById(R.id.add_token);
         addButton.setTypeface(teutonic);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -308,7 +308,7 @@ public class ChaosBagActivity extends AppCompatActivity {
         });
 
         // Back button
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -317,7 +317,7 @@ public class ChaosBagActivity extends AppCompatActivity {
             }
         });
 
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         if(globalVariables.CurrentCampaign == 999){
             globalVariables.CurrentDifficulty = 1;
@@ -356,8 +356,8 @@ public class ChaosBagActivity extends AppCompatActivity {
             setupBag(ChaosBagActivity.this);
 
             // Clear all current token views
-            LinearLayout tokens = (LinearLayout) findViewById(R.id.token_layout);
-            LinearLayout currentTokens = (LinearLayout) findViewById(R.id.current_token_layout);
+            LinearLayout tokens = findViewById(R.id.token_layout);
+            LinearLayout currentTokens = findViewById(R.id.current_token_layout);
             tokens.removeAllViews();
             currentTokens.removeAllViews();
         }
@@ -463,9 +463,9 @@ public class ChaosBagActivity extends AppCompatActivity {
 
         // Get relevant views
         Collections.sort(chaosbag);
-        LinearLayout currentChaosBagOne = (LinearLayout) activity.findViewById(R.id.current_chaos_bag_one);
-        LinearLayout currentChaosBagTwo = (LinearLayout) activity.findViewById(R.id.current_chaos_bag_two);
-        LinearLayout currentChaosBagThree = (LinearLayout) activity.findViewById(R.id.current_chaos_bag_three);
+        LinearLayout currentChaosBagOne = activity.findViewById(R.id.current_chaos_bag_one);
+        LinearLayout currentChaosBagTwo = activity.findViewById(R.id.current_chaos_bag_two);
+        LinearLayout currentChaosBagThree = activity.findViewById(R.id.current_chaos_bag_three);
         currentChaosBagOne.removeAllViews();
         currentChaosBagTwo.removeAllViews();
         currentChaosBagThree.removeAllViews();
@@ -579,8 +579,8 @@ public class ChaosBagActivity extends AppCompatActivity {
     // Method activated on presing of a button to draw token
     private void drawToken(View view) {
         // Get views
-        LinearLayout tokens = (LinearLayout) findViewById(R.id.token_layout);
-        LinearLayout currentTokens = (LinearLayout) findViewById(R.id.current_token_layout);
+        LinearLayout tokens = findViewById(R.id.token_layout);
+        LinearLayout currentTokens = findViewById(R.id.current_token_layout);
         int numberOfViews = currentTokens.getChildCount();
 
         // If not using the add button
@@ -672,7 +672,7 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     // Resets the bag by setting it up again
     private static void resetBag(Activity activity) {
-        LinearLayout currentToken = (LinearLayout) activity.findViewById(R.id.current_token_layout);
+        LinearLayout currentToken = activity.findViewById(R.id.current_token_layout);
         currentToken.removeAllViews();
         setupBag(activity);
     }

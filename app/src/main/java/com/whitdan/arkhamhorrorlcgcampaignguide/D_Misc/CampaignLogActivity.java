@@ -36,7 +36,7 @@ public class CampaignLogActivity extends AppCompatActivity {
         // Set title
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
-        TextView title = (TextView) findViewById(R.id.current_scenario_name);
+        TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
         switch (globalVariables.CurrentCampaign) {
             case 1:
@@ -148,27 +148,27 @@ public class CampaignLogActivity extends AppCompatActivity {
         }
 
         // Get views and set fonts
-        TextView log = (TextView) findViewById(R.id.campaign_log);
+        TextView log = findViewById(R.id.campaign_log);
         log.setTypeface(teutonic);
-        TextView nightHeading = (TextView) findViewById(R.id.night_heading);
+        TextView nightHeading = findViewById(R.id.night_heading);
         nightHeading.setTypeface(teutonic);
-        TextView dunwichHeading = (TextView) findViewById(R.id.dunwich_heading);
+        TextView dunwichHeading = findViewById(R.id.dunwich_heading);
         dunwichHeading.setTypeface(teutonic);
-        TextView carcosaHeading = (TextView) findViewById(R.id.carcosa_heading);
+        TextView carcosaHeading = findViewById(R.id.carcosa_heading);
         carcosaHeading.setTypeface(teutonic);
-        TextView sideHeading = (TextView) findViewById(R.id.side_heading);
+        TextView sideHeading = findViewById(R.id.side_heading);
         sideHeading.setTypeface(teutonic);
-        TextView playerHeading = (TextView) findViewById(R.id.player_heading);
+        TextView playerHeading = findViewById(R.id.player_heading);
         playerHeading.setTypeface(teutonic);
-        TextView nightLog = (TextView) findViewById(R.id.night_log_text);
+        TextView nightLog = findViewById(R.id.night_log_text);
         nightLog.setTypeface(arnopro);
-        TextView dunwichLog = (TextView) findViewById(R.id.dunwich_log_text);
+        TextView dunwichLog = findViewById(R.id.dunwich_log_text);
         dunwichLog.setTypeface(arnopro);
-        TextView carcosaLog = (TextView) findViewById(R.id.carcosa_log_text);
+        TextView carcosaLog = findViewById(R.id.carcosa_log_text);
         carcosaLog.setTypeface(arnopro);
-        TextView sideLog = (TextView) findViewById(R.id.side_log_text);
+        TextView sideLog = findViewById(R.id.side_log_text);
         sideLog.setTypeface(arnopro);
-        TextView playerLog = (TextView) findViewById(R.id.player_log_text);
+        TextView playerLog = findViewById(R.id.player_log_text);
         playerLog.setTypeface(arnopro);
 
         int scenario;
@@ -587,7 +587,7 @@ public class CampaignLogActivity extends AppCompatActivity {
         }
 
         // Back button
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

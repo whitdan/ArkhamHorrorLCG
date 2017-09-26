@@ -50,7 +50,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
 
         // Set font to heading
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
-        TextView saved = (TextView) findViewById(R.id.saved_campaigns);
+        TextView saved = findViewById(R.id.saved_campaigns);
         saved.setTypeface(teutonic);
 
         // Create a new dbHelper and get access to the SQLite Database
@@ -60,7 +60,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
         // Get a cursor from the database of all saved campaigns (and all columns of that campaign)
         campaigns = db.rawQuery("SELECT  * FROM " + ArkhamContract.CampaignEntry.TABLE_NAME, null);
         // Find saved campaigns ListView
-        ListView campaignItems = (ListView) findViewById(R.id.saved_campaigns_list);
+        ListView campaignItems = findViewById(R.id.saved_campaigns_list);
         // Setup and attach cursor adapter to the list to display all saved campaigns
         campaignsListAdapter = new CampaignsListAdapter(this, campaigns);
         campaignItems.setAdapter(campaignsListAdapter);
@@ -74,7 +74,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
         campaignItems.setOnItemLongClickListener(campaignsOnLongClickListener);
 
         // Back button to finish the activity
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,14 +102,14 @@ public class LoadCampaignActivity extends AppCompatActivity {
             Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
             Typeface arnoprobold = Typeface.createFromAsset(getAssets(), "fonts/arnoprobold.otf");
             Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
-            TextView campaignNameView = (TextView) view.findViewById(R.id.campaign_name);
+            TextView campaignNameView = view.findViewById(R.id.campaign_name);
             campaignNameView.setTypeface(teutonic);
-            TextView currentCampaignView = (TextView) view.findViewById(R.id.current_campaign);
-            TextView currentScenarioView = (TextView) view.findViewById(R.id.current_scenario);
+            TextView currentCampaignView = view.findViewById(R.id.current_campaign);
+            TextView currentScenarioView = view.findViewById(R.id.current_scenario);
             currentCampaignView.setTypeface(arnoprobold);
             currentScenarioView.setTypeface(arnoprobold);
-            TextView currentCampaignName = (TextView) view.findViewById(R.id.current_campaign_name);
-            TextView currentScenarioName = (TextView) view.findViewById(R.id.current_scenario_name);
+            TextView currentCampaignName = view.findViewById(R.id.current_campaign_name);
+            TextView currentScenarioName = view.findViewById(R.id.current_scenario_name);
             currentCampaignName.setTypeface(arnopro);
             currentScenarioName.setTypeface(arnopro);
 
@@ -697,13 +697,13 @@ public class LoadCampaignActivity extends AppCompatActivity {
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
             Typeface arnoprobold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);
-            TextView delete = (TextView) v.findViewById(R.id.delete_campaign);
-            TextView confirm = (TextView) v.findViewById(R.id.confirm_delete_campaign);
-            TextView campaign = (TextView) v.findViewById(R.id.campaign_name);
+            TextView delete = v.findViewById(R.id.delete_campaign);
+            TextView confirm = v.findViewById(R.id.confirm_delete_campaign);
+            TextView campaign = v.findViewById(R.id.campaign_name);
             delete.setTypeface(teutonic);
             confirm.setTypeface(arnopro);
             campaign.setTypeface(arnoprobold);

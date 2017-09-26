@@ -42,10 +42,10 @@ public class MainMenuActivity extends AppCompatActivity {
         setContentView(R.layout.a_activity_main_menu);
 
         // Get all of the button views
-        Button NewCampaignButton = (Button) findViewById(R.id.new_campaign_button);
-        Button LoadCampaignButton = (Button) findViewById(R.id.load_campaign_button);
-        Button StandaloneButton = (Button) findViewById(R.id.standalone_scenario_button);
-        Button ExpansionsButton = (Button) findViewById(R.id.expansions_owned_button);
+        Button NewCampaignButton = findViewById(R.id.new_campaign_button);
+        Button LoadCampaignButton = findViewById(R.id.load_campaign_button);
+        Button StandaloneButton = findViewById(R.id.standalone_scenario_button);
+        Button ExpansionsButton = findViewById(R.id.expansions_owned_button);
 
         // Set correct font to all of the buttons
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
@@ -116,8 +116,8 @@ public class MainMenuActivity extends AppCompatActivity {
             View v = View.inflate(getActivity(), R.layout.a_dialog_expansions_owned, null);
 
             // Set the checkboxes using the previous settings
-            final CheckBox dunwich = (CheckBox) v.findViewById(R.id.dunwich_owned);
-            final CheckBox carcosa = (CheckBox) v.findViewById(R.id.carcosa_owned);
+            final CheckBox dunwich = v.findViewById(R.id.dunwich_owned);
+            final CheckBox carcosa = v.findViewById(R.id.carcosa_owned);
             dunwich.setChecked(dunwichOwned);
             carcosa.setChecked(carcosaOwned);
 
@@ -126,9 +126,9 @@ public class MainMenuActivity extends AppCompatActivity {
             dunwich.setTypeface(arnopro);
             carcosa.setTypeface(arnopro);
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            TextView title = (TextView) v.findViewById(R.id.expansions_owned);
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            TextView title = v.findViewById(R.id.expansions_owned);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             title.setTypeface(teutonic);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);

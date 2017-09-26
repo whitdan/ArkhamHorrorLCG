@@ -54,7 +54,7 @@ public class ChaosBagSetupActivity extends AppCompatActivity {
         // Set campaign title and fonts
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
-        TextView title = (TextView) findViewById(R.id.campaign_name);
+        TextView title = findViewById(R.id.campaign_name);
         title.setTypeface(teutonic);
         switch (globalVariables.CurrentCampaign) {
             case 1:
@@ -67,11 +67,11 @@ public class ChaosBagSetupActivity extends AppCompatActivity {
                 title.setText(R.string.carcosa_campaign);
                 break;
         }
-        TextView chaosBag = (TextView) findViewById(R.id.chaos_bag);
+        TextView chaosBag = findViewById(R.id.chaos_bag);
         chaosBag.setTypeface(teutonic);
 
         // Set fonts and listeners to radio buttons
-        RadioGroup difficulty = (RadioGroup) findViewById(R.id.difficulty_selection);
+        RadioGroup difficulty = findViewById(R.id.difficulty_selection);
         for (int i = 0; i < difficulty.getChildCount(); i++) {
             View view = difficulty.getChildAt(i);
             if (view instanceof RadioButton) {
@@ -86,15 +86,15 @@ public class ChaosBagSetupActivity extends AppCompatActivity {
         }
 
         // Hide relevant radiobuttons on standalone scenarios
-        RadioButton easy = (RadioButton) findViewById(R.id.easy_button);
-        RadioButton expert = (RadioButton) findViewById(R.id.expert_button);
+        RadioButton easy = findViewById(R.id.easy_button);
+        RadioButton expert = findViewById(R.id.expert_button);
         if (globalVariables.CurrentCampaign == 999) {
             easy.setVisibility(GONE);
             expert.setVisibility(GONE);
         }
 
         // Back button
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,12 +138,12 @@ public class ChaosBagSetupActivity extends AppCompatActivity {
 
         // Get relevant views
         Collections.sort(chaosbag);
-        LinearLayout currentChaosBagOne = (LinearLayout) findViewById(R.id.current_chaos_bag_one);
-        LinearLayout currentChaosBagTwo = (LinearLayout) findViewById(R.id.current_chaos_bag_two);
-        LinearLayout currentChaosBagThree = (LinearLayout) findViewById(R.id.current_chaos_bag_three);
-        LinearLayout currentChaosBagFour = (LinearLayout) findViewById(R.id.current_chaos_bag_four);
-        LinearLayout currentChaosBagFive = (LinearLayout) findViewById(R.id.current_chaos_bag_five);
-        LinearLayout currentChaosBagSix = (LinearLayout) findViewById(R.id.current_chaos_bag_six);
+        LinearLayout currentChaosBagOne = findViewById(R.id.current_chaos_bag_one);
+        LinearLayout currentChaosBagTwo = findViewById(R.id.current_chaos_bag_two);
+        LinearLayout currentChaosBagThree = findViewById(R.id.current_chaos_bag_three);
+        LinearLayout currentChaosBagFour = findViewById(R.id.current_chaos_bag_four);
+        LinearLayout currentChaosBagFive = findViewById(R.id.current_chaos_bag_five);
+        LinearLayout currentChaosBagSix = findViewById(R.id.current_chaos_bag_six);
         currentChaosBagOne.removeAllViews();
         currentChaosBagTwo.removeAllViews();
         currentChaosBagThree.removeAllViews();

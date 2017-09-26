@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,8 +13,6 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.TouchDelegate;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -35,7 +32,6 @@ import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.Investigator;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
@@ -62,7 +58,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
 
         // Set title
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
-        TextView title = (TextView) findViewById(R.id.current_scenario_name);
+        TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
         switch (globalVariables.CurrentCampaign) {
             case 1:
@@ -168,7 +164,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
         }
 
         // Setup investigator views
-        LinearLayout investigatorList = (LinearLayout) findViewById(R.id.investigators_list);
+        LinearLayout investigatorList = findViewById(R.id.investigators_list);
         InvestigatorListAdapter investigatorsAdapter = new InvestigatorListAdapter(this, globalVariables
                 .Investigators);
         final int adapterCount = investigatorsAdapter.getCount();
@@ -180,7 +176,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
 
 
         // Set buttons
-        Button setup = (Button) findViewById(R.id.scenario_setup_button);
+        Button setup = findViewById(R.id.scenario_setup_button);
         setup.setTypeface(teutonic);
         setup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -194,7 +190,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
             }
         });
 
-        Button sideStory = (Button) findViewById(R.id.add_side_story_button);
+        Button sideStory = findViewById(R.id.add_side_story_button);
         sideStory.setTypeface(teutonic);
         sideStory.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -204,7 +200,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
             }
         });
 
-        Button log = (Button) findViewById(R.id.campaign_log_button);
+        Button log = findViewById(R.id.campaign_log_button);
         log.setTypeface(teutonic);
         log.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -214,7 +210,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
             }
         });
 
-        Button editTeam = (Button) findViewById(R.id.edit_team_button);
+        Button editTeam = findViewById(R.id.edit_team_button);
         editTeam.setTypeface(teutonic);
         editTeam.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -224,7 +220,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
             }
         });
 
-        Button chaosBag = (Button) findViewById(R.id.chaos_bag_button);
+        Button chaosBag = findViewById(R.id.chaos_bag_button);
         chaosBag.setTypeface(teutonic);
         chaosBag.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -234,7 +230,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
             }
         });
 
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -246,7 +242,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
             }
         });
 
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -291,16 +287,16 @@ public class ScenarioMainActivity extends AppCompatActivity {
             // Get the layout inflater and inflate the view
             View v = View.inflate(getActivity(), R.layout.c_dialog_side_story, null);
 
-            final RadioButton rougarou = (RadioButton) v.findViewById(R.id.rougarou_scenario);
-            final RadioButton carnevale = (RadioButton) v.findViewById(R.id.carnevale_scenario);
+            final RadioButton rougarou = v.findViewById(R.id.rougarou_scenario);
+            final RadioButton carnevale = v.findViewById(R.id.carnevale_scenario);
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
             rougarou.setTypeface(arnopro);
             carnevale.setTypeface(arnopro);
 
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            TextView title = (TextView) v.findViewById(R.id.add_side_story);
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            TextView title = v.findViewById(R.id.add_side_story);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             title.setTypeface(teutonic);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);
@@ -399,7 +395,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
                 Typeface wolgastbold = Typeface.createFromAsset(context.getAssets(), "fonts/wolgastbold.otf");
 
                 // Set investigator name
-                TextView investigatorNameView = (TextView) listItemView.findViewById(R.id.investigator_name);
+                TextView investigatorNameView = listItemView.findViewById(R.id.investigator_name);
                 String[] investigatorNames = getContext().getResources().getStringArray(R.array.investigators);
                 String name = investigatorNames[currentInvestigator.Name] + " ";
                 investigatorNameView.setText(name);
@@ -408,13 +404,13 @@ public class ScenarioMainActivity extends AppCompatActivity {
                 if (currentInvestigator.PlayerName != null) {
                     playerName = currentInvestigator.PlayerName + " ";
                 }
-                TextView playerNameView = (TextView) listItemView.findViewById(R.id.player_name);
+                TextView playerNameView = listItemView.findViewById(R.id.player_name);
                 playerNameView.setText(playerName);
                 playerNameView.setTypeface(wolgast);
 
                 // Set decklist
                 String deckName = currentInvestigator.DeckName;
-                TextView decklistView = (TextView) listItemView.findViewById(R.id.decklist);
+                TextView decklistView = listItemView.findViewById(R.id.decklist);
                 decklistView.setTypeface(arnoprobold);
                 final String decklist = currentInvestigator.Decklist;
                 if (deckName == null && decklist == null) {
@@ -454,19 +450,19 @@ public class ScenarioMainActivity extends AppCompatActivity {
                 }
 
                 // Set typefaces
-                TextView killed = (TextView) listItemView.findViewById(R.id.killed);
+                TextView killed = listItemView.findViewById(R.id.killed);
                 killed.setTypeface(arnoprobold);
-                TextView phys = (TextView) listItemView.findViewById(R.id.physical_trauma);
+                TextView phys = listItemView.findViewById(R.id.physical_trauma);
                 phys.setTypeface(arnoprobold);
-                TextView mental = (TextView) listItemView.findViewById(R.id.mental_trauma);
+                TextView mental = listItemView.findViewById(R.id.mental_trauma);
                 mental.setTypeface(arnoprobold);
-                TextView availXP = (TextView) listItemView.findViewById(R.id.available_xp);
+                TextView availXP = listItemView.findViewById(R.id.available_xp);
                 availXP.setTypeface(arnoprobold);
-                TextView spentXP = (TextView) listItemView.findViewById(R.id.xp_spent);
+                TextView spentXP = listItemView.findViewById(R.id.xp_spent);
                 spentXP.setTypeface(arnoprobold);
 
                 // Hide stats and show investigator killed if investigator is dead
-                LinearLayout stats = (LinearLayout) listItemView.findViewById(R.id.investigator_stats);
+                LinearLayout stats = listItemView.findViewById(R.id.investigator_stats);
                 if (currentInvestigator.Status == 2) {
                     stats.setVisibility(GONE);
                     killed.setVisibility(VISIBLE);
@@ -480,21 +476,21 @@ public class ScenarioMainActivity extends AppCompatActivity {
                 }
 
                 // Set other values
-                TextView physicalTrauma = (TextView) listItemView.findViewById(R.id.physical_trauma_amount);
+                TextView physicalTrauma = listItemView.findViewById(R.id.physical_trauma_amount);
                 physicalTrauma.setText(String.valueOf(currentInvestigator.Damage));
                 physicalTrauma.setTypeface(wolgastbold);
-                TextView mentalTrauma = (TextView) listItemView.findViewById(R.id.mental_trauma_amount);
+                TextView mentalTrauma = listItemView.findViewById(R.id.mental_trauma_amount);
                 mentalTrauma.setText(String.valueOf(currentInvestigator.Horror));
                 mentalTrauma.setTypeface(wolgastbold);
-                TextView availableXP = (TextView) listItemView.findViewById(R.id.available_xp_amount);
+                TextView availableXP = listItemView.findViewById(R.id.available_xp_amount);
                 availableXP.setText(String.valueOf(currentInvestigator.AvailableXP));
                 availableXP.setTypeface(wolgastbold);
 
                 // Setup spent XP views
-                final TextView spentXPAmount = (TextView) listItemView.findViewById(R.id.xp_spent_amount);
+                final TextView spentXPAmount = listItemView.findViewById(R.id.xp_spent_amount);
                 spentXPAmount.setTypeface(wolgastbold);
-                final ImageView xpDecrement = (ImageView) listItemView.findViewById(R.id.xp_spent_decrement);
-                final ImageView xpIncrement = (ImageView) listItemView.findViewById(R.id.xp_spent_increment);
+                final ImageView xpDecrement = listItemView.findViewById(R.id.xp_spent_decrement);
+                final ImageView xpIncrement = listItemView.findViewById(R.id.xp_spent_increment);
 
                 // Set click listeners and increase touchable size of buttons by 70
                 spentXPAmount.setText(String.valueOf(currentInvestigator.TempXP));
@@ -527,35 +523,5 @@ public class ScenarioMainActivity extends AppCompatActivity {
     public void onBackPressed() {
         Toast toast = Toast.makeText(ScenarioMainActivity.this, R.string.cannot_back, Toast.LENGTH_SHORT);
         toast.show();
-    }
-
-
-    // Touch delegate for multiple views, allows the + and - buttons to be more easily clickable
-    public class TouchDelegateComposite extends TouchDelegate {
-
-        private final List<TouchDelegate> delegates = new ArrayList<TouchDelegate>();
-
-        public TouchDelegateComposite(View view) {
-            super(new Rect(), view);
-        }
-
-        public void addDelegate(TouchDelegate delegate) {
-            if (delegate != null) {
-                delegates.add(delegate);
-            }
-        }
-
-        @Override
-        public boolean onTouchEvent(MotionEvent event) {
-            boolean res = false;
-            float x = event.getX();
-            float y = event.getY();
-            for (TouchDelegate delegate : delegates) {
-                event.setLocation(x, y);
-                res = delegate.onTouchEvent(event) || res;
-            }
-            return res;
-        }
-
     }
 }

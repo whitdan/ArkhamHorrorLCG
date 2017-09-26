@@ -61,9 +61,9 @@ public class CampaignFinishedActivity extends AppCompatActivity {
 
         // Set title
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
-        TextView title = (TextView) findViewById(R.id.current_campaign_name);
+        TextView title = findViewById(R.id.current_campaign_name);
         title.setTypeface(teutonic);
-        TextView subTitle = (TextView) findViewById(R.id.campaign_finished);
+        TextView subTitle = findViewById(R.id.campaign_finished);
         subTitle.setTypeface(teutonic);
         switch (globalVariables.CurrentCampaign) {
             case 1:
@@ -78,7 +78,7 @@ public class CampaignFinishedActivity extends AppCompatActivity {
         }
 
         // Setup investigator views
-        LinearLayout investigatorList = (LinearLayout) findViewById(R.id.investigators_list);
+        LinearLayout investigatorList = findViewById(R.id.investigators_list);
         InvestigatorListAdapter investigatorsAdapter = new InvestigatorListAdapter(this, globalVariables
                 .Investigators);
         final int adapterCount = investigatorsAdapter.getCount();
@@ -90,7 +90,7 @@ public class CampaignFinishedActivity extends AppCompatActivity {
 
 
         // Set buttons
-        Button log = (Button) findViewById(R.id.campaign_log_button);
+        Button log = findViewById(R.id.campaign_log_button);
         log.setTypeface(teutonic);
         log.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,7 +100,7 @@ public class CampaignFinishedActivity extends AppCompatActivity {
             }
         });
 
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,7 +112,7 @@ public class CampaignFinishedActivity extends AppCompatActivity {
             }
         });
 
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,7 +153,7 @@ public class CampaignFinishedActivity extends AppCompatActivity {
                 Typeface wolgastbold = Typeface.createFromAsset(context.getAssets(), "fonts/wolgastbold.otf");
 
                 // Set investigator name
-                TextView investigatorNameView = (TextView) listItemView.findViewById(R.id.investigator_name);
+                TextView investigatorNameView = listItemView.findViewById(R.id.investigator_name);
                 String[] investigatorNames = getContext().getResources().getStringArray(R.array.investigators);
                 String name = investigatorNames[currentInvestigator.Name] + " ";
                 investigatorNameView.setText(name);
@@ -162,13 +162,13 @@ public class CampaignFinishedActivity extends AppCompatActivity {
                 if (currentInvestigator.PlayerName != null) {
                     playerName = currentInvestigator.PlayerName + " ";
                 }
-                TextView playerNameView = (TextView) listItemView.findViewById(R.id.player_name);
+                TextView playerNameView = listItemView.findViewById(R.id.player_name);
                 playerNameView.setText(playerName);
                 playerNameView.setTypeface(wolgast);
 
                 // Set decklist
                 String deckName = currentInvestigator.DeckName;
-                TextView decklistView = (TextView) listItemView.findViewById(R.id.decklist);
+                TextView decklistView = listItemView.findViewById(R.id.decklist);
                 decklistView.setTypeface(arnoprobold);
                 final String decklist = currentInvestigator.Decklist;
                 if (deckName == null && decklist == null) {
@@ -208,17 +208,17 @@ public class CampaignFinishedActivity extends AppCompatActivity {
                 }
 
                 // Set typefaces
-                TextView killed = (TextView) listItemView.findViewById(R.id.killed);
+                TextView killed = listItemView.findViewById(R.id.killed);
                 killed.setTypeface(arnoprobold);
-                TextView phys = (TextView) listItemView.findViewById(R.id.physical_trauma);
+                TextView phys = listItemView.findViewById(R.id.physical_trauma);
                 phys.setTypeface(arnoprobold);
-                TextView mental = (TextView) listItemView.findViewById(R.id.mental_trauma);
+                TextView mental = listItemView.findViewById(R.id.mental_trauma);
                 mental.setTypeface(arnoprobold);
-                TextView availXP = (TextView) listItemView.findViewById(R.id.available_xp);
+                TextView availXP = listItemView.findViewById(R.id.available_xp);
                 availXP.setTypeface(arnoprobold);
 
                 // Hide stats and show investigator killed if investigator is dead
-                LinearLayout stats = (LinearLayout) listItemView.findViewById(R.id.investigator_stats);
+                LinearLayout stats = listItemView.findViewById(R.id.investigator_stats);
                 if (currentInvestigator.Status == 2) {
                     stats.setVisibility(GONE);
                     killed.setVisibility(VISIBLE);
@@ -232,24 +232,24 @@ public class CampaignFinishedActivity extends AppCompatActivity {
                 }
 
                 // Set other values
-                TextView physicalTrauma = (TextView) listItemView.findViewById(R.id.physical_trauma_amount);
+                TextView physicalTrauma = listItemView.findViewById(R.id.physical_trauma_amount);
                 physicalTrauma.setText(String.valueOf(currentInvestigator.Damage));
                 physicalTrauma.setTypeface(wolgastbold);
-                TextView mentalTrauma = (TextView) listItemView.findViewById(R.id.mental_trauma_amount);
+                TextView mentalTrauma = listItemView.findViewById(R.id.mental_trauma_amount);
                 mentalTrauma.setText(String.valueOf(currentInvestigator.Horror));
                 mentalTrauma.setTypeface(wolgastbold);
-                TextView availableXP = (TextView) listItemView.findViewById(R.id.available_xp_amount);
+                TextView availableXP = listItemView.findViewById(R.id.available_xp_amount);
                 availableXP.setText(String.valueOf(currentInvestigator.AvailableXP));
                 availableXP.setTypeface(wolgastbold);
 
                 // Hide spent XP views
-                TextView spentXP = (TextView) listItemView.findViewById(R.id.xp_spent);
+                TextView spentXP = listItemView.findViewById(R.id.xp_spent);
                 spentXP.setVisibility(GONE);
-                final TextView spentXPAmount = (TextView) listItemView.findViewById(R.id.xp_spent_amount);
+                final TextView spentXPAmount = listItemView.findViewById(R.id.xp_spent_amount);
                 spentXPAmount.setVisibility(GONE);
-                ImageView xpDecrement = (ImageView) listItemView.findViewById(R.id.xp_spent_decrement);
+                ImageView xpDecrement = listItemView.findViewById(R.id.xp_spent_decrement);
                 xpDecrement.setVisibility(GONE);
-                ImageView xpIncrement = (ImageView) listItemView.findViewById(R.id.xp_spent_increment);
+                ImageView xpIncrement = listItemView.findViewById(R.id.xp_spent_increment);
                 xpIncrement.setVisibility(GONE);
 
             }
@@ -262,14 +262,13 @@ public class CampaignFinishedActivity extends AppCompatActivity {
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             // Get the layout inflater and inflate the view
-            LayoutInflater inflater = getActivity().getLayoutInflater();
             View v = View.inflate(getActivity(), R.layout.d_dialog_finish_campaign, null);
 
-            final RadioButton delete = (RadioButton) v.findViewById(R.id.finish_delete_campaign);
-            final RadioButton save = (RadioButton) v.findViewById(R.id.finish_save_campaign);
-            final RadioButton night = (RadioButton) v.findViewById(R.id.night_campaign);
-            final RadioButton dunwich = (RadioButton) v.findViewById(R.id.dunwich_campaign);
-            final RadioButton carcosa = (RadioButton) v.findViewById(R.id.carcosa_campaign);
+            final RadioButton delete = v.findViewById(R.id.finish_delete_campaign);
+            final RadioButton save = v.findViewById(R.id.finish_save_campaign);
+            final RadioButton night = v.findViewById(R.id.night_campaign);
+            final RadioButton dunwich = v.findViewById(R.id.dunwich_campaign);
+            final RadioButton carcosa = v.findViewById(R.id.carcosa_campaign);
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
             delete.setTypeface(arnopro);
             save.setTypeface(arnopro);
@@ -286,9 +285,9 @@ public class CampaignFinishedActivity extends AppCompatActivity {
             }
 
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            TextView title = (TextView) v.findViewById(R.id.finish_campaign);
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            TextView title = v.findViewById(R.id.finish_campaign);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             title.setTypeface(teutonic);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);

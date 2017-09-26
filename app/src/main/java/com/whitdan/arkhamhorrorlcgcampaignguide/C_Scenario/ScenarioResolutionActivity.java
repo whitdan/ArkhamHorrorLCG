@@ -69,33 +69,33 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         Typeface arnoprobold = Typeface.createFromAsset(getAssets(), "fonts/arnoprobold.otf");
         Typeface arnoproitalic = Typeface.createFromAsset(getAssets(), "fonts/arnoproitalic.otf");
         Typeface wolgastbold = Typeface.createFromAsset(getAssets(), "fonts/wolgastbold.otf");
-        TextView title = (TextView) findViewById(R.id.current_scenario_name);
+        TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        TextView subTitle = (TextView) findViewById(R.id.scenario_resolution);
+        TextView subTitle = findViewById(R.id.scenario_resolution);
         subTitle.setTypeface(teutonic);
-        TextView defeatedHeading = (TextView) findViewById(R.id.investigators_defeated_heading);
+        TextView defeatedHeading = findViewById(R.id.investigators_defeated_heading);
         defeatedHeading.setTypeface(teutonic);
-        TextView selectHeading = (TextView) findViewById(R.id.select_resolution_heading);
+        TextView selectHeading = findViewById(R.id.select_resolution_heading);
         selectHeading.setTypeface(teutonic);
-        LinearLayout additionalCounterLayout = (LinearLayout) findViewById(R.id.additional_counter_layout);
-        final TextView additionalCounter = (TextView) findViewById(R.id.additional_counter);
+        LinearLayout additionalCounterLayout = findViewById(R.id.additional_counter_layout);
+        final TextView additionalCounter = findViewById(R.id.additional_counter);
         additionalCounter.setTypeface(arnoprobold);
-        ImageView additionalDecrement = (ImageView) findViewById(R.id.additional_decrement);
-        final TextView additionalAmount = (TextView) findViewById(R.id.additional_amount);
+        ImageView additionalDecrement = findViewById(R.id.additional_decrement);
+        final TextView additionalAmount = findViewById(R.id.additional_amount);
         additionalAmount.setTypeface(wolgastbold);
-        ImageView additionalIncrement = (ImageView) findViewById(R.id.additional_increment);
-        TextView resolution = (TextView) findViewById(R.id.resolution_text);
+        ImageView additionalIncrement = findViewById(R.id.additional_increment);
+        TextView resolution = findViewById(R.id.resolution_text);
         resolution.setTypeface(arnoproitalic);
-        final TextView resolutionAdditional = (TextView) findViewById(R.id.resolution_text_additional);
+        final TextView resolutionAdditional = findViewById(R.id.resolution_text_additional);
         resolutionAdditional.setTypeface(arnoproitalic);
 
         // Victory display
-        TextView victoryDisplay = (TextView) findViewById(R.id.victory_display);
+        TextView victoryDisplay = findViewById(R.id.victory_display);
         victoryDisplay.setTypeface(arnoprobold);
-        ImageView victoryDecrement = (ImageView) findViewById(R.id.victory_decrement);
-        final TextView victoryAmount = (TextView) findViewById(R.id.victory_amount);
+        ImageView victoryDecrement = findViewById(R.id.victory_decrement);
+        final TextView victoryAmount = findViewById(R.id.victory_amount);
         victoryAmount.setTypeface(wolgastbold);
-        ImageView victoryIncrement = (ImageView) findViewById(R.id.victory_increment);
+        ImageView victoryIncrement = findViewById(R.id.victory_increment);
         victoryAmount.setText(String.valueOf(globalVariables.VictoryDisplay));
         victoryDecrement.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -193,32 +193,32 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         }
 
         // Set fonts to the defeated layout
-        TextView investigatorOneName = (TextView) findViewById(R.id.investigator_one_name);
+        TextView investigatorOneName = findViewById(R.id.investigator_one_name);
         investigatorOneName.setTypeface(arnoprobold);
-        CheckBox resignedOne = (CheckBox) findViewById(R.id.resigned_button_one);
+        CheckBox resignedOne = findViewById(R.id.resigned_button_one);
         resignedOne.setTypeface(arnopro);
-        TextView investigatorTwoName = (TextView) findViewById(R.id.investigator_two_name);
+        TextView investigatorTwoName = findViewById(R.id.investigator_two_name);
         investigatorTwoName.setTypeface(arnoprobold);
-        CheckBox resignedTwo = (CheckBox) findViewById(R.id.resigned_button_two);
+        CheckBox resignedTwo = findViewById(R.id.resigned_button_two);
         resignedTwo.setTypeface(arnopro);
-        TextView investigatorThreeName = (TextView) findViewById(R.id.investigator_three_name);
+        TextView investigatorThreeName = findViewById(R.id.investigator_three_name);
         investigatorThreeName.setTypeface(arnoprobold);
-        CheckBox resignedThree = (CheckBox) findViewById(R.id.resigned_button_three);
+        CheckBox resignedThree = findViewById(R.id.resigned_button_three);
         resignedThree.setTypeface(arnopro);
-        TextView investigatorFourName = (TextView) findViewById(R.id.investigator_four_name);
+        TextView investigatorFourName = findViewById(R.id.investigator_four_name);
         investigatorFourName.setTypeface(arnoprobold);
-        CheckBox resignedFour = (CheckBox) findViewById(R.id.resigned_button_four);
+        CheckBox resignedFour = findViewById(R.id.resigned_button_four);
         resignedFour.setTypeface(arnopro);
 
         // Show the relevant defeated layouts and set the right investigator names
-        LinearLayout defeatedOne = (LinearLayout) findViewById(R.id.investigator_one_defeated_layout);
-        LinearLayout defeatedTwo = (LinearLayout) findViewById(R.id.investigator_two_defeated_layout);
-        LinearLayout defeatedThree = (LinearLayout) findViewById(R.id.investigator_three_defeated_layout);
-        LinearLayout defeatedFour = (LinearLayout) findViewById(R.id.investigator_four_defeated_layout);
-        LinearLayout defeatedOneSelection = (LinearLayout) findViewById(R.id.defeated_one_selection);
-        LinearLayout defeatedTwoSelection = (LinearLayout) findViewById(R.id.defeated_two_selection);
-        LinearLayout defeatedThreeSelection = (LinearLayout) findViewById(R.id.defeated_three_selection);
-        LinearLayout defeatedFourSelection = (LinearLayout) findViewById(R.id.defeated_four_selection);
+        LinearLayout defeatedOne = findViewById(R.id.investigator_one_defeated_layout);
+        LinearLayout defeatedTwo = findViewById(R.id.investigator_two_defeated_layout);
+        LinearLayout defeatedThree = findViewById(R.id.investigator_three_defeated_layout);
+        LinearLayout defeatedFour = findViewById(R.id.investigator_four_defeated_layout);
+        LinearLayout defeatedOneSelection = findViewById(R.id.defeated_one_selection);
+        LinearLayout defeatedTwoSelection = findViewById(R.id.defeated_two_selection);
+        LinearLayout defeatedThreeSelection = findViewById(R.id.defeated_three_selection);
+        LinearLayout defeatedFourSelection = findViewById(R.id.defeated_four_selection);
         final String[] investigatorNames = getResources().getStringArray(investigators);
         switch (globalVariables.Investigators.size()) {
             case 4:
@@ -272,7 +272,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         }
 
         // Set fonts and listeners for select resolution
-        final RadioGroup selectResolution = (RadioGroup) findViewById(R.id.select_resolution);
+        final RadioGroup selectResolution = findViewById(R.id.select_resolution);
         for (int i = 0; i < selectResolution.getChildCount(); i++) {
             View view = selectResolution.getChildAt(i);
             if (view instanceof RadioButton) {
@@ -282,10 +282,10 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         selectResolution.setOnCheckedChangeListener(new ResolutionCheckboxListener());
 
         // Show right number of checkboxes (default is two resolutions)
-        RadioButton resolutionOne = (RadioButton) findViewById(R.id.resolution_one);
-        RadioButton resolutionTwo = (RadioButton) findViewById(R.id.resolution_two);
-        RadioButton resolutionThree = (RadioButton) findViewById(R.id.resolution_three);
-        RadioButton resolutionFour = (RadioButton) findViewById(R.id.resolution_four);
+        RadioButton resolutionOne = findViewById(R.id.resolution_one);
+        RadioButton resolutionTwo = findViewById(R.id.resolution_two);
+        RadioButton resolutionThree = findViewById(R.id.resolution_three);
+        RadioButton resolutionFour = findViewById(R.id.resolution_four);
         switch (globalVariables.CurrentCampaign) {
             case 1:
                 switch (globalVariables.CurrentScenario) {
@@ -329,35 +329,35 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         }
 
         // Setup all additional views (mostly additional checkboxes) if required for the scenario
-        final CheckBox additionalCheckbox = (CheckBox) findViewById(R.id.additional_checkbox_one);
-        final CheckBox additionalCheckboxTwo = (CheckBox) findViewById(R.id.additional_checkbox_two);
+        final CheckBox additionalCheckbox = findViewById(R.id.additional_checkbox_one);
+        final CheckBox additionalCheckboxTwo = findViewById(R.id.additional_checkbox_two);
         additionalCheckbox.setTypeface(arnopro);
         additionalCheckboxTwo.setTypeface(arnopro);
-        TextView additionalGroupHeading = (TextView) findViewById(R.id.additional_group_heading);
+        TextView additionalGroupHeading = findViewById(R.id.additional_group_heading);
         additionalGroupHeading.setTypeface(teutonic);
-        final TextView selectInvestigatorHeading = (TextView) findViewById(R.id.select_investigator_heading);
+        final TextView selectInvestigatorHeading = findViewById(R.id.select_investigator_heading);
         selectInvestigatorHeading.setTypeface(teutonic);
-        TextView countersHeading = (TextView) findViewById(R.id.investigator_counters_heading);
+        TextView countersHeading = findViewById(R.id.investigator_counters_heading);
         countersHeading.setTypeface(teutonic);
-        final LinearLayout selectInvestigator = (LinearLayout) findViewById(R.id.select_investigator);
-        final CheckBox selectInvestigatorOne = (CheckBox) findViewById(R.id.select_investigator_one);
-        final CheckBox selectInvestigatorTwo = (CheckBox) findViewById(R.id.select_investigator_two);
-        final CheckBox selectInvestigatorThree = (CheckBox) findViewById(R.id.select_investigator_three);
-        final CheckBox selectInvestigatorFour = (CheckBox) findViewById(R.id.select_investigator_four);
-        final CheckBox selectInvestigatorFive = (CheckBox) findViewById(R.id.select_investigator_five);
+        final LinearLayout selectInvestigator = findViewById(R.id.select_investigator);
+        final CheckBox selectInvestigatorOne = findViewById(R.id.select_investigator_one);
+        final CheckBox selectInvestigatorTwo = findViewById(R.id.select_investigator_two);
+        final CheckBox selectInvestigatorThree = findViewById(R.id.select_investigator_three);
+        final CheckBox selectInvestigatorFour = findViewById(R.id.select_investigator_four);
+        final CheckBox selectInvestigatorFive = findViewById(R.id.select_investigator_five);
         selectInvestigatorOne.setTypeface(arnopro);
         selectInvestigatorTwo.setTypeface(arnopro);
         selectInvestigatorThree.setTypeface(arnopro);
         selectInvestigatorFour.setTypeface(arnopro);
         selectInvestigatorFive.setTypeface(arnopro);
-        LinearLayout additionalGroup = (LinearLayout) findViewById(R.id.additional_group);
-        CheckBox additionalGroupOne = (CheckBox) findViewById(R.id.additional_group_one);
-        CheckBox additionalGroupTwo = (CheckBox) findViewById(R.id.additional_group_two);
-        CheckBox additionalGroupThree = (CheckBox) findViewById(R.id.additional_group_three);
-        CheckBox additionalGroupFour = (CheckBox) findViewById(R.id.additional_group_four);
-        CheckBox additionalGroupFive = (CheckBox) findViewById(R.id.additional_group_five);
-        CheckBox additionalGroupSix = (CheckBox) findViewById(R.id.additional_group_six);
-        CheckBox additionalGroupSeven = (CheckBox) findViewById(R.id.additional_group_seven);
+        LinearLayout additionalGroup = findViewById(R.id.additional_group);
+        CheckBox additionalGroupOne = findViewById(R.id.additional_group_one);
+        CheckBox additionalGroupTwo = findViewById(R.id.additional_group_two);
+        CheckBox additionalGroupThree = findViewById(R.id.additional_group_three);
+        CheckBox additionalGroupFour = findViewById(R.id.additional_group_four);
+        CheckBox additionalGroupFive = findViewById(R.id.additional_group_five);
+        CheckBox additionalGroupSix = findViewById(R.id.additional_group_six);
+        CheckBox additionalGroupSeven = findViewById(R.id.additional_group_seven);
         additionalGroupOne.setTypeface(arnopro);
         additionalGroupTwo.setTypeface(arnopro);
         additionalGroupThree.setTypeface(arnopro);
@@ -367,27 +367,27 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         additionalGroupSeven.setTypeface(arnopro);
 
         // Setup additional counters
-        LinearLayout investigatorCounters = (LinearLayout) findViewById(R.id.investigator_counters);
-        LinearLayout counterOne = (LinearLayout) findViewById(R.id.investigator_counter_one);
-        LinearLayout counterTwo = (LinearLayout) findViewById(R.id.investigator_counter_two);
-        LinearLayout counterThree = (LinearLayout) findViewById(R.id.investigator_counter_three);
-        LinearLayout counterFour = (LinearLayout) findViewById(R.id.investigator_counter_four);
-        TextView counterOneName = (TextView) findViewById(R.id.investigator_counter_one_name);
-        TextView counterTwoName = (TextView) findViewById(R.id.investigator_counter_two_name);
-        TextView counterThreeName = (TextView) findViewById(R.id.investigator_counter_three_name);
-        TextView counterFourName = (TextView) findViewById(R.id.investigator_counter_four_name);
-        ImageView counterOneDecrement = (ImageView) findViewById(R.id.investigator_counter_one_decrement);
-        ImageView counterTwoDecrement = (ImageView) findViewById(R.id.investigator_counter_two_decrement);
-        ImageView counterThreeDecrement = (ImageView) findViewById(R.id.investigator_counter_three_decrement);
-        ImageView counterFourDecrement = (ImageView) findViewById(R.id.investigator_counter_four_decrement);
-        final TextView counterOneAmount = (TextView) findViewById(R.id.investigator_counter_one_amount);
-        final TextView counterTwoAmount = (TextView) findViewById(R.id.investigator_counter_two_amount);
-        final TextView counterThreeAmount = (TextView) findViewById(R.id.investigator_counter_three_amount);
-        final TextView counterFourAmount = (TextView) findViewById(R.id.investigator_counter_four_amount);
-        ImageView counterOneIncrement = (ImageView) findViewById(R.id.investigator_counter_one_increment);
-        ImageView counterTwoIncrement = (ImageView) findViewById(R.id.investigator_counter_two_increment);
-        ImageView counterThreeIncrement = (ImageView) findViewById(R.id.investigator_counter_three_increment);
-        ImageView counterFourIncrement = (ImageView) findViewById(R.id.investigator_counter_four_increment);
+        LinearLayout investigatorCounters = findViewById(R.id.investigator_counters);
+        LinearLayout counterOne = findViewById(R.id.investigator_counter_one);
+        LinearLayout counterTwo = findViewById(R.id.investigator_counter_two);
+        LinearLayout counterThree = findViewById(R.id.investigator_counter_three);
+        LinearLayout counterFour = findViewById(R.id.investigator_counter_four);
+        TextView counterOneName = findViewById(R.id.investigator_counter_one_name);
+        TextView counterTwoName = findViewById(R.id.investigator_counter_two_name);
+        TextView counterThreeName = findViewById(R.id.investigator_counter_three_name);
+        TextView counterFourName = findViewById(R.id.investigator_counter_four_name);
+        ImageView counterOneDecrement = findViewById(R.id.investigator_counter_one_decrement);
+        ImageView counterTwoDecrement = findViewById(R.id.investigator_counter_two_decrement);
+        ImageView counterThreeDecrement = findViewById(R.id.investigator_counter_three_decrement);
+        ImageView counterFourDecrement = findViewById(R.id.investigator_counter_four_decrement);
+        final TextView counterOneAmount = findViewById(R.id.investigator_counter_one_amount);
+        final TextView counterTwoAmount = findViewById(R.id.investigator_counter_two_amount);
+        final TextView counterThreeAmount = findViewById(R.id.investigator_counter_three_amount);
+        final TextView counterFourAmount = findViewById(R.id.investigator_counter_four_amount);
+        ImageView counterOneIncrement = findViewById(R.id.investigator_counter_one_increment);
+        ImageView counterTwoIncrement = findViewById(R.id.investigator_counter_two_increment);
+        ImageView counterThreeIncrement = findViewById(R.id.investigator_counter_three_increment);
+        ImageView counterFourIncrement = findViewById(R.id.investigator_counter_four_increment);
         counterOneName.setTypeface(arnoprobold);
         counterTwoName.setTypeface(arnoprobold);
         counterThreeName.setTypeface(arnoprobold);
@@ -932,7 +932,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             }
         }
 
-        Button playerCardsButton = (Button) findViewById(R.id.player_cards_button);
+        Button playerCardsButton = findViewById(R.id.player_cards_button);
         playerCardsButton.setTypeface(teutonic);
         playerCardsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -942,7 +942,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             }
         });
 
-        Button weaknessButton = (Button) findViewById(R.id.investigator_weakness_button);
+        Button weaknessButton = findViewById(R.id.investigator_weakness_button);
         weaknessButton.setTypeface(teutonic);
         boolean weakness = false;
         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
@@ -959,7 +959,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         if (weakness) {
             weaknessButton.setVisibility(VISIBLE);
         } else {
-            LinearLayout buttonBar = (LinearLayout) findViewById(R.id.button_bar);
+            LinearLayout buttonBar = findViewById(R.id.button_bar);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, (int)
                     getResources().getDimension(R.dimen.button_height));
             buttonBar.setLayoutParams(params);
@@ -972,7 +972,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             }
         });
 
-        Button logButton = (Button) findViewById(R.id.campaign_log_button);
+        Button logButton = findViewById(R.id.campaign_log_button);
         logButton.setTypeface(teutonic);
         logButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -982,7 +982,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             }
         });
 
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -991,7 +991,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             }
         });
 
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1060,7 +1060,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             defeatedTwo.setVisibility(GONE);
             defeatedThree.setVisibility(GONE);
             defeatedFour.setVisibility(GONE);
-            LinearLayout buttonBar = (LinearLayout) findViewById(R.id.button_bar);
+            LinearLayout buttonBar = findViewById(R.id.button_bar);
             buttonBar.setVisibility(GONE);
             logButton.setVisibility(GONE);
             continueButton.setOnClickListener(new View.OnClickListener() {
@@ -1135,12 +1135,12 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             }
 
             // Clear and reset the select resolution checkbox to refresh the resolution text
-            RadioGroup selectResolution = (RadioGroup) findViewById(R.id.select_resolution);
-            RadioButton noResolution = (RadioButton) findViewById(R.id.no_resolution);
-            RadioButton resolutionOne = (RadioButton) findViewById(R.id.resolution_one);
-            RadioButton resolutionTwo = (RadioButton) findViewById(R.id.resolution_two);
-            RadioButton resolutionThree = (RadioButton) findViewById(R.id.resolution_three);
-            RadioButton resolutionFour = (RadioButton) findViewById(R.id.resolution_four);
+            RadioGroup selectResolution = findViewById(R.id.select_resolution);
+            RadioButton noResolution = findViewById(R.id.no_resolution);
+            RadioButton resolutionOne = findViewById(R.id.resolution_one);
+            RadioButton resolutionTwo = findViewById(R.id.resolution_two);
+            RadioButton resolutionThree = findViewById(R.id.resolution_three);
+            RadioButton resolutionFour = findViewById(R.id.resolution_four);
             if (globalVariables.ScenarioResolution != -1) {
                 selectResolution.clearCheck();
                 switch (globalVariables.ScenarioResolution) {
@@ -1223,16 +1223,16 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         @Override
         public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
             LinearLayout parent = (LinearLayout) radioGroup.getParent();
-            final TextView resolutionTextView = (TextView) parent.findViewById(R.id.resolution_text);
+            final TextView resolutionTextView = parent.findViewById(R.id.resolution_text);
             resolutionTextView.setVisibility(VISIBLE);
-            final CheckBox additional = (CheckBox) findViewById(R.id.additional_checkbox_one);
-            final CheckBox additionalTwo = (CheckBox) findViewById(R.id.additional_checkbox_two);
-            final TextView selectInvestigatorHeading = (TextView) findViewById(R.id.select_investigator_heading);
-            final LinearLayout selectInvestigator = (LinearLayout) findViewById(R.id.select_investigator);
-            final CheckBox selectInvestigatorOne = (CheckBox) findViewById(R.id.select_investigator_one);
-            final CheckBox selectInvestigatorTwo = (CheckBox) findViewById(R.id.select_investigator_two);
-            final CheckBox selectInvestigatorThree = (CheckBox) findViewById(R.id.select_investigator_three);
-            final CheckBox selectInvestigatorFour = (CheckBox) findViewById(R.id.select_investigator_four);
+            final CheckBox additional = findViewById(R.id.additional_checkbox_one);
+            final CheckBox additionalTwo = findViewById(R.id.additional_checkbox_two);
+            final TextView selectInvestigatorHeading = findViewById(R.id.select_investigator_heading);
+            final LinearLayout selectInvestigator = findViewById(R.id.select_investigator);
+            final CheckBox selectInvestigatorOne = findViewById(R.id.select_investigator_one);
+            final CheckBox selectInvestigatorTwo = findViewById(R.id.select_investigator_two);
+            final CheckBox selectInvestigatorThree = findViewById(R.id.select_investigator_three);
+            final CheckBox selectInvestigatorFour = findViewById(R.id.select_investigator_four);
 
             // Set resolution
             switch (i) {
@@ -1454,23 +1454,23 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     .ScenarioResolution == 2) && (globalVariables.Necronomicon == 2 ||
                                     globalVariables.HenryArmitage == 1 || globalVariables.FrancisMorgan == 1 ||
                                     globalVariables.WarrenRice == 1)) {
-                                TextView additionalHeading = (TextView) findViewById(R.id
+                                TextView additionalHeading = findViewById(R.id
                                         .additional_group_heading);
                                 additionalHeading.setVisibility(VISIBLE);
                                 additionalHeading.setText(R.string.kidnapped_cards);
-                                LinearLayout additionalGroup = (LinearLayout) findViewById(R.id
+                                LinearLayout additionalGroup = findViewById(R.id
                                         .additional_group);
                                 additionalGroup.setVisibility(VISIBLE);
-                                LinearLayout additionalGroupSetTwo = (LinearLayout) findViewById(R.id
+                                LinearLayout additionalGroupSetTwo = findViewById(R.id
                                         .additional_group_set_two);
                                 additionalGroupSetTwo.setVisibility(GONE);
-                                final CheckBox additionalGroupOne = (CheckBox) findViewById(R.id
+                                final CheckBox additionalGroupOne = findViewById(R.id
                                         .additional_group_one);
-                                final CheckBox additionalGroupTwo = (CheckBox) findViewById(R.id
+                                final CheckBox additionalGroupTwo = findViewById(R.id
                                         .additional_group_two);
-                                final CheckBox additionalGroupThree = (CheckBox) findViewById(R.id
+                                final CheckBox additionalGroupThree = findViewById(R.id
                                         .additional_group_three);
-                                final CheckBox additionalGroupSeven = (CheckBox) findViewById(R.id
+                                final CheckBox additionalGroupSeven = findViewById(R.id
                                         .additional_group_seven);
                                 additionalGroupSeven.setVisibility(VISIBLE);
                                 additionalGroupOne.setText(R.string.necronomicon_defeated);
@@ -1500,14 +1500,14 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                                 additionalGroupThree.isChecked() || additionalGroupSeven
                                                 .isChecked()) {
                                             String defeatedString = defeatedStringBuilder.toString();
-                                            TextView additionalResolution = (TextView) findViewById(R.id
+                                            TextView additionalResolution = findViewById(R.id
                                                     .resolution_text_additional);
                                             additionalResolution.setTypeface(additionalResolution.getTypeface(),
                                                     Typeface.BOLD);
                                             additionalResolution.setText(defeatedString.trim());
                                             additionalResolution.setVisibility(VISIBLE);
                                         } else {
-                                            TextView additionalResolution = (TextView) findViewById(R.id
+                                            TextView additionalResolution = findViewById(R.id
                                                     .resolution_text_additional);
                                             additionalResolution.setVisibility(GONE);
                                         }
@@ -1558,7 +1558,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     defeated = true;
                                 }
                             }
-                            TextView resolution = (TextView) findViewById(R.id.resolution_text_additional);
+                            TextView resolution = findViewById(R.id.resolution_text_additional);
                             if (defeated && globalVariables.Necronomicon == 2 && globalVariables
                                     .ScenarioResolution
                                     != 2) {
@@ -1766,10 +1766,10 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
             Typeface arnoprobold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
-            TextView title = (TextView) v.findViewById(R.id.current_scenario_name);
-            TextView confirm = (TextView) v.findViewById(R.id.confirm_finish_scenario);
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            TextView title = v.findViewById(R.id.current_scenario_name);
+            TextView confirm = v.findViewById(R.id.confirm_finish_scenario);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             title.setTypeface(teutonic);
             confirm.setTypeface(arnoprobold);
             cancelButton.setTypeface(teutonic);
@@ -1850,8 +1850,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             }
 
             // Set resolution number and victory display
-            TextView resolution = (TextView) v.findViewById(R.id.current_resolution);
-            TextView victory = (TextView) v.findViewById(R.id.current_victory_display);
+            TextView resolution = v.findViewById(R.id.current_resolution);
+            TextView victory = v.findViewById(R.id.current_victory_display);
             resolution.setTypeface(arnopro);
             victory.setTypeface(arnopro);
             switch (globalVariables.ScenarioResolution) {
@@ -1878,18 +1878,18 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             /*
                 Show the right views for the number of investigators and set the right font to the name
              */
-            LinearLayout investigatorOne = (LinearLayout) v.findViewById(R.id.investigator_one);
-            LinearLayout investigatorTwo = (LinearLayout) v.findViewById(R.id.investigator_two);
-            LinearLayout investigatorThree = (LinearLayout) v.findViewById(R.id.investigator_three);
-            LinearLayout investigatorFour = (LinearLayout) v.findViewById(R.id.investigator_four);
-            TextView investigatorOneName = (TextView) v.findViewById(R.id.investigator_one_name);
-            TextView investigatorTwoName = (TextView) v.findViewById(R.id.investigator_two_name);
-            TextView investigatorThreeName = (TextView) v.findViewById(R.id.investigator_three_name);
-            TextView investigatorFourName = (TextView) v.findViewById(R.id.investigator_four_name);
-            TextView investigatorOneStatus = (TextView) v.findViewById(R.id.investigator_one_status);
-            TextView investigatorTwoStatus = (TextView) v.findViewById(R.id.investigator_two_status);
-            TextView investigatorThreeStatus = (TextView) v.findViewById(R.id.investigator_three_status);
-            TextView investigatorFourStatus = (TextView) v.findViewById(R.id.investigator_four_status);
+            LinearLayout investigatorOne = v.findViewById(R.id.investigator_one);
+            LinearLayout investigatorTwo = v.findViewById(R.id.investigator_two);
+            LinearLayout investigatorThree = v.findViewById(R.id.investigator_three);
+            LinearLayout investigatorFour = v.findViewById(R.id.investigator_four);
+            TextView investigatorOneName = v.findViewById(R.id.investigator_one_name);
+            TextView investigatorTwoName = v.findViewById(R.id.investigator_two_name);
+            TextView investigatorThreeName = v.findViewById(R.id.investigator_three_name);
+            TextView investigatorFourName = v.findViewById(R.id.investigator_four_name);
+            TextView investigatorOneStatus = v.findViewById(R.id.investigator_one_status);
+            TextView investigatorTwoStatus = v.findViewById(R.id.investigator_two_status);
+            TextView investigatorThreeStatus = v.findViewById(R.id.investigator_three_status);
+            TextView investigatorFourStatus = v.findViewById(R.id.investigator_four_status);
             String[] investigatorNames = getResources().getStringArray(R.array.investigators);
             // For each investigator, set it visible or not, apply the right name to it, set the right typeface and
             // set a listener to the link
@@ -2079,24 +2079,24 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
      */
     private static void scenarioResolutions(Activity activity) {
         // Get all the relevant checkboxes and views
-        CheckBox additionalCheckbox = (CheckBox) activity.findViewById(R.id.additional_checkbox_one);
-        CheckBox additionalCheckboxTwo = (CheckBox) activity.findViewById(R.id.additional_checkbox_two);
-        CheckBox investigatorOne = (CheckBox) activity.findViewById(R.id.select_investigator_one);
-        CheckBox investigatorTwo = (CheckBox) activity.findViewById(R.id.select_investigator_two);
-        CheckBox investigatorThree = (CheckBox) activity.findViewById(R.id.select_investigator_three);
-        CheckBox investigatorFour = (CheckBox) activity.findViewById(R.id.select_investigator_four);
-        CheckBox investigatorFive = (CheckBox) activity.findViewById(R.id.select_investigator_five);
-        CheckBox additionalOne = (CheckBox) activity.findViewById(R.id.additional_group_one);
-        CheckBox additionalTwo = (CheckBox) activity.findViewById(R.id.additional_group_two);
-        CheckBox additionalThree = (CheckBox) activity.findViewById(R.id.additional_group_three);
-        CheckBox additionalFour = (CheckBox) activity.findViewById(R.id.additional_group_four);
-        CheckBox additionalFive = (CheckBox) activity.findViewById(R.id.additional_group_five);
-        CheckBox additionalSix = (CheckBox) activity.findViewById(R.id.additional_group_six);
-        CheckBox additionalSeven = (CheckBox) activity.findViewById(R.id.additional_group_seven);
-        TextView counterOne = (TextView) activity.findViewById(R.id.investigator_counter_one_amount);
-        TextView counterTwo = (TextView) activity.findViewById(R.id.investigator_counter_two_amount);
-        TextView counterThree = (TextView) activity.findViewById(R.id.investigator_counter_three_amount);
-        TextView counterFour = (TextView) activity.findViewById(R.id.investigator_counter_four_amount);
+        CheckBox additionalCheckbox = activity.findViewById(R.id.additional_checkbox_one);
+        CheckBox additionalCheckboxTwo = activity.findViewById(R.id.additional_checkbox_two);
+        CheckBox investigatorOne = activity.findViewById(R.id.select_investigator_one);
+        CheckBox investigatorTwo = activity.findViewById(R.id.select_investigator_two);
+        CheckBox investigatorThree = activity.findViewById(R.id.select_investigator_three);
+        CheckBox investigatorFour = activity.findViewById(R.id.select_investigator_four);
+        CheckBox investigatorFive = activity.findViewById(R.id.select_investigator_five);
+        CheckBox additionalOne = activity.findViewById(R.id.additional_group_one);
+        CheckBox additionalTwo = activity.findViewById(R.id.additional_group_two);
+        CheckBox additionalThree = activity.findViewById(R.id.additional_group_three);
+        CheckBox additionalFour = activity.findViewById(R.id.additional_group_four);
+        CheckBox additionalFive = activity.findViewById(R.id.additional_group_five);
+        CheckBox additionalSix = activity.findViewById(R.id.additional_group_six);
+        CheckBox additionalSeven = activity.findViewById(R.id.additional_group_seven);
+        TextView counterOne = activity.findViewById(R.id.investigator_counter_one_amount);
+        TextView counterTwo = activity.findViewById(R.id.investigator_counter_two_amount);
+        TextView counterThree = activity.findViewById(R.id.investigator_counter_three_amount);
+        TextView counterFour = activity.findViewById(R.id.investigator_counter_four_amount);
 
         // Apply resolutions
         switch (globalVariables.CurrentCampaign) {
@@ -3075,15 +3075,15 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             View v = View.inflate(getActivity(), R.layout.c_dialog_player_cards, null);
 
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
-            final CheckBox solution = (CheckBox) v.findViewById(R.id.strange_solution);
-            final CheckBox glyphs = (CheckBox) v.findViewById(R.id.archaic_glyphs);
+            final CheckBox solution = v.findViewById(R.id.strange_solution);
+            final CheckBox glyphs = v.findViewById(R.id.archaic_glyphs);
             solution.setTypeface(arnopro);
             glyphs.setTypeface(arnopro);
 
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            TextView title = (TextView) v.findViewById(R.id.player_cards);
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            TextView title = v.findViewById(R.id.player_cards);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             title.setTypeface(teutonic);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);
@@ -3133,19 +3133,19 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             View v = View.inflate(getActivity(), R.layout.c_dialog_weaknesses, null);
 
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
-            final CheckBox investigatorOne = (CheckBox) v.findViewById(R.id.investigator_one_weakness);
-            final CheckBox investigatorTwo = (CheckBox) v.findViewById(R.id.investigator_two_weakness);
-            final CheckBox investigatorThree = (CheckBox) v.findViewById(R.id.investigator_three_weakness);
-            final CheckBox investigatorFour = (CheckBox) v.findViewById(R.id.investigator_four_weakness);
+            final CheckBox investigatorOne = v.findViewById(R.id.investigator_one_weakness);
+            final CheckBox investigatorTwo = v.findViewById(R.id.investigator_two_weakness);
+            final CheckBox investigatorThree = v.findViewById(R.id.investigator_three_weakness);
+            final CheckBox investigatorFour = v.findViewById(R.id.investigator_four_weakness);
             investigatorOne.setTypeface(arnopro);
             investigatorTwo.setTypeface(arnopro);
             investigatorThree.setTypeface(arnopro);
             investigatorFour.setTypeface(arnopro);
 
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            TextView title = (TextView) v.findViewById(R.id.investigator_weaknesses);
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            TextView title = v.findViewById(R.id.investigator_weaknesses);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             title.setTypeface(teutonic);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);

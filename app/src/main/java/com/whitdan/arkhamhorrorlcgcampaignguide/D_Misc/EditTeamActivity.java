@@ -74,15 +74,15 @@ public class EditTeamActivity extends AppCompatActivity {
         // Set fonts
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
-        TextView saved = (TextView) findViewById(R.id.saved_investigators);
-        TextView select = (TextView) findViewById(R.id.select_investigators);
-        TextView current = (TextView) findViewById(R.id.current_team);
+        TextView saved = findViewById(R.id.saved_investigators);
+        TextView select = findViewById(R.id.select_investigators);
+        TextView current = findViewById(R.id.current_team);
         saved.setTypeface(teutonic);
         select.setTypeface(teutonic);
         current.setTypeface(teutonic);
 
         // Set title
-        TextView title = (TextView) findViewById(R.id.current_scenario_name);
+        TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
         switch (globalVariables.CurrentCampaign) {
             case 1:
@@ -150,7 +150,7 @@ public class EditTeamActivity extends AppCompatActivity {
         }
 
         // Setup checkboxes for saved investigators
-        LinearLayout savedInvestigators = (LinearLayout) findViewById(R.id.saved_investigators_layout);
+        LinearLayout savedInvestigators = findViewById(R.id.saved_investigators_layout);
         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
             // Check that the investigator isn't dead
             if (globalVariables.Investigators.get(i).Status == 1) {
@@ -207,9 +207,9 @@ public class EditTeamActivity extends AppCompatActivity {
         }
 
         // Set fonts to the unused investigator checkboxes
-        LinearLayout coreCheckboxes = (LinearLayout) findViewById(R.id.core_investigators);
-        LinearLayout dunwichCheckboxes = (LinearLayout) findViewById(R.id.dunwich_investigators);
-        LinearLayout carcosaCheckboxes = (LinearLayout) findViewById(R.id.carcosa_investigators);
+        LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
+        LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
+        LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
         for (int i = 0; i < coreCheckboxes.getChildCount(); i++) {
             View view = coreCheckboxes.getChildAt(i);
             if (view instanceof CheckBox) {
@@ -247,35 +247,35 @@ public class EditTeamActivity extends AppCompatActivity {
 
         // Setup CheckBoxes with OnCheckedChangeListeners, as long as the investigator is not in use
         if (globalVariables.InvestigatorsInUse[Investigator.ROLAND_BANKS] == 0) {
-            CheckBox roland = (CheckBox) findViewById(R.id.roland_banks);
+            CheckBox roland = findViewById(R.id.roland_banks);
             roland.setVisibility(VISIBLE);
             roland.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
         } else {
             core++;
         }
         if (globalVariables.InvestigatorsInUse[Investigator.SKIDS_OTOOLE] == 0) {
-            CheckBox skids = (CheckBox) findViewById(R.id.skids_otoole);
+            CheckBox skids = findViewById(R.id.skids_otoole);
             skids.setVisibility(VISIBLE);
             skids.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
         } else {
             core++;
         }
         if (globalVariables.InvestigatorsInUse[Investigator.AGNES_BAKER] == 0) {
-            CheckBox agnes = (CheckBox) findViewById(R.id.agnes_baker);
+            CheckBox agnes = findViewById(R.id.agnes_baker);
             agnes.setVisibility(VISIBLE);
             agnes.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
         } else {
             core++;
         }
         if (globalVariables.InvestigatorsInUse[Investigator.DAISY_WALKER] == 0) {
-            CheckBox daisy = (CheckBox) findViewById(R.id.daisy_walker);
+            CheckBox daisy = findViewById(R.id.daisy_walker);
             daisy.setVisibility(VISIBLE);
             daisy.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
         } else {
             core++;
         }
         if (globalVariables.InvestigatorsInUse[Investigator.WENDY_ADAMS] == 0) {
-            CheckBox wendy = (CheckBox) findViewById(R.id.wendy_adams);
+            CheckBox wendy = findViewById(R.id.wendy_adams);
             wendy.setVisibility(VISIBLE);
             wendy.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
         } else {
@@ -289,35 +289,35 @@ public class EditTeamActivity extends AppCompatActivity {
         // Setup checkboxes for Dunwich investigators
         if (dunwichOwned) {
             if (globalVariables.InvestigatorsInUse[Investigator.ZOEY_SAMARAS] == 0) {
-                CheckBox zoey = (CheckBox) findViewById(R.id.zoey_samaras);
+                CheckBox zoey = findViewById(R.id.zoey_samaras);
                 zoey.setVisibility(VISIBLE);
                 zoey.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 dunwich++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.REX_MURPHY] == 0) {
-                CheckBox rex = (CheckBox) findViewById(R.id.rex_murphy);
+                CheckBox rex = findViewById(R.id.rex_murphy);
                 rex.setVisibility(VISIBLE);
                 rex.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 dunwich++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.JENNY_BARNES] == 0) {
-                CheckBox jenny = (CheckBox) findViewById(R.id.jenny_barnes);
+                CheckBox jenny = findViewById(R.id.jenny_barnes);
                 jenny.setVisibility(VISIBLE);
                 jenny.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 dunwich++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.JIM_CULVER] == 0) {
-                CheckBox jim = (CheckBox) findViewById(R.id.jim_culver);
+                CheckBox jim = findViewById(R.id.jim_culver);
                 jim.setVisibility(VISIBLE);
                 jim.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 dunwich++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.ASHCAN_PETE] == 0) {
-                CheckBox pete = (CheckBox) findViewById(R.id.ashcan_pete);
+                CheckBox pete = findViewById(R.id.ashcan_pete);
                 pete.setVisibility(VISIBLE);
                 pete.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
@@ -332,42 +332,42 @@ public class EditTeamActivity extends AppCompatActivity {
         // Setup checkboxes for Carcosa investigators
         if (carcosaOwned) {
             if (globalVariables.InvestigatorsInUse[Investigator.MARK_HARRIGAN] == 0) {
-                CheckBox mark = (CheckBox) findViewById(R.id.mark_harrigan);
+                CheckBox mark = findViewById(R.id.mark_harrigan);
                 mark.setVisibility(VISIBLE);
                 mark.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 carcosa++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.MINH_THI_PHAN] == 0) {
-                CheckBox minh = (CheckBox) findViewById(R.id.minh_thi_phan);
+                CheckBox minh = findViewById(R.id.minh_thi_phan);
                 minh.setVisibility(VISIBLE);
                 minh.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 carcosa++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.SEFINA_ROUSSEAU] == 0) {
-                CheckBox sefina = (CheckBox) findViewById(R.id.sefina_rousseau);
+                CheckBox sefina = findViewById(R.id.sefina_rousseau);
                 sefina.setVisibility(VISIBLE);
                 sefina.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 carcosa++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.AKACHI_ONYELE] == 0) {
-                CheckBox akachi = (CheckBox) findViewById(R.id.akachi_onyele);
+                CheckBox akachi = findViewById(R.id.akachi_onyele);
                 akachi.setVisibility(VISIBLE);
                 akachi.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 carcosa++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.WILLIAM_YORICK] == 0) {
-                CheckBox william = (CheckBox) findViewById(R.id.william_yorick);
+                CheckBox william = findViewById(R.id.william_yorick);
                 william.setVisibility(VISIBLE);
                 william.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
                 carcosa++;
             }
             if (globalVariables.InvestigatorsInUse[Investigator.LOLA_HAYES] == 0) {
-                CheckBox lola = (CheckBox) findViewById(R.id.lola_hayes);
+                CheckBox lola = findViewById(R.id.lola_hayes);
                 lola.setVisibility(VISIBLE);
                 lola.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
             } else {
@@ -380,7 +380,7 @@ public class EditTeamActivity extends AppCompatActivity {
         }
 
         // Back button
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -390,7 +390,7 @@ public class EditTeamActivity extends AppCompatActivity {
         });
 
         // Continue button
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         continueButton.setOnClickListener(new SaveChangesListener());
     }
@@ -782,18 +782,18 @@ public class EditTeamActivity extends AppCompatActivity {
             }
 
             // Get the relevant views
-            LinearLayout investigatorOneLayout = (LinearLayout) parent.findViewById(R.id.investigator_one);
-            LinearLayout investigatorTwoLayout = (LinearLayout) parent.findViewById(R.id.investigator_two);
-            LinearLayout investigatorThreeLayout = (LinearLayout) parent.findViewById(R.id.investigator_three);
-            LinearLayout investigatorFourLayout = (LinearLayout) parent.findViewById(R.id.investigator_four);
-            TextView investigatorOneName = (TextView) parent.findViewById(R.id.investigator_one_name);
-            TextView investigatorTwoName = (TextView) parent.findViewById(R.id.investigator_two_name);
-            TextView investigatorThreeName = (TextView) parent.findViewById(R.id.investigator_three_name);
-            TextView investigatorFourName = (TextView) parent.findViewById(R.id.investigator_four_name);
-            TextView investigatorOneLink = (TextView) parent.findViewById(R.id.investigator_one_link);
-            TextView investigatorTwoLink = (TextView) parent.findViewById(R.id.investigator_two_link);
-            TextView investigatorThreeLink = (TextView) parent.findViewById(R.id.investigator_three_link);
-            TextView investigatorFourLink = (TextView) parent.findViewById(R.id.investigator_four_link);
+            LinearLayout investigatorOneLayout = parent.findViewById(R.id.investigator_one);
+            LinearLayout investigatorTwoLayout = parent.findViewById(R.id.investigator_two);
+            LinearLayout investigatorThreeLayout = parent.findViewById(R.id.investigator_three);
+            LinearLayout investigatorFourLayout = parent.findViewById(R.id.investigator_four);
+            TextView investigatorOneName = parent.findViewById(R.id.investigator_one_name);
+            TextView investigatorTwoName = parent.findViewById(R.id.investigator_two_name);
+            TextView investigatorThreeName = parent.findViewById(R.id.investigator_three_name);
+            TextView investigatorFourName = parent.findViewById(R.id.investigator_four_name);
+            TextView investigatorOneLink = parent.findViewById(R.id.investigator_one_link);
+            TextView investigatorTwoLink = parent.findViewById(R.id.investigator_two_link);
+            TextView investigatorThreeLink = parent.findViewById(R.id.investigator_three_link);
+            TextView investigatorFourLink = parent.findViewById(R.id.investigator_four_link);
             String[] investigatorNames = getResources().getStringArray(R.array.investigators);
 
             // Set fonts
@@ -979,20 +979,20 @@ public class EditTeamActivity extends AppCompatActivity {
             String name = investigatorNames[globalVariables.InvestigatorNames.get(investigator)];
 
             // Get the relevant views and set fonts
-            TextView nameText = (TextView) v.findViewById(R.id.investigator_name);
+            TextView nameText = v.findViewById(R.id.investigator_name);
             nameText.setText(name);
             Typeface arnoprobold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
             nameText.setTypeface(arnoprobold);
             Typeface wolgast = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wolgast.otf");
-            final EditText playerName = (EditText) v.findViewById(R.id.edit_player_name);
-            final EditText playerDeck = (EditText) v.findViewById(R.id.edit_player_deck);
-            final EditText playerLink = (EditText) v.findViewById(R.id.edit_player_link);
+            final EditText playerName = v.findViewById(R.id.edit_player_name);
+            final EditText playerDeck = v.findViewById(R.id.edit_player_deck);
+            final EditText playerLink = v.findViewById(R.id.edit_player_link);
             playerName.setTypeface(wolgast);
             playerDeck.setTypeface(wolgast);
             playerLink.setTypeface(wolgast);
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);
 
@@ -1127,20 +1127,20 @@ public class EditTeamActivity extends AppCompatActivity {
                     }
 
                     // Sets the player's name to the relevant textview in the core activity
-                    TextView investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_one_link);
+                    TextView investigatorLink = getActivity().findViewById(R.id.investigator_one_link);
                     String investigatorName = " ";
                     switch (investigator) {
                         case 0:
-                            investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_one_link);
+                            investigatorLink = getActivity().findViewById(R.id.investigator_one_link);
                             break;
                         case 1:
-                            investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_two_link);
+                            investigatorLink = getActivity().findViewById(R.id.investigator_two_link);
                             break;
                         case 2:
-                            investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_three_link);
+                            investigatorLink = getActivity().findViewById(R.id.investigator_three_link);
                             break;
                         case 3:
-                            investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_four_link);
+                            investigatorLink = getActivity().findViewById(R.id.investigator_four_link);
                             break;
                     }
                     if (globalVariables.PlayerNames[investigator] != null) {

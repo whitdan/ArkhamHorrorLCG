@@ -75,7 +75,7 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         globalVariables.DeckLists = new String[4];
 
         // Set campaign title
-        TextView title = (TextView) findViewById(R.id.campaign_name);
+        TextView title = findViewById(R.id.campaign_name);
         switch (globalVariables.CurrentCampaign) {
             case 1:
                 title.setText(R.string.night_campaign);
@@ -93,17 +93,17 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         Typeface wolgast = Typeface.createFromAsset(getAssets(), "fonts/wolgast.otf");
         title.setTypeface(teutonic);
-        TextView select = (TextView) findViewById(R.id.select_investigators);
+        TextView select = findViewById(R.id.select_investigators);
         select.setTypeface(teutonic);
-        TextView current = (TextView) findViewById(R.id.current_team);
+        TextView current = findViewById(R.id.current_team);
         current.setTypeface(teutonic);
 
         /*
             Setup checkboxes
           */
-        LinearLayout coreCheckboxes = (LinearLayout) findViewById(R.id.core_investigators);
-        LinearLayout dunwichCheckboxes = (LinearLayout) findViewById(R.id.dunwich_investigators);
-        LinearLayout carcosaCheckboxes = (LinearLayout) findViewById(R.id.carcosa_investigators);
+        LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
+        LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
+        LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
         // Hide investigators if expansion isn't owned
         String sharedPrefs = getResources().getString(R.string.expansions_owned);
         String dunwichOwnedString = getResources().getString(R.string.dunwich_campaign);
@@ -144,12 +144,12 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         }
 
         // Setup edit text
-        final EditText campaignName = (EditText) findViewById(R.id.edit_name);
+        final EditText campaignName = findViewById(R.id.edit_name);
         campaignName.setTypeface(wolgast);
         setupUI(findViewById(R.id.parent_layout), this);
 
         // Chaos bag setup button
-        Button chaosBag = (Button) findViewById(R.id.chaos_bag_button);
+        Button chaosBag = findViewById(R.id.chaos_bag_button);
         chaosBag.setTypeface(teutonic);
         chaosBag.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,7 +160,7 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         });
 
         // Back button
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -170,7 +170,7 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         });
 
         // Continue button
-        Button continueButton = (Button) findViewById(R.id.continue_button);
+        Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -483,18 +483,18 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             /*
                 Show the right views for the number of investigators and set the right font to the name
              */
-            LinearLayout investigatorOne = (LinearLayout) parent.findViewById(R.id.investigator_one);
-            LinearLayout investigatorTwo = (LinearLayout) parent.findViewById(R.id.investigator_two);
-            LinearLayout investigatorThree = (LinearLayout) parent.findViewById(R.id.investigator_three);
-            LinearLayout investigatorFour = (LinearLayout) parent.findViewById(R.id.investigator_four);
-            TextView investigatorOneName = (TextView) parent.findViewById(R.id.investigator_one_name);
-            TextView investigatorTwoName = (TextView) parent.findViewById(R.id.investigator_two_name);
-            TextView investigatorThreeName = (TextView) parent.findViewById(R.id.investigator_three_name);
-            TextView investigatorFourName = (TextView) parent.findViewById(R.id.investigator_four_name);
-            TextView investigatorOneLink = (TextView) findViewById(R.id.investigator_one_link);
-            TextView investigatorTwoLink = (TextView) findViewById(R.id.investigator_two_link);
-            TextView investigatorThreeLink = (TextView) findViewById(R.id.investigator_three_link);
-            TextView investigatorFourLink = (TextView) findViewById(R.id.investigator_four_link);
+            LinearLayout investigatorOne = parent.findViewById(R.id.investigator_one);
+            LinearLayout investigatorTwo = parent.findViewById(R.id.investigator_two);
+            LinearLayout investigatorThree = parent.findViewById(R.id.investigator_three);
+            LinearLayout investigatorFour = parent.findViewById(R.id.investigator_four);
+            TextView investigatorOneName = parent.findViewById(R.id.investigator_one_name);
+            TextView investigatorTwoName = parent.findViewById(R.id.investigator_two_name);
+            TextView investigatorThreeName = parent.findViewById(R.id.investigator_three_name);
+            TextView investigatorFourName = parent.findViewById(R.id.investigator_four_name);
+            TextView investigatorOneLink = findViewById(R.id.investigator_one_link);
+            TextView investigatorTwoLink = findViewById(R.id.investigator_two_link);
+            TextView investigatorThreeLink = findViewById(R.id.investigator_three_link);
+            TextView investigatorFourLink = findViewById(R.id.investigator_four_link);
             String[] investigatorNames = getResources().getStringArray(R.array.investigators);
             Typeface arnoprobold = Typeface.createFromAsset(getAssets(), "fonts/arnoprobold.otf");
             Typeface wolgast = Typeface.createFromAsset(getAssets(), "fonts/wolgast.otf");
@@ -665,14 +665,14 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             String name = investigatorNames[globalVariables.InvestigatorNames.get(investigator)];
 
             // Get the relevant views and set fonts
-            TextView nameText = (TextView) v.findViewById(R.id.investigator_name);
+            TextView nameText = v.findViewById(R.id.investigator_name);
             nameText.setText(name);
             Typeface arnoprobold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
             nameText.setTypeface(arnoprobold);
             Typeface wolgast = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wolgast.otf");
-            final EditText playerName = (EditText) v.findViewById(R.id.edit_player_name);
-            final EditText playerDeck = (EditText) v.findViewById(R.id.edit_player_deck);
-            final EditText playerLink = (EditText) v.findViewById(R.id.edit_player_link);
+            final EditText playerName = v.findViewById(R.id.edit_player_name);
+            final EditText playerDeck = v.findViewById(R.id.edit_player_deck);
+            final EditText playerLink = v.findViewById(R.id.edit_player_link);
             playerName.setTypeface(wolgast);
             playerDeck.setTypeface(wolgast);
             playerLink.setTypeface(wolgast);
@@ -680,8 +680,8 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             playerDeck.setText(globalVariables.DeckNames[investigator]);
             playerLink.setText(globalVariables.DeckLists[investigator]);
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);
 
@@ -694,19 +694,19 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                     globalVariables.DeckLists[investigator] = playerLink.getText().toString().trim();
 
                     // Sets the player's name to the relevant textview in the core activity
-                    TextView investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_one_link);
+                    TextView investigatorLink = getActivity().findViewById(R.id.investigator_one_link);
                     switch (investigator) {
                         case 0:
-                            investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_one_link);
+                            investigatorLink = getActivity().findViewById(R.id.investigator_one_link);
                             break;
                         case 1:
-                            investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_two_link);
+                            investigatorLink = getActivity().findViewById(R.id.investigator_two_link);
                             break;
                         case 2:
-                            investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_three_link);
+                            investigatorLink = getActivity().findViewById(R.id.investigator_three_link);
                             break;
                         case 3:
-                            investigatorLink = (TextView) getActivity().findViewById(R.id.investigator_four_link);
+                            investigatorLink = getActivity().findViewById(R.id.investigator_four_link);
                             break;
                     }
                     if (globalVariables.PlayerNames[investigator].length() > 0) {
@@ -750,33 +750,33 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
             Typeface wolgast = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wolgast.otf");
-            Button cancelButton = (Button) v.findViewById(R.id.cancel_button);
-            Button okayButton = (Button) v.findViewById(R.id.okay_button);
-            TextView confirm = (TextView) v.findViewById(R.id.confirm_start_campaign);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
+            TextView confirm = v.findViewById(R.id.confirm_start_campaign);
             cancelButton.setTypeface(teutonic);
             okayButton.setTypeface(teutonic);
             confirm.setTypeface(arnoprobold);
 
             // Set campaign title
-            TextView campaignName = (TextView) v.findViewById(R.id.campaign_name);
+            TextView campaignName = v.findViewById(R.id.campaign_name);
             campaignName.setTypeface(wolgast);
             campaignName.setText(campaign);
 
             /*
                 Show the right views for the number of investigators and set the right font to the name
              */
-            LinearLayout investigatorOne = (LinearLayout) v.findViewById(R.id.investigator_one);
-            LinearLayout investigatorTwo = (LinearLayout) v.findViewById(R.id.investigator_two);
-            LinearLayout investigatorThree = (LinearLayout) v.findViewById(R.id.investigator_three);
-            LinearLayout investigatorFour = (LinearLayout) v.findViewById(R.id.investigator_four);
-            TextView investigatorOneName = (TextView) v.findViewById(R.id.investigator_one_name);
-            TextView investigatorTwoName = (TextView) v.findViewById(R.id.investigator_two_name);
-            TextView investigatorThreeName = (TextView) v.findViewById(R.id.investigator_three_name);
-            TextView investigatorFourName = (TextView) v.findViewById(R.id.investigator_four_name);
-            TextView investigatorOneLink = (TextView) v.findViewById(R.id.investigator_one_player);
-            TextView investigatorTwoLink = (TextView) v.findViewById(R.id.investigator_two_player);
-            TextView investigatorThreeLink = (TextView) v.findViewById(R.id.investigator_three_player);
-            TextView investigatorFourLink = (TextView) v.findViewById(R.id.investigator_four_player);
+            LinearLayout investigatorOne = v.findViewById(R.id.investigator_one);
+            LinearLayout investigatorTwo = v.findViewById(R.id.investigator_two);
+            LinearLayout investigatorThree = v.findViewById(R.id.investigator_three);
+            LinearLayout investigatorFour = v.findViewById(R.id.investigator_four);
+            TextView investigatorOneName = v.findViewById(R.id.investigator_one_name);
+            TextView investigatorTwoName = v.findViewById(R.id.investigator_two_name);
+            TextView investigatorThreeName = v.findViewById(R.id.investigator_three_name);
+            TextView investigatorFourName = v.findViewById(R.id.investigator_four_name);
+            TextView investigatorOneLink = v.findViewById(R.id.investigator_one_player);
+            TextView investigatorTwoLink = v.findViewById(R.id.investigator_two_player);
+            TextView investigatorThreeLink = v.findViewById(R.id.investigator_three_player);
+            TextView investigatorFourLink = v.findViewById(R.id.investigator_four_player);
             String[] investigatorNames = getResources().getStringArray(R.array.investigators);
             // For each investigator, set it visible or not, apply the right name to it, set the right typeface and
             // set a listener to the link
@@ -833,9 +833,9 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
              */
             if (globalVariables.CurrentCampaign == 2) {
                 globalVariables.FirstScenario = 0;
-                RadioGroup options = (RadioGroup) v.findViewById(R.id.start_campaign_options);
-                RadioButton optionOne = (RadioButton) v.findViewById(R.id.start_campaign_option_one);
-                RadioButton optionTwo = (RadioButton) v.findViewById(R.id.start_campaign_option_two);
+                RadioGroup options = v.findViewById(R.id.start_campaign_options);
+                RadioButton optionOne = v.findViewById(R.id.start_campaign_option_one);
+                RadioButton optionTwo = v.findViewById(R.id.start_campaign_option_two);
                 options.setVisibility(VISIBLE);
                 optionOne.setText(R.string.dunwich_start_option_one);
                 optionOne.setTypeface(arnopro);

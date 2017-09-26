@@ -22,8 +22,8 @@ public class StandaloneActivity extends AppCompatActivity {
         globalVariables = (GlobalVariables) this.getApplication();
 
         // Get the button views for all of the campaigns
-        Button rougarouButton = (Button) findViewById(R.id.rougarou_button);
-        Button carnevaleButton = (Button) findViewById(R.id.carnevale_button);
+        Button rougarouButton = findViewById(R.id.rougarou_button);
+        Button carnevaleButton = findViewById(R.id.carnevale_button);
 
         // Set correct font to all of the buttons
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
@@ -35,7 +35,7 @@ public class StandaloneActivity extends AppCompatActivity {
         carnevaleButton.setOnClickListener(new StandaloneClickListener());
 
         // Back button
-        Button backButton = (Button) findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
         backButton.setTypeface(teutonic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
