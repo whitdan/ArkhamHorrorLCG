@@ -1,15 +1,347 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="carcosa_campaign">Der Pfad nach Carcosa</string>
-    <string name="carcosa_scenario_one">Scenario 1: Curtain Call</string>
-    <string name="carcosa_scenario_two">Scenario 2: The Last King</string>
-    <string name="carcosa_scenario_three">Scenario 3: Echoes of the Past</string>
-    <string name="carcosa_scenario_four">Scenario 4: The Unspeakable Oath</string>
-    <string name="carcosa_scenario_five">Scenario 5: A Phantom of Truth</string>
-    <string name="carcosa_scenario_six">Scenario 6: The Pallid Mask</string>
-    <string name="carcosa_scenario_seven">Scenario 7: Black Stars Rise</string>
-    <string name="carcosa_scenario_eight">Scenario 8: Dim Carcosa</string>
-    <string name="carcosa_interlude_one">Interlude 1: Lunacy\'s Reward</string>
-    <string name="carcosa_interlude_two">Interlude 2: Lost Soul</string>
-    <string name="carcosa_epilogue">Epilogue</string>
+    <string name="carcosa_scenario_one">Szenario 1: Ruf vor den Vorhang</string>
+    <string name="carcosa_scenario_two">Szenario 2: Der letzte König</string>
+    <string name="carcosa_scenario_three">Szenario 3: Widerhall aus der Vergangenheit</string>
+    <string name="carcosa_scenario_four">Szenario 4: Der unaussprechliche Eid</string>
+    <string name="carcosa_scenario_five">Szenario 5: Ein Phantom der Wahrheit</string>
+    <string name="carcosa_scenario_six">Szenario 6: Die Bleiche Maske</string>
+    <string name="carcosa_scenario_seven">Szenario 7: Die schwarzen Sterne gehen auf</string>
+    <string name="carcosa_scenario_eight">Szenario 8: Finsteres Carcosa</string>
+    <string name="carcosa_interlude_one">Zwischenspiel 1: Belohnung des Wahnsinns</string>
+    <string name="carcosa_interlude_two">Zwischenspiel 2: Verlorene Seele</string>
+    <string name="carcosa_epilogue">Epilog</string>
+
+
+    <!--Miscellaneous-->
+    <string name="stranger_counter">Auf der Jagd nach dem Fremden: </string>
+    <string name="box_office">Stole from the box office</string>
+    <string name="advanced_2b">Advanced to Act 2b</string>
+    <string name="city_aflame">A City Aflame</string>
+    <string name="path_mine">The Path Is Mine</string>
+    <string name="shores_hail">The Shores of Hail</string>
+    <string name="vips_interviewed">Befragte VIPs</string>
+    <string name="vips_slain">Getötete VIPs</string>
+    <string name="constance">Constance Dumaine</string>
+    <string name="ishimaru">Ishimaru Haruko</string>
+    <string name="jordan">Jordan Perry</string>
+    <string name="sebastien">Sebastien Moreau</string>
+    <string name="ashleigh">Ashleigh Clarke</string>
+    <string name="allocated_experience">Zugeteilte Erfahrung</string>
+
+
+    <!--Campaign Log-->
+    <string name="doubt">Zweifel: </string>
+    <string name="conviction">Überzeugung: </string>
+    <string name="stranger">Der Fremde ist auf der Spur der Ermittler.\n\n</string>
+    <string name="warned_police">Du hast versucht die Polizei zu warnen.\n\n</string>
+    <string name="not_police">Die Polizei wurde nicht verständigt.\n\n</string>
+    <string name="police_suspicious">Die Polizei hegt einen Verdacht gegen die Ermittler.\n\n</string>
+    <string name="vips_interviewed_log">Befragte VIPs: \n</string>
+    <string name="vips_slain_log">Getötete VIPs: \n</string>
+    <string name="constance_log">\t\tConstance Dumaine\n</string>
+    <string name="ishimaru_log">\t\tIshimaru Haruko\n</string>
+    <string name="jordan_log">\t\tJordan Perry\n</string>
+    <string name="sebastien_log">\t\tSebastien Moreau\n</string>
+    <string name="ashleigh_log">\t\tAshleigh Clarke\n</string>
+    <string name="no_vips">\t\tKeine\n</string>
+    <string name="intruded">Die Ermittler sind in ein geheimes Treffen geplatzt.\n\n</string>
+    <string name="fled">Die Ermittler sind von der Feier geflohen.\n\n</string>
+    <string name="slayed">Die Monster auf der Feier wurden getötet.\n\n</string>
+
+
+    <!-- Campaign introduction-->
+    <string name="carcosa_introduction"><b>Prolog</b>\n
+    \nDu drehst das gefaltete Programmheft in deiner Hand um und liest den Text erneut, gefühlt zum hundertsten Mal.
+        „Das Miskatonic Playhouse präsentiert: <i>Der König in Gelb</i>“, steht da geschrieben. „Eine ganz besondere
+        Aufführung, die nur für einen Abend im Ward-Theater in Arkham gastiert. Ein unwiderstehliches Drama in zwei
+        Akten. Diese Produktion wird inszeniert von Nigel Engram, der auch Regie führt.“ Als Besetzung ist nur ein sehr
+        kleines Ensemble aufgeführt, an dessen Ende die Rolle „Der Fremde“ aufgeführt ist – allerdings fehlt hier der
+        Name des Schauspielers.\n
+    \nWenn eine so mit Spannung erwartete Aufführung ihren Weg von Paris nach Arkham findet, ist das ein beachtenswertes
+        Ereignis, auch wenn sie nur für einen Abend hier gastiert. In den Wochen vor der Vorstellung war sie das
+        Stadtgespräch. Alles wirkte so harmlos… und doch hast du Beweise dafür, dass hier etwas Böses vor sich geht.
+        Es fing mit dem Verschwinden eines der Bühnenarbeiter am Theater an – ein gerade mal siebzehn Jahre alter Junge,
+        der eines Abends nicht zur Probe erschien und seitdem nie wieder gesehen wurde. Danach, etwa zwei Wochen vor der
+        Aufführung, wurde die Leiche eines Musikers mit einer Pistole im Mund gefunden. Aber am beängstigsten war wohl
+        der verrückte Mann, den die Polizei am Independence Square aufgegriffen hat, wo er gegen „die Rückkehr des
+        Königs“ wetterte. Er wurde ins Sanatorium von Arkham gebracht. Du warst sehr überrascht, als du feststellen
+        musstest, dass er mit seinen Wahnvorstellungen nicht alleine war.\n
+    \nAll diese Ereignisse haben dein Misstrauen geweckt. Du und deine Gefährten habt beschlossen euch die Angelegenheit
+        genauer anzusehen. Obwohl eine Verbindung nicht bewiesen werden kann, gab es doch noch andere merkwürdige
+        Vorkommnisse rund um die bevorstehende Aufführung. In Folge gab es noch weitere Fälle von Selbstmord und
+        Wahnsinn. Du bist fest entschlossen den Grund dafür herauszufinden.\n
+    \nDas Licht im Zuschauerraum wird gedämpft und ein Scheinwerfer taucht die Bühne in helles Licht. Aber was dann
+        passiert, ist nicht ganz das, was du erwartet hast. Langsam und monoton plätschert der erste Akt von Der König
+        in Gelb vor sich hin, eine ärgerlich langweilige Angelegenheit. Die Kulisse und die Charaktere sind zwar
+        überzeugend, aber die Handlung driftet in verschiedenste Richtungen und ergibt keinen Sinn – die Vorstellung ist
+        weder unterhaltsam noch informativ. Langsam fragst du dich, ob es zwischen den fürchterlichen Vorkommnissen
+        während der Vorbereitungen zu Der König in Gelb vielleicht doch keine Verbindung gibt. Vielleicht ist nur deine
+        Fantasie mit dir durchgegangen. Wie könnte so eine triviale und anspruchslose Vorstellung so fürchterliche
+        Auswirkungen haben? Zu deiner Überraschung endet der erste Akt, ohne dass die Handlung vorangeschritten oder
+        irgendetwas enthüllt worden ist. Die Lichter flammen für die Pause wieder auf und du denkst mit einem
+        unterdrückten Gähnen darüber nach, die Vorstellung vor dem zweiten Akt zu verlassen. Aber bevor du eine
+        Entscheidung treffen kannst, spürst du, wie du langsam… ganz langsam… in den Schlaf gleitest.</string>
+
+    <string name="carcosa_lola_prologue">Der erste Akt verlief genau so reibungslos wie in den zahllosen Proben. Aber
+        der leere, uninteressierte Ausdruck auf den Gesichtern vieler Zuschauer war nicht zu übersehen und du beginnst
+        dich zu fragen, wie das Publikum die verstörende zweite Hälfte des Stückes aufnehmen wird. Die Rolle der
+        Cassilda ist in der ersten Hälfte des Stückes fürchterlich langweilig, auch wenn du es genießt, ihre königliche
+        Ausstrahlung zu verkörpern. Dir wird bewusst, wie sehr dir deine frühere Schauspielkollegin Miriam Twain fehlt,
+        und plötzlich überkommt dich wieder der Schrecken und die Reue, die dir schon in Paris schwer auf der Seele
+        gelastet haben. Seufzend ziehst du dich hinter der Bühne in eine stille Ecke zurück, um den Geräuschen der
+        Bühnenarbeiter zu entkommen, die alles für die nächste Szene vorbereiten. Du versuchst deine Gefühle zu
+        unterdrücken und dich stattdessen auf Cassildas Gedanken zu konzentrieren – auf ihre Hoffnungen, ihre Ängste und
+        ihr Schicksal.\n
+    \nIn dem Moment bemerkst du, dass der Fremde dich aus einiger Entfernung anstarrt, und schon bei seinem Anblick
+        fängst du zu zittern an. Auch wenn sie noch immer vor jeder Vorstellung den Darsteller des Fremden ersetzen (und
+        noch viel häufiger im Verlauf der Proben), weißt du doch, dass dieser Ersatz, der in letzter Minute gefunden
+        worden ist, der bisher schrecklichste ist. Plötzlich fällt dir auf, dass du nicht einmal seinen Namen kennst,
+        und dir läuft ein Schauder den Rücken herunter. Bist du wie ein verlorenes Lamm in ein Wolfsrudel gestolpert? Du
+        kannst deinen Blick nicht abwenden – sein Blick hält deinen gefangen. Alles wird schwarz.</string>
+
+
+    <!--Scenario introductions-->
+    <string name="curtain_introduction">Wie von einer unsichtbaren Macht durchgeschüttelt fährst du aus dem Schlaf hoch.
+        Du musst eine ganze Weile geschlafen haben, denn außer dir sind nur noch wenige Gäste im Zuschauerraum und von
+        den Schauspielern ist niemand mehr auf der Bühne. Die Lichter sind immer noch gedämpft und die Vorhänge der
+        Bühne sind ausgefranst und zerrissen, obwohl du dich gar nicht daran erinnern kannst, dass das auch während des
+        ersten Akts so war. Du wartest einen Moment ab, nur um sicherzugehen, dass dies nicht zur Vorstellung gehört.
+        Während du wartest, stellst du fest, dass ein übler, aber nicht zu identifizierender Gestank in der Luft liegt.
+        Wie lange hast du geschlafen? Langsam schüttelst du deine Benommenheit ab und gehst auf einen der Gäste zu, der
+        noch im Zuschauerraum sitzt, und fragst ihn nach der Uhrzeit – keine Reaktion. In dem Moment wird dir klar, dass
+        du gerade versucht hast dich mit einer Leiche zu unterhalten.</string>
+
+    <string name="king_introduction">Falls jemand Antworten auf deine brennenden Fragen hat, dann findest du ihn unter
+        der Besetzung und den Mitarbeitern von <i>Der König in Gelb</i>. Da du keine weiteren Hinweise hast, ziehst du
+        deine beste Kleidung an und begibst dich zum Haus in der 1452 Atlantic Avenue, in dem eine Frau namens Constance
+        Dumaine eine Feier zu Ehren der einmaligen Aufführung des Stückes in Arkham ausrichtet.</string>
+
+    <string name="carcosa_interlude_one_option_one"> Die Dinge scheinen sich beruhigt zu haben. Vielleicht sollte ich
+        wieder hineingehen und weiter ermitteln.</string>
+    <string name="carcosa_interlude_one_option_two"> Ich vertraue diesem Ort nicht im geringsten. Ich werde die Tür
+        verrammeln und sehen, dass ich hier wegkomme!</string>
+    <string name="carcosa_interlude_one_option_three">Falls diese Menschen am Leben bleiben dürfen, wird sich dieser
+        Schrecken immer und immer wiederholen. Ich muss der Sache ein Ende machen. Ich muss sie töten.</string>
+    <string name="carcosa_interlude_one_one"> Die veränderte Atmosphäre weckt deine Neugier. Und wenn alles nur ein
+        Streich war, den dir dein Verstand gespielt hat? Und wenn die Heimsuchungen, die von <i>Der König in Gelb</i>
+        ausgehen, nicht mehr aufhören wollen? Die Antwort auf deine Fragen befindet sich möglicherweise im Haus.
+        Vorsichtig öffnest du die Vordertür erneut. Beruhigende Jazzklänge und das Gemurmel entspannter Unterhaltungen
+        umfangen dich und werden lauter, als du eintrittst. In der Luft liegt der verlockende Geruch von gebratenem
+        Schweinefleisch. Wie erwartet sind die Kampfspuren und Merkwürdigkeiten, die dir vorhin noch aufgefallen sind,
+        inzwischen verschwunden. Als du um die Ecke ins Speisezimmer gehst, siehst du dort den Fremden in ein Gespräch
+        mit einem hochgewachsenen Mann mit Schnurrbart vertieft, der einen edlen Anzug trägt und einen Stock mit
+        Silbergriff bei sich hat. Der Fremde wendet sich dir zu, sein Blick bohrt sich in deinen Geist und du kannst vor
+        Qualen kaum noch etwas sehen. Noch bevor du bemerkst, was vor sich geht, läufst du so schnell wie möglich fort
+        und stolperst von Schmerzen gebeutelt und orientierungslos durch die Tür. Ohne zu Atem kommen zu können, eilst
+        du zu deinem Fahrzeug und rast mit zitternden Händen, die das Lenkrad fest umklammern, fort von diesem Ort.\n
+    \n<b>Warum solltest du wieder hineingehen?</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="carcosa_interlude_one_two"> Du kannst deinen Sinnen nicht trauen. Dies ist alles nur ein Trick, um
+        dich wieder hineinzulocken. Du bist nicht sicherer als vorher. Aber du unterdrückst deine Angst und beginnst
+        damit, die Vordertür des Hauses mit schweren Steinbänken zu verrammeln, die vorher am kopfsteingepflasterten Weg
+        im Vordergarten gestanden haben. Du hoffst, dass das ausreichen wird, bist aber nicht dazu bereit, hierzubleiben
+        und es herauszufinden. Als du fertig bist, eilst du zu deinem Fahrzeug und fährst in Richtung Südstadt, wo du
+        Antworten zu finden hoffst.\n
+    \n<b>Die Tür wird sie nicht aufhalten.</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="carcosa_interlude_one_three">Du kannst das Risiko nicht eingehen, das Haus erneut zu betreten. Aber du
+        kannst diese abscheulichen Kreaturen auch nicht frei herumlaufen lassen. Du durchsuchst die Garage und findest
+        einen alten Schlauch, einen leeren Benzinkanister und einige Streichhölzer. Da dir klar ist, was du tun musst,
+        saugst du etwas Benzin aus Mrs. Dumaines Oakland 6-54A ab. Dieses Benzin verschüttest du auf der gesamten
+        vorderen Veranda, in der Garage und rings um die äußeren Mauern des Hauses. Nun brauchst du nur noch einige
+        Streichhölzer, um eine Feuersbrunst zu starten. Vom Vordergarten aus siehst du zu, wie das Haus schließlich von
+        den Flammen verschlungen wird. In der ganzen Straße hört man das Prasseln des Feuers, das Bersten der Balken und
+        die Todesschreie der schrecklichen Wesen. Zufrieden gehst du zu deinem Fahrzeug zurück und fährst voll grimmiger
+        Entschlossenheit in die Südstadt.\n
+    \n<b>Du hast das Richtige getan… oder etwa nicht?</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Kultist-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+
+
+
+    <!--Scenario set-up instructions-->
+    <string name="curtain_sets">Ruf vor den Vorhang, Böse Vorzeichen, Wahnvorstellungen, Heimsuchungen, Kult des gelben
+        Zeichens, Lähmende Angst und Rattenschwarm.</string>
+    <string name="curtain_locations">Die Orte Theater, Foyer, Empore und Bereich hinter der Bühne werden ins Spiel
+        gebracht.\n
+        \nJeder Ermittler beginnt das Spiel im Theater.\n</string>
+    <string name="curtain_locations_lola">Die Orte Theater, Foyer, Empore und Bereich hinter der Bühne werden ins Spiel
+        gebracht.\n
+        \nLola Hayes beginnt das Spiel im Bereich hinter der Bühne. Jeder andere Ermittler beginnt das Spiel im
+        Theater.\n</string>
+    <string name="curtain_set_aside">Der Mann mit der Bleichen Maske, Königlicher Sendbote, jedes Exemplar von
+        Personalzugang und jedes Exemplar von Zugang zum hinteren Bereich des Theaters.\n</string>
+
+    <string name="king_sets">Der letzte König, Hasturs Gabe, Verfall und Schmutz, Der Fremde, Böses aus uralter
+        Zeit.</string>
+    <string name="king_locations"> Alle 6 Orte werden ins Spiel gebracht (Eingangshalle, Innenhof, Wohnzimmer, Ballsaal,
+        Speisesaal und Galerie).\n
+        \nJeder Ermittler beginnt das Spiel in der Eingangshalle.\n</string>
+    <string name="king_set_aside">Dianne Devine.\n</string>
+    <string name="king_additional_one">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
+        Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
+        ihnen an jeden Ort mit Ausnahme des Foyers gelegt. Auf jeder dieser Vorteilskarten werden 2 Hinweise
+        platziert.\n
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
+    <string name="king_additional_two">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
+        Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
+        ihnen an jeden Ort mit Ausnahme des Foyers gelegt. Auf jeder dieser Vorteilskarten werden 3 Hinweise
+        platziert.\n
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
+    <string name="king_additional_three">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
+        Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
+        ihnen an jeden Ort mit Ausnahme des Foyers gelegt. Auf jeder dieser Vorteilskarten werden 4 Hinweise
+        platziert.\n
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
+    <string name="king_additional_four">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
+        Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
+        ihnen an jeden Ort mit Ausnahme des Foyers gelegt. Auf jeder dieser Vorteilskarten werden 5 Hinweise
+        platziert.\n
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="curtain_no_resolution">Erneut schreckst du aus dem Schlaf hoch, diesmal, weil du die kalten, feuchten
+        Finger einer Hand auf deiner Schulter spürst. „Alles in Ordnung mit Ihnen?“, fragt ein älterer Herr und hilft
+        dir aufzustehen. In deinem Geist wirbeln Erinnerungen durcheinander. Das Letzte, an das du dich erinnern kannst,
+        ist, dass das Ward-Theater zu einem Ort voller Albträume, gefährlicher Fanatiker und fremdartiger Schrecken
+        geworden ist. Besorgt schaust du dich um und stellst fest, dass du dich am regenglatten Straßenrand vor dem
+        Theater befindest. Trotz allem, was gerade geschehen ist, scheint die Stadt in deinen Augen völlig normal zu
+        sein – oder doch zumindest so normal, wie es für Arkham möglich ist. Grell bohrt sich das Licht der Scheinwerfer
+        vorbeifahrender Autos, die schmutziges Regenwasser auf den Gehsteig neben dir spritzen, in deine Augen. Der
+        ältere Herr sieht dich besorgt an, als ihm die Angst in deinen Augen auffällt. „Wurden Sie überfallen? Diese
+        verdammten Jungs, immer machen sie Ärger!“, ruft er. „Lauern im Hinterhalt auf Bürger, die sich einen schönen
+        Abend im Theater machen möchten. Es gibt keine Straße mehr, auf die diese Raufbolde keinen Anspruch erhoben
+        haben, das kann ich Ihnen sagen.“\n
+    \nDu erhebst dich und gehst zum Fenster an der Vorderseite des Ward-Theaters, um vorsichtig hineinzuspähen, aber im
+        Inneren ist es zu dunkel, um etwas zu erkennen. Der ältere Herr betrachtet dich noch einen Moment lang neugierig
+        und geht dann achselzuckend weiter. „Ich sollte mich auf den Weg machen. An Ihrer Stelle würde ich das ebenfalls
+        tun“, sagt er und verschwindet um eine Straßenecke. Du folgst ihm zügig in der Hoffnung, ihn warnen zu können,
+        dass er sich vom Theater fernhalten soll. Aber als du um die Ecke biegst, siehst du nicht den älteren Herrn,
+        sondern den vertrauten Anblick des Fremden mit seiner ausdruckslosen, bleichen Maske. Er sieht dich unverwandt
+        an. „Wer sind Sie?“, rufst du. Der Fremde antwortet nicht, wendet sich ab und verschwindet in der Gasse hinter
+        dem Theater. Du nimmst in der Hoffnung auf Antworten die Verfolgung auf, aber als du die Gasse erreichst, ist
+        sie leer – bis auf einen Zettel an der Wand neben dem Eingang für Mitarbeiter des Theaters. „Sei kein
+        Spielverderber! Komm zur Besetzungsfeier von <i>Der König in Gelb</i>. 20 Uhr, im Haus von Constance Dumaine,
+        1452 Atlantic Avenue. Um Abendkleidung wird gebeten.“ Du reißt den Zettel ab und nimmst ihn mit, als du dich
+        frustriert und verwirrt abwendest.\n
+    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
+            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
+            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
+            and add it to that investigator’s deck.</b>\n
+    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
+            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
+            closer to the truth.</b></string>
+    <string name="curtain_resolution_one">Du fliehst aus dem Theater und eilst direkt zur Polizeiwache in der Oststadt.
+        Als du durch die Tür stürmst, starren dich die Polizisten und andere Anwesende an. Du forderst mit einem Verweis
+        auf Dringlichkeit sofort Sheriff Engle sprechen zu dürfen. Der Sergeant am Empfangstresen, der gelangweilt einen
+        Stapel Akten bearbeitet, schüttelt den Kopf und hebt wortlos einen Finger, dann deutet er auf den Stuhl, der am
+        nächsten zu ihm steht. Die Warterei ist quälend. Jeder Moment dehnt sich zu einer Ewigkeit aus. Die Zeiger auf
+        der Uhr scheinen beinahe still zu stehen. Du trommelst mit deinen Fingern auf dem Schreibtisch. Du wippst mit
+        den Füßen. Immer wieder blickst du über deine Schulter, nur um sicher zu sein, dass dich die bleiche Maske des
+        Fremden nicht durch das Fenster an der Vorderseite des Gebäudes beobachtet. Schließlich legt der Sergeant am
+        Empfangstresen seinen Stift beiseite, setzt sich auf und winkt dich mit einer Handbewegung heran. „In Ordnung,
+        was ist denn so wichtig?“ Aber schon nach der Hälfte deiner Erklärungen darüber, was in der Nacht passiert ist,
+        seufzt er und schüttelt den Kopf. „Sehen Sie, Sir, wenn dies ein Scherz sein soll, ist er nicht lustig“, sagt
+        er. „Einige von uns waren die ganze Nacht im Stadtzentrum im Einsatz. Versuchen Sie nicht mir diesen Unsinn als
+        Wahrheit zu verkaufen.“ Du bestehst auf deiner Aussage, aber der Sergeant erhebt sich, öffnet die Tür und
+        bedeutet dir mit einer Geste zu verschwinden. Dann erhebt er seine Stimme. „Glauben Sie, wir haben nicht genug
+        zu tun? Verschwinden Sie!“ Er murmelt hinter deinem Rücken etwas von „Spinnern“, während er dich aus der
+        Polizeiwache geleitet.\n
+    \nAber du <b>weißt</b>, was du heute Abend gesehen hast. Frustriert gehst du zurück zum Ward-Theater, um Beweise zu finden,
+        mit denen du die Polizei überzeugen kannst. Überrascht stellst du fest, dass die Vordertür des Theaters
+        verschlossen ist. Während du noch überlegst, ob du die Tür aufbrechen sollst, siehst du einen Zettel an der Wand
+        neben dem Eingang. „Sei kein Spielverderber! Komm zur Besetzungsfeier von <i>Der König in Gelb</i>. 20 Uhr, im
+        Haus von Constance Dumaine, 1452 Atlantic Avenue. Um Abendkleidung wird gebeten.“ Du reißt den Zettel von der
+        Wand, faltest ihn zusammen und steckst ihn in die Tasche deines Mantels, weil du hoffst, dass er dich zu den
+        Antworten führt, die du suchst.\n
+        \n<b>Hast du wirklich gedacht, die Polizei würde dir helfen?</b>\n
+    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
+            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
+            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
+            and add it to that investigator’s deck.</b>\n
+    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
+            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
+            closer to the truth.</b></string>
+    <string name="curtain_resolution_two">Du erwägst kurz die Polizei zu verständigen, aber wenn man bedenkt, was du
+        heute Abend erlebt hast, werden sie dich wohl eher für verrückt halten, als dir zu glauben. Ein kleiner Teil von
+        dir fragt sich, ob es sich hier wohl um einen merkwürdigen Scherz handelt. Aber das kann eigentlich nicht sein –
+        es war alles viel zu echt, viel zu beängstigend, um es vergessen zu können. Während du noch darüber nachdenkst,
+        was du nun tun sollst, gehst du schon mit vorsichtigen Schritten den Weg zurück, auf dem du vom Theater
+        geflüchtet bist. Grell bohrt sich das Licht der Scheinwerfer vorbeifahrender Autos, die schmutziges Regenwasser
+        auf den Gehsteig neben dir spritzen, in deine Augen. Bald schon kannst du das Theater sehen, das mit seinen
+        hellen Lichtern die Straßen des Stadtzentrums erhellt. Du hast erwartet das Theater als Ruine vorzufinden, aber
+        von außen sieht es aus wie früher am Abend, als du dort angekommen bist, um dir die Vorstellung von <i>Der König
+        in Gelb</i> anzusehen. Du gehst zum Fenster an der Vorderseite des Ward-Theaters, um vorsichtig hineinzuspähen,
+        aber im Inneren ist es zu dunkel, um etwas zu erkennen.\n
+    \nIm selben Moment spürst du einen kalten Hauch in deinem Nacken fühlst dich beobachtet. Du drehst dich um und
+        siehst einen Schatten um eine Straßenecke flüchten. Ein Schwarm Kakerlaken huscht über den Gehsteig und folgt
+        dem Schatten. Unsicher spannst du deine Muskeln an und folgst dann ebenfalls dem Schatten um die Ecke. Scheinbar
+        unberührt steht ein vertraut aussehender Mann mit einer ausdruckslosen, bleichen Maske auf dem Gehsteig.\n
+    \nEr sieht dich unverwandt an. „Wer sind Sie?“, rufst du. Der Fremde antwortet nicht, wendet sich ab und
+        verschwindet in der Gasse hinter dem Theater. In der Hoffnung auf Antworten nimmst du die Verfolgung auf, aber
+        als du die Gasse erreichst, ist sie leer – bis auf einen Zettel an der Wand neben dem Mitarbeitereingang des
+        Theaters. „Sei kein Spielverderber! Komm zur Besetzungsfeier von <i>Der König in Gelb</i>. 20 Uhr, im Haus von
+        Constance Dumaine, 1452 Atlantic Avenue. Um Abendkleidung wird gebeten.“ Du reißt den Zettel von der Wand und
+        nimmst ihn mit, weil du hoffst, dass er dich zu den Antworten führt, die du suchst.\n
+        \n<b>Glaubst du, es war vernünftig, niemanden zu warnen?</b>\n
+    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
+            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
+            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
+            and add it to that investigator’s deck.</b>\n
+    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
+            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
+            closer to the truth.</b></string>
+
+    <string name="king_resolution_one">Erfrischende Herbstluft umfängt dich, als du das Haus verlässt. Du hast keinen
+        Zweifel daran, dass die Besetzung und die Mitarbeiter von <i>Der König in Gelb</i> dem Wahnsinn verfallen sind.
+        Vielleicht wird dir das ebenfalls passieren. Du fühlst, wie sich die Dunkelheit ausbreitet, und spürst eine
+        Gegenwart in deinem Geist, die dich an den Blick des Fremden erinnert. Erschrocken lässt du zum ersten Mal seit
+        deiner Flucht aus dem Herrenhaus deinen Blick über den vorderen Hof schweifen. Alles sieht irgendwie… anders
+        aus. Die Fenster an der Vorderseite sind nicht eingeschlagen, wie sie es bei deiner Ankunft waren. Die Blutspur,
+        die dir auf der Veranda aufgefallen war, wurde weggewischt. Statt der verstörenden, verzerrt klingenden Musik,
+        die du beim Eintreten in das Haus gehört hast, vernimmst du jetzt die beruhigenden Klänge langsamer Jazzmusik
+        aus dem Innenhof.\n
+    \n<b>Für jeweils 2 Hinweise, die sich am Ende des Spiels auf dem Szenendeck befunden haben, wird ein Ermittler
+        gewählt, der 1 zusätzlichen Erfahrungspunkt verdient. Die Erfahrungspunkte dieser Belohnung müssen so
+        gleichmäßig wie möglich unter den Ermittlern aufgeteilt werden. Gib unten ein, wie die Erfahrungspunkte verteilt
+        wurden.</b></string>
+    <string name="king_resolution_two">„Entschuldigen Sie, aber es ist schon sehr spät“, hörst du einen Bediensteten
+        sagen, der dir dabei sanft auf die Schulter klopft. Du bemerkst, dass du auf einer Couch im Wohnzimmer des
+        Herrenhauses sitzt und dort schon eine Weile geschlafen haben musst. Die Feier scheint sich dem Ende zuzuneigen.
+        In den Räumen hört man keine Musik mehr, vom Essen ist kaum noch etwas übrig und nur wenige Gäste sind noch
+        anwesend. „Möglicherweise möchten Sie, dass ich Ihren Mantel hole?“, fragt der Diener mit einstudiertem Lächeln.
+        Du schwankst, als du dich erhebst, und stützt dich an der Armlehne des Sofas ab. Dein Kopf dröhnt
+        schwindelerregend heftig und du siehst Punkte vor deinen Augen tanzen. Trotzdem bestehst du darauf, dass es dir
+        gut geht, und gehst in Richtung Eingangshalle.\n
+    \nVon den Gästen, die du früher am Abend gesucht hast, kannst du keinen mehr entdecken, nicht einmal die Gastgeberin
+        Mrs. Dumaine. Alle Spuren des Wahnsinns und Schreckens, die du erlebt hast, sind verschwunden. Selbst von den
+        Merkwürdigkeiten, die du beim Eintreten in das Haus bemerkt hast, ist nichts mehr zu sehen – keine Kampfspuren,
+        keine zerbrochenen Fenster, keine Blutspur auf der Veranda… Alle Beweise wurden ausgelöscht. Aber du erinnerst
+        dich an die Ereignisse dieser Nacht und in deiner Erinnerung wirst du die Antworten finden.\n
+    \n<b>Für jeweils 2 Hinweise, die sich am Ende des Spiels auf dem Szenendeck befunden haben, wird ein Ermittler
+        gewählt, der 1 zusätzlichen Erfahrungspunkt verdient. Die Erfahrungspunkte dieser Belohnung müssen so
+        gleichmäßig wie möglich unter den Ermittlern aufgeteilt werden. Gib unten ein, wie die Erfahrungspunkte verteilt
+        wurden.</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden je 1
+            Kultist-, Tafel- und Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="king_resolution_three">Einige Tage später denkst du über die Feier im Haus der 1452 Atlantic Avenue
+        nach. Wie gut du dich doch amüsiert hast! Aber trotzdem ist deine Erinnerung sehr verschwommen. Du wirst das
+        Gefühl nicht los, dass du etwas Wichtiges vergessen hast. Etwas, das mit der Aufführung zusammenhängt, die du
+        früher an jenem Abend gesehen hast – <i>Der König in Gelb</i>. Dieses bohrende Gefühl verfolgt dich in jedem wachen
+        Moment. Egal wie sehr du dich bemühst dir die Ereignisse der Nacht vollständig ins Gedächtnis zu rufen, es
+        bleibt eine klaffende Lücke in deiner Erinnerung. Je mehr du dich anstrengst dich an alles zu erinnern, desto
+        mehr nimmt auch deine Sorge zu, bis sie fast zur Besessenheit wird. Du beschließt, dass du wissen musst, was in
+        dieser Nacht geschehen ist, und machst dich auf den Weg zur Gesellschaft für Geschichte in der Südstadt.
+        Vielleicht kannst du dort mehr über <i>Der König in Gelb</i> herausfinden…\n
+    \n<b>Für jeweils 2 Hinweise, die sich am Ende des Spiels auf dem Szenendeck befunden haben, wird ein Ermittler
+        gewählt, der 1 zusätzlichen Erfahrungspunkt verdient. Die Erfahrungspunkte dieser Belohnung müssen so
+        gleichmäßig wie möglich unter den Ermittlern aufgeteilt werden. Gib unten ein, wie die Erfahrungspunkte verteilt
+        wurden.</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden je 1
+            Kultist-, Tafel- und Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
 </resources>

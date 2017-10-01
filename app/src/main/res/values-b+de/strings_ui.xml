@@ -17,12 +17,12 @@
     <string name="confirm_delete_campaign">Bist du sicher, dass du diese Kampagne löschen willst?</string>
 
 
-    <string name="scenario_setup">Szenarienaufbau</string>
+    <string name="scenario_setup">Einleitung</string>
     <string name="setup_instructions">Aufbau</string>
     <string name="add_side_story">Nebengeschichte beginnen</string>
     <string name="campaign_log">Kampagnenlogbuch</string>
-    <string name="edit_team">Ermittler wählen</string>
-    <string name="scenario_resolution">Szenario-Auflösung</string>
+    <string name="edit_team">Ermittlergruppe ändern</string>
+    <string name="scenario_resolution">Auflösung</string>
     <string name="main_menu">Hauptmenü</string>
 
     <string name="decklist">Deckliste</string>
@@ -42,13 +42,13 @@
     <!--General-->
     <string name="back">Zurück</string>
     <string name="continue_button">Fortsetzen</string>
-    <string name="difficulty">Zusammenstellung des Chaosbeutels</string>
+    <string name="difficulty">Chaosbeutel zusammenstellen</string>
     <string name="chaos_bag">Chaos-\nbeutel</string>
     <string name="campaign_name">Name der Kampagne (erforderlich)</string>
     <string name="saved_investigators">Gespeicherte Ermittler</string>
     <string name="select_investigators">Ermittler auswählen</string>
     <string name="new_investigators">Neue Ermittler</string>
-    <string name="current_team">Aktuelle Ermittlergruppe</string>
+    <string name="current_team">Ermittlergruppe</string>
     <string name="finish_setup">Aufbau abschließen</string>
     <string name="next_scenario">Nächstes Szenario</string>
     <string name="edit_info">Bearbeiten</string>
@@ -60,7 +60,7 @@
     <string name="confirm_changes">Änderungen speichern</string>
     <string name="okay">OK</string>
     <string name="cancel">Abbrechen</string>
-    <string name="nothing">Hier steht nichts.</string>
+    <string name="nothing">Hier steht noch nichts.</string>
 
     <string name="campaign_finished">Kampagne abgeschlossen</string>
     <string name="finish_campaign">Kampagne beenden</string>

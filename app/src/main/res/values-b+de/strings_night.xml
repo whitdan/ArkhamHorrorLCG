@@ -127,7 +127,7 @@
         Grabeskälte.</string>
     <string name="gathering_locations">Der Ort Arbeitszimmer wird ins Spiel gebracht.\n
         \nJeder Ermittler beginnt das Spiel im Arbeitszimmer.\n</string>
-    <string name="gathering_set_aside">Alle anderen Orte, Ghulpriester und Lita Chantler.\n</string>
+    <string name="gathering_set_aside">Alle anderen Orte, den Ghulpriester und Lita Chantler.\n</string>
 
     <string name="midnight_sets">Die Mitternachtsmasken, Grabeskälte, Dunkeldürre, Dunkler Kult und Verschlossene
         Türen.</string>
@@ -215,7 +215,7 @@
         an den Rändern der Wirklichkeit. Aber Lita ist nirgends zu finden, weshalb die Kreatur bis heute in den Schatten
         lauert – suchend, tötend…\n
     \n<b>Jeder überlebende Ermittler wird getötet.</b>\n
-    \n<b>Die Ermittler haben die Kampagne verloren.</b></string>
+    \n<b>Die Ermittler haben die Kampagne verloren!</b></string>
     <string name="devourer_resolution_one"> Du hast es geschafft, den Kult daran zu hindern, den Meister seiner Anhänger
         zu beschwören. Obwohl du unsicher bist, was passiert wäre, wenn der Kult Erfolg gehabt hätte, bist du doch
         erleichtert, dass Arkham zumindest vorerst sicher ist. Du nimmst so viele Kultisten gefangen, wie du finden

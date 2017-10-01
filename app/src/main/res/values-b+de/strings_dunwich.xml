@@ -19,9 +19,9 @@
     <string name="cheated_text"><b>Für den Rest der Kampagne wird dem Chaosbeutel ein Älteres Wesen-Chaosmarker
         hinzugefügt.</b></string>
     <string name="adam_lynch_harold_walsted">Adam Lynch oder Harold Walsted hat das Spiel verlassen</string>
-    <string name="engine_car_investigator">Investigator to enter Engine Car</string>
-    <string name="engine_car_dodge">Versuch, der Kreatur auszuweichen, ist misslungen</string>
-    <string name="engine_car_endure">Versuch, die extremen Hitze der Kreatur auszuhalten, ist misslungen</string>
+    <string name="engine_car_investigator">Ermittler, der die Lokomotive betreten hat</string>
+    <string name="engine_car_dodge">Der Versuch, der Kreatur auszuweichen, ist misslungen</string>
+    <string name="engine_car_endure">Der Versuch, die extreme Hitze der Kreatur auszuhalten, ist misslungen</string>
     <string name="kidnapped_cards">Gestohlene/Entführte Karten</string>
     <string name="necronomicon_defeated">Der Ermittler mit der Karte Das Necronomicon (<i>Übersetzung von Olaus
         Wormius</i>) wurde besiegt</string>
@@ -44,8 +44,8 @@
     <string name="earl_sawyer">Earl Sawyer</string>
     <string name="another_ally">Ein anderer Verbündeter</string>
     <string name="brood_escaped_counter">Entkommene Bruten:</string>
-    <string name="act_one_two_three">Finished at Act 1, 2 or 3</string>
-    <string name="act_four">Finished at Act 4</string>
+    <string name="act_one_two_three">Bei Spielende war Szene 1, 2 oder 3 aktiv</string>
+    <string name="act_four">Bei Spielende war Szene 4 aktiv</string>
 
 
     <!--Campaign log-->
@@ -76,19 +76,19 @@
     <string name="silas_misery">Die Ermittler haben Silas Bishop von seinem Elend erlöst.\n\n</string>
     <string name="silas_restored">Die Ermittler haben Silas Bishop wiederhergestellt.\n\n</string>
     <string name="silas_banished">Die Ermittler haben Silas Bishop gebannt.\n\n</string>
-    <string name="zebulon_sacrificed">Zebulon Whateley was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="zebulon_survived">Zebulon Whateley survived The Dunwich Legacy.\n\n</string>
-    <string name="sawyer_sacrificed">Earl Sawyer was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="sawyer_survived">Earl Sawyer survived The Dunwich Legacy.\n\n</string>
-    <string name="ally_sacrificed">An ally was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="townsfolk_calmed">You calmed the townsfolk.\n\n</string>
-    <string name="townsfolk_warned">You warned the townsfolk.\n\n</string>
-    <string name="brood_escaped"> brood escaped into the wild.\n\n</string>
-    <string name="investigators_entered_gate">The investigators entered the gate.\n\n</string>
-    <string name="yog_tore_barrier">Yog-Sothoth tore apart the barrier between worlds, and became one
-        with all reality.\n\n</string>
-    <string name="closed_tear">The investigators closed the tear in reality.\n\n</string>
-    <string name="yog_fled">Yog-Sothoth has fled to another dimension.\n\n</string>
+    <string name="zebulon_sacrificed">Zebulon Whateley wurde Yog-Sothoth geopfert.\n\n</string>
+    <string name="zebulon_survived">Zebulon Whateley hat das Vermächtnis von Dunwich überlebt.\n\n</string>
+    <string name="sawyer_sacrificed">Earl Sawyer wurde Yog-Sothoth geopfert.\n\n</string>
+    <string name="sawyer_survived">Earl Sawyer hat das Vermächtnis von Dunwich überlebt.\n\n</string>
+    <string name="ally_sacrificed">Ein Verbündeter wurde Yog-Sothoth geopfert.\n\n</string>
+    <string name="townsfolk_calmed">Du hast die Dorfbewohner beruhigt.\n\n</string>
+    <string name="townsfolk_warned">Du hast die Dorfbewohner gewarnt.\n\n</string>
+    <string name="brood_escaped"> Brut(en) sind in die Nacht entkommen.\n\n</string>
+    <string name="investigators_entered_gate">Die Ermittler haben das Tor betreten.\n\n</string>
+    <string name="yog_tore_barrier">Yog-Sothoth hat die Grenze zwischen den Welten niedergerissen und ist eins mit der
+        gesamten Realität geworden.\n\n</string>
+    <string name="closed_tear">Die Ermittler haben den Riss in der Realität geschlossen.\n\n</string>
+    <string name="yog_fled">Yog-Sothoth ist in eine andere Dimension geflohen.\n\n</string>
 
 
     <!--Campaign introduction-->
@@ -362,58 +362,63 @@
         anderen ihm zu folgen und rennt den Hügel hoch. Kopfschüttelnd folgst du ihm. Diese Gangster wissen nicht, auf
         was sie sich da einlassen.</string>
 
-    <string name="lost_introduction">Passing through the gate is unlike anything you’ve ever experienced. You feel
-        your body twisting and distorting, churning through realities as the gate pulls you to its ultimate
-        destination—a place beyond the scope of human imagination.\n
-    \nSuddenly, all is quiet and the chaos of the journey is replaced with a sense of solitude and dread. You are in
-        an unfathomable place, vast beyond your ability to reason and utterly alien besides. The landscape is surreal
-        and strange, the architecture impossible. You are so far from home that home has become a threadbare dream
-        you can barely recall. Even should you find a way out of this awful place, you may never be the same again
-        .</string>
+    <string name="lost_introduction">Die Erfahrung, durch das Tor gezogen zu werden, gleicht keiner Erfahrung, die du in
+        deinem Leben bisher gemacht hast. Du spürst, wie dein Körper verdreht und verzerrt und durch die Realitäten
+        gewirbelt wird, um sein eigentliches Ziel zu erreichen – einen Ort, der jenseits der menschlichen
+        Vorstellungskraft liegt.\n
+    \nPlötzlich ist alles um dich herum still und statt des Chaos deiner Reise fühlst du plötzlich nur noch Einsamkeit
+        und Grauen. Du bist an einem unfassbaren, fremdartigen Ort, weit jenseits dessen, was dein Verstand begreifen
+        kann. Die Landschaft ist surreal und fremd, die Gebäude eigentlich unmöglich. Du bist so weit von deiner Heimat
+        entfernt, dass diese nur noch ein flüchtiger Traum zu sein scheint, an den du dich kaum noch erinnern kannst.
+        Selbst wenn du einen Weg finden würdest, diesen Ort zu verlassen, wärst du doch niemals wieder derselbe wie
+        zuvor.</string>
 
-    <string name="dunwich_epilogue_one">Six months had passed, and life for Curtis Whateley was finally returning to
-        normal. Since they’d hushed up the incident and the authorities kept their distance from these parts, Mr.
-        Osborn had auctioned off the Ericks and Bishop families’ belongings. Joe took a few trinkets for himself, of
-        course, but Curtis wanted nothing to do with it. Folk already didn’t trust him on account of his family’s
-        sins, even though he’d been attending church on the regular and had stayed far away from anything resembling
-        the arcane.\n
-    \nEven so, Curtis could not shake a sense of foreboding. He’d seen the devastation that befell the Ericks,
-        Bishop, and Frye homes. He’d even seen firsthand the creature the folks from Arkham had banished. Some days,
-        his thoughts led him to Wilbur Whateley’s farm, where he would stand outside and stare for hours, too scared
-        to enter, but too curious to leave. Maybe there was something in there that could make these terrible visions
-        depart. Something that could give him strength enough to resist the nightmares. Curtis decided he would find
-        it.</string>
-    <string name="dunwich_epilogue_two">Gené knelt closer to the ground to examine the sign in the dirt. The shape of
-        the sign was foreign to her, and the tracks that had led to it were unlike any she’d ever seen. Coupled with
-        the report from the university…she wasn’t sure what to think. “Ms. Beauregard,” her assistant called out to
-        her, “have you found something?”\n
-    \nGené stood and turned to face the freshman who’d been assigned to her. He was a good kid and a bit callow, but
-        a hard worker and eager to prove himself. “This place was supposed to be cordoned off,” Gené responded.
-        “Nobody’s lived here for months. And yet, see for yourself: their primitive rites continue to this day.”\n
-    \nThe student approached and joined Gené in examining the sign, flipping through the pages of his journal to
-        reference its symbols. “What do you think it means?” he asked. She shook her head. Outsiders rarely traveled
-        to Dunwich, and all the signposts leading to the village had been taken down. But these days, even the
-        townsfolk who had called this place home had abandoned it.\n
-    \n“I don’t know,” Gené admitted. “But somebody is here, and this isn’t the first sign we’ve seen like this.
-        Stories say there’s an altar where the townsfolk would conduct pagan rituals atop that hill. Maybe we’ll find
-        more up there.</string>
+    <string name="dunwich_epilogue_one">Sechs Monate waren vergangen und das Leben von Curtis Whateley verlief endlich
+        wieder in normalen Bahnen. Weil die Ereignisse vertuscht worden waren und sich die Autoritäten von diesem Teil
+        des Ortes fernhielten, hatte Mr. Osborn den Besitz der Familien Ericks und Bishop versteigert. Natürlich hatte
+        Joe einige Kleinigkeiten für sich behalten, aber Curtis wollte damit nichts mehr zu tun haben. Aufgrund der
+        Sünden seiner Familie misstrauten ihm die Einwohner sowieso schon, auch wenn er regelmäßig in die Kirche ging
+        und sich von allem Arkanen fernhielt.\n
+    \nTrotzdem konnte Curtis einige bange Vorahnungen nicht abschütteln. Er hatte die Zerstörung der Häuser der Ericks,
+        Bishops und Fryes miterlebt. Außerdem hatte er die Kreatur, welche die Leute aus Arkham gebannt hatten, mit
+        eigenen Augen gesehen. An einigen Tagen führten ihn seine Gedanken zur Farm von Wilbur Whateley, wo er dann
+        draußen stand und sie stundenlang betrachtete. Er brachte den Mut nicht auf, sie zu betreten, war aber trotzdem
+        zu neugierig, einfach wieder zu gehen. Vielleicht gab es da etwas, das seine fürchterlichen Visionen
+        verschwinden lassen würde. Etwas, das ihm genug Stärke verleihen könnte, um seinen Albträumen zu widerstehen.
+        Curtis entschied, dass er so etwas finden müsste.</string>
+    <string name="dunwich_epilogue_two"> Gené kniete sich hin, um das Zeichen im Staub zu untersuchen. Die Form des
+        Zeichens war ihr unbekannt, die Spuren, denen sie hierher gefolgt war, hatte sie noch nie zuvor gesehen. Und
+        dann noch der Bericht von der Universität ... sie wusste einfach nicht, was sie davon halten sollte. „Ms.
+        Beauregard“, rief ihr Assistent ihr zu. „Haben Sie etwas gefunden?“\n
+    \nGené stand auf und betrachtete den Studienanfänger, der ihr zugewiesen worden war. Er war ein guter Junge, etwas
+        unreif, aber er arbeitete hart und war wild darauf, sich zu beweisen. „Dieser Platz sollte abgesperrt werden“,
+        antwortete Gené. „Hier lebt seit Monaten niemand mehr. Und trotzdem, sehen Sie mal hier, die primitiven Rituale
+        werden bis heute fortgesetzt.“\n
+    \nDer Student kam näher und untersuchte gemeinsam mit Gené das Zeichen, blätterte in seinen Aufzeichnungen, um das
+        Symbol zu vergleichen. „Was denken Sie, bedeutet es?“, fragte er. Sie schüttelte den Kopf. Fremde kamen nur
+        selten nach Dunwich und alle Schilder, die auf diese Ortschaft hinwiesen, waren demontiert worden. Aber
+        inzwischen hatten auch die Einwohner, dessen Heimat dieser Ort war, ihn verlassen.\n
+    \n„Ich weiß es nicht“, gab Gené zu. „Aber hier ist jemand und das ist nicht das erste Zeichen dieser Art, das wir
+        gefunden haben. Die Geschichten berichten von einem Altar auf dem Hügel dort, auf dem die Einheimischen
+        heidnische Rituale durchgeführt haben. Vielleicht finden wir da mehr.“</string>
 
 
     <!--Scenario setup instructions-->
     <string name="extracurricular_sets">Aktivitäten außerhalb des Lehrplans, Zauberei, Das Jenseits, Bishops Seelenlose
         Diener, Ziegenmelker, Böses aus uralter Zeit, Verschlossene Türen und Anhänger von Yog­Sothoth.</string>
-    <string name="extracurricular_locations"> Die Orte Miskatonic-Freigelände, Orne-Bibliothek,
+    <string name="extracurricular_locations">Die Orte Miskatonic-Freigelände, Orne-Bibliothek,
         Geisteswissenschaftliches Gebäude, Studentenvereinigung, Naturwissenschaftliches Gebäude und Verwaltungsgebäude
         werden ins Spiel gebracht.\n
         \nJeder Ermittler beginnt das Spiel auf dem Miskatonic-Freigelände.\n</string>
     <string name="extracurricular_set_aside_one">Büros der Lehrkräfte (Die Nacht ist noch jung), „Jazz“ Mulligan,
-        Alchemistisches Gebräu, Das Experiment, Professor Warren Rice, Studentenwohnheime und Alchemistenlabor.
-        \n</string>
+        Alchemistisches Gebräu, Das Experiment, Professor Warren Rice, Studentenwohnheime und Alchemistenlabor.\n
+        \nDie andere Version von Büros der Lehrkräfte wird aus dem Spiel entfernt.\n</string>
     <string name="extracurricular_set_aside_two">Büros der Lehrkräfte (Es wird spät), „Jazz“ Mulligan, Alchemistisches
-        Gebräu, Das Experiment, Professor Warren Rice, Studentenwohnheime und Alchemistenlabor.\n</string>
+        Gebräu, Das Experiment, Professor Warren Rice, Studentenwohnheime und Alchemistenlabor.\n
+        \nDie andere Version von Büros der Lehrkräfte wird aus dem Spiel entfernt.\n</string>
 
     <string name="house_sets">Das Haus gewinnt immer, Pech, Naomis Truppe und Rattenschwarm.</string>
-    <string name="house_locations"> Die Orte Lounge des Clover Clubs, Bar des Clover Clubs, Spielzimmer des Clover Clubs
+    <string name="house_locations">Die Orte Lounge des Clover Clubs, Bar des Clover Clubs, Spielzimmer des Clover Clubs
         und La Bella Luna werden ins Spiel gebracht.\n
         \nJeder Ermittler beginnt das Spiel im La Bella Luna.\n</string>
     <string name="house_set_aside">Die Begegnungssets Grässliche Abscheulichkeiten und Lähmende Angst.\n</string>
@@ -442,11 +447,11 @@
         Kult.</string>
     <string name="essex_locations">Ein zufälliger der drei Lokomotive-Orte wird ins Spiel gebracht. Die anderen
         Versionen der Lokomotive werden aus dem Spiel entfernt.\n
-    \nDann werden sechs der acht Waggon-Orte zufällig gewählt und in einer geraden Linie angeordnet links von der
+    \nDann werden sechs zufällig gewählte der acht Waggon-Orte in einer geraden Linie angeordnet links von der
         Lokomotive ins Spiel gebracht. Die verbliebenen zwei Waggon-Orte werden aus dem Spiel entfernt.\n
     \nJeder Ermittler beginnt das Spiel im Waggon ganz links. (Falls dieser Ort einen „Erzwungen“-Effekt hat, der beim
         Betreten des Ortes ausgelöst wird, wird dieser ignoriert.)\n</string>
-    <string name="essex_set_aside">All 4 Exemplare von Durch Raum und Zeit.\n</string>
+    <string name="essex_set_aside">Alle 4 Exemplare von Durch Raum und Zeit.\n</string>
     <string name="essex_additional">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne der folgende
         Chaosmarker dem Chaosbeutel hinzugefügt:\n
     \n\t\t<b>Einfach:</b> -2\n
@@ -464,7 +469,7 @@
     \nJeder Ermittler beginnt das Spiel auf dem Dorfplatz.\n</string>
     <string name="blood_set_aside">Silas Bishop und Pulver von Ibn-Ghazi.\n</string>
     <string name="blood_additional">Mische Die verborgene Kammer, den Schlüssel zur Kammer und die drei obersten Karten
-        des Begegnungsdecks zusammen und lege jeweils eine dieser Karten verdeckt unter jeden Ort außer den
+        des Begegnungsdecks zusammen. Lege jeweils eine dieser fünf Karten verdeckt unter jeden Ort außer den
         Dorfplatz.\n\n</string>
     <string name="blood_additional_sacrifice_one">Bilde einen verdeckten Stapel „möglicher Opfer“, der aus den
         Karten</string>
@@ -501,8 +506,8 @@
         Angst, Böses aus uralter Zeit und Grabeskälte.</string>
     <string name="doom_sets_two">Wo das Verderben wartet, Bestiendiener, Zauberei, Bishops Seelenlose Diener, Lähmende
         Angst, Böses aus uralter Zeit, Grabeskälte und Grässliche Abscheulichkeiten.</string>
-    <string name="doom_locations"> Fuß des Hügels, Aufsteigender Pfad und Gipfel des Sentinel Hill werden ins Spiel
-        gebracht.\n
+    <string name="doom_locations">Die Orte Fuß des Hügels, Aufsteigender Pfad und Gipfel des Sentinel Hill werden ins
+        Spiel gebracht.\n
         \nJeder Ermittler beginnt das Spiel am Fuß des Hügels.\n</string>
     <string name="doom_set_aside">1 zufälliges Exemplar von Verzweigender Weg wird aus dem Spiel entfernt. Die anderen 3
         Exemplare werden als nicht im Spiel befindlich beiseitegelegt.\n
@@ -530,11 +535,11 @@
         gewachsen. Eine „Ansammlung schillernder Kugeln“ wird auf dem Aufsteigenden Pfad ins Spiel gebracht.
         \n\n</string>
 
-    <string name="lost_sets">Lost in Time and Space, Sorcery, The Beyond, Hideous Abominations, and Agents of
-        Yog-Sothoth.</string>
-    <string name="lost_locations">Put Another Dimension into play.\n
-        \nEach investigator begins play in Another Dimension.\n</string>
-    <string name="lost_set_aside">The Edge of the Universe, Tear Through Time, and Yog-Sothoth.\n</string>
+    <string name="lost_sets">Verloren in Zeit und Raum, Zauberei, Das Jenseits, Grässliche Abscheulichkeiten und
+        Anhänger von Yog-Sothoth. </string>
+    <string name="lost_locations">Eine andere Dimension wird ins Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel auf Eine andere Dimension.\n</string>
+    <string name="lost_set_aside">Rand des Universums, Riss durch die Zeit und Yog-Sothoth.\n</string>
 
 
     <!--Scenario resolutions-->
@@ -763,88 +768,95 @@
         offenen Riss über dem Sentinel Hill, löscht den Himmel aus und umschlingt die Welt. Nun ist er auf die Erde
         hinabgestiegen und regiert die Reiche, die einst den Menschen gehörten.\n
     \n<b>Alle Ermittler werden wahnsinnig.</b>\n
-    \n<b>Die Ermittler haben die Kampagne verloren.</b></string>
+    \n<b>Die Ermittler haben die Kampagne verloren!</b></string>
 
-    <string name="lost_no_resolution">Where did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-    \n<b>Each defeated investigator is killed.</b></string>
-    <string name="lost_resolution_one">Lying on your back in a patch of wet grass, you find yourself staring
-        longingly at the night sky. Somehow, you are once again atop Sentinel Hill, unable to recall exactly how you
-        got here. You are mesmerized by the night sky. Seconds become minutes, and minutes become hours. Eventually,
-        you are found and lifted to your feet by a group of Dunwich citizens. “What happened? What are ya doin’
-        here?” they ask you, frightened but curious. You can’t seem to find the right words to describe the events
-        that occurred beyond the gate…if they ever truly occurred. There doesn’t appear to be any trace of Seth
-        Bishop, of the creatures you fought earlier, or of the phantasmal and otherworldly gate. But every time you
-        sleep, you dream—and when you dream, it all comes rushing back.\n
-    \n<b>The investigators win!</b></string>
-    <string name="lost_resolution_one_defeated"><b>Defeated investigators:</b>\n
-        \nWhere did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-    \n<b>Each defeated investigator is killed.</b>\n
-        \n<b>Surviving investigators:</b>\n
-    \nLying on your back in a patch of wet grass, you find yourself staring
-        longingly at the night sky. Somehow, you are once again atop Sentinel Hill, unable to recall exactly how you
-        got here. You are mesmerized by the night sky. Seconds become minutes, and minutes become hours. Eventually,
-        you are found and lifted to your feet by a group of Dunwich citizens. “What happened? What are ya doin’
-        here?” they ask you, frightened but curious. You can’t seem to find the right words to describe the events
-        that occurred beyond the gate…if they ever truly occurred. There doesn’t appear to be any trace of Seth
-        Bishop, of the creatures you fought earlier, or of the phantasmal and otherworldly gate. But every time you
-        sleep, you dream—and when you dream, it all comes rushing back.\n
-    \n<b>The investigators win!</b></string>
-    <string name="lost_resolution_two">Where did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-    \n<b>Each defeated investigator is killed.</b>\n
-    \nSeveral of the villagers from Dunwich heard the ruckus on Sentinel Hill and went to investigate. What they
-        found there answered none of their questions.\n
-    \n“What d’you think happened?” a frightened Curtis Whateley asks as they examine the hilltop. The other villagers
-        shake their heads, unable to say. “Last thing I saw, the sky’d open’d up an’ there was a bright flash,” one
-        of them says, looking up at the starry sky from the top of Sentinel Hill.\n
-    \n“Those Arkham fellas ain’t nowhere to be seen,” Curtis adds, looking down at the cracked stone altar. “Not even
-        of a hint of ‘em. Mr. Bishop and his pals, now, that’s a diff’rent story.” The young man motions toward
-        several corpses on the ground.\n
-    \n“Think we should get ahold of those coppers outta Aylesbury?”\n
-    \n“Why, so they can laugh at us again?” Curtis spits. “They ain’t never gonna believe us ‘bout all this anyway.”
-        He glances at the stone altar, fidgeting nervously. “Better t’ forget about the whole thing. C’mon, let’s
-        bury the dead and get outta here.”\n
-    \n<b>The investigators win…and are never seen or heard from again.</b></string>
-    <string name="lost_resolution_three">The creature erupts in a cosmic fury of sound, color, and distorted space, hurling you back and away from it.
-        You watch in horror as one of its arms tears through the fabric of the world, and its amorphous shape funnels
-        through the rift, pulling the threads of the world along with it. You try to cling to something, but you are
-        inexorably sucked into the rift. You feel as if your body is stretching and your mind is being crushed. Then,
-        everything goes black.\n
-    \n<b>Each investigator is killed.</b>\n
-    \n<b>The investigators win…and are never seen or heard from again.</b></string>
-    <string name="lost_resolution_three_defeated"><b>Defeated investigators:</b>\n
-        \nWhere did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-        \n<b>Surviving investigators:</b>\n
-    \nThe creature erupts in a cosmic fury of sound, color, and distorted space, hurling you back and away from it.
-        You watch in horror as one of its arms tears through the fabric of the world, and its amorphous shape funnels
-        through the rift, pulling the threads of the world along with it. You try to cling to something, but you are
-        inexorably sucked into the rift. You feel as if your body is stretching and your mind is being crushed. Then,
-        everything goes black.\n
-    \n<b>Each investigator is killed.</b>\n
-    \n<b>The investigators win…and are never seen or heard from again.</b></string>
-    <string name="lost_resolution_four">Where did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-    \n<b>Each defeated investigator is killed.</b>\n
-    \nThe sorcerers from Dunwich, seeking arcane power from beyond this realm, have accomplished what Wilbur and Old
-        Whateley could not. Through blood sacrifice and indescribable experiments, the dark power the sorcerers
-        sought is now within their reach. However, they will never get the chance to truly wield this power. In
-        beseeching Wilbur’s father for knowledge, they have drawn the creature forth from its extradimensional realm.
-        Yog-Sothoth emerges from the open rift above Sentinel Hill, blotting out the sky and enveloping the world.
-        Now it has come to Earth, and it rules where humanity once tread.\n
-    \n<b>Each surviving investigator is driven insane.</b>\n
-    \n<b>The investigators lose.</b></string>
+    <string name="lost_no_resolution">Woher bist du gekommen? Warum bist du hier? Träumst du oder ist dieser Ort real?
+        Jetzt, wo du darüber nachdenkst, bist du nicht schon einmal hier gewesen? Oder vielleicht warst du auch schon
+        immer hier? Nun erinnerst du dich. Das ist deine wahre Heimat. Der Weg, den du nun nimmst, ist nur ein Sims,
+        unter dem es noch viele weitere gibt. Du musst nur fallen und wirst da sein, wo du hingehörst. Nur noch ein
+        Schritt…\n
+    \n<b>Jeder besiegte Ermittler wird getötet.</b></string>
+    <string name="lost_resolution_one">Du liegst auf einem nassen Grasflecken auf dem Rücken und starrst sehnsüchtig in
+        den Nachthimmel. Du befindest dich wieder auf dem Gipfel des Sentinel Hill und hast keine Ahnung, wie du dorthin
+        gekommen bist. Du bist wie hypnotisiert vom Nachthimmel. Aus Sekunden werden Minuten, aus Minuten werden
+        Stunden. Endlich findet dich eine Gruppe Dorfbewohner von Dunwich und zieht dich auf deine Füße. „Was ist
+        passiert? Was machen Sie hier?“, fragen sie dich erschrocken und neugierig. Du findest nicht die richtigen
+        Worte, um die Ereignisse jenseits des Tores zu beschreiben… falls sie wirklich passiert sind. Es scheint
+        keine Spur mehr von Seth Bishop, den Kreaturen, gegen die du gekämpft hast, oder von dem phantastischen und
+        außerirdischen Tor zu geben. Aber im Schlaf träumst du regelmäßig – und wenn du träumst, kommt alles zurück.\n
+    \n<b>Die Ermittler haben die Kampagne gewonnen!</b></string>
+    <string name="lost_resolution_one_defeated"><b>Besiegte Ermittler:</b>\n
+        \nWoher bist du gekommen? Warum bist du hier? Träumst du oder ist dieser Ort real?
+        Jetzt, wo du darüber nachdenkst, bist du nicht schon einmal hier gewesen? Oder vielleicht warst du auch schon
+        immer hier? Nun erinnerst du dich. Das ist deine wahre Heimat. Der Weg, den du nun nimmst, ist nur ein Sims,
+        unter dem es noch viele weitere gibt. Du musst nur fallen und wirst da sein, wo du hingehörst. Nur noch ein
+        Schritt…\n
+    \n<b>Jeder besiegte Ermittler wird getötet.</b>\n
+        \n<b>Überlebende Ermittler:</b>\n
+    \nDu liegst auf einem nassen Grasflecken auf dem Rücken und starrst sehnsüchtig in
+        den Nachthimmel. Du befindest dich wieder auf dem Gipfel des Sentinel Hill und hast keine Ahnung, wie du dorthin
+        gekommen bist. Du bist wie hypnotisiert vom Nachthimmel. Aus Sekunden werden Minuten, aus Minuten werden
+        Stunden. Endlich findet dich eine Gruppe Dorfbewohner von Dunwich und zieht dich auf deine Füße. „Was ist
+        passiert? Was machen Sie hier?“, fragen sie dich erschrocken und neugierig. Du findest nicht die richtigen
+        Worte, um die Ereignisse jenseits des Tores zu beschreiben… falls sie wirklich passiert sind. Es scheint
+        keine Spur mehr von Seth Bishop, den Kreaturen, gegen die du gekämpft hast, oder von dem phantastischen und
+        außerirdischen Tor zu geben. Aber im Schlaf träumst du regelmäßig – und wenn du träumst, kommt alles zurück.\n
+    \n<b>Die Ermittler haben die Kampagne gewonnen!</b></string>
+    <string name="lost_resolution_two">Woher bist du gekommen? Warum bist du hier? Träumst du oder ist dieser Ort real?
+        Jetzt, wo du darüber nachdenkst, bist du nicht schon einmal hier gewesen? Oder vielleicht warst du auch schon
+        immer hier? Nun erinnerst du dich. Das ist deine wahre Heimat. Der Weg, den du nun nimmst, ist nur ein Sims,
+        unter dem es noch viele weitere gibt. Du musst nur fallen und wirst da sein, wo du hingehörst. Nur noch ein
+        Schritt…\n
+    \n<b>Jeder besiegte Ermittler wird getötet.</b>\n
+    \nEinige Dorfbewohner aus Dunwich haben den Lärm auf dem Sentinel Hill gehört und sind hergekommen, um
+        herauszufinden, was los ist. Aber das, was sie vorgefunden haben, beantwortete ihre Frage nicht.\n
+    \n„Was glaubt ihr, ist hier passiert?“, fragt ein verängstigter Curtis Whateley, während sie den Gipfel untersuchen.
+        Die anderen Dorfbewohner wissen es auch nicht und schütteln den Kopf. „Das Letzte, was ich gesehen habe, ist,
+        dass der Himmel aufgerissen ist, und dann war da dieser helle Blitz", sagt einer von ihnen und blickt vom Gipfel
+        des Sentinel Hill zum Sternenhimmel auf.\n
+    \n„Ich sehe diese Typen aus Arkham hier nirgends“, fügt Curtis hinzu und blickt auf den zerborstenen Steinaltar.
+        „Nicht mal eine Spur von ihnen. Mr. Bishop und seine Freunde dagegen…“ Der junge Mann deutet auf einige
+        Leichen am Boden.\n
+    \n„Schätze, wir sollten diese Cops aus Aylesbury holen?“\n
+    \n„Warum? Damit sie uns erneut auslachen können?“, spuckt Curtis aus. „Sie werden uns all das sowieso nicht
+        glauben.“ Er blickt auf den Steinaltar und spielt nervös mit seinen Fingern herum. „Wir vergessen die ganze
+        Sache besser. Kommt, begraben wir die Toten und verschwinden von hier.“\n
+    \n<b>Die Ermittler haben die Kampagne gewonnen… aber man sieht oder hört nie wieder etwas von ihnen.</b></string>
+    <string name="lost_resolution_three">Die Kreatur bricht aus einer kosmischen Zorneswelle aus Geräuschen, Farben und
+        verzerrtem Raum hervor und wirft dich zurück, weg von ihr. Voller Furcht siehst du, wie einer ihrer Arme durch
+        das Gewebe der Welt schneidet und sich ihre amorphe Gestalt durch den Riss presst und die Fäden der Welt mit
+        sich reißt. Du versuchst dich an etwas festzuhalten, aber du wirst in den Riss gezogen. Du hast das Gefühl, dass
+        dein Körper länger wird und dass etwas deinen Geist zerstört. Dann wird alles schwarz.\n
+    \n<b>Jeder Ermittler wird getötet.</b>\n
+    \n<b>Die Ermittler haben die Kampagne gewonnen… aber man sieht oder hört nie wieder etwas von ihnen.</b></string>
+    <string name="lost_resolution_three_defeated"><b>Besiegte Ermittler:</b>\n
+        \nWoher bist du gekommen? Warum bist du hier? Träumst du oder ist dieser Ort real?
+        Jetzt, wo du darüber nachdenkst, bist du nicht schon einmal hier gewesen? Oder vielleicht warst du auch schon
+        immer hier? Nun erinnerst du dich. Das ist deine wahre Heimat. Der Weg, den du nun nimmst, ist nur ein Sims,
+        unter dem es noch viele weitere gibt. Du musst nur fallen und wirst da sein, wo du hingehörst. Nur noch ein
+        Schritt…\n
+    \n<b>Jeder besiegte Ermittler wird getötet.</b>
+        \n<b>Überlebende Ermittler:</b>\n
+    \nDie Kreatur bricht aus einer kosmischen Zorneswelle aus Geräuschen, Farben und verzerrtem Raum hervor und wirft
+        dich zurück, weg von ihr. Voller Furcht siehst du, wie einer ihrer Arme durch das Gewebe der Welt schneidet und
+        sich ihre amorphe Gestalt durch den Riss presst und die Fäden der Welt mit sich reißt. Du versuchst dich an
+        etwas festzuhalten, aber du wirst in den Riss gezogen. Du hast das Gefühl, dass dein Körper länger wird und dass
+        etwas deinen Geist zerstört. Dann wird alles schwarz.\n
+    \n<b>Die Ermittler haben die Kampagne gewonnen… aber man sieht oder hört nie wieder etwas von ihnen.</b></string>
+    <string name="lost_resolution_four">Woher bist du gekommen? Warum bist du hier? Träumst du oder ist dieser Ort real?
+        Jetzt, wo du darüber nachdenkst, bist du nicht schon einmal hier gewesen? Oder vielleicht warst du auch schon
+        immer hier? Nun erinnerst du dich. Das ist deine wahre Heimat. Der Weg, den du nun nimmst, ist nur ein Sims,
+        unter dem es noch viele weitere gibt. Du musst nur fallen und wirst da sein, wo du hingehörst. Nur noch ein
+        Schritt…\n
+    \n<b>Jeder besiegte Ermittler wird getötet.</b>\n
+    \n Die Zauberer aus Dunwich, die arkane Macht aus einem Reich außerhalb unserer Dimension suchten, haben erreicht,
+        was Wilbur und der alte Whateley nicht geschafft haben. Durch Blutopfer und unbeschreibliche Experimente ist die
+        dunkle Macht, die sie gesucht haben, nun für sie erreichbar. Aber sie werden keine Gelegenheit erhalten, die
+        Macht wirklich auszuüben. Indem sie Wilburs Vater um Wissen angefleht haben, haben sie Kreaturen aus dem
+        außerdimensionalen Reich herbeigerufen. Yog-Sothoth erscheint aus einem offenen Riss über dem Sentinel Hill,
+        löscht den Himmel aus und umschlingt die Welt. Nun ist er auf die Erde hinabgestiegen und regiert die Reiche,
+        die einst den Menschen gehörten.\n
+    \n<b>Jeder überlebende Ermittler wird wahnsinnig.</b>\n
+    \n<b>Die Ermittler haben die Kampagne verloren!</b></string>
 
 </resources>
