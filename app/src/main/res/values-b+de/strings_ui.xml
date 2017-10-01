@@ -73,6 +73,24 @@
     <string name="archaic_glyphs_dialog">You have translated the glyphs</string>
     <string name="archaic_glyphs">You have translated the glyphs.\n\n</string>
 
+
+    <!--Toast messages-->
+    <string name="must_option">Du musst eine Option wählen.</string>
+    <string name="must_investigator">Du musst einen Ermittler auswählen.</string>
+    <string name="must_campaign_name">Du musst einen Namen für die Kampagne eingeben.</string>
+    <string name="must_scenario_setup">Du musst noch die Einleitung lesen.</string>
+    <string name="must_replace_investigators">Alle getöteten und wahnsinnigen Ermittler müssen entfernt oder ersetzt werden.</string>
+    <string name="must_resolution">Du musst eine Auflösung wählen.</string>
+    <string name="must_lead_investigator">Du musst einen Ermittlungsleiter wählen.</string>
+    <string name="must_engine_car">Du musst eingeben, welcher Ermittler die Lokomotive betreten hat.</string>
+    <string name="must_act_ended">Du musst eingeben, welche Szene am Ende des Szenarios aktiv war.</string>
+    <string name="already_completed_scenario">Du hast dieses Szenario bereits abgeschlossen.</string>
+    <string name="already_completed_campaign">Du hast diese Kampagne bereits abgeschlossen.</string>
+    <string name="not_enough_xp_one">Du hast nicht genug EP (Kosten: 1 pro Ermittler).</string>
+    <string name="not_enough_xp_three">Du hast nicht genug EP (Kosten: 3 pro Ermittler).</string>
+    <string name="cannot_back">Du kannst nicht zurückgehen.</string>
+
+
     <!--Resolution screen-->
     <string name="investigators_defeated">Besiegte Ermittler</string>
     <string name="resigned">Aufgegeben</string>
@@ -147,7 +165,7 @@
         <item>Minh Thi Phan</item>
         <item>Sefina Rousseau</item>
         <item>Akachi Onyele</item>
-        <item>William Yorrick</item>
+        <item>William Yorick</item>
         <item>Lola Hayes</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
@@ -164,7 +182,7 @@
     <string name="minh_thi_phan">Minh Thi Phan</string>
     <string name="sefina_rousseau">Sefina Rousseau</string>
     <string name="akachi_onyele">Akachi Onyele</string>
-    <string name="william_yorrick">William Yorrick</string>
+    <string name="william_yorick">William Yorick</string>
     <string name="lola_hayes">Lola Hayes</string>
 
     <string name="cover_up">Nicht abgeschlossenes <i>Vertuschen</i> im Spiel</string>
