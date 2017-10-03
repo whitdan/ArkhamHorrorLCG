@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioMainActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioResolutionActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.Investigator;
@@ -233,9 +234,9 @@ public class EditTeamActivity extends AppCompatActivity {
         }
 
         // Get sharedpreferences on expansions owned
-        String sharedPrefs = getResources().getString(R.string.expansions_owned);
-        String dunwichOwnedString = getResources().getString(R.string.dunwich_campaign);
-        String carcosaOwnedString = getResources().getString(R.string.carcosa_campaign);
+        String sharedPrefs = getResources().getString(R.string.shared_prefs);
+        String dunwichOwnedString = getResources().getString(R.string.dunwich_setting);
+        String carcosaOwnedString = getResources().getString(R.string.carcosa_setting);
         SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
         boolean dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
         boolean carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
@@ -1258,6 +1259,9 @@ public class EditTeamActivity extends AppCompatActivity {
                 globalVariables.PlayerNames = new String[4];
                 globalVariables.DeckNames = new String[4];
                 globalVariables.DeckLists = new String[4];
+
+                // Save the campaign
+                ScenarioResolutionActivity.saveCampaign(view.getContext(), globalVariables);
 
                 // Go back to the current team
                 Intent intent = new Intent(EditTeamActivity.this, ScenarioMainActivity.class);

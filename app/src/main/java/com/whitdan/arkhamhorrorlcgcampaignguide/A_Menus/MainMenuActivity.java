@@ -1,19 +1,21 @@
 package com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus;
 
-import android.app.Dialog;
-import android.app.DialogFragment;
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.TextView;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
+
+import java.util.Locale;
 
 /*
     TODO:   Custom chaos bag
@@ -41,18 +43,27 @@ public class MainMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_activity_main_menu);
 
+        // Update settings
+        String languageSetting = getResources().getString(R.string.language_setting);
+        String sharedPrefs = getResources().getString(R.string.shared_prefs);
+        SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
+        String language = settings.getString(languageSetting, "sys");
+        if (!language.equals("sys")) {
+            setLocale(this, language);
+        }
+
         // Get all of the button views
         Button NewCampaignButton = findViewById(R.id.new_campaign_button);
         Button LoadCampaignButton = findViewById(R.id.load_campaign_button);
         Button StandaloneButton = findViewById(R.id.standalone_scenario_button);
-        Button ExpansionsButton = findViewById(R.id.expansions_owned_button);
+        Button SettingsButton = findViewById(R.id.settings_button);
 
         // Set correct font to all of the buttons
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         NewCampaignButton.setTypeface(teutonic);
         LoadCampaignButton.setTypeface(teutonic);
         StandaloneButton.setTypeface(teutonic);
-        ExpansionsButton.setTypeface(teutonic);
+        SettingsButton.setTypeface(teutonic);
 
         // Set onClickListener to the NewCampaignButton to go to the New Campaign screen
         NewCampaignButton.setOnClickListener(new View.OnClickListener() {
@@ -81,80 +92,34 @@ public class MainMenuActivity extends AppCompatActivity {
             }
         });
 
-        // Set onClickListener to the ExpansionsButton to open a dialog for selecting expansions owned
-        ExpansionsButton.setOnClickListener(new View.OnClickListener() {
+        // Set onClickListener to the SettingsButton to go to the Settings screen
+        SettingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DialogFragment expansionsDialog = new ExpansionsDialog();
-                expansionsDialog.show(getFragmentManager(), "expansions");
+                Intent intent = new Intent(getBaseContext(), SettingsMenuActivity.class);
+                startActivity(intent);
             }
         });
     }
 
-    // Dialog which allows editing in the settings which expansions a player owns
-    public static class ExpansionsDialog extends DialogFragment{
+    public static void setLocale(Context con, String lang) {
+        // Get configuration
+        Locale myLocale = new Locale(lang);
+        Resources res = con.getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        String language = conf.locale.getLanguage();
 
-        boolean dunwichOwned;
-        boolean carcosaOwned;
-        SharedPreferences settings;
-        String dunwichOwnedString;
-        String carcosaOwnedString;
-        String sharedPrefs;
+        if (!language.equals(lang)) {
+            // Update locale
+            conf.locale = myLocale;
+            res.updateConfiguration(conf, dm);
 
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            // Get the sharedprefs settings
-            sharedPrefs = getActivity().getResources().getString(R.string.expansions_owned);
-            dunwichOwnedString = getActivity().getResources().getString(R.string.dunwich_campaign);
-            carcosaOwnedString = getActivity().getResources().getString(R.string.carcosa_campaign);
-            settings = getActivity().getSharedPreferences(sharedPrefs, 0);
-            dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
-            carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
-
-            // Get the layout inflater and inflate the view
-            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            View v = View.inflate(getActivity(), R.layout.a_dialog_expansions_owned, null);
-
-            // Set the checkboxes using the previous settings
-            final CheckBox dunwich = v.findViewById(R.id.dunwich_owned);
-            final CheckBox carcosa = v.findViewById(R.id.carcosa_owned);
-            dunwich.setChecked(dunwichOwned);
-            carcosa.setChecked(carcosaOwned);
-
-            // Set fonts
-            Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
-            dunwich.setTypeface(arnopro);
-            carcosa.setTypeface(arnopro);
-            Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
-            TextView title = v.findViewById(R.id.expansions_owned);
-            Button cancelButton = v.findViewById(R.id.cancel_button);
-            Button okayButton = v.findViewById(R.id.okay_button);
-            title.setTypeface(teutonic);
-            cancelButton.setTypeface(teutonic);
-            okayButton.setTypeface(teutonic);
-
-            // Save the settings on clicking okay
-            okayButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    // Save the settings per which checkboxes are checked
-                    SharedPreferences.Editor editor = settings.edit();
-                    editor.putBoolean(dunwichOwnedString, dunwich.isChecked());
-                    editor.putBoolean(carcosaOwnedString, carcosa.isChecked());
-                    editor.apply();
-                    dismiss();
-                }
-            });
-
-            cancelButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    dismiss();
-                }
-            });
-
-            builder.setView(v);
-            return builder.create();
+            // Refresh activity
+            Intent refresh = new Intent(con, MainMenuActivity.class);
+            con.startActivity(refresh);
+            Activity activity = (Activity) con;
+            activity.finish();
         }
     }
 }

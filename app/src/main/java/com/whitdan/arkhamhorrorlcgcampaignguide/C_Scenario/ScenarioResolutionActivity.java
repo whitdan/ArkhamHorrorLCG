@@ -1988,7 +1988,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         }
                     }
                     if (dead == globalVariables.Investigators.size()) {
-                        String sharedPrefs = getActivity().getResources().getString(R.string.expansions_owned);
+                        String sharedPrefs = getActivity().getResources().getString(R.string.shared_prefs);
                         String dunwichOwnedString = getActivity().getResources().getString(R.string
                                 .dunwich_campaign);
                         String carcosaOwnedString = getActivity().getResources().getString(R.string

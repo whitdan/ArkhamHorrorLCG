@@ -82,6 +82,9 @@
             android:name=".A_Menus.StandaloneActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity android:name=".A_Menus.SettingsMenuActivity"
+                  android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

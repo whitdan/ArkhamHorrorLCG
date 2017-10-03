@@ -105,9 +105,9 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
         LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
         // Hide investigators if expansion isn't owned
-        String sharedPrefs = getResources().getString(R.string.expansions_owned);
-        String dunwichOwnedString = getResources().getString(R.string.dunwich_campaign);
-        String carcosaOwnedString = getResources().getString(R.string.carcosa_campaign);
+        String sharedPrefs = getResources().getString(R.string.shared_prefs);
+        String dunwichOwnedString = getResources().getString(R.string.dunwich_setting);
+        String carcosaOwnedString = getResources().getString(R.string.carcosa_setting);
         SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
         boolean dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
         boolean carcosaOwned = settings.getBoolean(carcosaOwnedString, true);

@@ -7,7 +7,11 @@
     <string name="new_campaign">New Campaign</string>
     <string name="load_campaign">Load Campaign</string>
     <string name="standalone_scenarios">Standalone Scenario</string>
+    <string name="settings">Settings</string>
     <string name="expansions_owned">Expansions Owned</string>
+    <string name="language">Languages</string>
+    <string name="english" translatable="false">English</string>
+    <string name="german" translatable="false">Deutsch</string>
     <string name="saved_campaigns">Saved Campaigns</string>
     <string name="scenario_not_available">This scenario is not yet available.</string>
     <string name="current_campaign">Current Campaign: </string>
@@ -190,4 +194,11 @@
     <string name="smite_the_wicked">Unresolved Smite the Wicked in play</string>
     <string name="searching_for_izzie">Unresolved Searching for Izzie in play</string>
     <string name="angered_spirits">Unresolved Angered Spirits in play</string>
+
+
+    <!--Shared Preferences - DO NOT TRANSLATE-->
+    <string name="shared_prefs" translatable="false">Shared preferences</string>
+    <string name="dunwich_setting" translatable="false">Dunwich setting</string>
+    <string name="carcosa_setting" translatable="false">Carcosa setting</string>
+    <string name="language_setting" translatable="false">Language setting</string>
 </resources>
