@@ -115,7 +115,7 @@
     <string name="dunwich_start_option_one">Als man Professor Warren zum letzten Mal gesehen hat, arbeitete er noch spät
         in der Nacht im Fachbereich für Geisteswissenschaften der Miskatonic-Universität. Die Suche sollte dort
         beginnen.</string>
-    <string name="dunwich_start_option_two"> Professor Francis Morgan wurde zuletzt beim Spielen im Clover Club gesehen,
+    <string name="dunwich_start_option_two">Professor Francis Morgan wurde zuletzt beim Spielen im Clover Club gesehen,
         einer exklusiven illegalen Bar und Spielhölle in der Innenstadt. Ein Gespräch mit ihm wäre sicher hilfreich.
         </string>
 
@@ -137,7 +137,7 @@
         „Viel Vergnügen“, wünscht er mit verschlagenem Grinsen, während er die Vordertür des Restaurants für dich
         aufhält.</string>
 
-    <string name="armitage_interlude_one"> Die Erlebnisse in der Universität und im Clover Club haben dich sehr
+    <string name="armitage_interlude_one">Die Erlebnisse in der Universität und im Clover Club haben dich sehr
         verstört. Du bist dir nicht sicher, was du von dem halten sollst, das hinter Rice und Morgan her ist – ganz
         gleich, ob es sich um eine Person oder etwas anderes handelt. Besorgt um Dr. Armitage verlierst du keine Zeit
         und machst dich auf den Weg zu ihm. Als du an seinem Haus ankommst, findest du seine Vordertür eingetreten und
@@ -296,7 +296,7 @@
         werden vor Panik immer lauter.</string>
     <string name="undimensioned_introduction_option_one">Du versuchst die Dorfbewohner zu beruhigen, um mehr zu
         erfahren.</string>
-    <string name="undimensoned_introduction_option_two"> Du versuchst die Dorfbewohner zu warnen, damit sie den Ort
+    <string name="undimensoned_introduction_option_two">Du versuchst die Dorfbewohner zu warnen, damit sie den Ort
         verlassen.</string>
     <string name="undimensioned_introduction_one">Du versuchst die Dorfbewohner zu beruhigen, damit sie dir erklären
         können, was passiert ist. Du erfährst, dass es im Norden ein Rumpeln gegeben hat und als sie nachschauen
@@ -386,7 +386,7 @@
         zu neugierig, einfach wieder zu gehen. Vielleicht gab es da etwas, das seine fürchterlichen Visionen
         verschwinden lassen würde. Etwas, das ihm genug Stärke verleihen könnte, um seinen Albträumen zu widerstehen.
         Curtis entschied, dass er so etwas finden müsste.</string>
-    <string name="dunwich_epilogue_two"> Gené kniete sich hin, um das Zeichen im Staub zu untersuchen. Die Form des
+    <string name="dunwich_epilogue_two">Gené kniete sich hin, um das Zeichen im Staub zu untersuchen. Die Form des
         Zeichens war ihr unbekannt, die Spuren, denen sie hierher gefolgt war, hatte sie noch nie zuvor gesehen. Und
         dann noch der Bericht von der Universität ... sie wusste einfach nicht, was sie davon halten sollte. „Ms.
         Beauregard“, rief ihr Assistent ihr zu. „Haben Sie etwas gefunden?“\n
@@ -499,7 +499,7 @@
         als nicht im Spiel befindlich beiseitegelegt.\n\n</string>
     <string name="undimensioned_additional_powder">Wenn ein Spieler das Pulver von Ibn-Ghazi in seinem Deck hat, darf er
         sein Deck danach durchsuchen und die Karte ins Spiel bringen.\n\n</string>
-    <string name="undimensioned_additional"> Jeder Ermittler durchsucht die Sammlung nach einer zufälligen Wahnsinn-,
+    <string name="undimensioned_additional">Jeder Ermittler durchsucht die Sammlung nach einer zufälligen Wahnsinn-,
         Verletzung- oder Pakt-Grundschwäche und fügt sie für den Rest der Kampagne seinem Deck hinzu.\n\n</string>
 
     <string name="doom_sets">Wo das Verderben wartet, Bestiendiener, Zauberei, Bishops Seelenlose Diener, Lähmende
@@ -549,7 +549,7 @@
         auf Studenten losgegangen und viele von ihnen wurden bei dem Angriff schwer verletzt oder getötet.\n
     \n<b>Die Schuld lastet schwer auf deinem Gewissen. Füge dem Chaosbeutel für den Rest der Kampagne 1
             Tafel-Chaosmarker hinzu.</b></string>
-    <string name="extracurricular_resolution_one"> Du findest Professor Rice gefesselt und geknebelt in einem
+    <string name="extracurricular_resolution_one">Du findest Professor Rice gefesselt und geknebelt in einem
         Wandschrank in seinem Büro. Als du ihn befreist, berichtet er, dass die merkwürdigen Männer und Frauen, die
         sich auf dem Universitätsgelände herumtreiben, ihn stundenlang verfolgt hätten. In seinem Büro konnten sie ihn
         dann in die Enge treiben und fesseln; den Grund dafür kennt Rice allerdings nicht. Du erzählst ihm, dass Dr.
@@ -682,7 +682,7 @@
         spricht von „einem Rohr, das im hinteren Wagen explodiert sei“. Diese Erklärung wird schnell von den
         unschuldigen und unwissenden Menschen aufgegriffen, die nicht tiefer in die Geheimnisse vordringen können oder
         wollen. Du dagegen weißt es besser… obwohl du dir im Nachhinein wünschst, es wäre anders.</string>
-    <string name="essex_resolution_two"> Auch wenn du dich nicht klar daran erinnern kannst, waren deine Erfahrungen
+    <string name="essex_resolution_two">Auch wenn du dich nicht klar daran erinnern kannst, waren deine Erfahrungen
         jenseits des Tores doch beängstigend. An den Rändern deines verwirrten Geistes wirbeln die Erinnerungen an
         hypnotisierende Lichter, Wahrnehmungen, die nicht von dieser Welt sein können, um einen völlig verzerrten Raum
         herum. Eine unirdische Stimme aus dem Jenseits klingt in deinen Ohren, aber was ihre Worte bedeuten sollen, ist
@@ -721,7 +721,7 @@
     \n<b>Alle einzigartigen Karten, die denselben Namen wie eine Karte unter dem Agendadeck haben, werden aus den
             Spielerdecks entfernt. Für den Rest der Kampagne können Karten mit diesen Namen nicht mehr in Spielerdecks
             aufgenommen werden.</b></string>
-    <string name="blood_resolution_three"> Da die angekettete Kreatur, die einst Silas war, nach dir schlägt, bleibt dir
+    <string name="blood_resolution_three">Da die angekettete Kreatur, die einst Silas war, nach dir schlägt, bleibt dir
         wenig Zeit, zu reagieren. In der Hoffnung, in der Kammer etwas zu finden, was dir helfen könnte, drängst du die
         Abscheulichkeit lange genug zurück, bis du ein Tagebuch findest; viele Abschnitte sind in Latein geschrieben. Es
         scheint sich um einen handschriftlichen Auszug aus dem Necronomicon zu handeln, dessen Zweck dir nicht klar ist.
