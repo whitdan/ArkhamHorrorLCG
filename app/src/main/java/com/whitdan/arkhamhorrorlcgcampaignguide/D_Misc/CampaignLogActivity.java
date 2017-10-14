@@ -473,23 +473,23 @@ public class CampaignLogActivity extends AppCompatActivity {
             if(scenario > 2){
                 carcosaBuilder.append(getString(R.string.vips_interviewed_log));
                 int vipsInterviewed = 0;
-                if(globalVariables.Constance == 1){
+                if(globalVariables.Constance == 1 || globalVariables.Constance == 4){
                     carcosaBuilder.append(getString(R.string.constance_log));
                     vipsInterviewed++;
                 }
-                if(globalVariables.Ishimaru == 1){
+                if(globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4){
                     carcosaBuilder.append(getString(R.string.ishimaru_log));
                     vipsInterviewed++;
                 }
-                if(globalVariables.Jordan == 1){
+                if(globalVariables.Jordan == 1 || globalVariables.Jordan == 4){
                     carcosaBuilder.append(getString(R.string.jordan_log));
                     vipsInterviewed++;
                 }
-                if(globalVariables.Sebastien == 1){
+                if(globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4){
                     carcosaBuilder.append(getString(R.string.sebastien_log));
                     vipsInterviewed++;
                 }
-                if(globalVariables.Ashleigh == 1){
+                if(globalVariables.Ashleigh == 1 || globalVariables.Ashleigh == 4){
                     carcosaBuilder.append(getString(R.string.ashleigh_log));
                     vipsInterviewed++;
                 }
@@ -499,23 +499,23 @@ public class CampaignLogActivity extends AppCompatActivity {
                 carcosaBuilder.append("\n");
                 carcosaBuilder.append(getString(R.string.vips_slain_log));
                 int vipsSlain = 0;
-                if(globalVariables.Constance == 2){
+                if(globalVariables.Constance == 2 || globalVariables.Constance == 4 || globalVariables.Constance == 5){
                     carcosaBuilder.append(getString(R.string.constance_log));
                     vipsSlain++;
                 }
-                if(globalVariables.Ishimaru == 2){
+                if(globalVariables.Ishimaru == 2 || globalVariables.Ishimaru == 4 || globalVariables.Ishimaru == 5){
                     carcosaBuilder.append(getString(R.string.ishimaru_log));
                     vipsSlain++;
                 }
-                if(globalVariables.Jordan == 2){
+                if(globalVariables.Jordan == 2 || globalVariables.Jordan == 4 || globalVariables.Jordan == 5){
                     carcosaBuilder.append(getString(R.string.jordan_log));
                     vipsSlain++;
                 }
-                if(globalVariables.Sebastien == 2){
+                if(globalVariables.Sebastien == 2 || globalVariables.Sebastien == 4 || globalVariables.Sebastien == 5){
                     carcosaBuilder.append(getString(R.string.sebastien_log));
                     vipsSlain++;
                 }
-                if(globalVariables.Ashleigh == 2){
+                if(globalVariables.Ashleigh == 2 || globalVariables.Ashleigh == 4 || globalVariables.Ashleigh == 5){
                     carcosaBuilder.append(getString(R.string.ashleigh_log));
                     vipsSlain++;
                 }

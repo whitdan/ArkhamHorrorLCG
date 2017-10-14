@@ -88,6 +88,8 @@ public class GlobalVariables extends Application {
     public int Stranger;
     public int Police;
     public int Theatre;
+    // VIPS - 0 = not interviewed or killed, 1 = interviewed, 2 = killed, 3 = interviewed (crossed out), 4 =
+    // interviewed and killed, 5 = interviewed (crossed out) and killed
     public int Constance;
     public int Jordan;
     public int Ishimaru;

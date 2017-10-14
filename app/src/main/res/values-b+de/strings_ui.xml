@@ -19,15 +19,15 @@
 
     <string name="scenario_setup">Einleitung</string>
     <string name="setup_instructions">Aufbau</string>
-    <string name="add_side_story">Nebengeschichte beginnen</string>
+    <string name="add_side_story">Nebengesch.\nbeginnen</string>
     <string name="campaign_log">Kampagnenlogbuch</string>
-    <string name="edit_team">Ermittlergruppe ändern</string>
+    <string name="edit_team">Ermittler-\ngruppe ändern</string>
     <string name="scenario_resolution">Auflösung</string>
     <string name="main_menu">Hauptmenü</string>
 
     <string name="decklist">Deckliste</string>
     <string name="killed">Getötet</string>
-    <string name="insane">Wahnsinnig</string>
+    <string name="insane">Wahn-\nsinnig</string>
     <string name="physical_trauma">Körperliche Traumata: </string>
     <string name="mental_trauma">Seelische Traumata: </string>
     <string name="available_xp">Verfügbare EP: </string>
@@ -43,7 +43,7 @@
     <string name="back">Zurück</string>
     <string name="continue_button">Fortsetzen</string>
     <string name="difficulty">Chaosbeutel zusammenstellen</string>
-    <string name="chaos_bag">Chaos-\nbeutel</string>
+    <string name="chaos_bag">Chaosbeutel</string>
     <string name="campaign_name">Name der Kampagne (erforderlich)</string>
     <string name="saved_investigators">Gespeicherte Ermittler</string>
     <string name="select_investigators">Ermittler auswählen</string>
@@ -94,7 +94,7 @@
 
     <!--Resolution screen-->
     <string name="investigators_defeated">Besiegte Ermittler</string>
-    <string name="resigned">Aufgegeben</string>
+    <string name="resigned">Aufgegeb.</string>
     <string name="not_defeated">Nicht besiegt</string>
     <string name="defeated">Besiegt</string>
     <string name="defeated_damage">Durch Schaden besiegt</string>
@@ -114,12 +114,12 @@
     <string name="finish_scenario">Szenario beenden</string>
     <string name="select_lead_investigator">Ermittlungsleiter wählen</string>
     <string name="confirm_finish_scenario">Szenario beenden und Kampagne speichern?</string>
-    <string name="investigator_weaknesses">Schwächen der Ermittler</string>
+    <string name="investigator_weaknesses">Schwächen d. Ermittler</string>
 
 
     <!--Difficulties-->
     <string name="easy">Einfach</string>
-    <string name="standard">Normal</string>
+    <string name="standard">Norm.</string>
     <string name="hard">Schwer</string>
     <string name="expert">Experte</string>
     <string name="current_setup">Aktueller Chaosbeutel</string>

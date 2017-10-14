@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="easy_weight">1</integer>
-    <integer name="normal_weight">1</integer>
-    <integer name="hard_weight">1</integer>
-    <integer name="expert_weight">1</integer>
+    <integer name="easy_weight">10</integer>
+    <integer name="normal_weight">9</integer>
+    <integer name="hard_weight">10</integer>
+    <integer name="expert_weight">10</integer>
 
     <integer name="side_story_weight">10</integer>
     <integer name="chaos_bag_weight">9</integer>

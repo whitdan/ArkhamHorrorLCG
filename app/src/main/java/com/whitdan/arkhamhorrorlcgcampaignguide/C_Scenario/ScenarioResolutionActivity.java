@@ -2652,7 +2652,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             }
                         }
 
-                        if (investigatorOne.isChecked()) {
+                        if(investigatorOne.isChecked() && additionalOne.isChecked()){
+                            globalVariables.Constance = 4;
+                        } else if (investigatorOne.isChecked()) {
                             globalVariables.Constance = 1;
                         } else if (additionalOne.isChecked()) {
                             globalVariables.Constance = 2;
@@ -2660,7 +2662,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             globalVariables.Constance = 0;
                         }
 
-                        if (investigatorTwo.isChecked()) {
+                        if(investigatorTwo.isChecked() && additionalTwo.isChecked()){
+                            globalVariables.Jordan = 4;
+                        } else if (investigatorTwo.isChecked()) {
                             globalVariables.Jordan = 1;
                         } else if (additionalTwo.isChecked()) {
                             globalVariables.Jordan = 2;
@@ -2668,7 +2672,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             globalVariables.Jordan = 0;
                         }
 
-                        if (investigatorFive.isChecked()) {
+                        if(investigatorFive.isChecked() && additionalThree.isChecked()){
+                            globalVariables.Ishimaru = 4;
+                        } else if (investigatorFive.isChecked()) {
                             globalVariables.Ishimaru = 1;
                         } else if (additionalThree.isChecked()) {
                             globalVariables.Ishimaru = 2;
@@ -2676,7 +2682,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             globalVariables.Ishimaru = 0;
                         }
 
-                        if (investigatorThree.isChecked()) {
+                        if(investigatorThree.isChecked() && additionalFour.isChecked()){
+                            globalVariables.Sebastien = 4;
+                        } else if (investigatorThree.isChecked()) {
                             globalVariables.Sebastien = 1;
                         } else if (additionalFour.isChecked()) {
                             globalVariables.Sebastien = 2;
@@ -2684,7 +2692,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             globalVariables.Sebastien = 0;
                         }
 
-                        if (investigatorFour.isChecked()) {
+                        if(investigatorFour.isChecked() && additionalFive.isChecked()){
+                            globalVariables.Ashleigh = 4;
+                        } else if (investigatorFour.isChecked()) {
                             globalVariables.Ashleigh = 1;
                         } else if (additionalFive.isChecked()) {
                             globalVariables.Ashleigh = 2;
@@ -2723,18 +2733,28 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 globalVariables.Party = 0;
                                 if (globalVariables.Constance == 1) {
                                     globalVariables.Constance = 3;
+                                } else if (globalVariables.Constance == 4){
+                                    globalVariables.Constance = 5;
                                 }
                                 if (globalVariables.Ishimaru == 1) {
                                     globalVariables.Ishimaru = 3;
+                                }  else if (globalVariables.Ishimaru == 4){
+                                    globalVariables.Ishimaru = 5;
                                 }
                                 if (globalVariables.Ashleigh == 1) {
                                     globalVariables.Ashleigh = 3;
+                                }  else if (globalVariables.Ashleigh == 4){
+                                    globalVariables.Ashleigh = 5;
                                 }
                                 if (globalVariables.Jordan == 1) {
                                     globalVariables.Jordan = 3;
+                                }  else if (globalVariables.Jordan == 4){
+                                    globalVariables.Jordan = 5;
                                 }
                                 if (globalVariables.Sebastien == 1) {
                                     globalVariables.Sebastien = 3;
+                                }  else if (globalVariables.Sebastien == 4){
+                                    globalVariables.Sebastien = 5;
                                 }
                                 break;
                         }

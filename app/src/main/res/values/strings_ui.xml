@@ -9,7 +9,7 @@
     <string name="standalone_scenarios">Standalone Scenario</string>
     <string name="settings">Settings</string>
     <string name="expansions_owned">Expansions Owned</string>
-    <string name="language">Languages</string>
+    <string name="language">Language</string>
     <string name="english" translatable="false">English</string>
     <string name="german" translatable="false">Deutsch</string>
     <string name="saved_campaigns">Saved Campaigns</string>

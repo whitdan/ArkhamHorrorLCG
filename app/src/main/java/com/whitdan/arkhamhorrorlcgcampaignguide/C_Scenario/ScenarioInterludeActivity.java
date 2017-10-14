@@ -216,12 +216,12 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
     }
 
     // Any resolutions which require implementing
-    public void interludeResolutions(){
-        switch(globalVariables.CurrentCampaign){
+    public void interludeResolutions() {
+        switch (globalVariables.CurrentCampaign) {
             case 3:
-                switch(globalVariables.CurrentScenario){
+                switch (globalVariables.CurrentScenario) {
                     case 3:
-                        switch(resolution){
+                        switch (resolution) {
                             case 1:
                                 globalVariables.Party = 1;
                                 globalVariables.Doubt += 1;
@@ -234,11 +234,46 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             case 3:
                                 globalVariables.Party = 3;
                                 globalVariables.Conviction += 1;
-                                globalVariables.Constance = 2;
-                                globalVariables.Jordan = 2;
-                                globalVariables.Ishimaru = 2;
-                                globalVariables.Sebastien = 2;
-                                globalVariables.Ashleigh = 2;
+                                // If not interviewed or killed, just record as killed
+                                if (globalVariables.Constance == 0) {
+                                    globalVariables.Constance = 2;
+                                }
+                                // If just interviewed, record as interviewed and killed
+                                else if (globalVariables.Constance == 1){
+                                    globalVariables.Constance = 4;
+                                }
+                                // If interviewed (crossed out), record as interviewed (crossed out) and killed
+                                else if (globalVariables.Constance == 3){
+                                    globalVariables.Constance = 5;
+                                }
+                                if (globalVariables.Jordan == 0) {
+                                    globalVariables.Jordan = 2;
+                                } else if (globalVariables.Jordan == 1){
+                                    globalVariables.Jordan = 4;
+                                } else if (globalVariables.Jordan == 3){
+                                    globalVariables.Jordan = 5;
+                                }
+                                if (globalVariables.Ishimaru == 0) {
+                                    globalVariables.Ishimaru = 2;
+                                } else if (globalVariables.Ishimaru == 1){
+                                    globalVariables.Ishimaru = 4;
+                                } else if (globalVariables.Ishimaru == 3){
+                                    globalVariables.Ishimaru = 5;
+                                }
+                                if (globalVariables.Sebastien == 0) {
+                                    globalVariables.Sebastien = 2;
+                                } else if (globalVariables.Sebastien == 1){
+                                    globalVariables.Sebastien = 4;
+                                } else if (globalVariables.Sebastien == 3){
+                                    globalVariables.Sebastien = 5;
+                                }
+                                if (globalVariables.Ashleigh == 0) {
+                                    globalVariables.Ashleigh = 2;
+                                } else if (globalVariables.Ashleigh == 1){
+                                    globalVariables.Ashleigh = 4;
+                                } else if (globalVariables.Ashleigh == 3){
+                                    globalVariables.Ashleigh = 5;
+                                }
                                 globalVariables.Theatre = 1;
                                 break;
                         }

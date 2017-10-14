@@ -92,22 +92,6 @@
                     android:layout_height="match_parent"/>
 
                 <Button
-                    android:id="@+id/chaos_bag_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="@integer/chaos_bag_weight"
-                    android:background="@drawable/button_style"
-                    android:includeFontPadding="false"
-                    android:text="@string/chaos_bag"
-                    android:textColor="@android:color/black"
-                    android:textScaleX="1.2"
-                    android:textSize="18sp"/>
-
-                <android.support.v4.widget.Space
-                    android:layout_width="@dimen/checkbox_padding"
-                    android:layout_height="match_parent"/>
-
-                <Button
                     android:id="@+id/edit_team_button"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -120,6 +104,21 @@
                     android:textSize="18sp"/>
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/chaos_bag_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/checkbox_padding"
+                android:layout_marginBottom="@dimen/checkbox_padding"
+                android:background="@drawable/button_style"
+                android:includeFontPadding="false"
+                android:text="@string/chaos_bag"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.2"
+                android:textSize="18sp"/>
 
             <Button
                 android:id="@+id/campaign_log_button"
