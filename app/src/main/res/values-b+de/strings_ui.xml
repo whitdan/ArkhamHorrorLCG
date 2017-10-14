@@ -70,8 +70,8 @@
     <string name="player_cards">Spielerkarten</string>
     <string name="strange_solution_dialog">Du hast die Lösung identifiziert</string>
     <string name="strange_solution">Du hast die Lösung identifiziert.\n\n</string>
-    <string name="archaic_glyphs_dialog">You have translated the glyphs</string>
-    <string name="archaic_glyphs">You have translated the glyphs.\n\n</string>
+    <string name="archaic_glyphs_dialog">Du hast die Glyphen übersetzt</string>
+    <string name="archaic_glyphs">Du hast die Glyphen übersetzt.\n\n</string>
 
 
     <!--Toast messages-->
@@ -79,7 +79,8 @@
     <string name="must_investigator">Du musst einen Ermittler auswählen.</string>
     <string name="must_campaign_name">Du musst einen Namen für die Kampagne eingeben.</string>
     <string name="must_scenario_setup">Du musst noch die Einleitung lesen.</string>
-    <string name="must_replace_investigators">Alle getöteten und wahnsinnigen Ermittler müssen entfernt oder ersetzt werden.</string>
+    <string name="must_replace_investigators">Alle getöteten und wahnsinnigen Ermittler müssen entfernt oder ersetzt
+        werden.</string>
     <string name="must_resolution">Du musst eine Auflösung wählen.</string>
     <string name="must_lead_investigator">Du musst einen Ermittlungsleiter wählen.</string>
     <string name="must_engine_car">Du musst eingeben, welcher Ermittler die Lokomotive betreten hat.</string>
@@ -160,7 +161,7 @@
         <item>Rex Murphy</item>
         <item>Jenny Barnes</item>
         <item>Jim Culver</item>
-        <item>\"Ashcan\" Pete</item>
+        <item>„Ashcan“ Pete</item>
         <item>Mark Harrigan</item>
         <item>Minh Thi Phan</item>
         <item>Sefina Rousseau</item>
@@ -177,7 +178,7 @@
     <string name="rex_murphy">Rex Murphy</string>
     <string name="jenny_barnes">Jenny Barnes</string>
     <string name="jim_culver">Jim Culver</string>
-    <string name="ashcan_pete">\"Ashcan\" Pete</string>
+    <string name="ashcan_pete">„Ashcan“ Pete</string>
     <string name="mark_harrigan">Mark Harrigan</string>
     <string name="minh_thi_phan">Minh Thi Phan</string>
     <string name="sefina_rousseau">Sefina Rousseau</string>
@@ -186,8 +187,8 @@
     <string name="lola_hayes">Lola Hayes</string>
 
     <string name="cover_up">Nicht abgeschlossenes <i>Vertuschen</i> im Spiel</string>
-    <string name="hospital_debts">Nicht abgeschlossene <i>Krankenhausrechnungen</i> im Spiel</string>
+    <string name="hospital_debts">Nicht bezahlte <i>Krankenhausrechnungen</i> im Spiel</string>
     <string name="smite_the_wicked">Nicht abgeschlossenes <i>Zerschmettere die Gottlosen</i> im Spiel</string>
-    <string name="searching_for_izzie">Nicht abgeschlossenes <i>Auf der Suche nach Izzie</i> im Spiel</string>
-    <string name="angered_spirits">Unresolved Angered Spirits in play</string>
+    <string name="searching_for_izzie">Nicht abgeschlossene <i>Suche nach Izzie</i> im Spiel</string>
+    <string name="angered_spirits">Nicht besänftigte <i>Wütende Geister</i> im Spiel</string>
 </resources>

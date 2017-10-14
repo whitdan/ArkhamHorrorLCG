@@ -17,11 +17,11 @@
 
     <!--Miscellaneous-->
     <string name="stranger_counter">Auf der Jagd nach dem Fremden: </string>
-    <string name="box_office">Stole from the box office</string>
-    <string name="advanced_2b">Advanced to Act 2b</string>
-    <string name="city_aflame">A City Aflame</string>
-    <string name="path_mine">The Path Is Mine</string>
-    <string name="shores_hail">The Shores of Hail</string>
+    <string name="box_office">Aus der Theaterkasse gestohlen</string>
+    <string name="advanced_2b">Wenn Szene 2b erreicht wurde:</string>
+    <string name="city_aflame">Eine Stadt in Flammen</string>
+    <string name="path_mine">Der Weg ist Mein</string>
+    <string name="shores_hail">Die Ufer von Hali</string>
     <string name="vips_interviewed">Befragte VIPs</string>
     <string name="vips_slain">Getötete VIPs</string>
     <string name="constance">Constance Dumaine</string>
@@ -119,13 +119,13 @@
         deine beste Kleidung an und begibst dich zum Haus in der 1452 Atlantic Avenue, in dem eine Frau namens Constance
         Dumaine eine Feier zu Ehren der einmaligen Aufführung des Stückes in Arkham ausrichtet.</string>
 
-    <string name="carcosa_interlude_one_option_one"> Die Dinge scheinen sich beruhigt zu haben. Vielleicht sollte ich
+    <string name="carcosa_interlude_one_option_one">Die Dinge scheinen sich beruhigt zu haben. Vielleicht sollte ich
         wieder hineingehen und weiter ermitteln.</string>
-    <string name="carcosa_interlude_one_option_two"> Ich vertraue diesem Ort nicht im geringsten. Ich werde die Tür
+    <string name="carcosa_interlude_one_option_two">Ich vertraue diesem Ort nicht im geringsten. Ich werde die Tür
         verrammeln und sehen, dass ich hier wegkomme!</string>
     <string name="carcosa_interlude_one_option_three">Falls diese Menschen am Leben bleiben dürfen, wird sich dieser
         Schrecken immer und immer wiederholen. Ich muss der Sache ein Ende machen. Ich muss sie töten.</string>
-    <string name="carcosa_interlude_one_one"> Die veränderte Atmosphäre weckt deine Neugier. Und wenn alles nur ein
+    <string name="carcosa_interlude_one_one">Die veränderte Atmosphäre weckt deine Neugier. Und wenn alles nur ein
         Streich war, den dir dein Verstand gespielt hat? Und wenn die Heimsuchungen, die von <i>Der König in Gelb</i>
         ausgehen, nicht mehr aufhören wollen? Die Antwort auf deine Fragen befindet sich möglicherweise im Haus.
         Vorsichtig öffnest du die Vordertür erneut. Beruhigende Jazzklänge und das Gemurmel entspannter Unterhaltungen
@@ -140,7 +140,7 @@
     \n<b>Warum solltest du wieder hineingehen?</b>\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
             Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
-    <string name="carcosa_interlude_one_two"> Du kannst deinen Sinnen nicht trauen. Dies ist alles nur ein Trick, um
+    <string name="carcosa_interlude_one_two">Du kannst deinen Sinnen nicht trauen. Dies ist alles nur ein Trick, um
         dich wieder hineinzulocken. Du bist nicht sicherer als vorher. Aber du unterdrückst deine Angst und beginnst
         damit, die Vordertür des Hauses mit schweren Steinbänken zu verrammeln, die vorher am kopfsteingepflasterten Weg
         im Vordergarten gestanden haben. Du hoffst, dass das ausreichen wird, bist aber nicht dazu bereit, hierzubleiben
@@ -179,7 +179,7 @@
 
     <string name="king_sets">Der letzte König, Hasturs Gabe, Verfall und Schmutz, Der Fremde, Böses aus uralter
         Zeit.</string>
-    <string name="king_locations"> Alle 6 Orte werden ins Spiel gebracht (Eingangshalle, Innenhof, Wohnzimmer, Ballsaal,
+    <string name="king_locations">Alle 6 Orte werden ins Spiel gebracht (Eingangshalle, Innenhof, Wohnzimmer, Ballsaal,
         Speisesaal und Galerie).\n
         \nJeder Ermittler beginnt das Spiel in der Eingangshalle.\n</string>
     <string name="king_set_aside">Dianne Devine.\n</string>
@@ -230,13 +230,14 @@
         Spielverderber! Komm zur Besetzungsfeier von <i>Der König in Gelb</i>. 20 Uhr, im Haus von Constance Dumaine,
         1452 Atlantic Avenue. Um Abendkleidung wird gebeten.“ Du reißt den Zettel ab und nimmst ihn mit, als du dich
         frustriert und verwirrt abwendest.\n
-    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
-            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
-            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
-            and add it to that investigator’s deck.</b>\n
-    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
-            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
-            closer to the truth.</b></string>
+    \n<b>Die Schwäche Der Mann mit der Bleichen Maske wird dem Deck des Ermittlungsleiters hinzugefügt (diese Karte
+            zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
+            von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
+            gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
+            dieses Ermittlers hinzugefügt.</b>\n
+    \n<b>Gib bis zum Ende der Kampagne immer unter „Auf der Jagd nach dem Fremden“ ein, wie oft Der Mann mit der
+            Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
+            näher.</b></string>
     <string name="curtain_resolution_one">Du fliehst aus dem Theater und eilst direkt zur Polizeiwache in der Oststadt.
         Als du durch die Tür stürmst, starren dich die Polizisten und andere Anwesende an. Du forderst mit einem Verweis
         auf Dringlichkeit sofort Sheriff Engle sprechen zu dürfen. Der Sergeant am Empfangstresen, der gelangweilt einen
@@ -261,13 +262,14 @@
         Wand, faltest ihn zusammen und steckst ihn in die Tasche deines Mantels, weil du hoffst, dass er dich zu den
         Antworten führt, die du suchst.\n
         \n<b>Hast du wirklich gedacht, die Polizei würde dir helfen?</b>\n
-    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
-            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
-            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
-            and add it to that investigator’s deck.</b>\n
-    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
-            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
-            closer to the truth.</b></string>
+    \n<b>Die Schwäche Der Mann mit der Bleichen Maske wird dem Deck des Ermittlungsleiters hinzugefügt (diese Karte
+            zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
+            von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
+            gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
+            dieses Ermittlers hinzugefügt.</b>\n
+    \n<b>Gib bis zum Ende der Kampagne immer unter „Auf der Jagd nach dem Fremden“ ein, wie oft Der Mann mit der
+            Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
+            näher.</b></string>
     <string name="curtain_resolution_two">Du erwägst kurz die Polizei zu verständigen, aber wenn man bedenkt, was du
         heute Abend erlebt hast, werden sie dich wohl eher für verrückt halten, als dir zu glauben. Ein kleiner Teil von
         dir fragt sich, ob es sich hier wohl um einen merkwürdigen Scherz handelt. Aber das kann eigentlich nicht sein –
@@ -290,13 +292,14 @@
         Constance Dumaine, 1452 Atlantic Avenue. Um Abendkleidung wird gebeten.“ Du reißt den Zettel von der Wand und
         nimmst ihn mit, weil du hoffst, dass er dich zu den Antworten führt, die du suchst.\n
         \n<b>Glaubst du, es war vernünftig, niemanden zu warnen?</b>\n
-    \n<b>Add The Man in the Pallid Mask weakness to the lead investigator’s deck (does not count towards deck size).
-            For the remainder of this campaign, any time the bearer of The Man in the Pallid Mask leaves the campaign
-            for any reason, choose a new investigator to become the bearer of The Man in the Pallid Mask weakness,
-            and add it to that investigator’s deck.</b>\n
-    \n<b>For the remainder of the campaign, keep a running tally of the number of times The Man in the Pallid Mask is
-            defeated during a game and record it above under Chasing the Stranger. Each tally will bring you one step
-            closer to the truth.</b></string>
+    \n<b>Die Schwäche Der Mann mit der Bleichen Maske wird dem Deck des Ermittlungsleiters hinzugefügt (diese Karte
+            zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
+            von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
+            gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
+            dieses Ermittlers hinzugefügt.</b>\n
+    \n<b>Gib bis zum Ende der Kampagne immer unter „Auf der Jagd nach dem Fremden“ ein, wie oft Der Mann mit der
+            Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
+            näher.</b></string>
 
     <string name="king_resolution_one">Erfrischende Herbstluft umfängt dich, als du das Haus verlässt. Du hast keinen
         Zweifel daran, dass die Besetzung und die Mitarbeiter von <i>Der König in Gelb</i> dem Wahnsinn verfallen sind.

@@ -36,8 +36,7 @@
     <string name="umordhoth_succumbed">\nArkham succumbed to Umordhoth\'s terrible vengeance.\n</string>
     <string name="umordhoth_broken">\nThe ritual to summon Umordhoth was broken.\n</string>
     <string name="umordhoth_repelled">\nThe investigators repelled Umordhoth.\n</string>
-    <string name="umordhoth_sacrificed">\nThe investigators sacrificed Lita Chantler to Umordhoth. Random <i>Madness
-    </i> weakness added to each investigator\'s deck.\n</string>
+    <string name="umordhoth_sacrificed">\nThe investigators sacrificed Lita Chantler to Umordhoth.\n</string>
 
 
     <!--Campaign introduction-->
