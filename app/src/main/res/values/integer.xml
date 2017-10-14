@@ -5,7 +5,9 @@
     <integer name="hard_weight">10</integer>
     <integer name="expert_weight">12</integer>
 
-    <integer name="side_story_weight">1</integer>
-    <integer name="chaos_bag_weight">1</integer>
-    <integer name="edit_team_weight">1</integer>
+    <integer name="inv_name_weight">3</integer>
+    <integer name="inv_link_weight">2</integer>
+
+    <integer name="player_card_weight">1</integer>
+    <integer name="weakness_weight">1</integer>
 </resources>

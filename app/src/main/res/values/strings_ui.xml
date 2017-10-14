@@ -12,6 +12,7 @@
     <string name="language">Language</string>
     <string name="english" translatable="false">English</string>
     <string name="german" translatable="false">Deutsch</string>
+    <string name="french" translatable="false">Français</string>
     <string name="saved_campaigns">Saved Campaigns</string>
     <string name="scenario_not_available">This scenario is not yet available.</string>
     <string name="current_campaign">Current Campaign: </string>

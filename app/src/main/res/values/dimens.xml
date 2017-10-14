@@ -10,5 +10,4 @@
     <!--Translated dimensions-->
     <dimen name="main_menu_button_height">55dp</dimen>
     <dimen name="short_button_height">50dp</dimen>
-    <dimen name="tall_button_height">70dp</dimen>
 </resources>

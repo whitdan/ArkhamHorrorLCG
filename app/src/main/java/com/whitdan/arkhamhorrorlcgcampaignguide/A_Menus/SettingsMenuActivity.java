@@ -84,6 +84,7 @@ public class SettingsMenuActivity extends AppCompatActivity {
             final RadioGroup languageSelection = v.findViewById(R.id.language_selection);
             final RadioButton english = v.findViewById(R.id.english);
             final RadioButton german = v.findViewById(R.id.german);
+            final RadioButton french = v.findViewById(R.id.french);
             switch(language){
                 case "sys":
                     languageSelection.clearCheck();
@@ -94,12 +95,16 @@ public class SettingsMenuActivity extends AppCompatActivity {
                 case "de":
                     german.setChecked(true);
                     break;
+                case "fr":
+                    french.setChecked(true);
+                    break;
             }
 
             // Set fonts
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
             english.setTypeface(arnopro);
             german.setTypeface(arnopro);
+            french.setTypeface(arnopro);
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
             TextView title = v.findViewById(R.id.languages);
             Button cancelButton = v.findViewById(R.id.cancel_button);
@@ -117,6 +122,8 @@ public class SettingsMenuActivity extends AppCompatActivity {
                         language = "en";
                     } else if (german.isChecked()){
                         language = "de";
+                    } else if (french.isChecked()){
+                        language = "fr";
                     }
                     SharedPreferences.Editor editor = settings.edit();
                     editor.putString(languageSetting, language);
