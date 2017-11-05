@@ -184,11 +184,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="@dimen/activity_vertical_margin">
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="-16dp"
+        android:paddingRight="-16dp">
 
         <Button
             android:id="@+id/cancel_button"
-            android:layout_width="120dp"
+            android:layout_width="135dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
@@ -204,7 +206,7 @@
 
         <Button
             android:id="@+id/okay_button"
-            android:layout_width="120dp"
+            android:layout_width="135dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
