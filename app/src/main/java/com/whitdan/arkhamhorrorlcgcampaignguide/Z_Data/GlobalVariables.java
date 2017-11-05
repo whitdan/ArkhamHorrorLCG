@@ -87,7 +87,7 @@ public class GlobalVariables extends Application {
     public int ChasingStranger;
     public int Stranger;
     public int Police;
-    public int Theatre;
+    public int Theatre;     // Only used for chaos bag (1 = 2 cultists, 2 = 2 tablets, 3 = 2 things, 4 = 1 each)
     // VIPS - 0 = not interviewed or killed, 1 = interviewed, 2 = killed, 3 = interviewed (crossed out), 4 =
     // interviewed and killed, 5 = interviewed (crossed out) and killed
     public int Constance;
@@ -96,6 +96,7 @@ public class GlobalVariables extends Application {
     public int Sebastien;
     public int Ashleigh;
     public int Party;
+    public int Onyx;
 
     /*
         Side story variables - All of the variables associated with side stories

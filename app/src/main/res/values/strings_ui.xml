@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Arkham Horror LCG</string>
+    <string name="app_name" translatable="false">Arkham Horror LCG</string>
 
 
     <!-- Main Menu -->

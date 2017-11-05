@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Arkham Horror - Das Kartenspiel</string>
-
-
     <!-- Main Menu -->
     <string name="new_campaign">Neue Kampagne</string>
     <string name="load_campaign">Kampagne laden</string>

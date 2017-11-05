@@ -137,6 +137,44 @@ public class EditTeamActivity extends AppCompatActivity {
                 }
                 break;
             case 3:
+                switch (globalVariables.CurrentScenario) {
+                    case 1:
+                        title.setText(R.string.carcosa_scenario_one);
+                        break;
+                    case 2:
+                        title.setText(R.string.carcosa_scenario_two);
+                        break;
+                    case 3:
+                        title.setText(R.string.carcosa_interlude_one);
+                        break;
+                    case 4:
+                        title.setText(R.string.carcosa_scenario_three);
+                        break;
+                    case 5:
+                        title.setText(R.string.carcosa_scenario_four);
+                        break;
+                    case 6:
+                        title.setText(R.string.carcosa_interlude_two);
+                        break;
+                    case 7:
+                        title.setText(R.string.carcosa_scenario_five);
+                        break;
+                    case 8:
+                        title.setText(R.string.carcosa_scenario_six);
+                        break;
+                    case 9:
+                        title.setText(R.string.carcosa_scenario_seven);
+                        break;
+                    case 10:
+                        title.setText(R.string.carcosa_scenario_eight);
+                        break;
+                    case 11:
+                        title.setText(R.string.carcosa_epilogue);
+                        break;
+                    case 12:
+                        title.setText(R.string.campaign_completed);
+                        break;
+                }
                 break;
         }
         if (globalVariables.CurrentScenario > 100) {

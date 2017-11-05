@@ -441,6 +441,39 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
+                    case 4:
+                        title.setText(R.string.carcosa_scenario_three);
+                        sets.setText(R.string.echoes_sets);
+                        setsImage.setImageResource(R.drawable.echoes_sets);
+                        locations.setText(R.string.echoes_locations);
+                        setAside.setText(R.string.echoes_set_aside);
+                        // StringBuilder for the additional instructions
+                        StringBuilder echoesAdditional = new StringBuilder();
+                        switch(globalVariables.Investigators.size()){
+                            case 1:
+                                break;
+                            case 2:
+                                echoesAdditional.append(getString(R.string.echoes_additional_two_players));
+                                break;
+                            case 3:
+                                echoesAdditional.append(getString(R.string.echoes_additional_three_players));
+                                break;
+                            case 4:
+                                echoesAdditional.append(getString(R.string.echoes_additional_four_players));
+                                break;
+                        }
+                        if(globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4){
+                            echoesAdditional.append(getString(R.string.echoes_additional_sebastien));
+                        }
+                        if(globalVariables.Party == 2){
+                            echoesAdditional.append(getString(R.string.echoes_additional_dinner));
+                        }
+                        if (echoesAdditional.length() == 0) {
+                            echoesAdditional.append(getString(R.string.no_additional));
+                        }
+                        // Show the additional text
+                        String echoesAdditionalString = echoesAdditional.toString();
+                        additional.setText(echoesAdditionalString.trim());
                 }
                 break;
         }

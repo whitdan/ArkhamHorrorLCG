@@ -178,6 +178,36 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     case 2:
                         title.setText(R.string.carcosa_scenario_two);
                         break;
+                    case 3:
+                        title.setText(R.string.carcosa_interlude_one);
+                        break;
+                    case 4:
+                        title.setText(R.string.carcosa_scenario_three);
+                        break;
+                    case 5:
+                        title.setText(R.string.carcosa_scenario_four);
+                        break;
+                    case 6:
+                        title.setText(R.string.carcosa_interlude_two);
+                        break;
+                    case 7:
+                        title.setText(R.string.carcosa_scenario_five);
+                        break;
+                    case 8:
+                        title.setText(R.string.carcosa_scenario_six);
+                        break;
+                    case 9:
+                        title.setText(R.string.carcosa_scenario_seven);
+                        break;
+                    case 10:
+                        title.setText(R.string.carcosa_scenario_eight);
+                        break;
+                    case 11:
+                        title.setText(R.string.carcosa_epilogue);
+                        break;
+                    case 12:
+                        title.setText(R.string.campaign_completed);
+                        break;
                 }
                 break;
         }
@@ -317,6 +347,11 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         resolutionOne.setVisibility(GONE);
                         resolutionTwo.setVisibility(GONE);
                         resolutionThree.setVisibility(VISIBLE);
+                        break;
+                    case 4:
+                        resolutionThree.setVisibility(VISIBLE);
+                        resolutionFour.setVisibility(VISIBLE);
+                        break;
                 }
                 break;
         }
@@ -891,6 +926,13 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 counterOneName.setText(investigatorNames[globalVariables
                                         .Investigators.get(0)
                                         .Name]);
+                        }
+                        break;
+                    case 4:
+                        if(globalVariables.Sebastien == 0 || globalVariables.Sebastien == 1 || globalVariables
+                                .Sebastien == 3){
+                            additionalCheckbox.setVisibility(VISIBLE);
+                            additionalCheckbox.setText(R.string.sebastien_victory);
                         }
                         break;
                 }
@@ -1712,6 +1754,25 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     break;
                             }
                             break;
+                        case 4:
+                            switch(globalVariables.ScenarioResolution){
+                                case 0:
+                                    resolutionTextView.setText(R.string.echoes_no_resolution);
+                                    break;
+                                case 1:
+                                    resolutionTextView.setText(R.string.echoes_resolution_one);
+                                    break;
+                                case 2:
+                                    resolutionTextView.setText(R.string.echoes_resolution_two);
+                                    break;
+                                case 3:
+                                    resolutionTextView.setText(R.string.echoes_resolution_three);
+                                    break;
+                                case 4:
+                                    resolutionTextView.setText(R.string.echoes_resolution_four);
+                                    break;
+                            }
+                            break;
                     }
                     break;
             }
@@ -1834,6 +1895,36 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             break;
                         case 2:
                             title.setText(R.string.carcosa_scenario_two);
+                            break;
+                        case 3:
+                            title.setText(R.string.carcosa_interlude_one);
+                            break;
+                        case 4:
+                            title.setText(R.string.carcosa_scenario_three);
+                            break;
+                        case 5:
+                            title.setText(R.string.carcosa_scenario_four);
+                            break;
+                        case 6:
+                            title.setText(R.string.carcosa_interlude_two);
+                            break;
+                        case 7:
+                            title.setText(R.string.carcosa_scenario_five);
+                            break;
+                        case 8:
+                            title.setText(R.string.carcosa_scenario_six);
+                            break;
+                        case 9:
+                            title.setText(R.string.carcosa_scenario_seven);
+                            break;
+                        case 10:
+                            title.setText(R.string.carcosa_scenario_eight);
+                            break;
+                        case 11:
+                            title.setText(R.string.carcosa_epilogue);
+                            break;
+                        case 12:
+                            title.setText(R.string.campaign_completed);
                             break;
                     }
                     break;
@@ -2759,6 +2850,52 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
+                    // Echoes of the Past
+                    case 4:
+                        if(additionalCheckbox.isChecked()){
+                            if(globalVariables.Sebastien == 0){
+                                globalVariables.Sebastien = 1;
+                            } else if(globalVariables.Sebastien == 1){
+                                globalVariables.Sebastien = 4;
+                            } else if (globalVariables.Sebastien == 3){
+                                globalVariables.Sebastien = 5;
+                            }
+                        }
+                        switch(globalVariables.ScenarioResolution){
+                            case 1:
+                                globalVariables.Onyx = 1;
+                                globalVariables.Conviction += 1;
+                                globalVariables.Theatre = 1;
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                                }
+                                break;
+                            case 2:
+                                globalVariables.Onyx = 2;
+                                globalVariables.Doubt += 1;
+                                globalVariables.Theatre = 2;
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                                }
+                                break;
+                            case 3:
+                                globalVariables.Onyx = 3;
+                                globalVariables.Theatre = 2;
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                                }
+                                break;
+                            case 4:
+                            case 0:
+                                globalVariables.Onyx = 4;
+                                globalVariables.Theatre = 4;
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).AvailableXP += (globalVariables
+                                            .VictoryDisplay + 1);
+                                }
+                                break;
+                        }
+                        break;
                 }
                 break;
         }
@@ -3027,6 +3164,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_SEBASTIEN, globalVariables.Sebastien);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_ASHLEIGH, globalVariables.Ashleigh);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_PARTY, globalVariables.Party);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_ONYX, globalVariables.Onyx);
 
             String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " LIKE ?";
             String[] carcosaSelectionArgs = {Long.toString(globalVariables.CampaignID)};

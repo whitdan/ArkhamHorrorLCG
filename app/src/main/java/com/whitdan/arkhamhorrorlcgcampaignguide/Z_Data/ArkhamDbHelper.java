@@ -22,7 +22,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 16;
+    private static final int DATABASE_VERSION = 17;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -135,7 +135,8 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + ArkhamContract.CarcosaEntry.COLUMN_ISHIMARU + " INTEGER, "
                 + ArkhamContract.CarcosaEntry.COLUMN_SEBASTIEN + " INTEGER, "
                 + ArkhamContract.CarcosaEntry.COLUMN_ASHLEIGH + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_PARTY + " INTEGER);";
+                + ArkhamContract.CarcosaEntry.COLUMN_PARTY + " INTEGER, "
+                + ArkhamContract.CarcosaEntry.COLUMN_ONYX + " INTEGER);";
 
         // Execute the SQL statements
         db.execSQL(SQL_CREATE_CAMPAIGNS_TABLE);
@@ -319,6 +320,10 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_THIRTEEN_TEN);
                 db.execSQL(SQL_UPGRADE_THIRTEEN_ELEVEN);
                 db.execSQL(SQL_UPGRADE_THIRTEEN_TWELVE);
+            case 16:
+                String SQL_UPGRADE_FOURTEEN = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_ONYX + " INTEGER";
+                db.execSQL(SQL_UPGRADE_FOURTEEN);
         }
     }
 }

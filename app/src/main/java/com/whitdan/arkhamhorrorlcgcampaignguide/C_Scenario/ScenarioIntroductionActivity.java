@@ -96,14 +96,6 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         title.setText(R.string.dunwich_scenario_two);
                         introduction.setText(R.string.house_introduction);
                         break;
-                    case 3:
-                        title.setText(R.string.dunwich_interlude_one);
-                        if (globalVariables.InvestigatorsUnconscious == 1) {
-                            introduction.setText(R.string.armitage_interlude_one);
-                        } else {
-                            introduction.setText(R.string.armitage_interlude_two);
-                        }
-                        break;
                     case 4:
                         title.setText(R.string.dunwich_scenario_three);
                         if (globalVariables.HenryArmitage == 0) {
@@ -119,38 +111,6 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                     case 6:
                         title.setText(R.string.dunwich_scenario_five);
                         introduction.setText(R.string.blood_introduction);
-                        break;
-                    case 7:
-                        title.setText(R.string.dunwich_interlude_two);
-                        boolean powder = false;
-                        introduction.setText(R.string.survivors_interlude);
-                        if (globalVariables.HenryArmitage == 3) {
-                            introductionOne.setVisibility(VISIBLE);
-                            introductionOne.setText(R.string.survivors_interlude_one);
-                            powder = true;
-                        }
-                        if (globalVariables.WarrenRice == 3) {
-                            introductionTwo.setVisibility(VISIBLE);
-                            introductionTwo.setText(R.string.survivors_interlude_two);
-                            powder = true;
-                        }
-                        if (globalVariables.FrancisMorgan == 3) {
-                            introductionThree.setVisibility(VISIBLE);
-                            introductionThree.setText(R.string.survivors_interlude_three);
-                            powder = true;
-                        }
-                        if (powder) {
-                            introductionFour.setVisibility(VISIBLE);
-                            introductionFour.setText(R.string.survivors_interlude_powder);
-                        }
-                        if (globalVariables.ZebulonWhateley == 0) {
-                            introductionFive.setVisibility(VISIBLE);
-                            introductionFive.setText(R.string.survivors_interlude_four);
-                        }
-                        if (globalVariables.EarlSawyer == 0) {
-                            introductionSix.setVisibility(VISIBLE);
-                            introductionSix.setText(R.string.survivors_interlude_five);
-                        }
                         break;
                     case 8:
                         title.setText(R.string.dunwich_scenario_six);
@@ -208,6 +168,13 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         title.setText(R.string.carcosa_scenario_two);
                         introduction.setText(R.string.king_introduction);
                         break;
+                    case 4:
+                        title.setText(R.string.carcosa_scenario_three);
+                        if(globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4){
+                            introduction.setText(R.string.echoes_introduction_two);
+                        } else {
+                            introduction.setText(R.string.echoes_introduction);
+                        }
                 }
                 break;
         }

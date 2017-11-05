@@ -534,6 +534,23 @@ public class CampaignLogActivity extends AppCompatActivity {
                     carcosaBuilder.append(getString(R.string.slayed));
                 }
             }
+            // Echoes of the Past
+            if(scenario > 4){
+                switch(globalVariables.Onyx){
+                    case 1:
+                        carcosaBuilder.append(getString(R.string.onyx_taken));
+                        break;
+                    case 2:
+                        carcosaBuilder.append(getString(R.string.onyx_left));
+                        break;
+                    case 3:
+                        carcosaBuilder.append(getString(R.string.oathspeaker_destroyed));
+                        break;
+                    case 4:
+                        carcosaBuilder.append(getString(R.string.followers_sign));
+                        break;
+                }
+            }
 
             String carcosaLogText = carcosaBuilder.toString().trim();
             carcosaLog.setText(carcosaLogText);

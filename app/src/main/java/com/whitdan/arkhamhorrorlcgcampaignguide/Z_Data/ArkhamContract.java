@@ -122,5 +122,6 @@ public class ArkhamContract {
         public static final String COLUMN_SEBASTIEN = "sebastien";
         public static final String COLUMN_ASHLEIGH = "ashleigh";
         public static final String COLUMN_PARTY = "party";
+        public static final String COLUMN_ONYX = "onyx";
     }
 }

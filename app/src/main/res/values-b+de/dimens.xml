@@ -2,5 +2,5 @@
 <resources>
     <dimen name="main_menu_button_height">75dp</dimen>
     <dimen name="short_button_height">70dp</dimen>
-
+    <dimen name="tall_button_height">90dp</dimen>
 </resources>
