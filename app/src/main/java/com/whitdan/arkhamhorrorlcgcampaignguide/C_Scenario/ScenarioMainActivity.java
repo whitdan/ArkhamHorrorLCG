@@ -2,8 +2,10 @@ package com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
@@ -28,6 +30,8 @@ import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.CampaignLogActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.ChaosBagActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.EditTeamActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
+import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
+import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamDbHelper;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.Investigator;
 
@@ -39,6 +43,8 @@ import static android.view.View.VISIBLE;
 public class ScenarioMainActivity extends AppCompatActivity {
 
     static GlobalVariables globalVariables;
+    ArkhamDbHelper mDbHelper;
+    SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +61,9 @@ public class ScenarioMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c_activity_scenario_main);
         globalVariables = (GlobalVariables) this.getApplication();
+
+        mDbHelper = new ArkhamDbHelper(this);
+        db = mDbHelper.getWritableDatabase();
 
         // Set title
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
@@ -181,12 +190,13 @@ public class ScenarioMainActivity extends AppCompatActivity {
         setup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 5){
+                if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 5) {
                     Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
-                Intent intent = new Intent(ScenarioMainActivity.this, ScenarioIntroductionActivity.class);
-                startActivity(intent);}
+                    Intent intent = new Intent(ScenarioMainActivity.this, ScenarioIntroductionActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -262,14 +272,16 @@ public class ScenarioMainActivity extends AppCompatActivity {
                         investigatorDead = true;
                     }
                 }
-                if(globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 5){
+                if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 5) {
                     Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
                     toast.show();
                 } else if (setupRequired) {
-                    Toast toast = Toast.makeText(ScenarioMainActivity.this, R.string.must_scenario_setup, Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(ScenarioMainActivity.this, R.string.must_scenario_setup, Toast
+                            .LENGTH_SHORT);
                     toast.show();
                 } else if (investigatorDead) {
-                    Toast toast = Toast.makeText(ScenarioMainActivity.this, R.string.must_replace_investigators, Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(ScenarioMainActivity.this, R.string.must_replace_investigators,
+                            Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
                     Intent intent = new Intent(ScenarioMainActivity.this, ScenarioResolutionActivity.class);
@@ -313,7 +325,8 @@ public class ScenarioMainActivity extends AppCompatActivity {
                     }
                     if (rougarou.isChecked()) {
                         if (globalVariables.Rougarou > 0) {
-                            Toast toast = Toast.makeText(getActivity(), R.string.already_completed_scenario, Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(getActivity(), R.string.already_completed_scenario, Toast
+                                    .LENGTH_SHORT);
                             toast.show();
                         } else if (XP < 1) {
                             Toast toast = Toast.makeText(getActivity(), R.string.not_enough_xp_one, Toast.LENGTH_SHORT);
@@ -331,7 +344,8 @@ public class ScenarioMainActivity extends AppCompatActivity {
                     }
                     if (carnevale.isChecked()) {
                         if (globalVariables.Carnevale > 0) {
-                            Toast toast = Toast.makeText(getActivity(), R.string.already_completed_scenario, Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(getActivity(), R.string.already_completed_scenario, Toast
+                                    .LENGTH_SHORT);
                             toast.show();
                         } else if (XP < 3) {
                             Toast toast = Toast.makeText(getActivity(), R.string.not_enough_xp_three, Toast
@@ -377,7 +391,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
 
         @Override
         @NonNull
-        public View getView(int pos, View convertView, @NonNull ViewGroup parent) {
+        public View getView(final int pos, View convertView, @NonNull ViewGroup parent) {
             final Investigator currentInvestigator = getItem(pos);
 
             // Check if an existing view is being reused, otherwise inflate the view
@@ -492,23 +506,42 @@ public class ScenarioMainActivity extends AppCompatActivity {
                 final ImageView xpDecrement = listItemView.findViewById(R.id.xp_spent_decrement);
                 final ImageView xpIncrement = listItemView.findViewById(R.id.xp_spent_increment);
 
-                // Set click listeners and increase touchable size of buttons by 70
-                spentXPAmount.setText(String.valueOf(currentInvestigator.TempXP));
+                // Set click listeners
+                spentXPAmount.setText(String.valueOf(currentInvestigator.SpentXP));
                 xpDecrement.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (currentInvestigator.TempXP > 0) {
-                            currentInvestigator.TempXP += -1;
-                            spentXPAmount.setText(String.valueOf(currentInvestigator.TempXP));
+                        if (currentInvestigator.SpentXP > 0) {
+                            currentInvestigator.SpentXP += -1;
+                            spentXPAmount.setText(String.valueOf(currentInvestigator.SpentXP));
+
+                            // Save new amount
+                            ContentValues values = new ContentValues();
+                            values.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP,
+                                    currentInvestigator.SpentXP);
+                            String selection = ArkhamContract.InvestigatorEntry.PARENT_ID + " = ? AND " +
+                                ArkhamContract.InvestigatorEntry.INVESTIGATOR_ID + " = ?";
+                            String[] selectionArgs = {Long.toString(globalVariables.CampaignID), Integer.toString(pos)};
+                            db.update(ArkhamContract.InvestigatorEntry.TABLE_NAME, values, selection, selectionArgs);
                         }
+
                     }
                 });
                 xpIncrement.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (currentInvestigator.TempXP < currentInvestigator.AvailableXP) {
-                            currentInvestigator.TempXP += 1;
-                            spentXPAmount.setText(String.valueOf(currentInvestigator.TempXP));
+                        if (currentInvestigator.SpentXP < currentInvestigator.AvailableXP) {
+                            currentInvestigator.SpentXP += 1;
+                            spentXPAmount.setText(String.valueOf(currentInvestigator.SpentXP));
+
+                            // Save new amount
+                            ContentValues values = new ContentValues();
+                            values.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP,
+                                    currentInvestigator.SpentXP);
+                            String selection = ArkhamContract.InvestigatorEntry.PARENT_ID + " = ? AND " +
+                                    ArkhamContract.InvestigatorEntry.INVESTIGATOR_ID + " = ?";
+                            String[] selectionArgs = {Long.toString(globalVariables.CampaignID), Integer.toString(pos)};
+                            db.update(ArkhamContract.InvestigatorEntry.TABLE_NAME, values, selection, selectionArgs);
                         }
                     }
                 });
@@ -523,5 +556,12 @@ public class ScenarioMainActivity extends AppCompatActivity {
     public void onBackPressed() {
         Toast toast = Toast.makeText(ScenarioMainActivity.this, R.string.cannot_back, Toast.LENGTH_SHORT);
         toast.show();
+    }
+
+    // Close database
+    @Override
+    protected void onDestroy() {
+        mDbHelper.close();
+        super.onDestroy();
     }
 }

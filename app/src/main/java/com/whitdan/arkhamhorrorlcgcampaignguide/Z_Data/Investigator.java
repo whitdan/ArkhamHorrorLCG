@@ -38,6 +38,7 @@ public class Investigator {
         this.Damage = 0;
         this.Horror = 0;
         this.AvailableXP = 0;
+        this.SpentXP = 0;
     }
 
     // Basic attributes for all investigators
@@ -48,12 +49,12 @@ public class Investigator {
     public int Damage;
     public int Horror;
     public int AvailableXP;
+    public int SpentXP;
     public String PlayerName;
     public String DeckName;
     public String Decklist;
 
     // Temp variables for when a change might be pending clicking the continue button
-    public int TempXP = 0;
     public int TempStatus;      // 0 = normal, 1 = resigned, 2 = health, 3 = horror
     public int TempWeakness;    // 0 = not active, 1 = active
 

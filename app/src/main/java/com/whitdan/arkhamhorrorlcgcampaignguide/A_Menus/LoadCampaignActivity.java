@@ -353,6 +353,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     InvestigatorEntry.COLUMN_INVESTIGATOR_DAMAGE,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_HORROR,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_XP,
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_DECKNAME,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST
@@ -393,6 +394,9 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     globalVariables.Investigators.get(i).AvailableXP=(investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
                                     .COLUMN_INVESTIGATOR_XP)));
+                    globalVariables.Investigators.get(i).SpentXP=(investigatorCursor.getInt
+                            (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
+                                    .COLUMN_INVESTIGATOR_SPENT_XP)));
                     count++;
                 } else if (status == 3){
                     globalVariables.SavedInvestigators.add(new Investigator(name, player, deckName, deck));
@@ -406,6 +410,9 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     globalVariables.SavedInvestigators.get(i - count).AvailableXP=(investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
                                     .COLUMN_INVESTIGATOR_XP)));
+                    globalVariables.SavedInvestigators.get(i - count).SpentXP=(investigatorCursor.getInt
+                            (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
+                                    .COLUMN_INVESTIGATOR_SPENT_XP)));
                 }
             }
             investigatorCursor.close();

@@ -2942,8 +2942,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
             Investigator currentInvestigator = globalVariables.Investigators.get(i);
 
-            currentInvestigator.AvailableXP += -currentInvestigator.TempXP;
-            currentInvestigator.TempXP = 0;
+            currentInvestigator.AvailableXP += -currentInvestigator.SpentXP;
+            currentInvestigator.SpentXP = 0;
 
             int status = currentInvestigator.TempStatus;
             // Add to physical trauma
@@ -3194,6 +3194,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     .Investigators.get(i).Horror);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_XP, globalVariables
                     .Investigators.get(i).AvailableXP);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP, 0);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER, globalVariables
                     .Investigators.get(i).PlayerName);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_DECKNAME, globalVariables
@@ -3215,6 +3216,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     .SavedInvestigators.get(i).Horror);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_XP, globalVariables
                     .SavedInvestigators.get(i).AvailableXP);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP, globalVariables
+                    .SavedInvestigators.get(i).SpentXP);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER, globalVariables
                     .SavedInvestigators.get(i).PlayerName);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_DECKNAME, globalVariables

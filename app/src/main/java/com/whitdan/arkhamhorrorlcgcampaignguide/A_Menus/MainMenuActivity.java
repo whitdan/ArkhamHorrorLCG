@@ -21,12 +21,11 @@ import java.util.Locale;
     TODO:   Custom chaos bag
     TODO:   Chaos token text
     TODO:   Tablet design
-    TODO:   Samsung Galaxy S5 layout bug
     TODO:   Improve clicking +/- buttons
-    TODO:   Translations
     TODO:   Edit previous scenario results
     TODO:   Every scenario in standalone mode
-    TODO:   Prevent restart on orientation change
+    TODO:   Persist spent XP and add total XP
+    TODO:   Add Marie Lambeau
 
  */
 
