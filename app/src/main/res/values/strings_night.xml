@@ -39,6 +39,34 @@
     <string name="umordhoth_sacrificed">\nThe investigators sacrificed Lita Chantler to Umordhoth.\n</string>
 
 
+    <!--Chaos bag-->
+    <string name="gathering_skull_one">-X. X is the number of <b><i>Ghoul</i></b> enemies at your location.</string>
+    <string name="gathering_skull_two">-2. If you fail, after this skill test, search the encounter deck and discard
+        pile for a <b><i>Ghoul</i></b> enemy, and draw it. Shuffle the encounter deck.</string>
+    <string name="gathering_cultist_one">-1. If you fail, take 1 horror.</string>
+    <string name="gathering_cultist_two">Reveal another token. If you fail, take 2 horror.</string>
+    <string name="gathering_tablet_one">-2. If there is a <b><i>Ghoul</i></b> enemy at your location, take 1 damage.</string>
+    <string name="gathering_tablet_two">-4. If there is a <b><i>Ghoul</i></b> enemy at your location, take 1 damage and 1 horror.</string>
+
+    <string name="midnight_skull_one">-X. X is the highest number of doom on a <b><i>Cultist</i></b> enemy in play.</string>
+    <string name="midnight_skull_two">-X. X is the total number of doom in play.</string>
+    <string name="midnight_cultist_one">-2. Place 1 doom on the nearest <b><i>Cultist</i></b> enemy.</string>
+    <string name="midnight_cultist_two">-2. Place 1 doom on each <b><i>Cultist</i></b> enemy in play. If there are no
+        <b><i>Cultist</i></b> enemies in play, reveal another token.</string>
+    <string name="midnight_tablet_one">-3. If you fail, place 1 of your clues on your location.</string>
+    <string name="midnight_tablet_two">-4. If you fail, place all your clues on your location.</string>
+
+    <string name="devourer_skull_one">-X. X is the number of <b><i>Monster</i></b> enemies in play.</string>
+    <string name="devourer_skull_two">-3. If you fail, after this skill test, search the encounter deck and discard
+        pile for a <b><i>Monster</i></b> enemy, and draw it. Shuffle the encounter deck.</string>
+    <string name="devourer_cultist_one">-2. Place 1 doom on the nearest enemy.</string>
+    <string name="devourer_cultist_two">-4. Place 2 doom on the nearest enemy.</string>
+    <string name="devourer_tablet_one">-3. If there is a <b><i>Monster</i></b> enemy at your location, take 1 damage.</string>
+    <string name="devourer_tablet_two">-5. If there is a <b><i>Monster</i></b> enemy at your location, take 1 damage and 1 horror.</string>
+    <string name="devourer_thing_one">-5. If there is an <b><i>Ancient One</i></b> enemy in play, reveal another token.</string>
+    <string name="devourer_thing_two">-7. If there is an <b><i>Ancient One</i></b> enemy in play, reveal another token.</string>
+
+
     <!--Campaign introduction-->
     <string name="night_introduction"><b>The Ghouls Hunger…</b>\n
         \nFriday, September 18, 1925. Arkham, Massachusetts. It is the end of a long and

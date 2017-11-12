@@ -91,6 +91,86 @@
     <string name="yog_fled">Yog-Sothoth has fled to another dimension.\n\n</string>
 
 
+    <!--Chaos bag-->
+    <string name="extracurricular_skull_one">-1. If you fail, discard the top 3 cards of your deck.</string>
+    <string name="extracurricular_skull_two">-2. If you fail, discard the top 5 cards of your deck.</string>
+    <string name="extracurricular_cultist_one">-1 (-3 instead if there are 10 or more cards in your discard pile).</string>
+    <string name="extracurricular_cultist_two">-1 (-5 instead if there are 10 or more cards in your discard pile).</string>
+    <string name="extracurricular_thing_one">-X. Discard the top 2 cards of your deck. X is the total printed cost of those discarded cards.</string>
+    <string name="extracurricular_thing_two">-X. Discard the top 3 cards of your deck. X is the total printed cost of those discarded cards.</string>
+
+    <string name="house_skull_one">-2. You may spend 2 resources to treat this token as a 0, instead.</string>
+    <string name="house_skull_two">-3. You may spend 3 resources to treat this token as a 0, instead.</string>
+    <string name="house_cultist_one">-3. If you succeed, gain 3 resources.</string>
+    <string name="house_cultist_two">-3. If you fail, discard 3 resources.</string>
+    <string name="house_tablet_one">-2. If you fail, discard 3 resources.</string>
+    <string name="house_tablet_two">-2. Discard 3 resources.</string>
+
+    <string name="miskatonic_skull_one">-1 (-3 instead if Hunting Horror is at your location.)</string>
+    <string name="miskatonic_skull_two">-2 (-4 instead if Hunting Horror is at your location.)</string>
+    <string name="miskatonic_cultist_one">-1. If you fail, search the encounter deck, discard pile, and the void for
+        Hunting Horror and spawn it at your location, if able.</string>
+    <string name="miskatonic_cultist_two">-1. If you fail, search the encounter deck, discard pile, and the void for
+        Hunting Horror and spawn it at your location, if able.</string>
+    <string name="miskatonic_tablet_one">-2. Return 1 of your clues to your current location.</string>
+    <string name="miskatonic_tablet_two">-4. If Hunting Horror is at your location, it immediately attacks you.</string>
+    <string name="miskatonic_thing_one">-3. If you fail, discard an asset you control.</string>
+    <string name="miskatonic_thing_two">-5. If you fail, discard an asset you control.</string>
+
+    <string name="essex_skull_one">-X. X is the current Agenda #.</string>
+    <string name="essex_skull_two">-X. X is 1 more than the current Agenda #.</string>
+    <string name="essex_cultist_one">-1. If you fail and it is your turn, lose all remaining actions and end your turn immediately.</string>
+    <string name="essex_cultist_two">Reveal another token. If you fail and it is your turn, lose all remaining actions and end your turn immediately.</string>
+    <string name="essex_tablet_one">-2. Add 1 doom token to the nearest Cultist enemy.</string>
+    <string name="essex_tablet_two">-4. Add 1 doom token to each Cultist enemy in play.</string>
+    <string name="essex_thing_one">-3. If you fail, choose and discard a card from your hand.</string>
+    <string name="essex_thing_two">-3. If you fail, choose and discard a card from your hand for each point you failed by.</string>
+
+    <string name="blood_skull_one">-1 for each location in play with no encounter card underneath it (max -4).</string>
+    <string name="blood_skull_two">-1 for each location in play with no encounter card underneath it.</string>
+    <string name="blood_cultist_one">-2. If you fail, add 1 clue from the token pool to your location.</string>
+    <string name="blood_cultist_two">-4. If you fail, add 1 clue from the token pool to your location.</string>
+    <string name="blood_tablet_one">-2. If you are in the Hidden Chamber, reveal another token.</string>
+    <string name="blood_tablet_two">-3. Reveal another token.</string>
+    <string name="blood_thing_one">-3. If you fail, place 1 doom on the current agenda.</string>
+    <string name="blood_thing_two">-3. Place 1 doom on the current agenda.</string>
+
+    <string name="undimensioned_skull_one">-1 for each Brood of Yog-Sothoth in play.</string>
+    <string name="undimensioned_skull_two">-2 for each Brood of Yog-Sothoth in play.</string>
+    <string name="undimensioned_cultist_one">Reveal another token. If you fail this test, take 1 horror.</string>
+    <string name="undimensioned_cultist_two">Reveal another token. If you fail this test, take 1 horror and 1 damage.</string>
+    <string name="undimensioned_tablet_one">0. You must either remove all clue tokens from a Brood of Yog-Sothoth in
+        play, or this token\'s modifier is -4 instead.</string>
+    <string name="undimensioned_tablet_two">0. You must either remove all clue tokens from a Brood of Yog-Sothoth in
+        play, or this test automatically fails.</string>
+    <string name="undimensioned_thing_one">-3. If this token is revealed during an attack or evasion attempt against
+        a Brood of Yog-Sothoth, it immediately attacks you.</string>
+    <string name="undimensioned_thing_two">-5. If this token is revealed during an attack or evasion attempt against
+        a Brood of Yog-Sothoth, it immediately attacks you.</string>
+
+    <string name="doom_skull_one">-1 (-3 instead if you are at an <b><i>Altered</i></b> location).</string>
+    <string name="doom_skull_two">-2 (-5 instead if you are at an <b><i>Altered</i></b> location).</string>
+    <string name="doom_cultist_one">Reveal another token. Cancel the effects and icons of each skill card committed to this test.</string>
+    <string name="doom_cultist_two">Reveal another token. Cancel the effects and icons of each skill card committed to this test.</string>
+    <string name="doom_tablet_one">-2 (-4 instead if it is Agenda 2).</string>
+    <string name="doom_tablet_two">-3. If it is Agenda 2, you automatically fail instead.</string>
+    <string name="doom_thing_one">-X. Discard the top 2 cards of your deck. X is the total printed cost of those discarded cards.</string>
+    <string name="doom_thing_two">-X. Discard the top 3 cards of your deck. X is the total printed cost of those discarded cards.</string>
+
+    <string name="lost_skull_one">-1 for each <b><i>Extradimensional</i></b> location in play (max -5).</string>
+    <string name="lost_skull_two">-1 for each <b><i>Extradimensional</i></b> location in play.</string>
+    <string name="lost_cultist_one">Reveal another token. If you fail, after this skill test, discard cards from the
+        top of the encounter deck until a location is discarded. Put that location into play and move there.</string>
+    <string name="lost_cultist_two">Reveal another token. After this skill test, discard cards from the top of the
+        encounter deck until a location is discarded. Put that location into play and move there.</string>
+    <string name="lost_tablet_one">-3. If Yog-Sothoth is in play, it attacks you after this skill test.</string>
+    <string name="lost_tablet_two">-5. If Yog-Sothoth is in play, it attacks you after this skill test.</string>
+    <string name="lost_thing_one">-X. X is the shroud value of your location. If you fail and your location is
+        <b><i>Extradimensional</i></b>, discard it.</string>
+    <string name="lost_thing_two">-X. X is twice the shroud value of your location. If you fail and your location is
+        <b><i>Extradimensional</i></b>, discard it.</string>
+
+
     <!--Campaign introduction-->
     <string name="dunwich_introduction"><b>Prologue</b>\n
     \nDr. Henry Armitage pours himself a glass of pinot and sits down at his desk, gesturing for you to sit across

@@ -23,9 +23,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:text="@string/night_campaign"
                 android:textAllCaps="true"
@@ -49,11 +49,11 @@
                 android:id="@+id/difficulty_selection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
 
                 <RadioButton
                     android:id="@+id/easy_button"
@@ -134,10 +134,10 @@
                     android:id="@+id/draw_token"
                     android:layout_width="180dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/button_style"
-                    android:includeFontPadding="false"
                     android:layout_marginLeft="@dimen/checkbox_padding"
                     android:layout_marginRight="@dimen/checkbox_padding"
+                    android:background="@drawable/button_style"
+                    android:includeFontPadding="false"
                     android:text="@string/draw_token"
                     android:textColor="@android:color/black"
                     android:textScaleX="1.2"
@@ -161,9 +161,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:button="@drawable/checkbox_style"
                 android:paddingBottom="@dimen/checkbox_padding"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/arnopro_textsize"
                 android:visibility="gone"/>
@@ -172,51 +172,226 @@
                 android:id="@+id/chaos_bag_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:orientation="horizontal"
                 android:visibility="gone">
+
                 <RadioButton
                     android:id="@+id/chaos_bag_option_one"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
+                    android:layout_weight="1"
                     android:button="@drawable/checkbox_style"
                     android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"/>
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"/>
+
                 <RadioButton
                     android:id="@+id/chaos_bag_option_two"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
+                    android:layout_weight="1"
                     android:button="@drawable/checkbox_style"
                     android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"/>
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"/>
+
                 <RadioButton
                     android:id="@+id/chaos_bag_option_three"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
+                    android:layout_weight="1"
                     android:button="@drawable/checkbox_style"
                     android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"/>
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"/>
             </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/scenario_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:src="@drawable/underline"/>
+
+                <TextView
+                    android:id="@+id/scenario_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/scenario_card"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="1.2"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <LinearLayout
+                        android:id="@+id/skull_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:src="@drawable/token_11"/>
+
+                        <TextView
+                            android:id="@+id/skull_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="5"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cultist_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:src="@drawable/token_12"/>
+
+                        <TextView
+                            android:id="@+id/cultist_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="5"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tablet_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:src="@drawable/token_13"/>
+
+                        <TextView
+                            android:id="@+id/tablet_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="5"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/thing_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:src="@drawable/token_14"/>
+
+                        <TextView
+                            android:id="@+id/thing_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="5"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/combined_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/token_12"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:src="@drawable/token_13"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:src="@drawable/token_14"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/combined_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="5"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
                 android:src="@drawable/underline"/>
 
             <TextView
@@ -266,9 +441,9 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:layout_marginTop="@dimen/activity_vertical_margin">
+                android:paddingRight="@dimen/activity_horizontal_margin">
 
                 <Button
                     android:id="@+id/back_button"

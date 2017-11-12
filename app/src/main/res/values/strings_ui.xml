@@ -127,6 +127,7 @@
     <string name="standard">Standard</string>
     <string name="hard">Hard</string>
     <string name="expert">Expert</string>
+    <string name="scenario_card">Scenario Card</string>
     <string name="current_setup">Current Setup</string>
     <string name="one" translatable="false">1</string>
     <string name="two" translatable="false">2</string>

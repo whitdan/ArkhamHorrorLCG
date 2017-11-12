@@ -242,6 +242,8 @@ public class ChaosBagActivity extends AppCompatActivity {
         }
         TextView chaosBag = findViewById(R.id.chaos_bag);
         chaosBag.setTypeface(teutonic);
+        TextView scenarioCard = findViewById(R.id.scenario_card);
+        scenarioCard.setTypeface(teutonic);
         TextView currentSetup = findViewById(R.id.current_setup);
         currentSetup.setTypeface(teutonic);
 
@@ -254,6 +256,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                 view.setOnClickListener(new difficultySelectionListener());
             }
         }
+        setupScenarioCard(this);
 
         // Hide relevant radiobuttons on standalone scenarios
         RadioButton easy = findViewById(R.id.easy_button);
@@ -353,6 +356,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                     globalVariables.CurrentDifficulty = 3;
                     break;
             }
+            setupScenarioCard(ChaosBagActivity.this);
             setupBag(ChaosBagActivity.this);
 
             // Clear all current token views
@@ -675,5 +679,252 @@ public class ChaosBagActivity extends AppCompatActivity {
         LinearLayout currentToken = activity.findViewById(R.id.current_token_layout);
         currentToken.removeAllViews();
         setupBag(activity);
+    }
+
+    private void setupScenarioCard(Activity activity){
+        LinearLayout scenarioLayout = activity.findViewById(R.id.scenario_card_layout);
+        if(globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario > 4){
+            scenarioLayout.setVisibility(GONE);
+        }
+        LinearLayout skullLayout = activity.findViewById(R.id.skull_layout);
+        LinearLayout cultistLayout = activity.findViewById(R.id.cultist_layout);
+        LinearLayout tabletLayout = activity.findViewById(R.id.tablet_layout);
+        LinearLayout thingLayout = activity.findViewById(R.id.thing_layout);
+        LinearLayout combinedLayout = activity.findViewById(R.id.combined_layout);
+        TextView skull = activity.findViewById(R.id.skull_text);
+        TextView cultist = activity.findViewById(R.id.cultist_text);
+        TextView tablet = activity.findViewById(R.id.tablet_text);
+        TextView thing = activity.findViewById(R.id.thing_text);
+        TextView combined = activity.findViewById(R.id.combined_text);
+        Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
+        skull.setTypeface(arnopro);
+        cultist.setTypeface(arnopro);
+        tablet.setTypeface(arnopro);
+        thing.setTypeface(arnopro);
+        combined.setTypeface(arnopro);
+
+        switch(globalVariables.CurrentCampaign){
+            case 1:
+                switch(globalVariables.CurrentScenario){
+                    case 1:
+                        thingLayout.setVisibility(GONE);
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.gathering_skull_one);
+                            cultist.setText(R.string.gathering_cultist_one);
+                            tablet.setText(R.string.gathering_tablet_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.gathering_skull_two);
+                            cultist.setText(R.string.gathering_cultist_two);
+                            tablet.setText(R.string.gathering_tablet_two);
+                        }
+                        break;
+                    case 2:
+                        thingLayout.setVisibility(GONE);
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.midnight_skull_one);
+                            cultist.setText(R.string.midnight_cultist_one);
+                            tablet.setText(R.string.midnight_tablet_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.midnight_skull_two);
+                            cultist.setText(R.string.midnight_cultist_two);
+                            tablet.setText(R.string.midnight_tablet_two);
+                        }
+                        break;
+                    case 3:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.devourer_skull_one);
+                            cultist.setText(R.string.devourer_cultist_one);
+                            tablet.setText(R.string.devourer_tablet_one);
+                            thing.setText(R.string.devourer_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.devourer_skull_two);
+                            cultist.setText(R.string.devourer_cultist_two);
+                            tablet.setText(R.string.devourer_tablet_two);
+                            thing.setText(R.string.devourer_thing_two);
+                        }
+                        break;
+                }
+                break;
+            case 2:
+                switch(globalVariables.CurrentScenario){
+                    case 1:
+                        tabletLayout.setVisibility(GONE);
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.extracurricular_skull_one);
+                            cultist.setText(R.string.extracurricular_cultist_one);
+                            thing.setText(R.string.extracurricular_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.extracurricular_skull_two);
+                            cultist.setText(R.string.extracurricular_cultist_two);
+                            thing.setText(R.string.extracurricular_thing_two);
+                        }
+                        break;
+                    case 2:
+                        thingLayout.setVisibility(GONE);
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.house_skull_one);
+                            cultist.setText(R.string.house_cultist_one);
+                            tablet.setText(R.string.house_tablet_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.house_skull_two);
+                            cultist.setText(R.string.house_cultist_two);
+                            tablet.setText(R.string.house_tablet_two);
+                        }
+                        break;
+                    case 4:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.miskatonic_skull_one);
+                            cultist.setText(R.string.miskatonic_cultist_one);
+                            tablet.setText(R.string.miskatonic_tablet_one);
+                            thing.setText(R.string.miskatonic_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.miskatonic_skull_two);
+                            cultist.setText(R.string.miskatonic_cultist_two);
+                            tablet.setText(R.string.miskatonic_tablet_two);
+                            thing.setText(R.string.miskatonic_thing_two);
+                        }
+                        break;
+                    case 5:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.essex_skull_one);
+                            cultist.setText(R.string.essex_cultist_one);
+                            tablet.setText(R.string.essex_tablet_one);
+                            thing.setText(R.string.essex_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.essex_skull_two);
+                            cultist.setText(R.string.essex_cultist_two);
+                            tablet.setText(R.string.essex_tablet_two);
+                            thing.setText(R.string.essex_thing_two);
+                        }
+                        break;
+                    case 6:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.blood_skull_one);
+                            cultist.setText(R.string.blood_cultist_one);
+                            tablet.setText(R.string.blood_tablet_one);
+                            thing.setText(R.string.blood_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.blood_skull_two);
+                            cultist.setText(R.string.blood_cultist_two);
+                            tablet.setText(R.string.blood_tablet_two);
+                            thing.setText(R.string.blood_thing_two);
+                        }
+                        break;
+                    case 8:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.undimensioned_skull_one);
+                            cultist.setText(R.string.undimensioned_cultist_one);
+                            tablet.setText(R.string.undimensioned_tablet_one);
+                            thing.setText(R.string.undimensioned_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.undimensioned_skull_two);
+                            cultist.setText(R.string.undimensioned_cultist_two);
+                            tablet.setText(R.string.undimensioned_tablet_two);
+                            thing.setText(R.string.undimensioned_thing_two);
+                        }
+                        break;
+                    case 9:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.undimensioned_skull_one);
+                            cultist.setText(R.string.undimensioned_cultist_one);
+                            tablet.setText(R.string.undimensioned_tablet_one);
+                            thing.setText(R.string.undimensioned_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.undimensioned_skull_two);
+                            cultist.setText(R.string.undimensioned_cultist_two);
+                            tablet.setText(R.string.undimensioned_tablet_two);
+                            thing.setText(R.string.undimensioned_thing_two);
+                        }
+                        break;
+                    case 10:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.lost_skull_one);
+                            cultist.setText(R.string.lost_cultist_one);
+                            tablet.setText(R.string.lost_tablet_one);
+                            thing.setText(R.string.lost_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.lost_skull_two);
+                            cultist.setText(R.string.lost_cultist_two);
+                            tablet.setText(R.string.lost_tablet_two);
+                            thing.setText(R.string.lost_thing_two);
+                        }
+                        break;
+                }
+                break;
+            case 3:
+                switch(globalVariables.CurrentScenario){
+                    case 1:
+                        cultistLayout.setVisibility(GONE);
+                        tabletLayout.setVisibility(GONE);
+                        thingLayout.setVisibility(GONE);
+                        combinedLayout.setVisibility(VISIBLE);
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.curtain_skull_one);
+                            combined.setText(R.string.curtain_combined_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.curtain_skull_two);
+                            combined.setText(R.string.curtain_combined_two);
+                        }
+                        break;
+                    case 2:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.king_skull_one);
+                            cultist.setText(R.string.king_cultist_one);
+                            tablet.setText(R.string.king_tablet_one);
+                            thing.setText(R.string.king_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.king_skull_two);
+                            cultist.setText(R.string.king_cultist_two);
+                            tablet.setText(R.string.king_tablet_two);
+                            thing.setText(R.string.king_thing_two);
+                        }
+                        break;
+                    case 4:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.echoes_skull_one);
+                            cultist.setText(R.string.echoes_cultist_one);
+                            tablet.setText(R.string.echoes_tablet_one);
+                            thing.setText(R.string.echoes_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.echoes_skull_two);
+                            cultist.setText(R.string.echoes_cultist_two);
+                            tablet.setText(R.string.echoes_tablet_two);
+                            thing.setText(R.string.echoes_thing_two);
+                        }
+                        break;
+                }
+                break;
+        }
+
+        if(globalVariables.CurrentScenario > 100){
+            switch(globalVariables.CurrentScenario){
+                case 101:
+                    if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                        skull.setText(R.string.rougarou_skull_one);
+                        cultist.setText(R.string.rougarou_cultist_one);
+                        tablet.setText(R.string.rougarou_tablet_one);
+                        thing.setText(R.string.rougarou_thing_one);
+                    } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                        skull.setText(R.string.rougarou_skull_two);
+                        cultist.setText(R.string.rougarou_cultist_two);
+                        tablet.setText(R.string.rougarou_tablet_two);
+                        thing.setText(R.string.rougarou_thing_two);
+                    }
+                    break;
+                case 102:
+                    if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                        skull.setText(R.string.carnevale_skull_one);
+                        cultist.setText(R.string.carnevale_cultist_one);
+                        tablet.setText(R.string.carnevale_tablet_one);
+                        thing.setText(R.string.carnevale_thing_one);
+                    } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                        skull.setText(R.string.carnevale_skull_two);
+                        cultist.setText(R.string.carnevale_cultist_two);
+                        tablet.setText(R.string.carnevale_tablet_two);
+                        thing.setText(R.string.carnevale_thing_two);
+                    }
+                    break;
+            }
+        }
     }
 }

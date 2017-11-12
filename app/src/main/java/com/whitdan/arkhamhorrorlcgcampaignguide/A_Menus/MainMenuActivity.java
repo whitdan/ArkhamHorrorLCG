@@ -19,12 +19,10 @@ import java.util.Locale;
 
 /*
     TODO:   Custom chaos bag
-    TODO:   Chaos token text
     TODO:   Tablet design
     TODO:   Improve clicking +/- buttons
     TODO:   Edit previous scenario results
     TODO:   Every scenario in standalone mode
-    TODO:   Add Marie Lambeau
 
  */
 

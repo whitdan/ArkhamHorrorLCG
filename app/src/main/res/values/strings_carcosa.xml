@@ -57,6 +57,35 @@
     <string name="followers_sign">The followers of the sign have found the way forward.\n\n</string>
 
 
+    <!--Chaos bag-->
+    <string name="curtain_skull_one">-1 (-3 instead if you have 3 or more horror on you).</string>
+    <string name="curtain_skull_two">X, where X is the amount of horror on you. (If you have no horror on you, X is 1.)</string>
+    <string name="curtain_combined_one">-4. If your location has at least 1 horror on it, take 1 horror <i>(from the
+        token pool)</i>. If your location has no horror on it, place 1 horror on it instead.</string>
+    <string name="curtain_combined_two">-5. If your location has at least 1 horror on it, take 1 horror <i>(from the
+        token pool)</i>. If your location has no horror on it, place 1 horror on it instead.</string>
+
+    <string name="king_skull_one">Reveal another token. If you fail, place 1 doom on a <b><i>Lunatic</i></b> enemy in
+        play.</string>
+    <string name="king_skull_two">Reveal another token. If you fail, place 1 doom on the <b><i>Lunatic</i></b> enemy
+        in play with the most remaining health.</string>
+    <string name="king_cultist_one">-2. If you fail, place 1 of your clues on your location.</string>
+    <string name="king_cultist_two">-3. Place 1 of your clues on your location.</string>
+    <string name="king_tablet_one">-4. If you fail, take 1 horror.</string>
+    <string name="king_tablet_two">-4. Take 1 horror.</string>
+    <string name="king_thing_one">-X. X is the shroud value of your location.</string>
+    <string name="king_thing_two">-X. X is the shroud value of your location. If you fail, take 1 damage.</string>
+
+    <string name="echoes_skull_one">-X. X is the highest number of doom on an enemy in play.</string>
+    <string name="echoes_skull_two">-X. X is the total number of doom on enemies in play.</string>
+    <string name="echoes_cultist_one">-2. If you fail, place 1 doom on the nearest enemy.</string>
+    <string name="echoes_cultist_two">-4. Place 1 doom on the nearest enemy.</string>
+    <string name="echoes_tablet_one">-2. If you fail, discard a random card from your hand.</string>
+    <string name="echoes_tablet_two">-4. Discard a random card from your hand.</string>
+    <string name="echoes_thing_one">-2. If you fail and there is an enemy at your location, take 1 horror.</string>
+    <string name="echoes_thing_two">-4. If there is an enemy at your location, take 1 horror.</string>
+
+
     <!-- Campaign introduction-->
     <string name="carcosa_introduction"><b>Prologue</b>\n
     \nYou turn over the folded program in your hand, reading it for what seems like the hundredth time. “Miskatonic
