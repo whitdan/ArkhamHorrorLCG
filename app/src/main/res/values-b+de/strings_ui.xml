@@ -165,6 +165,7 @@
         <item>Akachi Onyele</item>
         <item>William Yorick</item>
         <item>Lola Hayes</item>
+        <item>Marie Lambeau</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -182,6 +183,7 @@
     <string name="akachi_onyele">Akachi Onyele</string>
     <string name="william_yorick">William Yorick</string>
     <string name="lola_hayes">Lola Hayes</string>
+    <string name="marie_lambeau">Marie Lambeau</string>
 
     <string name="cover_up">Nicht abgeschlossenes <i>Vertuschen</i> im Spiel</string>
     <string name="hospital_debts">Nicht bezahlte <i>Krankenhausrechnungen</i> im Spiel</string>

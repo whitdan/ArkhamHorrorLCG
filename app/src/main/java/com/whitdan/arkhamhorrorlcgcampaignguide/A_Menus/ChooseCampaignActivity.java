@@ -84,7 +84,8 @@ public class ChooseCampaignActivity extends AppCompatActivity {
     // Resets all of the GlobalVariables which won't otherwise be written to - this prevents a previous campaign's
     // variables from carrying through to a new campaign
     private void resetVariables(){
-        globalVariables.InvestigatorsInUse = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0};
+        globalVariables.CampaignVersion = 2;
+        globalVariables.InvestigatorsInUse = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0};
         globalVariables.CurrentDifficulty = 1;
         globalVariables.NightCompleted = 0;
         globalVariables.DunwichCompleted = 0;

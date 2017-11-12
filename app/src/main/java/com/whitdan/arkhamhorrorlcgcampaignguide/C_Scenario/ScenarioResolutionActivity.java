@@ -863,7 +863,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 }
                             }
                         });
-                        switch(globalVariables.Theatre){
+                        switch (globalVariables.Theatre) {
                             case 1:
                                 selectInvestigatorOne.setChecked(true);
                                 break;
@@ -929,8 +929,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         }
                         break;
                     case 4:
-                        if(globalVariables.Sebastien == 0 || globalVariables.Sebastien == 1 || globalVariables
-                                .Sebastien == 3){
+                        if (globalVariables.Sebastien == 0 || globalVariables.Sebastien == 1 || globalVariables
+                                .Sebastien == 3) {
                             additionalCheckbox.setVisibility(VISIBLE);
                             additionalCheckbox.setText(R.string.sebastien_victory);
                         }
@@ -1043,7 +1043,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 // Make sure a resolution has been selected
                 if (globalVariables.ScenarioResolution == -1) {
                     dialog = false;
-                    Toast toast = Toast.makeText(ScenarioResolutionActivity.this, R.string.must_resolution, Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(ScenarioResolutionActivity.this, R.string.must_resolution, Toast
+                            .LENGTH_SHORT);
                     toast.show();
                 }
                 switch (globalVariables.CurrentCampaign) {
@@ -1056,7 +1057,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                         .isChecked() && (globalVariables.ScenarioResolution == 1 || globalVariables
                                         .ScenarioResolution == 2)) {
                                     dialog = false;
-                                    Toast toast = Toast.makeText(ScenarioResolutionActivity.this, R.string.must_lead_investigator, Toast
+                                    Toast toast = Toast.makeText(ScenarioResolutionActivity.this, R.string
+                                            .must_lead_investigator, Toast
                                             .LENGTH_SHORT);
                                     toast.show();
                                 }
@@ -1755,7 +1757,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             }
                             break;
                         case 4:
-                            switch(globalVariables.ScenarioResolution){
+                            switch (globalVariables.ScenarioResolution) {
                                 case 0:
                                     resolutionTextView.setText(R.string.echoes_no_resolution);
                                     break;
@@ -2188,6 +2190,22 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         TextView counterTwo = activity.findViewById(R.id.investigator_counter_two_amount);
         TextView counterThree = activity.findViewById(R.id.investigator_counter_three_amount);
         TextView counterFour = activity.findViewById(R.id.investigator_counter_four_amount);
+
+        // Get current available XP for each investigator (necessary to work out totals later)
+        int invOneXP = 0;
+        int invTwoXP = 0;
+        int invThreeXP = 0;
+        int invFourXP = 0;
+        switch (globalVariables.Investigators.size()) {
+            case 4:
+                invFourXP = globalVariables.Investigators.get(3).AvailableXP;
+            case 3:
+                invThreeXP = globalVariables.Investigators.get(2).AvailableXP;
+            case 2:
+                invTwoXP = globalVariables.Investigators.get(1).AvailableXP;
+            case 1:
+                invOneXP = globalVariables.Investigators.get(0).AvailableXP;
+        }
 
         // Apply resolutions
         switch (globalVariables.CurrentCampaign) {
@@ -2743,7 +2761,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             }
                         }
 
-                        if(investigatorOne.isChecked() && additionalOne.isChecked()){
+                        if (investigatorOne.isChecked() && additionalOne.isChecked()) {
                             globalVariables.Constance = 4;
                         } else if (investigatorOne.isChecked()) {
                             globalVariables.Constance = 1;
@@ -2753,7 +2771,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             globalVariables.Constance = 0;
                         }
 
-                        if(investigatorTwo.isChecked() && additionalTwo.isChecked()){
+                        if (investigatorTwo.isChecked() && additionalTwo.isChecked()) {
                             globalVariables.Jordan = 4;
                         } else if (investigatorTwo.isChecked()) {
                             globalVariables.Jordan = 1;
@@ -2763,7 +2781,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             globalVariables.Jordan = 0;
                         }
 
-                        if(investigatorFive.isChecked() && additionalThree.isChecked()){
+                        if (investigatorFive.isChecked() && additionalThree.isChecked()) {
                             globalVariables.Ishimaru = 4;
                         } else if (investigatorFive.isChecked()) {
                             globalVariables.Ishimaru = 1;
@@ -2773,7 +2791,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             globalVariables.Ishimaru = 0;
                         }
 
-                        if(investigatorThree.isChecked() && additionalFour.isChecked()){
+                        if (investigatorThree.isChecked() && additionalFour.isChecked()) {
                             globalVariables.Sebastien = 4;
                         } else if (investigatorThree.isChecked()) {
                             globalVariables.Sebastien = 1;
@@ -2783,7 +2801,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             globalVariables.Sebastien = 0;
                         }
 
-                        if(investigatorFour.isChecked() && additionalFive.isChecked()){
+                        if (investigatorFour.isChecked() && additionalFive.isChecked()) {
                             globalVariables.Ashleigh = 4;
                         } else if (investigatorFour.isChecked()) {
                             globalVariables.Ashleigh = 1;
@@ -2824,27 +2842,27 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 globalVariables.Party = 0;
                                 if (globalVariables.Constance == 1) {
                                     globalVariables.Constance = 3;
-                                } else if (globalVariables.Constance == 4){
+                                } else if (globalVariables.Constance == 4) {
                                     globalVariables.Constance = 5;
                                 }
                                 if (globalVariables.Ishimaru == 1) {
                                     globalVariables.Ishimaru = 3;
-                                }  else if (globalVariables.Ishimaru == 4){
+                                } else if (globalVariables.Ishimaru == 4) {
                                     globalVariables.Ishimaru = 5;
                                 }
                                 if (globalVariables.Ashleigh == 1) {
                                     globalVariables.Ashleigh = 3;
-                                }  else if (globalVariables.Ashleigh == 4){
+                                } else if (globalVariables.Ashleigh == 4) {
                                     globalVariables.Ashleigh = 5;
                                 }
                                 if (globalVariables.Jordan == 1) {
                                     globalVariables.Jordan = 3;
-                                }  else if (globalVariables.Jordan == 4){
+                                } else if (globalVariables.Jordan == 4) {
                                     globalVariables.Jordan = 5;
                                 }
                                 if (globalVariables.Sebastien == 1) {
                                     globalVariables.Sebastien = 3;
-                                }  else if (globalVariables.Sebastien == 4){
+                                } else if (globalVariables.Sebastien == 4) {
                                     globalVariables.Sebastien = 5;
                                 }
                                 break;
@@ -2852,16 +2870,16 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         break;
                     // Echoes of the Past
                     case 4:
-                        if(additionalCheckbox.isChecked()){
-                            if(globalVariables.Sebastien == 0){
+                        if (additionalCheckbox.isChecked()) {
+                            if (globalVariables.Sebastien == 0) {
                                 globalVariables.Sebastien = 1;
-                            } else if(globalVariables.Sebastien == 1){
+                            } else if (globalVariables.Sebastien == 1) {
                                 globalVariables.Sebastien = 4;
-                            } else if (globalVariables.Sebastien == 3){
+                            } else if (globalVariables.Sebastien == 3) {
                                 globalVariables.Sebastien = 5;
                             }
                         }
-                        switch(globalVariables.ScenarioResolution){
+                        switch (globalVariables.ScenarioResolution) {
                             case 1:
                                 globalVariables.Onyx = 1;
                                 globalVariables.Conviction += 1;
@@ -2942,6 +2960,23 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
             Investigator currentInvestigator = globalVariables.Investigators.get(i);
 
+            // Work out XP amounts
+            int xpEarned = 0;
+            switch (i) {
+                case 0:
+                    xpEarned += currentInvestigator.AvailableXP - invOneXP;
+                    break;
+                case 1:
+                    xpEarned += currentInvestigator.AvailableXP - invTwoXP;
+                    break;
+                case 2:
+                    xpEarned += currentInvestigator.AvailableXP - invThreeXP;
+                    break;
+                case 3:
+                    xpEarned += currentInvestigator.AvailableXP - invFourXP;
+                    break;
+            }
+            currentInvestigator.TotalXP += xpEarned;
             currentInvestigator.AvailableXP += -currentInvestigator.SpentXP;
             currentInvestigator.SpentXP = 0;
 
@@ -2970,9 +3005,12 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         currentInvestigator.Horror += 1;
                         break;
                     case Investigator.SKIDS_OTOOLE:
-                        currentInvestigator.AvailableXP += -2;
-                        for (; currentInvestigator.AvailableXP < 0; ) {
-                            currentInvestigator.AvailableXP += 1;
+                        if (xpEarned >= 2) {
+                            currentInvestigator.AvailableXP += -2;
+                            currentInvestigator.TotalXP += -2;
+                        } else if (xpEarned == 1) {
+                            currentInvestigator.AvailableXP += -1;
+                            currentInvestigator.TotalXP += -1;
                         }
                         break;
                 }
@@ -3071,6 +3109,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 .InvestigatorsInUse[Investigator.WILLIAM_YORICK]);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_LOLA_INUSE, globalVariables
                 .InvestigatorsInUse[Investigator.LOLA_HAYES]);
+        campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_MARIE_INUSE, globalVariables
+                .InvestigatorsInUse[Investigator.MARIE_LAMBEAU]);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_ROUGAROU_STATUS, globalVariables.Rougarou);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_STRANGE_SOLUTION, globalVariables.StrangeSolution);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_ARCHAIC_GLYPHS, globalVariables.ArchaicGlyphs);
@@ -3192,7 +3232,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     .Investigators.get(i).Damage);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_HORROR, globalVariables
                     .Investigators.get(i).Horror);
-            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_XP, globalVariables
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_TOTAL_XP, globalVariables
+                    .Investigators.get(i).TotalXP);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_AVAILABLE_XP, globalVariables
                     .Investigators.get(i).AvailableXP);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP, 0);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER, globalVariables
@@ -3214,7 +3256,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     .SavedInvestigators.get(i).Damage);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_HORROR, globalVariables
                     .SavedInvestigators.get(i).Horror);
-            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_XP, globalVariables
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_TOTAL_XP, globalVariables
+                    .SavedInvestigators.get(i).TotalXP);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_AVAILABLE_XP, globalVariables
                     .SavedInvestigators.get(i).AvailableXP);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP, globalVariables
                     .SavedInvestigators.get(i).SpentXP);

@@ -249,6 +249,7 @@ public class EditTeamActivity extends AppCompatActivity {
         LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
         LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
         LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
+        LinearLayout marieCheckbox = findViewById(R.id.marie_promo);
         for (int i = 0; i < coreCheckboxes.getChildCount(); i++) {
             View view = coreCheckboxes.getChildAt(i);
             if (view instanceof CheckBox) {
@@ -270,19 +271,28 @@ public class EditTeamActivity extends AppCompatActivity {
                 }
             }
         }
+        for (int i = 0; i < marieCheckbox.getChildCount(); i++) {
+            View view = marieCheckbox.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
+            }
+        }
 
         // Get sharedpreferences on expansions owned
         String sharedPrefs = getResources().getString(R.string.shared_prefs);
         String dunwichOwnedString = getResources().getString(R.string.dunwich_setting);
         String carcosaOwnedString = getResources().getString(R.string.carcosa_setting);
+        String marieOwnedString = getResources().getString(R.string.marie_lambeau);
         SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
         boolean dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
         boolean carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
+        boolean marieOwned = settings.getBoolean(marieOwnedString, false);
 
         // Investigators counts how many investigators are still unused (to determine if the players have lost)
         int core = 0;
         int dunwich = 0;
         int carcosa = 0;
+        int marie = 0;
 
         // Setup CheckBoxes with OnCheckedChangeListeners, as long as the investigator is not in use
         if (globalVariables.InvestigatorsInUse[Investigator.ROLAND_BANKS] == 0) {
@@ -416,6 +426,21 @@ public class EditTeamActivity extends AppCompatActivity {
         // Hide LinearLayout if all Dunwich investigators are dead or if Dunwich is not owned
         if (carcosa == 6 || !carcosaOwned) {
             carcosaCheckboxes.setVisibility(GONE);
+        }
+
+        // Marie Lambeau
+        if (marieOwned) {
+            if (globalVariables.InvestigatorsInUse[Investigator.MARIE_LAMBEAU] == 0) {
+                CheckBox marieBox = findViewById(R.id.marie_lambeau);
+                marieBox.setVisibility(VISIBLE);
+                marieBox.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                marie++;
+            }
+        }
+        // Hide LinearLayout if all Dunwich investigators are dead or if Dunwich is not owned
+        if (marie == 1 || !carcosaOwned) {
+            marieCheckbox.setVisibility(GONE);
         }
 
         // Back button
@@ -701,6 +726,22 @@ public class EditTeamActivity extends AppCompatActivity {
                         investigatorsCount--;
                         for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
                             if (globalVariables.InvestigatorNames.get(i) == Investigator.LOLA_HAYES) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
+                case R.id.marie_lambeau:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.MARIE_LAMBEAU);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.MARIE_LAMBEAU) {
                                 removeInvestigator = i;
                                 globalVariables.InvestigatorNames.remove(i);
                             }

@@ -470,6 +470,8 @@ public class ScenarioMainActivity extends AppCompatActivity {
                 phys.setTypeface(arnoprobold);
                 TextView mental = listItemView.findViewById(R.id.mental_trauma);
                 mental.setTypeface(arnoprobold);
+                TextView totXP = listItemView.findViewById(R.id.total_xp);
+                totXP.setTypeface(arnoprobold);
                 TextView availXP = listItemView.findViewById(R.id.available_xp);
                 availXP.setTypeface(arnoprobold);
                 TextView spentXP = listItemView.findViewById(R.id.xp_spent);
@@ -496,9 +498,18 @@ public class ScenarioMainActivity extends AppCompatActivity {
                 TextView mentalTrauma = listItemView.findViewById(R.id.mental_trauma_amount);
                 mentalTrauma.setText(String.valueOf(currentInvestigator.Horror));
                 mentalTrauma.setTypeface(wolgastbold);
+                TextView totalXP = listItemView.findViewById(R.id.total_xp_amount);
+                totalXP.setText(String.valueOf(currentInvestigator.TotalXP));
+                totalXP.setTypeface(wolgastbold);
                 TextView availableXP = listItemView.findViewById(R.id.available_xp_amount);
                 availableXP.setText(String.valueOf(currentInvestigator.AvailableXP));
                 availableXP.setTypeface(wolgastbold);
+
+                // Hide total XP layout if not campaign version 2
+                LinearLayout totalXPLayout = listItemView.findViewById(R.id.total_xp_layout);
+                if(globalVariables.CampaignVersion < 2){
+                    totalXPLayout.setVisibility(GONE);
+                }
 
                 // Setup spent XP views
                 final TextView spentXPAmount = listItemView.findViewById(R.id.xp_spent_amount);

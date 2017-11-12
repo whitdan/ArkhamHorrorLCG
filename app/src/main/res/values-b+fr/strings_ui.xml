@@ -152,6 +152,7 @@
         <item>Akachi Onyele</item>
         <item>William Yorick</item>
         <item>Lola Hayes</item>
+        <item>Marie Lambeau</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -169,6 +170,7 @@
     <string name="akachi_onyele">Akachi Onyele</string>
     <string name="william_yorick">William Yorick</string>
     <string name="lola_hayes">Lola Hayes</string>
+    <string name="marie_lambeau">Marie Lambeau</string>
 
     <string name="cover_up">Effacer les Traces non résolu en jeu</string>
     <string name="hospital_debts">Frais d\'Hôpitaux non résolu en jeu</string>

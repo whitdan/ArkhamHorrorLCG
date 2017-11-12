@@ -251,6 +251,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
             // Set the GlobalVariable campaign variables to the relevant values in the SQL database
             String[] campaignProjection = {
                     ArkhamContract.CampaignEntry._ID,
+                    CampaignEntry.COLUMN_CAMPAIGN_VERSION,
                     CampaignEntry.COLUMN_CURRENT_CAMPAIGN,
                     CampaignEntry.COLUMN_CURRENT_SCENARIO,
                     CampaignEntry.COLUMN_DIFFICULTY,
@@ -291,6 +292,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
             while (campaignCursor.moveToNext()) {
                 globalVariables.CampaignID = campaignCursor.getLong(campaignCursor
                         .getColumnIndexOrThrow(CampaignEntry._ID));
+                globalVariables.CampaignVersion = campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
+                        (CampaignEntry.COLUMN_CAMPAIGN_VERSION));
                 globalVariables.CurrentCampaign=(campaignCursor.getInt(campaignCursor
                         .getColumnIndexOrThrow(CampaignEntry.COLUMN_CURRENT_CAMPAIGN)));
                 globalVariables.CurrentScenario=(campaignCursor.getInt(campaignCursor
@@ -352,7 +355,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     InvestigatorEntry.COLUMN_INVESTIGATOR_STATUS,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_DAMAGE,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_HORROR,
-                    InvestigatorEntry.COLUMN_INVESTIGATOR_XP,
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_TOTAL_XP,
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_AVAILABLE_XP,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_DECKNAME,
@@ -391,9 +395,11 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     globalVariables.Investigators.get(i).Horror=(investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
                                     .COLUMN_INVESTIGATOR_HORROR)));
+                    globalVariables.Investigators.get(i).TotalXP = investigatorCursor.getInt(investigatorCursor
+                            .getColumnIndexOrThrow(InvestigatorEntry.COLUMN_INVESTIGATOR_TOTAL_XP));
                     globalVariables.Investigators.get(i).AvailableXP=(investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
-                                    .COLUMN_INVESTIGATOR_XP)));
+                                    .COLUMN_INVESTIGATOR_AVAILABLE_XP)));
                     globalVariables.Investigators.get(i).SpentXP=(investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
                                     .COLUMN_INVESTIGATOR_SPENT_XP)));
@@ -409,7 +415,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                                     .COLUMN_INVESTIGATOR_HORROR)));
                     globalVariables.SavedInvestigators.get(i - count).AvailableXP=(investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
-                                    .COLUMN_INVESTIGATOR_XP)));
+                                    .COLUMN_INVESTIGATOR_AVAILABLE_XP)));
                     globalVariables.SavedInvestigators.get(i - count).SpentXP=(investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
                                     .COLUMN_INVESTIGATOR_SPENT_XP)));

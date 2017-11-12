@@ -104,18 +104,24 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
         LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
         LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
+        LinearLayout marieCheckbox = findViewById(R.id.marie_promo);
         // Hide investigators if expansion isn't owned
         String sharedPrefs = getResources().getString(R.string.shared_prefs);
         String dunwichOwnedString = getResources().getString(R.string.dunwich_setting);
         String carcosaOwnedString = getResources().getString(R.string.carcosa_setting);
+        String marieOwnedString = getResources().getString(R.string.marie_lambeau);
         SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
         boolean dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
         boolean carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
+        boolean marieOwned = settings.getBoolean(marieOwnedString, false);
         if (!dunwichOwned) {
             dunwichCheckboxes.setVisibility(GONE);
         }
         if (!carcosaOwned) {
             carcosaCheckboxes.setVisibility(GONE);
+        }
+        if (!marieOwned){
+            marieCheckbox.setVisibility(GONE);
         }
         // Set fonts and listeners to all checkboxes
         for (int i = 0; i < coreCheckboxes.getChildCount(); i++) {
@@ -140,6 +146,13 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                     ((CheckBox) view).setTypeface(arnopro);
                     ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
                 }
+            }
+        }
+        for (int i = 0; i < marieCheckbox.getChildCount(); i++) {
+            View view = marieCheckbox.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
+                ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
             }
         }
 
@@ -471,6 +484,22 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                             investigators--;
                             for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
                                 if (globalVariables.InvestigatorNames.get(i) == Investigator.LOLA_HAYES) {
+                                    removeInvestigator = i;
+                                    globalVariables.InvestigatorNames.remove(i);
+                                }
+                            }
+                        }
+                        break;
+                    case R.id.marie_lambeau:
+                        if (isChecked && investigators < 4) {
+                            globalVariables.InvestigatorNames.add(Investigator.MARIE_LAMBEAU);
+                            investigators++;
+                        } else if (isChecked) {
+                            buttonView.setChecked(false);
+                        } else {
+                            investigators--;
+                            for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                                if (globalVariables.InvestigatorNames.get(i) == Investigator.MARIE_LAMBEAU) {
                                     removeInvestigator = i;
                                     globalVariables.InvestigatorNames.remove(i);
                                 }
@@ -937,6 +966,7 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
 
         // Create entry in campaigns table
         ContentValues campaignValues = new ContentValues();
+        campaignValues.put(CampaignEntry.COLUMN_CAMPAIGN_VERSION, 2);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CAMPAIGN_NAME, campaignName);
         campaignValues.put(CampaignEntry.COLUMN_CURRENT_CAMPAIGN, globalVariables.CurrentCampaign);
         campaignValues.put(CampaignEntry.COLUMN_CURRENT_SCENARIO, globalVariables.CurrentScenario);
@@ -961,6 +991,20 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                 .JIM_CULVER]);
         campaignValues.put(CampaignEntry.COLUMN_PETE_INUSE, globalVariables.InvestigatorsInUse[Investigator
                 .ASHCAN_PETE]);
+        campaignValues.put(CampaignEntry.COLUMN_MARK_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .MARK_HARRIGAN]);
+        campaignValues.put(CampaignEntry.COLUMN_MINH_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .MINH_THI_PHAN]);
+        campaignValues.put(CampaignEntry.COLUMN_AKACHI_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .AKACHI_ONYELE]);
+        campaignValues.put(CampaignEntry.COLUMN_SEFINA_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .SEFINA_ROUSSEAU]);
+        campaignValues.put(CampaignEntry.COLUMN_WILLIAM_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .WILLIAM_YORICK]);
+        campaignValues.put(CampaignEntry.COLUMN_LOLA_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .LOLA_HAYES]);
+        campaignValues.put(CampaignEntry.COLUMN_MARIE_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .MARIE_LAMBEAU]);
         long newCampaignId = db.insert(CampaignEntry.TABLE_NAME, null, campaignValues);
         globalVariables.CampaignID = newCampaignId;
 
@@ -999,7 +1043,8 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_STATUS, 1);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_DAMAGE, 0);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_HORROR, 0);
-            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_XP, 0);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_TOTAL_XP, 0);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_AVAILABLE_XP, 0);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP, 0);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER, globalVariables
                     .Investigators.get(i).PlayerName);

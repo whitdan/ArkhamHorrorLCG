@@ -18,10 +18,11 @@ public class Investigator {
     public static final int AKACHI_ONYELE = 14;
     public static final int WILLIAM_YORICK = 15;
     public static final int LOLA_HAYES = 16;
+    public static final int MARIE_LAMBEAU = 17;
 
     // Sets maximum health and sanity values for the various investigators (correspond to the names in the string array)
-    private int[] health = {0,9,5,8,6,7,9,6,8,7,6,9,7,5,6,8,6};
-    private int[] sanity = {0,5,9,6,8,7,6,9,7,8,5,5,7,9,8,6,6};
+    private int[] health = {0,9,5,8,6,7,9,6,8,7,6,9,7,5,6,8,6,6};
+    private int[] sanity = {0,5,9,6,8,7,6,9,7,8,5,5,7,9,8,6,6,8};
 
     public Investigator(int investigator, String name, String deckName, String deck){
         setupInvestigator(investigator);
@@ -37,6 +38,7 @@ public class Investigator {
         this.Status = 1;
         this.Damage = 0;
         this.Horror = 0;
+        this.TotalXP = 0;
         this.AvailableXP = 0;
         this.SpentXP = 0;
     }
@@ -48,6 +50,7 @@ public class Investigator {
     public int Status;          // 0 = not in use, 1 = in use, 2 = dead, 3 = saved
     public int Damage;
     public int Horror;
+    public int TotalXP;
     public int AvailableXP;
     public int SpentXP;
     public String PlayerName;

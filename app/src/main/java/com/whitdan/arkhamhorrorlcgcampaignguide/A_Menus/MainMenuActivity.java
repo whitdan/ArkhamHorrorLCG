@@ -24,7 +24,6 @@ import java.util.Locale;
     TODO:   Improve clicking +/- buttons
     TODO:   Edit previous scenario results
     TODO:   Every scenario in standalone mode
-    TODO:   Persist spent XP and add total XP
     TODO:   Add Marie Lambeau
 
  */

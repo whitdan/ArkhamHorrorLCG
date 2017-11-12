@@ -37,6 +37,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
         // Campaigns table
         String SQL_CREATE_CAMPAIGNS_TABLE = "CREATE TABLE " + CampaignEntry.TABLE_NAME + " ("
                 + CampaignEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + CampaignEntry.COLUMN_CAMPAIGN_VERSION + " INTEGER NOT NULL, "
                 + CampaignEntry.COLUMN_CAMPAIGN_NAME + " STRING NOT NULL, "
                 + CampaignEntry.COLUMN_CURRENT_CAMPAIGN + " INTEGER NOT NULL, "
                 + CampaignEntry.COLUMN_CURRENT_SCENARIO + " INTEGER NOT NULL, "
@@ -59,6 +60,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + CampaignEntry.COLUMN_AKACHI_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_WILLIAM_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_LOLA_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_MARIE_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_ROUGAROU_STATUS + " INTEGER, "
                 + CampaignEntry.COLUMN_STRANGE_SOLUTION + " INTEGER, "
                 + CampaignEntry.COLUMN_ARCHAIC_GLYPHS + " INTEGER, "
@@ -74,7 +76,8 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_STATUS + " INTEGER NOT NULL, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_DAMAGE + " INTEGER NOT NULL, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_HORROR + " INTEGER NOT NULL, "
-                + InvestigatorEntry.COLUMN_INVESTIGATOR_XP + " INTEGER NOT NULL, "
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_TOTAL_XP + " INTEGER NOT NULL, "
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_AVAILABLE_XP + " INTEGER NOT NULL, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP + " INTEGER NOT NULL, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER + " STRING, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_DECKNAME + " STRING, "
@@ -326,9 +329,18 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                         "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_ONYX + " INTEGER";
                 db.execSQL(SQL_UPGRADE_FOURTEEN);
             case 17:
-                String SQL_UPGRADE_FIFTEEN = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
+                String SQL_UPGRADE_FIFTEEN_ONE = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
                         InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP + " INTEGER NOT NULL DEFAULT 0";
-                db.execSQL(SQL_UPGRADE_FIFTEEN);
+                String SQL_UPGRADE_FIFTEEN_TWO = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_CAMPAIGN_VERSION + " INTEGER NOT NULL DEFAULT 1";
+                String SQL_UPGRADE_FIFTEEN_THREE = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
+                        InvestigatorEntry.COLUMN_INVESTIGATOR_TOTAL_XP + " INTEGER NOT NULL DEFAULT 0";
+                String SQL_UPGRADE_FIFTEEN_FOUR = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_MARIE_INUSE + " INTEGER";
+                db.execSQL(SQL_UPGRADE_FIFTEEN_ONE);
+                db.execSQL(SQL_UPGRADE_FIFTEEN_TWO);
+                db.execSQL(SQL_UPGRADE_FIFTEEN_THREE);
+                db.execSQL(SQL_UPGRADE_FIFTEEN_FOUR);
         }
     }
 }

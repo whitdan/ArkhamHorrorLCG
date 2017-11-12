@@ -19,6 +19,7 @@ public class ArkhamContract {
     public static class CampaignEntry implements BaseColumns {
         public static final String TABLE_NAME = "campaigns";
         public static final String _ID = BaseColumns._ID;
+        public static final String COLUMN_CAMPAIGN_VERSION = "version";
         public static final String COLUMN_CAMPAIGN_NAME = "name";
         public static final String COLUMN_CURRENT_CAMPAIGN = "campaign"; // Denotes which campaign
         public static final String COLUMN_CURRENT_SCENARIO = "scenario";
@@ -41,6 +42,7 @@ public class ArkhamContract {
         public static final String COLUMN_AKACHI_INUSE = "akachi";
         public static final String COLUMN_WILLIAM_INUSE = "william";
         public static final String COLUMN_LOLA_INUSE = "lola";
+        public static final String COLUMN_MARIE_INUSE = "marie";
         public static final String COLUMN_ROUGAROU_STATUS = "rougarou_status";
         public static final String COLUMN_STRANGE_SOLUTION = "strange_solution";
         public static final String COLUMN_ARCHAIC_GLYPHS = "archaic_glyphs";
@@ -57,7 +59,8 @@ public class ArkhamContract {
         public static final String COLUMN_INVESTIGATOR_STATUS = "status";
         public static final String COLUMN_INVESTIGATOR_DAMAGE = "damage";
         public static final String COLUMN_INVESTIGATOR_HORROR = "horror";
-        public static final String COLUMN_INVESTIGATOR_XP = "xp";
+        public static final String COLUMN_INVESTIGATOR_TOTAL_XP = "total_xp";
+        public static final String COLUMN_INVESTIGATOR_AVAILABLE_XP = "xp";
         public static final String COLUMN_INVESTIGATOR_SPENT_XP = "spent_xp";
         public static final String COLUMN_INVESTIGATOR_PLAYER = "player";
         public static final String COLUMN_INVESTIGATOR_DECKNAME = "deckname";

@@ -150,9 +150,11 @@ public class SettingsMenuActivity extends AppCompatActivity {
 
         boolean dunwichOwned;
         boolean carcosaOwned;
+        boolean marieOwned;
         SharedPreferences settings;
         String dunwichOwnedString;
         String carcosaOwnedString;
+        String marieOwnedString;
         String sharedPrefs;
 
         @Override
@@ -161,9 +163,11 @@ public class SettingsMenuActivity extends AppCompatActivity {
             sharedPrefs = getActivity().getResources().getString(R.string.shared_prefs);
             dunwichOwnedString = getActivity().getResources().getString(R.string.dunwich_setting);
             carcosaOwnedString = getActivity().getResources().getString(R.string.carcosa_setting);
+            marieOwnedString = getActivity().getResources().getString(R.string.marie_lambeau);
             settings = getActivity().getSharedPreferences(sharedPrefs, 0);
             dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
             carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
+            marieOwned = settings.getBoolean(marieOwnedString, false);
 
             // Get the layout inflater and inflate the view
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -172,13 +176,16 @@ public class SettingsMenuActivity extends AppCompatActivity {
             // Set the checkboxes using the previous settings
             final CheckBox dunwich = v.findViewById(R.id.dunwich_owned);
             final CheckBox carcosa = v.findViewById(R.id.carcosa_owned);
+            final CheckBox marie = v.findViewById(R.id.marie_xpac);
             dunwich.setChecked(dunwichOwned);
             carcosa.setChecked(carcosaOwned);
+            marie.setChecked(marieOwned);
 
             // Set fonts
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
             dunwich.setTypeface(arnopro);
             carcosa.setTypeface(arnopro);
+            marie.setTypeface(arnopro);
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
             TextView title = v.findViewById(R.id.expansions_owned);
             Button cancelButton = v.findViewById(R.id.cancel_button);
@@ -195,6 +202,7 @@ public class SettingsMenuActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = settings.edit();
                     editor.putBoolean(dunwichOwnedString, dunwich.isChecked());
                     editor.putBoolean(carcosaOwnedString, carcosa.isChecked());
+                    editor.putBoolean(marieOwnedString, marie.isChecked());
                     editor.apply();
                     dismiss();
                 }
