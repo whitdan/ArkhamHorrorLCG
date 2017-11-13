@@ -17,7 +17,7 @@
 
     <!--Miscellaneous-->
     <string name="stranger_counter">Auf der Jagd nach dem Fremden: </string>
-    <string name="box_office">Aus der Theaterkasse gestohlen</string>
+    <string name="box_office">Ein Ermittler hat aus der Theaterkasse gestohlen</string>
     <string name="advanced_2b">Wenn Szene 2b erreicht wurde:</string>
     <string name="city_aflame">Eine Stadt in Flammen</string>
     <string name="path_mine">Der Weg ist Mein</string>
@@ -30,6 +30,7 @@
     <string name="sebastien">Sebastien Moreau</string>
     <string name="ashleigh">Ashleigh Clarke</string>
     <string name="allocated_experience">Zugeteilte Erfahrung</string>
+    <string name="sebastien_victory">Sebastien Moreau befindet sich im Siegpunktestapel</string>
 
 
     <!--Campaign Log-->
@@ -50,6 +51,47 @@
     <string name="intruded">Die Ermittler sind in ein geheimes Treffen geplatzt.\n\n</string>
     <string name="fled">Die Ermittler sind von der Feier geflohen.\n\n</string>
     <string name="slayed">Die Monster auf der Feier wurden getötet.\n\n</string>
+    <string name="onyx_taken">Die Ermittler haben die Spange aus Onyx mitgenommen.\n\n</string>
+    <string name="onyx_left">Die Ermittler haben die Spange aus Onyx zurückgelassen.\n\n</string>
+    <string name="oathspeaker_destroyed">Der Eidsprecher wurde vernichtet.\n\n</string>
+    <string name="followers_sign">Die Anhänger des Zeichens wissen, wie sie weiter vorgehen müssen.\n\n</string>
+
+
+    <!--Chaos bag-->
+    <string name="curtain_skull_one">-1 (-3 stattdessen, falls du 3 oder mehr Horror hast).</string>
+    <string name="curtain_skull_two">-X, wobei X die Anzahl deiner Horrormarker ist. (Falls du keinen Horror hast, ist X
+        gleich 1.)</string>
+    <string name="curtain_combined_one">-4. Falls auf deinem Ort mindestens 1 Horror liegt, nimm 1 Horror (aus dem
+        Markervorrat). Falls kein Horror auf deinem Ort liegt, platziere stattdessen 1 Horror aus dem Markervorrat
+        darauf.</string>
+    <string name="curtain_combined_two">-5. Falls auf deinem Ort mindestens 1 Horror liegt, nimm 1 Horror (aus dem
+        Markervorrat). Falls kein Horror auf deinem Ort liegt, platziere stattdessen 1 Horror aus dem Markervorrat
+        darauf.</string>
+
+    <string name="king_skull_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere 1 Verderben auf
+        einen <b><i>Verrückt</i></b>-Gegner im Spiel.</string>
+    <string name="king_skull_two">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere 1 Verderben
+        auf den <b><i>Verrückt</i></b>-Gegner im Spiel, der die meiste verbliebene Ausdauer hat.</string>
+    <string name="king_cultist_one">-2. Falls die Probe misslingt, lege 1 deiner Hinweise auf deinen Ort.</string>
+    <string name="king_cultist_two">-3. Lege 1 deiner Hinweise auf deinen Ort.</string>
+    <string name="king_tablet_one">-4. Falls die Probe misslingt, nimm 1 Horror.</string>
+    <string name="king_tablet_two">-4. Nimm 1 Horror.</string>
+    <string name="king_thing_one">-X. X ist der Schleierwert deines Ortes.</string>
+    <string name="king_thing_two">-X. X ist der Schleierwert deines Ortes. Falls die Probe misslingt, nimm 1
+        Schaden.</string>
+
+    <string name="echoes_skull_one">-X. X ist die höchste Anzahl an Verderbensmarkern auf einem Gegner im
+        Spiel.</string>
+    <string name="echoes_skull_two">-X. X ist die Gesamtanzahl an Verderbensmarkern auf allen Gegnern im Spiel.</string>
+    <string name="echoes_cultist_one">-2. Falls die Probe misslingt, platziere 1 Verderbensmarker auf den
+        nächstgelegenen Gegner.</string>
+    <string name="echoes_cultist_two">-4. Platziere 1 Verderbensmarker auf den nächstgelegenen Gegner.</string>
+    <string name="echoes_tablet_one">-2. Falls die Probe misslingt, lege eine zufällige Karte von deiner Hand
+        ab.</string>
+    <string name="echoes_tablet_two">-4. Lege eine zufällige Karte von deiner Hand ab.</string>
+    <string name="echoes_thing_one">-2. Falls die Probe misslingt und sich ein Gegner an deinem Ort befindet, nimm 1
+        Horror.</string>
+    <string name="echoes_thing_two">-4. Falls sich ein Gegner an deinem Ort befindet, nimm 1 Horror.</string>
 
 
     <!-- Campaign introduction-->
@@ -74,16 +116,17 @@
         Vorkommnisse rund um die bevorstehende Aufführung. In Folge gab es noch weitere Fälle von Selbstmord und
         Wahnsinn. Du bist fest entschlossen den Grund dafür herauszufinden.\n
     \nDas Licht im Zuschauerraum wird gedämpft und ein Scheinwerfer taucht die Bühne in helles Licht. Aber was dann
-        passiert, ist nicht ganz das, was du erwartet hast. Langsam und monoton plätschert der erste Akt von Der König
-        in Gelb vor sich hin, eine ärgerlich langweilige Angelegenheit. Die Kulisse und die Charaktere sind zwar
-        überzeugend, aber die Handlung driftet in verschiedenste Richtungen und ergibt keinen Sinn – die Vorstellung ist
-        weder unterhaltsam noch informativ. Langsam fragst du dich, ob es zwischen den fürchterlichen Vorkommnissen
-        während der Vorbereitungen zu Der König in Gelb vielleicht doch keine Verbindung gibt. Vielleicht ist nur deine
-        Fantasie mit dir durchgegangen. Wie könnte so eine triviale und anspruchslose Vorstellung so fürchterliche
-        Auswirkungen haben? Zu deiner Überraschung endet der erste Akt, ohne dass die Handlung vorangeschritten oder
-        irgendetwas enthüllt worden ist. Die Lichter flammen für die Pause wieder auf und du denkst mit einem
-        unterdrückten Gähnen darüber nach, die Vorstellung vor dem zweiten Akt zu verlassen. Aber bevor du eine
-        Entscheidung treffen kannst, spürst du, wie du langsam… ganz langsam… in den Schlaf gleitest.</string>
+        passiert, ist nicht ganz das, was du erwartet hast. Langsam und monoton plätschert der erste Akt von <i>Der
+        König in Gelb</i> vor sich hin, eine ärgerlich langweilige Angelegenheit. Die Kulisse und die Charaktere sind
+        zwar überzeugend, aber die Handlung driftet in verschiedenste Richtungen und ergibt keinen Sinn – die
+        Vorstellung ist weder unterhaltsam noch informativ. Langsam fragst du dich, ob es zwischen den fürchterlichen
+        Vorkommnissen während der Vorbereitungen zu <i>Der König in Gelb</i> vielleicht doch keine Verbindung gibt.
+        Vielleicht ist nur deine Fantasie mit dir durchgegangen. Wie könnte so eine triviale und anspruchslose
+        Vorstellung so fürchterliche Auswirkungen haben? Zu deiner Überraschung endet der erste Akt, ohne dass die
+        Handlung vorangeschritten oder irgendetwas enthüllt worden ist. Die Lichter flammen für die Pause wieder auf und
+        du denkst mit einem unterdrückten Gähnen darüber nach, die Vorstellung vor dem zweiten Akt zu verlassen. Aber
+        bevor du eine Entscheidung treffen kannst, spürst du, wie du langsam… ganz langsam… in den Schlaf
+        gleitest.</string>
 
     <string name="carcosa_lola_prologue">Der erste Akt verlief genau so reibungslos wie in den zahllosen Proben. Aber
         der leere, uninteressierte Ausdruck auf den Gesichtern vieler Zuschauer war nicht zu übersehen und du beginnst
@@ -162,6 +205,44 @@
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
             Kultist-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
 
+    <string name="echoes_introduction">Ein dumpfer Schmerz pulsiert in deinem Kopf, während du durch die regennassen
+        Straßen von Arkham zu deinem nächsten Ziel unterwegs bist. Die Bedrohung durch den Fremden ist in deinem Geist
+        immer noch erschreckend präsent. Du merkst, dass du häufig in den Rückspiegel schaust, in der Erwartung, dass
+        dich das ausdruckslose Gesicht seiner Maske wieder heimsucht. Stattdessen siehst du aber nichts als die neblige,
+        sternenlose Nacht und eine menschenleere Straße hinter dir.\n
+    \nDeine Gedanken kreisen wie schon so oft in den letzten Stunden um <i>Der Königin Gelb</i> und die Stadt Carcosa
+        und ihre Einwohner. Welche verborgene Botschaft enthält dieses fürchterliche Stück und was ist die wahre
+        Bedeutung seines Wahnsinns: Dann drängt sich eine Kleinigkeit in dein Bewusstsein, etwas, das du in einem
+        Gespräch im Herrenhaus von Ms. Dumaine mitgehört hast – die heutige Aufführung von <i>Der Königin Gelb</i> war
+        nicht die erste dieser widerlichen Inszenierung in Arkham. Es hat mindestens eine weitere Aufführung in der
+        Vergangenheit gegeben, mit demselben Regisseur: Nigel Engram.\n
+    \nIn Arkham gibt es einen Ort, an dem Aufzeichnungen über wichtige Ereignisse in der Stadt aufbewahrt werden: das
+        Anwesen der Gesellschaft für Geschichte in der Südstadt. Falls es Berichte über die frühere Aufführung von
+        <i>Der Königin Gelb gibt</i>, wird die Gesellschaft für Geschichte sie haben. Vielleicht findest du dort die
+        Antworten auf die brennenden Fragen, die deinen Geist quälen.</string>
+    <string name="echoes_introduction_two">Ein dumpfer Schmerz pulsiert in deinem Kopf, während du durch die regennassen
+        Straßen von Arkham zu deinem nächsten Ziel unterwegs bist. Die Bedrohung durch den Fremden ist in deinem Geist
+        immer noch erschreckend präsent. Du merkst, dass du häufig in den Rückspiegel schaust, in der Erwartung, dass
+        dich das ausdruckslose Gesicht seiner Maske wieder heimsucht. Stattdessen siehst du aber nichts als die neblige,
+        sternenlose Nacht und eine menschenleere Straße hinter dir.\n
+    \nDeine Gedanken kreisen wie schon so oft in den letzten Stunden um <i>Der Königin Gelb</i> und die Stadt Carcosa
+        und ihre Einwohner. Welche verborgene Botschaft enthält dieses fürchterliche Stück und was ist die wahre
+        Bedeutung seines Wahnsinns: Dann drängt sich eine Kleinigkeit in dein Bewusstsein, etwas, das du in einem
+        Gespräch im Herrenhaus von Ms. Dumaine mitgehört hast – die heutige Aufführung von <i>Der Königin Gelb</i> war
+        nicht die erste dieser widerlichen Inszenierung in Arkham. Es hat mindestens eine weitere Aufführung in der
+        Vergangenheit gegeben, mit demselben Regisseur: Nigel Engram.\n
+    \nIn Arkham gibt es einen Ort, an dem Aufzeichnungen über wichtige Ereignisse in der Stadt aufbewahrt werden: das
+        Anwesen der Gesellschaft für Geschichte in der Südstadt. Falls es Berichte über die frühere Aufführung von
+        <i>Der Königin Gelb gibt</i>, wird die Gesellschaft für Geschichte sie haben. Vielleicht findest du dort die
+        Antworten auf die brennenden Fragen, die deinen Geist quälen.\n
+    \nSebastiens Informationen: Du erinnerst dich an etwas, was Sebastien dir auf der Feier erzählt hat. <i>Der König in
+        Gelb</i> gastierte vor einigen Jahrzehnten schon einmal in Arkham, lange bevor es das Ward-Theater gegeben hat.
+        Er war nicht überrascht, dass nur wenige Menschen sich daran erinnern – eines der Ziele der heutigen Aufführung
+        war <i>Der König in Gelb</i> einem breiteren Publikum bekannt zu machen. Die Gesellschaft für Geschichte könnte
+        Aufzeichnungen über diese frühere Inszenierung aufbewahrt haben, besonders wenn damals ähnliche Ereignisse in
+        ihrem Umfeld stattgefunden haben wie heute. Vielleicht findest du dort Zeitungsausschnitte oder andere Berichte
+        über die Ereignisse aus der Vergangenheit.</string>
+
 
 
     <!--Scenario set-up instructions-->
@@ -204,6 +285,32 @@
         platziert.\n
     \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
 
+    <string name="echoes_sets"> Widerhall aus der Vergangenheit, Kult des gelben Zeichens, Wahnvorstellungen,
+        Die Mitternachtsmasken, Verschlossene Türen and Dunkler Kult.\n
+    \nAus dem Begegnungsset Die Mitternachtsmasken werden nur die 5 Verratskarten verwendet (2x Falsche Fährte und
+        3x Hetzender Schatten).</string>
+    <string name="echoes_locations">Jeweils 1 Ort der Gesellschaft für Geschichte mit dem Merkmal
+        <b><i>Erdgeschoss</i></b>, <b><i>Erster Stock</i></b> und <b><i>Zweiter Stock</i></b> wird zufällig bestimmt
+        und aus dem Spiel entfernt, ohne die enthüllten Seiten anzusehen.\n
+    \nDer Eingangsbereich, beide Exemplare von Stille Flure und die übrigen 6 Exemplare von Gesellschaft für
+        Geschichte werden ins Spiel gebracht.\n
+    \nJeder Ermittler beginnt das Spiel im Eingangsbereich.\n</string>
+    <string name="echoes_set_aside">Versteckte Bibliothek, Besessener Eidsprecher, Mr. Peabody, Der zerfetzte Umhang und
+        Spange aus schwarzem Onyx.\n </string>
+    <string name="echoes_additional_two_players">Durchsuche die Begegnungssets nach einem Exemplar von Sucher von
+        Carcosa. Er erscheint an einem Ort der Gesellschaft für Geschichte mit dem Merkmal <b><i>Zweiter Stock</i></b>.
+        \n\n</string>
+    <string name="echoes_additional_three_players">Durchsuche die Begegnungssets nach zwei Exemplaren von Sucher von
+        Carcosa. Jeweils einer von ihnen erscheint an den beiden Orten der Gesellschaft für Geschichte mit dem Merkmal
+        <b><i>Zweiter Stock</i></b>.\n\n</string>
+    <string name="echoes_additional_four_players">Durchsuche die Begegnungssets nach drei Exemplaren von Sucher von
+        Carcosa. Sie erscheinen an drei unterschiedlichen Orten der Gesellschaft für Geschichte mit dem Merkmal
+        <b><i>Erster Stock</i></b> oder <b><i>Zweiter Stock</i></b>.\n\n</string>
+    <string name="echoes_additional_sebastien">Platziere einen Hinweis pro Ermittler auf dem Eingangsbereich.
+        \n\n</string>
+    <string name="echoes_additional_dinner">Du kommst frühzeitig beim Anwesen der Gesellschaft für Geschichte an. Jeder
+        Ermittler kann in der ersten Runde des Spiels eine zusätzliche Aktion nehmen.</string>
+
 
     <!--Scenario resolutions-->
     <string name="curtain_no_resolution">Erneut schreckst du aus dem Schlaf hoch, diesmal, weil du die kalten, feuchten
@@ -231,13 +338,13 @@
         1452 Atlantic Avenue. Um Abendkleidung wird gebeten.“ Du reißt den Zettel ab und nimmst ihn mit, als du dich
         frustriert und verwirrt abwendest.\n
     \n<b>Die Schwäche Der Mann mit der Bleichen Maske wird dem Deck des Ermittlungsleiters hinzugefügt (diese Karte
-            zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
-            von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
-            gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
-            dieses Ermittlers hinzugefügt.</b>\n
+        zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
+        von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
+        gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
+        dieses Ermittlers hinzugefügt.</b>\n
     \n<b>Gib bis zum Ende der Kampagne immer unter „Auf der Jagd nach dem Fremden“ ein, wie oft Der Mann mit der
-            Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
-            näher.</b></string>
+        Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
+        näher.</b></string>
     <string name="curtain_resolution_one">Du fliehst aus dem Theater und eilst direkt zur Polizeiwache in der Oststadt.
         Als du durch die Tür stürmst, starren dich die Polizisten und andere Anwesende an. Du forderst mit einem Verweis
         auf Dringlichkeit sofort Sheriff Engle sprechen zu dürfen. Der Sergeant am Empfangstresen, der gelangweilt einen
@@ -263,13 +370,13 @@
         Antworten führt, die du suchst.\n
         \n<b>Hast du wirklich gedacht, die Polizei würde dir helfen?</b>\n
     \n<b>Die Schwäche Der Mann mit der Bleichen Maske wird dem Deck des Ermittlungsleiters hinzugefügt (diese Karte
-            zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
-            von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
-            gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
-            dieses Ermittlers hinzugefügt.</b>\n
+        zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
+        von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
+        gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
+        dieses Ermittlers hinzugefügt.</b>\n
     \n<b>Gib bis zum Ende der Kampagne immer unter „Auf der Jagd nach dem Fremden“ ein, wie oft Der Mann mit der
-            Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
-            näher.</b></string>
+        Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
+        näher.</b></string>
     <string name="curtain_resolution_two">Du erwägst kurz die Polizei zu verständigen, aber wenn man bedenkt, was du
         heute Abend erlebt hast, werden sie dich wohl eher für verrückt halten, als dir zu glauben. Ein kleiner Teil von
         dir fragt sich, ob es sich hier wohl um einen merkwürdigen Scherz handelt. Aber das kann eigentlich nicht sein –
@@ -293,13 +400,13 @@
         nimmst ihn mit, weil du hoffst, dass er dich zu den Antworten führt, die du suchst.\n
         \n<b>Glaubst du, es war vernünftig, niemanden zu warnen?</b>\n
     \n<b>Die Schwäche Der Mann mit der Bleichen Maske wird dem Deck des Ermittlungsleiters hinzugefügt (diese Karte
-            zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
-            von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
-            gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
-            dieses Ermittlers hinzugefügt.</b>\n
+        zählt nicht gegen die Deckgröße des Ermittlers). Für den Rest der Kampagne wird jedes Mal, wenn der Träger
+        von Der Mann mit der Bleichen Maske die Kampagne aus irgendeinem Grund verlässt, ein neuer Ermittler
+        gewählt, der zum Träger der Schwäche Der Mann mit der Bleichen Maske wird, und diese Karte wird dem Deck
+        dieses Ermittlers hinzugefügt.</b>\n
     \n<b>Gib bis zum Ende der Kampagne immer unter „Auf der Jagd nach dem Fremden“ ein, wie oft Der Mann mit der
-            Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
-            näher.</b></string>
+        Bleichen Maske in diesem Spiel besiegt wurde. Jeder Sieg über ihn bringt dich der Wahrheit einen Schritt
+        näher.</b></string>
 
     <string name="king_resolution_one">Erfrischende Herbstluft umfängt dich, als du das Haus verlässt. Du hast keinen
         Zweifel daran, dass die Besetzung und die Mitarbeiter von <i>Der König in Gelb</i> dem Wahnsinn verfallen sind.
@@ -346,6 +453,75 @@
         gewählt, der 1 zusätzlichen Erfahrungspunkt verdient. Die Erfahrungspunkte dieser Belohnung müssen so
         gleichmäßig wie möglich unter den Ermittlern aufgeteilt werden. Gib unten ein, wie die Erfahrungspunkte verteilt
         wurden.</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden je 1
+            Kultist-, Tafel- und Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+
+    <string name="echoes_no_resolution">Du schaffst es mit Mühe und Not, das Gebäude zu verlassen, ohne größeren Schaden
+        an Körper und Geist zu nehmen und bringst dich in Sicherheit.\n
+    \nNach den Ereignissen dieser Nacht bist du völlig erschöpft. Im Anwesen der
+        Gesellschaft für Geschichte konntest du nichts finden, was deine Ermittlungen weiterbringt. Wer auch immer diese
+        Eindringlinge waren, sie müssen dieselben Informationen gesucht haben wie du. Verstört machst du dich auf den
+        Weg zum nächstgelegenen Ort, an dem du in einem Bett etwas Schlaf finden kannst – Mas Gästehaus ist nicht weit
+        entfernt von der Gesellschaft für Geschichte. Als du das Gästehaus erreichst, dämmertes bereits. Tautropfen
+        bedecken Türgriff und Geländer der vorderen Veranda. Du hast Glück, dass es noch ein freies Zimmer gibt. In
+        wenigen Augenblicken bist du eingeschlafen.\n
+    \nDann fühlst du plötzlich, dass du fällst. Über dir und um dich herum siehst du ein Inferno aus blendendem Licht.
+        Dein Kopf schmerzt fürchterlich und vor deinen Augen tanzen leuchtende Farben. Die Flammen lecken an deiner
+        Haut. Unter dir öffnet sich ein Abgrund und verschluckt dich mit Haut und Haaren. Dann findest du dich in einer
+        feuchten, fensterlosen Zelle wieder und ein stechender Gestank dringt dir in die Nase. In einer Ecke des Raumes
+        kauert ein Mann, der vor Kälte zittert – oder vielleicht wegen der Hoffnungslosigkeit seiner Situation oder
+        beidem: „Keine Maske“, murmelt er immer wieder, „keine Maske, keine Maske…“ Zögernd gehst du ein paar
+        Schritte auf ihn zu, aber noch bevor du ihn erreichst, öffnet sich ein Metallriegel an der Tür seiner Zelle und
+        du hörst, wie ein Pfleger nach ihm ruft. „Daniel, es ist Zeit“, sagter „Daniel, wach auf Wach auf Daniel.“ Dann
+        erwachst du.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden je 1
+            Kultist-, Tafel- und Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="echoes_resolution_one">Es gibt keine Zufälle, wenn es um <i>Der König in Gelb</i> geht. Du hast keinen
+        Zweifel daran, dass dieses Ding, das du gefunden hast, wichtig ist. Du entscheidest dich dafür, es mitzunehmen,
+        und setzt deine Ermittlungen fort. Beim letzten Bericht, den du im Zusammenhang mit der früheren Inszenierung
+        von <i>Der Königin Gelb</i> gefunden hast, handelt es sich um ein psychologisches Gutachten über einengewissen
+        Daniel Chesterfield, einen Bühnenarbeiter, der nach der letzten Aufführung den Verstand verloren hat. Scheinbar
+        wurde er nach dem Ende der Produktion ins Sanatorium eingewiesen. Vielleicht ist er immer noch da…\n
+    \n<b>Für den Rest der Kampagne muss ein Ermittler die Schwäche Spange aus schwarzem Onyx in sein Deck aufnehmen.
+            Diese Karte zählt nichtgegen die Deckgröße dieses Ermittlers.</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Kultist-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="echoes_resolution_two">Diese Ermittlung würde jeden paranoid machen. Es ist gefährlich, allem, was du
+        findest, eine tiefere Bedeutung beizumessen. Du bist dir aber sicher, dass diese Spange keine Bedeutung hat,
+        vielleicht handelt es sich um eine Requisite aus der Originalinszenierung. Du lässt sie zurück und setzt deine
+        Ermittlung fort. Beim letzten Bericht, den du im Zusammenhang mit der früheren Inszenierung von <i>Der Königin
+        in Gelb</i> gefunden hast, handelt es sich um ein psychologisches Gutachten über einen gewissen Daniel
+        Chesterfield, einen Bühnenarbeiter, der nach der letzten Aufführung den Verstand verloren hat. Scheinbar wurde
+        er nach dem Ende der Produktion ins Sanatorium eingewiesen. Vielleicht ist er immer noch da…\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="echoes_resolution_three">Die Gestalt bricht zusammen und ihr verzerrter, schmelzender Körper zuckt
+        unter Todesqualen. Sie keucht und schreit auf, aus ihrem Mund und ihren Augen dringt ein gelbliches Leuchten.
+        „Daniel“, sagt das Ding mit rauer Stimme. „Finde Daniel. Daniel Chesterfield, der Bühnenarbeiter. Er wird sich
+        erinnern!“ Eine andere Stimme, die in einer melodischen Sprache flüstert, mischt sich unter die Worte des
+        Mannes. „Finde ihn… Auch er hat den Eid abgelegt. Der Eid hat uns alle in die Verdammnis getrieben…!“ Das sind
+        die letzten Worte des Mannes, bevor die Haut von seinen Knochen schmilzt und diese klappernd auf den Boden
+        fallen.\n
+    \n<b>Ein beliebiger Ermittler darf wählen, die Karte Der zerfetzte Umhang seinem Deck hinzufügen. Diese Karte zählt
+            nicht gegen die Deckgröße dieses Ermittlers.</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="echoes_resolution_four">Nach den Ereignissen dieser Nacht bist du völlig erschöpft. Im Anwesen der
+        Gesellschaft für Geschichte konntest du nichts finden, was deine Ermittlungen weiterbringt. Wer auch immer diese
+        Eindringlinge waren, sie müssen dieselben Informationen gesucht haben wie du. Verstört machst du dich auf den
+        Weg zum nächstgelegenen Ort, an dem du in einem Bett etwas Schlaf finden kannst – Mas Gästehaus ist nicht weit
+        entfernt von der Gesellschaft für Geschichte. Als du das Gästehaus erreichst, dämmertes bereits. Tautropfen
+        bedecken Türgriff und Geländer der vorderen Veranda. Du hast Glück, dass es noch ein freies Zimmer gibt. In
+        wenigen Augenblicken bist du eingeschlafen.\n
+    \nDann fühlst du plötzlich, dass du fällst. Über dir und um dich herum siehst du ein Inferno aus blendendem Licht.
+        Dein Kopf schmerzt fürchterlich und vor deinen Augen tanzen leuchtende Farben. Die Flammen lecken an deiner
+        Haut. Unter dir öffnet sich ein Abgrund und verschluckt dich mit Haut und Haaren. Dann findest du dich in einer
+        feuchten, fensterlosen Zelle wieder und ein stechender Gestank dringt dir in die Nase. In einer Ecke des Raumes
+        kauert ein Mann, der vor Kälte zittert – oder vielleicht wegen der Hoffnungslosigkeit seiner Situation oder
+        beidem: „Keine Maske“, murmelt er immer wieder, „keine Maske, keine Maske…“ Zögernd gehst du ein paar
+        Schritte auf ihn zu, aber noch bevor du ihn erreichst, öffnet sich ein Metallriegel an der Tür seiner Zelle und
+        du hörst, wie ein Pfleger nach ihm ruft. „Daniel, es ist Zeit“, sagter „Daniel, wach auf Wach auf Daniel.“ Dann
+        erwachst du.\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden je 1
             Kultist-, Tafel- und Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
 </resources>

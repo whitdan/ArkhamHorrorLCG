@@ -40,6 +40,43 @@
     <string name="umordhoth_sacrificed">\nDie Ermittler haben Lita Chantler Umôrdhoth geopfert.\n</string>
 
 
+    <!--Chaos bag-->
+    <string name="gathering_skull_one">-X. X ist die Anzahl der <b><i>Ghul</i></b>-Gegner an deinem Ort.</string>
+    <string name="gathering_skull_two">-2. Falls die Probe misslingt, durchsuche nach dieser Probe das Begegnungsdeck
+        und den Ablagestapel nach einem <b><i>Ghul</i></b>-Gegner und ziehe ihn. Mische das Begegnungsdeck.</string>
+    <string name="gathering_cultist_one">-1. Falls die Probe misslingt, nimm 1 Horror.</string>
+    <string name="gathering_cultist_two">Enthülle einen weiteren Marker. Falls die Probe misslingt, nimm 2
+        Horror.</string>
+    <string name="gathering_tablet_one">-2. Falls sich ein <b><i>Ghul</i></b>-Gegner an deinem Ort befindet, nimm 1
+        Schaden.</string>
+    <string name="gathering_tablet_two">-4. Falls sich ein <b><i>Ghul</i></b>-Gegner an deinem Ort befindet, nimm 1
+        Schaden und 1 Horror.</string>
+
+    <string name="midnight_skull_one">-X. X ist die höchste Anzahl an Verderbensmarkern auf einem
+        <b><i>Kultist</i></b>-Gegner im Spiel.</string>
+    <string name="midnight_skull_two">-X. X ist die Gesamtanzahl aller Verderbensmarker im Spiel.</string>
+    <string name="midnight_cultist_one">-2. Platziere 1 Verderbensmarker auf den nächstgelegenen
+        <b><i>Kultist</i></b>-Gegner.</string>
+    <string name="midnight_cultist_two">-2. Platziere 1 Verderbensmarker auf jeden <b><i>Kultist</i></b>-Gegner im
+        Spiel. Falls sich keine <b><i>Kultist</i></b>-Gegner im Spiel befinden, enthülle einen weiteren Marker.</string>
+    <string name="midnight_tablet_one">-3. Falls die Probe misslingt, lege 1 deiner Hinweise auf deinen Ort.</string>
+    <string name="midnight_tablet_two">-4. Falls die Probe misslingt, lege alle deine Hinweise auf deinen Ort.</string>
+
+    <string name="devourer_skull_one">-X. X ist die Anzahl der <b><i>Monster</i></b>-Gegner im Spiel.</string>
+    <string name="devourer_skull_two">-3. Falls die Probe misslingt, durchsuche nach dieser Probe das Begegnungsdeck
+        und den Ablagestapel nach einem <b><i>Monster</i></b>-Gegner und ziehe ihn. Mische das Begegnungsdeck.</string>
+    <string name="devourer_cultist_one">-2. Platziere 1 Verderbensmarker auf den nächstgelegenen Gegner.</string>
+    <string name="devourer_cultist_two">-4. Platziere 2 Verderbensmarker auf den nächstgelegenen Gegner.</string>
+    <string name="devourer_tablet_one">-3. Falls sich ein <b><i>Monster</i></b>-Gegner an deinem Ort befindet, nimm 1
+        Schaden.</string>
+    <string name="devourer_tablet_two">-5. Falls sich ein <b><i>Monster</i></b>-Gegner an deinem Ort befindet, nimm 1
+        Schaden und 1 Horror.</string>
+    <string name="devourer_thing_one">-5. Falls sich ein <b><i>Großer Alter</i></b>-Gegner im Spiel befindet, enthülle
+        einen weiteren Marker.</string>
+    <string name="devourer_thing_two">-7. Falls sich ein <b><i>Großer Alter</i></b>-Gegner im Spiel befindet, enthülle
+        einen weiteren Marker.</string>
+
+
     <!--Campaign introduction-->
     <string name="night_introduction"><b>Die Ghule sind hungrig…</b>\n
         \nFreitag, 18. September 1925. Arkham, Massachusetts. Es ist das Ende eines langen und unnatürlich heißen
