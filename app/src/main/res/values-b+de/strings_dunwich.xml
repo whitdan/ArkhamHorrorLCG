@@ -61,7 +61,7 @@
     <string name="obannion_succeeded">Naomi beschützt die Ermittler.\n\n</string>
     <string name="morgan_kidnapped">Dr. Francis Morgan wurde entführt.\n\n</string>
     <string name="morgan_rescued">Die Ermittler haben Dr. Francis Morgan gerettet.\n\n</string>
-    <string name="morgan_sacrificed">Dr. Francis Morgan was wurde Yog-Sothoth geopfert.\n\n</string>
+    <string name="morgan_sacrificed">Dr. Francis Morgan wurde Yog-Sothoth geopfert.\n\n</string>
     <string name="morgan_survived">Dr. Francis Morgan hat das Vermächtnis von Dunwich überlebt.\n\n</string>
     <string name="armitage_kidnapped">Dr. Henry Armitage wurde entführt.\n\n</string>
     <string name="armitage_rescued">Die Ermittler haben Dr. Henry Armitage gerettet.\n\n</string>
@@ -83,12 +83,127 @@
     <string name="ally_sacrificed">Ein Verbündeter wurde Yog-Sothoth geopfert.\n\n</string>
     <string name="townsfolk_calmed">Du hast die Dorfbewohner beruhigt.\n\n</string>
     <string name="townsfolk_warned">Du hast die Dorfbewohner gewarnt.\n\n</string>
-    <string name="brood_escaped"> Brut(en) sind in die Nacht entkommen.\n\n</string>
+    <string name="brood_escaped"> Brut(en) sind in die Wildnis entkommen.\n\n</string>
     <string name="investigators_entered_gate">Die Ermittler haben das Tor betreten.\n\n</string>
     <string name="yog_tore_barrier">Yog-Sothoth hat die Grenze zwischen den Welten niedergerissen und ist eins mit der
         gesamten Realität geworden.\n\n</string>
     <string name="closed_tear">Die Ermittler haben den Riss in der Realität geschlossen.\n\n</string>
     <string name="yog_fled">Yog-Sothoth ist in eine andere Dimension geflohen.\n\n</string>
+
+
+    <!--Chaos bag-->
+    <string name="extracurricular_skull_one">-1. Falls die Probe misslingt, lege die obersten 3 Karten deines Decks
+        ab.</string>
+    <string name="extracurricular_skull_two">-2. Falls die Probe misslingt, lege die obersten 5 Karten deines Decks
+        ab.</string>
+    <string name="extracurricular_cultist_one">-1 (-3 stattdessen, falls sich 10 oder mehr Karten in deinem
+        Ablagestapel befinden).</string>
+    <string name="extracurricular_cultist_two">-1 (-5 stattdessen, falls sich 10 oder mehr Karten in deinem
+        Ablagestapel befinden).</string>
+    <string name="extracurricular_thing_one">-X. Lege die obersten 2 Karten deines Decks ab. X ist die Summe der
+        aufgedruckten Kosten der abgelegten Karten.</string>
+    <string name="extracurricular_thing_two">-X. Lege die obersten 3 Karten deines Decks ab. X ist die Summe der
+        aufgedruckten Kosten der abgelegten Karten.</string>
+
+    <string name="house_skull_one">-2. Du darfst 2 Ressourcen ausgeben, um diesen Marker stattdessen als 0 zu
+        behandeln.</string>
+    <string name="house_skull_two">-3. Du darfst 3 Ressourcen ausgeben, um diesen Marker stattdessen als 0 zu
+        behandeln.</string>
+    <string name="house_cultist_one">-3. Falls die Probe gelingt, erhalte 3 Ressourcen.</string>
+    <string name="house_cultist_two">-3. Falls die Probe misslingt, lege 3 Ressourcen ab.</string>
+    <string name="house_tablet_one">-2. Falls die Probe misslingt, lege 3 Ressourcen ab.</string>
+    <string name="house_tablet_two">-2. Lege 3 Ressourcen ab.</string>
+
+    <string name="miskatonic_skull_one">-1 (-3 stattdessen, falls sich Hetzender Schrecken an deinem Ort
+        befindet).</string>
+    <string name="miskatonic_skull_two">-2 (-4 stattdessen, falls sich Hetzender Schrecken an deinem Ort
+        befindet).</string>
+    <string name="miskatonic_cultist_one">-1. Falls die Probe misslingt, durchsuche das Begegnungsdeck, den
+        Ablagestapel und die Leere nach Hetzender Schrecken, der falls möglich an deinem Ort erscheint.</string>
+    <string name="miskatonic_cultist_two">-3. Falls die Probe misslingt, durchsuche das Begegnungsdeck, den
+        Ablagestapel und die Leere nach Hetzender Schrecken, der falls möglich an deinem Ort erscheint.</string>
+    <string name="miskatonic_tablet_one">-2. Lege 1 deiner Hinweise auf deinen Ort.</string>
+    <string name="miskatonic_tablet_two">-4. Falls sich Hetzender Schrecken an deinem Ort befindet, greift er dich
+        sofort an.</string>
+    <string name="miskatonic_thing_one">-3. Falls die Probe misslingt, lege eine Vorteilskarte ab, die du
+        kontrollierst.</string>
+    <string name="miskatonic_thing_two">-5. Falls die Probe misslingt, lege eine Vorteilskarte ab, die du
+        kontrollierst.</string>
+
+    <string name="essex_skull_one">-X. X ist die Nummer der aktuellen Agenda.</string>
+    <string name="essex_skull_two">-X. X ist die Nummer der aktuellen Agenda plus 1.</string>
+    <string name="essex_cultist_one">-1. Falls die Probe misslingt und es dein Zug ist, verlierst du alle verbleibenden
+        Aktionen und beendest sofort deinen Zug.</string>
+    <string name="essex_cultist_two">Enthülle einen weiteren Marker. Falls die Probe misslingt und es dein Zug ist,
+        verlierst du alle verbleibenden Aktionen und beendest sofort deinen Zug.</string>
+    <string name="essex_tablet_one">-2. Platziere 1 Verderbensmarker auf den nächstgelegenen
+        <i><b>Kultist</b></i>-Gegner.</string>
+    <string name="essex_tablet_two">-4. Platziere jeweils 1 Verderbensmarker auf jeden
+        <i><b>Kultist</b></i>-Gegner.</string>
+    <string name="essex_thing_one">-3. Falls die Probe misslingt, wähle eine Karte von deiner Hand und lege sie
+        ab.</string>
+    <string name="essex_thing_two">-3. Falls die Probe misslingt, wähle für jeden Punkt, um den sie misslingt, eine
+        Karte von deiner Hand und lege sie ab.</string>
+
+    <string name="blood_skull_one">-1 für jeden Ort im Spiel ohne Begegnungskarte darunter (max. -4).</string>
+    <string name="blood_skull_two">-1 für jeden Ort im Spiel ohne Begegnungskarte darunter.</string>
+    <string name="blood_cultist_one">-2. Falls die Probe misslingt, lege 1 Hinweis aus dem Markervorrat auf deinen
+        Ort.</string>
+    <string name="blood_cultist_two">-4. Falls die Probe misslingt, lege 1 Hinweis aus dem Markervorrat auf deinen
+        Ort.</string>
+    <string name="blood_tablet_one">-2. Falls du dich in Der verborgenen Kammer befindest, enthülle einen weiteren
+        Marker.</string>
+    <string name="blood_tablet_two">-3. Enthülle einen weiteren Marker.</string>
+    <string name="blood_thing_one">-3. Falls die Probe misslingt, platziere 1 Verderbensmarker auf die aktuelle
+        Agenda.</string>
+    <string name="blood_thing_two">-3. Platziere 1 Verderbensmarker auf die aktuelle Agenda.</string>
+
+    <string name="undimensioned_skull_one">-1 für jede Brut von Yog-Sothoth im Spiel.</string>
+    <string name="undimensioned_skull_two">-2 für jede Brut von Yog-Sothoth im Spiel.</string>
+    <string name="undimensioned_cultist_one">Enthülle einen weiteren Marker. Falls diese Probe misslingt, nimm 1
+        Horror.</string>
+    <string name="undimensioned_cultist_two">Enthülle einen weiteren Marker. Falls diese Probe misslingt, nimm 1
+        Horror und 1 Schaden.</string>
+    <string name="undimensioned_tablet_one">0. Du musst entweder alle Hinweismarker von einer Brut von Yog-Sothoth im
+        Spiel entfernen (min. 1) oder der Modifikator dieses Markers ist stattdessen -4.</string>
+    <string name="undimensioned_tablet_two">0. Du musst entweder alle Hinweismarker von einer Brut von Yog-Sothoth im
+        Spiel entfernen (min. 1) oder diese Probe misslingt automatisch.</string>
+    <string name="undimensioned_thing_one">-3. Falls dieser Marker während eines Angriffs- oder Entkommens-Versuchs
+        gegen eine Brut von Yog-Sothoth enthüllt wird, greift diese dich sofort an.</string>
+    <string name="undimensioned_thing_two">-5. Falls dieser Marker während eines Angriffs- oder Entkommens-Versuchs
+        gegen eine Brut von Yog-Sothoth enthüllt wird, greift diese dich sofort an.</string>
+
+    <string name="doom_skull_one">-1 (-3 stattdessen, falls du dich an einem <b><i>Verändert</i></b>-Ort
+        befindest).</string>
+    <string name="doom_skull_two">-2 (-5 stattdessen, falls du dich an einem <b><i>Verändert</i></b>-Ort
+        befindest).</string>
+    <string name="doom_cultist_one">Enthülle einen weiteren Marker. Hebe die Effekte und Symbole jeder Fertigkeitskarte
+        auf, die zu dieser Probe beigetragen wurde.</string>
+    <string name="doom_cultist_two">Enthülle einen weiteren Marker. Hebe die Effekte und Symbole jeder Fertigkeitskarte
+        auf, die zu dieser Probe beigetragen wurde.</string>
+    <string name="doom_tablet_one">-2 (-4 stattdessen, falls es Agenda 2 ist).</string>
+    <string name="doom_tablet_two">-3. Falls es Agenda 2 ist, misslingt die Probe stattdessen automatisch.</string>
+    <string name="doom_thing_one">-X. Lege die obersten 2 Karten deines Decks ab. X ist die Summe der aufgedruckten
+        Kosten der abgelegten Karten.</string>
+    <string name="doom_thing_two">-X. Lege die obersten 3 Karten deines Decks ab. X ist die Summe der aufgedruckten
+        Kosten der abgelegten Karten.</string>
+
+    <string name="lost_skull_one">-1 für jeden <b><i>Außerdimensional</i></b>-Ort im Spiel (max -5).</string>
+    <string name="lost_skull_two">-1 für jeden <b><i>Außerdimensional</i></b>-Ort im Spiel.</string>
+    <string name="lost_cultist_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, lege nach der Probe
+        Karten oben vom Begegnungsdeck ab, bis ein Ort abgelegt wird. Bringe diesen Ort ins Spiel und bewege dich
+        dorthin.</string>
+    <string name="lost_cultist_two">Enthülle einen weiteren Marker. Falls die Probe misslingt, lege nach der Probe
+        Karten oben vom Begegnungsdeck ab, bis ein Ort abgelegt wird. Bringe diesen Ort ins Spiel und bewege dich
+        dorthin.</string>
+    <string name="lost_tablet_one">-3. Falls sich Yog-Sothoth im Spiel befindet, greift er dich nach der Probe
+        an.</string>
+    <string name="lost_tablet_two">-5. Falls sich Yog-Sothoth im Spiel befindet, greift er dich nach der Probe
+        an.</string>
+    <string name="lost_thing_one">-X. X ist der Schleierwert deines Ortes. Falls die Probe misslingt und dein Ort
+        <b><i>Außerdimensional</i></b> ist, lege ihn ab.</string>
+    <string name="lost_thing_two">-X. X ist zwei mal der Schleierwert deines Ortes. Falls die Probe misslingt und dein
+        Ort <b><i>Außerdimensional</i></b> ist, lege ihn ab.</string>
 
 
     <!--Campaign introduction-->
@@ -287,8 +402,8 @@
         könnte. Aber je mehr du von seinen hektisch und unzusammenhängend geschriebenen Texten liest, desto mehr glaubst
         du, dass er mit den aktuellen Ereignissen zu tun hat. Er schreibt davon, die „Überreste eingesammelt“ zu haben
         und arkane Methoden anwenden zu wollen, um andere Wesen „mit der Essenz des Vaters zu durchdringen“, am Ende
-        sogar andere Menschen. Die Erklärungen und Diagramme, die darauf folgen, sind unfassbar komplex und erschließen
-        sich dir nicht.\n
+        sogar andere Menschen. Die Erklärungen und Abbildungen, die darauf folgen, sind unfassbar komplex und
+        erschließen sich dir nicht.\n
     \nBevor du Seth finden und damit konfrontieren kannst, wenden sich einige Männer und Frauen aus dem Ort ängstlich an
         dich. „Es is\' zurück!“, weint einer von ihnen. Du erkennst ihn als Curtis Whateley, ein Mitglied des nicht
         verdorbenen Zweigs der Familie. „Was auch immer die Fryes getötet hat, es is\' zurück! Hat das Haus der Bishops
@@ -530,7 +645,7 @@
         \n\n</string>
     <string name="doom_additional_obannion_two">Der Ermittlungsleiter erhält zwei Hinweise aus dem Markervorrat.
         \n\n</string>
-    <string name="doom_additional_doom">Füge 1 Verderben zu Agenda 1a hinzu.\n\n</string>
+    <string name="doom_additional_doom">Verderben zu Agenda 1a hinzu.\n\n</string>
     <string name="doom_additional_bishop">Überreste von Silas Bishops Körper sind mutiert und auf dem Sentinel Hill
         gewachsen. Eine „Ansammlung schillernder Kugeln“ wird auf dem Aufsteigenden Pfad ins Spiel gebracht.
         \n\n</string>

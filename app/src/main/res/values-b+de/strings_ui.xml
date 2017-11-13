@@ -27,6 +27,7 @@
     <string name="insane">Wahn-\nsinnig</string>
     <string name="physical_trauma">Körperliche Traumata: </string>
     <string name="mental_trauma">Seelische Traumata: </string>
+    <string name="total_xp">Gesamt-EP: </string>
     <string name="available_xp">Verfügbare EP: </string>
     <string name="xp_spent">Ausgegebene EP: </string>
 
@@ -123,8 +124,8 @@
     <!--<string name="one" translatable="false">1</string>
     <string name="two" translatable="false">2</string>
     <string name="three" translatable="false">3</string>-->
-    <string name="draw_token">Chaosmarker ziehen</string>
-    <string name="add_token">Chaosmarker hinzufügen</string>
+    <string name="draw_token">Ziehe</string>
+    <string name="add_token">Füge</string>
     <!--<string name="plus_two" translatable="false">+2</string>
     <string name="plus_one" translatable="false">+1</string>
     <string name="zero" translatable="false">0</string>
