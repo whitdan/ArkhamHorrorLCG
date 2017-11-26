@@ -110,7 +110,7 @@
     <string name="miskatonic_skull_two">-2 (-4 instead if Hunting Horror is at your location.)</string>
     <string name="miskatonic_cultist_one">-1. If you fail, search the encounter deck, discard pile, and the void for
         Hunting Horror and spawn it at your location, if able.</string>
-    <string name="miskatonic_cultist_two">-1. If you fail, search the encounter deck, discard pile, and the void for
+    <string name="miskatonic_cultist_two">-3. If you fail, search the encounter deck, discard pile, and the void for
         Hunting Horror and spawn it at your location, if able.</string>
     <string name="miskatonic_tablet_one">-2. Return 1 of your clues to your current location.</string>
     <string name="miskatonic_tablet_two">-4. If Hunting Horror is at your location, it immediately attacks you.</string>
@@ -121,8 +121,8 @@
     <string name="essex_skull_two">-X. X is 1 more than the current Agenda #.</string>
     <string name="essex_cultist_one">-1. If you fail and it is your turn, lose all remaining actions and end your turn immediately.</string>
     <string name="essex_cultist_two">Reveal another token. If you fail and it is your turn, lose all remaining actions and end your turn immediately.</string>
-    <string name="essex_tablet_one">-2. Add 1 doom token to the nearest Cultist enemy.</string>
-    <string name="essex_tablet_two">-4. Add 1 doom token to each Cultist enemy in play.</string>
+    <string name="essex_tablet_one">-2. Add 1 doom token to the nearest <i><b>Cultist</b></i> enemy.</string>
+    <string name="essex_tablet_two">-4. Add 1 doom token to each <i><b>Cultist</b></i> enemy in play.</string>
     <string name="essex_thing_one">-3. If you fail, choose and discard a card from your hand.</string>
     <string name="essex_thing_two">-3. If you fail, choose and discard a card from your hand for each point you failed by.</string>
 
