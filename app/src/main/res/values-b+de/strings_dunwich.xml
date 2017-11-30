@@ -61,7 +61,7 @@
     <string name="obannion_succeeded">Naomi beschützt die Ermittler.\n\n</string>
     <string name="morgan_kidnapped">Dr. Francis Morgan wurde entführt.\n\n</string>
     <string name="morgan_rescued">Die Ermittler haben Dr. Francis Morgan gerettet.\n\n</string>
-    <string name="morgan_sacrificed">Dr. Francis Morgan was wurde Yog-Sothoth geopfert.\n\n</string>
+    <string name="morgan_sacrificed">Dr. Francis Morgan wurde Yog-Sothoth geopfert.\n\n</string>
     <string name="morgan_survived">Dr. Francis Morgan hat das Vermächtnis von Dunwich überlebt.\n\n</string>
     <string name="armitage_kidnapped">Dr. Henry Armitage wurde entführt.\n\n</string>
     <string name="armitage_rescued">Die Ermittler haben Dr. Henry Armitage gerettet.\n\n</string>
@@ -83,7 +83,7 @@
     <string name="ally_sacrificed">Ein Verbündeter wurde Yog-Sothoth geopfert.\n\n</string>
     <string name="townsfolk_calmed">Du hast die Dorfbewohner beruhigt.\n\n</string>
     <string name="townsfolk_warned">Du hast die Dorfbewohner gewarnt.\n\n</string>
-    <string name="brood_escaped"> Brut(en) sind in die Nacht entkommen.\n\n</string>
+    <string name="brood_escaped"> Brut(en) sind in die Wildnis entkommen.\n\n</string>
     <string name="investigators_entered_gate">Die Ermittler haben das Tor betreten.\n\n</string>
     <string name="yog_tore_barrier">Yog-Sothoth hat die Grenze zwischen den Welten niedergerissen und ist eins mit der
         gesamten Realität geworden.\n\n</string>
@@ -402,8 +402,8 @@
         könnte. Aber je mehr du von seinen hektisch und unzusammenhängend geschriebenen Texten liest, desto mehr glaubst
         du, dass er mit den aktuellen Ereignissen zu tun hat. Er schreibt davon, die „Überreste eingesammelt“ zu haben
         und arkane Methoden anwenden zu wollen, um andere Wesen „mit der Essenz des Vaters zu durchdringen“, am Ende
-        sogar andere Menschen. Die Erklärungen und Diagramme, die darauf folgen, sind unfassbar komplex und erschließen
-        sich dir nicht.\n
+        sogar andere Menschen. Die Erklärungen und Abbildungen, die darauf folgen, sind unfassbar komplex und
+        erschließen sich dir nicht.\n
     \nBevor du Seth finden und damit konfrontieren kannst, wenden sich einige Männer und Frauen aus dem Ort ängstlich an
         dich. „Es is\' zurück!“, weint einer von ihnen. Du erkennst ihn als Curtis Whateley, ein Mitglied des nicht
         verdorbenen Zweigs der Familie. „Was auch immer die Fryes getötet hat, es is\' zurück! Hat das Haus der Bishops
@@ -645,7 +645,7 @@
         \n\n</string>
     <string name="doom_additional_obannion_two">Der Ermittlungsleiter erhält zwei Hinweise aus dem Markervorrat.
         \n\n</string>
-    <string name="doom_additional_doom">Füge 1 Verderben zu Agenda 1a hinzu.\n\n</string>
+    <string name="doom_additional_doom">Verderben zu Agenda 1a hinzu.\n\n</string>
     <string name="doom_additional_bishop">Überreste von Silas Bishops Körper sind mutiert und auf dem Sentinel Hill
         gewachsen. Eine „Ansammlung schillernder Kugeln“ wird auf dem Aufsteigenden Pfad ins Spiel gebracht.
         \n\n</string>
