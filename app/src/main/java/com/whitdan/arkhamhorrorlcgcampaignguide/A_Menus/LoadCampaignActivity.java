@@ -573,7 +573,11 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         ArkhamContract.CarcosaEntry.COLUMN_ISHIMARU,
                         ArkhamContract.CarcosaEntry.COLUMN_SEBASTIEN,
                         ArkhamContract.CarcosaEntry.COLUMN_ASHLEIGH,
-                        ArkhamContract.CarcosaEntry.COLUMN_PARTY
+                        ArkhamContract.CarcosaEntry.COLUMN_PARTY,
+                        ArkhamContract.CarcosaEntry.COLUMN_ONYX,
+                        ArkhamContract.CarcosaEntry.COLUMN_ASYLUM,
+                        ArkhamContract.CarcosaEntry.COLUMN_DANIEL,
+                        ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING
                 };
                 String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " = ?";
                 Cursor carcosaCursor = db.query(
@@ -610,6 +614,14 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             (ArkhamContract.CarcosaEntry.COLUMN_ASHLEIGH)));
                     globalVariables.Party=(carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
                             (ArkhamContract.CarcosaEntry.COLUMN_PARTY)));
+                    globalVariables.Onyx=(carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_ONYX)));
+                    globalVariables.Asylum=(carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
+                            (ArkhamContract.CarcosaEntry.COLUMN_ASYLUM)));
+                    globalVariables.Daniel=(carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
+                            (ArkhamContract.CarcosaEntry.COLUMN_DANIEL)));
+                    globalVariables.DanielsWarning=(carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_DANIELS_WARNING)));
                 }
                 carcosaCursor.close();
             }
@@ -638,6 +650,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     switch(globalVariables.CurrentScenario){
                         case 0:
                         case 3:
+                        case 6:
                             intent = new Intent(context, ScenarioInterludeActivity.class);
                             break;
                     }

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="night_campaign">La noche de la fanática</string>
+
+    <string name="night_scenario_one">Escenario 1: El encuentro</string>
+    <string name="night_scenario_two">Escenario 2: Las máscaras de medianoche</string>
+    <string name="night_scenario_three">Escenario 3: El Devorador de las Profundidades</string>
+
+
+    <!--Miscellaneous-->
+    <string name="ghoul_priest_additional">Pon el Sacerdote gul dentro del mazo y barájalo.\n\n</string>
+    <string name="ghoul_priest_checkbox">Sacerdote gul muerto</string>
+    <string name="cultists_interrogated">Sectarios interrogados: \n</string>
+    <string name="cultists_interrogated_resolution">Sectarios interrogados</string>
+    <string name="cultists_got_away">\nSectarios que escaparon: \n</string>
+    <string name="drew">Drew \"El Hombre Lobo\"</string>
+    <string name="herman">Herman Collins</string>
+    <string name="peter">Peter Warren</string>
+    <string name="victoria">Victoria Devereux</string>
+    <string name="ruth">Ruth Turner</string>
+    <string name="masked_hunter">El cazador enmascarado</string>
+
+    <!--Campaign log-->
+    <string name="house_standing">Tu casa sigue en pie.\n\n</string>
+    <string name="house_burned">Tu casa ha ardido hasta los cimientos.\n\n</string>
+    <string name="ghoul_priest_alive">El Sacerdote gul sigue vivo.\n\n</string>
+    <string name="lita_forced">Lita se vio obligada a encontrar a otros que la ayudaran en su causa.\n\n</string>
+    <string name="past_midnight">Es más de medianoche.\n\n</string>
+    <string name="drew_log">\t\tDrew \"El Hombre Lobo\"\n</string>
+    <string name="herman_log">\t\tHerman Collins\n</string>
+    <string name="peter_log">\t\tPeter Warren\n</string>
+    <string name="victoria_log">\t\tVictoria Devereux\n</string>
+    <string name="ruth_log">\t\tRuth Turner\n</string>
+    <string name="masked_hunter_log">\t\tEl cazador enmascarado\n</string>
+    <string name="no_cultist">\t\tNinguno\n</string>
+    <string name="umordhoth_succumbed">\nArkham sucumbió a la terrible venganza de Umôrdhoth.\n</string>
+    <string name="umordhoth_broken">\nEl ritual para invocar a Umôrdhoth fue roto.\n</string>
+    <string name="umordhoth_repelled">\nLos investigadores repelieron a Umôrdhoth.\n</string>
+    <string name="umordhoth_sacrificed">\nLos investigadores sacrificaron a Lita Chantler a Umôrdhoth.\n</string>
+
+
+    <!--Chaos bag-->
+    <string name="gathering_skull_one">-X. X es la cantidad de Enemigos <b><i>Gul</i></b> que hay en tu lugar.</string>
+    <string name="gathering_skull_two">-2. Si fracasas, después de esta prueba de habilidad busca en el mazo y la pila de
+        descartes de Encuentros un Enemigo <b><i>Gul</i></b> y róbalo. Baraja el mazo de Encuentros.</string>
+    <string name="gathering_cultist_one">-1. Si fracasas, recibe 1 punto de horror.</string>
+    <string name="gathering_cultist_two">Revela otra ficha. Si fracasas, recibe 2 puntos de horror.</string>
+    <string name="gathering_tablet_one">-2. Si hay un Enemigo <b><i>Gul</i></b> en tu Lugar, recibe 1 punto de daño.</string>
+    <string name="gathering_tablet_two">-4. Si hay un Enemigo <b><i>Gul</i></b> en tu Lugar, recibe 1 punto de daño y
+        un punto de horror.</string>
+
+    <string name="midnight_skull_one">-X. X es la cantidad más alta de fichas de Perdición que haya sobre un
+        Enemigo <b><i>Sectario</i></b> en juego.</string>
+    <string name="midnight_skull_two">-X. X es la cantidad total de fichas de Perdición en juego.</string>
+    <string name="midnight_cultist_one">-2. Coloca 1 ficha de Perdición sobre el Enemigo <b><i>Sectario</i></b> más cercano.</string>
+    <string name="midnight_cultist_two">-2. Coloca 1 ficha de Perdición sobre cada Enemigo <b><i>Sectario</i></b> en juego.
+        Si no hay Enemigos <b><i>Sectario</i></b> en juego, revela otra ficha.</string>
+    <string name="midnight_tablet_one">-3. Si fracasas, coloca 1 de tus pistas sobre tu Lugar.</string>
+    <string name="midnight_tablet_two">-4. Si fracasas, coloca todas tus pistas sobre tu Lugar.</string>
+
+    <string name="devourer_skull_one">-X. X es la cantidad de Enemigos <b><i>Monstruo</i></b> en juego.</string>
+    <string name="devourer_skull_two">-3. Si fracasas, después de esta prueba de habilidad busca en el mazo y la pila de
+        descartes de Encuentros un Enemigo <b><i>Monstruo</i></b> y róbalo. Baraja el mazo de Encuentros.</string>
+    <string name="devourer_cultist_one">-2. Coloca 1 ficha de Perdición sobre el Enemigo más cercano.</string>
+    <string name="devourer_cultist_two">-4. Coloca 2 fichas de Perdición sobre el Enemigo más cercano.</string>
+    <string name="devourer_tablet_one">-3. Si hay un Enemigo <b><i>Monstruo</i></b> en tu Lugar, recibe 1 punto de daño.</string>
+    <string name="devourer_tablet_two">-5. Si hay un Enemigo <b><i>Monstruo</i></b> en tu Lugar, recibe 1 punto de daño
+        y 1 punto de horror.</string>
+    <string name="devourer_thing_one">-5. Si hay un Enemigo <b><i>Primigenio</i></b> en juego, revela otra ficha.</string>
+    <string name="devourer_thing_two">-7. Si hay un Enemigo <b><i>Primigenio</i></b> en juego, revela otra ficha.</string>
+
+
+    <!--Campaign introduction-->
+    <string name="night_introduction"><b>Los gules tienen hambre…</b>\n
+        \nViernes, 18 de septiembre de 1925. Arkham, Massachusetts. Es el
+            final de un largo y anormalmente caluroso verano. Las primeras
+            señales del otoño empiezan a aparecer, pero persiste un sofocante
+            e implacable calor. Una ira silenciosa e impalpable atenaza la
+            ciudad. El mal genio está a flor de piel, y sólo en la última semana
+            ha habido numerosas discusiones entre habitantes de la ciudad
+            que han acabado en violentas peleas por simples malentendidos.\n
+        \nY ahora ha llamado James Hankerson. Afirma haber encontrado
+            un cuerpo desmembrado en su granero.\n
+        \nSería demasiado fácil echarle la culpa al tiempo. A esta ciudad
+            le pasa algo, y este viejo adivino poco puede hacer para detener
+            su caída. Mis augurios indican que un pequeño grupo de investigadores
+            se reunirá para arreglar las cosas. Estaré observando sus
+            progresos… pero no tengo muchas esperanzas.</string>
+
+
+    <!--Scenario introductions-->
+    <string name="gathering_introduction">Tus compañeros y tú habéis estado investigando los extraños sucesos que están
+        teniendo lugar en vuestra ciudad natal de Arkham, en Massachusetts. Durante
+        las últimas semanas, varios habitantes de la ciudad han desaparecido misteriosamente.
+        Y hace poco aparecieron sus cadáveres en el bosque, medio devorados y
+        salvajemente mutilados. La policía y los periódicos han dicho que ha sido obra
+        de animales, pero creéis que hay algo más en marcha. Os habéis reunido en casa
+        del investigador jefe para deliberar sobre estos misteriosos acontecimientos.</string>
+
+    <string name="midnight_introduction_one">La mujer se acerca a vosotros presa del pánico, desvariando
+        sobre unos monstruos que surgieron del suelo en una casa cerca del Barrio Fluvial.\n
+    \n–Logré atraparlos –explica–. Pero hay más. Otros pozos. Otros dominios.\n
+    \nLa semana pasada la habríais tomado por loca. Sin embargo, los sucesos recientes
+        han puesto a prueba vuestras ideas preconcebidas sobre la normalidad.
+        Decidís escucharla.\n
+    \nSe presenta como Lita Chantler, y os cuenta un relato que resulta casi imposible
+        de creer.\n
+    \n–Las criaturas de las que hablo –afirma– se llaman gules. Son seres crueles que
+        infestan las criptas, cavernas y túneles que hay bajo Arkham…\n
+    \n–Estas criaturas se alimentan de los cadáveres humanos, y tienen
+        a su servicio una oscura secta de Arkham, cuyos miembros llegaron de forma
+        inexplicable a adorar al antiguo amo de los gules. Esta secta ha estado matando a
+        gente inocente para dárselos de comer a los gules y saciar su monstruosa hambre. Así
+        se mantenía un siniestro equilibrio. Hasta ahora. Hace poco –prosigue Lita–, una
+        de sus guaridas, donde almacenaban los cadáveres, fue destruida. Desde entonces,
+        los gules han estado más activos que de costumbre. He seguido sus movimientos y
+        he tratado como he podido de evitar que se desmandasen por toda la ciudad. Pero
+        creo que hay algo peor en marcha. La secta ha estado planeando algo más siniestro
+        y amenazador que nada que haya contemplado hasta la fecha. Todos los indicios
+        apuntan a que este plan fructificará hoy, poco después de la medianoche. Después de
+        ese punto, no logro ni siquiera atisbar qué ocurrirá.\n
+    \n–Muchos de los sectarios –continúa Lita– parecen gente común y corriente pese
+        a sus terribles intenciones. Cuando se reúne la secta, sus miembros llevan máscaras
+        con forma de cráneos de distintos animales para proteger sus identidades
+        incluso entre ellos. Estas máscaras son nuestro objetivo. Son símbolos de muerte
+        y putrefacción. Debemos desenmascarar a los sectarios para exponer y desbaratar
+        sus planes. Apenas tenemos unas horas. Cuantos más sectarios encontremos
+        antes de la medianoche, mejor.</string>
+    <string name="midnight_introduction_two">Tras el desastre de tu casa, Lita Chantler, la mujer pelirroja
+        que estaba en tu salita, os cuenta un relato casi imposible de creer, incluso después
+        de todo lo que habéis presenciado.\n
+    \n–Las criaturas de tu casa –afirma– se llaman gules. Son seres crueles que infestan
+        las criptas, cavernas y túneles que hay bajo Arkham…\n
+    \n–Estas criaturas se alimentan de los cadáveres humanos, y tienen
+        a su servicio una oscura secta de Arkham, cuyos miembros llegaron de forma
+        inexplicable a adorar al antiguo amo de los gules. Esta secta ha estado matando a
+        gente inocente para dárselos de comer a los gules y saciar su monstruosa hambre. Así
+        se mantenía un siniestro equilibrio. Hasta ahora. Hace poco –prosigue Lita–, una
+        de sus guaridas, donde almacenaban los cadáveres, fue destruida. Desde entonces,
+        los gules han estado más activos que de costumbre. He seguido sus movimientos y
+        he tratado como he podido de evitar que se desmandasen por toda la ciudad. Pero
+        creo que hay algo peor en marcha. La secta ha estado planeando algo más siniestro
+        y amenazador que nada que haya contemplado hasta la fecha. Todos los indicios
+        apuntan a que este plan fructificará hoy, poco después de la medianoche. Después de
+        ese punto, no logro ni siquiera atisbar qué ocurrirá.\n
+    \n–Muchos de los sectarios –continúa Lita– parecen gente común y corriente pese
+        a sus terribles intenciones. Cuando se reúne la secta, sus miembros llevan máscaras
+        con forma de cráneos de distintos animales para proteger sus identidades
+        incluso entre ellos. Estas máscaras son nuestro objetivo. Son símbolos de muerte
+        y putrefacción. Debemos desenmascarar a los sectarios para exponer y desbaratar
+        sus planes. Apenas tenemos unas horas. Cuantos más sectarios encontremos
+        antes de la medianoche, mejor.</string>
+
+    <string name="devourer_introduction">Tras una frenética búsqueda nocturna por todo Arkham, habéis encontrado
+        e interrogado a varios miembros de la secta. Vuestros hallazgos son perturbadores:
+        afirman adorar a un ser conocido como Umôrdhoth, una monstruosa
+        entidad de otra dimensión.\n
+    \nLográis confirmar gran parte de la historia de Lita: la secta está inquieta por la
+        destrucción de un cubil de los gules. Sin embargo, también descubres un detalle
+        sorprendente: ¡quien invadió la guarida y puso en marcha los sucesos de esta
+        noche no fue otra que Lita Chantler! No sabéis muy bien por qué Lita omitió
+        este importante detalle de su relato: ¿os contó sólo lo necesario para que os involucrarais
+        en su conflicto? Pero bien visto, parece estar luchando para proteger la
+        ciudad de Arkham de una terrible amenaza.\n
+    \nLa última pieza del puzle apareció escrita en un diario que tenía uno de los
+        sectarios. El documento describe un oscuro ritual que va a ser realizado esta
+        misma noche en lo más profundo de los bosques que hay al sur de Arkham.
+        Según el diario, completar el ritual abrirá un portal que traerá a este mundo al
+        oscuro señor de la secta.\n
+    \n–Si no detenemos a la secta –advierte Lita–, la venganza de Umôrdhoth podría
+        consumirlo todo a su paso.\n
+    \nAsustados, pero decididos a detener el ritual, os dirigís al bosque…</string>
+
+
+    <!--Scenario setup instructions-->
+    <string name="gathering_sets">El encuentro, Ratas, Gules, Miedo impactante, Antiguos males y Frío helador.</string>
+    <string name="gathering_locations">Pon en juego el Lugar Estudio.\n
+    \nCada investigador comienza la partida en el Estudio.\n</string>
+    <string name="gathering_set_aside">Todos los demás Lugares, Sacerdote gul y Lita Chantler.\n</string>
+
+    <string name="midnight_sets">Las máscaras de medianoche, Frío helador, Ángeles descarnados, Secta oscura y Puertas cerradas.</string>
+    <string name="midnight_locations">Elige al azar uno de los dos Lugares Centro y uno de los dos Lugares
+        Barrio Sur y ponlos en juego. Retira las demás versiones de Centro
+        y Barrio Sur de la partida.\n
+        \nPon en juego los Lugares Barrio Norte, Barrio Este, Barrio Fluvial, Hospital de Santa María,
+        Cementerio, Universidad Miskatonic y Tu casa.\n
+        \nCada investigador comienza la partida en Tu casa.\n</string>
+    <string name="midnight_locations_no_house">Elige al azar uno de los dos Lugares Centro y uno de los dos Lugares
+        Barrio Sur y ponlos en juego. Retira las demás versiones de Centro
+        y Barrio Sur de la partida.\n
+        \nPon en juego los Lugares Barrio Norte, Barrio Este, Barrio Fluvial, Hospital de Santa María,
+        Cementerio y Universidad Miskatonic.\n
+        \nRetira Tu casa de la partida.\n
+        \nCada investigador comienza la partida en el Barrio Fluvial.\n</string>
+    <string name="midnight_set_aside">Conjunto de encuentros Secta de Umôrdhoth como un "mazo de Sectarios".\n</string>
+    <string name="midnight_additional_two">Busca 1 copia del Acólito en los conjuntos de encuentros que has reunido
+        y haz que aparezca en el Barrio Sur.\n\n</string>
+    <string name="midnight_additional_three">Busca 2 copias del Acólito en los conjuntos de encuentros que has reunido
+        y haz que aparezca 1 en el Barrio Sur, y el otro en el Centro.\n\n</string>
+    <string name="midnight_additional_four">Busca 3 copias del Acólito en los conjuntos de encuentros que has reunido
+        y haz que aparezca 1 en el Barrio Sur, 1 en el centro y 1 en el Cementerio.\n\n</string>
+
+    <string name="devourer_sets">El Devorador de las Profundidades, Antiguos males, Miedo impactante y Secta oscura.</string>
+    <string name="devourer_sets_two">Elige al azar 1 de los siguientes 4 conjuntos de encuentros:\n
+    \nAgentes de Yog-Sothoth, Agentes de Shub-Niggurath, Agentes de Cthulhu o Agentes de Hastur.</string>
+    <string name="devourer_locations">Pon en juego el Lugar Sendero principal. Baraja las 6 copias de Bosques
+        de Arkham, elige 4 al azar y ponlas en juego sin mirar sus lados revelados.
+        Retira las otras 2 de la partida.\n
+        \nCada investigador comienza la partida en el Sendero principal.</string>
+    <string name="devourer_set_aside">Las cartas Lugar del ritual y Umôrdhoth.\n</string>
+    <string name="devourer_additional">Añade 1 ficha de Caos Primigenio a la bolsa de caos durante el resto de la campaña.\n\n</string>
+    <string name="devourer_additional_midnight">Cada jugador descarta 2 cartas al azar de su mano inicial.\n\n</string>
+    <string name="devourer_cultists_one">Coloca 1 ficha de Perdición en el plan 1a.\n\n</string>
+    <string name="devourer_cultists_two">Coloca 2 ficha de Perdición en el plan 1a.\n\n</string>
+    <string name="devourer_cultists_three">Coloca 3 ficha de Perdición en el plan 1a.\n\n</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="gathering_no_resolution">Apenas lográis escapar
+        con vida de tu casa. La mujer de la salita os sigue por la puerta delantera
+        y la cierra de un portazo.\n
+    \n–¡Necios! ¿Veis lo que habéis hecho? –dice mientras apoya una
+        silla contra la puerta y la mete bajo el picaporte–. Debemos salir
+        de aquí. Venid conmigo y os diré lo que sé. Somos los únicos que
+        podemos evitar que desaten contra la ciudad la amenaza que acecha
+        bajo ella.\n
+    \nNo estáis en condiciones de replicar, así que asentís y seguís a la
+        mujer mientras sale corriendo del porche delantero en dirección al
+        Barrio Fluvial, bajo la lluvia.\n
+    \n<b>El investigador jefe obtiene la carta Lita Chantler.</b></string>
+    <string name="gathering_resolution_one">Asientes y permites que la mujer pelirroja prenda
+        fuego a las paredes y suelos de tu casa. Las llamas se extienden rápidamente,
+        y salís corriendo por la puerta delantera para evitar quedar
+        atrapados en ese infierno. Desde la acera, observáis cómo el fuego
+        consume todo lo que posees.\n
+    \n–Venid conmigo –dice la mujer–. Debéis conocer la amenaza que
+        acecha debajo. Si no colaboramos, estamos perdidos sin remedio…
+        pero juntos podremos detenerla.\n
+    \n<b>El investigador jefe obtiene la carta Lita Chantler.</b></string>
+    <string name="gathering_resolution_two">Te niegas a seguir la orden de la fanática y la echas
+        de tu casa por miedo a que le prenda fuego sin tu permiso.\n
+    \n–¡Necios! ¡Estáis cometiendo un funesto error! –os advierte–. No
+        entendéis la amenaza que acecha debajo… ¡ni el grave peligro que
+        corremos todos!\n
+    \nAún conmocionados por los acontecimientos de la noche, decidís escuchar
+        a la mujer. Quizás pueda arrojar algo de luz sobre estos extraños
+        sucesos… pero no parece confiar demasiado en vosotros.</string>
+    <string name="gathering_resolution_three">Corréis al pasillo para tratar de encontrar una
+        forma de huir de la casa, pero la ardiente barrera sigue bloqueando
+        vuestro camino. Estáis atrapados, y la horda de salvajes criaturas que
+        han invadido tu casa se acerca, sin que tengáis posibilidad de huir.\n
+    \n<b>Cada investigador que no haya desistido está muerto.</b>\n
+    \n<b>Si el investigador jefe ha muerto, elige un investigador para que obtenga la carta Lita Chantler.</b></string>
+
+    <string name="midnight_no_resolution">Habéis logrado obtener información útil sobre la
+        secta y sus planes. Ahora sólo queda esperar que sea suficiente.</string>
+    <string name="midnight_resolution_one">Habéis logrado obtener información útil sobre la
+        secta y sus planes. Ahora sólo queda esperar que sea suficiente.</string>
+    <string name="midnight_resolution_two">Suenan doce campanadas, señalando la medianoche.
+        Se ha acabado el tiempo; pronto comenzará el ritual de la secta.
+        Habéis logrado obtener información útil sobre la secta y sus planes.
+        Ahora sólo queda esperar que sea suficiente.</string>
+
+    <string name="devourer_no_resolution">Demasiado asustada
+        como para afrontar su destino, Lita huye y se pierde en la noche. Se
+        da cuenta de que ha fracasado, y de que la venganza de Umôrdhoth
+        la perseguirá dondequiera que vaya. Los tentáculos de la criatura se
+        extienden por la ciudad de Arkham, buscándola. Acecha en la oscuridad
+        de cada rincón, tratando de abrir las costuras de la realidad.
+        Pero Lita no aparece por ninguna parte, así que la criatura sigue
+        habitando en las sombras a día de hoy, buscando… matando.\n
+    \n<b>Los investigadores pierden.</b></string>
+    <string name="devourer_resolution_one">Habéis logrado evitar que la secta invoque a su señor.
+        Aunque no sabéis a ciencia cierta qué habría ocurrido si hubieran
+        tenido éxito, os alivia saber que Arkham está a salvo… al menos de
+        momento. Capturáis a tantos sectarios como podéis encontrar, pero
+        pocos habitantes de la ciudad se creen vuestro relato. Quizás fueran
+        imaginaciones vuestras después de todo.\n
+    \n<b>¡Los investigadores ganan!</b></string>
+    <string name="devourer_resolution_two">Mediante la fuerza de las armas y de voluntad, de
+        algún modo habéis logrado dañar lo suficiente a Umôrdhoth para
+        enviarlo de vuelta a la dimensión de la que surgió. El calor y la luz
+        vuelven al bosque mientras la masa de vacío se absorbe a sí misma y
+        se desvanece en un instante. No estáis seguros de si es posible matar a
+        semejante ser, pero parece haberse retirado por el momento. Cuando
+        su señor desaparece, los gules cercanos se meten en el foso abierto y
+        huyen entre terribles gritos y alaridos. Habéis detenido un maligno
+        plan, pero el combate le ha pasado factura a vuestros cuerpos y
+        mentes. Peor aún, no lográis evitar sentiros insignificantes ante los
+        misterios del mundo. ¿Qué otros terrores existen en los rincones más
+        oscuros y profundos de la realidad?\n
+    \n<b>¡Los investigadores ganan!</b></string>
+    <string name="devourer_resolution_three">Tras contemplar este horror, no creéis que haya nada
+        que podáis hacer para detenerlo. Sólo tenéis una esperanza si queréis
+        sobrevivir. Os volvéis contra Lita y la arrojáis contra la terrible
+        monstruosidad, observando con temor cómo su turbulenta masa de
+        vacío la consume. La mujer grita de agonía mientras le es absorbida
+        la vida del cuerpo.\n
+    \n<b>La culpa por haber sacrificado a Lita os perseguirá para
+        siempre en vuestros recuerdos. Cada investigador debe
+        buscar en la colección una Debilidad Locura aleatoria y añadirla
+        a su mazo.</b>\n
+    \n<b>Los investigadores han sobrevivido, pero sus acciones supondrán un gran peso en sus consciencias.</b></string>
+</resources>

@@ -190,7 +190,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
         setup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 5) {
+                if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 7) {
                     Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
@@ -272,7 +272,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
                         investigatorDead = true;
                     }
                 }
-                if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 5) {
+                if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 7) {
                     Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
                     toast.show();
                 } else if (setupRequired) {

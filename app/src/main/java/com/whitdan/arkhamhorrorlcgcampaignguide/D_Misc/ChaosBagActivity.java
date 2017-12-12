@@ -462,6 +462,22 @@ public class ChaosBagActivity extends AppCompatActivity {
                         chaosbag.add(14);
                         break;
                 }
+                if(scenario > 4){
+                    switch (globalVariables.CurrentDifficulty) {
+                        case 0:
+                            chaosbag.add(4);
+                            break;
+                        case 1:
+                            chaosbag.add(5);
+                            break;
+                        case 2:
+                            chaosbag.add(6);
+                            break;
+                        case 3:
+                            chaosbag.add(7);
+                            break;
+                    }
+                }
                 break;
         }
 
@@ -892,6 +908,18 @@ public class ChaosBagActivity extends AppCompatActivity {
                             thing.setText(R.string.echoes_thing_two);
                         }
                         break;
+                    case 5:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.unspeakable_skull_one);
+                            cultist.setText(R.string.unspeakable_cultist_one);
+                            tablet.setText(R.string.unspeakable_tablet_one);
+                            thing.setText(R.string.unspeakable_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.unspeakable_skull_two);
+                            cultist.setText(R.string.unspeakable_cultist_two);
+                            tablet.setText(R.string.unspeakable_tablet_two);
+                            thing.setText(R.string.unspeakable_thing_two);
+                        }
                 }
                 break;
         }

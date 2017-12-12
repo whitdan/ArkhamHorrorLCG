@@ -352,6 +352,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         resolutionThree.setVisibility(VISIBLE);
                         resolutionFour.setVisibility(VISIBLE);
                         break;
+                    case 5:
+                        resolutionThree.setVisibility(VISIBLE);
+                        break;
                 }
                 break;
         }
@@ -935,6 +938,15 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             additionalCheckbox.setText(R.string.sebastien_victory);
                         }
                         break;
+                    case 5:
+                        if (globalVariables.Constance == 0 || globalVariables.Constance == 1 || globalVariables
+                                .Sebastien == 3){
+                            additionalCheckbox.setVisibility(VISIBLE);
+                            additionalCheckbox.setText(R.string.constance_victory);
+                        }
+                        additionalCheckboxTwo.setVisibility(VISIBLE);
+                        additionalCheckboxTwo.setText(R.string.daniel_chesterfield_inplay);
+                        break;
                 }
                 break;
         }
@@ -1269,6 +1281,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             LinearLayout parent = (LinearLayout) radioGroup.getParent();
             final TextView resolutionTextView = parent.findViewById(R.id.resolution_text);
             resolutionTextView.setVisibility(VISIBLE);
+            final TextView resolutionTextViewAdditional = parent.findViewById(R.id.resolution_text_additional);
             final CheckBox additional = findViewById(R.id.additional_checkbox_one);
             final CheckBox additionalTwo = findViewById(R.id.additional_checkbox_two);
             final TextView selectInvestigatorHeading = findViewById(R.id.select_investigator_heading);
@@ -1775,6 +1788,47 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     break;
                             }
                             break;
+                        // Unspeakable Oath
+                        case 5:
+                            boolean defeated = false;
+                            for (int a = 0; a < globalVariables.Investigators.size(); a++) {
+                                if (globalVariables.Investigators.get(a).TempStatus > 1) {
+                                    defeated = true;
+                                }
+                            }
+                            switch (globalVariables.ScenarioResolution) {
+                                case 0:
+                                case 1:
+                                    if(defeated){
+                                        resolutionTextView.setText(R.string.unspeakable_resolution_one_defeated);
+                                    } else {
+                                        resolutionTextView.setText(R.string.unspeakable_resolution_one);
+                                    }
+                                    if(globalVariables.Onyx == 1){
+                                        resolutionTextViewAdditional.setVisibility(VISIBLE);
+                                        resolutionTextViewAdditional.setText(R.string.unspeakable_resolution_onyx);
+                                    } else {
+                                        resolutionTextViewAdditional.setVisibility(GONE);
+                                    }
+                                    break;
+                                case 2:
+                                    resolutionTextViewAdditional.setVisibility(GONE);
+                                    if(defeated){
+                                        resolutionTextView.setText(R.string.unspeakable_resolution_two_defeated);
+                                    } else {
+                                        resolutionTextView.setText(R.string.unspeakable_resolution_two);
+                                    }
+                                    break;
+                                case 3:
+                                    resolutionTextViewAdditional.setVisibility(GONE);
+                                    if(defeated){
+                                        resolutionTextView.setText(R.string.unspeakable_resolution_three_defeated);
+                                    } else {
+                                        resolutionTextView.setText(R.string.unspeakable_resolution_three);
+                                    }
+                                    break;
+                            }
+                            break;
                     }
                     break;
             }
@@ -2145,6 +2199,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         case 3:
                             switch (globalVariables.CurrentScenario) {
                                 case 3:
+                                    intent = new Intent(getActivity(), ScenarioInterludeActivity.class);
+                                    break;
+                                case 6:
                                     intent = new Intent(getActivity(), ScenarioInterludeActivity.class);
                                     break;
                             }
@@ -2914,6 +2971,54 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
+                    // Unspeakable Oath
+                    case 5:
+                        if (additionalCheckbox.isChecked()) {
+                            if (globalVariables.Constance == 0) {
+                                globalVariables.Constance = 1;
+                            } else if (globalVariables.Constance == 1) {
+                                globalVariables.Constance = 4;
+                            } else if (globalVariables.Constance == 3) {
+                                globalVariables.Constance = 5;
+                            }
+                        }
+                        if(additionalCheckboxTwo.isChecked()){
+                            if(globalVariables.Onyx == 1){
+                                globalVariables.Daniel = 1;
+                            } else {
+                                globalVariables.Daniel = 2;
+                            }
+                        } else {
+                            globalVariables.Daniel = 3;
+                        }
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                            if (globalVariables.Investigators.get(i).TempStatus > 1) {
+                                globalVariables.Investigators.get(i).Status = 2;
+                                globalVariables.Investigators.get(i).Horror = globalVariables
+                                        .Investigators.get(i).Sanity;
+                            }
+                        }
+                        switch(globalVariables.ScenarioResolution){
+                            case 0:
+                            case 1:
+                                globalVariables.Asylum = 1;
+                                globalVariables.Theatre = 1;
+                                globalVariables.DanielsWarning = 0;
+                                break;
+                            case 2:
+                                globalVariables.Asylum = 2;
+                                globalVariables.Theatre = 2;
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).Damage += 1;
+                                }
+                                break;
+                            case 3:
+                                globalVariables.Asylum = 3;
+                                globalVariables.Theatre = 3;
+                                break;
+                        }
+                        break;
                 }
                 break;
         }
@@ -3040,6 +3145,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         } else if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 2 && globalVariables
                 .Theatre ==
                 4) {
+            nextScenario = globalVariables.CurrentScenario + 2;
+        } else if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 5 && globalVariables
+                .Asylum == 1){
             nextScenario = globalVariables.CurrentScenario + 2;
         } else {
             nextScenario = globalVariables.CurrentScenario + 1;
@@ -3205,6 +3313,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_ASHLEIGH, globalVariables.Ashleigh);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_PARTY, globalVariables.Party);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_ONYX, globalVariables.Onyx);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_ASYLUM, globalVariables.Asylum);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_DANIEL, globalVariables.Daniel);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING, globalVariables.DanielsWarning);
 
             String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " LIKE ?";
             String[] carcosaSelectionArgs = {Long.toString(globalVariables.CampaignID)};

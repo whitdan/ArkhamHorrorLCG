@@ -27,7 +27,7 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
 
         // If app is reopening after the process is killed, kick back to the main menu (stops the activity from
         // showing up unpopulated)
-        if(savedInstanceState != null){
+        if (savedInstanceState != null) {
             Intent intent = new Intent(ScenarioIntroductionActivity.this, MainMenuActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
@@ -159,7 +159,7 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                 }
                 break;
             case 3:
-                switch(globalVariables.CurrentScenario){
+                switch (globalVariables.CurrentScenario) {
                     case 1:
                         title.setText(R.string.carcosa_scenario_one);
                         introduction.setText(R.string.curtain_introduction);
@@ -170,11 +170,24 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         break;
                     case 4:
                         title.setText(R.string.carcosa_scenario_three);
-                        if(globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4){
+                        if (globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4) {
                             introduction.setText(R.string.echoes_introduction_two);
                         } else {
                             introduction.setText(R.string.echoes_introduction);
                         }
+                        break;
+                    case 5:
+                        title.setText(R.string.carcosa_scenario_four);
+                        if (globalVariables.Onyx == 4) {
+                            introduction.setText(R.string.unspeakable_introduction_one);
+                        } else {
+                            introduction.setText(R.string.unspeakable_introduction_two);
+                        }
+                        if (globalVariables.Constance == 1 || globalVariables.Constance == 4) {
+                            introductionOne.setVisibility(VISIBLE);
+                            introductionOne.setText(R.string.unspeakable_introduction_constance);
+                        }
+
                 }
                 break;
         }

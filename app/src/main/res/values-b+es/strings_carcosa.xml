@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="carcosa_campaign">El camino a Carcosa</string>
+    <string name="carcosa_scenario_one">Escenario 1: Se cierra el telón</string>
+    <string name="carcosa_scenario_two">Escenario 2: El Último Rey</string>
+    <string name="carcosa_scenario_three">Escenario 3: Ecos del pasado</string>
+    <string name="carcosa_scenario_four">Escenario 4: El juramento inconfesable</string>
+    <string name="carcosa_scenario_five">Escenario 5: El Fantasma de la Verdad</string>
+    <string name="carcosa_scenario_six">Escenario 6: La máscara pálida</string>
+    <string name="carcosa_scenario_seven">Escenario 7: Surgen estrellas negras</string>
+    <string name="carcosa_scenario_eight">Escenario 8: Denumbrosa Carcosa</string>
+    <string name="carcosa_interlude_zero">Prólogo de Lola</string>
+    <string name="carcosa_interlude_one">Interlude 1: Recompensa de la demencia</string>
+    <string name="carcosa_interlude_two">Interlude 2: Alma perdida</string>
+    <string name="carcosa_epilogue">Epílogo</string>
+
+
+    <!--Miscellaneous-->
+    <string name="stranger_counter">Persiguiendo al Extranjero: </string>
+    <string name="box_office">Robásteis en la taquilla</string>
+    <string name="advanced_2b">Avanzado al Acto 2b</string>
+    <string name="city_aflame">Una ciudad en llamas</string>
+    <string name="path_mine">El camino es mío</string>
+    <string name="shores_hail">Las costas de Hali</string>
+    <string name="vips_interviewed">VIP interrogados</string>
+    <string name="vips_slain">VIP muertos</string>
+    <string name="constance">Constance Dumaine</string>
+    <string name="ishimaru">Ishimaru Haruko</string>
+    <string name="jordan">Jordan Perry</string>
+    <string name="sebastien">Sebastien Moreau</string>
+    <string name="ashleigh">Ashleigh Clarke</string>
+    <string name="allocated_experience">Distribución de la experiencia</string>
+    <string name="sebastien_victory">Sebastien Moreau in the victory display</string>
+
+
+    <!--Campaign Log-->
+    <string name="doubt">Duda: </string>
+    <string name="conviction">Convicción: </string>
+    <string name="stranger">El Extranjero sabe lo que intentan hacer los investigadores.\n\n</string>
+    <string name="warned_police">Los investigadores trataron de avisar a la policía.\n\n</string>
+    <string name="not_police">Los investigadores eligieron no acudir a la policía.\n\n</string>
+    <string name="police_suspicious">La policía sospecha de los investigadores.\n\n</string>
+    <string name="vips_interviewed_log">VIP interrogados: \n</string>
+    <string name="vips_slain_log">VIP muertos: \n</string>
+    <string name="constance_log">\t\tConstance Dumaine\n</string>
+    <string name="ishimaru_log">\t\tIshimaru Haruko\n</string>
+    <string name="jordan_log">\t\tJordan Perry\n</string>
+    <string name="sebastien_log">\t\tSebastien Moreau\n</string>
+    <string name="ashleigh_log">\t\tAshleigh Clarke\n</string>
+    <string name="no_vips">\t\tNinguno\n</string>
+    <string name="intruded">Los investigadores se colaron en una reunión secreta.\n\n</string>
+    <string name="fled">Los investigadores huyeron de la fiesta.\n\n</string>
+    <string name="slayed">Los investigadores mataron a los monstruos de la fiesta.\n\n</string>
+    <string name="onyx_taken">You took the onyx clasp.\n\n</string>
+    <string name="onyx_left">You left the onyx clasp behind.\n\n</string>
+    <string name="oathspeaker_destroyed">You destroyed the oathspeaker.\n\n</string>
+    <string name="followers_sign">The followers of the sign have found the way forward.\n\n</string>
+
+
+    <!--Chaos bag-->
+    <string name="curtain_skull_one">-1, o bien -3 si tienes 3 o más puntos de horror.</string>
+    <string name="curtain_skull_two">X, donde X es la cantidad de horror que tienes. Si no tienes horror, X es 1.</string>
+    <string name="curtain_combined_one">-4. Si tu Lugar tiene al menos 1 punto de horror, recibes 1 punto de horror <i>de
+        la reserva de fichas)</i>. Si tu Lugar no tiene horror, en lugar de eso coloca 1 punto de horror sobre él.</string>
+    <string name="curtain_combined_two">-5. Si tu Lugar tiene al menos 1 punto de horror, recibes 1 punto de horror <i>de
+        la reserva de fichas)</i>. Si tu Lugar no tiene horror, en lugar de eso coloca 1 punto de horror sobre él.</string>
+
+    <string name="king_skull_one">Revela otra ficha. Si fracasas, coloca 1 ficha de Perdición sobre un Enemigo
+        <i>Lunático</i> que esté en juego.</string>
+    <string name="king_skull_two">Revela otra ficha. Si fracasas, coloca 1 ficha de Perdición sobre un Enemigo
+        <i>Lunático</i> que esté en juego con más salud restante.</string>
+    <string name="king_cultist_one">-2. Si fracasas, coloca 1 de tus pistas sobre tu Lugar.</string>
+    <string name="king_cultist_two">-3. Coloca 1 de tus pistas sobre tu Lugar.</string>
+    <string name="king_tablet_one">-4. Si fracasas, recibe 1 punto de horror.</string>
+    <string name="king_tablet_two">-4. Recibe 1 punto de horror.</string>
+    <string name="king_thing_one">-X. X es el valor de velo de tu Lugar.</string>
+    <string name="king_thing_two">-X. X es el valor de velo de tu Lugar. Si fracasas, recibe 1 punto de daño.</string>
+
+    <string name="echoes_skull_one">-X. X es la cantidad más alta de fichas de Perdición que haya sobre un
+        Enemigo en juego.</string>
+    <string name="echoes_skull_two">-X. X es la cantidad más alta de fichas de Perdición que haya sobre un
+        Enemigo en juego.</string>
+    <string name="echoes_cultist_one">-2. Si fracasas, coloca 1 ficha de Perdición sobre el Enemigo más cercano.</string>
+    <string name="echoes_cultist_two">-4. Coloca 1 ficha de Perdición sobre el Enemigo más cercano.</string>
+    <string name="echoes_tablet_one">-2. Si fracasas, descarta una carta de tu mano al azar.</string>
+    <string name="echoes_tablet_two">-4. Descarta una carta de tu mano al azar.</string>
+    <string name="echoes_thing_one">-2. Si fracasas y hay un Enemigo en tu Lugar, recibe 1 punto de horror.</string>
+    <string name="echoes_thing_two">-4. Si hay un Enemigo en tu Lugar, recibe 1 punto de horror.</string>
+
+
+    <!-- Campaign introduction-->
+    <string name="carcosa_introduction"><b>Prólogo</b>\n
+    \nLe das la vuelta al programa doblado que tienes en la mano, leyéndolo por
+        enésima vez. Dice: “El Grupo Miskatonic presenta: El Rey de Amarillo.
+        Una representación especial en el Teatro Ward de Arkham. Sólo una noche.
+        Un irresistible drama en dos actos. Montaje y dirección de Nigel Engram.”.
+        El elenco es pequeño, y solamente hay un crédito sin mención al final:
+        “El Forastero”.\n
+    \nQue una obra tan esperada venga a representarse a Arkham directamente
+        desde París es un acontecimiento notable, incluso si sólo es una noche.
+        Durante las semanas anteriores al espectáculo, no se hablaba de otra cosa
+        en la ciudad. Parecía algo inocente… y sin embargo, tienes pruebas de que
+        hay algo siniestro en marcha. Comenzó con la desaparición de uno de los
+        tramoyistas del teatro: un chico de sólo diecisiete años que faltó a un ensayo
+        una noche y al que no se le ha vuelto a ver. Después, a menos de dos semanas
+        de la representación, se encontró el cadáver de un músico con una pistola en
+        la boca. Y quizá lo más escalofriante de todo fue el demente al que arrestó
+        la poli en la Plaza de la Independencia y que había estado desvariando y
+        chillando sobre el “regreso del Rey”. Se lo llevaron al Manicomio Arkham,
+        y te sorprendió descubrir que no era el único que sufría ese mismo delirio.\n
+    \nPuesto que estos sucesos os parecen sospechosos, tú y tus compañeros habéis
+        indagado en el asunto. Aunque no podéis demostrar ninguna relación, ésos
+        no han sido los únicos acontecimientos extraños que rodean la inminente
+        representación de la obra. Está dejando una estela de suicidios y locura a su
+        paso, y estáis decididos a averiguar el porqué.\n
+    \nLas luces del auditorio se atenúan, y un foco ilumina el escenario. Lo que
+        se desarrolla no es exactamente lo que esperabas. El primer acto de El Rey
+        de Amarillo es un tedioso tostón, de ritmo lento y monótono. La ambientación
+        y los personajes son cautivadores, pero la dispersa y absurda historia ni
+        entretiene ni informa. Comienzas a preguntarte si los terribles eventos que
+        rodean a El Rey de Amarillo no están relacionados después de todo. Puede
+        que sólo fuera tu imaginación hiperactiva; ¿cómo podría un espectáculo tan
+        trivial e inocente causar semejante caos? Te sorprende que el primer acto
+        acabe sin ningún momento álgido ni revelación. Las luces se encienden para
+        el descanso, y te planteas irte antes de tiempo mientras contienes un bostezo.
+        Pero antes de poder decidirte, empiezas a sentir que caes… caes… profundamente
+        dormido.</string>
+
+    <string name="carcosa_lola_prologue">El primer acto se desarrolló sin ningún problema, como
+        solía pasar en los ensayos. No has podido evitar darte cuenta de las expresiones
+        vacías y desdeñosas que hay en el rostro de muchos de los miembros
+        del público, y te preguntas cómo reaccionará el respetable a la perturbadora
+        segunda mitad de la obra. El papel de Cassilda es tedioso y aburrido
+        durante la primera mitad del texto, pero disfrutas interpretando su encanto
+        regio. De pronto, echas de menos a tu anterior coprotagonista, Miriam
+        Twain, y el temor y los remordimientos que sentiste en París vuelven con
+        fuerza. Con un suspiro, te retiras a un oscuro rincón entre bambalinas para
+        escapar de los sonidos de los tramoyistas que preparan la siguiente escena.
+        Tratas de contener tus emociones y sustituir tus pensamientos por los de
+        Cassilda, sus esperanzas, sus miedos y su destino.\n
+    \nEn ese momento, descubres al Forastero mirándote fijamente desde lejos, y
+        te echas a temblar sólo de verlo. Aunque siguen sustituyendo al actor que
+        interpreta al Forastero antes de cada representación (y hasta muchas veces
+        durante los ensayos), sabes que este sustituto de última hora es el más horripilante
+        de todos. Te das cuenta de que ni siquiera sabes su nombre, y un
+        escalofrío de terror recorre tu espalda. ¿Has acabado de vuelta con los lobos,
+        como una corderilla perdida? No puedes apartar los ojos, pues su mirada es
+        ineludible. Todo se vuelve negro.</string>
+
+
+    <!--Scenario introductions-->
+    <string name="curtain_introduction">Te despiertas sobresaltado, como si te hubiera sacudido una fuerza invisible.
+        Debes de haberte dormido un buen rato, pues ya sólo quedan unos pocos
+        espectadores entre el público, y no hay actores sobre el escenario. Las luces
+        están atenuadas, y el telón está rasgado y hecho jirones, aunque no recuerdas
+        que fuese así durante el primer acto. Esperas un momento para asegurarte
+        de que no sea parte de la representación. Mientras esperas, un repulsivo
+        olor que no logras reconocer impregna el aire. ¿Cuánto tiempo has estado
+        dormido? Te sacudes la modorra y caminas hacia uno de los espectadores
+        sentados para preguntarle la hora, pero no responde. Entonces te das cuenta
+        de que estás hablándole a un cadáver.</string>
+
+    <string name="king_introduction">Si alguien tiene respuestas para las preguntas que arden en tu mente, son
+        el elenco y el equipo de <i>El Rey de Amarillo</i>. Sin más pistas que seguir, te
+        pones tu mejor ropa y acudes al 1452 de la Avenida Atlantic, donde una
+        mujer llamada Constance Dumaine organiza una velada para celebrar la
+        representación de la obra en Arkham por una sola noche.</string>
+
+    <string name="carcosa_interlude_one_option_one">Las cosas parecen haberse calmado. Quizás deberíamos volver
+        dentro y seguir investigando.</string>
+    <string name="carcosa_interlude_one_option_two">No me fío de este sitio ni un ápice. ¡Vamos a bloquear la puerta y
+        larguémonos de aquí!</string>
+    <string name="carcosa_interlude_one_option_three">Si dejamos a esta gente con vida, este horror se volverá a repetir.
+        Debemos ponerle fin a esto. Tenemos que <i>matarlos</i>.</string>
+    <string name="carcosa_interlude_one_one">El cambio en el ambiente te pica la
+        curiosidad. ¿Y si tu mente te jugó una mala pasada? ¿Y si las apariciones
+        que siguen al Rey de Amarillo son sólo transitorias? Las respuestas a todas
+        tus preguntas podrían estar dentro. Vuelves a abrir la puerta principal de
+        la mansión con cautela. El volumen del reconfortante jazz y del ruido de las
+        conversaciones triviales aumenta cuando entras. El tentador olor del cerdo
+        asado flota en el aire. Como sospechabas, los signos de pelea y las cosas
+        extrañas que viste antes han desaparecido sin explicación alguna. Entonces,
+        cuando doblas la esquina para llegar al comedor, descubres al Extranjero
+        hablando con otro hombre, uno alto, con bigote, vestido con un elegante
+        traje negro y que lleva un bastón con el mango de plata. El Extranjero se
+        vuelve hacia ti; su mirada te perfora la mente y tu visión se vuelve borrosa
+        por el dolor. Sin saber ni cómo, echas a correr tan rápido como puedes, atravesando
+        la puerta principal entre una bruma de dolor y desorientación. Sin
+        tiempo para recobrar el aliento, corres hacia tu vehículo y te marchas a toda
+        velocidad, sujetando el volante con manos temblorosas.\n
+    \n<b>¿Cómo se te ocurre volver a entrar?</b>\n
+    \n<b>Retira todas las fichas de Sectario, Lápida y Antiguo de la bolsa de caos. A continuación,
+        añade 2 fichas de Antiguo a la bolsa de caos.</b></string>
+    <string name="carcosa_interlude_one_two">No puedes fiarte de tus sentidos. Es
+        sólo un truco, un intento de atraerte otra vez al interior. Sigues estando tan
+        en peligro como antes. Te tragas tu miedo y te pones a bloquear la puerta
+        principal de la mansión con varios de los pesados bancos de piedra que hay
+        situados en el sendero de adoquines del patio delantero. Esperas que sea suficiente,
+        pero no vas a quedarte para averiguarlo. En cuanto acabas, vuelves
+        a tu vehículo y te diriges al Barrio Sur, donde esperas encontrar respuestas.\n
+    \n<b>Esa puerta no va a detenerlos.</b>\n
+    \n<b>Retira todas las fichas de Sectario, Lápida y Antiguo de la bolsa de caos. A continuación,
+        añade 2 fichas de Lápida a la bolsa de caos.</b></string>
+    <string name="carcosa_interlude_one_three">No te atreves a volver a entrar en esa
+        casa de locos. Pero tampoco puedes dejar que las monstruosidades anden
+        sueltas. Registras el garaje abierto en busca de algo que te resulte útil y
+        encuentras una vieja manguera, una lata de gasolina vacía y unas cerillas.
+        Sabes lo que debes hacer, así que primero sacas gasolina del Oakland 6-54A
+        de la Sra. Dumaine. Rocías con ella el porche delantero, el interior del garaje
+        y las paredes exteriores de la mansión. Una vez hecho eso, sólo hacen falta
+        varias cerillas para empezar el incendio. Observas desde el patio delantero
+        cómo las llamas acaban por consumir la mansión. La calle se llena de los
+        sonidos del crepitar del fuego y de la madera que se parte y de los chillidos
+        de los horrores que mueren. Satisfecho, vuelves a tu vehículo y te pones en
+        camino al Barrio Sur con una sombría determinación.\n
+    \n<b>Hiciste lo que debías hacer… ¿No?</b>\n
+    \n<b>Retira todas las fichas de Sectario, Lápida y Antiguo de la bolsa de caos. A continuación,
+        añade 2 fichas de Sectario a la bolsa de caos.</b></string>
+
+    <string name="echoes_introduction">Your head throbs with a dull ache as you drive through the rainy streets of
+        Arkham toward your next destination. The threat of the Stranger looms in your mind, and you find yourself
+        glancing often at your rear-view mirror, expecting to see the expressionless visage of his mask haunting you.
+        Instead, you see nothing but the misty, starless night, and the deserted road behind you.\n
+    \nYour thoughts once again wander, as they have often in the past few hours, to <i>The King in Yellow</i> and to
+        the city of Carcosa and its inhabitants. What was the message hidden inside that awful play, the meaning
+        within its madness? A lone detail worms its way to the forefront of your thoughts, one made apparent by the
+        discussions you’d overheard at Ms. Dumaine’s estate—that tonight’s performance of <i>The King in Yellow</i>
+        was not the first Arkham had seen of the foul play. There had been at least one other performance, directed
+        by the same man: Nigel Engram.\n
+    \nThere is one place in Arkham where records are often kept of important events occurring within the city: the
+        Historical Society’s manor house in Southside. If there are any records of the previous show of <i>The King
+            in Yellow</i>, the Historical Society may have held onto them. Perhaps there you will find answers to the
+        questions that burn in your mind.</string>
+    <string name="echoes_introduction_two">Your head throbs with a dull ache as you drive through the rainy streets of
+        Arkham toward your next destination. The threat of the Stranger looms in your mind, and you find yourself
+        glancing often at your rear-view mirror, expecting to see the expressionless visage of his mask haunting you.
+        Instead, you see nothing but the misty, starless night, and the deserted road behind you.\n
+    \nYour thoughts once again wander, as they have often in the past few hours, to <i>The King in Yellow</i> and to
+        the city of Carcosa and its inhabitants. What was the message hidden inside that awful play, the meaning
+        within its madness? A lone detail worms its way to the forefront of your thoughts, one made apparent by the
+        discussions you’d overheard at Ms. Dumaine’s estate—that tonight’s performance of <i>The King in Yellow</i>
+        was not the first Arkham had seen of the foul play. There had been at least one other performance, directed
+        by the same man: Nigel Engram.\n
+    \nThere is one place in Arkham where records are often kept of important events occurring within the city: the
+        Historical Society’s manor house in Southside. If there are any records of the previous show of <i>The King
+            in Yellow</i>, the Historical Society may have held onto them. Perhaps there you will find answers to the
+        questions that burn in your mind.\n
+    \nYou recall what Sebastien told you during the dinner party. <i>The King in Yellow</i> had come to Arkham
+        several decades ago, long before the Ward Theatre was built. According to him, it isn’t surprising that few
+        people remember—in fact, part of their goal tonight was to bring <i>The King in Yellow</i> to a wider
+        audience. The Historical Society may have kept records pertaining to this earlier production, especially if
+        it was followed by events similar to what has occurred tonight. Perhaps you can find some newspaper clippings
+        or other articles describing what happened in the past.</string>
+
+
+
+    <!--Scenario set-up instructions-->
+    <string name="curtain_sets">Se cierra el telón, Portentos malignos, Delirios, Apariciones, Secta del
+        Signo Amarillo, Miedo impactante y Ratas</string>
+    <string name="curtain_locations">Pon en juego los Lugares Teatro, Vestíbulo, Palcos y Bastidores.\n
+        \nCada investigador comienza la partida en el Teatro.\n</string>
+    <string name="curtain_locations_lola">Pon en juego los Lugares Teatro, Vestíbulo, Palcos y Bastidores.\n
+        \nLola Hayes comienza la partida en los Bastidores. Los demás investigadores comienzan la partida en el Teatro.\n</string>
+    <string name="curtain_set_aside">El hombre de la máscara pálida, Emisario real, todas las copias de
+        Puerta del vestíbulo y todas las copias de Puerta de bastidores.\n</string>
+
+    <string name="king_sets">El Último Rey, El regalo de Hastur, Podredumbre e impurezas, El
+        Extranjero y Antiguos males</string>
+    <string name="king_locations">Pon en juego los 6 Lugares (Recibidor, Patio, Sala de estar, Salón
+        de baile, Comedor y Galería).\n
+        \nCada investigador comienza la partida en el Recibidor.\n</string>
+    <string name="king_set_aside">Dianne Devine.\n</string>
+    <string name="king_additional_one">Baraja las 5 cartas de Apoyo Transeúnte (Constance Dumaine,
+        Jordan Perry, Ishimaru Haruko, Sebastien Moreau y Ashleigh Clarke) y coloca 1 al azar en
+        cada Lugar excepto en el Recibidor. Coloca 2 pistas sobre cada una de estas cartas de Apoyo.\n
+    \nColoca las 5 cartas de Historia “Realidad repulsiva” bajo la carta de referencia de escenario.</string>
+    <string name="king_additional_two">Baraja las 5 cartas de Apoyo Transeúnte (Constance Dumaine,
+        Jordan Perry, Ishimaru Haruko, Sebastien Moreau y Ashleigh Clarke) y coloca 1 al azar en
+        cada Lugar excepto en el Recibidor. Coloca 3 pistas sobre cada una de estas cartas de Apoyo.\n
+    \nColoca las 5 cartas de Historia “Realidad repulsiva” bajo la carta de referencia de escenario.</string>
+    <string name="king_additional_three">Baraja las 5 cartas de Apoyo Transeúnte (Constance Dumaine,
+        Jordan Perry, Ishimaru Haruko, Sebastien Moreau y Ashleigh Clarke) y coloca 1 al azar en
+        cada Lugar excepto en el Recibidor. Coloca 4 pistas sobre cada una de estas cartas de Apoyo.\n
+    \nColoca las 5 cartas de Historia “Realidad repulsiva” bajo la carta de referencia de escenario.</string>
+    <string name="king_additional_four">Baraja las 5 cartas de Apoyo Transeúnte (Constance Dumaine,
+        Jordan Perry, Ishimaru Haruko, Sebastien Moreau y Ashleigh Clarke) y coloca 1 al azar en
+        cada Lugar excepto en el Recibidor. Coloca 5 pistas sobre cada una de estas cartas de Apoyo.\n
+    \nColoca las 5 cartas de Historia “Realidad repulsiva” bajo la carta de referencia de escenario.</string>
+
+    <string name="echoes_sets"> Echoes of the Past, Cult of the Yellow Sign, Delusions, The Midnight Masks, Locked
+        Doors, and Dark Cult.\n
+    \nWhen gathering The Midnight Masks encounter set, only gather the 5 treachery cards (2x False Lead and 3x
+        Hunting Shadow).</string>
+    <string name="echoes_locations">Randomly choose one <b><i>Ground Floor</i></b> Historical Society location, one
+        <b><i>Second Floor</i></b> Historical Society location, and one <b><i>Third Floor</i></b> Historical Society
+        location. Remove those locations from the game, without looking at their revealed sides.\n
+    \nPut the Entry Hall, both copies of Quiet Halls, and the remaining 6 Historical Society locations into play.\n
+    \nEach investigator begins play in the Entry Hall.\n</string>
+    <string name="echoes_set_aside">Hidden Library, Possessed Oathspeaker, Mr. Peabody, The Tattered Cloak, and Clasp
+        of Black Onyx.\n </string>
+    <string name="echoes_additional_two_players">Search the gathered encounter sets for 1 copy of Seeker of Carcosa.
+        Spawn it at a Third Floor Historical Society location.\n\n</string>
+    <string name="echoes_additional_three_players">Search the gathered encounter sets for 2 copies of Seeker of
+        Carcosa. Spawn each at a different Third Floor Historical Society location.\n\n</string>
+    <string name="echoes_additional_four_players">Search the gathered encounter sets for 3 copies of Seeker of
+        Carcosa. Spawn each at different Second Floor or Third Floor Historical Society locations.\n\n</string>
+    <string name="echoes_additional_sebastien">After you put Entry Hall into play during setup, place 1 clue per
+        investigator on it.\n\n</string>
+    <string name="echoes_additional_dinner">You arrive at the Historical Society with time to spare; each
+        investigator can take 1 additional action during their first turn of this game.</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="curtain_no_resolution">Te despiertas sobresaltado una
+        vez más, aunque esta vez son los fríos y sudorosos dedos de una
+        mano en tu hombro. –¿Está usted bien? –te pregunta un anciano
+        mientras te ayuda a ponerte en pie. Tu mente bulle de recuerdos.
+        Lo último que sabes es que el Teatro Ward se había convertido
+        en un lugar de pesadilla, lleno de peligrosos fanáticos y extraños
+        terrores. Preocupado, observas lo que te rodea y descubres que
+        estás en la acera del exterior del teatro, resbaladiza por la lluvia.
+        Pese a los acontecimientos anteriores, la ciudad parece tener un
+        aspecto normal ante tus ojos, o al menos tan normal como pueda
+        serlo Arkham. El brillante resplandor de los faros te penetra
+        en los ojos cuando los coches pasan por la calle, salpicando de
+        sucia agua de lluvia el suelo de la acera. El anciano adopta una
+        expresión de preocupación al ver el terror en tu mirada. –¿Le han
+        atracado? ¡Qué asco de críos problemáticos! –exclama– ¡Mira
+        que atacar por sorpresa a la buena gente que acude al teatro! Le
+        digo que no hay ni una sola calle donde estos granujas no actúen.\n
+    \nCaminas hacia la ventana principal del Teatro Ward para tratar
+        de mirar en su interior, pero está demasiado oscuro para ver
+        nada. El anciano te mira con curiosidad durante unos instantes,
+        y después se encoge de hombros y sigue caminando. –Bueno, más
+        vale que me marche. Y si fuera usted, haría lo mismo –dice mientras
+        dobla la esquina de la calle. Lo sigues rápidamente, esperando
+        poder advertirle de que se aleje del teatro. Pero al doblar la
+        esquina no ves al anciano, sino la familiar visión del Extranjero
+        con su máscara pálida y sin facciones. Su inquebrantable mirada
+        no te quita ojo. –¿Quién eres? –gritas. El Extranjero no responde,
+        sino que se da media vuelta y desaparece en el callejón que hay
+        tras el teatro. Lo persigues en busca de respuestas, pero para
+        cuando llegas al callejón, está vacío; sólo hay un aviso en la pared
+        junto a la entrada de empleados del teatro. “¡No seas un aguafiestas!
+        Ven a la celebración del equipo de El Rey de Amarillo a las
+        20:00 en casa de Constance Dumaine, en el 1452 de la Avenida
+        Atlantic. Se requiere ir de etiqueta.”. Arrancas el aviso de la pared
+        y te lo llevas, sintiéndote frustrado y perdido.\n
+    \n<b>Añade la Debilidad El hombre de la máscara pálida al mazo del investigador
+        jefe (no cuenta para el tamaño de su mazo). Durante el resto de la campaña,
+        en cualquier momento en el que el afectado por El hombre de la máscara pálida
+        abandone la campaña por cualquier motivo, elige a un nuevo investigador para que
+        sea el afectado por El hombre de la máscara pálida y añádelo al mazo de
+        ese investigador.</b>\n
+    \n<b>Durante el resto de la campaña, debes ir haciendo marcas
+        para llevar la cuenta de cuántas veces es derrotado El
+        hombre de la máscara pálida durante una partida. Cada
+        marca os llevará un paso más cerca de la verdad.</b></string>
+    <string name="curtain_resolution_one">Tras huir del teatro, te diriges derecho a la comisaría
+        de policía del Barrio Este. Irrumpes por la puerta ante las
+        miradas atónitas de los transeúntes y de los agentes de policía y
+        exiges ver al sheriff Engle, subrayando la importancia de tu visita.
+        El sargento de guardia que está trabajando perezosamente con un
+        montón de papeleo en el mostrador sacude la cabeza y levanta el
+        dedo para pedir silencio antes de señalarte una silla cercana. La
+        espera es insoportable. Cada momento te parece una eternidad. Las
+        manecillas del reloj más cercano se mueven con lentitud. Tamborileas
+        con los dedos sobre el mostrador. Das golpecitos con el pie.
+        Miras constantemente por encima del hombro para asegurarte de
+        que la máscara pálida del Extranjero no te está observando por las
+        ventanas. Por fin, el sargento de guardia deja el boli y se incorpora
+        mientras te hace un gesto para que te acerques: –Muy bien, ¿qué es
+        eso tan importante? –Empiezas a contárselo, pero a mitad de tu
+        explicación, suspira y sacude la cabeza–. Mire, si se trata de alguna
+        broma, no tiene gracia –dice–. Hemos tenido agentes en el centro
+        toda la noche. No intente contarme semejante patraña a la cara
+        –Insistes, pero el sargento de guardia se pone en pie y abre la puerta,
+        invitándote a marcharte mientras alza la voz–. ¿Acaso se cree que
+        no tenemos bastante trabajo o qué? ¡Largo! –Murmura algo en
+        plan “hatajo de locos” a tus espaldas y te echa de la comisaría.\n
+    \nSabes a ciencia cierta lo que viste. Frustrado, regresas al Teatro
+        Ward para encontrar alguna prueba que puedas llevarle a la
+        policía. Te sorprende descubrir que la puerta delantera del teatro
+        está cerrada. Estás a punto de decidir si echar o no la puerta
+        abajo cuando ves un aviso en la pared junto a la entrada. “¡No
+        seas un aguafiestas! Ven a la celebración del equipo de El Rey
+        de Amarillo a las 20:00 en casa de Constance Dumaine, en el
+        1452 de la Avenida Atlantic. Se requiere ir de etiqueta.”. Arrancas
+        el aviso de la pared y lo doblas para metértelo en el bolsillo
+        del abrigo, con la esperanza de que te lleve a las respuestas
+        que buscas.\n
+    \n<b>¿De verdad pensabas que la policía iba a ayudarte?</b>\n
+    \n<b>Añade la Debilidad El hombre de la máscara pálida al mazo del investigador
+        jefe (no cuenta para el tamaño de su mazo). Durante el resto de la campaña,
+        en cualquier momento en el que el afectado por El hombre de la máscara pálida
+        abandone la campaña por cualquier motivo, elige a un nuevo investigador para que
+        sea el afectado por El hombre de la máscara pálida y añádelo al mazo de
+        ese investigador.</b>\n
+    \n<b>Durante el resto de la campaña, debes ir haciendo marcas
+        para llevar la cuenta de cuántas veces es derrotado El
+        hombre de la máscara pálida durante una partida. Cada
+        marca os llevará un paso más cerca de la verdad.</b></string>
+    <string name="curtain_resolution_two">Te planteas acudir a la policía, pero teniendo
+        en cuenta los horrores del teatro, es muy probable que piensen
+        que estás loco y que no se crean tu historia. Una pequeña parte
+        de ti se pregunta si no será todo una broma, pero no puede ser
+        así; todo era demasiado real y aterrador como para olvidarlo.
+        Mientras te preguntas qué acciones emprender, te descubres
+        volviendo sobre tus pasos por tu ruta de huida y regresando al
+        teatro con cautela. El brillante resplandor de los faros te penetra
+        en los ojos cuando los coches pasan por la calle, salpicando
+        de sucia agua de lluvia el suelo de la acera. Pronto tienes a la
+        vista el Teatro Ward, y sus brillantes luces dominan las calles
+        del centro. Esperabas que estuviera en ruinas, pero su exterior
+        tiene el mismo aspecto que cuando llegaste hace un rato para
+        ver <i>El Rey de Amarillo</i>. Caminas hacia la ventana principal
+        del Teatro Ward para tratar de mirar en su interior, pero está
+        demasiado oscuro para ver nada.\n
+    \nDe repente, un soplo helado te roza la nuca, y tienes la impresión
+        de que te observan. Te giras y ves una sombra que huye
+        doblando la esquina. Un enjambre de cucarachas corretea por la
+        acera siguiendo los pasos de la sombra. Tus músculos se ponen
+        en tensión por la incertidumbre, y doblas la esquina para perseguirla.
+        De pie tranquilamente sobre la acera, ves a un hombre de
+        aspecto familiar con una máscara pálida sin facciones.\n
+    \nSu inquebrantable mirada no te quita ojo. –¿Quién eres? –gritas.
+        El Extranjero no responde, sino que se da media vuelta y desaparece
+        en el callejón que hay tras el teatro. Lo persigues en busca
+        de respuestas, pero para cuando llegas al callejón, está vacío;
+        sólo hay un aviso en la pared junto a la entrada de empleados
+        del teatro. “¡No seas un aguafiestas! Ven a la celebración del
+        equipo de El Rey de Amarillo a las 20:00 en casa de Constance
+        Dumaine, en el 1452 de la Avenida Atlantic. Se requiere ir de
+        etiqueta.”. Arrancas el aviso de la pared y te lo guardas, con la
+        esperanza de que te lleve a las respuestas que buscas.\n
+    \n<b>¿Crees que ha sido sensato no avisar a nadie?</b>\n
+    \n<b>Añade la Debilidad El hombre de la máscara pálida al mazo del investigador
+        jefe (no cuenta para el tamaño de su mazo). Durante el resto de la campaña,
+        en cualquier momento en el que el afectado por El hombre de la máscara pálida
+        abandone la campaña por cualquier motivo, elige a un nuevo investigador para que
+        sea el afectado por El hombre de la máscara pálida y añádelo al mazo de
+        ese investigador.</b>\n
+    \n<b>Durante el resto de la campaña, debes ir haciendo marcas
+        para llevar la cuenta de cuántas veces es derrotado El
+        hombre de la máscara pálida durante una partida. Cada
+        marca os llevará un paso más cerca de la verdad.</b></string>
+
+    <string name="king_resolution_one">El fresco aire otoñal te recibe cuando sales de la
+        mansión. En tu cabeza no hay la menor duda de que el elenco y el
+        equipo de <i>El Rey de Amarillo</i> están aquejados de locura. Puede
+        que también te esté afectando a ti. Notas una oscuridad invasora,
+        una presencia en tu mente no muy distinta a la mirada del
+        Extranjero. Sobresaltado, miras el patio delantero por primera
+        vez desde que escapaste de la mansión. La escena es… distinta.
+        Las ventanas no están rotas, como lo estaban cuando llegaste por
+        primera vez. El rastro de sangre que viste en el porche ha sido
+        limpiado, y en lugar de la perturbadoramente distorsionada
+        música que oíste al entrar, desde el patio interior llega el relajante
+        sonido de un jazz lento.\n
+    \n<b>Por cada 2 pistas que hubiera en el mazo de Acto cuando
+        acabara la partida, elige un investigador para que obtenga
+        1 punto de experiencia adicional. La experiencia de esta
+        recompensa debe repartirse de la forma más equitativa
+        posible entre los investigadores. Registra esta experiencia más abajo.</b></string>
+    <string name="king_resolution_two">–Disculpe, pero ya es muy tarde –oyes que dice
+        un criado mientras te da unos ligeros golpecitos en el hombro. Te
+        das cuenta de que estás sentado en un sillón de la sala de estar de
+        la mansión y de que llevas un rato dormido. Parece que la fiesta
+        se va apagando. Ya no se oye música en las salas, prácticamente
+        se ha acabado la comida y sólo quedan unos pocos invitados.
+        –¿Quiere que le traiga su abrigo? –pregunta el criado con una
+        sonrisa practicada. Te pones en pie, algo tambaleante, apoyándote
+        en el brazo del sofá. Notas un martilleo en la cabeza de una
+        intensidad mareante y ves manchas en tu visión. Insistes que estás
+        bien y empiezas a andar hacia el recibidor.\n
+    \nYa no está ninguno de los invitados a los que buscabas antes, ni
+        siquiera la anfitriona, la Sra. Dumaine. Ha desaparecido todo
+        rastro de la locura y el terror que experimentaste. Hasta las cosas
+        raras que viste al entrar a la mansión se han esfumado: los signos
+        de pelea, las ventanas rotas, el rastro de sangre en el porche… Han
+        borrado todas las pruebas. Pero aún recuerdas los sucesos de esta
+        noche, y encontrarás respuestas en tu memoria.\n
+    \n<b>Por cada 2 pistas que hubiera en el mazo de Acto cuando
+        acabara la partida, elige un investigador para que obtenga
+        1 punto de experiencia adicional. La experiencia de esta
+        recompensa debe repartirse de la forma más equitativa
+        posible entre los investigadores. Registra esta experiencia más abajo.</b>\n
+    \n<b>Retira todas las fichas de Sectario, Lápida y Antiguo de la bolsa de caos. A continuación,
+        añade 1 ficha Sectario, 1 ficha Lápida y 1 ficha Antiguo a la bolsa de caos.</b></string>
+    <string name="king_resolution_three">Varios días más tarde, te pones a recordar la
+        fiesta a la que asististe en el 1452 de la Avenida Atlantic. ¡Qué
+        velada más fantástica pasaste! Y aun así, tu memoria está
+        borrosa. No puedes evitar tener la sensación de que se te olvida
+        algo importante. Algo sobre la obra que viste esa misma noche:
+        El Rey de Amarillo. Esa persistente sensación te persigue a cada
+        minuto. Por mucho que intentes recordar los sucesos de esa noche
+        por completo, sigue habiendo un evidente agujero en tu memoria.
+        Cuanto más te esfuerzas por recordar, más crece tu preocupación,
+        casi hasta el punto de convertirse en obsesión. Tras decidir
+        que debes saber a toda costa lo que ocurrió esa noche, te diriges
+        a la mansión de la Sociedad Histórica del Barrio Sur. Puede
+        que allí logres encontrar más información sobre la obra <i>El Rey
+        de Amarillo</i>…\n
+    \n<b>Por cada 2 pistas que hubiera en el mazo de Acto cuando
+        acabara la partida, elige un investigador para que obtenga
+        1 punto de experiencia adicional. La experiencia de esta
+        recompensa debe repartirse de la forma más equitativa
+        posible entre los investigadores. Registra esta experiencia más abajo.</b>\n
+    \n<b>Retira todas las fichas de Sectario, Lápida y Antiguo de la bolsa de caos. A continuación,
+        añade 1 ficha Sectario, 1 ficha Lápida y 1 ficha Antiguo a la bolsa de caos.</b></string>
+
+    <string name="echoes_no_resolution">You barely escape the building with your body and mind intact, and flee to
+        safety.\n
+    \nThe night’s events have left you exhausted. You were unable to learn
+        anything at the Historical Society’s manor that could drive your investigation forward. Whoever those
+        intruders were, they must have been looking for the same information you were. Distraught, you find your way
+        to the closest bed you can find—in Ma’s Boarding House, not too far from the Historical Society. Dawn breaks
+        as you reach the boarding house, the front doorknob and ferns on the porch covered in dew. You are lucky
+        enough to get a vacant room for the day, and soon you are fast asleep.\n
+    \nSuddenly, you are falling. Above and all around you, a blinding radiance flares like an inferno. Your head
+        twinges with pain and your vision swims with brilliant colors. Your skin is singed by the flames. Below you,
+        the abyss opens and swallows you whole. You then find yourself in a dank, windowless cell, filled with a
+        putrid stench. A man is huddled in a corner of the room, shivering from the cold, or from the hopelessness of
+        his situation, or perhaps both. “No mask,” he mutters over and over, “no mask, no mask…” You take a few
+        tentative steps forward, but before you can reach him, the metal slot on his cell door slides open, and you
+        hear an orderly call to him. “Daniel, it’s time,” he says. “Daniel, wake up. <i>Wake up</i>, Daniel.” Then,
+        you awaken.\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 1 Cultist token, 1 Tablet token,
+            and 1 Elder Thing token to the chaos bag.</b></string>
+    <string name="echoes_resolution_one">There are no coincidences when it comes to <i>The King in Yellow</i>. There
+        is no doubt in your mind that the object you’ve found is important. You decide to take it with you before
+        continuing your investigation. The last record you find related to the original production of <i>The King in
+            Yellow</i> is a psychiatric evaluation of one Daniel Chesterfield, a stagehand who lost his wits after
+        the final show. It seems he was admitted to the asylum after the production ended. Perhaps he’s still
+        there…\n
+    \n<b>For the remainder of the campaign, one investigator must include the Clasp of Black Onyx weakness in his or
+            her deck.</b>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Cultist tokens to the chaos
+            bag.</b></string>
+    <string name="echoes_resolution_two">This investigation would make anybody paranoid. Attributing some greater
+        meaning to everything you find can be a dangerous proposition. You’re sure that this clasp is meaningless,
+        perhaps even a prop from the original play. You leave it behind and continue your investigation. The last
+        record you find related to the original production of <i>The King in Yellow</i> is a psychiatric evaluation
+        of one Daniel Chesterfield, a stagehand who lost his wits after the final show. It seems he was admitted to
+        the asylum after the production ended. Perhaps he’s still there…\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Tablet tokens to the chaos
+            bag.</b></string>
+    <string name="echoes_resolution_three">The figure collapses to the ground, its warped, melting body writhing in
+        agony. It wheezes and cries out, a yellow glow emanating from inside its mouth and behind its eyes. “Daniel,”
+        the thing says in its cracking voice. “Seek Daniel… Daniel Chesterfield, the stagehand, he remembers!” Deep
+        inside the man’s words, there is another voice behind it, whispering faintly in a melodic language. “Find
+        him… He too has spoken the oath… The oath that doomed us all…!” With those final words, the skin melts
+        off the man’s bones, and he rattles to the floor.\n
+    \n<b>Any one investigator may choose to add The Tattered Cloak to his or her deck.</b>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Tablet tokens to the chaos
+            bag.</b></string>
+    <string name="echoes_resolution_four">The night’s events have left you exhausted. You were unable to learn
+        anything at the Historical Society’s manor that could drive your investigation forward. Whoever those
+        intruders were, they must have been looking for the same information you were. Distraught, you find your way
+        to the closest bed you can find—in Ma’s Boarding House, not too far from the Historical Society. Dawn breaks
+        as you reach the boarding house, the front doorknob and ferns on the porch covered in dew. You are lucky
+        enough to get a vacant room for the day, and soon you are fast asleep.\n
+    \nSuddenly, you are falling. Above and all around you, a blinding radiance flares like an inferno. Your head
+        twinges with pain and your vision swims with brilliant colors. Your skin is singed by the flames. Below you,
+        the abyss opens and swallows you whole. You then find yourself in a dank, windowless cell, filled with a
+        putrid stench. A man is huddled in a corner of the room, shivering from the cold, or from the hopelessness of
+        his situation, or perhaps both. “No mask,” he mutters over and over, “no mask, no mask…” You take a few
+        tentative steps forward, but before you can reach him, the metal slot on his cell door slides open, and you
+        hear an orderly call to him. “Daniel, it’s time,” he says. “Daniel, wake up. <i>Wake up</i>, Daniel.” Then,
+        you awaken.\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 1 Cultist token, 1 Tablet token,
+            and 1 Elder Thing token to the chaos bag.</b></string>
+</resources>

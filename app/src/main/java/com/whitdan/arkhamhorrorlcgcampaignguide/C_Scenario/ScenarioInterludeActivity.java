@@ -163,6 +163,39 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             }
                         });
                         break;
+                    case 6:
+                        title.setText(R.string.carcosa_interlude_two);
+                        switch(globalVariables.Daniel){
+                            case 1:
+                                introduction.setText(R.string.lost_soul_one);
+                                break;
+                            case 2:
+                                introduction.setText(R.string.lost_soul_two);
+                                break;
+                            case 3:
+                                introduction.setText(R.string.lost_soul_three);
+                                break;
+                        }
+                        introductionOptions.setVisibility(VISIBLE);
+                        introductionOptionOne.setText(R.string.lost_soul_option_one);
+                        introductionOptionTwo.setText(R.string.lost_soul_option_two);
+                        introductionOptionThree.setVisibility(GONE);
+                        resolution = 0;
+                        introductionOptions.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                                if (introductionOptionOne.isChecked()) {
+                                    introductionOne.setVisibility(VISIBLE);
+                                    introductionOne.setText(R.string.lost_soul_ignore_warning);
+                                    resolution = 1;
+                                } else if (introductionOptionTwo.isChecked()) {
+                                    introductionOne.setVisibility(VISIBLE);
+                                    introductionOne.setText(R.string.lost_soul_heed_warning);
+                                    resolution = 2;
+                                }
+                            }
+                        });
+                        break;
                 }
                 break;
         }
@@ -278,6 +311,21 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
+                    case 6:
+                        switch(resolution){
+                            case 1:
+                                globalVariables.DanielsWarning = 1;
+                                globalVariables.Doubt += 2;
+                                break;
+                            case 2:
+                                globalVariables.DanielsWarning = 2;
+                                globalVariables.Conviction += 2;
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).AvailableXP += 1;
+                                    globalVariables.Investigators.get(i).TotalXP += 1;
+                                }
+                                break;
+                        }
                 }
                 break;
         }

@@ -551,6 +551,30 @@ public class CampaignLogActivity extends AppCompatActivity {
                         break;
                 }
             }
+            // Unspeakable Oath
+            if(scenario > 5){
+                switch(globalVariables.Asylum){
+                    case 1:
+                        carcosaBuilder.append(getString(R.string.king_victims));
+                        break;
+                    case 2:
+                        carcosaBuilder.append(getString(R.string.attacked_asylum));
+                        break;
+                    case 3:
+                        carcosaBuilder.append(getString(R.string.escaped_asylum));
+                }
+            }
+            // Interlude 2
+            if(scenario > 6){
+                switch(globalVariables.DanielsWarning){
+                    case 1:
+                        carcosaBuilder.append(getString(R.string.warning_ignored));
+                        break;
+                    case 2:
+                        carcosaBuilder.append(getString(R.string.warning_heeded));
+                        break;
+                }
+            }
 
             String carcosaLogText = carcosaBuilder.toString().trim();
             carcosaLog.setText(carcosaLogText);

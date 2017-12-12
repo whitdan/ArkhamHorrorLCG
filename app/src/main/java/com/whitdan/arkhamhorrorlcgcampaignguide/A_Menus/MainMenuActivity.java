@@ -23,6 +23,7 @@ import java.util.Locale;
     TODO:   Improve clicking +/- buttons
     TODO:   Edit previous scenario results
     TODO:   Every scenario in standalone mode
+    TODO:   ArkhamDB integration
 
  */
 

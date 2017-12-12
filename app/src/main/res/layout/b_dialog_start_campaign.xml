@@ -1,243 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@drawable/dialog_screen_bg"
-              android:padding="@dimen/activity_vertical_margin">
-
-    <TextView
-        android:id="@+id/campaign_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:includeFontPadding="false"/>
-
-    <ImageView
-        android:id="@+id/line_one"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:src="@drawable/underline"/>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
     <LinearLayout
-        android:id="@+id/investigator_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/checkbox_padding"
-        android:paddingTop="@dimen/checkbox_padding"
-        android:visibility="gone">
+        android:background="@drawable/dialog_screen_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
 
         <TextView
-            android:id="@+id/investigator_one_name"
-            android:layout_width="0dp"
+            android:id="@+id/campaign_name"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:textAllCaps="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"
-            android:textStyle="bold"/>
+            android:textSize="20sp"/>
 
-        <TextView
-            android:id="@+id/investigator_one_player"
-            android:layout_width="0dp"
+        <ImageView
+            android:id="@+id/line_one"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="right"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"/>
-    </LinearLayout>
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/underline"/>
 
-    <LinearLayout
-        android:id="@+id/investigator_two"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/checkbox_padding"
-        android:paddingTop="@dimen/checkbox_padding"
-        android:visibility="gone">
-
-        <TextView
-            android:id="@+id/investigator_two_name"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:id="@+id/investigator_one"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/investigator_two_player"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="right"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/investigator_three"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/checkbox_padding"
-        android:paddingTop="@dimen/checkbox_padding"
-        android:visibility="gone">
-
-        <TextView
-            android:id="@+id/investigator_three_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/investigator_three_player"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="right"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/investigator_four"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/checkbox_padding"
-        android:paddingTop="@dimen/checkbox_padding"
-        android:visibility="gone">
-
-        <TextView
-            android:id="@+id/investigator_four_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/investigator_four_player"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="right"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"/>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/line_two"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:src="@drawable/underline"/>
-
-    <RadioGroup
-        android:id="@+id/start_campaign_options"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:visibility="gone">
-        <RadioButton
-            android:id="@+id/start_campaign_option_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"
-            android:button="@drawable/checkbox_style"
-            android:paddingBottom="@dimen/checkbox_padding"
-            android:paddingTop="@dimen/checkbox_padding"/>
-        <RadioButton
-            android:id="@+id/start_campaign_option_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"
-            android:button="@drawable/checkbox_style"
-            android:paddingBottom="@dimen/checkbox_padding"
-            android:paddingTop="@dimen/checkbox_padding"/>
-
-    </RadioGroup>
-
-    <android.support.v4.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-
-    <TextView
-        android:id="@+id/confirm_start_campaign"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_gravity="end"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/arnopro_textsize"
-        android:text="@string/confirm_start_campaign"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:paddingLeft="-16dp"
-        android:paddingRight="-16dp">
-
-        <Button
-            android:id="@+id/cancel_button"
-            android:layout_width="135dp"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:background="@drawable/button_style"
-            android:includeFontPadding="false"
-            android:text="@string/cancel"
-            android:textColor="@android:color/black"
-            android:textScaleX="1.2"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/okay_button"
-            android:layout_width="135dp"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginEnd="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:background="@drawable/button_style"
-            android:includeFontPadding="false"
-            android:text="@string/okay"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/checkbox_padding"
+            android:paddingTop="@dimen/checkbox_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/investigator_one_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/investigator_one_player"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/investigator_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/checkbox_padding"
+            android:paddingTop="@dimen/checkbox_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/investigator_two_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/investigator_two_player"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/investigator_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/checkbox_padding"
+            android:paddingTop="@dimen/checkbox_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/investigator_three_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/investigator_three_player"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/investigator_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/checkbox_padding"
+            android:paddingTop="@dimen/checkbox_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/investigator_four_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/investigator_four_player"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/line_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/underline"/>
+
+        <RadioGroup
+            android:id="@+id/start_campaign_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/start_campaign_option_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+
+            <RadioButton
+                android:id="@+id/start_campaign_option_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"/>
+
+        </RadioGroup>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/confirm_start_campaign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/confirm_start_campaign"
             android:textColor="@android:color/black"
-            android:textScaleX="1.2"
-            android:textSize="18sp"/>
-    </RelativeLayout>
-</LinearLayout>
+            android:textSize="@dimen/arnopro_textsize"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="-16dp"
+            android:paddingRight="-16dp">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_style"
+                android:includeFontPadding="false"
+                android:text="@string/cancel"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.2"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/okay_button"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_style"
+                android:includeFontPadding="false"
+                android:text="@string/okay"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.2"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

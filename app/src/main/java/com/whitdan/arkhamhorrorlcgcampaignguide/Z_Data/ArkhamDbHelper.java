@@ -22,7 +22,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 18;
+    private static final int DATABASE_VERSION = 19;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -140,7 +140,10 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + ArkhamContract.CarcosaEntry.COLUMN_SEBASTIEN + " INTEGER, "
                 + ArkhamContract.CarcosaEntry.COLUMN_ASHLEIGH + " INTEGER, "
                 + ArkhamContract.CarcosaEntry.COLUMN_PARTY + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_ONYX + " INTEGER);";
+                + ArkhamContract.CarcosaEntry.COLUMN_ONYX + " INTEGER, "
+                + ArkhamContract.CarcosaEntry.COLUMN_ASYLUM + " INTEGER, "
+                + ArkhamContract.CarcosaEntry.COLUMN_DANIEL + " INTEGER, "
+                + ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING + " INTEGER);";
 
         // Execute the SQL statements
         db.execSQL(SQL_CREATE_CAMPAIGNS_TABLE);
@@ -341,6 +344,16 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_FIFTEEN_TWO);
                 db.execSQL(SQL_UPGRADE_FIFTEEN_THREE);
                 db.execSQL(SQL_UPGRADE_FIFTEEN_FOUR);
+            case 18:
+                String SQL_UPGRADE_SIXTEEN_ONE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_ASYLUM + " INTEGER";
+                String SQL_UPGRADE_SIXTEEN_TWO = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DANIEL + " INTEGER";
+                String SQL_UPGRADE_SIXTEEN_THREE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING + " INTEGER";
+                db.execSQL(SQL_UPGRADE_SIXTEEN_ONE);
+                db.execSQL(SQL_UPGRADE_SIXTEEN_TWO);
+                db.execSQL(SQL_UPGRADE_SIXTEEN_THREE);
         }
     }
 }

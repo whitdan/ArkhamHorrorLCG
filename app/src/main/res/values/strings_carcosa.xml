@@ -30,7 +30,9 @@
     <string name="sebastien">Sebastien Moreau</string>
     <string name="ashleigh">Ashleigh Clarke</string>
     <string name="allocated_experience">Allocated experience</string>
+    <string name="daniel_chesterfield_inplay">Daniel Chesterfield in play when the scenario ended</string>
     <string name="sebastien_victory">Sebastien Moreau in the victory display</string>
+    <string name="constance_victory">Constance Dumaine in the victory display</string>
 
 
     <!--Campaign Log-->
@@ -55,6 +57,11 @@
     <string name="onyx_left">You left the onyx clasp behind.\n\n</string>
     <string name="oathspeaker_destroyed">You destroyed the oathspeaker.\n\n</string>
     <string name="followers_sign">The followers of the sign have found the way forward.\n\n</string>
+    <string name="king_victims">The King claimed its victims.\n\n</string>
+    <string name="attacked_asylum">The investigators were attacked as they escaped the asylum.\n\n</string>
+    <string name="escaped_asylum">The investigators escaped the asylum.\n\n</string>
+    <string name="warning_heeded">You heeded Daniel\'s warning.\n\n</string>
+    <string name="warning_ignored">You ignored Daniel\'s warning.\n\n</string>
 
 
     <!--Chaos bag-->
@@ -84,6 +91,21 @@
     <string name="echoes_tablet_two">-4. Discard a random card from your hand.</string>
     <string name="echoes_thing_one">-2. If you fail and there is an enemy at your location, take 1 horror.</string>
     <string name="echoes_thing_two">-4. If there is an enemy at your location, take 1 horror.</string>
+
+    <string name="unspeakable_skull_one">-1. If you fail, randomly choose an enemy from among the set-aside <i>
+        Monster</i> enemies and place it beneath the act deck without looking at it.</string>
+    <string name="unspeakable_skull_two">Reveal another token. If you fail, randomly choose an enemy from among the
+        set-aside <i>Monster</i> enemies and place it beneath the act deck without looking at it. (Limit once per
+        test.)</string>
+    <string name="unspeakable_cultist_one">-X. X is the amount of horror on you.</string>
+    <string name="unspeakable_cultist_two">-X. X is the amount of horror on you. If you fail, take 1 horror.</string>
+    <string name="unspeakable_tablet_one">-X. X is the base shroud value of your location.</string>
+    <string name="unspeakable_tablet_two">-X. X is the base shroud value of your location. If you fail, take 1
+        horror.</string>
+    <string name="unspeakable_thing_one">0. Either randomly choose an enemy from among the set-aside <i>Monster</i> enemies
+        and place it beneath the act deck without looking at it, or this test automatically fails instead.</string>
+    <string name="unspeakable_thing_two">0. Either randomly choose an enemy from among the set-aside <i>Monster</i> enemies
+        and place it beneath the act deck without looking at it, or this test automatically fails instead.</string>
 
 
     <!-- Campaign introduction-->
@@ -217,6 +239,118 @@
         it was followed by events similar to what has occurred tonight. Perhaps you can find some newspaper clippings
         or other articles describing what happened in the past.</string>
 
+    <string name="unspeakable_introduction_one">“<i>Wake up, Daniel.</i>” The words echo in your thoughts as you pace
+        through the disheveled room, trying to make sense of what you’d just experienced. You had awoken that
+        afternoon with a violent startle, your body shaking, bedsheets soaked with sweat. Although you’d slept a
+        healthy eight-and-a-half hours, you feel even more exhausted than you had the previous night. You catch a
+        glimpse of your dark, bloodshot eyes in the mirror next to the dresser, and wonder if you’ve gotten any real
+        sleep at all.\n
+    \nWho is Daniel, you wonder? The chamber from your dream looked like a prison, but the man—Daniel—he seemed
+        unhinged, as though he wasn’t in control of his mind. This led to only one conclusion: An asylum. Knowing
+        you’ll get little rest here, you head towards Arkham Asylum, hoping your hunch is correct.\n
+    \nAs you enter the asylum, you stop to speak with the receptionist, though you feel your body urged to step
+        deeper into the clutches of this madhouse. He gives you a confused expression as you tell him of <i>The King
+            in Yellow</i> and of Daniel. But at your insistence, he pores through his file cabinet, eventually
+        pulling out a stark white folder. Inside is a wealth of information about the patients admitted to the
+        asylum—medical records, psychiatric evaluations, and the like. You recognize a few of the faces as he flips
+        through the pages. “Daniel… Daniel Chesterfield, yes? He is admitted under the special care of Doctor Mintz.
+        But you can’t see him; his level is restricted to staff only.” You argue and insist to be let into the
+        patient wing, knowing that Daniel must hold the key to understanding what is really going on.\n
+    \nThe receptionist gives a pitying smile and relents, nodding to the security guards nearby. “Oh, of course, of
+        course,” he says with all the honesty of a street peddler. “I will schedule a meeting for you with Doctor
+        Mintz so you can speak with him about Daniel. These gentlemen will see you in.” Relieved that you will soon
+        get the answers you seek, you are escorted into the patient wing of Arkham Asylum…</string>
+    <string name="unspeakable_introduction_two">Over the course of the next few days, you delve into the evidence
+        you’ve collected, hoping to find any information regarding Daniel Chesterfield, a stagehand during the
+        previous production of <i>The King in Yellow</i>. As far as you can tell, he is the only surviving member of
+        that production’s cast and crew. The rest of them—that is, those for whom you can find any records at
+        all—disappeared or died soon after opening night in a variety of fashions connected only by their morbidness.
+        Freak accidents. Suicides. Vanishings.\n
+    \nIt would seem that Daniel is your only lead, if you are to investigate further. According to the records you
+        found, he was admitted to Arkham Asylum many years ago. All documentation about Daniel’s treatment seems to
+        end there. You’re unsure if he’s even still alive. Perhaps he was cured and released. You were hoping to
+        avoid this, but there seems to be only one way to find out. You collect your belongings and head downtown,
+        towards Arkham Asylum.\n
+    \nAs you enter the asylum, you stop to speak with the receptionist, though you feel your body urged to step
+        deeper into the clutches of this madhouse. He gives you a confused expression as you tell him of <i>The King
+            in Yellow</i> and of Daniel. But at your insistence, he pores through his file cabinet, eventually
+        pulling out a stark white folder. Inside is a wealth of information about the patients admitted to the
+        asylum—medical records, psychiatric evaluations, and the like. You recognize a few of the faces as he flips
+        through the pages. “Daniel… Daniel Chesterfield, yes? He is admitted under the special care of Doctor Mintz.
+        But you can’t see him; his level is restricted to staff only.” You argue and insist to be let into the
+        patient wing, knowing that Daniel must hold the key to understanding what is really going on.\n
+    \nThe receptionist gives a pitying smile and relents, nodding to the security guards nearby. “Oh, of course, of
+        course,” he says with all the honesty of a street peddler. “I will schedule a meeting for you with Doctor
+        Mintz so you can speak with him about Daniel. These gentlemen will see you in.” Relieved that you will soon
+        get the answers you seek, you are escorted into the patient wing of Arkham Asylum…</string>
+    <string name="unspeakable_introduction_constance">You recall what Constance had told you when you spoke with her
+        during her hellish dinner party. She and the other members of the cast and crew had been told by the
+        director, Nigel Engram, to take some kind of oath. At first, she’d written it off as the whim of an eccentric
+        artist; something Mr. Engram did as a strange formality to unite and strengthen the bonds of the cast and
+        crew. And to his credit, she claimed that it had worked; ever since they’d taken his strange oath, she and
+        the other members of the troupe felt much more confident and full of spirit. Perhaps Daniel had a similar
+        experience during the last production of <i>The King in Yellow</i>. You must speak with him about this.</string>
+
+    <string name="lost_soul_one">You decide to lay low for some time in Ma’s Boarding House and hide Daniel from the
+        authorities, although you’re unsure how long you’ll be able to stay in Arkham with an escaped asylum patient.
+        Daniel is a loose cannon, dazed and unresponsive one moment, and screaming for his life the next. It takes
+        several days for him to realize he’s no longer institutionalized, which for some reason makes him even more
+        terrified. “He’s coming for me, he’s coming for me!” he rambles, sometimes for hours at a time. Finally,
+        during an unusually warm and starry night, Daniel is calm enough to open up to you. “<i>The King in
+            Yellow</i>, it’s not just a play,” he explains. “It’s a being named Hastur, and He’s already claimed me.
+        But there’s still time for you. You are not yet possessed. You have yet to speak the Oath. Whatever you do,
+        speak not his name. Do not give in.” You ask him about the strange events that have been happening across
+        town, and of the cultists and creatures you’ve encountered. “They are trying to find Carcosa,” he says
+        matter-of-factly. You recognize the name as the fictional city from the play, the one <i>The King in
+            Yellow</i> rules over. “They want to release Hastur from His prison. But you!—You can open the way to
+        Carcosa before they do! You can seal Hastur for good!” He grips you tightly as he rants. “Quickly, before the
+        Stranger discovers our plan!”\n
+    \nHours later, Daniel is incoherent and unresponsive once more. You take a long walk to ease your thoughts,
+        mulling over this new information. You’re unsure what to make of his wild claims. Before you can make a
+        decision about what to do next, you return to find the door to your room broken open. Daniel lies in a heap
+        on the ground, his face colorless and body limp. Judging from the bruising around his neck, you surmise that
+        he has been choked to death.</string>
+    <string name="lost_soul_two">You decide to lay low for some time in Ma’s Boarding House, unsure whether news of
+        the events at the asylum will get out to the general public. You take this time to make extensive notes of
+        the events you’ve experienced thus far, including the brief dialogue between you and Daniel. He’d spoke of
+        <i>The King in Yellow</i> as if it were an actual being, and even named it. “Hastur.” He’d rambled and
+        muttered and screeched other phrases, as well. You doubt you’ll ever forget them. “He made us speak the
+        Oath.” “The price was paid.” “They are opening the path to Carcosa.” For hours, you think about Daniel’s
+        warning to you, which he begged you to heed: “Do not speak His name.” His final moments play out in your mind
+        over and over again.</string>
+    <string name="lost_soul_three">You decide to lay low for some time in Ma’s Boarding House, unsure whether news of
+        the events at the asylum will get out to the general public. You take this time to make extensive notes of
+        the events you’ve experienced thus far, including the brief dialogue between you and Daniel. He’d spoke of
+        <i>The King in Yellow</i> as if it were an actual being, and even named it. “Hastur.” He’d rambled and
+        muttered and screeched other phrases, as well. You doubt you’ll ever forget them. “He made us speak the
+        Oath.” “The price was paid.” “They are opening the path to Carcosa.”\n
+    \nOn the third night, you return to your room to find the door broken open. You enter cautiously, wondering if
+        the police are onto you. Or worse, the Stranger. You are surprised to find the body of Daniel Chesterfield
+        instead, lying on the ground with a pained, wide-eyed expression on his face. He is dead. His eyes are
+        bloodshot and yellow, and he clutches a copy of <i>The King in Yellow</i> in his stiff hands. You pry the
+        playbook from his deathly grasp and examine it. Daniel has scribbled notes in the margins of each page,
+        mostly incomprehensible, but with a few lucid standouts. The first time the fictional city of Carcosa is
+        mentioned, scrawled next to it Daniel has written:\n
+    \n<center>*Carcosa is real\n
+    Do not let them open the path</center>\n
+    \nWhen Cassilda speaks of the tattered king, Daniel has written:\n
+    \n<center>Hastur is the king in tatters\n
+    locked in his prison in the stars\n
+    seal him away and stop this madness!</center>\n
+    \nYour mind swims with questions. How did he escape the asylum? How did he die? And why does he appear human to
+        your eyes now? With little time to spare, you clean the room of your belongings and flee. Daniel’s words,
+        which he begged you to heed, play out in your mind over and over again.</string>
+    <string name="lost_soul_option_one">Possession? Oaths? There must be another explanation for all of this. <b>Ignore
+        the Warning.</b></string>
+    <string name="lost_soul_option_two">We must heed Daniel’s warning. We must not speak the name of the King in
+        Yellow. <b>Heed the Warning.</b></string>
+    <string name="lost_soul_ignore_warning">For hours, you struggle with this insight into <i>The King in Yellow</i>.
+        What is true? What is real? Only you can sort through this madness.</string>
+    <string name="lost_soul_heed_warning">For hours, you struggle with this insight into <i>The King in Yellow</i>.
+        What is true? What is real? Only you can sort through this madness.\n
+    \n<b>For the remainder of the campaign, any time an investigator speaks the name of HASTUR aloud during a
+            scenario (or during the setup of a scenario), that investigator must immediately take 1 horror.</b></string>
+
 
 
     <!--Scenario set-up instructions-->
@@ -272,6 +406,53 @@
         investigator on it.\n\n</string>
     <string name="echoes_additional_dinner">You arrive at the Historical Society with time to spare; each
         investigator can take 1 additional action during their first turn of this game.</string>
+
+    <string name="unspeakable_sets">The Unspeakable Oath, Hastur’s Gift, Inhabitants of Carcosa, Delusions,
+        Decay &amp; Filth, and Agents of Hastur.</string>
+    <string name="unspeakable_locations">Randomly choose 1 copy of Asylum Halls <i>(Eastern Patient Wing)</i> and 1
+        copy of Asylum Halls <i>(Western Patient Wing)</i>. Remove those copies from the game. Put the remaining Asylum
+        Halls into play.\n
+        \nPut the Mess Hall, Kitchen, Yard, Garden, Infirmary, and Basement Hall into play.\n
+        \nEach investigator begins play at an Asylum Halls of his or her choice.</string>
+    <string name="unspeakable_set_aside">Daniel Chesterfield, and each copy of Patient Confinement.\n
+        \nSet each <b><i>Monster</i></b> enemy among the gathered encounter sets
+        aside, in a separate pile. (There should be 7 <b><i>Monster</i></b> enemies, in total.)\n
+    \nSet each <b><i>Lunatic</i></b> enemy among the gathered encounter sets aside, in a separate pile. (There should
+        be 7 <b><i>Lunatic</i></b> enemies, in total.)</string>
+    <string name="unspeakable_additional_one">Based on your difficulty level, add the following chaos token
+        to the chaos bag, for the remainder of the campaign:\n
+    \n\t\t<b>Easy:</b> -2\n
+    \n\t\t<b>Standard:</b> -3\n
+    \n\t\t<b>Hard:</b> -4\n
+    \n\t\t<b>Expert:</b> -5\n
+    \nUse Act 2—”The Really Bad Ones” (v. I)</string>
+    <string name="unspeakable_additional_two">Based on your difficulty level, add the following chaos token
+        to the chaos bag, for the remainder of the campaign:\n
+    \n\t\t<b>Easy:</b> -2\n
+    \n\t\t<b>Standard:</b> -3\n
+    \n\t\t<b>Hard:</b> -4\n
+    \n\t\t<b>Expert:</b> -5\n
+    \nUse Act 2—”The Really Bad Ones” (v. II)</string>
+    <string name="unspeakable_additional_one_constance">Based on your difficulty level, add the following chaos token
+        to the chaos bag, for the remainder of the campaign:\n
+    \n\t\t<b>Easy:</b> -2\n
+    \n\t\t<b>Standard:</b> -3\n
+    \n\t\t<b>Hard:</b> -4\n
+    \n\t\t<b>Expert:</b> -5\n
+    \nUse Act 2—”The Really Bad Ones” (v. I)\n
+    \nEach investigator places the top card of his or her deck facedown in his or her play area, without looking at
+        it. Treat this card as a Courage asset with 0 cost, no icons, and 2 sanity. Discard this card if it leaves
+        play for any reason.</string>
+    <string name="unspeakable_additional_two_constance">Based on your difficulty level, add the following chaos token
+        to the chaos bag, for the remainder of the campaign:\n
+    \n\t\t<b>Easy:</b> -2\n
+    \n\t\t<b>Standard:</b> -3\n
+    \n\t\t<b>Hard:</b> -4\n
+    \n\t\t<b>Expert:</b> -5\n
+    \nUse Act 2—”The Really Bad Ones” (v. II)\n
+    \nEach investigator places the top card of his or her deck facedown in his or her play area, without looking at
+        it. Treat this card as a Courage asset with 0 cost, no icons, and 2 sanity. Discard this card if it leaves
+        play for any reason.</string>
 
 
     <!--Scenario resolutions-->
@@ -460,4 +641,95 @@
         you awaken.\n
     \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 1 Cultist token, 1 Tablet token,
             and 1 Elder Thing token to the chaos bag.</b></string>
+
+    <string name="unspeakable_resolution_one">…And so ended the madness of <i>The King in Yellow.</i>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Cultist tokens to the chaos
+            bag.</b></string>
+    <string name="unspeakable_resolution_one_defeated"><b>Defeated investigators:</b>\n
+    \n“Doctor Mintz, the patient has been medicated and is ready to see you now.” Nurse Heather opened the file on
+        the desk nearby, taking a moment to review the patient’s records.\n
+    \n“Any changes in the patient’s condition?” Doctor Mintz asked in a monotone voice. A formality. Both knew the
+        patient was beyond repair.\n
+    \n“None. The patient’s delusions remain. Demanding to speak with the Warden, claiming they are only guests, and
+        rambling about that play that aired the other night, <i>The King in Yellow</i>.”\n
+    \n“And their other crimes? The incident in the theatre? What about 1452 Atlantic Ave?”\n
+    \n“They believe they were attacked, and were defending themselves.” Her voice was thick with pity. What could
+        have caused somebody to snap like this so quickly? None of the patient’s records showed any prior history of
+        mental instability. “Can you make any sense of it, Doctor?”\n
+    \n“Who could?” Doctor Mintz sighed and stood, grabbing the file from his desk. “My job is not to understand. It
+        is to cure. Perhaps my experimental procedures will prove fruitful on this one.” The nurse winced and felt
+        goosebumps on her arm. She knew how his procedures would turn out, and she doubted it would prove
+        anything.\n
+        \n<b>Each investigator who was defeated is driven insane.</b>\n
+    \n<b>Surviving investigators:</b>\n
+    \n…And so ended the madness of <i>The King in Yellow.</i>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Cultist tokens to the chaos
+            bag.</b></string>
+    <string name="unspeakable_resolution_two">You are confronted by a number of orderlies and security guards, who
+        bar your escape. Feeling cornered and trapped, you have no choice but to fight your way through them. As you
+        struggle to escape, several of the patients nearby see their opportunity, and attack the guards with a crazed
+        fury. Nurse Heather shrieks and retreats, and in the ruckus you are able to escape, bruised and battered but
+        free once more. It will take some time for your wounds to heal, but you have no time for that yet.\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Tablet tokens to the chaos
+            bag.</b></string>
+    <string name="unspeakable_resolution_two_defeated"><b>Defeated investigators:</b>\n
+    \n“Doctor Mintz, the patient has been medicated and is ready to see you now.” Nurse Heather opened the file on
+        the desk nearby, taking a moment to review the patient’s records.\n
+    \n“Any changes in the patient’s condition?” Doctor Mintz asked in a monotone voice. A formality. Both knew the
+        patient was beyond repair.\n
+    \n“None. The patient’s delusions remain. Demanding to speak with the Warden, claiming they are only guests, and
+        rambling about that play that aired the other night, <i>The King in Yellow</i>.”\n
+    \n“And their other crimes? The incident in the theatre? What about 1452 Atlantic Ave?”\n
+    \n“They believe they were attacked, and were defending themselves.” Her voice was thick with pity. What could
+        have caused somebody to snap like this so quickly? None of the patient’s records showed any prior history of
+        mental instability. “Can you make any sense of it, Doctor?”\n
+    \n“Who could?” Doctor Mintz sighed and stood, grabbing the file from his desk. “My job is not to understand. It
+        is to cure. Perhaps my experimental procedures will prove fruitful on this one.” The nurse winced and felt
+        goosebumps on her arm. She knew how his procedures would turn out, and she doubted it would prove
+        anything.\n
+        \n<b>Each investigator who was defeated is driven insane.</b>\n
+    \n<b>Surviving investigators:</b>\n
+    \nYou are confronted by a number of orderlies and security guards, who
+        bar your escape. Feeling cornered and trapped, you have no choice but to fight your way through them. As you
+        struggle to escape, several of the patients nearby see their opportunity, and attack the guards with a crazed
+        fury. Nurse Heather shrieks and retreats, and in the ruckus you are able to escape, bruised and battered but
+        free once more. It will take some time for your wounds to heal, but you have no time for that yet.\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Tablet tokens to the chaos
+            bag.</b></string>
+    <string name="unspeakable_resolution_three">With the asylum staff distracted and patients running amok, you are
+        able to slip away without being noticed. You escape deeper into the garden behind the asylum, where a
+        two-story tall fence topped with barbed wire is all that separates you from the outside world. You have
+        little time, and need to make it far away from the asylum before the guards return and spot you. Using a
+        straitjacket you’d found inside to cover the barbed wire, you scale the fence quickly, breaking into a run as
+        you make it to the other side.\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Elder Thing tokens to the chaos
+            bag.</b></string>
+    <string name="unspeakable_resolution_three_defeated"><b>Defeated investigators:</b>\n
+    \n“Doctor Mintz, the patient has been medicated and is ready to see you now.” Nurse Heather opened the file on
+        the desk nearby, taking a moment to review the patient’s records.\n
+    \n“Any changes in the patient’s condition?” Doctor Mintz asked in a monotone voice. A formality. Both knew the
+        patient was beyond repair.\n
+    \n“None. The patient’s delusions remain. Demanding to speak with the Warden, claiming they are only guests, and
+        rambling about that play that aired the other night, <i>The King in Yellow</i>.”\n
+    \n“And their other crimes? The incident in the theatre? What about 1452 Atlantic Ave?”\n
+    \n“They believe they were attacked, and were defending themselves.” Her voice was thick with pity. What could
+        have caused somebody to snap like this so quickly? None of the patient’s records showed any prior history of
+        mental instability. “Can you make any sense of it, Doctor?”\n
+    \n“Who could?” Doctor Mintz sighed and stood, grabbing the file from his desk. “My job is not to understand. It
+        is to cure. Perhaps my experimental procedures will prove fruitful on this one.” The nurse winced and felt
+        goosebumps on her arm. She knew how his procedures would turn out, and she doubted it would prove
+        anything.\n
+        \n<b>Each investigator who was defeated is driven insane.</b>\n
+    \n<b>Surviving investigators:</b>\n
+    \nWith the asylum staff distracted and patients running amok, you are
+        able to slip away without being noticed. You escape deeper into the garden behind the asylum, where a
+        two-story tall fence topped with barbed wire is all that separates you from the outside world. You have
+        little time, and need to make it far away from the asylum before the guards return and spot you. Using a
+        straitjacket you’d found inside to cover the barbed wire, you scale the fence quickly, breaking into a run as
+        you make it to the other side.\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Elder Thing tokens to the chaos
+            bag.</b></string>
+    <string
+        name="unspeakable_resolution_onyx"><b>Choose a new investigator to take the Clasp of the Black Onyx
+        weakness in his or her deck.</b></string>
 </resources>

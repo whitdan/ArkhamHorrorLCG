@@ -426,7 +426,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         locationPlacement.setVisibility(VISIBLE);
                         locationPlacement.setImageResource(R.drawable.king_locations);
                         setAside.setText(R.string.king_set_aside);
-                        switch(globalVariables.Investigators.size()){
+                        switch (globalVariables.Investigators.size()) {
                             case 1:
                                 additional.setText(R.string.king_additional_one);
                                 break;
@@ -449,7 +449,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         setAside.setText(R.string.echoes_set_aside);
                         // StringBuilder for the additional instructions
                         StringBuilder echoesAdditional = new StringBuilder();
-                        switch(globalVariables.Investigators.size()){
+                        switch (globalVariables.Investigators.size()) {
                             case 1:
                                 break;
                             case 2:
@@ -462,10 +462,10 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                                 echoesAdditional.append(getString(R.string.echoes_additional_four_players));
                                 break;
                         }
-                        if(globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4){
+                        if (globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4) {
                             echoesAdditional.append(getString(R.string.echoes_additional_sebastien));
                         }
-                        if(globalVariables.Party == 2){
+                        if (globalVariables.Party == 2) {
                             echoesAdditional.append(getString(R.string.echoes_additional_dinner));
                         }
                         if (echoesAdditional.length() == 0) {
@@ -474,6 +474,29 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         // Show the additional text
                         String echoesAdditionalString = echoesAdditional.toString();
                         additional.setText(echoesAdditionalString.trim());
+                        break;
+                    case 5:
+                        title.setText(R.string.carcosa_scenario_four);
+                        sets.setText(R.string.unspeakable_sets);
+                        setsImage.setImageResource(R.drawable.unspeakable_sets);
+                        locations.setText(R.string.unspeakable_locations);
+                        locationPlacement.setVisibility(VISIBLE);
+                        locationPlacement.setImageResource(R.drawable.unspeakable_locations);
+                        setAside.setText(R.string.unspeakable_set_aside);
+                        if (globalVariables.Onyx == 1) {
+                            if (globalVariables.Constance == 1 || globalVariables.Constance == 4) {
+                                additional.setText(R.string.unspeakable_additional_one_constance);
+                            } else {
+                                additional.setText(R.string.unspeakable_additional_one);
+                            }
+                        } else {
+                            if (globalVariables.Constance == 1 || globalVariables.Constance == 4) {
+                                additional.setText(R.string.unspeakable_additional_two_constance);
+                            } else {
+                                additional.setText(R.string.unspeakable_additional_two);
+                            }
+                        }
+                        break;
                 }
                 break;
         }
