@@ -9,7 +9,7 @@
     <string name="carcosa_scenario_six">Szenario 6: Die Bleiche Maske</string>
     <string name="carcosa_scenario_seven">Szenario 7: Die schwarzen Sterne gehen auf</string>
     <string name="carcosa_scenario_eight">Szenario 8: Finsteres Carcosa</string>
-    <string name="carcosa_interlude_zero">Lola Prolog</string>
+    <string name="carcosa_interlude_zero">Lolas Prolog</string>
     <string name="carcosa_interlude_one">Zwischenspiel 1: Belohnung des Wahnsinns</string>
     <string name="carcosa_interlude_two">Zwischenspiel 2: Verlorene Seele</string>
     <string name="carcosa_epilogue">Epilog</string>
@@ -31,6 +31,7 @@
     <string name="ashleigh">Ashleigh Clarke</string>
     <string name="allocated_experience">Zugeteilte Erfahrung</string>
     <string name="sebastien_victory">Sebastien Moreau befindet sich im Siegpunktestapel</string>
+    <string name="constance_victory">Constance Dumaine befindet sich im Siegpunktestapel</string>
 
 
     <!--Campaign Log-->
@@ -55,6 +56,11 @@
     <string name="onyx_left">Die Ermittler haben die Spange aus Onyx zurückgelassen.\n\n</string>
     <string name="oathspeaker_destroyed">Der Eidsprecher wurde vernichtet.\n\n</string>
     <string name="followers_sign">Die Anhänger des Zeichens wissen, wie sie weiter vorgehen müssen.\n\n</string>
+    <string name="king_victims">Der König hat seine Opfer beansprucht.\n\n</string>
+    <string name="attacked_asylum">Die Ermittler wurden bei ihrer Flucht aus dem Sanatorium angegriffen.\n\n</string>
+    <string name="escaped_asylum">Die Ermittler sind aus dem Sanatorium entkommen.\n\n</string>
+    <string name="warning_heeded">Daniels Warnung wurde beherzigt.\n\n</string>
+    <string name="warning_ignored">Daniels Warnung wurde ignoriert.\n\n</string>
 
 
     <!--Chaos bag-->
@@ -92,6 +98,24 @@
     <string name="echoes_thing_one">-2. Falls die Probe misslingt und sich ein Gegner an deinem Ort befindet, nimm 1
         Horror.</string>
     <string name="echoes_thing_two">-4. Falls sich ein Gegner an deinem Ort befindet, nimm 1 Horror.</string>
+
+    <string name="unspeakable_skull_one">-1. Falls die Probe misslingt, bestimme zufällig einen der beiseitegelegten
+        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn anzusehen.</string>
+    <string name="unspeakable_skull_two">Enthülle einen weiteren Marker. Falls die Probe misslingt, bestimme zufällig
+        einen der beiseitegelegten <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn
+        anzusehen. (Nur einmal pro Probe.)</string>
+    <string name="unspeakable_cultist_one">-X. X ist die Anzahl deines Horrors.</string>
+    <string name="unspeakable_cultist_two">-X. X ist die Anzahl deines Horrors. Falls die Probe misslingt, nimm 1
+        Horror.</string>
+    <string name="unspeakable_tablet_one">-X. X ist der Grund-Schleierwert deines Ortes.</string>
+    <string name="unspeakable_tablet_two">-X. X ist der Grund-Schleierwert deines Ortes. Falls die Probe misslingt,
+        nimm 1 Horror.</string>
+    <string name="unspeakable_thing_one">0. Bestimme entweder zufällig einen der beiseitegelegten
+        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn anzusehen, oder diese Probe
+        misslingt automatisch.</string>
+    <string name="unspeakable_thing_two">0. Bestimme entweder zufällig einen der beiseitegelegten
+        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn anzusehen, oder diese Probe
+        misslingt automatisch.</string>
 
 
     <!-- Campaign introduction-->
@@ -243,6 +267,130 @@
         ihrem Umfeld stattgefunden haben wie heute. Vielleicht findest du dort Zeitungsausschnitte oder andere Berichte
         über die Ereignisse aus der Vergangenheit.</string>
 
+    <string name="unspeakable_introduction_one"><i>„Wach auf, Daniel.“</i> Die Worte hallen in deinen Gedanken wider,
+        während du in dem unordentlichen Zimmer auf und ab gehst und zu verstehen versuchst, was du gerade erlebt hast.
+        Am Nachmittag bist du aus dem Schlaf hochgefahren, dein Körper hat gezittert und dein Bettzeug war von Schweiß
+        durchtränkt. Obwohl du mehr als acht Stunden geschlafen hast, fühlst du dich noch erschöpfter als in der Nacht
+        zuvor. Ein kurzer Blick in den Spiegel neben der Kommode zeigt dir deine dunklen, blutunterlaufenen Augen und du
+        fragst dich, ob du überhaupt geschlafen hast\n
+    \nWer ist dieser Daniel? Die Kammer in deinen Träumen sah aus wie ein Gefängnis, aber der Mann – Daniel – schien
+        völlig verstört, als ob er seinen Verstand verloren hatte. Das lässt nur einen Schluss zu: ein Sanatorium. Da du
+        weißt, dass du hier nicht zur Ruhe kommen wirst, machst du dich auf den Weg zum Arkham-Sanatorium, in der
+        Hoffnung, dass du die richtigen Schlüsse gezogen hast.\n
+    \nDu betrittst das Sanatorium und wendest dich an den Rezeptionisten, obwohl du das Gefühl hast, dich damit tiefer
+        in die Klauen dieses Irrenhauses zu begeben. Er sieht dich verwirrt an, als du <i>Der König in Gelb</i> und
+        Daniel erwähnst. Aber du lässt nicht locker und schließlich wühlt er in seinem Aktenschrank und zieht eine
+        steife weiße Mappe heraus. Diese erweist sich als eine Fundgrube für Informationen über die Patienten, die in
+        das Sanatorium eingewiesen worden sind – medizinische Berichte, psychologische Gutachten und ähnliches. Du
+        erkennst einige der Gesichter, als er durch die Seiten blättert. „Daniel… Daniel Chesterfield, oder? Er wird
+        von Doktor Mintz persönlich behandelt. Aber Sie können ihn nicht besuchen. Nur das Personal darf zu ihm.“ Du
+        bringst weitere Argumente vor und bestehst darauf, in den Patientenflügel gelassen zu werden, da du ahnst, dass
+        Daniel den Schlüssel zum Verständnis der wahren Vorgänge hat.\n
+    \nDer Rezeptionist lächelt dir mitleidig zu, gibt nach und nickt den Wachmännern in der Nähe zu. „Oh, natürlich,
+        natürlich“, sagt er mit so viel Ehrlichkeit in der Stimme wie ein Straßenhändler. „Ich werde ein Treffen mit
+        Doktor Mintz für Sie vereinbaren, damit Sie mit ihm über Daniel sprechen können. Diese Herren werden sie
+        begleiten.“ Erleichtert darüber, dass du bald Antworten auf deine Fragen erhalten wirst, lässt du dich in den
+        Patientenflügel des Arkham-Sanatoriums begleiten…</string>
+    <string name="unspeakable_introduction_two">Im Verlauf der nächsten paar Tage arbeitest du die Beweise durch, die du
+        gesammelt hast, und hoffst dort etwas über Daniel Chesterfield herauszufinden, jenen Bühnenarbeiter der früheren
+        Aufführung von <i>Der König in Gelb</i>. Soweit du weißt, ist er der einzige überlebende Mitarbeiter jener
+        Inszenierung. Die übrigen – das heißt jene, über die du überhaupt Aufzeichnungen findest – sind bald nach der
+        Premiere auf verschiedenste Arten verschwunden oder gestorben, die alle nur eines gemeinsam haben: Sie sind
+        makaber. Außergewöhnliche Unfälle. Selbstmorde. Spurloses Verschwinden.\n
+    \nEs scheint, als ob Daniel der einzige Anhaltspunkt für deine weiteren Ermittlungen ist. Den Berichten zufolge, die
+        du gefunden hast, wurde er vor vielen Jahren in das Arkham-Sanatorium eingewiesen. Damit enden die Berichte über
+        Daniels Behandlung. Du bist nicht einmal sicher, ob er noch am Leben ist. Vielleicht wurde er als geheilt
+        entlassen. Du hast gehofft es vermeiden zu können, aber es gibt nur einen Weg, das herauszufinden. Du sammelst
+        deine Habseligkeiten zusammen und machst dich auf den Weg in die Innenstadt, wo sich das Arkham-Sanatorium
+        befindet.\n
+    \nDu betrittst das Sanatorium und wendest dich an den Rezeptionisten, obwohl du das Gefühl hast, dich damit tiefer
+        in die Klauen dieses Irrenhauses zu begeben. Er sieht dich verwirrt an, als du <i>Der König in Gelb</i> und
+        Daniel erwähnst. Aber du lässt nicht locker und schließlich wühlt er in seinem Aktenschrank und zieht eine
+        steife weiße Mappe heraus. Diese erweist sich als eine Fundgrube für Informationen über die Patienten, die in
+        das Sanatorium eingewiesen worden sind – medizinische Berichte, psychologische Gutachten und ähnliches. Du
+        erkennst einige der Gesichter, als er durch die Seiten blättert. „Daniel… Daniel Chesterfield, oder? Er wird
+        von Doktor Mintz persönlich behandelt. Aber Sie können ihn nicht besuchen. Nur das Personal darf zu ihm.“ Du
+        bringst weitere Argumente vor und bestehst darauf, in den Patientenflügel gelassen zu werden, da du ahnst, dass
+        Daniel den Schlüssel zum Verständnis der wahren Vorgänge hat.\n
+    \nDer Rezeptionist lächelt dir mitleidig zu, gibt nach und nickt den Wachmännern in der Nähe zu. „Oh, natürlich,
+        natürlich“, sagt er mit so viel Ehrlichkeit in der Stimme wie ein Straßenhändler. „Ich werde ein Treffen mit
+        Doktor Mintz für Sie vereinbaren, damit Sie mit ihm über Daniel sprechen können. Diese Herren werden sie
+        begleiten.“ Erleichtert darüber, dass du bald Antworten auf deine Fragen erhalten wirst, lässt du dich in den
+        Patientenflügel des Arkham-Sanatoriums begleiten…</string>
+    <string name="unspeakable_introduction_constance">Du erinnerst dich, was dir Constance bei eurem Gespräch auf der
+        höllischen Feier erzählt hat. Sie und andere Schauspieler und Mitarbeiter wurden von Nigel Engram angewiesen
+        eine Art Eid abzulegen. Zunächst hatte sie es als Laune eines exzentrischen Künstlers abgetan, als Formalität,
+        mit der Mr. Engram für mehr Zusammenhalt und festere Bindungen unter Besetzung und Mitarbeitern sorgen wollte.
+        Und sie meinte, man müsse ihm zugutehalten, dass das auch funktioniert hätte. Seit dem merkwürdigen Eid habe
+        sich die gesamte Truppe viel selbstsicherer und temperamentvoller gefühlt. Vielleicht hat Daniel bei der letzten
+        Inszenierung von <i>Der König in Gelb</i> etwas ähnliches erlebt? Du musst mit ihm darüber sprechen.</string>
+
+    <string name="lost_soul_one">Du entscheidest dich einige Tage in Ma‘s Gästehaus unterzutauchen und Daniel dort vor
+        den Behörden zu verstecken, obwohl du dir nicht sicher bist, wie lange du mit einem aus dem Sanatorium
+        ausgebrochenen Patienten in Arkham bleiben kannst. Daniel ist eine tickende Zeitbombe. Manchmal ist er apathisch
+        und reagiert auf nichts, im nächsten Moment aber schreit er um sein Leben. Erst nach einigen Tagen erkennt er,
+        dass er nicht länger eingesperrt ist, was ihn aber aus dir unbekannten Gründen noch mehr verängstigt. „Er wird
+        mich holen, er wird mich holen!“, stammelt er manchmal stundenlang ohne Pause. In einer ungewöhnlich warmen und
+        sternenklaren Nacht beruhigt Daniel sich plötzlich und schüttet dir endlich sein Herz aus. „<i>Der König in
+        Gelb</i> ist nicht nur ein Theaterstück“, erklärt er. „Es ist ein Wesen namens Hastur und er hat mich bereits
+        für sich beansprucht. Aber für dich bleibt noch Hoffnung. Du bist noch nicht besessen. Du hast den Eid nicht
+        abgelegt. Was auch immer du tust, sprich nie seinen Namen aus. Gib nicht auf.“ Du befragst ihn zu den seltsamen
+        Vorkommnissen in der Stadt, nach den Kultisten und Kreaturen, auf die du getroffen bist. „Sie versuchen Carcosa
+        zu finden“, antwortet er nüchtern. Du erkennst den Namen als den der fiktiven Stadt aus dem Theaterstück wieder,
+        über die <i>Der König in Gelb</i> herrscht. „Sie wollen Hastur aus seinem Gefängnis befreien. Aber du! – Du
+        kannst den Pfad nach Carcosa vor ihnen öffnen! Du kannst Hastur endgültig einsperren!“ Er umklammert deinen Arm
+        mit festem Griff, während er weiterredet. „Schnell, bevor der Fremde unseren Plan aufdeckt!“\n
+    \nStunden später ist Daniel erneut verwirrt und reagiert auf nichts, was du tust oder sagst. Du machst einen langen
+        Spaziergang, um etwas zur Ruhe zu kommen, während deine Gedanken um diese neuen Informationen kreisen. Du bist
+        dir nicht sicher, was du von diesen wilden Behauptungen halten sollst. Noch bevor du zu einer Entscheidung
+        kommst, was du als Nächstes tun willst, findest du bei deiner Rückkehr deine Zimmertür aufgebrochen vor. Daniel
+        liegt zusammengesunken auf dem Boden. Sein Gesicht hat jegliche Farbe verloren und seine Glieder sind
+        totenstarr. Anhand der Male an seinem Hals vermutest du, dass er erwürgt worden ist.</string>
+    <string name="lost_soul_two">Du entscheidest dich einige Zeit in Ma‘s Gästehaus unterzutauchen, weil du nicht sicher
+        bist, ob Berichte über die Ereignisse im Sanatorium an die Öffentlichkeit gelangt sind. Du nutzt die Zeit, um
+        dir umfangreiche Notizen über alles zu machen, was bisher geschehen ist, einschließlich des kurzen Gesprächs
+        zwischen dir und Daniel. Er hatte von <i>Der König in Gelb</i> gesprochen, als ob es sich um ein echtes Wesen
+        handelt, er hat sogar einen Namen genannt: „Hastur.“ Er hat gestammelt und gestottert, einige Sätze hat er sogar
+        gekreischt. Du hast Zweifel, ob du diese Sätze je wieder vergessen kannst. „Er hat uns gezwungen den Eid zu
+        leisten.“ „Der Preis wurde bezahlt.“ „Sie öffnen den Pfad nach Carcosa.“ Stundenlang denkst du über Daniels
+        Warnung nach, er hat dich regelrecht angefleht sie zu beherzigen: „Sprich Seinen Namen nie aus.“ Immer und immer
+        wieder erlebst du vor deinem inneren Auge die letzten Minuten seines Lebens.</string>
+    <string name="lost_soul_three">Du entscheidest dich einige Zeit in Ma‘s Gästehaus unterzutauchen, weil du nicht
+        sicher bist, ob Berichte über die Ereignisse im Sanatorium an die Öffentlichkeit gelangt sind. Du nutzt die
+        Zeit, um dir umfangreiche Notizen über alles zu machen, was bisher geschehen ist, einschließlich des kurzen
+        Gesprächs zwischen dir und Daniel. Er hat von <i>Der König in Gelb</i> gesprochen, als ob es sich um ein echtes
+        Wesen handelt, er hat sogar einen Namen genannt: „Hastur.“ Er hat gestammelt und gestottert, einige Sätze hat er
+        sogar gekreischt. Du hast Zweifel, ob du diese Sätze je wieder vergessen kannst. „Er hat uns gezwungen den Eid
+        zu leisten.“ „Der Preis wurde bezahlt.“ „Sie öffnen den Pfad nach Carcosa.“\n
+    \nIn der dritten Nacht findest du deine Zimmertür bei deiner Rückkehr aufgebrochen vor. Vorsichtig betrittst du das
+        Zimmer und fragst dich, ob die Polizei dich gefunden hat. Oder noch schlimmer, der Fremde. Zu deiner
+        Überraschung findest du stattdessen den Körper von Daniel Chesterfield mit weit aufgerissenen Augen und
+        schmerzverzerrtem Gesicht auf dem Boden liegend vor. Er ist tot. Seine Augen sind blutunterlaufen und gelb,
+        seine totenstarren Hände umklammern eine Ausgabe von <i>Der König in Gelb</i>. Du entwindest das Buch seinen
+        toten Händen und untersuchst es. Daniel hat am Rand jeder Seite Anmerkungen hinterlassen. Die meisten davon sind
+        unverständlich, aber einige ergeben doch einen Sinn. Auf der Seite, auf der die fiktive Stadt Carcosa zum ersten
+        Mal erwähnt wird, hat Daniel geschrieben:\n
+    \n<center>*Carcosa ist real\n
+    Lass sie nicht den Pfad öffnen</center>\n
+    \nZu der Szene, in der Cassilda vom König in Lumpen spricht, hat Daniel angemerkt:\n
+    \n<center>Hastur ist der König in Lumpen\n
+    eingesperrt in einem Gefängnis in den Sternen\n
+    versiegle sein Gefängnis auf ewig und beende diesen Wahnsinn!</center>\n
+    \nFragen wirbeln durch deinen Kopf. Wie ist er aus dem Sanatorium entkommen? Woran ist er gestorben? Und warum
+        erscheint er in deinen Augen jetzt so menschlich? Dir bleibt wenig Zeit, also raffst du deine Habseligkeiten im
+        Zimmer zusammen und flüchtest. In deinem Kopf hörst du immer wieder Daniels Worte, wie er dich anfleht, seine
+        Warnungen zu beherzigen.</string>
+    <string name="lost_soul_option_one">Besessenheit? Eide? Es muss eine andere Erklärung für all diese Dinge geben.
+        <b>Die Warnung ignorieren.</b></string>
+    <string name="lost_soul_option_two">Daniels Warnung muss beherzigt werden. Der Name des Königs in Gelb darf nicht
+        ausgesprochen werden. <b>Die Warnung beherzigen.</b></string>
+    <string name="lost_soul_ignore_warning">Stundenlang kämpfst du gegen die Einsichten aus <i>Der König in Gelb</i> an.
+        Was ist wahr? Was ist real? Nur du kannst Ordnung in diesen Wahnsinn bringen.</string>
+    <string name="lost_soul_heed_warning">Stundenlang kämpfst du gegen die Einsichten aus <i>Der König in Gelb</i> an.
+        Was ist wahr? Was ist real? Nur du kannst Ordnung in diesen Wahnsinn bringen.\n
+    \n<b>Für den Rest der Kampagne muss jeder Ermittler, der den Namen HASTUR während eines Szenarios (oder dessen
+            Vorbereitung) laut ausspricht, sofort 1 Horror nehmen.</b></string>
+
 
 
     <!--Scenario set-up instructions-->
@@ -258,7 +406,7 @@
     <string name="curtain_set_aside">Der Mann mit der Bleichen Maske, Königlicher Sendbote, jedes Exemplar von
         Personalzugang und jedes Exemplar von Zugang zum hinteren Bereich des Theaters.\n</string>
 
-    <string name="king_sets">Der letzte König, Hasturs Gabe, Verfall und Schmutz, Der Fremde, Böses aus uralter
+    <string name="king_sets">Der letzte König, Hasturs Gabe, Verfall und Schmutz, Der Fremde und Böses aus uralter
         Zeit.</string>
     <string name="king_locations">Alle 6 Orte werden ins Spiel gebracht (Eingangshalle, Innenhof, Wohnzimmer, Ballsaal,
         Speisesaal und Galerie).\n
@@ -266,26 +414,26 @@
     <string name="king_set_aside">Dianne Devine.\n</string>
     <string name="king_additional_one">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
-        ihnen an jeden Ort mit Ausnahme des Foyers gelegt. Auf jeder dieser Vorteilskarten werden 2 Hinweise
+        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 2 Hinweise
         platziert.\n
     \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_two">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
-        ihnen an jeden Ort mit Ausnahme des Foyers gelegt. Auf jeder dieser Vorteilskarten werden 3 Hinweise
+        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 3 Hinweise
         platziert.\n
     \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_three">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
-        ihnen an jeden Ort mit Ausnahme des Foyers gelegt. Auf jeder dieser Vorteilskarten werden 4 Hinweise
+        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 4 Hinweise
         platziert.\n
     \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_four">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
-        ihnen an jeden Ort mit Ausnahme des Foyers gelegt. Auf jeder dieser Vorteilskarten werden 5 Hinweise
+        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 5 Hinweise
         platziert.\n
     \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
 
-    <string name="echoes_sets"> Widerhall aus der Vergangenheit, Kult des gelben Zeichens, Wahnvorstellungen,
+    <string name="echoes_sets">Widerhall aus der Vergangenheit, Kult des gelben Zeichens, Wahnvorstellungen,
         Die Mitternachtsmasken, Verschlossene Türen and Dunkler Kult.\n
     \nAus dem Begegnungsset Die Mitternachtsmasken werden nur die 5 Verratskarten verwendet (2x Falsche Fährte und
         3x Hetzender Schatten).</string>
@@ -311,6 +459,53 @@
     <string name="echoes_additional_dinner">Du kommst frühzeitig beim Anwesen der Gesellschaft für Geschichte an. Jeder
         Ermittler kann in der ersten Runde des Spiels eine zusätzliche Aktion nehmen.</string>
 
+    <string name="unspeakable_sets">Der unaussprechliche Eid, Hasturs Gabe, Bewohner von Carcosa, Wahnvorstellungen,
+        Verfall und Schmutz und Anhänger von Hastur.</string>
+    <string name="unspeakable_locations">1 Exemplar von Sanatoriumsflur <i>(Östlicher Patientenflügel)</i> und 1
+        Exemplar von Sanatoriumsflur <i>(Westlicher Patientenflügel)</i> werden zufällig bestimmt und aus dem Spiel
+        entfernt. Die übrigen Exemplare von Sanatoriumsflut werden ins Spiel gebracht.\n
+        \nDie Orte Speisesaal, Küche, Hof, Garten, Krankenstation und Kellerflur werden ins Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel auf einem Sanatoriumsflur seiner Wahl.</string>
+    <string name="unspeakable_set_aside">Daniel Chesterfield und jedes Exemplar von Sicherheitszelle.\n
+        \nAlle <b><i>Monster</i></b>-Gegner aus den herausgesuchten Begegnungssets werden als separater Stapel
+        beiseitegelegt. (Es handelt sich insgesamt um 7 <b><i>Monster</i></b>-Gegner.)\n
+    \nAlle <b><i>Verrückt</i></b>-Gegner aus den herausgesuchten Begegnungssets werden als separater Stapel
+        beiseitegelegt. (Es handelt sich insgesamt um 7 <b><i>Verrückt</i></b>-Gegner.)</string>
+    <string name="unspeakable_additional_one">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne der
+        folgende Chaosmarker dem Chaosbeutel hinzugefügt:\n
+        \n\t\t<b>Einfach:</b> -2\n
+        \n\t\t<b>Normal:</b> -3\n
+        \n\t\t<b>Schwer:</b> -4\n
+        \n\t\t<b>Experte:</b> -5\n
+    \nVerwende Szene 2 — „Die richtig Schlimmen (V. I)“</string>
+    <string name="unspeakable_additional_two">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne der
+        folgende Chaosmarker dem Chaosbeutel hinzugefügt:\n
+        \n\t\t<b>Einfach:</b> -2\n
+        \n\t\t<b>Normal:</b> -3\n
+        \n\t\t<b>Schwer:</b> -4\n
+        \n\t\t<b>Experte:</b> -5\n
+    \nVerwende Szene 2 — „Die richtig Schlimmen (V. II)“</string>
+    <string name="unspeakable_additional_one_constance">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne
+        der folgende Chaosmarker dem Chaosbeutel hinzugefügt:\n
+        \n\t\t<b>Einfach:</b> -2\n
+        \n\t\t<b>Normal:</b> -3\n
+        \n\t\t<b>Schwer:</b> -4\n
+        \n\t\t<b>Experte:</b> -5\n
+    \nVerwende Szene 2 — „Die richtig Schlimmen (V. I)“\n
+    \nJeder Ermittler legt die oberste Karte seines Decks verdeckt in seine Spielzone, ohne sie anzusehen. Diese Karte
+        wird als <b><i>Mut</i></b>-Vorteil mit Kosten von 0 behandelt, der keine Symbole hat und dessen geistige
+        Gesundheit 2 beträgt. Diese Karte wird abgelegt, falls sie aus irgendeinem Grund das Spiel verlässt.</string>
+    <string name="unspeakable_additional_two_constance">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne
+        der folgende Chaosmarker dem Chaosbeutel hinzugefügt:\n
+        \n\t\t<b>Einfach:</b> -2\n
+        \n\t\t<b>Normal:</b> -3\n
+        \n\t\t<b>Schwer:</b> -4\n
+        \n\t\t<b>Experte:</b> -5\n
+    \nVerwende Szene 2 — „Die richtig Schlimmen (V. II)“\n
+    \nJeder Ermittler legt die oberste Karte seines Decks verdeckt in seine Spielzone, ohne sie anzusehen. Diese Karte
+        wird als <b><i>Mut</i></b>-Vorteil mit Kosten von 0 behandelt, der keine Symbole hat und dessen geistige
+        Gesundheit 2 beträgt. Diese Karte wird abgelegt, falls sie aus irgendeinem Grund das Spiel verlässt.</string>
+
 
     <!--Scenario resolutions-->
     <string name="curtain_no_resolution">Erneut schreckst du aus dem Schlaf hoch, diesmal, weil du die kalten, feuchten
@@ -331,7 +526,7 @@
         tun“, sagt er und verschwindet um eine Straßenecke. Du folgst ihm zügig in der Hoffnung, ihn warnen zu können,
         dass er sich vom Theater fernhalten soll. Aber als du um die Ecke biegst, siehst du nicht den älteren Herrn,
         sondern den vertrauten Anblick des Fremden mit seiner ausdruckslosen, bleichen Maske. Er sieht dich unverwandt
-        an. „Wer sind Sie?“, rufst du. Der Fremde antwortet nicht, wendet sich ab und verschwindet in der Gasse hinter
+        an. „Wer <b>sind</b> Sie?“, rufst du. Der Fremde antwortet nicht, wendet sich ab und verschwindet in der Gasse hinter
         dem Theater. Du nimmst in der Hoffnung auf Antworten die Verfolgung auf, aber als du die Gasse erreichst, ist
         sie leer – bis auf einen Zettel an der Wand neben dem Eingang für Mitarbeiter des Theaters. „Sei kein
         Spielverderber! Komm zur Besetzungsfeier von <i>Der König in Gelb</i>. 20 Uhr, im Haus von Constance Dumaine,
@@ -392,7 +587,7 @@
         siehst einen Schatten um eine Straßenecke flüchten. Ein Schwarm Kakerlaken huscht über den Gehsteig und folgt
         dem Schatten. Unsicher spannst du deine Muskeln an und folgst dann ebenfalls dem Schatten um die Ecke. Scheinbar
         unberührt steht ein vertraut aussehender Mann mit einer ausdruckslosen, bleichen Maske auf dem Gehsteig.\n
-    \nEr sieht dich unverwandt an. „Wer sind Sie?“, rufst du. Der Fremde antwortet nicht, wendet sich ab und
+    \nEr sieht dich unverwandt an. „Wer <b>sind</b> Sie?“, rufst du. Der Fremde antwortet nicht, wendet sich ab und
         verschwindet in der Gasse hinter dem Theater. In der Hoffnung auf Antworten nimmst du die Verfolgung auf, aber
         als du die Gasse erreichst, ist sie leer – bis auf einen Zettel an der Wand neben dem Mitarbeitereingang des
         Theaters. „Sei kein Spielverderber! Komm zur Besetzungsfeier von <i>Der König in Gelb</i>. 20 Uhr, im Haus von
@@ -524,4 +719,105 @@
         erwachst du.\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden je 1
             Kultist-, Tafel- und Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+
+    <string name="unspeakable_resolution_one">…Und so endete der Wahnsinn um <i>Der König in Gelb</i>.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Kultist-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="unspeakable_resolution_one_defeated"><b>Besiegte Ermittler:</b>\n
+    \n„Doktor Mintz, der Patient hat die Medikamente er­ halten und ist jetzt bereit für die Visite.“ Schwester Heather
+        öffnet eine Akte auf dem Schreibtisch neben ihr und liest einen Moment lang im Patientenbericht.\n
+    \n„Hat sich etwas am Zustand des Patienten verändert?“, fragt Doktor Mintz mit monotoner Stimme. Eine Formalität.
+        Beide wissen genau, dass dem Patienten nicht mehr geholfen werden kann.\n
+    \n„Nein. Der Patient hat immer noch Wahnvorstellungen. Er verlangt mit dem Wärter zu sprechen, behauptet er wäre nur
+        Gast und hält Monologe über das gestrige Theaterstück <i>Der König in Gelb</i>.“\n
+    \n„Und die anderen Verbrechen? Die Vorfälle im Theater? Und in der 1452 Atlantic Avenue?“\n
+    \n„Er glaubt, man hätte ihn angegriffen und er musste sich verteidigen.“ Mitleid schwingt in ihrer Stimme mit.
+        Welchen Grund könnte es dafür geben, dass jemand von einem Moment zum anderen völlig ausrastet? Ältere
+        Unterlagen des Patienten enthalten keine Hinweise auf mentale Instabilität. „Können Sie sich das erklären, Herr
+        Doktor?“\n
+    \n„Wer kann das schon?“, seufzt Doktor Mintz und steht auf, wobei er die Akte vom Schreibtisch mitnimmt. „Es ist
+        nicht meine Aufgabe, das zu verstehen. Meine Aufgabe ist es, zu heilen. Vielleicht werden meine experimentellen
+        Behandlungen sich bei diesem Patienten als hilfreich erweisen.“ Die Schwester zuckt zusammen und auf ihrem Arm
+        bildet sich eine Gänsehaut. Sie weiß, worauf die Behandlungen hinauslaufen werden und bezweifelt, dass sie
+        irgendetwas beweisen würden.\n
+        \n<b>Jeder Ermittler, der besiegt worden ist, wird wahnsinnig.</b>\n
+    \n<b>Überlebende Ermittler:</b>\n
+    \n…Und so endete der Wahnsinn um <i>Der König in Gelb</i>.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Kultist-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="unspeakable_resolution_two">Einige Pfleger und Sicherheitskräfte stellen sich dir in den Weg, um deine
+        Flucht zu verhindern. So in die Enge getrieben bleibt dir nichts anderes übrig, als dir deinen Weg
+        freizukämpfen. Als du versuchst dir deinen Weg in die Freiheit zu erkämpfen, wittern einige Patienten in deiner
+        Nähe die Gelegenheit und greifen die Wachen mit von Wahnsinn getriebener Wut an. Schwester Heather kreischt und
+        zieht sich zurück und du kannst das entstehende Chaos nutzen, um zu entkommen. Du bist zwar angeschlagen, aber
+        wieder frei. Es wird einige Zeit dauern, bis deine Wunden geheilt sind, aber dir bleibt keine Zeit, um dich zu
+        erholen.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="unspeakable_resolution_two_defeated"><b>Besiegte Ermittler:</b>\n
+    \n„Doktor Mintz, der Patient hat die Medikamente er­ halten und ist jetzt bereit für die Visite.“ Schwester Heather
+        öffnet eine Akte auf dem Schreibtisch neben ihr und liest einen Moment lang im Patientenbericht.\n
+    \n„Hat sich etwas am Zustand des Patienten verändert?“, fragt Doktor Mintz mit monotoner Stimme. Eine Formalität.
+        Beide wissen genau, dass dem Patienten nicht mehr geholfen werden kann.\n
+    \n„Nein. Der Patient hat immer noch Wahnvorstellungen. Er verlangt mit dem Wärter zu sprechen, behauptet er wäre nur
+        Gast und hält Monologe über das gestrige Theaterstück <i>Der König in Gelb</i>.“\n
+    \n„Und die anderen Verbrechen? Die Vorfälle im Theater? Und in der 1452 Atlantic Avenue?“\n
+    \n„Er glaubt, man hätte ihn angegriffen und er musste sich verteidigen.“ Mitleid schwingt in ihrer Stimme mit.
+        Welchen Grund könnte es dafür geben, dass jemand von einem Moment zum anderen völlig ausrastet? Ältere
+        Unterlagen des Patienten enthalten keine Hinweise auf mentale Instabilität. „Können Sie sich das erklären, Herr
+        Doktor?“\n
+    \n„Wer kann das schon?“, seufzt Doktor Mintz und steht auf, wobei er die Akte vom Schreibtisch mitnimmt. „Es ist
+        nicht meine Aufgabe, das zu verstehen. Meine Aufgabe ist es, zu heilen. Vielleicht werden meine experimentellen
+        Behandlungen sich bei diesem Patienten als hilfreich erweisen.“ Die Schwester zuckt zusammen und auf ihrem Arm
+        bildet sich eine Gänsehaut. Sie weiß, worauf die Behandlungen hinauslaufen werden und bezweifelt, dass sie
+        irgendetwas beweisen würden.\n
+        \n<b>Jeder Ermittler, der besiegt worden ist, wird wahnsinnig.</b>\n
+    \n<b>Überlebende Ermittler:</b>\n
+    \nEinige Pfleger und Sicherheitskräfte stellen sich dir in den Weg, um deine
+        Flucht zu verhindern. So in die Enge getrieben bleibt dir nichts anderes übrig, als dir deinen Weg
+        freizukämpfen. Als du versuchst dir deinen Weg in die Freiheit zu erkämpfen, wittern einige Patienten in deiner
+        Nähe die Gelegenheit und greifen die Wachen mit von Wahnsinn getriebener Wut an. Schwester Heather kreischt und
+        zieht sich zurück und du kannst das entstehende Chaos nutzen, um zu entkommen. Du bist zwar angeschlagen, aber
+        wieder frei. Es wird einige Zeit dauern, bis deine Wunden geheilt sind, aber dir bleibt keine Zeit, um dich zu
+        erholen.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="unspeakable_resolution_three">Da das Personal des Sanatoriums abgelenkt ist und die Patienten Amok
+        laufen, kannst du dich unbemerkt hinausschleichen. Du kannst tiefer in den Garten hinter dem Sanatorium
+        hineinflüchten, wo ein Zaun so hoch wie ein zweistöckiges Gebäude mit Stacheldraht das einzige ist, was dich
+        noch von der Außenwelt trennt. Die Zeit ist knapp und du musst es so weit wie möglich vom Sanatorium
+        wegschaffen, bevor die Wachen zurückkommen und dich bemerken. Mit einer Zwangsjacke, die du im Gebäude gefunden
+        hast, deckst du den Stacheldraht ab, kletterst über den Zaun und fängst auf der anderen Seite an zu rennen.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="unspeakable_resolution_three_defeated"><b>Besiegte Ermittler:</b>\n
+    \n„Doktor Mintz, der Patient hat die Medikamente er­ halten und ist jetzt bereit für die Visite.“ Schwester Heather
+        öffnet eine Akte auf dem Schreibtisch neben ihr und liest einen Moment lang im Patientenbericht.\n
+    \n„Hat sich etwas am Zustand des Patienten verändert?“, fragt Doktor Mintz mit monotoner Stimme. Eine Formalität.
+        Beide wissen genau, dass dem Patienten nicht mehr geholfen werden kann.\n
+    \n„Nein. Der Patient hat immer noch Wahnvorstellungen. Er verlangt mit dem Wärter zu sprechen, behauptet er wäre nur
+        Gast und hält Monologe über das gestrige Theaterstück <i>Der König in Gelb</i>.“\n
+    \n„Und die anderen Verbrechen? Die Vorfälle im Theater? Und in der 1452 Atlantic Avenue?“\n
+    \n„Er glaubt, man hätte ihn angegriffen und er musste sich verteidigen.“ Mitleid schwingt in ihrer Stimme mit.
+        Welchen Grund könnte es dafür geben, dass jemand von einem Moment zum anderen völlig ausrastet? Ältere
+        Unterlagen des Patienten enthalten keine Hinweise auf mentale Instabilität. „Können Sie sich das erklären, Herr
+        Doktor?“\n
+    \n„Wer kann das schon?“, seufzt Doktor Mintz und steht auf, wobei er die Akte vom Schreibtisch mitnimmt. „Es ist
+        nicht meine Aufgabe, das zu verstehen. Meine Aufgabe ist es, zu heilen. Vielleicht werden meine experimentellen
+        Behandlungen sich bei diesem Patienten als hilfreich erweisen.“ Die Schwester zuckt zusammen und auf ihrem Arm
+        bildet sich eine Gänsehaut. Sie weiß, worauf die Behandlungen hinauslaufen werden und bezweifelt, dass sie
+        irgendetwas beweisen würden.\n
+        \n<b>Jeder Ermittler, der besiegt worden ist, wird wahnsinnig.</b>\n
+    \n<b>Überlebende Ermittler:</b>\n
+    \nDa das Personal des Sanatoriums abgelenkt ist und die Patienten Amok
+        laufen, kannst du dich unbemerkt hinausschleichen. Du kannst tiefer in den Garten hinter dem Sanatorium
+        hineinflüchten, wo ein Zaun so hoch wie ein zweistöckiges Gebäude mit Stacheldraht das einzige ist, was dich
+        noch von der Außenwelt trennt. Die Zeit ist knapp und du musst es so weit wie möglich vom Sanatorium
+        wegschaffen, bevor die Wachen zurückkommen und dich bemerken. Mit einer Zwangsjacke, die du im Gebäude gefunden
+        hast, deckst du den Stacheldraht ab, kletterst über den Zaun und fängst auf der anderen Seite an zu rennen.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string
+        name="unspeakable_resolution_onyx"><b>Es muss ein neuer Ermittler gewählt werden, der für den Rest der Kampagne
+            die Schwäche Spange aus Schwarzem Onyx in sein Deck aufnimmt.</b></string>
 </resources>
