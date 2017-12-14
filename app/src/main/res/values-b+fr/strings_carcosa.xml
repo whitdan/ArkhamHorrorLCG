@@ -30,7 +30,9 @@
     <string name="sebastien">Sebastien Moreau</string>
     <string name="ashleigh">Ashleigh Clarke</string>
     <string name="allocated_experience">Expérience Allouée</string>
+	<string name="daniel_chesterfield_inplay">Daniel Chesterfield en jeu quand le scénario s\'est terminé</string>																									  
 	<string name="sebastien_victory">Sebastien Moreau dans la pile de victoire</string>
+	<string name="constance_victory">Constance Dumaine dans la pile de victoire</string>																				  
 
 
     <!--Campaign Log-->
@@ -55,37 +57,53 @@
     <string name="onyx_left">Vous avez laissé la broche en onyx.\n\n</string>
     <string name="oathspeaker_destroyed">Vous avez détruit le conjurateur.\n\n</string>
     <string name="followers_sign">Les adorateurs du signe ont trouvé la marche à suivre.\n\n</string>															   
+	<string name="king_victims">Le Roi a réclamé ses victimes.\n\n</string>
+    <string name="attacked_asylum">Les investigateurs ont été attaqués en fuyant l\'Asile.\n\n</string>
+    <string name="escaped_asylum">Les investigateurs se sont échappés de l\'Asile.\n\n</string>
+    <string name="warning_heeded">Vous avez tenu compte de l\'avertissement de Danie.\n\n</string>
+    <string name="warning_ignored">Vous avez ignoré l\'avertissement de Daniel.\n\n</string>																	  
 
 
 	<!--Chaos bag-->
-    <string name="curtain_skull_one">-1 (-3 instead if you have 3 or more horror on you).</string>
-    <string name="curtain_skull_two">-X, where X is the amount of horror on you. (If you have no horror on you, X is 1.)</string>
-    <string name="curtain_combined_one">-4. If your location has at least 1 horror on it, take 1 horror <i>(from the
-        token pool)</i>. If your location has no horror on it, place 1 horror on it instead.</string>
-    <string name="curtain_combined_two">-5. If your location has at least 1 horror on it, take 1 horror <i>(from the
-        token pool)</i>. If your location has no horror on it, place 1 horror on it instead.</string>
+    <string name="curtain_skull_one">-1 (-3 à la place si vous avez au moins 3 horreurs sur vous).</string>
+    <string name="curtain_skull_two">-X. X est le nombre d\'horreurs sur vous. (Si vous n\'avez pas d\'horreurs sur vous, X est égal à 1.)</string>
+    <string name="curtain_combined_one">-4. Si votre lieu a au moins 1 horreur sur lui, subissez 1 horreur <i>(prise dans
+		la réserve de pions)</i>.Si votre lieu n\'a pas d\'horreur sur lui, placez-y 1 horreur à la place.</string>
+    <string name="curtain_combined_two">-5. Si votre lieu a au moins 1 horreur sur lui, subissez 1 horreur <i>(prise dans
+		la réserve de pions)</i>.Si votre lieu n\'a pas d\'horreur sur lui, placez-y 1 horreur à la place</string>
 
-    <string name="king_skull_one">Reveal another token. If you fail, place 1 doom on a <b><i>Lunatic</i></b> enemy in
-        play.</string>
-    <string name="king_skull_two">Reveal another token. If you fail, place 1 doom on the <b><i>Lunatic</i></b> enemy
-        in play with the most remaining health.</string>
-    <string name="king_cultist_one">-2. If you fail, place 1 of your clues on your location.</string>
-    <string name="king_cultist_two">-3. Place 1 of your clues on your location.</string>
-    <string name="king_tablet_one">-4. If you fail, take 1 horror.</string>
-    <string name="king_tablet_two">-4. Take 1 horror.</string>
-    <string name="king_thing_one">-X. X is the shroud value of your location.</string>
-    <string name="king_thing_two">-X. X is the shroud value of your location. If you fail, take 1 damage.</string>
+    <string name="king_skull_one">Révélez un autre pion Chaos. En cas d\'échec, placez 1 fatalité sur un ennemi <b><i>Aliéné</i></b> en jeu.</string>
+    <string name="king_skull_two">Révélez un autre pion Chaos. En cas d\'échec, placez 1 fatalité sur l\'ennemi <b><i>Aliéné</i></b> en jeu avec le plus de vie restante.</string>
+    <string name="king_cultist_one">-2. En cas d\'échec, placez 1 de vos indices sur votre lieu.</string>
+    <string name="king_cultist_two">-3. Placez 1 de vos indices sur votre lieu.</string>
+    <string name="king_tablet_one">-4. En cas d\'échec, subissez 1 horreur.</string>
+    <string name="king_tablet_two">-4. Subissez 1 horreur.</string>
+    <string name="king_thing_one">-X. X est la valeur occulte de votre lieu.</string>
+    <string name="king_thing_two">-X. X est la valeur occulte de votre lieu. En cas d\'échec,subissez 1 dégât.</string>
 
-    <string name="echoes_skull_one">-X. X is the highest number of doom on an enemy in play.</string>
-    <string name="echoes_skull_two">-X. X is the total number of doom on enemies in play.</string>
-    <string name="echoes_cultist_one">-2. If you fail, place 1 doom on the nearest enemy.</string>
-    <string name="echoes_cultist_two">-4. Place 1 doom on the nearest enemy.</string>
-    <string name="echoes_tablet_one">-2. If you fail, discard a random card from your hand.</string>
-    <string name="echoes_tablet_two">-4. Discard a random card from your hand.</string>
-    <string name="echoes_thing_one">-2. If you fail and there is an enemy at your location, take 1 horror.</string>
-    <string name="echoes_thing_two">-4. If there is an enemy at your location, take 1 horror.</string>
+    <string name="echoes_skull_one">-X. X est le plus grand nombre de fatalités sur un ennemi en jeu.</string>
+    <string name="echoes_skull_two">-X. X est le nombre total de fatalités sur les ennemis en jeu.</string>
+    <string name="echoes_cultist_one">-2. En cas d\'échec, placez 1 fatalité sur l\'ennemi le plus proche.</string>
+    <string name="echoes_cultist_two">-4. Placez 1 fatalité sur l\'ennemi le plus proche.</string>
+    <string name="echoes_tablet_one">-2. En cas d\'échec, défaussez une carte prise au hasard dans votre main.</string>
+    <string name="echoes_tablet_two">-4. Défaussez une carte prise au hasard dans votre main.</string>
+    <string name="echoes_thing_one">-2. En cas d\'échec, s\'il y a un ennemi dans votre lieu, subissez 1 horreur.</string>
+    <string name="echoes_thing_two">-4. En cas d\'échec, s\'il y a un ennemi dans votre lieu, subissez 1 horreur.</string>
 				
-																								  
+	<string name="unspeakable_skull_one">-1. En cas d\'échec, prenez un ennemi au hasard parmi les ennemis <i>Monstre</i>
+		mis de côté et placez-le sous le deck Acte sans le regarder.</string>
+    <string name="unspeakable_skull_two">Révélez un autre pion. En cas d\'échec, prenez un ennemi au hasard parmi les ennemis <i>Monstre</i>
+		mis de côté et placez-le sous le deck Acte sans le regarder. (Limite d\'une fois par test.)</string>
+    <string name="unspeakable_cultist_one">-X. X est le nombre d\'horreurs sur vous.</string>
+    <string name="unspeakable_cultist_two">-X. X est le nombre d\'horreurs sur vous. En cas d\'échec, subissez 1 horreur.</string>
+    <string name="unspeakable_tablet_one">-X. X est la valeur occulte de base de votre lieu.</string>
+    <string name="unspeakable_tablet_two">-X. X est la valeur occulte de base de votre lieu. En cas d\'échec, subissez 1 horreur.</string>
+    <string name="unspeakable_thing_one">0. Soit vous prenez un ennemi au hasard parmi les ennemis <i>Monstre</i> mis de côté
+        et vous le placez sous le deck Acte sans le regarder, soit vous échouez automatiquement à ce test à la place.</string>
+    <string name="unspeakable_thing_two">0. Soit vous prenez un ennemi au hasard parmi les ennemis <i>Monstre</i> mis de côté
+        et vous le placez sous le deck Acte sans le regarder, soit vous échouez automatiquement à ce test à la place.</string>
+					  
+																													  
 																																 
 																													
 																									 
@@ -261,6 +279,117 @@
 		ce précédent spectacle, surtout s\'il fut suivi d\'événements similaires à ceux de cette nuit. Peut-être
         trouverez-vous
 		des coupures de journaux ou d\'autres articles décrivant ce qui s\'est passé à cette époque.</string>
+	<string name="unspeakable_introduction_one">“<i>Réveille-toi, Daniel.</i>” Les mots résonnents dans votre esprit tandis que 
+		vous faîtes les cent pas dans cette chambre miteuse en essayant de trouver un sens à ce que vous venez de vivre. Vous vous
+		êtes réveillé en sursaut dans l\'après-midi, le corps tremblant et les draps imbibés de sueur. Bien que vous ayez sommeillé
+		plus de huit heures, vous vous sentez encore plus fatigué que la veille. Vous apercevez votre reflet dans le miroir jouxtant
+		la commode. Vos yeux sont rouges et cernés. Vous vous demandez si vous avez réellement dormi.\n
+    \nQui peut bien être ce Daniel ? La chambre dont vous avez rêvé ressemblait à une prison, mais cet homme - Daniel - avait l\'air
+		cinglé, comme s\'il avait totalement perdu l\'esprit. Une conclusion s\'impose à vous : un asile. Sachant que vous ne trouverez
+		plus le sommeil ici, vous vous dirigez vers l\'Asile d\'Arkham en espérant que votre intuition soit la bonne.\n
+    \nVous pénétrez dans l\'asile et vous vous arrêtez pour parler au réceptionniste, malgré votre impatience à explorer cette maison
+		de fous. Il paraît tout d\'abord incrédule lorsque vous lui parlez du <i>Roi en jaune</i> et de Daniel mais, devant votre 
+		insistance, il fouille dans ses tiroirs et finit par en extirper un austère dossier de couleur blanche. À l\'intérieur se trouve
+		une foule d\'informations concernant les patients de l\'asile - rapports médicaux, évaluations psychiatriques, ce genre de choses.
+		Vous reconnaissez quelques visages au fur et à mesure qu\'il tourne les pages. \"Daniel... Daniel Chesterfield, c\'est bien cela ?
+		Il est sous la supervision du docteur Mintz. Mais vous ne pouvez pas le rencontrer : seul le personnel autorisé a accès à son niveau. \"
+		Vous insistez et tentez de négocier afin de pénétrer dans l\'aile des patients, sachant que Daniel doit détenir la clé pour comprendre
+		ce qui se passe réellement.\n
+    \nLe réceptionniste vous adresse un sourire compatissant et semble changer d\'avis. Il fait signe aux gardes de sécurité derrière vous.
+		\"Oh, bien sûr, bien sûr\", déclare-t-il avec toute l\'honnêteté d\'un vendeur à la sauvette. \"Je vais vous arranger une entrevue
+		avec le docteur Mintz, ainsi vous pourrez lui parler de Daniel. Ces gentlemen vont vous escorter. \" Soulagé d\'avoir bientôt 
+		les réponses à vos questions, vous suivez les gardes jusqu\'à l\'aile des patients de l\'Asile d\'Arkham.</string>
+    <string name="unspeakable_introduction_two">Vous avez passé les quelques jours suivants à exploiter les preuves réunies en espérant dénicher
+		des informations concernant Daniel Chesterfield, l\'un des machinistes de la précédente représentation du <i>Roi en Jaune</i>. À votre
+		connaissance, il est le seul survivant de la troupe. Les autres - du moins, ceux dont vous avez pu trouver une trace - ont tous disparu 
+		ou sont morts peu après la première représentation, de manières diverses et variées dont le seul point commun semble être leur caractère
+		morbide. Accidents insolites. Suicices. Disparitions.\n
+    \nIl semble que Daniel soit la seule piste qu\'il vous reste pour continuer votre enquête. D\'après les archives que vous avez trouvées,
+		il aurait été interné à l\'Asile d\'Arkham il y a de nombreuses années. Il ne semble pas y avoir plus de détails concernant le sort
+		de Daniel. Vous n\'êtes pas sûr qu\'il soit encore en vie. Peut-être a-t-il été libéré après sa guérison. Vous auriez préféré éviter
+		cela, mais il semble n\'y avoir qu\'un seul moyen de le découvrir. Vous rassemblez vos affaires et vous vous dirigez vers l\'Asile
+		d\'Arkham, dans le centre-ville.
+    \nVous pénétrez dans l\'asile et vous vous arrêtez pour parler au réceptionniste, malgré votre impatience à explorer cette maison
+		de fous. Il paraît tout d\'abord incrédule lorsque vous lui parlez du <i>Roi en jaune</i> et de Daniel mais, devant votre 
+		insistance, il fouille dans ses tiroirs et finit par en extirper un austère dossier de couleur blanche. À l\'intérieur se trouve
+		une foule d\'informations concernant les patients de l\'asile - rapports médicaux, évaluations psychiatriques, ce genre de choses.
+		Vous reconnaissez quelques visages au fur et à mesure qu\'il tourne les pages. \"Daniel... Daniel Chesterfield, c\'est bien cela ?
+		Il est sous la supervision du docteur Mintz. Mais vous ne pouvez pas le rencontrer : seul le personnel autorisé a accès à son niveau. \"
+		Vous insistez et tentez de négocier afin de pénétrer dans l\'aile des patients, sachant que Daniel doit détenir la clé pour comprendre
+		ce qui se passe réellement.\n
+    \nLe réceptionniste vous adresse un sourire compatissant et semble changer d\'avis. Il fait signe aux gardes de sécurité derrière vous.
+		\"Oh, bien sûr, bien sûr\", déclare-t-il avec toute l\'honnêteté d\'un vendeur à la sauvette. \"Je vais vous arranger une entrevue
+		avec le docteur Mintz, ainsi vous pourrez lui parler de Daniel. Ces gentlemen vont vous escorter. \" Soulagé d\'avoir bientôt 
+		les réponses à vos questions, vous suivez les gardes jusqu\'à l\'aile des patients de l\'Asile d\'Arkham.</string>
+    <string name="unspeakable_introduction_constance">Vous vous remémorez ce que Constance vous a dit lorsque vous lui avez parlé pendant
+		son satané dîner. Le metteur en scène, Nigel Engram, avait demandé à l\'ensemble de l\'équipe de prononcer une sorte de serment.
+		Au début, Constance avait pris cela pour la lubi d\'un artiste excentrique : une curieuse cérémoniue que M. Engram effectuait pour 
+		renforcer les liens entre les membres de l\'équipe. Elle prétendait d\'ailleurs que cela avait fonctionné : après avoir prononcé le 
+		serment, Constance et les autres membres de la troupe s\'étaient sentis bien plus confiants et pleins d\'ardeur. Peut-être Daniel 
+		avait-il vécu la même chose durant la précédente représentation du <i>Roi en Jaune</i>. Vous devez lui en toucher un mot.</string>
+
+    <string name="lost_soul_one">Vous décidez de faire profil bas quelques temps à la Pension de Ma et vous cachez
+		Daniel aux autorités, bien que vous ne sachiez pas exactement combien de temps vous pourrez rester à Arkham
+		avec un patient échappé de l\'asile. Daniel est imprévisible, tantôt hagard et perdu dans le vague, tantôt
+		hurlant comme si sa vie était en jeu. Il lui faut plusieurs jours pour réaliser qu\'il n\'est plus interné,
+		ce qui le fait d\'autant plus paniquer. \"Il vient pour moi, il vient pour moi !\", répète-t-il parfois durant
+		plusieurs heures. Enfin, au cours d\'une nuit particulièrement douce et étoilée, Daniel parvient à se calmer
+		suffisamment longtemps pour s\'ouvrir à vous. \"<i>Le Roi en Jaune</i> n\'est pas une simple pièce de théâtre \",
+		explique-t-il. \"C\'est un être nommé Hastur, et Il m\'a déjà réclamé. Mais vous, vous avez encore du temps, vous
+		n\'êtes pas possédé. Vous n\'avez pas prononcé le Serment. Quoi qu\'il advienne, ne prononcez jamais Son nom.
+		Ne vous abandonnez pas à Lui. \" Vous le questionnez à propos des étranges évènements survenus en ville, ainsi que
+		sur les créatures et les cultistes que vous avez renconrés. \"Ils tentent trouver Carcosa\", annonce-t-il simplement.
+		Vous reconnaissez le nom de la cité fictive de la pièce, celle où règle Le Roi en Jaune. \"Ils veulent libérer Hastur
+		de sa prison. Mais vous ! - Vous pouvez ouvrir la route de Carcosa avant eux ! Vous pouvez emprisonner Hastur
+		pour de bon ! \" Il s\'agrippe désespérément à vous. \"Vite, avant que l\'Étranger ne découvre nos plans !\"\n
+    \nQuelques heures plus tard, Daniel est de nouveau incohérent et hagard. Vous décidez d\'aller marcher un moment
+		pour vous aérer l\'esprit et assimiler toutes ces nouvelles informations. Vous ne savez pas trop quoi 
+		faire de ses déclarations. Avant d\'avoir pu prendre une décision sur la marche à suivre, vous rentrez à la pension
+		et découvrez la porte de votre chambre fracturée. Daniel repose par terre, le visage blême et les membres
+		relâchés. À en juger par les traces autour de son cou, il semble avoir été étranglé.</string>
+    <string name="lost_soul_two">Vous décidez de faire profil bas quelques temps à la Pension de Ma, jusqu\'à ce que
+		les événements de l\'asile se tassent. Vous mettez ce délai à profit pour rédiger des notes détaillées sur les 
+		péripéties que vous avez vécues jusqu\'ici, y compris votre bref entretien avec Daniel. Il a parlé du Roi en Jaune
+		comme s\'il s\'agissait d\'un être réel, et il l\'a même nommé \"Hastur\". Il marmonnait, divaguait et répétait sans
+		cesse d\'autres phrases. Vous doutez de parvenir un jour à les oublier. \"Il nous a fait prononcer le Serment.\"
+		\"Le Prix a été payé.\" \"Ils ouvrent la route de Carcosa.\" Vous repensez pendant des heures au dernier avertissement
+		de Daniel : \"Ne prononcez pas Son nom.\" Ses derniers instants repassent en boucle dans votre esprit.</string>
+    <string name="lost_soul_three">Vous décidez de faire profil bas quelques temps à la Pension de Ma, jusqu\'à ce que
+		les événements de l\'asile se tassent. Vous mettez ce délai à profit pour rédiger des notes détaillées sur les 
+		péripéties que vous avez vécues jusqu\'ici, y compris votre bref entretien avec Daniel. Il a parlé du Roi en Jaune
+		comme s\'il s\'agissait d\'un être réel, et il l\'a même nommé \"Hastur\". Il marmonnait, divaguait et répétait sans
+		cesse d\'autres phrases. Vous doutez de parvenir un jour à les oublier. \"Il nous a fait prononcer le Serment.\"
+		\"Le Prix a été payé.\" \"Ils ouvrent la route de Carcosa.\"\n
+    \nLa troisième nuit, en regagnant votre chambre, vous découvez que la porte a été fracturée. Vous entrez avec précaution,
+		pensant que la police est peut-être sur vos traces. Ou pire, l\'Étranger. Mais vous avez la surprise d\'y découvrir
+		le corps de Daniel Chesterfield à la place. Il repose sur le sol, les yeux écarquillés, une expression de douleur sur
+		le visage. Il est bel et bien mort. Ses yeux jaunâtres sont injectés de sang et il serre un exemplaire du <i>Roi en jaune</i>
+		entre ses mains. Vous arrachez l\'ouvrage au cadavre rigide afin de l\'examiner. Daniel a annoté chaque page. La majorité\n
+		de ses notes est incompréhensible, mais quelques passages semblent plus lucides. Près de la première mention de la cité 
+		fictive de Carcosa, Daniel a griffoné :\n
+    \n<center>*Carcosa est réelle\n
+    Ne les laissez pas ouvrir la route</center>\n
+    \nÀ l\'endroit où Cassilda parle du roi en guenilles, Daniel a écrit:\n
+    \n<center>Hastur est le roi en guenilles\n
+    prisonnier de sa prison stellaire\n
+    enfermez-le et arrêtez cette folie !</center>\n
+    \nVous êtes submergé de questions. Comment Daniel s\'est-il évadé de l\'asile ? Comment est-il mort ? Et pourquoi
+		a-t-il de nouveau forme humaine ? Il n\'y a pas de temps à perdre. Vous nettoyez la chambre, ramassez vos affaires
+		et fuyez. Les mots de Daniel, quand il vous a supplié, repassent en boucle dans votre esprit.</string>
+    <string name="lost_soul_option_one">Possession? Serment ? Il doit y avoir une autre explication à tout ceci. <b>Ignorez
+        l\'Avertissement.</b></string>
+    <string name="lost_soul_option_two">Nous devons prendre l\'avertissement de Daniel au sérieux, et ne surtout pas
+		prononcer le nom du Roi en Jaune. <b>Tenir Compte de l\'Avertissement.</b></string>
+    <string name="lost_soul_ignore_warning">Vous vous débattez pendant des heures avec les informationq que vous avez collectés
+		sur <i>Le Roi en Jaune</i>. Qu\'est-ce qui est vrai ? Qu\'est ce qui est réel ? Vous seul pouvez démêler le vrai du
+		faux dans toute cette folie.</string>
+    <string name="lost_soul_heed_warning">Vous vous débattez pendant des heures avec les informationq que vous avez collectés
+		sur <i>Le Roi en Jaune</i>. Qu\'est-ce qui est vrai ? Qu\'est ce qui est réel ? Vous seul pouvez démêler le vrai du
+		faux dans toute cette folie.\n
+    \n<b>Pour le reste de la campagne, chaque fois qu\'un investigateur prononce le nom de HASTUR à voix haute pendant
+		un scénario (ou pendant la mise en place d\'un scénario), cet investigateur doit immédiatement subir 1 horreur.</b></string>
+
+																												
 
 
 
@@ -343,7 +472,56 @@
         <b><i>Deuxième Étage</i></b> différent.\n\n</string>
     <string name="echoes_additional_sebastien">Après avoir mis le Hall en jeu lors de la mise en place, placez 1 indice par investigateur dessus.\n\n</string>
     <string name="echoes_additional_dinner">Vous arrivez plus tôt à la Société des Historiens ; chaque investigateur peut effectuer
-		1 action supplémentaire lors de son premier tour de la partie.</string>						   
+		1 action supplémentaire lors de son premier tour de la partie.</string>						 
+
+	<string name="unspeakable_sets">Le Serment Indicible, Présent d\'Hastur, Les Habitants de Carcosa, Hallucinations,
+        Saletés et Immondices, et Agents d\'Hastur.</string>
+    <string name="unspeakable_locations">Prenez au hasard 1 exemplaire des Couloirs de l\'Asile <i>(Aile Est)</i> et 1
+        exemplaire des Couloirs de l\'Asile <i>(Aile Ouest)</i>. Retirez ces carets de la partie. Mettez les Couloirs de l\'Asile
+       restants en jeu..\n
+        \nMettez en jeu les lieux suivants : Cantine, Cuisines, Promenade, Jardin, Infirmerie et Couloir du Sous-sol.\n
+        \nChaque investigateur commence la partie dans le lieu Couloirs de l\'Asile de son choix.</string>
+    <string name="unspeakable_set_aside">Daniel Chesterfield et tous les exemplaires de la Cellule d\'Isolement..\n
+        \nMettez chaque ennemi <b><i>Monstre</i></b> des sets de rencontre réunis dans une pile séparée.
+        (Il doit y avoir 7 ennemis <b><i>Monstre</i></b> au total.)\n
+		\nMettez chaque ennemi <b><i>Aliéné</i></b> des sets de rencontre réunis dans une pile séparée.
+		(Il doit y avoir 7 ennemis <b><i>Aliéné</i></b> au total.)</string>
+    <string name="unspeakable_additional_one">Selon le niveau de difficulté, ajoutez le pion Chaos suivant à la 
+		réserve du Chaos pour le reste de la campagne : \n
+    \n\t\t<b>Facile:</b> -2\n
+    \n\t\t<b>Standard:</b> -3\n
+    \n\t\t<b>Difficile:</b> -4\n
+    \n\t\t<b>Expert:</b> -5\n
+    \nUtilisez l\'Acte 2 - ”Les Vrais Méchants” (v. I)</string>
+    <string name="unspeakable_additional_two">Selon le niveau de difficulté, ajoutez le pion Chaos suivant à la 
+		réserve du Chaos pour le reste de la campagne : \n
+    \n\t\t<b>Facile:</b> -2\n
+    \n\t\t<b>Standard:</b> -3\n
+    \n\t\t<b>Difficile:</b> -4\n
+    \n\t\t<b>Expert:</b> -5\n
+      \nUtilisez l\'Acte 2 - ”Les Vrais Méchants” (v. II)</string>
+    <string name="unspeakable_additional_one_constance">Selon le niveau de difficulté, ajoutez le pion Chaos suivant à la 
+		réserve du Chaos pour le reste de la campagne : \n
+    \n\t\t<b>Facile:</b> -2\n
+    \n\t\t<b>Standard:</b> -3\n
+    \n\t\t<b>Difficile:</b> -4\n
+    \n\t\t<b>Expert:</b> -5\n
+    \nUtilisez l\'Acte 2 - ”Les Vrais Méchants” (v. I)</string>
+    \nChaque investigateur place la carte du dessus de son deck face cachée dans sa zone de jeu, sans la regarder.
+		Traitez cette carte comme un soutien <b><i>Courage</i></b> ayant un coût de 0, aucune icône et 2 de santé mentale.
+		Défaussez cette carte si elle quitte le jeu pour quelque raison que ce soit.</string>
+    <string name="unspeakable_additional_two_constance">Selon le niveau de difficulté, ajoutez le pion Chaos suivant à la 
+		réserve du Chaos pour le reste de la campagne : \n
+    \n\t\t<b>Facile:</b> -2\n
+    \n\t\t<b>Standard:</b> -3\n
+    \n\t\t<b>Difficile:</b> -4\n
+    \n\t\t<b>Expert:</b> -5\n
+     \nUtilisez l\'Acte 2 - ”Les Vrais Méchants” (v. II)</string>
+    \nChaque investigateur place la carte du dessus de son deck face cachée dans sa zone de jeu, sans la regarder.
+		Traitez cette carte comme un soutien <b><i>Courage</i></b> ayant un coût de 0, aucune icône et 2 de santé mentale.
+		Défaussez cette carte si elle quitte le jeu pour quelque raison que ce soit.</string>
+
+		
     <!--Scenario resolutions-->
     <string name="curtain_no_resolution">Une fois encore, vous vous réveillez en sursaut. Cette fois, ce sont les
 		doigts froids et moites d’une main sur votre épaule qui vous ont réveillé. « Vous allez bien ? », demande
@@ -598,6 +776,102 @@
 		et vous entendez une voix l\'appeler. « Daniel, il est l\'heure », dit-elle. « Daniel, réveille-toi.
         Réveille-toi, Daniel. »
 		Et vous vous réveillez.\n
-    \n<b>Retiez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 1 pion Cultiste,
-		1 pion Tablette et 1 pion Chose Ancienne dans la réserve du Chaos.</b></string>																													
+    \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 1 pion Cultiste,
+		1 pion Tablette et 1 pion Chose Ancienne dans la réserve du Chaos.</b></string>	
+
+ <string name="unspeakable_resolution_one">…Et ainsi s\'acheva la folie du <i>Roi en Jaune.</i>\n
+    \n<b>Retirez tous les pions Cultiste, Tablette et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Cultiste
+		dans la réserve du Chaos.</b></string>
+    <string name="unspeakable_resolution_one_defeated"><b>Investigateurs Vaincus:</b>\n
+    \n“Doctor Mintz, le patient a été traité et il est maintenant prêt à vous voir.” l\'infirmière Heather ouvrit le 
+		classeur sur le bureau et prit un moment pour passer en revue les dossiers des patients.\n
+    \n“Des changements dans l\'état du patient ?”, demanda le docteur d\'une voix monotone. Simple habitude. Tous deux
+		savaient que les patients ne guérissaient pas.\n
+    \n“Aucun. Les hallucinations du patient subsistent. Il demande à voir le Directeur et maintient qu\'il n\'était ici 
+		qu\'un simple visiteur. Il divague également à propose de la pièce de théâtre qui a été jouée l\'autre jour :
+		<i>The King in Yellow</i>.”\n
+    \n“Et leurs autres crimes ? l\'incident au théâtre ? Les événements du 1452 Atlantic Avenue ?”\n
+    \n“Il croit avoir été attaqué et s\'être simplement défendu.” Sa voix était pleine de compassion. Comment quelqu\'un
+		avait-il pu sombrer si vite dans la folie ? Le dossier du patient ne mentionnait aucun antécédent d\'instabilité mentale.
+		“Comment expliquer cela, docteur?”\n
+    \n“Qui peut le dire ?” Le docteur Mintz poussa un soupir et se leva, attrapant le dossier sur son bureau. “Mon travail
+		n\'est pas de comprendre, mais de soigner. Peut-être que mes traitements expérimentaux fonctionneront sur celui-là.
+		L\'infirmière tressaillit et réprima un frisson. Elle savait comment finissaient ces traitements, et elle doutait
+		que quoi que ce soit fonctionne.\n
+        \n<b>Chaque investigateur qui a été vaincu devient dément.</b>\n
+    \n<b>Investigateurs survivants :</b>\n
+    \n…Et ainsi s\'acheva la folie du <i>Roi en Jaune.</i>\n
+    \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Cultiste
+		dans la réserve du Chaos.</b></string>
+    <string name="unspeakable_resolution_two">Vous êtes cerné par les aides-soignants et les gardes de sécurité. Vous n\'avez
+	d\'autre choix que de vous battre pour vous frayer un chemin vers la liberté. Tandis que vous vous ruez vers la sortie, plusieurs
+	patients voient là une opportunité et se mettent à attaquer les gardes avec une folie furieuse. l\'infirmière Heather hurle
+	et bat en retraite, et vous profitez de tout ce tapage pour vous enfuir. Vous êtes couvert de bleus mais de nouveau libre.
+	Vous mettrez un moment à vous remettre de vos blessures, mais vous n\'avez pas le temps de vous appesantir là-dessus.\n
+    \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Tablette
+		dans la réserve du Chaos.</b></string>
+    <string name="unspeakable_resolution_two_defeated"><b>Investigateurs Vaincus:</b>\n
+   \n“Doctor Mintz, le patient a été traité et il est maintenant prêt à vous voir.” l\'infirmière Heather ouvrit le 
+		classeur sur le bureau et prit un moment pour passer en revue les dossiers des patients.\n
+    \n“Des changements dans l\'état du patient ?”, demanda le docteur d\'une voix monotone. Simple habitude. Tous deux
+		savaient que les patients ne guérissaient pas.\n
+    \n“Aucun. Les hallucinations du patient subsistent. Il demande à voir le Directeur et maintient qu\'il n\'était ici 
+		qu\'un simple visiteur. Il divague également à propose de la pièce de théâtre qui a été jouée l\'autre jour :
+		<i>The King in Yellow</i>.”\n
+    \n“Et leurs autres crimes ? l\'incident au théâtre ? Les événements du 1452 Atlantic Avenue ?”\n
+    \n“Il croit avoir été attaqué et s\'être simplement défendu.” Sa voix était pleine de compassion. Comment quelqu\'un
+		avait-il pu sombrer si vite dans la folie ? Le dossier du patient ne mentionnait aucun antécédent d\'instabilité mentale.
+		“Comment expliquer cela, docteur?”\n
+    \n“Qui peut le dire ?” Le docteur Mintz poussa un soupir et se leva, attrapant le dossier sur son bureau. “Mon travail
+		n\'est pas de comprendre, mais de soigner. Peut-être que mes traitements expérimentaux fonctionneront sur celui-là.
+		L\'infirmière tressaillit et réprima un frisson. Elle savait comment finissaient ces traitements, et elle doutait
+		que quoi que ce soit fonctionne.\n
+        \n<b>Chaque investigateur qui a été vaincu devient dément.</b>\n
+    \n<b>Investigateurs survivants :</b>\n
+    \nVous êtes cerné par les aides-soignants et les gardes de sécurité. Vous n\'avez
+	d\'autre choix que de vous battre pour vous frayer un chemin vers la liberté. Tandis que vous vous ruez vers la sortie, plusieurs
+	patients voient là une opportunité et se mettent à attaquer les gardes avec une folie furieuse. l\'infirmière Heather hurle
+	et bat en retraite, et vous profitez de tout ce tapage pour vous enfuir. Vous êtes couvert de bleus mais de nouveau libre.
+	Vous mettrez un moment à vous remettre de vos blessures, mais vous n\'avez pas le temps de vous appesantir là-dessus.\n
+    \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Tablette
+		dans la réserve du Chaos.</b></string>
+	<string name="unspeakable_resolution_three">Entre la distraction du personnel de l\'asile et les patients qui courent
+		dans tous les sens, vous parvenez à vous éclipser sans être remarqué. Vous vous enfoncez profondément dans le jardin
+		derrière l\'asile, où une immense clôture couverte de fil barbelé est tout ce qui vous séparer du monde extérieur.
+		Le temps presse, et vous devez fuit le plus loin possible avant que les gardes ne reviennent et ne vous repèrent. 
+		Utilisant une camisole de force trouvée à l\'intérieur pour couvrir les barbelés, vous escaladez prestement la clôture
+		et détalez à toutes jambes une fois de l\'autre côté.\n
+    \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Chose Ancienne
+		dans la réserve du Chaos.</b></string>
+			
+    <string name="unspeakable_resolution_three_defeated"><b>Investigateurs Vaincus:</b>\n
+     \n“Doctor Mintz, le patient a été traité et il est maintenant prêt à vous voir.” l\'infirmière Heather ouvrit le 
+		classeur sur le bureau et prit un moment pour passer en revue les dossiers des patients.\n
+    \n“Des changements dans l\'état du patient ?”, demanda le docteur d\'une voix monotone. Simple habitude. Tous deux
+		savaient que les patients ne guérissaient pas.\n
+    \n“Aucun. Les hallucinations du patient subsistent. Il demande à voir le Directeur et maintient qu\'il n\'était ici 
+		qu\'un simple visiteur. Il divague également à propose de la pièce de théâtre qui a été jouée l\'autre jour :
+		<i>The King in Yellow</i>.”\n
+    \n“Et leurs autres crimes ? l\'incident au théâtre ? Les événements du 1452 Atlantic Avenue ?”\n
+    \n“Il croit avoir été attaqué et s\'être simplement défendu.” Sa voix était pleine de compassion. Comment quelqu\'un
+		avait-il pu sombrer si vite dans la folie ? Le dossier du patient ne mentionnait aucun antécédent d\'instabilité mentale.
+		“Comment expliquer cela, docteur?”\n
+    \n“Qui peut le dire ?” Le docteur Mintz poussa un soupir et se leva, attrapant le dossier sur son bureau. “Mon travail
+		n\'est pas de comprendre, mais de soigner. Peut-être que mes traitements expérimentaux fonctionneront sur celui-là.
+		L\'infirmière tressaillit et réprima un frisson. Elle savait comment finissaient ces traitements, et elle doutait
+		que quoi que ce soit fonctionne.\n
+        \n<b>Chaque investigateur qui a été vaincu devient dément.</b>\n
+    \n<b>Investigateurs survivants :</b>\n
+    \nEntre la distraction du personnel de l\'asile et les patients qui courent
+		dans tous les sens, vous parvenez à vous éclipser sans être remarqué. Vous vous enfoncez profondément dans le jardin
+		derrière l\'asile, où une immense clôture couverte de fil barbelé est tout ce qui vous séparer du monde extérieur.
+		Le temps presse, et vous devez fuit le plus loin possible avant que les gardes ne reviennent et ne vous repèrent. 
+		Utilisant une camisole de force trouvée à l\'intérieur pour couvrir les barbelés, vous escaladez prestement la clôture
+		et détalez à toutes jambes une fois de l\'autre côté.\n
+    \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Chose Ancienne
+		dans la réserve du Chaos.</b></string>
+	<string
+        name="unspeakable_resolution_onyx"><b>Choisissez un nouvel investigateur qui doit inclure la faiblesse Broche d\'Onyx Noir 
+			dans son deck.</b></string>						
+							
 </resources>

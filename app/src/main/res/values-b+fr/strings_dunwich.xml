@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<ressources>
     <string name="dunwich_campaign">L\'Héritage de Dunwich</string>
     <string name="dunwich_scenario_one">Scénario 1-A: Activité Extrascolaire</string>
     <string name="dunwich_scenario_two">Scénario 1-B: La Banque Gagne Toujours</string>
@@ -89,6 +89,87 @@
         avec la réalité.\n\n</string>
     <string name="closed_tear">Les investigateurs ont fermé la faille dans la réalité.\n\n</string>
     <string name="yog_fled">Yog-Sothoth a fui vers une autre dimension.\n\n</string>
+	
+	
+	<!--Chaos bag-->
+    <string name="extracurricular_skull_one">-1. En cas d\'échec, défaussez les 3 cartes du dessus de votre deck.</string>
+    <string name="extracurricular_skull_two">-2. En cas d\'échec, défaussez les 5 cartes du dessus de votre deck.</string>
+    <string name="extracurricular_cultist_one">-1 (-3 à la place s\'il y a au moins 10 cartes dans votre pile de défausse).</string>
+    <string name="extracurricular_cultist_two">-1 (-5 à la place s\'il y a au moins 10 cartes dans votre pile de défausse).</string>
+    <string name="extracurricular_thing_one">-X. Défaussez les 2 cartes du dessus de votre deck. X est la somme des coûts imprimés de ces cartes défaussées.</string>
+    <string name="extracurricular_thing_two">-X. Défaussez les 3 cartes du dessus de votre deck.X est la somme des coûts imprimés de ces cartes défaussées.</string>
+
+    <string name="house_skull_one">-2. Vous avez le droit de dépenser 2 ressources pour traiter ce pion comme étant un 0 à la place.</string>
+    <string name="house_skull_two">-3. Vous avez le droit de dépenser 3 ressources pour traiter ce pion comme étant un 0 à la place.</string>
+    <string name="house_cultist_one">-3. En cas de réussite, gagnez 3 ressources.</string>
+    <string name="house_cultist_two">-3. En cas d\'échec, défaussez 3 ressources.</string>
+    <string name="house_tablet_one">-2. En cas d\'échec, défaussez 3 ressources.</string>
+    <string name="house_tablet_two">-2. Défaussez 3 ressources.</string>
+
+    <string name="miskatonic_skull_one">-1 (-3 à la place si l\'Horreur Chasseresse est dans votre lieu.)</string>
+    <string name="miskatonic_skull_two">-2 (-4 à la place si l\'Horreur Chasseresse est dans votre lieu.)</string>
+    <string name="miskatonic_cultist_one">-1. En cas d\'échec, cherchez l\'Horreur Chasseresse dans le deck Rencontre, dans 
+        la pile de défausse Rencontre ou dans le Néant et générez-la dans votre lieu, si possible.</string>
+    <string name="miskatonic_cultist_two">-3. En cas d\'échec, cherchez l\'Horreur Chasseresse dans le deck Rencontre, dans 
+        la pile de défausse Rencontre ou dans le Néant et générez-la dans votre lieu, si possible.</string>
+    <string name="miskatonic_tablet_one">-2. Remettez 1 de vos indices sur votre lieu actuel</string>
+    <string name="miskatonic_tablet_two">-4. Si l\'Horreur Chasseresse est dans votre lieu, elle effectue immédiatement une attaque contre vous.</string>
+    <string name="miskatonic_thing_one">-3. En cas d\'échec, défaussez un soutien que vous contrôlez.</string>
+    <string name="miskatonic_thing_two">-5. En cas d\'échec, défaussez un soutien que vous contrôlez.</string>
+
+    <string name="essex_skull_one">-X. X est le n° de l\'intrigue en cours.</string>
+    <string name="essex_skull_two">-X. X est le n° de l\'intrigue en cours plus 1.</string>
+    <string name="essex_cultist_one">-1. En cas d\'échec durant votre tour, perdez toutes vos actions restantes et terminez immédiatement votre tour.</string>
+    <string name="essex_cultist_two">Révélez un autre pion. En cas d\'échec durant votre tour, perdez toutes vos actions restantes et terminez immédiatement votre tour.</string>
+    <string name="essex_tablet_one">-2. Placez 1 fatalité sur l\'ennemi <i><b>Cultiste</b></i> le plus proche.</string>
+    <string name="essex_tablet_two">-4. Placez 1 fatalité sur chaque ennemi <i><b>Cultiste</b></i> en jeu.</string>
+    <string name="essex_thing_one">-3. En cas d\'échec, choisissez et défaussez une carte de votre main.</string>
+    <string name="essex_thing_two">-3. En cas d\'échec, choisissez et défaussez une carte de votre main pour chaque point manquant.</string>
+
+    <string name="blood_skull_one">-1 pour chaque lieu en jeu sans carte Rencontre sous lui (-4 max).</string>
+    <string name="blood_skull_two">-1 pour chaque lieu en jeu sans carte Rencontre sous lui.</string>
+    <string name="blood_cultist_one">-2. En cas d\'échec, placez sur votre lieu 1 indice de la réserve de pions.</string>
+    <string name="blood_cultist_two">-4. En cas d\'échec, placez sur votre lieu 1 indice de la réserve de pions.</string>
+    <string name="blood_tablet_one">-2. Si vous êtes dans La Chambre Cachée, révélez un autre pion Chaos.</string>
+    <string name="blood_tablet_two">-3. Révélez un autre pion Chaos.</string>
+    <string name="blood_thing_one">-3. En cas d\'échec, placez 1 fatalité sur l\'intrigue en cours.</string>
+    <string name="blood_thing_two">-3. Placez 1 fatalité sur l\'intrigue en cours.</string>
+
+    <string name="undimensioned_skull_one">-1 pour chaque Rejeton de Yog-Sothoth en jeu.</string>
+    <string name="undimensioned_skull_two">-2 pour chaque Rejeton de Yog-Sothoth en jeu.</string>
+    <string name="undimensioned_cultist_one">Révélez un autre pion Chaos. En cas d\'échec, subissez 1 horreur.</string>
+    <string name="undimensioned_cultist_two">Révélez un autre pion Chaos. En cas d\'échec, subissez 1 horreur et 1 dégât.</string>
+    <string name="undimensioned_tablet_one">0. Soit vous retirez tous les pions Indice sur un Rejeton de Yog-Sothoth en jeu, 
+        soit ce modificateur est de -4 à la place de 0.</string>
+    <string name="undimensioned_tablet_two">0. Soit vous retirez tous les pions Indice sur un Rejeton de Yog-Sothoth en jeu, 
+         soit ce test échoue automatiquement.</string>
+    <string name="undimensioned_thing_one">-3. Si ce pion est révélé pendant une attaque ou une tentative d\'évasion contre 
+       un Rejeton de Yog-Sothoth, il effectue immédiatement une attaque contre vous.</string>
+    <string name="undimensioned_thing_two">-5. Si ce pion est révélé pendant une attaque ou une tentative d\'évasion contre 
+       un Rejeton de Yog-Sothoth, il effectue immédiatement une attaque contre vous.</string>
+
+    <string name="doom_skull_one">-1 (-3 à la place si vous êtes dans un lieu <b><i>Altéré</i></b>).</string>
+    <string name="doom_skull_two">-2 (-5 à la place si vous êtes dans un lieu <b><i>Altéré</i></b>).</string>
+    <string name="doom_cultist_one">Révélez un autre pion. Annulez les effets et les icônes de chaque carte Compétence attribuée à ce test.</string>
+    <string name="doom_cultist_two">Révélez un autre pion. Annulez les effets et les icônes de chaque carte Compétence attribuée à ce test.</string>
+    <string name="doom_tablet_one">-2 (-4 à la place si vous êtes à l\'Intrigue 2).</string>
+    <string name="doom_tablet_two">-3. Si vous êtes à l\'Intrigue 2, vous échouez automatiquement à la place.</string>
+    <string name="doom_thing_one">-X. Défaussez les 2 cartes du dessus de votre deck. X est la somme des coûts imprimés de ces cartes défaussées.</string>
+    <string name="doom_thing_two">-X. Défaussez les 3 cartes du dessus de votre deck. X est la somme des coûts imprimés de ces cartes défaussées.</string>
+
+    <string name="lost_skull_one">-1 pour chaque lieu <b><i>Extradimensionnel</i></b> en jeu (-5 max).</string>
+    <string name="lost_skull_two">-1 pour chaque lieu <b><i>Extradimensionnel</i></b> en jeu.</string>
+    <string name="lost_cultist_one">Révélez un autre pion. En cas d\'échec, après ce test de compétence, défaussez des cartes du 
+		dessus du deck Rencontre jusqu\'à ce qu\'un lieu soit défaussé. Mettez-le en jeu et déplacez-vous-y.</string>
+    <string name="lost_cultist_two">Révélez un autre pion. Après ce test de compétence, défaussez des cartes du 
+		dessus du deck Rencontre jusqu\'à ce qu\'un lieu soit défaussé. Mettez-le en jeu et déplacez-vous-y.</string>
+    <string name="lost_tablet_one">-3. Si Yog-Sothoth est en jeu, il vous attaque après ce test de compétence.</string>
+    <string name="lost_tablet_two">-5. Si Yog-Sothoth est en jeu, il vous attaque après ce test de compétence.</string>
+    <string name="lost_thing_one">-X. X est la valeur occulte de votre lieu. En cas d\'échec et si votre lieu est
+        <b><i>Extradimensionnel</i></b>, défaussez-le.</string>
+    <string name="lost_thing_two">-X. X est le double de la valeur occulte de votre lieu. En cas d\'échec et si votre lieu est
+        <b><i>Extradimensionnel</i></b>, défaussez-le.</string>
+
 
 
     <!--Campaign introduction-->
@@ -793,4 +874,4 @@
     \n<b>Chaque investigateur survivant devient dément.</b>\n
     \n<b>Les investigateur ont perdu la campagne.</b></string>
 
-</resources>
+</ressources>

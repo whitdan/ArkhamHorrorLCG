@@ -29,6 +29,7 @@
     <string name="insane">Dément</string>
     <string name="physical_trauma">Trauma. Physiques: </string>
     <string name="mental_trauma">Trauma. Mentaux: </string>
+	<string name="total_xp">Total EXP: </string>										   
     <string name="available_xp">EXP disponible: </string>
     <string name="xp_spent">EXP dépensée: </string>
 
