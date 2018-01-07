@@ -130,5 +130,7 @@ public class ArkhamContract {
         public static final String COLUMN_ASYLUM = "asylum";
         public static final String COLUMN_DANIEL = "daniel";
         public static final String COLUMN_DANIELS_WARNING = "daniels_warning";
+        public static final String COLUMN_DREAMS = "dreams_action";
+        public static final String COLUMN_NIGEL = "nigel";
     }
 }

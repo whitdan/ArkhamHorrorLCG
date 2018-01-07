@@ -497,6 +497,32 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                             }
                         }
                         break;
+                    case 7:
+                        title.setText(R.string.carcosa_scenario_five);
+                        sets.setText(R.string.phantom_sets);
+                        setsImage.setImageResource(R.drawable.phantom_sets);
+                        if (globalVariables.Jordan == 1 || globalVariables.Jordan == 4) {
+                            locations.setText(R.string.phantom_locations_two);
+                        } else {
+                            locations.setText(R.string.phantom_locations_one);
+                        }
+                        locationPlacement.setVisibility(VISIBLE);
+                        locationPlacement.setImageResource(R.drawable.phantom_locations);
+                        setAside.setText(R.string.phantom_set_aside);
+                        if (globalVariables.Doubt >= globalVariables.Conviction) {
+                            if (globalVariables.Jordan == 1 || globalVariables.Jordan == 4) {
+                                additional.setText(R.string.phantom_additional_one_jordan);
+                            } else {
+                                additional.setText(R.string.phantom_additional_one);
+                            }
+                        } else if (globalVariables.Conviction > globalVariables.Doubt) {
+                            if (globalVariables.Jordan == 1 || globalVariables.Jordan == 4) {
+                                additional.setText(R.string.phantom_additional_two_jordan);
+                            } else {
+                                additional.setText(R.string.phantom_additional_two);
+                            }
+                        }
+                        break;
                 }
                 break;
         }

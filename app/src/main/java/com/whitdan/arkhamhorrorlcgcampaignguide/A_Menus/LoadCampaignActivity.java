@@ -577,7 +577,9 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         ArkhamContract.CarcosaEntry.COLUMN_ONYX,
                         ArkhamContract.CarcosaEntry.COLUMN_ASYLUM,
                         ArkhamContract.CarcosaEntry.COLUMN_DANIEL,
-                        ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING
+                        ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING,
+                        ArkhamContract.CarcosaEntry.COLUMN_DREAMS,
+                        ArkhamContract.CarcosaEntry.COLUMN_NIGEL
                 };
                 String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " = ?";
                 Cursor carcosaCursor = db.query(
@@ -622,6 +624,10 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             (ArkhamContract.CarcosaEntry.COLUMN_DANIEL)));
                     globalVariables.DanielsWarning=(carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
                             .CarcosaEntry.COLUMN_DANIELS_WARNING)));
+                    globalVariables.DreamsAction=(carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
+                            (ArkhamContract.CarcosaEntry.COLUMN_DREAMS)));
+                    globalVariables.Nigel=(carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_NIGEL)));
                 }
                 carcosaCursor.close();
             }

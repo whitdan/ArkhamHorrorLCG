@@ -43,8 +43,14 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         title.setTypeface(teutonic);
         TextView introduction = findViewById(R.id.introduction_text);
+        TextView introductionA = findViewById(R.id.introduction_text_one);
+        TextView introductionB = findViewById(R.id.introduction_text_two);
+        TextView introductionC = findViewById(R.id.introduction_text_three);
         Typeface arnoproitalic = Typeface.createFromAsset(getAssets(), "fonts/arnoproitalic.otf");
         introduction.setTypeface(arnoproitalic);
+        introductionA.setTypeface(arnoproitalic);
+        introductionB.setTypeface(arnoproitalic);
+        introductionC.setTypeface(arnoproitalic);
         final TextView introductionOne = findViewById(R.id.introduction_text_additional_one);
         TextView introductionTwo = findViewById(R.id.introduction_text_additional_two);
         TextView introductionThree = findViewById(R.id.introduction_text_additional_three);
@@ -187,7 +193,80 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                             introductionOne.setVisibility(VISIBLE);
                             introductionOne.setText(R.string.unspeakable_introduction_constance);
                         }
-
+                        break;
+                    case 7:
+                        title.setText(R.string.carcosa_scenario_five);
+                        if (globalVariables.Asylum == 1) {
+                            introduction.setText(R.string.dream_one_one);
+                        } else {
+                            introduction.setText(R.string.dream_one_two);
+                        }
+                        if (globalVariables.Asylum == 1) {
+                            introductionB.setVisibility(VISIBLE);
+                            introductionB.setText(R.string.dream_eight);
+                        } else {
+                            introductionA.setVisibility(VISIBLE);
+                            introductionB.setVisibility(VISIBLE);
+                            if (globalVariables.Party == 1) {
+                                introductionA.setText(R.string.dream_three_six);
+                            } else if (globalVariables.Party == 3) {
+                                introductionA.setText(R.string.dream_four_six);
+                                if (globalVariables.DreamsAction == 0) {
+                                    for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                        globalVariables.Investigators.get(i).Horror += 1;
+                                    }
+                                }
+                            } else {
+                                introductionA.setText(R.string.dream_six);
+                            }
+                            if (globalVariables.Police == 2) {
+                                introductionB.setText(R.string.dream_seven_eight);
+                            } else {
+                                introductionB.setText(R.string.dream_eight);
+                            }
+                        }
+                        introductionC.setVisibility(VISIBLE);
+                        if (globalVariables.ChasingStranger < 4) {
+                            introductionC.setText(R.string.dream_nine_awake);
+                            globalVariables.DreamsAction = 1;
+                        } else {
+                            introductionC.setText(R.string.dream_ten);
+                            introductionOptions.setVisibility(VISIBLE);
+                            introductionOptionOne.setText(R.string.dream_ten_option_one);
+                            introductionOptionTwo.setText(R.string.dream_ten_option_two);
+                            introductionOptions.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                                @Override
+                                public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                                    introductionOne.setVisibility(VISIBLE);
+                                    switch (i) {
+                                        case R.id.introduction_option_one:
+                                            introductionOne.setText(R.string.dream_eleven_awake);
+                                            if (globalVariables.DreamsAction == 3) {
+                                                globalVariables.Doubt += -1;
+                                            }
+                                            if (globalVariables.DreamsAction != 2) {
+                                                globalVariables.DreamsAction = 2;
+                                                globalVariables.Conviction += 1;
+                                            }
+                                            break;
+                                        case R.id.introduction_option_two:
+                                            introductionOne.setText(R.string.dream_twelve_awake);
+                                            if (globalVariables.DreamsAction == 2) {
+                                                globalVariables.Conviction += -1;
+                                            }
+                                            if (globalVariables.DreamsAction != 3) {
+                                                globalVariables.DreamsAction = 3;
+                                                globalVariables.Doubt += 1;
+                                            }
+                                            break;
+                                    }
+                                }
+                            });
+                        }
+                        if (globalVariables.Jordan == 1 || globalVariables.Jordan == 4) {
+                            introductionTwo.setVisibility(VISIBLE);
+                            introductionTwo.setText(R.string.dream_jordan);
+                        }
                 }
                 break;
         }
@@ -221,6 +300,11 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (globalVariables.CurrentCampaign == 2 && globalVariables.CurrentScenario == 8 && globalVariables
                         .TownsfolkAction == 0) {
+                    Toast toast = Toast.makeText(ScenarioIntroductionActivity.this, R.string.must_option, Toast
+                            .LENGTH_SHORT);
+                    toast.show();
+                } else if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 7 &&
+                        globalVariables.DreamsAction == 0) {
                     Toast toast = Toast.makeText(ScenarioIntroductionActivity.this, R.string.must_option, Toast
                             .LENGTH_SHORT);
                     toast.show();

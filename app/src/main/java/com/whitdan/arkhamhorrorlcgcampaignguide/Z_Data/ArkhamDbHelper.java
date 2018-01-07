@@ -22,7 +22,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 19;
+    private static final int DATABASE_VERSION = 20;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -143,7 +143,9 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + ArkhamContract.CarcosaEntry.COLUMN_ONYX + " INTEGER, "
                 + ArkhamContract.CarcosaEntry.COLUMN_ASYLUM + " INTEGER, "
                 + ArkhamContract.CarcosaEntry.COLUMN_DANIEL + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING + " INTEGER);";
+                + ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING + " INTEGER, "
+                + ArkhamContract.CarcosaEntry.COLUMN_DREAMS + " INTEGER NOT NULL, "
+                + ArkhamContract.CarcosaEntry.COLUMN_NIGEL + " INTEGER);";
 
         // Execute the SQL statements
         db.execSQL(SQL_CREATE_CAMPAIGNS_TABLE);
@@ -231,7 +233,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
             case 9:
                 String SQL_UPGRADE_EIGHT_ONE = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
                         CampaignEntry
-                        .COLUMN_DIFFICULTY + " INTEGER";
+                                .COLUMN_DIFFICULTY + " INTEGER";
                 String SQL_UPGRADE_EIGHT_TWO = "ALTER TABLE " + DunwichEntry.TABLE_NAME + " ADD COLUMN " +
                         DunwichEntry.COLUMN_ADAM_LYNCH_HAROLD_WALSTED + " INTEGER";
                 String SQL_UPGRADE_EIGHT_SIX = "ALTER TABLE " + DunwichEntry.TABLE_NAME + " ADD COLUMN " +
@@ -292,7 +294,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_CREATE_CARCOSA_TABLE);
             case 15:
                 String SQL_UPGRADE_THIRTEEN_ONE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                    "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DOUBT + " INTEGER";
+                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DOUBT + " INTEGER";
                 String SQL_UPGRADE_THIRTEEN_TWO = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_CONVICTION + " INTEGER";
                 String SQL_UPGRADE_THIRTEEN_THREE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
@@ -354,6 +356,13 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_SIXTEEN_ONE);
                 db.execSQL(SQL_UPGRADE_SIXTEEN_TWO);
                 db.execSQL(SQL_UPGRADE_SIXTEEN_THREE);
+            case 19:
+                String SQL_UPGRADE_SEVENTEEN_ONE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DREAMS + " INTEGER NOT NULL DEFAULT 0";
+                String SQL_UPGRADE_SEVENTEEN_TWO = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_NIGEL + " INTEGER";
+                db.execSQL(SQL_UPGRADE_SEVENTEEN_ONE);
+                db.execSQL(SQL_UPGRADE_SEVENTEEN_TWO);
         }
     }
 }

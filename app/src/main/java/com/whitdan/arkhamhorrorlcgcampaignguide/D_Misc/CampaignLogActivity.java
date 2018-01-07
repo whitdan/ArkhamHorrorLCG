@@ -575,6 +575,23 @@ public class CampaignLogActivity extends AppCompatActivity {
                         break;
                 }
             }
+            // Phantom of Truth
+            if(scenario > 7){
+                switch(globalVariables.Nigel){
+                    case 0:
+                        carcosaBuilder.append(R.string.not_escape_gaze);
+                        break;
+                    case 1:
+                        carcosaBuilder.append(R.string.found_nigel_home);
+                        break;
+                    case 2:
+                        carcosaBuilder.append(R.string.found_nigel_engram);
+                        break;
+                    case 3:
+                        carcosaBuilder.append(R.string.unable_find_nigel);
+                        break;
+                }
+            }
 
             String carcosaLogText = carcosaBuilder.toString().trim();
             carcosaLog.setText(carcosaLogText);

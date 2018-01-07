@@ -699,7 +699,7 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     private void setupScenarioCard(Activity activity){
         LinearLayout scenarioLayout = activity.findViewById(R.id.scenario_card_layout);
-        if(globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario > 4){
+        if(globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario > 7){
             scenarioLayout.setVisibility(GONE);
         }
         LinearLayout skullLayout = activity.findViewById(R.id.skull_layout);
@@ -920,6 +920,20 @@ public class ChaosBagActivity extends AppCompatActivity {
                             tablet.setText(R.string.unspeakable_tablet_two);
                             thing.setText(R.string.unspeakable_thing_two);
                         }
+                        break;
+                    case 7:
+                        if(globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1){
+                            skull.setText(R.string.phantom_skull_one);
+                            cultist.setText(R.string.phantom_cultist_one);
+                            tablet.setText(R.string.phantom_tablet_one);
+                            thing.setText(R.string.phantom_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3){
+                            skull.setText(R.string.phantom_skull_two);
+                            cultist.setText(R.string.phantom_cultist_two);
+                            tablet.setText(R.string.phantom_tablet_two);
+                            thing.setText(R.string.phantom_thing_two);
+                        }
+                        break;
                 }
                 break;
         }

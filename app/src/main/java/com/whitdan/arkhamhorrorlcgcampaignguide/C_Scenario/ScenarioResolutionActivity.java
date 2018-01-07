@@ -355,6 +355,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     case 5:
                         resolutionThree.setVisibility(VISIBLE);
                         break;
+                    case 7:
+                        resolutionThree.setVisibility(VISIBLE);
                 }
                 break;
         }
@@ -947,6 +949,11 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         additionalCheckboxTwo.setVisibility(VISIBLE);
                         additionalCheckboxTwo.setText(R.string.daniel_chesterfield_inplay);
                         break;
+                    case 7:
+                        if(globalVariables.Jordan == 0 || globalVariables.Jordan == 1 || globalVariables.Jordan == 3){
+                            additionalCheckbox.setVisibility(VISIBLE);
+                            additionalCheckbox.setText(R.string.jordan_victory);
+                        }
                 }
                 break;
         }
@@ -1826,6 +1833,23 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     } else {
                                         resolutionTextView.setText(R.string.unspeakable_resolution_three);
                                     }
+                                    break;
+                            }
+                            break;
+                        // Phantom of Truth
+                        case 7:
+                            switch(globalVariables.ScenarioResolution){
+                                case 0:
+                                    resolutionTextView.setText(R.string.phantom_no_resolution);
+                                    break;
+                                case 1:
+                                    resolutionTextView.setText(R.string.phantom_resolution_one);
+                                    break;
+                                case 2:
+                                    resolutionTextView.setText(R.string.phantom_resolution_two);
+                                    break;
+                                case 3:
+                                    resolutionTextView.setText(R.string.phantom_resolution_three);
                                     break;
                             }
                             break;
@@ -2948,7 +2972,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             case 2:
                                 globalVariables.Onyx = 2;
                                 globalVariables.Doubt += 1;
-                                globalVariables.Theatre = 2;
+                                globalVariables.Theatre = 3;
                                 for (int i = 0; i < globalVariables.Investigators.size(); i++) {
                                     globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
                                 }
@@ -2985,6 +3009,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         if(additionalCheckboxTwo.isChecked()){
                             if(globalVariables.Onyx == 1){
                                 globalVariables.Daniel = 1;
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).AvailableXP += 2;
+                                }
                             } else {
                                 globalVariables.Daniel = 2;
                             }
@@ -3015,6 +3042,40 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 break;
                             case 3:
                                 globalVariables.Asylum = 3;
+                                globalVariables.Theatre = 3;
+                                break;
+                        }
+                        break;
+                    // Phantom of Truth
+                    case 7:
+                        if (additionalCheckbox.isChecked()) {
+                            if (globalVariables.Jordan == 0) {
+                                globalVariables.Jordan = 1;
+                            } else if (globalVariables.Jordan == 1) {
+                                globalVariables.Jordan = 4;
+                            } else if (globalVariables.Jordan == 3) {
+                                globalVariables.Jordan = 5;
+                            }
+                        }
+                        globalVariables.Nigel = globalVariables.ScenarioResolution;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                        }
+                        switch(globalVariables.ScenarioResolution){
+                            case 0:
+                                globalVariables.Theatre = 3;
+                                break;
+                            case 1:
+                                globalVariables.Theatre = 1;
+                                break;
+                            case 2:
+                                globalVariables.Theatre = 2;
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).Horror += 1;
+                                    globalVariables.Investigators.get(i).AvailableXP += 2;
+                                }
+                                break;
+                            case 3:
                                 globalVariables.Theatre = 3;
                                 break;
                         }
@@ -3316,6 +3377,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_ASYLUM, globalVariables.Asylum);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_DANIEL, globalVariables.Daniel);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING, globalVariables.DanielsWarning);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_DREAMS, globalVariables.DreamsAction);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_NIGEL, globalVariables.Nigel);
 
             String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " LIKE ?";
             String[] carcosaSelectionArgs = {Long.toString(globalVariables.CampaignID)};

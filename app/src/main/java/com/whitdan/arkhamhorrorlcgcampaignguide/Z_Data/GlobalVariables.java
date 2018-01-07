@@ -91,9 +91,11 @@ public class GlobalVariables extends Application {
     public int Theatre;     // Only used for chaos bag (1 = 2 cultists, 2 = 2 tablets, 3 = 2 things, 4 = 1 each)
     public int Party;
     public int Onyx;
-    public int Asylum; //*
-    public int Daniel; //*
-    public int DanielsWarning; //*
+    public int Asylum;
+    public int Daniel;
+    public int DanielsWarning;
+    public int DreamsAction; //*   // 0 = not set
+    public int Nigel; //*
 
     // VIPS - 0 = not interviewed or killed, 1 = interviewed, 2 = killed, 3 = interviewed (crossed out), 4 =
     // interviewed and killed, 5 = interviewed (crossed out) and killed
