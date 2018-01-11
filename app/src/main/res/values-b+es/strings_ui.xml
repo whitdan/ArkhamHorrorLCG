@@ -113,7 +113,7 @@
     <string name="finish_scenario">Terminar escenario</string>
     <string name="select_lead_investigator">Seleccionar investigador jefe</string>
     <string name="confirm_finish_scenario">¿Terminar el escenario y guardar la campaña?</string>
-    <string name="investigator_weaknesses">Debilidades de investig.</string>
+    <string name="investigator_weaknesses">Debilidades investigador</string>
 
 
     <!--Difficulties-->
@@ -127,8 +127,8 @@
     <string name="add_token">Añadir</string>
     <string name="skull">Calavera</string>
     <string name="cultist">Sectario</string>
-    <string name="tablet">Tablilla</string>
-    <string name="elder_thing">Primigenio</string>
+    <string name="tablet">Lápida</string>
+    <string name="elder_thing">Antiguo</string>
     <string name="tentacles">Tentáculos</string>
     <string name="elder_sign">Símbolo Arcano</string>
 
