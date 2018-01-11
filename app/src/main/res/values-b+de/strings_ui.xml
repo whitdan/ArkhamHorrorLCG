@@ -66,9 +66,9 @@
     <string name="finish_save_campaign">Kampagne beenden und speichern</string>
 
     <string name="player_cards">Spielerkarten</string>
-    <string name="strange_solution_dialog">Du hast die Lösung identifiziert</string>
+    <string name="strange_solution_dialog">Ein Ermittler hat die Lösung identifiziert</string>
     <string name="strange_solution">Du hast die Lösung identifiziert.\n\n</string>
-    <string name="archaic_glyphs_dialog">Du hast die Glyphen übersetzt</string>
+    <string name="archaic_glyphs_dialog">Ein Ermittler hat die Glyphen übersetzt</string>
     <string name="archaic_glyphs">Du hast die Glyphen übersetzt.\n\n</string>
 
 
