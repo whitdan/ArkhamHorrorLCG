@@ -244,6 +244,9 @@ public class EditTeamActivity extends AppCompatActivity {
             savedInvestigators.addView(investigator);
             investigator.setChecked(false);
         }
+        if(savedInvestigators.getChildCount() == 0){
+            saved.setVisibility(GONE);
+        }
 
         // Set fonts to the unused investigator checkboxes
         LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
@@ -442,6 +445,17 @@ public class EditTeamActivity extends AppCompatActivity {
         if (marie == 1 || !carcosaOwned) {
             marieCheckbox.setVisibility(GONE);
         }
+
+        // Edit stats button
+        Button editStatsButton = findViewById(R.id.edit_stats_button);
+        editStatsButton.setTypeface(teutonic);
+        editStatsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EditTeamActivity.this, EditStatsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Back button
         Button backButton = findViewById(R.id.back_button);

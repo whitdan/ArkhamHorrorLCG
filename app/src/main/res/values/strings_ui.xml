@@ -30,6 +30,7 @@
     <string name="edit_team">Edit Team</string>
     <string name="scenario_resolution">Scenario Resolution</string>
     <string name="main_menu">Main\nMenu</string>
+    <string name="edit_stats">Edit Investigator Stats</string>
 
     <string name="decklist">Decklist</string>
     <string name="killed">Killed</string>

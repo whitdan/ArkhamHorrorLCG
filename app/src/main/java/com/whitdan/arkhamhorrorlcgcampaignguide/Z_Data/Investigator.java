@@ -60,5 +60,8 @@ public class Investigator {
     // Temp variables for when a change might be pending clicking the continue button
     public int TempStatus;      // 0 = normal, 1 = resigned, 2 = health, 3 = horror
     public int TempWeakness;    // 0 = not active, 1 = active
-
+    public int TempDamage;
+    public int TempHorror;
+    public int TempTotalXP;
+    public int TempAvailableXP;
 }
