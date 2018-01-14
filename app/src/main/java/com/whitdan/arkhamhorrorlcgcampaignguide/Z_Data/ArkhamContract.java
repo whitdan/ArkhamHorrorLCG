@@ -43,6 +43,7 @@ public class ArkhamContract {
         public static final String COLUMN_WILLIAM_INUSE = "william";
         public static final String COLUMN_LOLA_INUSE = "lola";
         public static final String COLUMN_MARIE_INUSE = "marie";
+        public static final String COLUMN_NORMAN_INUSE = "norman";
         public static final String COLUMN_ROUGAROU_STATUS = "rougarou_status";
         public static final String COLUMN_STRANGE_SOLUTION = "strange_solution";
         public static final String COLUMN_ARCHAIC_GLYPHS = "archaic_glyphs";

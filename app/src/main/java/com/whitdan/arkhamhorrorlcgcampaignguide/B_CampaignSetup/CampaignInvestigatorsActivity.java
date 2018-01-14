@@ -105,15 +105,18 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
         LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
         LinearLayout marieCheckbox = findViewById(R.id.marie_promo);
+        LinearLayout normanCheckbox = findViewById(R.id.norman_promo);
         // Hide investigators if expansion isn't owned
         String sharedPrefs = getResources().getString(R.string.shared_prefs);
         String dunwichOwnedString = getResources().getString(R.string.dunwich_setting);
         String carcosaOwnedString = getResources().getString(R.string.carcosa_setting);
         String marieOwnedString = getResources().getString(R.string.marie_lambeau);
+        String normanOwnedString = getResources().getString(R.string.norman_withers);
         SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
         boolean dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
         boolean carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
         boolean marieOwned = settings.getBoolean(marieOwnedString, false);
+        boolean normanOwned = settings.getBoolean(normanOwnedString, false);
         if (!dunwichOwned) {
             dunwichCheckboxes.setVisibility(GONE);
         }
@@ -122,6 +125,9 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         }
         if (!marieOwned){
             marieCheckbox.setVisibility(GONE);
+        }
+        if(!normanOwned){
+            normanCheckbox.setVisibility(GONE);
         }
         // Set fonts and listeners to all checkboxes
         for (int i = 0; i < coreCheckboxes.getChildCount(); i++) {
@@ -150,6 +156,13 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         }
         for (int i = 0; i < marieCheckbox.getChildCount(); i++) {
             View view = marieCheckbox.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
+                ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
+            }
+        }
+        for (int i = 0; i < normanCheckbox.getChildCount(); i++) {
+            View view = normanCheckbox.getChildAt(i);
             if (view instanceof CheckBox) {
                 ((CheckBox) view).setTypeface(arnopro);
                 ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
@@ -500,6 +513,22 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                             investigators--;
                             for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
                                 if (globalVariables.InvestigatorNames.get(i) == Investigator.MARIE_LAMBEAU) {
+                                    removeInvestigator = i;
+                                    globalVariables.InvestigatorNames.remove(i);
+                                }
+                            }
+                        }
+                        break;
+                    case R.id.norman_withers:
+                        if (isChecked && investigators < 4) {
+                            globalVariables.InvestigatorNames.add(Investigator.NORMAN_WITHERS);
+                            investigators++;
+                        } else if (isChecked) {
+                            buttonView.setChecked(false);
+                        } else {
+                            investigators--;
+                            for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                                if (globalVariables.InvestigatorNames.get(i) == Investigator.NORMAN_WITHERS) {
                                     removeInvestigator = i;
                                     globalVariables.InvestigatorNames.remove(i);
                                 }
@@ -1005,6 +1034,8 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                 .LOLA_HAYES]);
         campaignValues.put(CampaignEntry.COLUMN_MARIE_INUSE, globalVariables.InvestigatorsInUse[Investigator
                 .MARIE_LAMBEAU]);
+        campaignValues.put(CampaignEntry.COLUMN_NORMAN_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .NORMAN_WITHERS]);
         long newCampaignId = db.insert(CampaignEntry.TABLE_NAME, null, campaignValues);
         globalVariables.CampaignID = newCampaignId;
 

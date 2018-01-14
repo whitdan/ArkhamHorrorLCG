@@ -36,7 +36,7 @@ public class GlobalVariables extends Application {
     public String[] PlayerNames = new String[4];
     public String[] DeckNames = new String[4];
     public String[] DeckLists = new String[4];
-    public int[] InvestigatorsInUse = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};      // Matches up to the names in the
+    public int[] InvestigatorsInUse = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};      // Matches up to the names in the
                                                                                                 // string array
 
     /*

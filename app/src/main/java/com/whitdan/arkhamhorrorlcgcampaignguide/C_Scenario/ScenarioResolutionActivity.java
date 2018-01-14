@@ -3285,6 +3285,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 .InvestigatorsInUse[Investigator.LOLA_HAYES]);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_MARIE_INUSE, globalVariables
                 .InvestigatorsInUse[Investigator.MARIE_LAMBEAU]);
+        campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_NORMAN_INUSE, globalVariables
+                .InvestigatorsInUse[Investigator.NORMAN_WITHERS]);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_ROUGAROU_STATUS, globalVariables.Rougarou);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_STRANGE_SOLUTION, globalVariables.StrangeSolution);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_ARCHAIC_GLYPHS, globalVariables.ArchaicGlyphs);
