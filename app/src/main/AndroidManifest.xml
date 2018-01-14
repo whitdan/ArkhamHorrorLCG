@@ -88,6 +88,8 @@
         </activity>
         <activity android:name=".D_Misc.EditStatsActivity">
         </activity>
+        <activity android:name=".D_Misc.EditLogActivity">
+        </activity>
     </application>
 
 </manifest>

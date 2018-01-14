@@ -1661,6 +1661,11 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     resolutionTextView.setText(R.string.undimensioned_resolution_two);
                                     break;
                             }
+                            if (globalVariables.FrancisMorgan == 3 || globalVariables.HenryArmitage == 3 ||
+                                    globalVariables.WarrenRice == 3) {
+                                resolutionTextViewAdditional.setVisibility(VISIBLE);
+                                resolutionTextViewAdditional.setText(R.string.undimensioned_resolution_powder);
+                            }
                             break;
                         // Where Doom Awaits
                         case 9:

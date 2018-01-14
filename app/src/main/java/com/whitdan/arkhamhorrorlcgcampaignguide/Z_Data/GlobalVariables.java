@@ -42,7 +42,7 @@ public class GlobalVariables extends Application {
     /*
         Night of the Zealot variables - All of the variables associated with the Night of the Zealot campaign
      */
-    public int HouseStanding;       // 0 = burned, 1 = standing0
+    public int HouseStanding;       // 0 = burned, 1 = standing
     public int GhoulPriest;         // 0 = dead, 1 = alive
     public int LitaChantler;        // 0 = not obtained, 1 = obtained, 2 = forced to find others
     public int PastMidnight;
@@ -94,8 +94,8 @@ public class GlobalVariables extends Application {
     public int Asylum;
     public int Daniel;
     public int DanielsWarning;
-    public int DreamsAction; //*   // 0 = not set
-    public int Nigel; //*
+    public int DreamsAction;    // 0 = not set
+    public int Nigel;
 
     // VIPS - 0 = not interviewed or killed, 1 = interviewed, 2 = killed, 3 = interviewed (crossed out), 4 =
     // interviewed and killed, 5 = interviewed (crossed out) and killed

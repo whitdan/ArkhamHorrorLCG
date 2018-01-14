@@ -38,6 +38,17 @@
     <string name="umordhoth_repelled">\nThe investigators repelled Umordhoth.\n</string>
     <string name="umordhoth_sacrificed">\nThe investigators sacrificed Lita Chantler to Umordhoth.\n</string>
 
+    <!--Edit log-->
+    <string name="house_heading">Your house</string>
+    <string name="ghoul_heading">Ghoul Priest</string>
+    <string name="ghoul_priest_dead">The Ghoul Priest was killed.</string>
+    <string name="lita_heading">Lita Chantler</string>
+    <string name="lita_not_obtained">You did not join Lita to help her cause.</string>
+    <string name="lita_obtained">You joined Lita to help her cause.</string>
+    <string name="midnight_heading">Midnight</string>
+    <string name="not_past_midnight">It is not past midnight.</string>
+    <string name="conclusion">Campaign Conclusion</string>
+
 
     <!--Chaos bag-->
     <string name="gathering_skull_one">-X. X is the number of <b><i>Ghoul</i></b> enemies at your location.</string>

@@ -31,6 +31,7 @@
     <string name="scenario_resolution">Scenario Resolution</string>
     <string name="main_menu">Main\nMenu</string>
     <string name="edit_stats">Edit Investigator Stats</string>
+    <string name="edit_log">Edit Campaign Log</string>
 
     <string name="decklist">Decklist</string>
     <string name="killed">Killed</string>

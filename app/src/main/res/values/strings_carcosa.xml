@@ -69,6 +69,30 @@
     <string name="unable_find_nigel">You were unable to find Nigel.\n\n</string>
 
 
+    <!--Edit log-->
+    <string name="doubt_heading">Doubt</string>
+    <string name="conviction_heading">Conviction</string>
+    <string name="chasing_stranger_heading">Chasing the Stranger</string>
+    <string name="theatre_heading">Chaos Bag</string>
+    <string name="theatre_one">2 Cultist tokens added.</string>
+    <string name="theatre_two">2 Tablet tokens added.</string>
+    <string name="theatre_three">2 Elder Thing tokens added.</string>
+    <string name="theatre_four">1 Cultist token, 1 Tablet token, and 1 Elder Thing token added.</string>
+    <string name="stranger_heading">The Stranger</string>
+    <string name="not_stranger">The Stranger is not on to you.</string>
+    <string name="police_heading">Police</string>
+    <string name="police_none">The police were not involved.</string>
+    <string name="police_warned_and_suspicious">You tried to warn the police and the police are suspicious of
+        you.</string>
+    <string name="party_heading">Dinner Party</string>
+    <string name="no_party">You left the dinner party.</string>
+    <string name="onyx_heading">The Clasp of Black Onyx</string>
+    <string name="asylum_heading">Arkham Asylum</string>
+    <string name="daniel_heading">Daniel\'s Warning</string>
+    <string name="no_daniel">You did not hear Daniel\'s warning.</string>
+    <string name="nigel_heading">Nigel Engram</string>
+
+
     <!--Chaos bag-->
     <string name="curtain_skull_one">-1 (-3 instead if you have 3 or more horror on you).</string>
     <string name="curtain_skull_two">-X, where X is the amount of horror on you. (If you have no horror on you, X is 1.)</string>
