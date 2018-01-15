@@ -18,10 +18,8 @@ import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import java.util.Locale;
 
 /*
-    TODO:   Custom chaos bag
-    TODO:   Tablet design
-    TODO:   Improve clicking +/- buttons
     TODO:   Edit previous scenario results
+    TODO:   Custom chaos bag
     TODO:   Every scenario in standalone mode
     TODO:   ArkhamDB integration
 

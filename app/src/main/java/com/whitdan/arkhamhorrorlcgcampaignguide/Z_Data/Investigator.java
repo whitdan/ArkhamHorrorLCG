@@ -19,10 +19,11 @@ public class Investigator {
     public static final int WILLIAM_YORICK = 15;
     public static final int LOLA_HAYES = 16;
     public static final int MARIE_LAMBEAU = 17;
+    public static final int NORMAN_WITHERS = 18;
 
     // Sets maximum health and sanity values for the various investigators (correspond to the names in the string array)
-    private int[] health = {0,9,5,8,6,7,9,6,8,7,6,9,7,5,6,8,6,6};
-    private int[] sanity = {0,5,9,6,8,7,6,9,7,8,5,5,7,9,8,6,6,8};
+    private int[] health = {0,9,5,8,6,7,9,6,8,7,6,9,7,5,6,8,6,6,6};
+    private int[] sanity = {0,5,9,6,8,7,6,9,7,8,5,5,7,9,8,6,6,8,8};
 
     public Investigator(int investigator, String name, String deckName, String deck){
         setupInvestigator(investigator);
@@ -60,5 +61,8 @@ public class Investigator {
     // Temp variables for when a change might be pending clicking the continue button
     public int TempStatus;      // 0 = normal, 1 = resigned, 2 = health, 3 = horror
     public int TempWeakness;    // 0 = not active, 1 = active
-
+    public int TempDamage;
+    public int TempHorror;
+    public int TempTotalXP;
+    public int TempAvailableXP;
 }

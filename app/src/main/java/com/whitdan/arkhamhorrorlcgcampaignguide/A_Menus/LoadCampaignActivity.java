@@ -273,6 +273,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     CampaignEntry.COLUMN_AKACHI_INUSE,
                     CampaignEntry.COLUMN_WILLIAM_INUSE,
                     CampaignEntry.COLUMN_LOLA_INUSE,
+                    CampaignEntry.COLUMN_MARIE_INUSE,
+                    CampaignEntry.COLUMN_NORMAN_INUSE,
                     CampaignEntry.COLUMN_ROUGAROU_STATUS,
                     CampaignEntry.COLUMN_STRANGE_SOLUTION,
                     CampaignEntry.COLUMN_ARCHAIC_GLYPHS,
@@ -336,6 +338,10 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         .getColumnIndexOrThrow(CampaignEntry.COLUMN_WILLIAM_INUSE));
                 globalVariables.InvestigatorsInUse[Investigator.LOLA_HAYES] = campaignCursor.getInt(campaignCursor
                         .getColumnIndexOrThrow(CampaignEntry.COLUMN_LOLA_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.MARIE_LAMBEAU] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_MARIE_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.NORMAN_WITHERS] = campaignCursor.getInt
+                        (campaignCursor.getColumnIndexOrThrow(CampaignEntry.COLUMN_NORMAN_INUSE));
                 globalVariables.Rougarou=(campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_ROUGAROU_STATUS)));
                 globalVariables.StrangeSolution=(campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow

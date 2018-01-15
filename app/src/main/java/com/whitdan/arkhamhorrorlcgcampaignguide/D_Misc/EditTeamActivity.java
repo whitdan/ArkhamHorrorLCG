@@ -244,12 +244,16 @@ public class EditTeamActivity extends AppCompatActivity {
             savedInvestigators.addView(investigator);
             investigator.setChecked(false);
         }
+        if(savedInvestigators.getChildCount() == 0){
+            saved.setVisibility(GONE);
+        }
 
         // Set fonts to the unused investigator checkboxes
         LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
         LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
         LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
         LinearLayout marieCheckbox = findViewById(R.id.marie_promo);
+        LinearLayout normanCheckbox = findViewById(R.id.norman_promo);
         for (int i = 0; i < coreCheckboxes.getChildCount(); i++) {
             View view = coreCheckboxes.getChildAt(i);
             if (view instanceof CheckBox) {
@@ -277,22 +281,31 @@ public class EditTeamActivity extends AppCompatActivity {
                 ((CheckBox) view).setTypeface(arnopro);
             }
         }
+        for (int i = 0; i < normanCheckbox.getChildCount(); i++) {
+            View view = normanCheckbox.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
+            }
+        }
 
         // Get sharedpreferences on expansions owned
         String sharedPrefs = getResources().getString(R.string.shared_prefs);
         String dunwichOwnedString = getResources().getString(R.string.dunwich_setting);
         String carcosaOwnedString = getResources().getString(R.string.carcosa_setting);
         String marieOwnedString = getResources().getString(R.string.marie_lambeau);
+        String normanOwnedString = getResources().getString(R.string.norman_withers);
         SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
         boolean dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
         boolean carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
         boolean marieOwned = settings.getBoolean(marieOwnedString, false);
+        boolean normanOwned = settings.getBoolean(normanOwnedString, false);
 
         // Investigators counts how many investigators are still unused (to determine if the players have lost)
         int core = 0;
         int dunwich = 0;
         int carcosa = 0;
         int marie = 0;
+        int norman = 0;
 
         // Setup CheckBoxes with OnCheckedChangeListeners, as long as the investigator is not in use
         if (globalVariables.InvestigatorsInUse[Investigator.ROLAND_BANKS] == 0) {
@@ -438,10 +451,36 @@ public class EditTeamActivity extends AppCompatActivity {
                 marie++;
             }
         }
+
+        // Norman Withers
+        if (normanOwned) {
+            if (globalVariables.InvestigatorsInUse[Investigator.NORMAN_WITHERS] == 0) {
+                CheckBox normanBox = findViewById(R.id.norman_withers);
+                normanBox.setVisibility(VISIBLE);
+                normanBox.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                norman++;
+            }
+        }
+
         // Hide LinearLayout if all Dunwich investigators are dead or if Dunwich is not owned
-        if (marie == 1 || !carcosaOwned) {
+        if (marie == 1 || !marieOwned) {
             marieCheckbox.setVisibility(GONE);
         }
+        if (norman == 1 || !normanOwned) {
+            normanCheckbox.setVisibility(GONE);
+        }
+
+        // Edit stats button
+        Button editStatsButton = findViewById(R.id.edit_stats_button);
+        editStatsButton.setTypeface(teutonic);
+        editStatsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EditTeamActivity.this, EditStatsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Back button
         Button backButton = findViewById(R.id.back_button);
@@ -742,6 +781,22 @@ public class EditTeamActivity extends AppCompatActivity {
                         investigatorsCount--;
                         for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
                             if (globalVariables.InvestigatorNames.get(i) == Investigator.MARIE_LAMBEAU) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
+                case R.id.norman_withers:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.NORMAN_WITHERS);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.NORMAN_WITHERS) {
                                 removeInvestigator = i;
                                 globalVariables.InvestigatorNames.remove(i);
                             }

@@ -18,7 +18,7 @@
     <!--Miscellaneous-->
     <string name="stranger_counter">Auf der Jagd nach dem Fremden: </string>
     <string name="box_office">Ein Ermittler hat aus der Theaterkasse gestohlen</string>
-    <string name="advanced_2b">Wenn Szene 2b erreicht wurde:</string>
+    <string name="advanced_2b">Szene 2b wurde erreicht</string>
     <string name="city_aflame">Eine Stadt in Flammen</string>
     <string name="path_mine">Der Weg ist Mein</string>
     <string name="shores_hail">Die Ufer von Hali</string>
@@ -30,8 +30,10 @@
     <string name="sebastien">Sebastien Moreau</string>
     <string name="ashleigh">Ashleigh Clarke</string>
     <string name="allocated_experience">Zugeteilte Erfahrung</string>
+    <string name="daniel_chesterfield_inplay">Daniel Chesterfield war am Ende des Szenarios im Spiel</string>
     <string name="sebastien_victory">Sebastien Moreau befindet sich im Siegpunktestapel</string>
     <string name="constance_victory">Constance Dumaine befindet sich im Siegpunktestapel</string>
+    <string name="jordan_victory">Jordan Perry befindet sich im Siegpunktestapel</string>
 
 
     <!--Campaign Log-->
@@ -61,6 +63,10 @@
     <string name="escaped_asylum">Die Ermittler sind aus dem Sanatorium entkommen.\n\n</string>
     <string name="warning_heeded">Daniels Warnung wurde beherzigt.\n\n</string>
     <string name="warning_ignored">Daniels Warnung wurde ignoriert.\n\n</string>
+    <string name="not_escape_gaze">Die Ermittler sind dem Blick des Phantoms nicht entkommen.\n\n</string>
+    <string name="found_nigel_home">Nigels Haus wurde gefunden.\n\n</string>
+    <string name="found_nigel_engram">Nigel Engram wurde gefunden.\n\n</string>
+    <string name="unable_find_nigel">Nigel Engram konnte nicht gefunden werden.\n\n</string>
 
 
     <!--Chaos bag-->
@@ -111,11 +117,26 @@
     <string name="unspeakable_tablet_two">-X. X ist der Grund-Schleierwert deines Ortes. Falls die Probe misslingt,
         nimm 1 Horror.</string>
     <string name="unspeakable_thing_one">0. Bestimme entweder zufällig einen der beiseitegelegten
-        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn anzusehen, oder diese Probe
+        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck ohne ihn anzusehen, oder diese Probe
         misslingt automatisch.</string>
     <string name="unspeakable_thing_two">0. Bestimme entweder zufällig einen der beiseitegelegten
-        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn anzusehen, oder diese Probe
+        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck ohne ihn anzusehen, oder diese Probe
         misslingt automatisch.</string>
+
+    <string name="phantom_skull_one">–X. X ist die Anzahl an Verderbensmarkern im Spiel (maximal 5).</string>
+    <string name="phantom_skull_two">–X. X ist die Anzahl an Verderbensmarkern im Spiel.</string>
+    <string name="phantom_cultist_one">–2. Falls die Probe misslingt, bewege jedes nicht in einen Kampf verwickelte
+        <b><i>Byakhee</i></b> im Spiel einmal in Richtung des nächstgelegenen Ermittlers.</string>
+    <string name="phantom_cultist_two">–2. bewege jedes nicht in einen Kampf verwickelte <b><i>Byakhee</i></b> im Spiel
+        einmal in Richtung des nächstgelegenen Ermittlers.</string>
+    <string name="phantom_tablet_one">–3. Hebe die Effekte und Symbole jeder Fertigkeitskarte auf, die zu dieser Probe
+        beigetragen worden ist.</string>
+    <string name="phantom_tablet_two">–4. Hebe die Effekte und Symbole jeder Fertigkeitskarte auf, die zu dieser Probe
+        beigetragen worden ist.</string>
+    <string name="phantom_thing_one">–2. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen
+        ist, 1 Ressource.</string>
+    <string name="phantom_thing_two">–3. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen
+        ist, 1 Ressource.</string>
 
 
     <!-- Campaign introduction-->
@@ -325,7 +346,7 @@
         sich die gesamte Truppe viel selbstsicherer und temperamentvoller gefühlt. Vielleicht hat Daniel bei der letzten
         Inszenierung von <i>Der König in Gelb</i> etwas ähnliches erlebt? Du musst mit ihm darüber sprechen.</string>
 
-    <string name="lost_soul_one">Du entscheidest dich einige Tage in Ma‘s Gästehaus unterzutauchen und Daniel dort vor
+    <string name="lost_soul_one">Du entscheidest dich einige Tage in Mas Gästehaus unterzutauchen und Daniel dort vor
         den Behörden zu verstecken, obwohl du dir nicht sicher bist, wie lange du mit einem aus dem Sanatorium
         ausgebrochenen Patienten in Arkham bleiben kannst. Daniel ist eine tickende Zeitbombe. Manchmal ist er apathisch
         und reagiert auf nichts, im nächsten Moment aber schreit er um sein Leben. Erst nach einigen Tagen erkennt er,
@@ -346,7 +367,7 @@
         kommst, was du als Nächstes tun willst, findest du bei deiner Rückkehr deine Zimmertür aufgebrochen vor. Daniel
         liegt zusammengesunken auf dem Boden. Sein Gesicht hat jegliche Farbe verloren und seine Glieder sind
         totenstarr. Anhand der Male an seinem Hals vermutest du, dass er erwürgt worden ist.</string>
-    <string name="lost_soul_two">Du entscheidest dich einige Zeit in Ma‘s Gästehaus unterzutauchen, weil du nicht sicher
+    <string name="lost_soul_two">Du entscheidest dich einige Zeit in Mas Gästehaus unterzutauchen, weil du nicht sicher
         bist, ob Berichte über die Ereignisse im Sanatorium an die Öffentlichkeit gelangt sind. Du nutzt die Zeit, um
         dir umfangreiche Notizen über alles zu machen, was bisher geschehen ist, einschließlich des kurzen Gesprächs
         zwischen dir und Daniel. Er hatte von <i>Der König in Gelb</i> gesprochen, als ob es sich um ein echtes Wesen
@@ -355,7 +376,7 @@
         leisten.“ „Der Preis wurde bezahlt.“ „Sie öffnen den Pfad nach Carcosa.“ Stundenlang denkst du über Daniels
         Warnung nach, er hat dich regelrecht angefleht sie zu beherzigen: „Sprich Seinen Namen nie aus.“ Immer und immer
         wieder erlebst du vor deinem inneren Auge die letzten Minuten seines Lebens.</string>
-    <string name="lost_soul_three">Du entscheidest dich einige Zeit in Ma‘s Gästehaus unterzutauchen, weil du nicht
+    <string name="lost_soul_three">Du entscheidest dich einige Zeit in Mas Gästehaus unterzutauchen, weil du nicht
         sicher bist, ob Berichte über die Ereignisse im Sanatorium an die Öffentlichkeit gelangt sind. Du nutzt die
         Zeit, um dir umfangreiche Notizen über alles zu machen, was bisher geschehen ist, einschließlich des kurzen
         Gesprächs zwischen dir und Daniel. Er hat von <i>Der König in Gelb</i> gesprochen, als ob es sich um ein echtes
@@ -391,6 +412,122 @@
     \n<b>Für den Rest der Kampagne muss jeder Ermittler, der den Namen HASTUR während eines Szenarios (oder dessen
             Vorbereitung) laut ausspricht, sofort 1 Horror nehmen.</b></string>
 
+    <string name="dream_one_one">Seit dem Gastspiel von <i>Der König in Gelb</i> im Ward-Theater sind einige Monate
+        vergangen. Du und deine Gefährten haben die merkwürdigen Vorkommnisse, die darauf folgten, untersucht. Was ihr
+        gefunden habt, stellt dich vor die Frage, ob es weise wäre, die Ermittlungen fortzusetzen. Die Wahrheit drängt
+        an die Oberfläche und lässt dir keine andere Wahl, als sie finden zu wollen. Es scheint, als ob schon vor dir
+        jemand die Puzzlestücke um die merkwürdigen Geschehnisse um Der König in Gelb zusammengefügt hätte. Eine andere
+        Gruppe von Ermittlern hatte ebenfalls diese Ereignisse untersucht. Nur wenige Tage nach der Vorstellung in
+        Arkham wurden sie in das Sanatorium eingeliefert, wo sie etwas über die Rückkehr des Königs und die Monster, die
+        sie angegriffen hatten, erzählten. Irgendwie überrascht dich das nicht. Ihr Schicksal stärkt nur deine
+        Überzeugung, auf der richtigen Spur zu sein… Und es macht dich noch sicherer, dass du eigentlich aufhören
+        solltest, solange du noch kannst.\n
+    \nDu hast die Berichte jener Ermittler aus der Zeit vor ihrer Einweisung gefunden und die Spur dort aufgenommen, wo
+        ihre Ermittlungen endeten. Sie haben einige Darsteller und Mitarbeiter von <i>Der König in Gelb</i> befragt und
+        dabei wichtige Informationen erhalten. Ihre Nachforschungen enthalten auch Anmerkungen zu ihren Entdeckungen bei
+        der Gesellschaft für Geschichte in Arkham und über die Zeit, die sie im Sanatorium verbracht haben. Dort waren
+        sie mit einem Patienten namens Daniel Chesterfield in Kontakt gekommen. Nachdem du die ganze Nacht lang Notizen
+        zusammengetragen und verglichen hast, fällst du in einen tiefen Schlaf. In deinen Träumen siehst du Carcosa –
+        die schwarzen Sterne, die Zwillingssonnen, die zersprungenen Monde und die verdrehten Türme.\n
+    \n<b>Traum 1</b>\nDu fällst durch den leeren Abgrund von Hali. Kreaturen, deren Herkunft dir unbekannt ist und die
+        es nicht geben dürfte, lauern an den Rändern der Dunkelheit deines Blickfeldes. Über dir ragt Hastur drohend
+        auf, prachtvoll und doch in seinem Gefängnis aus Wahnsinn eingesperrt, manipuliert er deinen qualvollen Sturz
+        mit einem ausgestreckten Arm.\n
+    \n<b>Jeder Ermittler hat die Schwäche Verlorene Seele (<i>Der Pfad nach Carcosa, 227</i>) verdient (zählt nicht
+        gegen die Deckgröße).</b>\n
+    \n<b>Traum 2</b>\nConstance nimmt deine Hand und zieht dich auf die glänzende Tanzfläche. „Kommen Sie schon, nicht
+        so schüchtern. Heute ist die richtige Nacht zum Tanzen! Zum Feiern!“</string>
+    <string name="dream_one_two">Seit den Ereignissen im Sanatorium sind einige Wochen vergangen und du bist der
+        Wahrheit über Der König in Gelb und Carcosa noch kein Stückchen näher gekommen. Du hast die Stadt nach Zeichen
+        der anderen, die Daniel erwähnt hat, abgesucht – diejenigen, die „den Weg nach Carcosa öffnen“wollen – ohne
+        Erfolg. Entweder ist die Spur bereits kalt oder sie sind nicht mehr in Arkham. Vielleicht war Daniel wirklich
+        wahnsinnig und du folgst ihm jetzt nur tiefer in seine Wahnvorstellungen. Jede Nacht wälzt du dich im Bett
+        herum, während du in deinen Träumen Carcosa siehst – die schwarzen Sterne, die Zwillingssonnen, die
+        zersprungenen Monde und die verdrehten Türme.\n
+    \n<b>Traum 1</b>\nDu fällst durch den leeren Abgrund von Hali. Kreaturen, deren Herkunft dir unbekannt ist und die
+        es nicht geben dürfte, lauern an den Rändern der Dunkelheit deines Blickfeldes. Über dir ragt Hastur drohend
+        auf, prachtvoll und doch in seinem Gefängnis aus Wahnsinn eingesperrt, manipuliert er deinen qualvollen Sturz
+        mit einem ausgestreckten Arm.\n
+    \n<b>Jeder Ermittler hat die Schwäche Verlorene Seele (<i>Der Pfad nach Carcosa, 227</i>) verdient (zählt nicht
+        gegen die Deckgröße).</b>\n
+    \n<b>Traum 2</b>\nConstance nimmt deine Hand und zieht dich auf die glänzende Tanzfläche. „Kommen Sie schon, nicht
+        so schüchtern. Heute ist die richtige Nacht zum Tanzen! Zum Feiern!“</string>
+    <string name="dream_five">\n<b>Traum 5</b>\nDu schaust in den Spiegel und dein Spiegelbild wirft dir einen
+        neugierigen Blick zurück. „Warte eine Sekunde, dies ist nicht <b>Traum 1</b>“, sagst du.</string>
+    <string name="dream_three_six">\n<b>Traum 3</b>\n„Oh, ist das nicht unser heiß ersehnter Gast?“, fragt der
+        schnurrbärtige Mann mit dem Gehstock mit dem silbernen Griff. Er greift nach einer Flasche Wein vom nächsten
+        Tresen und reicht dir ein Glas davon. „Ich habe gehört, Sie hätten großes Interesse an unserer kleinen
+        Produktion entwickelt“, sagt er lächelnd. „Sagen Sie, wie hat Ihnen Akt 2 bisher gefallen?“\n
+    \n<b>Traum 6</b>\nDie Lichter im Theater werden gedämpft und ein Scheinwerfer taucht die Bühne in helles Licht.
+        „Willkommen, meine Damen und Herren“, ruft die Kreatur. Ihre zahllosen Tentakel greifen über die Bühne hinweg
+        bis zu den Deckensparren und durch die Sitzreihen. Sie zieht die Vorhänge herunter und zerschlissener roter
+        Stoff bedeckt ihren unförmigen Körper.</string>
+    <string name="dream_four_six">\n<b>Traum 4</b>\nRauch und glühende Asche steigen in den sternenlosen Nachthimmel
+        auf. Die Schreie der brennenden Kreaturen bedeuten dir auf fürchterliche Weise, dass du es geschafft hast. Du
+        denkst, dass sie beinahe wie Menschen klingen. Aber du weißt, dass sie es nicht sind.\n
+    \n<b>Traum 6</b>\nDie Lichter im Theater werden gedämpft und ein Scheinwerfer taucht die Bühne in helles Licht.
+        „Willkommen, meine Damen und Herren“, ruft die Kreatur. Ihre zahllosen Tentakel greifen über die Bühne hinweg
+        bis zu den Deckensparren und durch die Sitzreihen. Sie zieht die Vorhänge herunter und zerschlissener roter
+        Stoff bedeckt ihren unförmigen Körper.</string>
+    <string name="dream_six">\n<b>Traum 6</b>\nDie Lichter im Theater werden gedämpft und ein Scheinwerfer taucht die
+        Bühne in helles Licht. „Willkommen, meine Damen und Herren“, ruft die Kreatur. Ihre zahllosen Tentakel greifen
+        über die Bühne hinweg bis zu den Deckensparren und durch die Sitzreihen. Sie zieht die Vorhänge herunter und
+        zerschlissener roter Stoff bedeckt ihren unförmigen Körper.</string>
+    <string name="dream_seven_eight">\n<b>Traum 7</b>\nDu findest dich in der Polizeistation von Arkham wieder, wo du
+        verzweifelt versuchst dem Sergeant am Empfangstresen zu erklären, was im Ward-Theater passiert ist. Er
+        verspottet dich und weigert sich dir Glauben zu schenken. „Wir kennen Ihre wahren Pläne“, sagt er und legt dir
+        Handschellen an. „Sie sind wegen Diebstahls verhaftet. Jungs, bringt ihn weg.“ Einige weitere Polizisten nehmen
+        dich in ihre Mitte und verhindern so deine Flucht. Dein Protest verhallt ungehört, während du unnachgiebig eine
+        Betontreppe hinunter begleitet und in eine Gefängniszelle gesteckt wirst. „Vielleicht ändern Sie ja ihre
+        Geschichte, wenn sie eine Weile eingesperrt sind“, ruft dir der Sergeant vom Empfangstresen hinterher. Er
+        schlägt die Tür hinter dir zu und lässt dich mit deinen Gedanken allein, die sich im Kreis drehen. Wie haben sie
+        es herausgefunden? Wie können sie das nur wissen?\n
+        \n<b>Wähle einen Ermittler. Der gewählte Ermittler hat die Schwäche Paranoia (<i>Grundspiel, 97</i>) verdient,
+        falls sich noch ein Exemplar dieser Karte in der Sammlung befindet (zählt nicht gegen die Deckgröße).</b>\n
+    \n<b>Traum 8</b>\nDu siehst in den Spiegel und der Fremde schaut dich daraus an. Sein Blick bohrt sich in deinen
+        Verstand. Der Spiegel zerspringt.</string>
+    <string name="dream_eight">\n<b>Traum 8</b>\nDu siehst in den Spiegel und der Fremde schaut dich daraus an. Sein
+        Blick bohrt sich in deinen Verstand. Der Spiegel zerspringt.</string>
+    <string name="dream_nine_awake">\n<b>Traum 9</b>\nDu jagst den Fremden durch dunkle, kalte Gänge, die aus
+        hunderttausenden von Skeletten bestehen. Dabei wirst du von Schädeln beobachtet, ihre Münder klappern, wie um
+        dich zu verspotten, als du an ihnen vorbeirennst. Der Fremde erreicht eine feste Wand aus Knoch en, wird von
+        Skeletthänden ergriffen und in die Wand gezogen. Das spöttische Lachen erreicht einen fürchterlichen
+        Höhepunkt.\n
+    \n<b>Traum 13</b>\nDaniels Stimme ruft nach dir. „Sie öffnen den Weg nach Carcosa.“\n
+    \n<b>Erwachen</b>\nSchwitzend und keuchend wachst du aus deinen wilden Träumen auf. Das kann so nicht weitergehen.
+        Dir bleibt nur eine Möglichkeit, wenn du deine Ermittlungen fortsetzen willst. Du musst Nigel Engram, Regisseur
+        von Der König in Gelb und Erschaffer dieses Wahnsinns finden. Nur er wird die Antworten auf deine Fragen haben.
+        Du packst deine Taschen und planst eine Reise nach Paris, in die Stadt der Lichter.</string>
+    <string name="dream_ten">\n<b>Traum 10</b>\nDu jagst den Fremden eine steile Treppe aus geborstenen Steinen hinauf.
+        Regen prasselt sintflutartig auf deinen Rücken, während du rennst. In der Ferne zucken Blitze. Ein Wirbel aus
+        schwarzen Wolken ragt beängstigend über dir auf und droht die gesamte Welt zu verschlingen. Der maskierte Mann
+        eilt durch verschiedenste Türen am oberen Ende der Treppe und du bist ihm dicht auf den Fersen. Das Geräusch des
+        krachenden Donners wird gedämpft, als sich die Türen hinter dir schließen. Als du aufschaust, siehst du eine
+        vertraute Darstellung in Buntglas. „Schön, nicht wahr?“, sagt der Fremde ruhig.</string>
+    <string name="dream_ten_option_one">„Wie kannst du hier irgendetwas schön finden?“</string>
+    <string name="dream_ten_option_two">„Was genau sehe ich hier?“</string>
+    <string name="dream_eleven_awake"><b>Traum 11</b>\nDu vermeidest es, zu dem Buntglasfenster hinaufzusehen. Falls
+        dieser bösartige Mann es für schön hält, ist es wahrscheinlich eine Art Falle, die deinen Geist fesseln soll. Du
+        ballst die Faust, bis deine Fingerknöchel weiß werden. Du trittst vor, um dem Fremden die Stirn zu bieten.\n
+    \n<b>Traum 13</b>\nDaniels Stimme ruft nach dir. „Sie öffnen den Weg nach Carcosa.“\n
+    \n<b>Erwachen</b>\nSchwitzend und keuchend wachst du aus deinen wilden Träumen auf. Das kann so nicht weitergehen.
+        Dir bleibt nur eine Möglichkeit, wenn du deine Ermittlungen fortsetzen willst. Du musst Nigel Engram, Regisseur
+        von Der König in Gelb und Erschaffer dieses Wahnsinns finden. Nur er wird die Antworten auf deine Fragen haben.
+        Du packst deine Taschen und planst eine Reise nach Paris, in die Stadt der Lichter.</string>
+    <string name="dream_twelve_awake"><b>Traum 12</b>\nDu siehst neugierig zu den Buntglasfenstern hoch. Was ist das für
+        eine Gestalt, die schattenhaft hinter dem Fenster zu sehen ist? Welche Bedeutung steckt hinter dieser seltsamen
+        Gestaltung?\n
+    \n<b>Traum 13</b>\nDaniels Stimme ruft nach dir. „Sie öffnen den Weg nach Carcosa.“\n
+    \n<b>Erwachen</b>\nSchwitzend und keuchend wachst du aus deinen wilden Träumen auf. Das kann so nicht weitergehen.
+        Dir bleibt nur eine Möglichkeit, wenn du deine Ermittlungen fortsetzen willst. Du musst Nigel Engram, Regisseur
+        von Der König in Gelb und Erschaffer dieses Wahnsinns finden. Nur er wird die Antworten auf deine Fragen haben.
+        Du packst deine Taschen und planst eine Reise nach Paris, in die Stadt der Lichter.</string>
+    <string name="dream_jordan">\n<b>Jordans informationen</b>\nVon Mr. Jordan Perry, der für einige Aufführungen von
+        <i>Der König in Gelb</i> überall auf der Welt als Geldgeber fungiert hat, hast du erfahren, dass Nigel Engram
+        ein exzentrischer Mann ist, dessen Leidenschaft beinahe an Manie grenzt. Man sagt, dass er, seit er <i>Der König
+        in Gelb</i> entdeckt hat, nichts anderes mehr inszeniert hat. Jordan hat Mr. Engram zum ersten Mal in einem Café
+        in Montparnasse getroffen, dem „L\'agneau Perdu“. Dorthin wird dich deine Reise zuerst führen, weil du hoffst
+        Mr. Engram dort zu finden…</string>
 
 
     <!--Scenario set-up instructions-->
@@ -416,22 +553,26 @@
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
         ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 2 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und unter die Szenarioübersichtskarte
+        gelegt.</string>
     <string name="king_additional_two">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
         ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 3 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und unter die Szenarioübersichtskarte
+        gelegt.</string>
     <string name="king_additional_three">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
         ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 4 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und unter die Szenarioübersichtskarte
+        gelegt.</string>
     <string name="king_additional_four">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
         ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 5 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden unter die Szenarioübersichtskarte gelegt.</string>
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und unter die Szenarioübersichtskarte
+        gelegt.</string>
 
     <string name="echoes_sets">Widerhall aus der Vergangenheit, Kult des gelben Zeichens, Wahnvorstellungen,
         Die Mitternachtsmasken, Verschlossene Türen and Dunkler Kult.\n
@@ -465,33 +606,33 @@
         Exemplar von Sanatoriumsflur <i>(Westlicher Patientenflügel)</i> werden zufällig bestimmt und aus dem Spiel
         entfernt. Die übrigen Exemplare von Sanatoriumsflut werden ins Spiel gebracht.\n
         \nDie Orte Speisesaal, Küche, Hof, Garten, Krankenstation und Kellerflur werden ins Spiel gebracht.\n
-        \nJeder Ermittler beginnt das Spiel auf einem Sanatoriumsflur seiner Wahl.</string>
+        \nJeder Ermittler beginnt das Spiel auf einem Sanatoriumsflur seiner Wahl.\n</string>
     <string name="unspeakable_set_aside">Daniel Chesterfield und jedes Exemplar von Sicherheitszelle.\n
         \nAlle <b><i>Monster</i></b>-Gegner aus den herausgesuchten Begegnungssets werden als separater Stapel
         beiseitegelegt. (Es handelt sich insgesamt um 7 <b><i>Monster</i></b>-Gegner.)\n
     \nAlle <b><i>Verrückt</i></b>-Gegner aus den herausgesuchten Begegnungssets werden als separater Stapel
-        beiseitegelegt. (Es handelt sich insgesamt um 7 <b><i>Verrückt</i></b>-Gegner.)</string>
+        beiseitegelegt. (Es handelt sich insgesamt um 7 <b><i>Verrückt</i></b>-Gegner.)\n</string>
     <string name="unspeakable_additional_one">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne der
         folgende Chaosmarker dem Chaosbeutel hinzugefügt:\n
         \n\t\t<b>Einfach:</b> -2\n
         \n\t\t<b>Normal:</b> -3\n
         \n\t\t<b>Schwer:</b> -4\n
         \n\t\t<b>Experte:</b> -5\n
-    \nVerwende Szene 2 — „Die richtig Schlimmen (V. I)“</string>
+    \nVerwende Szene 2 — „Die richtig Schlimmen (V. I)“.</string>
     <string name="unspeakable_additional_two">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne der
         folgende Chaosmarker dem Chaosbeutel hinzugefügt:\n
         \n\t\t<b>Einfach:</b> -2\n
         \n\t\t<b>Normal:</b> -3\n
         \n\t\t<b>Schwer:</b> -4\n
         \n\t\t<b>Experte:</b> -5\n
-    \nVerwende Szene 2 — „Die richtig Schlimmen (V. II)“</string>
+    \nVerwende Szene 2 — „Die richtig Schlimmen (V. II)“.</string>
     <string name="unspeakable_additional_one_constance">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne
         der folgende Chaosmarker dem Chaosbeutel hinzugefügt:\n
         \n\t\t<b>Einfach:</b> -2\n
         \n\t\t<b>Normal:</b> -3\n
         \n\t\t<b>Schwer:</b> -4\n
         \n\t\t<b>Experte:</b> -5\n
-    \nVerwende Szene 2 — „Die richtig Schlimmen (V. I)“\n
+    \nVerwende Szene 2 — „Die richtig Schlimmen (V. I)“.\n
     \nJeder Ermittler legt die oberste Karte seines Decks verdeckt in seine Spielzone, ohne sie anzusehen. Diese Karte
         wird als <b><i>Mut</i></b>-Vorteil mit Kosten von 0 behandelt, der keine Symbole hat und dessen geistige
         Gesundheit 2 beträgt. Diese Karte wird abgelegt, falls sie aus irgendeinem Grund das Spiel verlässt.</string>
@@ -501,10 +642,45 @@
         \n\t\t<b>Normal:</b> -3\n
         \n\t\t<b>Schwer:</b> -4\n
         \n\t\t<b>Experte:</b> -5\n
-    \nVerwende Szene 2 — „Die richtig Schlimmen (V. II)“\n
+    \nVerwende Szene 2 — „Die richtig Schlimmen (V. II)“.\n
     \nJeder Ermittler legt die oberste Karte seines Decks verdeckt in seine Spielzone, ohne sie anzusehen. Diese Karte
         wird als <b><i>Mut</i></b>-Vorteil mit Kosten von 0 behandelt, der keine Symbole hat und dessen geistige
         Gesundheit 2 beträgt. Diese Karte wird abgelegt, falls sie aus irgendeinem Grund das Spiel verlässt.</string>
+
+    <string name="phantom_sets">Ein Phantom der Wahrheit, Böse Vorzeichen, Byakhee, Der Fremde, Anhänger von Hastur
+        und Die Mitternachtsmasken.\n
+    \nAus dem Begegnungsset <c>Die Mitternachtsmasken</c> werden nur die 5 Verratskarten herausgesucht (2x Falsche
+        Fährte und 3x Hetzdender Schatten).</string>
+    <string name="phantom_locations_one">Je ein zufällig bestimmtes Exemplar der Orte Montmartre, Opéra Garnier und
+        Le Marais werden ins Spiel gebracht. Die anderen Exemplare dieser Orte werden aus dem Spiel entfernt.\n
+    \nDie übrigen Orte (Montparnasse, Gare d\’Orsay, Grand Guignol, Canal Saint-Martin, Friedhof Père Lachaise,
+        Notre-Dame und Gardens of Luxembourg) werden ins Spiel gebracht.\n
+    \nJeder Ermittler beginnt das Spiel auf dem Gare d\'Orsay.\n</string>
+    <string name="phantom_locations_two">Je ein zufällig bestimmtes Exemplar der Orte Montmartre, Opéra Garnier und
+        Le Marais werden ins Spiel gebracht. Die anderen Exemplare dieser Orte werden aus dem Spiel entfernt.\n
+    \nDie übrigen Orte (Montparnasse, Gare d\’Orsay, Grand Guignol, Canal Saint-Martin, Friedhof Père Lachaise,
+        Notre-Dame und Gardens of Luxembourg) werden ins Spiel gebracht.\n
+    \nJeder Ermittler beginnt das Spiel in Montparnasse.\n</string>
+    <string name="phantom_set_aside">Der Organist und alle verbliebenen Exemplare der Schwäche Verlorene
+        Seele.\n</string>
+    <string name="phantom_additional_one">Die herausgesuchten Begegnungssets nach den beiden Exemplaren von
+        Zwillingssonnen und allen drei Exemplaren von Hetzender Schatten durchsuchen und diese Karten aus dem Spiel
+        entfernen.\n
+    \nVerwende Szene 1 — „Die Pariser Verschwörung (V. I)“.</string>
+    <string name="phantom_additional_two">Die herausgesuchten Begegnungssets nach den beiden Exemplaren von
+        Aufgang der schwarzen Sterne und den beiden Exemplaren von Falsche Fährte durchsuchen und diese Karten aus dem
+        Spiel entfernen.\n
+    \nVerwende Szene 1 — „Die Pariser Verschwörung (V. II)“.</string>
+    <string name="phantom_additional_one_jordan">Die herausgesuchten Begegnungssets nach den beiden Exemplaren von
+        Zwillingssonnen und allen drei Exemplaren von Hetzender Schatten durchsuchen und diese Karten aus dem Spiel
+        entfernen.\n
+    \nVerwende Szene 1 — „Die Pariser Verschwörung (V. I)“.\n
+    \nJeder Ermittler beginnt das Spiel mit 3 zusätzlichen Ressourcen.</string>
+    <string name="phantom_additional_two_jordan">Die herausgesuchten Begegnungssets nach den beiden Exemplaren von
+        Aufgang der schwarzen Sterne und den beiden Exemplaren von Falsche Fährte durchsuchen und diese Karten aus dem
+        Spiel entfernen.\n
+    \nVerwende Szene 1 — „Die Pariser Verschwörung (V. II)“.\n
+    \nJeder Ermittler beginnt das Spiel mit 3 zusätzlichen Ressourcen.</string>
 
 
     <!--Scenario resolutions-->
@@ -689,7 +865,7 @@
         Chesterfield, einen Bühnenarbeiter, der nach der letzten Aufführung den Verstand verloren hat. Scheinbar wurde
         er nach dem Ende der Produktion ins Sanatorium eingewiesen. Vielleicht ist er immer noch da…\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
-            Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+            Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
     <string name="echoes_resolution_three">Die Gestalt bricht zusammen und ihr verzerrter, schmelzender Körper zuckt
         unter Todesqualen. Sie keucht und schreit auf, aus ihrem Mund und ihren Augen dringt ein gelbliches Leuchten.
         „Daniel“, sagt das Ding mit rauer Stimme. „Finde Daniel. Daniel Chesterfield, der Bühnenarbeiter. Er wird sich
@@ -820,4 +996,70 @@
     <string
         name="unspeakable_resolution_onyx"><b>Es muss ein neuer Ermittler gewählt werden, der für den Rest der Kampagne
             die Schwäche Spange aus Schwarzem Onyx in sein Deck aufnimmt.</b></string>
+
+    <string name="phantom_no_resolution">Du verirrst dich in der Stadt, während du um dein Leben rennst. Deine Füße
+        bewegen sich wie von alleine. Das Schlagen sehniger Flügel und das Kreischen der Kreaturen über dir treibt dich
+        an. Bald schon findest du dich in einer schmalen Gasse wieder und läufst an einigen schweren Eisentoren vorbei.
+        Es ist eine Sackgasse – ein Hof mit großen, alten Gebäuden auf allen Seiten. Du wendest dich wieder in Richtung
+        Eingang, aber dort versperren dir viele geflügelte Gestalten den Weg. Sie hocken auf den Toren und Balkonen über
+        dir und erwarten dein Verderben. Mit kalter, bösartiger Gleichgültigkeit öffnet der Mann in Schwarz das eiserne
+        Tor und betritt den Hof. Sein Gesicht leuchtet in der Dunkelheit. Seine Augen durchbohren deine Seele. Einen
+        Moment lang erkennst du ihn als das, was er wirklich ist. Und das ist deine letzte Erinnerung an diese Nacht.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="phantom_resolution_one">Du kannst nur vermuten, dass dieses Haus Nigel Engram, dem Regisseur von
+        <i>Der König in Gelb</i> gehört. Endlich hast du das gefunden, was du so lange gejagt hast… Aber das ist nur
+        ein schwacher Trost für deine stark beanspruchte geistige Gesundheit. Du fühlst dich wie ein Hund, der an der
+        Leine zu seinem Schicksal geführt wird, über das ein grausamer Herr entscheidet, der dich lange in Unwissenheit
+        gehalten hat. Du verdrängst diese düsteren Gedanken und klopfst an Mr. Engrams Tür. Die einzige Reaktion kommt
+        von einer Schar Elstern, die sich von dem plötzlichen Geräusch aufgeschreckt vom Dach in die Luft erheben. Du
+        versuchst es mit dem Türknauf, in der vagen Hoffnung, dass du nicht zu härteren Mitteln greifen musst. Zu deiner
+        Überraschung ist die Tür nicht verschlossen.\n
+    \nNigels Haus ist ein einziges Chaos, überall liegen Notizen, alte Bücher und merkwürdige Zeichnungen. Auf dem
+        Couchtisch im Wohnzimmer liegt eine alte, verblichene Karte, zerschlissen durch häufiges Falten und an den
+        Rändern ausgerissen. Es scheint sich um eine unvollständige Karte der Katakomben unter Paris zu handeln, oder
+        doch zumindest eines Teils davon. In der Speisekammer befinden sich nur alte, bereits verdorbene Lebensmittel.
+        Nirgendwo findest du ein Zeichen dafür, dass hier in den letzten Jahren jemand gelebt hat, aber die Tinte an den
+        Wänden im Wohnzimmer ist noch frisch und feucht. Dort steht immer und immer wieder auf jeder freien Fläche:\n
+    \n<center>Er ist bereits hier.</center>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Kultist-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="phantom_resolution_two">Du kannst nur vermuten, dass dieses Haus Nigel Engram, dem Regisseur von
+        <i>Der König in Gelb</i> gehört. Endlich hast du das gefunden, was du so lange gejagt hast… Aber das ist nur
+        ein schwacher Trost für deine stark beanspruchte geistige Gesundheit. Du fühlst dich wie ein Hund, der an der
+        Leine zu seinem Schicksal geführt wird, über das ein grausamer Herr entscheidet, nach dem er dich lange in
+        Unwissenheit gehalten hat. Du verdrängst diese düsteren Gedanken und klopfst an Mr. Engrams Tür. Vom Dach erhebt
+        sich eine Schar Elstern von dem plötzlichen Geräusch aufgeschreckt in die Lüfte. Dann öffnet sich zu deiner
+        Überraschung die Tür.\n
+    \nAuf der anderen Seite der Schwelle zum Eingangsbereich des Hauses steht ein großer Mann mit einem buschigen,
+        braunen Schnurrbart. An die Wand neben der Garderobe ist ein nur zu vertrauter Gehstock mit Silbergriff gelehnt.
+        „Sie sind es also“, sagt er. „Kommen Sie herein. Ich erwarte Sie schon seit einer ganzen Weile.“ Er wendet sich
+        ab und geht in Richtung Küche. Du hörst das Pfeifen eines Teekessels, als wäre alles für deine Ankunft
+        vorbereitet worden.\n
+    \nDann betrittst du sein Haus, wobei du keine Ahnung hast, was du als Nächstes tun sollst. Dieser sanfte,
+        bescheidene Mann ist nicht das, was du erwartet hast. Nigels Haus ist ein einziges Chaos, überall liegen
+        Notizen, alte Bücher und merkwürdige Zeichnungen. Auf dem Couchtisch im Wohnzimmer liegt eine alte, verblichene
+        Karte, zerschlissen durch häufiges Falten und an den Rändern ausgerissen. Es scheint sich um eine unvollständige
+        Karte der Katakomben unter Paris zu handeln, oder doch zumindest eines Teils davon. Einen Moment später kommt
+        Mr. Engram mit heißem Tee und einer Platte mit Käse und Kräckern zurück. „Ich nehme an, Sie sind hier, um den
+        Pfad nach Carcosa zu finden?“, fragt er aufgeregt und lächelt. Du antwortest mit einem Kopfschütteln, das er
+        aber nicht zu bemerken scheint. Er läuft im Zimmer auf und ab und spricht schnell. „Er hat mir gesagt, Sie
+        würden bald auftauchen. Und dass ich mich… vorbereiten solle.“ Nigel wendet sich dir zu, während er mit
+        blitzenden Augen zu einer Holztür auf der anderen Seite des Raumes geht. „Machen Sie sich keine Sorgen. Alles
+        ist bereit. Der Weg ist bereitet. Der Pfad liegt vor Ihnen.“ Er öffnet die Tür zu seinem Arbeitszimmer und tritt
+        hinein, während du im Wohnzimmer zurückbleibst und darüber nachdenkst, was du von seinen kryptischen Bemerkungen
+        halten sollst. Du wartest einige Minuten auf seine Rückkehr, bevor du beginnst dir Sorgen zu machen. Dann
+        bemerkst du, dass sich über dem Käse, den er gebracht hat, bereits eine Schimmelschicht gebildet hat. „Mr.
+        Engram?“, rufst du und klopfst zögernd an die Tür seines Arbeitszimmers. Keine Reaktion. Als du den Raum
+        betrittst, siehst du, dass er sich am Deckenventilator erhängt hat. Der verweste Zustand seines Körpers spricht
+        dafür, dass er bereits seit Wochen tot ist.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="phantom_resolution_three">Als die Sonne erneut über Paris aufgeht, verlierst du die merkwürdige
+        Gestalt aus den Augen. Frustriert von deinem Versagen kehrst du zu deinem Hotel zurück, um etwas Schlaf zu
+        finden und dich von den Schrecken der letzten paar Nächte zu erholen. Deine unruhigen Träume suchen dich erneut
+        heim – du träumst von Carcosa, dem König in Lumpen und der schattenhaften Gestalt, die du durch die Straßen von
+        Paris verfolgt hast. Als du aufwachst, befindest du dich nicht länger im Hotelzimmer.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+            Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
 </resources>

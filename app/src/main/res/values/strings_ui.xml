@@ -30,6 +30,8 @@
     <string name="edit_team">Edit Team</string>
     <string name="scenario_resolution">Scenario Resolution</string>
     <string name="main_menu">Main\nMenu</string>
+    <string name="edit_stats">Edit Investigator Stats</string>
+    <string name="edit_log">Edit Campaign Log</string>
 
     <string name="decklist">Decklist</string>
     <string name="killed">Killed</string>
@@ -176,6 +178,7 @@
         <item>William Yorick</item>
         <item>Lola Hayes</item>
         <item>Marie Lambeau</item>
+        <item>Norman Withers</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -194,6 +197,7 @@
     <string name="william_yorick">William Yorick</string>
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
+    <string name="norman_withers">Norman Withers</string>
 
     <string name="cover_up">Unresolved Cover Up in play</string>
     <string name="hospital_debts">Unresolved Hospital Debts in play</string>

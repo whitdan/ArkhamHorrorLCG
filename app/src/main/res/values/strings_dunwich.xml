@@ -91,6 +91,27 @@
     <string name="yog_fled">Yog-Sothoth has fled to another dimension.\n\n</string>
 
 
+    <!--Edit log-->
+    <string name="unconscious_heading">Investigators Unconscious</string>
+    <string name="not_unconscious">The investigators were not unconscious.</string>
+    <string name="students_heading">Students\' Fate</string>
+    <string name="obannion_heading">O\'Bannion Gang</string>
+    <string name="cheated_heading">Investigator Cheated</string>
+    <string name="cheated">An investigator \"cheated\".</string>
+    <string name="not_cheated">No investigator \"cheated\".</string>
+    <string name="necronomicon_heading">Necronomicon</string>
+    <string name="lynch_heading">Adam Lynch or Harold Walsted</string>
+    <string name="not_lynch">Adam Lynch or Harold Walsted did not leave play.</string>
+    <string name="delayed_heading">Investigators Delayed</string>
+    <string name="not_delayed">The investigators were not delayed.</string>
+    <string name="silas_heading">Silas Bishop</string>
+    <string name="ally_heading">Ally Sacrificed</string>
+    <string name="ally_not_sacrificed">No allies were sacrificed to Yog-Sothoth.</string>
+    <string name="townsfolk_heading">Dunwich Townsfolk</string>
+    <string name="brood_heading">Brood Escaped</string>
+    <string name="gate_heading">Gate Between Worlds</string>
+
+
     <!--Chaos bag-->
     <string name="extracurricular_skull_one">-1. If you fail, discard the top 3 cards of your deck.</string>
     <string name="extracurricular_skull_two">-2. If you fail, discard the top 5 cards of your deck.</string>
@@ -752,6 +773,9 @@
         Zebulon’s home and hope to survive the night.</string>
     <string name="undimensioned_resolution_two">After slaying what seems to be the last of the rampaging monsters you
         retreat to Zebulon’s home, exhausted and rattled by your experience.</string>
+    <string
+        name="undimensioned_resolution_powder"><b>Remove the Powder of Ibn-Ghazi from the deck of the
+        investigator who has it in his or her deck.</b></string>
 
     <string name="doom_no_resolution">The sorcerers from Dunwich, seeking arcane power from beyond this realm, have
         accomplished what Wilbur and Old Whateley could not. Through blood sacrifice and indescribable experiments,

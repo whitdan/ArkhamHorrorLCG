@@ -200,6 +200,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 if (globalVariables.GhoulPriest == 1) {
                     nightBuilder.append(getString(R.string.ghoul_priest_alive));
                 }
+
                 // Set Lita status
                 if (globalVariables.LitaChantler == 2) {
                     nightBuilder.append(getString(R.string.lita_forced));
@@ -643,6 +644,17 @@ public class CampaignLogActivity extends AppCompatActivity {
             String playerLogText = playerBuilder.toString().trim();
             playerLog.setText(playerLogText);
         }
+
+        // Edit log button
+        Button editButton = findViewById(R.id.edit_log_button);
+        editButton.setTypeface(teutonic);
+        editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CampaignLogActivity.this, EditLogActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Back button
         Button backButton = findViewById(R.id.back_button);
