@@ -69,6 +69,29 @@
     <string name="unable_find_nigel">You were unable to find Nigel.\n\n</string>
 
 
+    <!--Edit log-->
+    <string name="doubt_heading">Duda</string>
+    <string name="conviction_heading">Convicción</string>
+    <string name="chasing_stranger_heading">Persiguiendo al Extranjero</string>
+    <string name="theatre_heading">Bolsa de caos</string>
+    <string name="theatre_one">2 fichas de Sectario añadidas.</string>
+    <string name="theatre_two">2 fichas de Lápida añadidas.</string>
+    <string name="theatre_three">2 fichas de Antiguo añadidas.</string>
+    <string name="theatre_four">1 ficha de Sectario, 1 ficha de Lápida y 1 ficha de Antiguo añadidas.</string>
+    <string name="stranger_heading">El Extranjero</string>
+    <string name="not_stranger">The Stranger is not on to you.</string>
+    <string name="police_heading">Policía</string>
+    <string name="police_none">La policía no ha sido involucrada.</string>
+    <string name="police_warned_and_suspicious">Los investigadores trataron de avisar a la policía y la policía
+        sospecha de los investigadores.</string>
+    <string name="party_heading">Dinner Party</string>
+    <string name="no_party">You left the dinner party.</string>
+    <string name="onyx_heading">The Clasp of Black Onyx</string>
+    <string name="asylum_heading">Manicomo de Arkham</string>
+    <string name="daniel_heading">Advertencia de Daniel</string>
+    <string name="no_daniel">Los investigadores no escucharon las advertencias de Daniel.</string>
+    <string name="nigel_heading">Nigel Engram</string>
+
     <!--Chaos bag-->
     <string name="curtain_skull_one">-1, o bien -3 si tienes 3 o más puntos de horror.</string>
     <string name="curtain_skull_two">X, donde X es la cantidad de horror que tienes. Si no tienes horror, X es 1.</string>

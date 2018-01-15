@@ -23,6 +23,8 @@
     <string name="edit_team">Editar equipo</string>
     <string name="scenario_resolution">Resolución del escenario</string>
     <string name="main_menu">Menú\nPrincipal</string>
+    <string name="edit_stats">Editar datos investigadores</string>
+    <string name="edit_log">Editar registro de campaña</string>
 
     <string name="decklist">Mazo</string>
     <string name="killed">Muertos</string>
@@ -152,6 +154,7 @@
         <item>William Yorick</item>
         <item>Lola Hayes</item>
         <item>Marie Lambeau</item>
+        <item>Norman Withers</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -170,6 +173,7 @@
     <string name="william_yorick">William Yorick</string>
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
+    <string name="norman_withers">Norman Withers</string>
 
     <string name="cover_up">Encubrimiento en juego sin resolver</string>
     <string name="hospital_debts">Deudas en juego sin resolver</string>

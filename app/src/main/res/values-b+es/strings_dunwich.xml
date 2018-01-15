@@ -88,6 +88,25 @@
     <string name="closed_tear">Los investigadores cerraron el desgarro en la realidad.\n\n</string>
     <string name="yog_fled">Yog-Sothoth ha huido a otra dimensión.\n\n</string>
 
+    <!--Edit log-->
+    <string name="unconscious_heading">Investigadores inconscientes</string>
+    <string name="not_unconscious">Los investigadores no perdieron la consciencia.</string>
+    <string name="students_heading">El destino de los estudiantes</string>
+    <string name="obannion_heading">La banda de O'Bannion</string>
+    <string name="cheated_heading">Trampas de los investigadores</string>
+    <string name="cheated">Un investigador \"hizo trampas\".</string>
+    <string name="not_cheated">Ningún investigador \"hizo trampas\".</string>
+    <string name="necronomicon_heading">Necronomicón</string>
+    <string name="lynch_heading">Adam Lynch o Harold Walsted</string>
+    <string name="not_lynch">Ni Adam Lynch ni Harold Walsted abandonaron el juego.</string>
+    <string name="delayed_heading">Investigadores retrasados</string>
+    <string name="not_delayed">Los investigadores no quedaron retrasados.</string>
+    <string name="silas_heading">Silas Bishop</string>
+    <string name="ally_heading">Aliados sacrificados</string>
+    <string name="ally_not_sacrificed">Ningún aliado fue sacrificado a Yog-Sothoth.</string>
+    <string name="townsfolk_heading">Lugareños de Dunwich</string>
+    <string name="brood_heading">Progenies que escaparon</string>
+    <string name="gate_heading">Portal entre mundos</string>
 
     <!--Chaos bag-->
     <string name="extracurricular_skull_one">-1. Si fallas, descarta las 3 primeras cartas de tu mazo.</string>
@@ -827,15 +846,14 @@
 
     <string name="undimensioned_no_resolution">Habéis hecho todo lo que habéis podido para detener a los violentos
         monstruos, pero había más de los que pensabais y no lograsteis matarlos a todos. Agotados y aterrados, os
-        retiráis a casa de Zebulon con la esperanza de sobrevivir a la noche.\n
-        \n<b>Si el mazo de un investigador contiene el Polvo de Ibn-Ghazi, retíralo de ese mazo.</b></string>
+        retiráis a casa de Zebulon con la esperanza de sobrevivir a la noche.</string>
     <string name="undimensioned_resolution_one">Habéis hecho todo lo que habéis podido para detener a los violentos
         monstruos, pero había más de los que pensabais y no lograsteis matarlos a todos. Agotados y aterrados, os
-        retiráis a casa de Zebulon con la esperanza de sobrevivir a la noche.\n
-        \n<b>Si el mazo de un investigador contiene el Polvo de Ibn-Ghazi, retíralo de ese mazo.</b></string>
+        retiráis a casa de Zebulon con la esperanza de sobrevivir a la noche.</string>
     <string name="undimensioned_resolution_two">Tras matar al que parece ser el último de los violentos monstruos,
-        os retiráis a casa de Zebulon, agotados y conmocionados por la experiencia.\n
-        \n<b>Si el mazo de un investigador contiene el Polvo de Ibn-Ghazi, retíralo de ese mazo.</b></string>
+        os retiráis a casa de Zebulon, agotados y conmocionados por la experiencia.</string>
+    <string name="undimensioned_resolution_powder"><b>Si el mazo de un investigador contiene el Polvo de Ibn-Ghazi,
+        retíralo de ese mazo.</b></string>
 
     <string name="doom_no_resolution">En su búsqueda de un poder arcano más allá de este reino, los hechiceros de
         Dunwich han logrado aquello que no pudieron conseguir Wilbur y el viejo Whateley. Mediante sacrificos de
