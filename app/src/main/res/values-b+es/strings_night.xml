@@ -38,6 +38,16 @@
     <string name="umordhoth_repelled">\nLos investigadores repelieron a Umôrdhoth.\n</string>
     <string name="umordhoth_sacrificed">\nLos investigadores sacrificaron a Lita Chantler a Umôrdhoth.\n</string>
 
+    <!--Edit log-->
+    <string name="house_heading">Tu casa</string>
+    <string name="ghoul_heading">Sacerdote gul</string>
+    <string name="ghoul_priest_dead">El sacerdote gul ha muerto.</string>
+    <string name="lita_heading">Lita Chantler</string>
+    <string name="lita_not_obtained">Los investigadores no se unieron a la causa de Lita.</string>
+    <string name="lita_obtained">Los investigadores se unieron a la causa de Lita.</string>
+    <string name="midnight_heading">Medianoche</string>
+    <string name="not_past_midnight">No dio la medianoche.</string>
+    <string name="conclusion">Conclusión de la campaña</string>
 
     <!--Chaos bag-->
     <string name="gathering_skull_one">-X. X es la cantidad de Enemigos <b><i>Gul</i></b> que hay en tu lugar.</string>

@@ -18,23 +18,21 @@
     <string name="cheated_checkbox">Un investigador \"hizo trampas\"</string>
     <string name="cheated_text"><b>Añade 1 ficha de caos de Antiguo a
         la bolsa de caos durante el resto de la campaña.</b></string>
-    <string name="adam_lynch_harold_walsted">Adam Lynch or Harold Walsted left play</string>
-    <string name="engine_car_investigator">Investigator to enter Engine Car</string>
-    <string name="engine_car_dodge">Failed to dodge the creature</string>
-    <string name="engine_car_endure">Failed to endure the creature\'s extreme heat</string>
-    <string name="kidnapped_cards">Stolen/Kidnapped Cards</string>
-    <string name="necronomicon_defeated">Investigator with The Necronomicon (<i>Olaus Wormius Translation</i>)
-        was defeated</string>
-    <string name="armitage_defeated">Investigator with the Dr. Henry Armitage card was defeated</string>
-    <string name="rice_defeated">Investigator with the Professor Warren Rice card was defeated</string>
-    <string name="morgan_defeated">Investigator with the Dr. Francis Morgan card was defeated</string>
-    <string name="remove_necronomicon"><b>Remove The Necronomicon (<i>Olaus Wormius Translation</i>) from the
-        relevant investigator\'s deck.</b>\n\n</string>
-    <string name="remove_armitage"><b>Remove the Dr. Henry Armitage card from the relevant investigator\'s deck
-        .</b>\n\n</string>
-    <string name="remove_rice"><b>Remove the Professor Warren Rice card from the relevant investigator\'s deck
-        .</b>\n\n</string>
-    <string name="remove_morgan"><b>Remove the Dr. Francis Morgan card from the relevant investigator\'s deck.</b>\n\n
+    <string name="adam_lynch_harold_walsted">Adam Lynch o Harold Walsted abandonaron el juego</string>
+    <string name="engine_car_investigator">Investigador que entró en la locomotora</string>
+    <string name="engine_car_dodge">Se fracasó al intentar esquivar a la criatura</string>
+    <string name="engine_car_endure">Se fracasó al intentar soportar el calor extremo de la criatura</string>
+    <string name="kidnapped_cards">Cartas robadas/secuestradas</string>
+    <string name="necronomicon_defeated">Un investigador con El Necronomicón (<i>Traducción de Olaus Wormius</i>)
+        en su mazo ha sido derrotado</string>
+    <string name="armitage_defeated">Un investigador con la carta Dr. Henry Armitage en su mazo ha sido derrotado.</string>
+    <string name="rice_defeated">Un investigador con la carta Profesor Warren Rice en su mazo ha sido derrotado.</string>
+    <string name="morgan_defeated">Un investigador con la carta Dr. Francis Morgan en su mazo ha sido derrotado.</string>
+    <string name="remove_necronomicon"><b>Retira la carta El Necronomicón (<i>Traducción de Olaus Wormius</i>) del mazo
+        del investigador que lo llevase.</b>\n\n</string>
+    <string name="remove_armitage"><b>Retira la carta Dr. Henry Armitage del mazo del investigador que lo llevase.</b>\n\n</string>
+    <string name="remove_rice"><b>Retira la carta Profesor Warren Rice del mazo del investigador que lo llevase.</b>\n\n</string>
+    <string name="remove_morgan"><b>Retira la carta Dr. Francis Morgan del mazo del investigador que lo llevase.</b>\n\n
     </string>
     <string name="underneath_agenda_deck">Bajo el mazo de plan</string>
     <string name="henry_armitage">Dr. Henry Armitage</string>
@@ -43,17 +41,17 @@
     <string name="zebulon_whateley">Zebulon Whateley</string>
     <string name="earl_sawyer">Earl Sawyer</string>
     <string name="another_ally">Otro aliado</string>
-    <string name="brood_escaped_counter">Brood Escaped:</string>
-    <string name="act_one_two_three">Finished at Act 1, 2 or 3</string>
-    <string name="act_four">Finished at Act 4</string>
+    <string name="brood_escaped_counter">Progenies que escaparon:</string>
+    <string name="act_one_two_three">Terminado en el Acto 1, 2 o 3</string>
+    <string name="act_four">Terminado en el Acto 4</string>
 
 
     <!--Campaign log-->
     <string name="investigators_unconscious">Los investigadores estuvieron inconscientes varias horas.\n\n</string>
     <string name="warren_kidnapped">El profesor Warren Rice ha sido secuestrado.\n\n</string>
     <string name="warren_rescued">Los investigadores rescataron al profesor Warren Rice.\n\n</string>
-    <string name="warren_sacrificed">Professor Warren Rice was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="warren_survived">Professor Warren Rice survived The Dunwich Legacy.\n\n</string>
+    <string name="warren_sacrificed">El Profesor Warren Rice fue sacrificado a Yog-Sothoth.\n\n</string>
+    <string name="warren_survived">El Profesor Warren Rice sobrevivió a El legado de Dunwich.\n\n</string>
     <string name="students_failed">Los investigadores no lograron salvar a los estudiantes.\n\n</string>
     <string name="students_rescued">Los estudiantes han sido rescatados.\n\n</string>
     <string name="experiment_defeated">El experimento ha sido derrotado.\n\n</string>
@@ -61,35 +59,54 @@
     <string name="obannion_succeeded">Naomi apoya a los investigadores.\n\n</string>
     <string name="morgan_kidnapped">El Dr. Francis Morgan ha sido secuestrado.\n\n</string>
     <string name="morgan_rescued">Los investigadores rescataron al Dr. Francis Morgan.\n\n</string>
-    <string name="morgan_sacrificed">Dr. Francis Morgan was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="morgan_survived">Dr. Francis Morgan survived The Dunwich Legacy.\n\n</string>
+    <string name="morgan_sacrificed">El Dr. Francis Morgan fue sacrificado a Yog-Sothoth.\n\n</string>
+    <string name="morgan_survived">El Dr. Francis Morgan sobrevivió a El legado de Dunwich.\n\n</string>
     <string name="armitage_kidnapped">El Dr. Henry Armitage ha sido secuestrado.\n\n</string>
-    <string name="armitage_rescued">The investigators rescued Dr. Henry Armitage.\n\n</string>
-    <string name="armitage_sacrificed">Dr. Henry Armitage was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="armitage_survived">Dr. Henry Armitage survived The Dunwich Legacy.\n\n</string>
-    <string name="necronomicon_failed">The investigators failed to recover the <i>Necronomicon</i>.\n\n</string>
-    <string name="necronomicon_destroyed">The investigators destroyed the <i>Necronomicon</i>.\n\n</string>
-    <string name="necronomicon_taken">The investigators took custody of the <i>Necronomicon</i>.\n\n</string>
-    <string name="necronomicon_stolen">The Necronomicon was stolen.\n\n</string>
-    <string name="investigators_delayed">The investigators were delayed on their way to Dunwich.\n\n</string>
-    <string name="silas_ritual">The ritual was completed.\n\n</string>
-    <string name="silas_misery">The investigators put Silas Bishop out of his misery.\n\n</string>
-    <string name="silas_restored">The investigators restored Silas Bishop.\n\n</string>
-    <string name="silas_banished">The investigators banished Silas Bishop.\n\n</string>
-    <string name="zebulon_sacrificed">Zebulon Whateley was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="zebulon_survived">Zebulon Whateley survived The Dunwich Legacy.\n\n</string>
-    <string name="sawyer_sacrificed">Earl Sawyer was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="sawyer_survived">Earl Sawyer survived The Dunwich Legacy.\n\n</string>
-    <string name="ally_sacrificed">An ally was sacrificed to Yog-Sothoth.\n\n</string>
-    <string name="townsfolk_calmed">You calmed the townsfolk.\n\n</string>
-    <string name="townsfolk_warned">You warned the townsfolk.\n\n</string>
-    <string name="brood_escaped"> brood escaped into the wild.\n\n</string>
-    <string name="investigators_entered_gate">The investigators entered the gate.\n\n</string>
-    <string name="yog_tore_barrier">Yog-Sothoth tore apart the barrier between worlds, and became one
-        with all reality.\n\n</string>
-    <string name="closed_tear">The investigators closed the tear in reality.\n\n</string>
-    <string name="yog_fled">Yog-Sothoth has fled to another dimension.\n\n</string>
+    <string name="armitage_rescued">Los investigadores rescataron al Dr. Henry Armitage.\n\n</string>
+    <string name="armitage_sacrificed">El Dr. Henry Armitage fue sacrificado a Yog-Sothoth.\n\n</string>
+    <string name="armitage_survived">El Dr. Henry Armitage sobrevivió a El legado de Dunwich.\n\n</string>
+    <string name="necronomicon_failed">Los investigadores no lograron recuperar el <i>Necronomicón</i>.\n\n</string>
+    <string name="necronomicon_destroyed">Los investigadores destruyeron el <i>Necronomicón</i>.\n\n</string>
+    <string name="necronomicon_taken">Los investigadores se quedaron con el <i>Necronomicón</i>.\n\n</string>
+    <string name="necronomicon_stolen">El Necronomicón ha sido robado.\n\n</string>
+    <string name="investigators_delayed">Los investigadores quedaron retrasados de camino a Dunwich.\n\n</string>
+    <string name="silas_ritual">El ritual fue completado.\n\n</string>
+    <string name="silas_misery">Los investigadores acabaron con Silas Bishop.\n\n</string>
+    <string name="silas_restored">Los investigadores devolvieron a su forma a Silas Bishop.\n\n</string>
+    <string name="silas_banished">Los investigadores desterraron a Silas Bishop.\n\n</string>
+    <string name="zebulon_sacrificed">Zebulon Whateley fue sacrificado a Yog-Sothoth..\n\n</string>
+    <string name="zebulon_survived">Zebulon Whateley sobrevivió a El legado de Dunwich.\n\n</string>
+    <string name="sawyer_sacrificed">Earl Sawyer fue sacrificado a Yog-Sothoth..\n\n</string>
+    <string name="sawyer_survived">Earl Sawyer sobrevivió a El legado de Dunwich.\n\n</string>
+    <string name="ally_sacrificed">Un aliado fue sacrificado a Yog-Sothoth.\n\n</string>
+    <string name="townsfolk_calmed">Calmasteis a los lugareños.\n\n</string>
+    <string name="townsfolk_warned">Advertisteis a los lugareños.\n\n</string>
+    <string name="brood_escaped"> progenies escaparon.\n\n</string>
+    <string name="investigators_entered_gate">Los investigadores entraron en el portal.\n\n</string>
+    <string name="yog_tore_barrier">Yog-Sothoth hizo pedazos la barrera entre los mundos y se hizo uno
+        con la realidad.\n\n</string>
+    <string name="closed_tear">Los investigadores cerraron el desgarro en la realidad.\n\n</string>
+    <string name="yog_fled">Yog-Sothoth ha huido a otra dimensión.\n\n</string>
 
+    <!--Edit log-->
+    <string name="unconscious_heading">Investigadores inconscientes</string>
+    <string name="not_unconscious">Los investigadores no perdieron la consciencia.</string>
+    <string name="students_heading">El destino de los estudiantes</string>
+    <string name="obannion_heading">La banda de O'Bannion</string>
+    <string name="cheated_heading">Trampas de los investigadores</string>
+    <string name="cheated">Un investigador \"hizo trampas\".</string>
+    <string name="not_cheated">Ningún investigador \"hizo trampas\".</string>
+    <string name="necronomicon_heading">Necronomicón</string>
+    <string name="lynch_heading">Adam Lynch o Harold Walsted</string>
+    <string name="not_lynch">Ni Adam Lynch ni Harold Walsted abandonaron el juego.</string>
+    <string name="delayed_heading">Investigadores retrasados</string>
+    <string name="not_delayed">Los investigadores no quedaron retrasados.</string>
+    <string name="silas_heading">Silas Bishop</string>
+    <string name="ally_heading">Aliados sacrificados</string>
+    <string name="ally_not_sacrificed">Ningún aliado fue sacrificado a Yog-Sothoth.</string>
+    <string name="townsfolk_heading">Lugareños de Dunwich</string>
+    <string name="brood_heading">Progenies que escaparon</string>
+    <string name="gate_heading">Portal entre mundos</string>
 
     <!--Chaos bag-->
     <string name="extracurricular_skull_one">-1. Si fallas, descarta las 3 primeras cartas de tu mazo.</string>
@@ -255,228 +272,233 @@
         creeros de no ser por vuestras siniestras experiencias de esta misma noche…\n
     \n<b>Un investigador cualquiera puede elegir añadir al Dr. Henry Armitage a su mazo.</b></string>
 
-    <string name="miskatonic_introduction_one">Several months ago, Armitage and his colleagues stopped a rampaging
-        horror from tearing through Dunwich, a backwater town several hours north and west of Arkham. At first you
-        imagine this beast as a rabid bear, or worse, but the professor’s description of the creature paints a
-        different picture.\n
-    \nIt all began when a man named Wilbur Whateley entered the Orne Library looking for Olaus Wormius’s Latin
-        translation of a book called the Necronomicon. Wilbur already possessed a beaten-up English translation by
-        Dr. John Dee, but it was insufficient for his purposes. Armitage turned the man away, fearing what use the
-        strange man had for the book. Whateley returned in secret, hoping to steal the book, but was attacked by a
-        hound guarding the university. Armitage, Rice, and Morgan later discovered Whateley’s body. A description of
-        the foul corpse—semi-anthropomorphic and covered in fur, with a leathery hide and greenish-grey
-        tentacles—causes you to question whether or not Whateley was truly human.\n
-    \nThe notes written by Dr. Armitage in the journal stress Whateley’s desire to get his hands on the Necronomicon
-        for some terrible purpose. As you read on, it seems that Dr. Armitage brought the university’s copy of the
-        tome to Harold Walsted—the curator of the Miskatonic Museum—for safekeeping in the museum’s Restricted Hall.
-        Although you are worried about your mentor, you are equally worried that Armitage’s kidnappers might get
-        their hands on this Necronomicon. You decide to head to the museum to prevent them from acquiring it.</string>
-    <string name="miskatonic_introduction_two">Several months ago, Armitage and his colleagues stopped a rampaging
-        horror from tearing through Dunwich, a backwater town several hours north and west of Arkham. At first you
-        imagine this beast as a rabid bear, or worse, but the professor’s description of the creature paints a
-        different picture.\n
-    \nIt all began when a man named Wilbur Whateley entered the Orne Library looking for Olaus Wormius’s Latin
-        translation of a book called the Necronomicon. Wilbur already possessed a beaten-up English translation by
-        Dr. John Dee, but it was insufficient for his purposes. Armitage turned the man away, fearing what use the
-        strange man had for the book. Whateley returned in secret, hoping to steal the book, but was attacked by a
-        hound guarding the university. Armitage, Rice, and Morgan later discovered Whateley’s body. A description of
-        the foul corpse—semi-anthropomorphic and covered in fur, with a leathery hide and greenish-grey
-        tentacles—causes you to question whether or not Whateley was truly human.\n
-    \n“My colleagues and I were quick to put the ordeal behind us,” Armitage says with a sigh. “But it seems that
-        things haven’t fully resolved themselves. I’ll tell you the rest later, but for now, it is imperative that we
-        get our hands on that copy of the Necronomicon. If my instincts are correct, the assailants you’ve
-        encountered will be searching for it. After all that transpired, I didn’t feel safe keeping it at the
-        library, so I brought it to my good friend, Harold Walsted. He is the current curator of the Miskatonic
-        Museum. I thought it would be safe in the museum’s Restricted Hall, but now I’m not so sure. You must
-        retrieve it at all costs! I fear terribly what they could do with the rites contained in its pages…”</string>
+    <string name="miskatonic_introduction_one">Hace algunos meses, Armitage y sus colegas detuvieron a un horror
+        desatado que iba a destruir Dunwich, una apartada ciudad que se encuentra a varias horas de Arkham, hacia
+        el noroeste. Al principio pensáis que esta bestia es un oso rabioso o algo peor, pero la descripción que
+        hace el profesor de la criatura describe algo muy distinto.\n
+    \nTodo comenzó cuando un hombre llamado Wilbur Whateley entró en la biblioteca Orne en busca de la traducción
+        al latín de Olaus Wormius de un libro llamado el Necronomicón. Wilbur ya poseía una ajada traducción al
+        inglés del Dr. John Dee, pero no le bastaba para sus propósitos. Armitage le prohibió el acceso, pues temía
+        el posible uso que pudiera darle al libro ese extraño hombre. Whateley volvió en secreto, con las esperanza
+        de poder robar el libro, pero fue atacado por un sabuese guardián de la universidad. Más tarde, Armitage,
+        Rice y Morgan descubrieron el cuerpo de Whateley. Una descripción del terrible cadáver —semiantropomórfico y
+        cubierto de pelaje, con una piel coriácea y tentáculos de un color gris verdoso— os hace cuestionaros si 
+        Whateley era humano realmente.\n
+    \nLas notas escritas por el Dr. Armitage en su diario hacen hincapié en el deseo de Whateley por hacerse con el
+        Necronomicón para algún terrible propósito. Al seguir leyendo, parece que el Dr. Armitage llevó la copia
+        del tomo que tenía la universidad a Harold Walsted, el conservador del museo Miskatonic, para que la guardara
+        en la sala restringida del museo. Aunque os preocupa vuestro mentor, os preocupa igualmente que los secuestradores
+        de Armitage puedan hacerse con este Necronomicón. Decidís acudir al museo para evitar que lo consigan.</string>
+    <string name="miskatonic_introduction_two">Hace algunos meses, Armitage y sus colegas detuvieron a un horror
+        desatado que iba a destruir Dunwich, una apartada ciudad que se encuentra a varias horas de Arkham, hacia
+        el noroeste. Al principio pensáis que esta bestia es un oso rabioso o algo peor, pero la descripción que
+        hace el profesor de la criatura describe algo muy distinto.\n
+    \nTodo comenzó cuando un hombre llamado Wilbur Whateley entró en la biblioteca Orne en busca de la traducción
+        al latín de Olaus Wormius de un libro llamado el Necronomicón. Wilbur ya poseía una ajada traducción al
+        inglés del Dr. John Dee, pero no le bastaba para sus propósitos. Armitage le prohibió el acceso, pues temía
+        el posible uso que pudiera darle al libro ese extraño hombre. Whateley volvió en secreto, con las esperanza
+        de poder robar el libro, pero fue atacado por un sabuese guardián de la universidad. Más tarde, Armitage,
+        Rice y Morgan descubrieron el cuerpo de Whateley. Una descripción del terrible cadáver —semiantropomórfico y
+        cubierto de pelaje, con una piel coriácea y tentáculos de un color gris verdoso— os hace cuestionaros si 
+        Whateley era humano realmente.\n
+    \n—Mis colegas y yo tratamos de olvidar toda esa odisea rápidamente —os dice Armitage con un suspiro—. Pero
+        parece que las cosas no se han resuelto por completo. Os contaré el resto más tarde, pero por ahora, es
+        fundamental que nos hagamos con esa copia del Necronomicón. Si mi instinto no me falla, los agresores con
+        los que os habéis encontrado lo estarán buscando. Después de todo lo que ocurrió, no me sentía seguro guardándolo
+        en la biblioteca, así que se lo llevé a mi buen amigo Harold Walsted. Es el actual conservador del museo
+        Miskatonic. Pensé que estaría seguro en la sala restringida del museo, pero ahora ya no lo tengo tan claro.
+        ¡Debéis recuperarlo a toda costa! Tengo un miedo horrible a lo que podrían hacer con los ritos que contienen
+        esas páginas…</string>
 
-    <string name="essex_introduction">Recent events in the Museum have forced you to re-evaluate Armitage’s tale
-        about Dunwich. It cannot be a coincidence—Wilbur Whateley, the Necronomicon, the creature from Dunwich, and
-        the people and creatures who attacked here in Arkham—everything must be connected. You’re certain now where
-        you must head: the lonely and dismal town of Dunwich Village.\n
-    \nYou consider telling the Massachusetts State Police what you know, but the negative consequences outweigh the
-        potential gain. Given the nature of your story, they would likely write your stories off as an absurd hoax.
-        Worse, they could lock you up. After all, you were present in an illegal speakeasy, and you also trespassed
-        in the museum. Instead, you decide to head to Dunwich yourself, in order to investigate further.\n
-    \nYou pack everything you think you might need and manage to get some rest for the night. In the morning, you
-        head to the train station in Northside and purchase a last-minute express ticket. Dunwich is several hours by
-        train northwest along the Miskatonic River Valley. There is no train station in Dunwich, but you manage to
-        phone one of Armitage’s acquaintances in the small village: a man by the name of Zebulon Whateley who was
-        present during the events several months ago.\n
-    \nArmitage’s notes indicate that the Whateley family is spread across many branches, some decadent and
-        unscrupulous, others “undecayed” or otherwise untouched by nefarious and diabolic rites. According to
-        Armitage, Zebulon’s branch of the family lay somewhere between the decayed and undecayed Whateleys, who knew
-        of the traditions of his ancestors, but was not corrupted by them. He agrees to pick you up at the closest
-        station and drive you into town.\n
-    \nAs the train departs from Arkham, you feel the events of the previous night catching up to you, and exhaustion
-        sets in. But before you can safely reach your destination, the train car suddenly rumbles and shakes,
-        startling you out of your reverie. The train loudly skids to a violent halt, and you hear a rattling noise
-        behind you…</string>
+    <string name="essex_introduction">Los recientes acontecimientos en el museo os han obligado a reconsiderar el
+        relato de Armitage sobre Dunwich. No puede ser una coincidencia: Wilbur Whateley, el Necronomicón, la
+        criatura de Dunwich y la gente y criaturas que os atacaron aquí, en Arkham… todo debe de estar conectado.
+        Ahora estáis seguros de adónde debéis dirigiros: a la solitaria y lúgubre ciudad de Dunwich.\n
+    \nOs planteáis contarla a la policía estatal de Massachusetts lo que sabéis, pero las consecuencias negativas
+        superan a cualquier posible beneficio. Dada la naturaleza de vuestra historia, probablemente pensarían que
+        es un fraude absurdo. O peor, podrían encerraros. Después de todo, estuvisteis presentes en un garito ilegal
+        y también os colasteis en el museo. Así que desecháis la idea y decidís dirigiros a Dunwich vosotros mismos
+        para seguir investigando.\n
+    \nMetéis en el equipaje todo lo que creéis que podréis necesitar y lográis descansar un poco durante la noche.
+        Por la mañana, vais a la estación de tren del Barrio Norte y compráis billetes de última hora para el tren
+        expreso. Dunwich está a varias horas en tren hacia el noroeste, siguiendo el valle del río Miskatonic. En la
+        localidad no hay estación de tren, pero lográis hablar por teléfono con uno de los conocidos de Armitage que
+        viven allí: se trata de un hombre llamado Zebulon Whateley, que estuvo presente durante los sucesos de hace 
+        unos meses.\n
+    \nLas notas de Armitage indican que el árbol genealógico de la familia Whateley tiene una gran cantidad de ramas,
+        algunas repletas de miembros de la familia decadentes y sin escrúpulos, y otras “limpias” o libres de la
+        influencia de los ritos diabólicos y siniestros. Según Armitage, la rama de la familia de Zebulon se encuentra
+        entre los Whateley podridos y los no podridos, y auqnue conocían las tradiciones de sus ancestros, no fueron
+        corrompidos por ellas. Zebulon accede a recogeros en la estación más cercana y llevaros a la ciudad.\n
+    \nCuando el tren sale de Arkham, notáis que los acontecimientos de la noche anterior empiezan a pasaros factura,
+        y el cansancio os vence. Pero antes de que podáis llegar a vuestro destino sanos y salvos, el vagón empieza a
+        temblar y sacudirse y os saca de vuestro sopor. El tren se detiene brusca y ruidosamente, y oís un traqueteo
+        a vuestra espalda…</string>
 
-    <string name="blood_introduction">When you finally reach Dunwich, you are greeted by Zebulon Whateley and Earl
-        Sawyer, another man from the village who had met with Dr. Armitage during the incident several months ago.
-        “Things ain’t lookin’ too good here,” Earl tells you. “Some folk up and went missin’ a few nights ago. ‘Dem
-        whippoorwills won’ shut up. Dunno what yer doin’ here, but last time you Arkham folk came ‘round it was bad
-        news. Very bad news.” His eyes blink rapidly, and he coughs and looks away.\n
-    \n“Look, why don’t you rest fer the night an’ look fer whatever it is yer looking fer t’morra,” Zebulon chimes
-        in, putting a wrinkled hand on your shoulder. You begin to protest, but your aching muscles and weary mind
-        won’t allow you to refuse. The elderly man offers to take you in for the night, and drives you to his home at
-        the outskirts of Dunwich village. The town is disheveled and eerie, and you find yourself wishing you hadn’t
-        come here at all. You fall asleep on the ride over and scarcely remember anything else from that night.\n
-    \nWhen you awaken, you find that Zebulon’s house is abandoned, and there is no sign of the elderly man, or of Mr.
-        Sawyer. Fearing the worst, you head into the village of Dunwich to investigate, hoping to find answers.</string>
+    <string name="blood_introduction">Cuando por fin llegáis a Dunwich, os reciben Zebulon Whateley y Earl Sawyer, otro
+        hombre del pueblo que conoció al Dr. Armitage durante el incidente de hace unos meses. —Las cosas no pintan bien
+        por aquí —os dice Earl—. Hace varias noches desaparecieron varias personas. Los chotacabras tampoco se callan.
+        No sé a qué han venido, pero la última vez que unos tipos de Arkham estuvieron aquí, no pasó nada bueno. Todo
+        lo contrario. —Sus ojos parpadean rápidamente, y tose a la vez que aparta la mirada.\n
+    \n—Oigan, ¿por qué no descansan esta noche y ya buscarán lo que estén buscando mañana? —añade Zebulon mientras le
+        pone la arrugada mano en el hombro a uno de vosotros. Queréis protestar, pero vuestro doloridos músculos y agotada
+        mente no os permiten rechazar la idea. El anciano os ofrece alojaros durante la noche, y os lleva hasta su
+        casa, en las afueras del pueblo de Dunwich. Se trata de una población destartalada y fantasmagórica, y os descubrís
+        deseando no haber venido aquí. Os quedáis dormidos durante el trayecto, y apenas recordáis nada más de esa noche.\n
+    \nCuando despertáis, descubrís que la casa de Zebulon está abandonada, y no hay ni rastro del anciano ni del Sr. Swayer.
+        Temiendo lo peor, os dirigís al pueblo de Dunwich para investigar, con la esperanza de encontrar respuestas.</string>
 
-    <string name="survivors_interlude">Inside the chamber that contained the terrible beast, you find the missing
-        townsfolk and the others from Arkham; they are bound and shackled. You also find several documents that
-        suggest the creature you found isn’t the only one of its kind in Dunwich. You free the creature’s victims
-        from their bonds, and they offer you their thanks. You begin to plan your next move.</string>
-    <string name="survivors_interlude_one">\n“It is far worse than we had thought,” Dr. Armitage says, pale and
-        trembling. “Wilbur Whateley was only the beginning. There were more, many more in Dunwich, who knew of the
-        ‘Great Old Ones’ and who desired power and knowledge above all else, the Earth be damned. I knew I should
-        have burned that wretch’s journal. But thanks to its contents, I know how we can stop them. We are the only
-        ones who can! Now quickly, help me with this solution—the powder is the key, yes, the powder is the only
-        way…”\n
-    \n<b>If the Dr. Henry Armitage card is not already in an investigator’s deck, any one investigator may choose to
-            add that card to his or her deck.</b></string>
-    <string name="survivors_interlude_two">\nProfessor Rice adjusts his glasses and studies the documents and arcane
-        manuscripts left in the chamber. “I thought this nightmare was over and done with,” he sighs. “But we have a
-        duty to see this through. We have to stop these creatures, or it won’t be just Dunwich in trouble. The powder
-        mixture Armitage created to see the creatures will be our saving grace,” he explains, and sets off to the
-        task of recreating the powder.\n
-    \n<b>If the Professor Warren Rice card is not already in an investigator’s deck, any one investigator may choose
-            to add that card to his or her deck.</b></string>
-    <string name="survivors_interlude_three">\n“Thank you for everything you’ve done,” Dr. Morgan says, taking count
-        of your provisions and ammunition. “Last time, we needed some of that strange powder Armitage concocted to
-        even see the beast that terrorized Dunwich. If there’s more of those things out there, we’re going to need
-        that powder. I think I remember how he made it…”\n
-    \n<b>If the Dr. Francis Morgan card is not already in an investigator’s deck, any one investigator may choose to
-            add that card to his or her deck.</b></string>
-    <string name="survivors_interlude_four">\n“Dunwich’s had its fair share of oddities,” Zebulon explains to you
-        with a quavering voice, “but I ain’t ever seen anything as sick and twisted as this…this…<b>thing</b>.” He
-        gives the creature’s remains one last sickened glance before closing the door to the chamber behind him,
-        shuddering. He locks eyes with you, his expression grim. “Whoever dun this gotta pay. I’ll do all I can to
-        help.”\n
-    \n<b>Any one investigator may choose to add the Zebulon Whateley card to his or her deck.</b></string>
-    <string name="survivors_interlude_five">\n“I never could’a made it if it weren’t for you,” Earl says with a
-        stammer, shaking your hand repeatedly. “If ’n there’s anything I can do to repay yeh, just ask away. I ain’t
-        much of a fighter or anythin’, but I’ll do all I can. Jus’…don’t make me look at anythin’ like that <b>beast
-        </b> again, a’right?”\n
-    \n<b>Any one investigator may choose to add the Earl Sawyer card to his or her deck.</b></string>
-    <string name="survivors_interlude_powder">\n<b>Any one investigator may choose to add the Powder of Ibn-Ghazi
-        card to his or her deck.</b></string>
+    <string name="survivors_interlude">Dentro de la cámara que contenía a la horrible bestia encontráis a los lugareños
+        desaparecidos y a las demás personas de Arkham, atados y engrilletados. También encontráis varios documentos
+        que sugieren que la criatura que encontrasteis no es la única de su especie en Dunwich. Liberáis a las víctimas
+        de la criatura de sus ligaduras y os dan las gracias. Es hora de comenzar a planear vuestro siguiente movimiento.</string>
+    <string name="survivors_interlude_one">\n—Es mucho peor de lo que pensábamos —dice el Dr. Armitage, pálido y tembloroso—.
+        Wilbur Whateley sólo era el principio. Había muchísimos más en Dunwich que conocían a los “Primigenios” y
+        ambicionaban el poder y el conocimiento por encima de todo, aunque con ello condenaran a la Tierra. Sabía que
+        tendría que haber quemado el diario de ese infame. Pero gracias a su contenido, sé cómo podemos detenerlos. ¡Somos
+        los únicos que podemos! Rápido, ayudadme con esta solución… El polvo es la clave, sí, el polvo es la única forma…\n
+    \n<b>Si la carta del Dr. Henry Armitage no está ya en el mazo de algún investigador, un investigador cualquiera
+        puede elegir añadir esa carta a su mazo.</b></string>
+    <string name="survivors_interlude_two">\nEl profesor Rice se coloca las gafas y estudia los documentos y manuscritos
+        arcanos que quedan en la cámara. —Pensaba que habíamos acabado con esta pesadilla de una vez por todas —suspira—.
+        Pero tenemos la obligación de llegar hasta el final con esto. Debemos detener a estas criaturas o Dunwich no será
+        el único lugar que tenga problemas. La mezcla en polvo que creó Armitage para ver a las criaturas será nuestra
+        salvación —os explica antes de ponerse a recrear el polvo.\n
+    \n<b>Si la carta del Profesor Warren Rice no está ya en el mazo de algún investigador, un investigador cualquiera
+        puede elegir añadir esa carta a su mazo.</b></string>
+    <string name="survivors_interlude_three">\n—Gracias por todo lo que habéis hecho —dice el Dr. Morgan mientras revisa
+        vuestras provisiones y munición—. La última vez nos hizo falta algo de ese extraño polvo que preparó Armitage
+        para poder siquiera ver las bestias que aterrorizaban Dunwich. Si hay más de esas cosas ahí fuera, vamos a necesitar
+        ese polvo. Creo que me acuerdo de cómo lo hacía…\n
+    \n<b>Si la carta del Dr. Francis Morgan no está ya en el mazo de algún investigador, un investigador cualquiera
+        puede elegir añadir esa carta a su mazo.</b></string>
+    <string name="survivors_interlude_four">\n—Dunwich ha vivido no pocos acontecimientos extraños —os explica Zebulon
+        con voz temblorosa—, pero nunca había visto nada tan enfermizo y siniestro como esta… esta… <b>cosa</b>. —Le
+        da una última mirada de repulsión a los restos de la criatura antes de cerrar la puerta tras él, estremeciéndose.
+        Os mira con expresión adusta—. Quien haya hecho eso debe pagar por ello. Haré todo lo que pueda para ayudar.\n
+    \n<b>Un investigador cualquiera puede elegir añadir la carta de Zebulon Whateley a su mazo.</b></string>
+    <string name="survivors_interlude_five">\n“—Nunca habría logrado sobrevivir si no fuera por ustedes —dice Earl con un
+        cierto tartamudeo mientras os estrecha la mano repetidamente—. Si hay cualquier cosa que pueda hacer para devolveros
+        el favor, pídanmela. No se me da muy bien pelear ni nada de eso, pero haré todo lo que pueda. Solamente… no me hagan
+        volver a mirar nada como esa <b>bestia</b>, ¿de acuerdo?\n
+    \n<b>Un investigador cualquiera puede elegir añadir la carta de Erl Sawyer a su mazo.</b></string>
+    <string name="survivors_interlude_powder">\n<b>Un investigador cualquiera puede elegir añadir la carta de el
+        Polvo de Ibn-Ghazi a su mazo.</b></string>
 
-    <string name="undimensioned_introduction">Your search of the village of Dunwich has uncovered a number of
-        documents, journal entries, and esoteric theories. Reading through these materials leaves you exhausted and
-        emotionally drained. Most of the content was written by a single source—a man named Seth Bishop. When you ask
-        around town, you learn that Seth is a citizen of Dunwich. Along with several others, Seth had witnessed
-        firsthand the devastation wrought by the events of “the Dunwich horror,” as Armitage had dubbed the incident.
-        Curiously, since that time, very few people had seen Seth around town, and those who did claimed his eyes had
-        been bloodshot and his face sweaty and pale.\n
-    \nYou don’t doubt that somebody who has seen what Seth has seen would appear nervous or paranoid. But the more
-        you read of his frantic and unhinged writings, the more you believe he is involved in recent events. His
-        writings speak of having “gathered the remains” and of using arcane methods to “imbue the fathers’ essence”
-        into other creatures, and eventually, into other people. The explanations and diagrams that follow are
-        unfathomably complex and defy understanding.\n
-    \nBefore you are able to find Seth and confront him, several men and women from the village approach you in a
-        panic. “It’s back!” one of them wails. You recognize him as Curtis Whateley, of the undecayed branch.
-        “Whatever it was that killed them Fryes, it’s back! Up and smashed the Bishops’ home like it were made o’
-        paper!” Curtis and the other townsfolk are clamoring amongst themselves, raising their voices in a panic
-        .</string>
-    <string name="undimensioned_introduction_option_one">You try to calm down the townsfolk in order to learn more.</string>
-    <string name="undimensoned_introduction_option_two">You try to warn the townsfolk and convince them to evacuate.</string>
-    <string name="undimensioned_introduction_one">You aim to calm the townsfolk so they can explain to you what is
-        going on. They inform you that there was a rumbling to the north, and when they went to investigate they
-        found the Bishops’ farmhouse had been torn to shreds. A trail of heavy tracks led into nearby Cold Spring
-        Glen. “You know what to do, right? You Arkham folk stopped that thing last time,” one of the townsfolk says.
-        Curtis shakes his head and bites at his lip.\n
-    \n“We couldn’t even see that hellish thing until the old professor sprayed that there powder on it,” He says. “To
-        this day, I wish I hadn’t seen it at all…” Something must be done to stop the monster’s rampage. But, if the
-        documents you found are true, there may be more than one such creature on the loose….</string>
-    <string name="undimensioned_introduction_two">You warn the townsfolk that they are in grave danger, and urge them
-        to flee Dunwich while they can. Several of them immediately heed your advice, remembering the terrible
-        monstrosity that had previously endangered the town. Curtis drops to his knees in despair, sweating
-        feverishly. “It’s that <b>thing</b> again, ain’t it? It’s come back fer us,” Curtis stutters. “I hope you’ve
-        got some of that powder the old professor had last time. We couldn’t even see the damned thing until he
-        sprayed it. To this day, I wish I hadn’t seen it at all…” Something must be done to stop the monster’s
-        rampage. But, if the documents you found are true, there may be more than one such creature on the loose…
-        .</string>
+    <string name="undimensioned_introduction">Tras registrar el pueblo de Dunwich, habéis descubierto una serie de documentos,
+        entradas de diarios y teorías esotéricas. Leer todo ese material os deja cansados y agotados emocionalmente. La
+        mayor parte del contenido lo escribió la misma persona: un hombre llamado Seth Bishop. Cuando preguntáis en el
+        pueblo, descrubrís que Seth es un habitante de Dunwich. Junto a varias personas más, Seth asistió de primera mano
+        a la devastación causada por los acontecimientos de “el horror de Dunwich”, como Armitage llamó al incidente.
+        Curiosamente, muy poca gente había visto a Seth por el pueblo desde entonces, y quienes lo vieron afirman que
+        tenía los ojos inyectados en sangre y el rostro sudoroso y pálido.\n
+    \nEstáis seguros de que alguien que hubiera visto lo que Seth ha visto parecería nervioso o paranoico. Pero cuanto más
+        leéis sus frenéticos y delirantes escritos, más creéis que está implicado en los acontecimientos recientes. En ellos
+        habla de haber “reunido los restos” y de haber usado métodos arcanos para “imbuir la esencia de los padres” en otras
+        criaturas y, al final, en otras personas. Las explicaciones y diagramas que hay después son inenarrablemente complejos
+        y desafían toda comprensión.\n
+    \nAntes de que podáis encontrar a Seth y enfrentaros a él, varios hombres y mujeres del pueblo se os acercan presas del
+        pánico. —¡Ha vuelto! —grita uno de ellos, al que reconocéis como Curtis Whateley, de la rama no podrida—. ¡Lo que sea
+        que matara a los Frye ha vuelto! ¡Ha machacado la casa de los Bishop como si fuera de papel! —Curtis y los demás
+        lugareños no dejan de dar voces, completamente asustados.</string>
+    <string name="undimensioned_introduction_option_one">Tratáis de calmar a los lugareños para que os den más información.</string>
+    <string name="undimensoned_introduction_option_two">Tratáis de advertir a los lugareños y convencerles de que evacúen
+        el pueblo.</string>
+    <string name="undimensioned_introduction_one">Queréis calmar a los lugareños para que os puedan explicar qué está pasando.
+        Os informan de que hubo un estruendo al norte, y que cuando fueron a investigarlo, encontraron la granja de los Bishop
+        hecha trizas y un rastro de pesadas huellas que llevaba hacia la cercana cañada de Cold Spring. —Saben lo que tienen que
+        hacer, ¿verdad? Ustedes los de Arkham detuvieron a esa cosa la última vez —dice uno de los lugareños. Curtis sacude la
+        cabeza y se muerde el labio.\n
+    \n—Ni siquiera podíamos ver a esa cosa infernal hasta que el viejo profesor lee chó ese polvo —dice—. Y ahora pienso que
+        ojalá no la hubiera visto nunca… —Hay que hacer algo para detener los desmanes del monstruo. Pero si los documentos
+        que habéis encontrado son ciertos, podría haber más de una de esas criaturas suelta…</string>
+    <string name="undimensioned_introduction_two">Avisáis a los lugareños de que corren un grave peligro y los apremiáis a
+        que huyan de Dunwich mientras puedan. Varios siguen vuestro consejo de inmediato, pues recuerdan a la terrible
+        monstruosidad que ya puso en peligro al pueblo una vez. Curtis cae de rodillas, presa de la desesperación y sudando
+        febrilmente: —Es esa <b>cosa</b> de nuevo, ¿verdad? Ha vuelto a por nosotros —masculla Curtis—. Espero que tengan
+        ese polvo que tenía el viejo profesor la última vez. Ni siquiera podíamos ver a la maldita cosa hasta que la roció
+        con él. Y ahora pienso que ojalá no la hubiero visto nunca… —Hay que hacer algo para detener los desmanes del monstruo.
+        Pero si los documentos que habéis encontrado son ciertos, podría haber más de una de esas cosas sueltas…</string>
 
-    <string name="doom_introduction_one">You awaken to the sound of screeching. Fearing the worst, you grab your
-        equipment and head out into the streets of Dunwich. As soon as you step outside, you sense a foulness in the
-        cold night air: an awful, pungent smell that can scarcely be described and a heaviness to the atmosphere that
-        makes it difficult to breathe. The citizens of Dunwich have sealed their doors, and the town feels quiet and
-        lonesome. In the distance, a faint glow emanates from a hilltop above the village. You know of this hill from
-        both your interactions with Zebulon and Armitage’s records. It is called Sentinel Hill. The tales speak of
-        satanic rites being performed there—rites in which great ritual-pyres light up the night sky while the ground
-        rumbles furiously below.\n
-    \nFlocks of whippoorwills perch on the rooftops of the village around you, watching ominously as you climb inside
-        Zebulon’s old and beat-up truck. As you drive towards Sentinel Hill, more screeching fills the sky with an
-        awful pitch that is painful to your ears. Everything you have read about and experienced in Dunwich has led
-        to this. If the foul ritual Seth seeks to perform has anything to do with what Armitage and his colleagues
-        prevented several months back, it involves the favor of an ancient creature—<b>Yog‑Sothoth</b>. Failing to
-        stop this ritual may spell doom…not only Dunwich, but for the entire world.</string>
-    <string name="doom_introduction_two">You awaken to the sound of screeching. Fearing the worst, you grab your
-        equipment and head out into the streets of Dunwich. As soon as you step outside, you sense a foulness in the
-        cold night air: an awful, pungent smell that can scarcely be described and a heaviness to the atmosphere that
-        makes it difficult to breathe. The citizens of Dunwich have sealed their doors, and the town feels quiet and
-        lonesome. In the distance, a faint glow emanates from a hilltop above the village. You know of this hill from
-        both your interactions with Zebulon and Armitage’s records. It is called Sentinel Hill. The tales speak of
-        satanic rites being performed there—rites in which great ritual-pyres light up the night sky while the ground
-        rumbles furiously below.\n
-    \nFlocks of whippoorwills perch on the rooftops of the village around you, watching ominously as you climb inside
-        Zebulon’s old and beat-up truck. As you drive towards Sentinel Hill, more screeching fills the sky with an
-        awful pitch that is painful to your ears. Everything you have read about and experienced in Dunwich has led
-        to this. If the foul ritual Seth seeks to perform has anything to do with what Armitage and his colleagues
-        prevented several months back, it involves the favor of an ancient creature—<b>Yog‑Sothoth</b>. Failing to
-        stop this ritual may spell doom…not only Dunwich, but for the entire world.\n
-        \nThe path leading up Sentinel Hill is narrow and too torn up for Zebulon’s
-        truck, so you park at the base of the hill and prepare to make the rest of the trip on foot. Just then, you
-        notice that you are not alone. Several men and women emerge from the woods behind you, brandishing firearms
-        and lining you up in their sights. You raise your hands and brace for the worst. “Wait,” one of them says,
-        raising his hand to the others. “I recognize you from the Clover Club.” He grins toothily and lowers his
-        weapon. “Naomi sends her regards.”\n
-    \nCurious, you ask what the gangsters are doing here. “Ms. O’Bannion had us investigate the attack on her
-        fiancé’s club,” he explains. “Turns out there were some men in Arkham behind the whole thing. Some Bishop
-        fellow and his lackeys. We tailed them all the way to this dump.” Before he can explain further, the
-        all-too-familiar ratta-tat of a tommy gun echoes across the hill. “That’ll be Vinny. Come on, boys!” He
-        beckons to the others to follow and runs up the hill. Shaking your head, you do the same. These mobsters
-        don’t know what they’re getting into.</string>
+    <string name="doom_introduction_one">Os despertáis con el sonido de unos chillidos. Temiendo lo peor, cogéis vuestras
+        cosas y salís a las calles de Dunwich. En cuanto ponéis el pie en el exterior, notáis algo vil en el frío aire
+        nocturno: un terrible y acre color que apenas podéis describir, y una pesadez en la atmósfera que hace difícil
+        respirar. Los ciudadanos de Dunwich han cerrado sus puertas a cal y canto, y el pueblo parece en silencio y
+        solitario. A lo lejos, un tenue brillo sale de lo alto de una colina que hay por encima del pueblo. La conocéis
+        por Zebulon y los registros de Armitage. Se llama Sentinel Hill. Los relatos sobre ella hablab de que allí se
+        realizaban ritos satánicos; ritos en los que grandes piras rituales iluminaban el cielo nocturno mientras el suelo
+        temblaba furiosamente bajo ellas.\n
+    \nEn los tejados de la aldea hay posadas bandadas de chotacabras, observando siniestramente como os montáis en la
+        vieja y destartalada camioneta de Zebulon. Mientras conducís hacia Sentinel Hill, el aire se llena de más chillidos
+        con un tono tan horrible que os duelen los oídos. Todo lo que habéis leído sobre Dunwich y experimentado allí
+        ha llevado hasta ese momento. Si el siniestro ritual que Seth quiere llevar a cabo tiene algo que ver con lo
+        que Armitage y sus colegas evitaron hace meses, está relacionado con el favor de una antigua criatura: <b>Yog-Sothoth</b>.
+        Si no lográis detener este ritual, podría signigicar la perdición total… no sólo para Dunwich, sino para
+        el mundo entero.</string>
+    <string name="doom_introduction_two">Os despertáis con el sonido de unos chillidos. Temiendo lo peor, cogéis vuestras
+        cosas y salís a las calles de Dunwich. En cuanto ponéis el pie en el exterior, notáis algo vil en el frío aire
+        nocturno: un terrible y acre color que apenas podéis describir, y una pesadez en la atmósfera que hace difícil
+        respirar. Los ciudadanos de Dunwich han cerrado sus puertas a cal y canto, y el pueblo parece en silencio y
+        solitario. A lo lejos, un tenue brillo sale de lo alto de una colina que hay por encima del pueblo. La conocéis
+        por Zebulon y los registros de Armitage. Se llama Sentinel Hill. Los relatos sobre ella hablab de que allí se
+        realizaban ritos satánicos; ritos en los que grandes piras rituales iluminaban el cielo nocturno mientras el suelo
+        temblaba furiosamente bajo ellas.\n
+    \nEn los tejados de la aldea hay posadas bandadas de chotacabras, observando siniestramente como os montáis en la
+        vieja y destartalada camioneta de Zebulon. Mientras conducís hacia Sentinel Hill, el aire se llena de más chillidos
+        con un tono tan horrible que os duelen los oídos. Todo lo que habéis leído sobre Dunwich y experimentado allí
+        ha llevado hasta ese momento. Si el siniestro ritual que Seth quiere llevar a cabo tiene algo que ver con lo
+        que Armitage y sus colegas evitaron hace meses, está relacionado con el favor de una antigua criatura: <b>Yog-Sothoth</b>.
+        Si no lográis detener este ritual, podría signigicar la perdición total… no sólo para Dunwich, sino para
+        el mundo entero.\n
+    \nEl sendero que sube por Sentinel Hill es estrecho y demasiado accidentado para la camioneta de Zebulon, así que la
+        dejáis aparcada al pie de la colina y os disponéis a hacer el resto del camino a pie. En ese momento os dais
+        cuenta de que no estáis solos. Varios hombres y mujeres salen del bosque que hay a vuestra espalda, empuñando armas
+        de fuego y apuntándoos con ellas. Levantáis las manos y os preparáis para lo peor. —Esperad —dice uno de ellos
+        mientras levanta la mano para detener al resto—. Os reconozco del Clover Club —prosigue diciendo con una amplia
+        sonrisa mientras baja el arma—. Naomi os manda recuerdos.\n
+    \nLlenos de curiosidad, le preguntáis a los gánsteres qué hacen allí. —La Srta. O’Bannion nos puso a investigar el
+        ataque contra el club de su prometido —os explica—. Resulta que había unos hombres en Arkham que estaban detrás
+        de todo. Un tal Bishop y sus secuaces. Los seguimos hasta este vertedero. —Antes de poder seguir con su relato,
+        el familiar sonido de una ametralladora resuena por la colina—. Ése debe ser vinny. ¡Vamos, chicos!  Hace un gesto
+        a los demás para que lo sigan y corre colina arriba. Sacudís la cabeza y los seguís. Estos mafiosos no saben
+        donde se están metiendo.</string>
 
-    <string name="lost_introduction">Passing through the gate is unlike anything you’ve ever experienced. You feel
-        your body twisting and distorting, churning through realities as the gate pulls you to its ultimate
-        destination—a place beyond the scope of human imagination.\n
-    \nSuddenly, all is quiet and the chaos of the journey is replaced with a sense of solitude and dread. You are in
-        an unfathomable place, vast beyond your ability to reason and utterly alien besides. The landscape is surreal
-        and strange, the architecture impossible. You are so far from home that home has become a threadbare dream
-        you can barely recall. Even should you find a way out of this awful place, you may never be the same again
-        .</string>
+    <string name="lost_introduction">Atravesar el portal es una experiencia totalmente distinta a todo lo que habéis
+        vivido. Notáis cómo el cuerpo se retuerce y distorsiona, atravesando realidades mientras el portal os arrastra
+        hacia su destino final: un lugar más allá de todo lo que pueda concebir la imaginación humana.\n
+    \nDe pronto, se hace el silencio, y el caos del viaje da paso a una sensación de soledad y temor. Estáis en un lugar
+        inenarrable, algo que se escapa por mucho a vuestra capacidad de raciocinio, y además completamente alielígena.
+        El paisaje es surrealista y extraño, y la arquitectura, imposible. Estáis tan lejos de casa que ese concepto
+        se ha convertido en un sueño que pende de un hilo y que apenas lográis recordar. Incluso si encontráis la forma
+        de salir de este terrible lugar, puede que jamás volváis a ser los mismos.</string>
 
-    <string name="dunwich_epilogue_one">Six months had passed, and life for Curtis Whateley was finally returning to
-        normal. Since they’d hushed up the incident and the authorities kept their distance from these parts, Mr.
-        Osborn had auctioned off the Ericks and Bishop families’ belongings. Joe took a few trinkets for himself, of
-        course, but Curtis wanted nothing to do with it. Folk already didn’t trust him on account of his family’s
-        sins, even though he’d been attending church on the regular and had stayed far away from anything resembling
-        the arcane.\n
-    \nEven so, Curtis could not shake a sense of foreboding. He’d seen the devastation that befell the Ericks,
-        Bishop, and Frye homes. He’d even seen firsthand the creature the folks from Arkham had banished. Some days,
-        his thoughts led him to Wilbur Whateley’s farm, where he would stand outside and stare for hours, too scared
-        to enter, but too curious to leave. Maybe there was something in there that could make these terrible visions
-        depart. Something that could give him strength enough to resist the nightmares. Curtis decided he would find
-        it.</string>
-    <string name="dunwich_epilogue_two">Gené knelt closer to the ground to examine the sign in the dirt. The shape of
-        the sign was foreign to her, and the tracks that had led to it were unlike any she’d ever seen. Coupled with
-        the report from the university…she wasn’t sure what to think. “Ms. Beauregard,” her assistant called out to
-        her, “have you found something?”\n
-    \nGené stood and turned to face the freshman who’d been assigned to her. He was a good kid and a bit callow, but
-        a hard worker and eager to prove himself. “This place was supposed to be cordoned off,” Gené responded.
-        “Nobody’s lived here for months. And yet, see for yourself: their primitive rites continue to this day.”\n
-    \nThe student approached and joined Gené in examining the sign, flipping through the pages of his journal to
-        reference its symbols. “What do you think it means?” he asked. She shook her head. Outsiders rarely traveled
-        to Dunwich, and all the signposts leading to the village had been taken down. But these days, even the
-        townsfolk who had called this place home had abandoned it.\n
-    \n“I don’t know,” Gené admitted. “But somebody is here, and this isn’t the first sign we’ve seen like this.
-        Stories say there’s an altar where the townsfolk would conduct pagan rituals atop that hill. Maybe we’ll find
-        more up there.</string>
+    <string name="dunwich_epilogue_one">Habían pasado seis meses, y la vida de Curtis Whateley por fin estaba volviendo
+        a la normalidad. Puesto que habían ocultado el incidente y las autoridades guardaban las distancias con esta
+        zona, el Sr. Osborn había subastado las pertenencias de las familias Ericks y Bishop. Joe se quedó con algunas
+        baratijas, claro, pero Curtis no quiso saber nada de ello. Ya había mucha gente que no se fiaba de él por los
+        pecados de su familia, aunque había estado yendo a misa de forma habitual y se había mantenido alejado de
+        cualquier cosa que pareciera remotamente arcana.\n
+    \nAun así, Curtis no lograba quitarse de encima una sensación de premonición. Había visto la devastación que habían
+        sufrido los hogares de los Ericks, los Bishop y los Frye. Había visto de primera mano la criatura que los tipos
+        de Arkham habían desterrado. Algunos días, sus pensamientos lo llevaban a la granja de Wilbur Whateley, y se
+        quedaban allí fuera, mirándola durante horas, demasiada asustado para entrar, pero demasiado curioso para
+        marcharse. Puede que haya algo allí dentro que pueda hacer que se marchen estas terribles visiones. Algo que
+        pudiera darle la fuerza suficiente como para resistir las pesadillas. Curtis decidió que lo encontraría.</string>
+    <string name="dunwich_epilogue_two">Gené se arrodilló para examinar más de cerca el signo que había en la tierra del
+        suelo. La forma del signo le resultaba totalmente extraña, y las huellas que llevaban a él eran distintas a
+        cualquiera que hubiera visto hasta la fecha. Todo eso, junto al informe de la universidad… No sabía muy bien qué
+        pensar. —Srta. Beauregard —sijo su ayudante—, ¿ha encontrado algo?\n
+    \nGené se incorporó y se volvió para mirar al estudiante de primer año que la habían asignado. Era un buen chico,
+        y algo inexperto, pero trabajaba mucho y tenía ganas de demostrar lo que valía. —Se supone que este sitio estaba
+        cerrado —respondió Gené—. Aquí no ha vivido nadie desde hace meses. Y aun así, mira: sus primitivos ritos
+        prosiguen a día de hoy.\n
+    \nEl alumno se acercó para examinar el signo junto a Gené, mientras hojeaba su diario buscando alguna referencia
+        para los símbolos. —¿Qué cree que significa? —le preguntço. Ella sacudió la cabeza. Apenas se ven forasteros
+        en Dunwich, y todas las señales que indicaban cómo llegar hasta él han desaparecido del camino. Pero hoy en día,
+        hasta los lugareños que tenían aquí su hogar lo habían abandonado.\n
+    \n—No lo sé —admitió Gené—. Pero aquí hay alguien, y éste no es el primer signo similar que vemos. Las historias dicen
+        que hay un altar en el que los lugareños llevaban a cabo rituales paganos sobre esa colina. Puede que allí
+        averigüemos algo más.</string>
 
 
     <!--Scenario setup instructions-->
@@ -500,111 +522,110 @@
         del final del pasillo.\n</string>
     <string name="house_additional">Pon en juego el Jefe de sala del Clover Club en el Salón del Clover Club.</string>
 
-    <string name="miskatonic_sets">The Miskatonic Museum, Bad Luck, Sorcery, The Beyond, Chilling Cold, and
-        Locked Doors.</string>
-    <string name="miskatonic_locations">Put one of the two Administration Office locations and one of the two
-        Security Office locations into play at random. Remove the other versions from the game. Then, put the
-        Museum Entrance and Museum Halls locations into play.\n
-    \nEach investigator begins play at the Museum Entrance.\n</string>
-    <string name="miskatonic_set_aside">Harold Walsted, Adam Lynch, The Necronomicon
-        (<i>Olaus Wormius Translation</i>), and Shadow-spawned.\n</string>
-    <string name="miskatonic_additional">Set the 6 "Exhibit Hall" locations aside as a separate "Exhibit Deck."
-        To do this, perform the following:\n
-    \nShuffle the Exhibit Hall (<i>Restricted Hall</i>) and 2 other random Exhibit Hall locations together to
-        form the bottom 3 cards of the Exhibit Deck, unrevealed side faceup.\n
-    \nThen, place the other 3 Exhibit Hall locations on top, in a random order. All 6 cards of the Exhibit Hall
-    deck should be showing only the unrevealed side, so that the players do not know which Exhibit Hall is the
-        Exhibit Hall (<i>Restricted Hall</i>).</string>
+    <string name="miskatonic_sets">El museo Miskatonic, Mala suerte, Hechicería, El Más Allá, Frío Helador y
+        Puertas cerradas</string>
+    <string name="miskatonic_locations">Pon en juego, de forma aleatoria, 1 de los 2 Lugares Despacho de administración
+        y 1 de los 2 Lugares Oficina de seguridad. Retira de la partida las demás versiones del Despacho de administración
+        y la Oficina de seguridad. A continuación, pon en juego los Lugares Entrada del museo y Salas del museo.\n
+    \nCada investigador comienza la partida en la Entrada del museo.\n</string>
+    <string name="miskatonic_set_aside">Harold Walsted, Adam Lynch, El Necronomicón
+        (<i>Traducción de Olaus Wormius</i>) y Surgido de las sombras.\n</string>
+    <string name="miskatonic_additional">Pon aparte los 6 Lugares "Sala de exposición", formando un "mazo de Exposición".
+        Para ello, realiza los siguientes pasos:\n
+    \nBaraja la Sala de exposición (<i>Sala restringida</i>) y otros 2 Lugares Sala de exposición aleatorios para formar las
+        3 cartas inferiores del mazo de Exposición, con el lado sin revelar boca arriba.\n
+    \nA continuación, pon los otros 3 Lugares Sala de Exposición encima, en orden aleatorio. Las 6 cartas del mazo de
+        Exposición sólo deben mostrar el lado sin revelar, de forma que los jugadores no sepan cuál de las Salas de exposición
+        es la Sala de exposicion (<i>Sala restringida</i>).</string>
 
-    <string name="essex_sets">The Essex County Express, The Beyond, Striking Fear, Ancient Evils, and Dark Cult.</string>
-    <string name="essex_locations">Put one of the three Engine Car locations into play at random and remove the
-    others from the game.\n
-    \nPut six of the eight Train Car locations into play at random, in a straight line to the left of the
-        Engine Car, and remove the others from the game.\n
-    \nEach investigator beings play at the leftmost Train Car location.\n</string>
-    <string name="essex_set_aside">All 4 copies of Across Space and Time.\n</string>
-    <string name="essex_additional">Based on your difficulty level, add the following chaos token to the chaos
-        bag, for the remainder of the campaign:\n
-    \n\t\t<b>Easy:</b> -2\n
-    \n\t\t<b>Standard:</b> -3\n
-    \n\t\t<b>Hard:</b> -4\n
-    \n\t\t<b>Expert:</b> -5</string>
+    <string name="essex_sets">El Essex County Express, El Más Allá, Miedo impactante, Antiguos males y Secta oscura.</string>
+    <string name="essex_locations">Pon en juego, de forma aleatoria, 1 de los 3 Lugares Locomotora. Retira de la partida las
+        demás versiones de la Locomotora.\n
+    \nPon en juego, de forma aleatoria, 6 de los 8 Lugares Vagón de tren, colocados en línea recta a la izquierda de la locomotora.
+        Retira de la partida los 2 Lugares Vagón de tren restantes.\n
+    \nCada investigador comienza la partida en el Vagón de tren que esté más a la izquierda. Si dicho Lugar tiene un efecto
+        "Obligado" que se active al entrar en él, ignóralo.\n</string>
+    <string name="essex_set_aside">Las 4 copias de A través del tiempo y el espacio.\n</string>
+    <string name="essex_additional">En función de tu nivel de dificultad, añade las siguientes fichas de Caos a la bolsa de caos
+        durante el resto de la campaña:\n
+    \n\t\t<b>Fácil:</b> -2\n
+    \n\t\t<b>Normal:</b> -3\n
+    \n\t\t<b>Difícil:</b> -4\n
+    \n\t\t<b>Experto:</b> -5</string>
 
-    <string name="blood_sets">Blood on the Altar, Dunwich, Whippoorwills, Nightgaunts, and Ancient Evils.</string>
-    <string name="blood_sets_two">Seeking vengeance, the gang from the Clover Club has followed you to Dunwich.
-    Add the Naomi\'s Crew encounter set.</string>
-    <string name="blood_locations">Put Village Commons into play.\n
-    \nRemove one of the two copies of each other location from the game at random. Then, choose one of the six
-        remaining locations at random, and remove it from the game as well. Put the remaining locations into
-        play.\n
-    \nEach investigator begins play in the Village Commons.\n</string>
-    <string name="blood_set_aside">Silas Bishop, and Powder of Ibn-Ghazi.\n</string>
-    <string name="blood_additional">Take The Hidden Chamber and Key to the Chamber cards, along with the top 3
-        cards of the encounter deck. Shuffle them and randomly deal 1 card facedown underneath each location in
-    play except Village Commons.\n\n</string>
-    <string name="blood_additional_sacrifice_one">Form a facedown pile of "potential sacrifices", consisting of
-    the</string>
+    <string name="blood_sets">Sangre en el altar, Dunwich, Chotacabras, Ángeles descarnados y Antiguos males.</string>
+    <string name="blood_sets_two">Buscando venganza, la banda del Clover Club os ha seguido hasta Dunwich.
+    Añade el conjunto de encuentros La banda de Naomi.</string>
+    <string name="blood_locations">Pon en juego las Calles de la Aldea.\n
+    \nRetira, de forma aleatoria, 1 de las 2 copias de cada uno de los demás Lugares. A continuación, elige al azar 1
+        de los 6 Lugares restantes y retíralo también de la partida. Pon en juego los Lugares restantes.\n
+    \nCada investigador comienza la partida en las Callas de la aldea.\n</string>
+    <string name="blood_set_aside">Silas Bishop y Polvo de Ibn-Ghazi.\n</string>
+    <string name="blood_additional">Coge las cartas La cámara oculta y Llave de la cámara y las 3 primeras cartas del
+        mazo de Encuentros. Barájalas y coloca, al azar, 1 carta boca abajo bajo cada Lugar en juego, excepto en las Calles
+        de la aldea.\n\n</string>
+    <string name="blood_additional_sacrifice_one">Crea un mazo de "sacrificios potenciales", consistente
+    las cartas de </string>
     <string name="blood_additional_sacrifice_armitage">Dr. Henry Armitage,</string>
-    <string name="blood_additional_sacrifice_rice">Professor Warren Rice,</string>
+    <string name="blood_additional_sacrifice_rice">Profesor Warren Rice,</string>
     <string name="blood_additional_sacrifice_morgan">Dr. Francis Morgan,</string>
-    <string name="blood_additional_sacrifice_two">Zebulon Whateley, and Earl Sawyer cards.\n\n</string>
-    <string name="blood_additional_two">Add 1 doom to agenda 1a.\n\n</string>
+    <string name="blood_additional_sacrifice_two">Zebulon Whateley y Earl Sawyer.\n\n</string>
+    <string name="blood_additional_two">Añade 1 ficha de Perdición al plan 1a.\n\n</string>
 
-    <string name="undimensioned_sets">Undimensioned and Unseen, Whippoorwills, Beast-thralls, Dunwich, and Striking
-        Fear.</string>
-    <string name="undimensioned_locations">Put one of the two versions of the following locations into play at
-        random: Dunwich Village, Cold Spring Glen, Blasted Heath, Ten-Acre Meadow, Devil\'s Hop Yard, and Whateley
-        Ruins. Remove the other versions of each of those locations from the game.\n
-        \nEach investigator begins play in Dunwich Village.\n</string>
-    <string name="undimensioned_set_aside">Each copy of Esoteric Formula.\n</string>
-    <string name="undimensioned_additional_brood_one">Set 2 copies of Brood of Yog‑Sothoth aside, out of play. Then,
-        remove the final 3 copies of Brood of Yog‑Sothoth from the game.\n\n</string>
-    <string name="undimensioned_additional_brood_two">Put 1 copy of Brood of Yog‑Sothoth into play in Cold Spring
-        Glen, and set 2 copies of Brood of Yog‑Sothoth aside, out of play. Then, remove the final 2 copies of Brood
-        of Yog‑Sothoth from the game.\n\n</string>
-    <string name="undimensioned_additional_brood_three">Put 1 copy of Brood of Yog‑Sothoth into play in Cold Spring
-        Glen, and set 3 copies of Brood of Yog‑Sothoth aside, out of play. Then, remove the final copy of Brood of
-        Yog‑Sothoth from the game.\n\n</string>
-    <string name="undimensioned_additional_brood_four">Put 1 copy of Brood of Yog‑Sothoth into play in Cold Spring
-        Glen, put 1 copy of Brood of Yog‑Sothoth into play in Blasted Heath. Then, set the final 3 copies of Brood of
-        Yog‑Sothoth aside, out of play.\n\n</string>
-    <string name="undimensioned_additional_powder">The investigator with the Powder of Ibn-Ghazi in his or her deck
-        may search his or her deck for it and put it into play.\n\n</string>
-    <string name="undimensioned_additional">Each investigator searches the collection for a random basic Madness,
-        Injury, or Pact weakness and adds it to his or her deck for the remainder of the campaign.\n\n</string>
+    <string name="undimensioned_sets">Invisibles y sin dimensión, Chotacabras, Esclavos-bestia, Dunwich y Miedo impactante.</string>
+    <string name="undimensioned_locations">Pon en juego, de forma aleatoria, 1 de las 2 versiones de los siguientes Lugares: Aldea
+        de Dunwich, Cañada de Cold Spring, Páramo arrasado, Pradera de diez acres, Devil's Hop Yard y Ruinas Whateley. Retira de la
+        partida las demás versiones de esos Lugares.\n
+        \nCada investigador comienza la partida en la Aldea de Dunwich.\n</string>
+    <string name="undimensioned_set_aside">Todas las copias de la Fórmula esotérica.\n</string>
+    <string name="undimensioned_additional_brood_one">Pon aparte, fuera del juego, 2 copias de la Progenie de Yog-Sothoth.
+        A continuación, retira de la partida las últimas 3 copias de la Progenie de Yog-Sothoth.\n\n</string>
+    <string name="undimensioned_additional_brood_two">Pon 1 copia de la Progenie de Yog-Sothoth en juego en la Cañada de
+        Cold Spring, y pon aparte, fuera del juego, 2 copias de la Progenie de Yog-Sothoth. A continuación, retira de la
+        partida las últimas 2 copias de la Progenie de Yog-Sothoth.\n\n</string>
+    <string name="undimensioned_additional_brood_three">Pon 1 copia de la Progenie de Yog-Sothoth en juego en la Cañada de
+        Cold Spring, y pon aparte, fuera del juego, 3 copias de la Progenie de Yog-Sothoth. A continuación, retira de la
+        partida la última copia de la Progenie de Yog-Sothoth.\n\n</string>
+    <string name="undimensioned_additional_brood_four">Pon 1 copia de la Progenie de Yog-Sothoth en juego en la Cañada de
+        Cold Spring, y 1 copia de la Progenie de Yog-Sothoth en juego en el Páramo arrasado. A continuación, deja aparte,
+        fuera del juego, las 3 últimas copias de la Progenie de Yog-Sothoth.\n\n</string>
+    <string name="undimensioned_additional_powder">Un investigador que tenga el Polvo de Ibn-Ghazi en su mazo puede buscarlo
+        en su mazo y ponerlo en juego.\n\n</string>
+    <string name="undimensioned_additional">Cada investigador busca en la colección una Debilidad básica aleatoria Locura,
+        Lesión o Pacto y la añade a su mazo durante el resto de la campaña.\n\n</string>
 
-    <string name="doom_sets">Where Doom Awaits, Beast-thralls, Sorcery, Bishop\’s Thralls, Striking Fear, Ancient
-        Evils, and Chilling Cold.</string>
-    <string name="doom_sets_two">Where Doom Awaits, Beast-thralls, Sorcery, Bishop\’s Thralls, Striking Fear, Ancient
-        Evils, Chilling Cold, and Hideous Abominations.</string>
-    <string name="doom_locations">Put Base of the Hill, Ascending Path, and Sentinel Peak into play.\n
-        \nEach investigator begins play at Base of the Hill.\n</string>
-    <string name="doom_set_aside">Remove 1 copy of Diverging Path from the game, at random. Set the other 3 copies of
-        Diverging Path aside, out of play.\n
-        \nRemove 1 copy of Altered Path from the game, at random. Set the other 3 copies of Altered Path aside, out of
-        play.\n
-        \nSet Seth Bishop aside, out of play.\n</string>
-    <string name="doom_additional">Based on your difficulty level, add the following chaos token to the chaos
-        bag, for the remainder of the campaign:\n
-        \n\t\t<b>Easy:</b> -3\n
-        \n\t\t<b>Standard:</b> -5\n
-        \n\t\t<b>Hard:</b> -6\n
-        \n\t\t<b>Expert:</b> -7\n</string>
-    <string name="doom_additional_act_one">Use Act 2—Ascending the Hill (v. I).\n\n</string>
-    <string name="doom_additional_act_two">Use Act 2—Ascending the Hill (v. II).\n\n</string>
-    <string name="doom_additional_act_three">Use Act 2—Ascending the Hill (v. III).\n\n</string>
-    <string name="doom_additional_obannion_one">The lead investigator gains a clue from the token bank.\n\n</string>
-    <string name="doom_additional_obannion_two">The lead investigator gains two clues from the token bank
-        .\n\n</string>
-    <string name="doom_additional_doom">doom to agenda 1a.\n\n</string>
-    <string name="doom_additional_bishop">Remnants of Silas Bishop\'s body have mutated and grown at Sentinel
-        Hill. Put 1 \"Conglomeration of Spheres\" enemy into play at Ascending Path.\n\n</string>
+    <string name="doom_sets">Donde aguarda la perdición, Esclavos-bestia, Hechicería, Esclavos de Bishop, Miedo impactante,
+        Antiguos males y Frío Helador.</string>
+    <string name="doom_sets_two">Donde aguarda la perdición, Esclavos-bestia, Hechicería, Esclavos de Bishop, Miedo impactante,
+        Antiguos males y Frío Helador y Abominaciones espantosas.</string>
+    <string name="doom_locations">Pon en juego el Pie de la colina, el Sendero ascendente y la Cumbre de Sentinel Hill.\n
+        \nCada investigador comienza la partida en el Pie de la colina.\n</string>
+    <string name="doom_set_aside">Retira de la partida, al azar, 1 copia del Sendero divergente. Pon aparte, fuera del juego,
+        las otras 3 copias del Sendero divergente.\n
+        \nRetira de la partida, al azar, 1 copia del Sendero alterado. Pon aparte, fuera del juego,
+        las otras 3 copias del Sendero alterado.\n
+        \nPon aparte, fuera del juego, a Seth Bishop.\n</string>
+    <string name="doom_additional">En función del nivel de dificultad, añade la siguiente ficha de Caos a la bolsa de caos
+        durante el resto de la campaña:\n
+        \n\t\t<b>Fácil:</b> -3\n
+        \n\t\t<b>Normal:</b> -5\n
+        \n\t\t<b>Difícl:</b> -6\n
+        \n\t\t<b>Experto:</b> -7\n</string>
+    <string name="doom_additional_act_one">Usa el acto 2 — Ascender por la colina (v. I).\n\n</string>
+    <string name="doom_additional_act_two">Usa el acto 2 — Ascender por la colina (v. II).\n\n</string>
+    <string name="doom_additional_act_three">Usa el acto 2 — Ascender por la colina (v. III).\n\n</string>
+    <string name="doom_additional_obannion_one">El investigador jefe obtiene una pista de la reserva de fichas.\n\n</string>
+    <string name="doom_additional_obannion_two">El investigador jefe obtiene 2 pistas de la reserva de fichas.\n\n</string>
+    <string name="doom_additional_doom">fichas de Perdición al plan 1a.\n\n</string>
+    <string name="doom_additional_bishop">Los restos del cuerpo de Seth Bishop han mutado y crecido en Sentinel Hill. Pon
+        en juego 1 Enemigo “Conglomerado de esferas” del conjunto de encuentros Abominaciones espantosas en el Sendero
+        ascendente.\n\n</string>
 
-    <string name="lost_sets">Lost in Time and Space, Sorcery, The Beyond, Hideous Abominations, and Agents of
-        Yog-Sothoth.</string>
-    <string name="lost_locations">Put Another Dimension into play.\n
-        \nEach investigator begins play in Another Dimension.\n</string>
-    <string name="lost_set_aside">The Edge of the Universe, Tear Through Time, and Yog-Sothoth.\n</string>
+    <string name="lost_sets">Perdidos en el tiempo y el espacio, Hechicería, El Más Allá, Abominaciones espantosas y
+        Agentes de Yog-Sothoth.</string>
+    <string name="lost_locations">Pon en juego Otra dimensión.\n
+        \nCada investigador comienza la partida en Otra dimensión.\n</string>
+    <string name="lost_set_aside">Los bordes del universo, Desgarro en el tiempo y Yog-Sothoth.\n</string>
 
 
     <!--Scenario resolutions-->
@@ -726,208 +747,225 @@
         lo acuciante de la situación, os escabullís mientras está distraída
         con algo de los escombros…</string>
 
-    <string name="miskatonic_no_resolution">Whatever the creature in the museum was, you had neither the will nor the
-        tools to destroy it. It seems you must give up any hope of recovering the Necronomicon. Even so, there are
-        others depending on you. Gathering your courage, you prepare for your next task.</string>
-    <string name="miskatonic_resolution_one">As long as this translation of the Necronomicon exists, there will be
-        sorcerers and other foul agents like Whateley seeking it. In the end, you know what must be done to protect
-        humanity from the threats you’ve seen. You find a trash bin and fill it with books and documents, throwing
-        the Necronomicon on top. It takes several matches to set the contents of the bin alight. The flames fill the
-        room with heat and the creeping shadows retreat from its light. You watch the book burn for some time, its
-        pages turning to ash. You can only hope you’ve made the right decision.</string>
-    <string name="miskatonic_resolution_two">The Necronomicon is more than just a book; it is a tool. Within its
-        pages is a wealth of information about the forces and creatures you have encountered. Knowing how useful it
-        could be in your endeavors, how could you possibly bring yourself to destroy it? Besides, as long as you keep
-        the book safely in your possession, you will still be foiling those who wish to use it for nefarious
-        purposes.\n
-    \n<b>Any one investigator may choose to add The Necronomicon (Olaus Wormius Translation) to his or her deck.</b>\n
-    \n<b>You have given in to the temptation of power. Add 1 Elder Thing chaos token to the chaos bag for the
-            remainder of the campaign.</b></string>
+    <string name="miskatonic_no_resolution">Fuera lo que fuera la criatura del museo, no teníais ni la voluntad ni
+        los medios para destruirla. Parece que debéis abandonar cualquier esperanza de recuperar el Necronomicón.
+        Aun así, hay otros que dependen de vosotros, así que hacéis acopio de valor y os preparáis para vuestra
+        siguiente tarea.</string>
+    <string name="miskatonic_resolution_one">Mientras exista esta traducción del Necronomicón, habrá hechiceros y
+        otros agentes siniestros como Whateley que lo busquen. Al final, sabéis lo que debéis hacer para proteger
+        a la humanidad de las amenazas que habéis visto. Buscáis una papelera, la llenáis de libros y documentos
+        y tiráis el Necronomicón encima. Hacen falta varias cerillas para que el contenido de la papelera prenda,
+        y las llamas llenan la estancia de calor, mientras las sombras se retiran ante la luz. Observáis cómo arde
+        el libro durante un rato, mirando cómo sus páginas se convierten en cenizas. Esperáis haber tomado la decisión
+        correcta.</string>
+    <string name="miskatonic_resolution_two">El Necronomicón es más que un simple libro; es una herramienta. Sus páginas
+        contienen una enorme cantidad de información sobre las fuerzas y criaturas con las que os habéis topado. 
+        Sabiendo lo útil que podría ser en vuestro empeño, ¿cómo podríais ser capaces de destruirlo? Además, mientras el
+        libro siga estando a salvo en vuestras manos, seguiréis frustrando los planes de quienes quieren usarlo para
+        siniestros propósitos.\n
+    \n<b>Un investigador cualquiera puede elegir añadir El Necronomicón (Traducción de Olaus Wormius) a su mazo.</b>\n
+    \n<b>Habéis cedido a la tentación del poder. Añade 1 ficha de Caos de Antiguo a la bolsa de caos durante el resto
+        de la campaña.</b></string>
 
-    <string name="essex_no_resolution">Your experience beyond the gate is simultaneously terrifying and impossible
-        to recall with clarity. A hypnotic
-        spectacle of lights, otherworldly sensations, and altered geometry dances at the tattered edges of your mind.
-        An unearthly voice from beyond rings in your ears, its significance an enigma. When you awaken, you find
-        yourself in the woods, several miles from the Miskatonic River. Destroyed train cars surround you. They are
-        crumpled as if from a severe impact; they are also decayed as if years of rust and squalor have claimed them.
-        There is no sign of the other passengers.\n
-        \nRattled, you begin walking alongside the train tracks, making your way towards Dunwich.\n
-    \n<b>Each investigator who was defeated has acquired the Across Space and Time weakness and must add 1 copy of it
-            to his or her deck.</b></string>
-    <string name="essex_resolution_one">You breathe a sigh of relief as the gate behind the train collapses
-        harmlessly upon itself. The few passengers who survived the ordeal seem unable to comprehend what just
-        happened. One passenger mentions “a pipe bursting in the rear car,” and that quickly becomes the explanation
-        for the innocent and ignorant, those who either cannot or choose not to delve further into the mystery. You,
-        on the other hand, know better… although in hindsight, you wish you didn’t.</string>
-    <string name="essex_resolution_one_defeated"><b>Defeated investigators:</b>\n
-    \nYour experience beyond the gate is simultaneously terrifying and impossible to recall with clarity. A hypnotic
-        spectacle of lights, otherworldly sensations, and altered geometry dances at the tattered edges of your mind.
-        An unearthly voice from beyond rings in your ears, its significance an enigma. When you awaken, you find
-        yourself in the woods, several miles from the Miskatonic River. Destroyed train cars surround you. They are
-        crumpled as if from a severe impact; they are also decayed as if years of rust and squalor have claimed them.
-        There is no sign of the other passengers.\n
-    \n<b>Each investigator who was defeated has acquired the Across Space and Time weakness and must add 1 copy of it
-            to his or her deck.</b>\n
-    \n<b>Surviving investigators:</b>\n
-    \nYou breathe a sigh of relief as the gate behind the train collapses
-        harmlessly upon itself. The few passengers who survived the ordeal seem unable to comprehend what just
-        happened. One passenger mentions “a pipe bursting in the rear car,” and that quickly becomes the explanation
-        for the innocent and ignorant, those who either cannot or choose not to delve further into the mystery. You,
-        on the other hand, know better… although in hindsight, you wish you didn’t.</string>
-    <string name="essex_resolution_two">Your experience beyond the gate is simultaneously terrifying and impossible
-        to recall with clarity. A hypnotic
-        spectacle of lights, otherworldly sensations, and altered geometry dances at the tattered edges of your mind.
-        An unearthly voice from beyond rings in your ears, its significance an enigma. When you awaken, you find
-        yourself in the woods, several miles from the Miskatonic River. Destroyed train cars surround you. They are
-        crumpled as if from a severe impact; they are also decayed as if years of rust and squalor have claimed them.
-        There is no sign of the other passengers.\n
-        \nRattled, you begin walking alongside the train tracks, making your way towards Dunwich.\n
-    \n<b>Each investigator who was defeated has acquired the Across Space and Time weakness and must add 1 copy of it
-            to his or her deck.</b>\n
-    \n<i><b>NOTE: Do not mark as \'Defeated\' any investigators defeated by Agenda 5b.</b></i></string>
+    <string name="essex_no_resolution">Vuestra experiencia al otro lado del portal es a la vez aterradora e imposible
+        de recordar claramente. Un hipnótico espectáculo de luces, sensaciones sobrenaturales y geometría alterada
+        baila en los límites hechos jirones de vuestra mente. Una voz fantasmal que viene del más allá resuena en vuestros
+        oídos, pero su significado es un enigma. Cuando despertáis, os encontráis en los bosques, a varias millas del río
+        Miskatonic. Estáis rodeados de vagones de tren destruidos, que han quedado arrugados como si hubieran sufrido un
+        impacto tremendo, y también están deteriorados de una forma que parece como si años de óxido y suciedad hubieran
+        hecho estragos en ellos. No hay ni rastro de los demás pasajeros.\n
+        \nConmocionados, echáis a andar siguiendo las vías del tren en dirección a Dunwich.\n
+    \n<b>Cada investigador que fuera derrotado ha adquirido la Debilidad A través del tiempo y el espacio y debe añadir
+        1 copia de dicha carta a su mazo.</b></string>
+    <string name="essex_resolution_one">Dais un suspiro de alivio cuando el portal que hay detrás del tren se colapsa
+        sobre sí mismo. Los pocos pasajeros que han sobrevivido a la odisea parecen incapaces de comprender lo que acaba
+        de suceder. Un pasajero menciona “una tubería que ha explotado en el vagón trasero”, y eso se convierte rápidamente
+        en la explicación para los inocentes e ignorantes, aquellos que no pueden o no quieren indagar más en el misterio.
+        Vosotros, en cambio, sabéis la verdad… aunque desearíais no saberla.</string>
+    <string name="essex_resolution_one_defeated"><b>Investigadores derrotados:</b>\n
+    \nVuestra experiencia al otro lado del portal es a la vez aterradora e imposible
+        de recordar claramente. Un hipnótico espectáculo de luces, sensaciones sobrenaturales y geometría alterada
+        baila en los límites hechos jirones de vuestra mente. Una voz fantasmal que viene del más allá resuena en vuestros
+        oídos, pero su significado es un enigma. Cuando despertáis, os encontráis en los bosques, a varias millas del río
+        Miskatonic. Estáis rodeados de vagones de tren destruidos, que han quedado arrugados como si hubieran sufrido un
+        impacto tremendo, y también están deteriorados de una forma que parece como si años de óxido y suciedad hubieran
+        hecho estragos en ellos. No hay ni rastro de los demás pasajeros.\n
+    \n<b>Cada investigador que fuera derrotado ha adquirido la Debilidad A través del tiempo y el espacio y debe añadir
+        1 copia de dicha carta a su mazo.</b>\n
+    \n<b>Investigadores supervivientes:</b>\n
+    \nDais un suspiro de alivio cuando el portal que hay detrás del tren se colapsa
+        sobre sí mismo. Los pocos pasajeros que han sobrevivido a la odisea parecen incapaces de comprender lo que acaba
+        de suceder. Un pasajero menciona “una tubería que ha explotado en el vagón trasero”, y eso se convierte rápidamente
+        en la explicación para los inocentes e ignorantes, aquellos que no pueden o no quieren indagar más en el misterio.
+        Vosotros, en cambio, sabéis la verdad… aunque desearíais no saberla.</string>
+    <string name="essex_resolution_two">Vuestra experiencia al otro lado del portal es a la vez aterradora e imposible
+        de recordar claramente. Un hipnótico espectáculo de luces, sensaciones sobrenaturales y geometría alterada
+        baila en los límites hechos jirones de vuestra mente. Una voz fantasmal que viene del más allá resuena en vuestros
+        oídos, pero su significado es un enigma. Cuando despertáis, os encontráis en los bosques, a varias millas del río
+        Miskatonic. Estáis rodeados de vagones de tren destruidos, que han quedado arrugados como si hubieran sufrido un
+        impacto tremendo, y también están deteriorados de una forma que parece como si años de óxido y suciedad hubieran
+        hecho estragos en ellos. No hay ni rastro de los demás pasajeros.\n
+        \nConmocionados, echáis a andar siguiendo las vías del tren en dirección a Dunwich.\n
+    \n<b>Cada investigador que fuera derrotado ha adquirido la Debilidad A través del tiempo y el espacio y debe añadir
+        1 copia de dicha carta a su mazo.</b>\n
+    \n<i><b>NOTA: No marques como \'Derrotado\' cualquier investigador derrotado por la carta de Plan 5b.</b></i></string>
 
-    <string name="blood_no_resolution">The cries of the whippoorwills fade into the distance, and the town of Dunwich
-        is filled with an eerie silence. All that can be heard is the dry whistle of the chill wind and the slow
-        rustling of dead leaves. There is no sign of the missing townsfolk, nor will there be ever again.\n
-    \n<b>If there were any potential sacrifices remaining at the end of the game, place them underneath the
-            agenda deck.</b>\n
-    \n<b>Each unique card that is underneath the agenda deck is removed from all players’ decks and can no longer be
-            included in any players’ decks for the remainder of the campaign.</b></string>
-    <string name="blood_resolution_one">As you land the finishing blow, the creature’s body explodes into hundreds of
-        squirming ropelike appendages, wriggling across the ground and climbing up the walls. You’re so startled that
-        you aren’t fast enough to prevent them from escaping the room. Even so, whatever that creature was, you’re
-        glad it’s now dead.\n
-    \n<b>Each unique card that is underneath the agenda deck is removed from all players’ decks and can no longer be
-            included in any players’ decks for the remainder of the campaign.</b></string>
-    <string name="blood_resolution_two">With the creature that once was Silas lashing out at you from its chains, you
-        have little time to react. Knowing that the Necronomicon might have a spell or incantation that could subdue
-        Silas, you fend off the abomination long enough to find a passage that can help. With no time to spare, you
-        recite the Latin incantation, and find that the words come effortlessly to your tongue, as though recalled
-        from an earlier memory. The creature’s body begins to shrink and melt away as the incantation builds, its
-        cries terrifying and haunting. In the end, all that is left is the disfigured corpse of a man—Silas Bishop.
-        You find a silver pendant emblazoned with an odd constellation tucked into his shirt. You take it with you,
-        hoping to find a use for it.\n
-    \n<b>Each unique card that is underneath the agenda deck is removed from all players’ decks and can no longer be
-            included in any players’ decks for the remainder of the campaign.</b></string>
-    <string name="blood_resolution_three">With the creature that once was Silas lashing out at you from its chains,
-        you have little time to react. Hoping there is something in the chamber you can use to your advantage, you
-        fend off the abomination long enough to find a journal; many of its passages are written in Latin. It appears
-        to be a handwritten excerpt from the Necronomicon, its purpose unknown. With no time to spare, you recite the
-        incantation, stumbling over the words and feeling your throat tighten with each sentence. The creature’s body
-        begins to shrink and melt away as the incantation continues, its cries terrifying and haunting. In the end,
-        all that is left is a pile of wet and sticky ichor, and a rotten stench.\n
-    \n<b>Each unique card that is underneath the agenda deck is removed from all players’ decks and can no longer be
-            included in any players’ decks for the remainder of the campaign.</b></string>
+    <string name="blood_no_resolution">Los gritos de los chotacabras se desvanecen a lo lejos, y la ciudad de Dunwich
+        queda sumida en un silencio sepulcral. Lo único que se oye es el seco silbido del frío viento y el lento arrastrar
+        de las hojas secas. No hay ni rastro de los lugareños desaparecidos, ni volverá a haberlo jamás.\n
+    \n<b>Si quedaba algún sacrificio potencial al final de la partida, colócalos debajo del mazo de Plan.</b>\n
+    \n<b>Por cada carta única que estuviera bajo el mazo de Plan, retira esas cartas de los mazos de los jugaores
+            y no pueden volver a incluirse en el mazo de ningún jugador durante el resto de la campaña.</b></string>
+    <string name="blood_resolution_one">Cuando asestáis el golpe final, el cuerpo de la criatura explota en cientos
+        de apéndices similares a cuardas que no dejan de retorcerse por el suelo y de trepar por las paredes. Estáis
+        tan sorprendidos que no sois lo suficientemente rápidos como para evitar que escapen de la estancia. Aun así,
+        fuera lo que fuera esa criatura, os alegra que haya muerto.\n
+    \n<b>Por cada carta única que estuviera bajo el mazo de Plan, retira esas cartas de los mazos de los jugaores
+            y no pueden volver a incluirse en el mazo de ningún jugador durante el resto de la campaña.</b></string>
+    <string name="blood_resolution_two">No tenéis mucho tiempo para reaccionar mientras la criatura en la que se ha
+        convertido Silas trata de atacaros pese a estar encadenada. Sabiendo que El Necronomicón podría contener un
+        hechizo o ensalmo para someter a Silas, rechazáis a la abominación el tiempo suficiente como para encontrar
+        un fragmento que os sea útil. Sin tiempo que perder, recitáis el ensalmo en latín, y descubrís que las palabras
+        acuden a vuestra lengua sin ningún esfuerzo, como si las tuvieseis de un recuerdo anterior. El cuerpo de la
+        criatura comienza a encogerse y fundirse a medida que el ensalmo crece, y sus gritos son aterradores y espectrales.
+        Al final, lo único que queda es el cadáver desfigurado de un hombre: Silas Bishop. Metido en su camisa,
+        encontráis un colgante de plata grabado con una extraña constelación. Os lo lleváis con la esperanza de que
+        pueda resultaros de utilidad.\n
+    \n<b>Por cada carta única que estuviera bajo el mazo de Plan, retira esas cartas de los mazos de los jugaores
+            y no pueden volver a incluirse en el mazo de ningún jugador durante el resto de la campaña.</b></string>
+    <string name="blood_resolution_three">No tenéis mucho tiempo para reaccionar mientras la criatura en la que se
+        ha convertido Silas trata de atacaros pese a estar encadenada. Pensando que quizá haya algo en la cámara
+        que podáis usar a vuestro favor, rechazáis a la abominación el tiempo suficiente como para encontrar un
+        diario; muchos de sus pasajes están escritos en latín. Parece ser un fragmento manuscrito del Necronomicón,
+        cuyo propósito os es desconocido. Sin tiempo que perder, recitáis el ensalmo, trabucando las palabras y notando
+        cómo se os agarrota la garganta con cada frase. El cuerpo de la criatura comienza a encogerse y fundirse
+        a medida que el ensalmo crece, y sus gritos son aterradores y espectrales. Al final, lo único que queda es un montón
+        de un húmedo y pegajoso icor que emite un pestilente hedor.\n
+    \n<b>Por cada carta única que estuviera bajo el mazo de Plan, retira esas cartas de los mazos de los jugaores
+            y no pueden volver a incluirse en el mazo de ningún jugador durante el resto de la campaña.</b></string>
 
-    <string name="undimensioned_no_resolution">You did all you could to stop the rampaging monsters, but there were
-        more of them than you realized and you weren’t able to slay them all. Exhausted and terrified, you retreat to
-        Zebulon’s home and hope to survive the night.</string>
-    <string name="undimensioned_resolution_one">You did all you could to stop the rampaging monsters, but there were
-        more of them than you realized and you weren’t able to slay them all. Exhausted and terrified, you retreat to
-        Zebulon’s home and hope to survive the night.</string>
-    <string name="undimensioned_resolution_two">After slaying what seems to be the last of the rampaging monsters you
-        retreat to Zebulon’s home, exhausted and rattled by your experience.</string>
+    <string name="undimensioned_no_resolution">Habéis hecho todo lo que habéis podido para detener a los violentos
+        monstruos, pero había más de los que pensabais y no lograsteis matarlos a todos. Agotados y aterrados, os
+        retiráis a casa de Zebulon con la esperanza de sobrevivir a la noche.</string>
+    <string name="undimensioned_resolution_one">Habéis hecho todo lo que habéis podido para detener a los violentos
+        monstruos, pero había más de los que pensabais y no lograsteis matarlos a todos. Agotados y aterrados, os
+        retiráis a casa de Zebulon con la esperanza de sobrevivir a la noche.</string>
+    <string name="undimensioned_resolution_two">Tras matar al que parece ser el último de los violentos monstruos,
+        os retiráis a casa de Zebulon, agotados y conmocionados por la experiencia.</string>
+    <string name="undimensioned_resolution_powder"><b>Si el mazo de un investigador contiene el Polvo de Ibn-Ghazi,
+        retíralo de ese mazo.</b></string>
 
-    <string name="doom_no_resolution">The sorcerers from Dunwich, seeking arcane power from beyond this realm, have
-        accomplished what Wilbur and Old Whateley could not. Through blood sacrifice and indescribable experiments,
-        the dark power the sorcerers sought is now within their reach. However, they will never get the chance to
-        truly wield this power. In beseeching Wilbur’s father for knowledge, they have drawn the creature forth from
-        its extradimensional realm. Yog-Sothoth emerges from the open rift above Sentinel Hill, blotting out the sky
-        and enveloping the world. Now it has come to Earth, and it rules where humanity once tread.\n
-    \n<b>The investigators lose the campaign.</b></string>
-    <string name="doom_resolution_one">The poorly bound tome appears to be the written records of Old Whateley, the
-        man who taught Wilbur the ancient secrets of sorcery. You find a passage describing a place outside of time
-        and space, where worlds converge and Yog-Sothoth dwells. Only by reaching this nexus at the edge of reality
-        can you unmake the tear that has split open the world. Feeling as if you may be going to your doom, you
-        muster a final ounce of courage and step into the gate.</string>
-    <string name="doom_resolution_two">The sorcerers from Dunwich, seeking arcane power from beyond this realm, have
-        accomplished what Wilbur and Old Whateley could not. Through blood sacrifice and indescribable experiments,
-        the dark power the sorcerers sought is now within their reach. However, they will never get the chance to
-        truly wield this power. In beseeching Wilbur’s father for knowledge, they have drawn the creature forth from
-        its extradimensional realm. Yog-Sothoth emerges from the open rift above Sentinel Hill, blotting out the sky
-        and enveloping the world. Now it has come to Earth, and it rules where humanity once tread.\n
-    \n<b>The investigators lose the campaign.</b></string>
+    <string name="doom_no_resolution">En su búsqueda de un poder arcano más allá de este reino, los hechiceros de
+        Dunwich han logrado aquello que no pudieron conseguir Wilbur y el viejo Whateley. Mediante sacrificos de
+        sangre e indescriptibles experimentos, el oscuro poder que perseguían los hechiceros ahora está a su alcance.
+        Sin embargo, nuncan tendrán la oportunidad de hacer uso de él realmente. Al pedirle al padre de Wilbur que
+        les otorgara conocimientos, han atraído a la criatura desde su reino extradimensional. Yog-Sothoth emerge
+        de la grieta abierta sobre Sentinel Hill, oscureciendo el cielo y rodeando el mundo. Ahora que ha llegado
+        a la Tierra, gobierna allí donde antes caminaba la humanidad.\n
+    \n<b>Los investigadores pierden la partida.</b></string>
+    <string name="doom_resolution_one">El tomo de pésima encuadernación parece ser las anotaciones del viejo Whateley,
+        el hombre que le enseñó a Wilbur los antiguos secretos de la hechicería. Encontráis un fragmento que describe
+        un lugar fuera del tiempo y el espacio en el que los mundos convergen y donde mora Yog-Sothoth. Sólo llegando
+        a este nexo en los bordes de la realidad podréis reparar la grieta que se ha abierto en el mundo. Aunque tenéis
+        la sensación de dirigiros a vuestra perdición, hacéis acopio de los restos de valor que os quedan y entráis
+        en el portal.</string>
+    <string name="doom_resolution_two">En su búsqueda de un poder arcano más allá de este reino, los hechiceros de
+        Dunwich han logrado aquello que no pudieron conseguir Wilbur y el viejo Whateley. Mediante sacrificos de
+        sangre e indescriptibles experimentos, el oscuro poder que perseguían los hechiceros ahora está a su alcance.
+        Sin embargo, nuncan tendrán la oportunidad de hacer uso de él realmente. Al pedirle al padre de Wilbur que
+        les otorgara conocimientos, han atraído a la criatura desde su reino extradimensional. Yog-Sothoth emerge
+        de la grieta abierta sobre Sentinel Hill, oscureciendo el cielo y rodeando el mundo. Ahora que ha llegado
+        a la Tierra, gobierna allí donde antes caminaba la humanidad.\n
+    \n<b>Todos los investigadores se vuelven locos.</b>
+    \n<b>Los investigadores pierden la partida.</b></string>
 
-    <string name="lost_no_resolution">Where did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-    \n<b>Each defeated investigator is killed.</b></string>
-    <string name="lost_resolution_one">Lying on your back in a patch of wet grass, you find yourself staring
-        longingly at the night sky. Somehow, you are once again atop Sentinel Hill, unable to recall exactly how you
-        got here. You are mesmerized by the night sky. Seconds become minutes, and minutes become hours. Eventually,
-        you are found and lifted to your feet by a group of Dunwich citizens. “What happened? What are ya doin’
-        here?” they ask you, frightened but curious. You can’t seem to find the right words to describe the events
-        that occurred beyond the gate…if they ever truly occurred. There doesn’t appear to be any trace of Seth
-        Bishop, of the creatures you fought earlier, or of the phantasmal and otherworldly gate. But every time you
-        sleep, you dream—and when you dream, it all comes rushing back.\n
-    \n<b>The investigators win!</b></string>
-    <string name="lost_resolution_one_defeated"><b>Defeated investigators:</b>\n
-        \nWhere did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-    \n<b>Each defeated investigator is killed.</b>\n
-        \n<b>Surviving investigators:</b>\n
-    \nLying on your back in a patch of wet grass, you find yourself staring
-        longingly at the night sky. Somehow, you are once again atop Sentinel Hill, unable to recall exactly how you
-        got here. You are mesmerized by the night sky. Seconds become minutes, and minutes become hours. Eventually,
-        you are found and lifted to your feet by a group of Dunwich citizens. “What happened? What are ya doin’
-        here?” they ask you, frightened but curious. You can’t seem to find the right words to describe the events
-        that occurred beyond the gate…if they ever truly occurred. There doesn’t appear to be any trace of Seth
-        Bishop, of the creatures you fought earlier, or of the phantasmal and otherworldly gate. But every time you
-        sleep, you dream—and when you dream, it all comes rushing back.\n
-    \n<b>The investigators win!</b></string>
-    <string name="lost_resolution_two">Where did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-    \n<b>Each defeated investigator is killed.</b>\n
-    \nSeveral of the villagers from Dunwich heard the ruckus on Sentinel Hill and went to investigate. What they
-        found there answered none of their questions.\n
-    \n“What d’you think happened?” a frightened Curtis Whateley asks as they examine the hilltop. The other villagers
-        shake their heads, unable to say. “Last thing I saw, the sky’d open’d up an’ there was a bright flash,” one
-        of them says, looking up at the starry sky from the top of Sentinel Hill.\n
-    \n“Those Arkham fellas ain’t nowhere to be seen,” Curtis adds, looking down at the cracked stone altar. “Not even
-        of a hint of ‘em. Mr. Bishop and his pals, now, that’s a diff’rent story.” The young man motions toward
-        several corpses on the ground.\n
-    \n“Think we should get ahold of those coppers outta Aylesbury?”\n
-    \n“Why, so they can laugh at us again?” Curtis spits. “They ain’t never gonna believe us ‘bout all this anyway.”
-        He glances at the stone altar, fidgeting nervously. “Better t’ forget about the whole thing. C’mon, let’s
-        bury the dead and get outta here.”\n
-    \n<b>The investigators win…and are never seen or heard from again.</b></string>
-    <string name="lost_resolution_three">The creature erupts in a cosmic fury of sound, color, and distorted space, hurling you back and away from it.
-        You watch in horror as one of its arms tears through the fabric of the world, and its amorphous shape funnels
-        through the rift, pulling the threads of the world along with it. You try to cling to something, but you are
-        inexorably sucked into the rift. You feel as if your body is stretching and your mind is being crushed. Then,
-        everything goes black.\n
-    \n<b>Each investigator is killed.</b>\n
-    \n<b>The investigators win…and are never seen or heard from again.</b></string>
-    <string name="lost_resolution_three_defeated"><b>Defeated investigators:</b>\n
-        \nWhere did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-        \n<b>Surviving investigators:</b>\n
-    \nThe creature erupts in a cosmic fury of sound, color, and distorted space, hurling you back and away from it.
-        You watch in horror as one of its arms tears through the fabric of the world, and its amorphous shape funnels
-        through the rift, pulling the threads of the world along with it. You try to cling to something, but you are
-        inexorably sucked into the rift. You feel as if your body is stretching and your mind is being crushed. Then,
-        everything goes black.\n
-    \n<b>Each investigator is killed.</b>\n
-    \n<b>The investigators win…and are never seen or heard from again.</b></string>
-    <string name="lost_resolution_four">Where did you come from? Why are you here? Are you dreaming, or is this place
-        real? Now that you think about it, haven’t you been here before? Or perhaps you’ve been here all along. Now
-        you remember. This is your real home. The path you now walk is but one ledge, with many more below. You only
-        have to fall and you will be where you belong. One more step…\n
-    \n<b>Each defeated investigator is killed.</b>\n
-    \nThe sorcerers from Dunwich, seeking arcane power from beyond this realm, have accomplished what Wilbur and Old
-        Whateley could not. Through blood sacrifice and indescribable experiments, the dark power the sorcerers
-        sought is now within their reach. However, they will never get the chance to truly wield this power. In
-        beseeching Wilbur’s father for knowledge, they have drawn the creature forth from its extradimensional realm.
-        Yog-Sothoth emerges from the open rift above Sentinel Hill, blotting out the sky and enveloping the world.
-        Now it has come to Earth, and it rules where humanity once tread.\n
+    <string name="lost_no_resolution">¿De dónde vinisteis? ¿Por qué estáis aquí? ¿Estáis soñando, o este lugar es
+        real? Ahora que lo pensáis, ¿no habéis estado antes aquí? O quizá estuvisteis aquí todo el tiempo. Ahora
+        lo recordáis. Éste es vuestro hogar de verdad. El camino que recorréis no es más que un saliente, con muchos
+        más por debajo. Sólo tenéis que caer para estar allí donde pertenecéis. Un paso más…\n
+    \n<b>Cada investigador que fuerra derrotado acaba muerto.</b></string>
+    <string name="lost_resolution_one">Estáis tumbados de espaldas sobre un trozo de hierba húmeda, mirando con
+        nostalgia el cielo nocturno. De algún modo, habéis vuelto a la cima de Sentinel Hill, y no lográis recordar
+        cómo llegasteis aquí exactamente. El cielo nocturno os hipnotiza. Los segundos se convierten en minutos, y los
+        minutos se convierten en horas. Finalmente, un grupo de ciudadanos de Dunwich acaba por encontraros y os ponen
+        en pie.\n
+    \n—¿Qué ha ocurrido? ¿Qué hacen aquí? —os preguntan, asustados pero con curiosidad. Parece que no podéis encontrar
+        las palabras apropiadas para describir los acontecimientos que tuvieron lugar al otro lado del portal… si es que
+        ocurrieron realmente. Tampoco parece haber ni rastro de Seth Bishop, de las criaturas que combatisteis antes
+        o del fantasmal y sobrenatural portal. Pero cada vez que dormís, soñáis… y cuando soñáis, todo vuelve como un
+        torrente.\n
+    \n<b>¡Los investigadores ganan la campaña!</b></string>
+    <string name="lost_resolution_one_defeated"><b>Investigadores derrotados:</b>\n
+        \n¿De dónde vinisteis? ¿Por qué estáis aquí? ¿Estáis soñando, o este lugar es
+        real? Ahora que lo pensáis, ¿no habéis estado antes aquí? O quizá estuvisteis aquí todo el tiempo. Ahora
+        lo recordáis. Éste es vuestro hogar de verdad. El camino que recorréis no es más que un saliente, con muchos
+        más por debajo. Sólo tenéis que caer para estar allí donde pertenecéis. Un paso más…\n
+    \n<b>Cada investigador que fuerra derrotado acaba muerto.</b>\n
+        \n<b>Investigadores supervivientes:</b>\n
+    \nEstáis tumbados de espaldas sobre un trozo de hierba húmeda, mirando con
+        nostalgia el cielo nocturno. De algún modo, habéis vuelto a la cima de Sentinel Hill, y no lográis recordar
+        cómo llegasteis aquí exactamente. El cielo nocturno os hipnotiza. Los segundos se convierten en minutos, y los
+        minutos se convierten en horas. Finalmente, un grupo de ciudadanos de Dunwich acaba por encontraros y os ponen
+        en pie.\n
+    \n—¿Qué ha ocurrido? ¿Qué hacen aquí? —os preguntan, asustados pero con curiosidad. Parece que no podéis encontrar
+        las palabras apropiadas para describir los acontecimientos que tuvieron lugar al otro lado del portal… si es que
+        ocurrieron realmente. Tampoco parece haber ni rastro de Seth Bishop, de las criaturas que combatisteis antes
+        o del fantasmal y sobrenatural portal. Pero cada vez que dormís, soñáis… y cuando soñáis, todo vuelve como un
+        torrente.\n
+    \n<b>¡Los investigadores ganan la campaña!</b></string>
+    <string name="lost_resolution_two">¿De dónde vinisteis? ¿Por qué estáis aquí? ¿Estáis soñando, o este lugar es
+        real? Ahora que lo pensáis, ¿no habéis estado antes aquí? O quizá estuvisteis aquí todo el tiempo. Ahora
+        lo recordáis. Éste es vuestro hogar de verdad. El camino que recorréis no es más que un saliente, con muchos
+        más por debajo. Sólo tenéis que caer para estar allí donde pertenecéis. Un paso más…\n
+    \n<b>Cada investigador que fuerra derrotado acaba muerto.</b>\n
+    \nVarios de los aldeanos de Dunwich oyeron el alboroto de Sentinel Hill y fueron a investigar. Lo que encontraron
+        allí no respondió a ninguna de sus preguntas.\n
+    \n—¿Qué creéis que ha pasado? —preguntó un asustado Curtis Whateley mientras examinaban la cima de la colina. El
+        resto de aldeanos sacudieron la cabeza sin poder ofrecer una explicación.\n
+    \n—Lo último que vi es que el cielo se abrió y hubo un fuerte destello —dijo uno de ellos mientras observaba el
+        cielo estrellado desde la cumbre de Sentinel Hill.\n
+    \n—Esos tipos de Arkham no aparecen por ninguna parte —añadió Curtis, mirando el agrietado altar de piedra—. No
+        hay el menor reastro de ellos. A diferencia del Sr.Bishop y sus amigos —prosiguió mientras señalaba varios
+        cadávares tirados en el suelo.\n
+    \n—¿Creéis que deberíamos ir a buscar a los polis de Aylesbury?\n
+    \n—¿Para qué? ¿Para que vuelvan a reírse de nosotros? —respondió Curtis escupiendo—. Nunca nos creerían ni una
+        palabra de todo esto —añadió mientras miraba de reojo el altar de piedra y se movía inquieto—. Más vale que
+        nos olvidemos del asunto. Vamos, enterremos a los muertos y marchémonos de aquí.\n
+    \n<b>Los investigadores ganan la campaña… y nunca se vuelve a saber nada de ellos.</b></string>
+    <string name="lost_resolution_three">De la criatura surge una furia cósmica de sonidos, colores y espacio
+        distorsionado que os repele y aleja de ella. Observáis horrorizados cómo uno de sus brazos rasga el tejido
+        del mundo y su forma amorfa se introduce por la grieta, arrastrando con ella la urdimbre del mundo. Tratáis
+        de agarraros a algo, pero os veis absorvidos inexorablemente por el desgarro. Notáis como si vuestro cuerpo
+        se estirara y vuestra mente fuera aplastada. Después, todo se vuelve negro.\n
+    \n<b>Todos los investigadores han muerto.</b>\n
+    \n<b>Los investigadores ganan la campaña… y nunca se vuelve a saber nada de ellos.</b></string>
+    <string name="lost_resolution_three_defeated"><b>Investigadores derrotados:</b>\n
+        \n¿De dónde vinisteis? ¿Por qué estáis aquí? ¿Estáis soñando, o este lugar es
+        real? Ahora que lo pensáis, ¿no habéis estado antes aquí? O quizá estuvisteis aquí todo el tiempo. Ahora
+        lo recordáis. Éste es vuestro hogar de verdad. El camino que recorréis no es más que un saliente, con muchos
+        más por debajo. Sólo tenéis que caer para estar allí donde pertenecéis. Un paso más…\n
+        \n<b>Investigadores supervivientes:</b>\n
+    \nDe la criatura surge una furia cósmica de sonidos, colores y espacio
+        distorsionado que os repele y aleja de ella. Observáis horrorizados cómo uno de sus brazos rasga el tejido
+        del mundo y su forma amorfa se introduce por la grieta, arrastrando con ella la urdimbre del mundo. Tratáis
+        de agarraros a algo, pero os veis absorvidos inexorablemente por el desgarro. Notáis como si vuestro cuerpo
+        se estirara y vuestra mente fuera aplastada. Después, todo se vuelve negro.\n
+    \n<b>Todos los investigadores han muerto.</b>\n
+    \n<b>Los investigadores ganan la campaña… y nunca se vuelve a saber nada de ellos.</b></string>
+    <string name="lost_resolution_four">¿De dónde vinisteis? ¿Por qué estáis aquí? ¿Estáis soñando, o este lugar es
+        real? Ahora que lo pensáis, ¿no habéis estado antes aquí? O quizá estuvisteis aquí todo el tiempo. Ahora
+        lo recordáis. Éste es vuestro hogar de verdad. El camino que recorréis no es más que un saliente, con muchos
+        más por debajo. Sólo tenéis que caer para estar allí donde pertenecéis. Un paso más…\n
+    \n<b>Cada investigador que fuerra derrotado acaba muerto.</b>\n
+    \nEn su búsqueda de un poder arcano más allá de este reino, los hechiceros de
+        Dunwich han logrado aquello que no pudieron conseguir Wilbur y el viejo Whateley. Mediante sacrificos de
+        sangre e indescriptibles experimentos, el oscuro poder que perseguían los hechiceros ahora está a su alcance.
+        Sin embargo, nuncan tendrán la oportunidad de hacer uso de él realmente. Al pedirle al padre de Wilbur que
+        les otorgara conocimientos, han atraído a la criatura desde su reino extradimensional. Yog-Sothoth emerge
+        de la grieta abierta sobre Sentinel Hill, oscureciendo el cielo y rodeando el mundo. Ahora que ha llegado
+        a la Tierra, gobierna allí donde antes caminaba la humanidad.\n
     \n<b>Each surviving investigator is driven insane.</b>\n
-    \n<b>The investigators lose.</b></string>
+    \n<b>Todos los investigadores supervivientes se vuelven locos.</b>\n
+    \n<b>Los investigadores pierden la partida.</b></string>
 
 </resources>

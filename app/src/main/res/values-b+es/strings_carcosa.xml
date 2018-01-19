@@ -8,10 +8,10 @@
     <string name="carcosa_scenario_five">Escenario 5: El Fantasma de la Verdad</string>
     <string name="carcosa_scenario_six">Escenario 6: La máscara pálida</string>
     <string name="carcosa_scenario_seven">Escenario 7: Surgen estrellas negras</string>
-    <string name="carcosa_scenario_eight">Escenario 8: Denumbrosa Carcosa</string>
+    <string name="carcosa_scenario_eight">Escenario 8: Penumbrosa Carcosa</string>
     <string name="carcosa_interlude_zero">Prólogo de Lola</string>
-    <string name="carcosa_interlude_one">Interlude 1: Recompensa de la demencia</string>
-    <string name="carcosa_interlude_two">Interlude 2: Alma perdida</string>
+    <string name="carcosa_interlude_one">Interludio 1: Recompensa de la demencia</string>
+    <string name="carcosa_interlude_two">Interludio 2: Alma perdida</string>
     <string name="carcosa_epilogue">Epílogo</string>
 
 
@@ -30,7 +30,10 @@
     <string name="sebastien">Sebastien Moreau</string>
     <string name="ashleigh">Ashleigh Clarke</string>
     <string name="allocated_experience">Distribución de la experiencia</string>
+    <string name="daniel_chesterfield_inplay">Daniel Chesterfield in play when the scenario ended</string>
     <string name="sebastien_victory">Sebastien Moreau in the victory display</string>
+    <string name="constance_victory">Constance Dumaine in the victory display</string>
+    <string name="jordan_victory">Jordan Perry in the victory display</string>
 
 
     <!--Campaign Log-->
@@ -55,7 +58,39 @@
     <string name="onyx_left">You left the onyx clasp behind.\n\n</string>
     <string name="oathspeaker_destroyed">You destroyed the oathspeaker.\n\n</string>
     <string name="followers_sign">The followers of the sign have found the way forward.\n\n</string>
+    <string name="king_victims">The King claimed its victims.\n\n</string>
+    <string name="attacked_asylum">The investigators were attacked as they escaped the asylum.\n\n</string>
+    <string name="escaped_asylum">The investigators escaped the asylum.\n\n</string>
+    <string name="warning_heeded">You heeded Daniel\'s warning.\n\n</string>
+    <string name="warning_ignored">You ignored Daniel\'s warning.\n\n</string>
+    <string name="not_escape_gaze">You did not escape the gaze of the phantom.\n\n</string>
+    <string name="found_nigel_home">You found Nigel\'s home.\n\n</string>
+    <string name="found_nigel_engram">You found Nigel Engram.\n\n</string>
+    <string name="unable_find_nigel">You were unable to find Nigel.\n\n</string>
 
+
+    <!--Edit log-->
+    <string name="doubt_heading">Duda</string>
+    <string name="conviction_heading">Convicción</string>
+    <string name="chasing_stranger_heading">Persiguiendo al Extranjero</string>
+    <string name="theatre_heading">Bolsa de caos</string>
+    <string name="theatre_one">2 fichas de Sectario añadidas.</string>
+    <string name="theatre_two">2 fichas de Lápida añadidas.</string>
+    <string name="theatre_three">2 fichas de Antiguo añadidas.</string>
+    <string name="theatre_four">1 ficha de Sectario, 1 ficha de Lápida y 1 ficha de Antiguo añadidas.</string>
+    <string name="stranger_heading">El Extranjero</string>
+    <string name="not_stranger">The Stranger is not on to you.</string>
+    <string name="police_heading">Policía</string>
+    <string name="police_none">La policía no ha sido involucrada.</string>
+    <string name="police_warned_and_suspicious">Los investigadores trataron de avisar a la policía y la policía
+        sospecha de los investigadores.</string>
+    <string name="party_heading">Dinner Party</string>
+    <string name="no_party">You left the dinner party.</string>
+    <string name="onyx_heading">The Clasp of Black Onyx</string>
+    <string name="asylum_heading">Manicomo de Arkham</string>
+    <string name="daniel_heading">Advertencia de Daniel</string>
+    <string name="no_daniel">Los investigadores no escucharon las advertencias de Daniel.</string>
+    <string name="nigel_heading">Nigel Engram</string>
 
     <!--Chaos bag-->
     <string name="curtain_skull_one">-1, o bien -3 si tienes 3 o más puntos de horror.</string>
@@ -86,6 +121,30 @@
     <string name="echoes_tablet_two">-4. Descarta una carta de tu mano al azar.</string>
     <string name="echoes_thing_one">-2. Si fracasas y hay un Enemigo en tu Lugar, recibe 1 punto de horror.</string>
     <string name="echoes_thing_two">-4. Si hay un Enemigo en tu Lugar, recibe 1 punto de horror.</string>
+
+    <string name="unspeakable_skull_one">-1. Si fracasas, elige un Enemigo al azar de entre los Enemigos <i>Monstruo</i>
+        puestos aparte y colócalo bajo el mazo de Acto sin mirarlo.</string>
+    <string name="unspeakable_skull_two">Revela otra ficha. Si fracasas, elige un Enemigo al azar de entre los Enemigos <i>Monstruo</i>
+        puestos aparte y colócalo bajo el mazo de Acto sin mirarlo. Límite de una vez por prueba.</string>
+    <string name="unspeakable_cultist_one">-X. X es la cantidad de horror que tengas.</string>
+    <string name="unspeakable_cultist_two">-X. X es la cantidad de horror que tengas. Si fracasas, recibe 1 punto de horror.</string>
+    <string name="unspeakable_tablet_one">-X. X es el valor de velo básico de tu Lugar.</string>
+    <string name="unspeakable_tablet_two">-X. X es el valor de velo básico de tu Lugar. Si fracasas, recibe 1 punto de horror.</string>
+    <string name="unspeakable_thing_one">0. Elige un Enemigo al azar de entre los Enemigos <i>Monstruo</i> puestos
+        aparte y colócalo bajo el mazo de Acto sin mirarlo o bien esta prueba fracasa automáticamente.</string>
+    <string name="unspeakable_thing_two">0. Elige un Enemigo al azar de entre los Enemigos <i>Monstruo</i> puestos
+        aparte y colócalo bajo el mazo de Acto sin mirarlo o bien esta prueba fracasa automáticamente.</string>
+
+    <string name="phantom_skull_one">–X. X es la cantidad de perdición en juego (máx. 5).</string>
+    <string name="phantom_skull_two">–X. X es la cantidad de perdición en juego.</string>
+    <string name="phantom_cultist_one">–2. Si fracasas, mueve cada <b><i>Byakhee</i></b> no enfrentado que esté en juego
+        una vez hacia el investigador más cercano.</string>
+    <string name="phantom_cultist_two">–2. Mueve cada <b><i>Byakhee</i></b> no enfrentado que esté en juego
+        una vez hacia el investigador más cercano.</string>
+    <string name="phantom_tablet_one">–3. Cancela los efectos e iconos de todas las cartas de Habilidad asignadas a esta prueba.</string>
+    <string name="phantom_tablet_two">–4. Cancela los efectos e iconos de todas las cartas de Habilidad asignadas a esta prueba.</string>
+    <string name="phantom_thing_one">–2. Si fracasas, pierde 1 recurso por cada punto que te falte para tener éxito.</string>
+    <string name="phantom_thing_two">–3. Si fracasas, pierde 1 recurso por cada punto que te falte para tener éxito.</string>
 
 
     <!-- Campaign introduction-->
