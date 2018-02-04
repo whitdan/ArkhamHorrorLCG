@@ -21,6 +21,7 @@ public class ArkhamContract {
         public static final String _ID = BaseColumns._ID;
         public static final String COLUMN_CAMPAIGN_VERSION = "version";
         public static final String COLUMN_CAMPAIGN_NAME = "name";
+        public static final String COLUMN_CHAOS_BAG = "chaos_bag";
         public static final String COLUMN_CURRENT_CAMPAIGN = "campaign"; // Denotes which campaign
         public static final String COLUMN_CURRENT_SCENARIO = "scenario";
         public static final String COLUMN_DIFFICULTY = "difficulty";
@@ -133,5 +134,28 @@ public class ArkhamContract {
         public static final String COLUMN_DANIELS_WARNING = "daniels_warning";
         public static final String COLUMN_DREAMS = "dreams_action";
         public static final String COLUMN_NIGEL = "nigel";
+    }
+
+    public static class ChaosBagEntry implements BaseColumns{
+        public static final String TABLE_NAME = "chaos_bag";
+        public static final String _ID = BaseColumns._ID;
+        public static final String COLUMN_CHAOS_BAG_NAME = "name";
+        public static final String COLUMN_CAMPAIGN_TOKENS = "campaign_tokens";
+        public static final String COLUMN_ONE = "plus_one";
+        public static final String COLUMN_TWO = "zero";
+        public static final String COLUMN_THREE = "minus_one";
+        public static final String COLUMN_FOUR = "minus_two";
+        public static final String COLUMN_FIVE = "minus_three";
+        public static final String COLUMN_SIX = "minus_four";
+        public static final String COLUMN_SEVEN = "minus_five";
+        public static final String COLUMN_EIGHT = "minus_six";
+        public static final String COLUMN_NINE = "minus_seven";
+        public static final String COLUMN_TEN = "minus_eight";
+        public static final String COLUMN_ELEVEN = "skull";
+        public static final String COLUMN_TWELVE = "cultist";
+        public static final String COLUMN_THIRTEEN = "tablet";
+        public static final String COLUMN_FOURTEEN = "elder_thing";
+        public static final String COLUMN_FIFTEEN = "elder_sign";
+        public static final String COLUMN_SIXTEEN = "tentacles";
     }
 }

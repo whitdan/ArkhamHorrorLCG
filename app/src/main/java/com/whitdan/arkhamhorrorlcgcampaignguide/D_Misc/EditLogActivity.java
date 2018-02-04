@@ -49,116 +49,23 @@ public class EditLogActivity extends AppCompatActivity {
         campaign.setTypeface(teutonic);
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
+        ScenarioMainActivity.setTitle(title);
         switch (globalVariables.CurrentCampaign) {
             case 1:
                 campaign.setText(R.string.night_campaign);
-                switch (globalVariables.CurrentScenario) {
-                    case 1:
-                        title.setText(R.string.night_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.night_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.night_scenario_three);
-                        break;
-                }
                 if (globalVariables.NightCompleted == 1) {
-                    title.setText(R.string.night_campaign);
+                    title.setVisibility(GONE);
                 }
                 break;
             case 2:
                 campaign.setText(R.string.dunwich_campaign);
-                switch (globalVariables.CurrentScenario) {
-                    case 1:
-                        title.setText(R.string.dunwich_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.dunwich_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.dunwich_interlude_one);
-                        break;
-                    case 4:
-                        title.setText(R.string.dunwich_scenario_three);
-                        break;
-                    case 5:
-                        title.setText(R.string.dunwich_scenario_four);
-                        break;
-                    case 6:
-                        title.setText(R.string.dunwich_scenario_five);
-                        break;
-                    case 7:
-                        title.setText(R.string.dunwich_interlude_two);
-                        break;
-                    case 8:
-                        title.setText(R.string.dunwich_scenario_six);
-                        break;
-                    case 9:
-                        title.setText(R.string.dunwich_scenario_seven);
-                        break;
-                    case 10:
-                        title.setText(R.string.dunwich_scenario_eight);
-                        break;
-                    case 11:
-                        title.setText(R.string.dunwich_epilogue);
-                        break;
-                }
                 if (globalVariables.DunwichCompleted == 1) {
-                    title.setText(R.string.dunwich_campaign);
+                    title.setVisibility(GONE);
                 }
                 break;
             case 3:
                 campaign.setText(R.string.carcosa_campaign);
-                switch (globalVariables.CurrentScenario) {
-                    case 1:
-                        title.setText(R.string.carcosa_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.carcosa_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.carcosa_interlude_one);
-                        break;
-                    case 4:
-                        title.setText(R.string.carcosa_scenario_three);
-                        break;
-                    case 5:
-                        title.setText(R.string.carcosa_scenario_four);
-                        break;
-                    case 6:
-                        title.setText(R.string.carcosa_interlude_two);
-                        break;
-                    case 7:
-                        title.setText(R.string.carcosa_scenario_five);
-                        break;
-                    case 8:
-                        title.setText(R.string.carcosa_scenario_six);
-                        break;
-                    case 9:
-                        title.setText(R.string.carcosa_scenario_seven);
-                        break;
-                    case 10:
-                        title.setText(R.string.carcosa_scenario_eight);
-                        break;
-                    case 11:
-                        title.setText(R.string.carcosa_epilogue);
-                        break;
-                    case 12:
-                        title.setText(R.string.campaign_completed);
-                        break;
-                }
                 break;
-        }
-        if (globalVariables.CurrentScenario > 100) {
-            switch (globalVariables.CurrentScenario) {
-                case 101:
-                    title.setText(R.string.rougarou_scenario);
-                    break;
-                case 102:
-                    title.setText(R.string.carnevale_scenario);
-                    break;
-            }
         }
 
         // Get layout to add views and get scenario
@@ -361,7 +268,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton umordhothOptionOne = umordhothOptions.findViewById(R.id.option_one);
                 RadioButton umordhothOptionTwo = umordhothOptions.findViewById(R.id.option_two);
                 RadioButton umordhothOptionThree = umordhothOptions.findViewById(R.id.option_three);
-                RadioButton umordhothOptionFour = umordhothOptionOne.findViewById(R.id.option_four);
+                RadioButton umordhothOptionFour = umordhothOptions.findViewById(R.id.option_four);
                 umordhothOptionThree.setVisibility(VISIBLE);
                 umordhothOptionFour.setVisibility(VISIBLE);
                 umordhothOptionOne.setId(R.id.umordhoth_one);
@@ -445,7 +352,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton warrenOptionOne = warrenOptions.findViewById(R.id.option_one);
                 RadioButton warrenOptionTwo = warrenOptions.findViewById(R.id.option_two);
                 RadioButton warrenOptionThree = warrenOptions.findViewById(R.id.option_three);
-                RadioButton warrenOptionFour = warrenOptionOne.findViewById(R.id.option_four);
+                RadioButton warrenOptionFour = warrenOptions.findViewById(R.id.option_four);
                 if (scenario > 6) {
                     warrenOptionOne.setVisibility(GONE);
                     warrenOptionTwo.setVisibility(GONE);
@@ -517,7 +424,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton francisOptionsOne = francisOptions.findViewById(R.id.option_one);
                 RadioButton francisOptionsTwo = francisOptions.findViewById(R.id.option_two);
                 RadioButton francisOptionsThree = francisOptions.findViewById(R.id.option_three);
-                RadioButton francisOptionsFour = francisOptionsOne.findViewById(R.id.option_four);
+                RadioButton francisOptionsFour = francisOptions.findViewById(R.id.option_four);
                 if (scenario > 6) {
                     francisOptionsOne.setVisibility(GONE);
                     francisOptionsTwo.setVisibility(GONE);
@@ -603,7 +510,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton armitageOptionOne = armitageOptions.findViewById(R.id.option_one);
                 RadioButton armitageOptionTwo = armitageOptions.findViewById(R.id.option_two);
                 RadioButton armitageOptionThree = armitageOptions.findViewById(R.id.option_three);
-                RadioButton armitageOptionFour = armitageOptionOne.findViewById(R.id.option_four);
+                RadioButton armitageOptionFour = armitageOptions.findViewById(R.id.option_four);
                 if (scenario > 6) {
                     armitageOptionOne.setVisibility(GONE);
                     armitageOptionTwo.setVisibility(GONE);
@@ -645,7 +552,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton necronomiconOptionOne = necronomiconOptions.findViewById(R.id.option_one);
                 RadioButton necronomiconOptionTwo = necronomiconOptions.findViewById(R.id.option_two);
                 RadioButton necronomiconOptionThree = necronomiconOptions.findViewById(R.id.option_three);
-                RadioButton necronomiconOptionFour = necronomiconOptionOne.findViewById(R.id.option_four);
+                RadioButton necronomiconOptionFour = necronomiconOptions.findViewById(R.id.option_four);
                 necronomiconOptionThree.setVisibility(VISIBLE);
                 if (scenario > 5) {
                     necronomiconOptionFour.setVisibility(VISIBLE);
@@ -731,7 +638,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton silasOptionOne = silasOptions.findViewById(R.id.option_one);
                 RadioButton silasOptionTwo = silasOptions.findViewById(R.id.option_two);
                 RadioButton silasOptionThree = silasOptions.findViewById(R.id.option_three);
-                RadioButton silasOptionFour = silasOptionOne.findViewById(R.id.option_four);
+                RadioButton silasOptionFour = silasOptions.findViewById(R.id.option_four);
                 silasOptionThree.setVisibility(VISIBLE);
                 silasOptionFour.setVisibility(VISIBLE);
                 silasOptionOne.setId(R.id.silas_one);
@@ -1074,7 +981,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton theatreOptionOne = theatreOptions.findViewById(R.id.option_one);
                 RadioButton theatreOptionTwo = theatreOptions.findViewById(R.id.option_two);
                 RadioButton theatreOptionThree = theatreOptions.findViewById(R.id.option_three);
-                RadioButton theatreOptionFour = theatreOptionOne.findViewById(R.id.option_four);
+                RadioButton theatreOptionFour = theatreOptions.findViewById(R.id.option_four);
                 theatreOptionThree.setVisibility(VISIBLE);
                 theatreOptionFour.setVisibility(VISIBLE);
                 theatreOptionOne.setId(R.id.theatre_one);
@@ -1132,7 +1039,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton policeOptionOne = policeOptions.findViewById(R.id.option_one);
                 RadioButton policeOptionTwo = policeOptions.findViewById(R.id.option_two);
                 RadioButton policeOptionThree = policeOptions.findViewById(R.id.option_three);
-                RadioButton policeOptionFour = policeOptionOne.findViewById(R.id.option_four);
+                RadioButton policeOptionFour = policeOptions.findViewById(R.id.option_four);
                 policeOptionThree.setVisibility(VISIBLE);
                 policeOptionFour.setVisibility(VISIBLE);
                 policeOptionOne.setId(R.id.police_one);
@@ -1278,7 +1185,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton partyOptionOne = partyOptions.findViewById(R.id.option_one);
                 RadioButton partyOptionTwo = partyOptions.findViewById(R.id.option_two);
                 RadioButton partyOptionThree = partyOptions.findViewById(R.id.option_three);
-                RadioButton partyOptionFour = partyOptionOne.findViewById(R.id.option_four);
+                RadioButton partyOptionFour = partyOptions.findViewById(R.id.option_four);
                 partyOptionThree.setVisibility(VISIBLE);
                 partyOptionFour.setVisibility(VISIBLE);
                 partyOptionOne.setId(R.id.party_one);
@@ -1316,7 +1223,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton onyxOptionOne = onyxOptions.findViewById(R.id.option_one);
                 RadioButton onyxOptionTwo = onyxOptions.findViewById(R.id.option_two);
                 RadioButton onyxOptionThree = onyxOptions.findViewById(R.id.option_three);
-                RadioButton onyxOptionFour = onyxOptionOne.findViewById(R.id.option_four);
+                RadioButton onyxOptionFour = onyxOptions.findViewById(R.id.option_four);
                 onyxOptionThree.setVisibility(VISIBLE);
                 onyxOptionFour.setVisibility(VISIBLE);
                 onyxOptionOne.setId(R.id.onyx_one);
@@ -1416,7 +1323,7 @@ public class EditLogActivity extends AppCompatActivity {
                 RadioButton nigelOptionOne = nigelOptions.findViewById(R.id.option_one);
                 RadioButton nigelOptionTwo = nigelOptions.findViewById(R.id.option_two);
                 RadioButton nigelOptionThree = nigelOptions.findViewById(R.id.option_three);
-                RadioButton nigelOptionFour = nigelOptionOne.findViewById(R.id.option_four);
+                RadioButton nigelOptionFour = nigelOptions.findViewById(R.id.option_four);
                 nigelOptionThree.setVisibility(VISIBLE);
                 nigelOptionFour.setVisibility(VISIBLE);
                 nigelOptionOne.setId(R.id.nigel_one);

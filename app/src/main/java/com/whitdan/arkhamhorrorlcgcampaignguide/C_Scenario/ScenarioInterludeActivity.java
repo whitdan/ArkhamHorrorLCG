@@ -42,10 +42,13 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
         setContentView(R.layout.c_activity_scenario_interlude);
         globalVariables = (GlobalVariables) this.getApplication();
 
-        // Set typefaces
+        // Set title
         TextView title = findViewById(R.id.current_scenario_name);
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         title.setTypeface(teutonic);
+        ScenarioMainActivity.setTitle(title);
+
+        // Set typefaces
         final TextView introduction = findViewById(R.id.introduction_text);
         Typeface arnoproitalic = Typeface.createFromAsset(getAssets(), "fonts/arnoproitalic.otf");
         introduction.setTypeface(arnoproitalic);
@@ -75,7 +78,6 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
             case 2:
                 switch (globalVariables.CurrentScenario) {
                     case 3:
-                        title.setText(R.string.dunwich_interlude_one);
                         if (globalVariables.InvestigatorsUnconscious == 1) {
                             introduction.setText(R.string.armitage_interlude_one);
                             globalVariables.HenryArmitage = 0;
@@ -88,7 +90,6 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                         }
                         break;
                     case 7:
-                        title.setText(R.string.dunwich_interlude_two);
                         boolean powder = false;
                         introduction.setText(R.string.survivors_interlude);
                         if (globalVariables.HenryArmitage == 3) {
@@ -120,7 +121,6 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                         }
                         break;
                     case 11:
-                        title.setText(R.string.dunwich_epilogue);
                         if (globalVariables.TownsfolkAction == 1) {
                             introduction.setText(R.string.dunwich_epilogue_one);
                         } else if (globalVariables.TownsfolkAction == 2) {
@@ -133,11 +133,9 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
             case 3:
                 switch (globalVariables.CurrentScenario) {
                     case 0:
-                        title.setText(R.string.carcosa_interlude_zero);
                         introduction.setText(R.string.carcosa_lola_prologue);
                         break;
                     case 3:
-                        title.setText(R.string.carcosa_interlude_one);
                         introduction.setVisibility(GONE);
                         introductionOptions.setVisibility(VISIBLE);
                         introductionOptionOne.setText(R.string.carcosa_interlude_one_option_one);
@@ -164,7 +162,6 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                         });
                         break;
                     case 6:
-                        title.setText(R.string.carcosa_interlude_two);
                         switch (globalVariables.Daniel) {
                             case 1:
                                 introduction.setText(R.string.lost_soul_one);
@@ -203,11 +200,9 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
         if (globalVariables.CurrentScenario > 100) {
             switch (globalVariables.CurrentScenario) {
                 case 101:
-                    title.setText(R.string.rougarou_scenario);
                     introduction.setText(R.string.rougarou_introduction);
                     break;
                 case 102:
-                    title.setText(R.string.carnevale_scenario);
                     introduction.setText(R.string.carnevale_introduction);
                     break;
             }

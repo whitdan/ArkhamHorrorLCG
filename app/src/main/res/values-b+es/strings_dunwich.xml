@@ -92,7 +92,7 @@
     <string name="unconscious_heading">Investigadores inconscientes</string>
     <string name="not_unconscious">Los investigadores no perdieron la consciencia.</string>
     <string name="students_heading">El destino de los estudiantes</string>
-    <string name="obannion_heading">La banda de O'Bannion</string>
+    <string name="obannion_heading">La banda de O\'Bannion</string>
     <string name="cheated_heading">Trampas de los investigadores</string>
     <string name="cheated">Un investigador \"hizo trampas\".</string>
     <string name="not_cheated">Ningún investigador \"hizo trampas\".</string>
@@ -574,7 +574,8 @@
 
     <string name="undimensioned_sets">Invisibles y sin dimensión, Chotacabras, Esclavos-bestia, Dunwich y Miedo impactante.</string>
     <string name="undimensioned_locations">Pon en juego, de forma aleatoria, 1 de las 2 versiones de los siguientes Lugares: Aldea
-        de Dunwich, Cañada de Cold Spring, Páramo arrasado, Pradera de diez acres, Devil's Hop Yard y Ruinas Whateley. Retira de la
+        de Dunwich, Cañada de Cold Spring, Páramo arrasado, Pradera de diez acres, Devil\'s Hop Yard y Ruinas
+        Whateley. Retira de la
         partida las demás versiones de esos Lugares.\n
         \nCada investigador comienza la partida en la Aldea de Dunwich.\n</string>
     <string name="undimensioned_set_aside">Todas las copias de la Fórmula esotérica.\n</string>

@@ -51,7 +51,7 @@
     <!--General-->
     <string name="back">Back</string>
     <string name="continue_button">Continue</string>
-    <string name="difficulty">Chaos Bag Setup</string>
+    <string name="difficulty">Default Chaos Bag Setup</string>
     <string name="chaos_bag">Chaos Bag</string>
     <string name="campaign_name">Campaign name (required)</string>
     <string name="saved_investigators">Saved Investigators</string>
@@ -81,6 +81,19 @@
     <string name="strange_solution">You have identified the solution.\n\n</string>
     <string name="archaic_glyphs_dialog">You have translated the glyphs</string>
     <string name="archaic_glyphs">You have translated the glyphs.\n\n</string>
+
+    <string name="default_chaos_bag">Default</string>
+    <string name="chaos_bag_name">Chaos bag name (required)</string>
+    <string name="campaign_chaos_tokens">Automatically add campaign chaos tokens</string>
+    <string name="campaign_chaos_tokens_list">+ campaign chaos tokens</string>
+    <string name="select_chaos_bag">Select Chaos Bag</string>
+    <string name="custom_chaos_bag">Custom Chaos Bag</string>
+    <string name="maximum_chaos_bag">Maximum size of the chaos bag is 50 tokens.</string>
+    <string name="save_bag">Save Bag</string>
+    <string name="must_token">You must select at least one chaos token.</string>
+    <string name="must_bag">You must enter a name for the chaos bag.</string>
+    <string name="delete_bag">Delete Chaos Bag</string>
+    <string name="confirm_delete_bag">Are you sure you want to delete this chaos bag?</string>
 
 
     <!--Toast messages-->

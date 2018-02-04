@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioMainActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 
@@ -38,114 +39,7 @@ public class CampaignLogActivity extends AppCompatActivity {
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        switch (globalVariables.CurrentCampaign) {
-            case 1:
-                switch (globalVariables.CurrentScenario) {
-                    case 1:
-                        title.setText(R.string.night_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.night_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.night_scenario_three);
-                        break;
-                }
-                if (globalVariables.NightCompleted == 1) {
-                    title.setText(R.string.night_campaign);
-                }
-                break;
-            case 2:
-                switch (globalVariables.CurrentScenario) {
-                    case 1:
-                        title.setText(R.string.dunwich_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.dunwich_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.dunwich_interlude_one);
-                        break;
-                    case 4:
-                        title.setText(R.string.dunwich_scenario_three);
-                        break;
-                    case 5:
-                        title.setText(R.string.dunwich_scenario_four);
-                        break;
-                    case 6:
-                        title.setText(R.string.dunwich_scenario_five);
-                        break;
-                    case 7:
-                        title.setText(R.string.dunwich_interlude_two);
-                        break;
-                    case 8:
-                        title.setText(R.string.dunwich_scenario_six);
-                        break;
-                    case 9:
-                        title.setText(R.string.dunwich_scenario_seven);
-                        break;
-                    case 10:
-                        title.setText(R.string.dunwich_scenario_eight);
-                        break;
-                    case 11:
-                        title.setText(R.string.dunwich_epilogue);
-                        break;
-                }
-                if (globalVariables.DunwichCompleted == 1) {
-                    title.setText(R.string.dunwich_campaign);
-                }
-                break;
-            case 3:
-                switch (globalVariables.CurrentScenario) {
-                    case 1:
-                        title.setText(R.string.carcosa_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.carcosa_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.carcosa_interlude_one);
-                        break;
-                    case 4:
-                        title.setText(R.string.carcosa_scenario_three);
-                        break;
-                    case 5:
-                        title.setText(R.string.carcosa_scenario_four);
-                        break;
-                    case 6:
-                        title.setText(R.string.carcosa_interlude_two);
-                        break;
-                    case 7:
-                        title.setText(R.string.carcosa_scenario_five);
-                        break;
-                    case 8:
-                        title.setText(R.string.carcosa_scenario_six);
-                        break;
-                    case 9:
-                        title.setText(R.string.carcosa_scenario_seven);
-                        break;
-                    case 10:
-                        title.setText(R.string.carcosa_scenario_eight);
-                        break;
-                    case 11:
-                        title.setText(R.string.carcosa_epilogue);
-                        break;
-                    case 12:
-                        title.setText(R.string.campaign_completed);
-                        break;
-                }
-                break;
-        }
-        if (globalVariables.CurrentScenario > 100) {
-            switch (globalVariables.CurrentScenario) {
-                case 101:
-                    title.setText(R.string.rougarou_scenario);
-                    break;
-                case 102:
-                    title.setText(R.string.carnevale_scenario);
-                    break;
-            }
-        }
+        ScenarioMainActivity.setTitle(title);
 
         // Get views and set fonts
         TextView log = findViewById(R.id.campaign_log);
@@ -580,16 +474,16 @@ public class CampaignLogActivity extends AppCompatActivity {
             if(scenario > 7){
                 switch(globalVariables.Nigel){
                     case 0:
-                        carcosaBuilder.append(R.string.not_escape_gaze);
+                        carcosaBuilder.append(getString(R.string.not_escape_gaze));
                         break;
                     case 1:
-                        carcosaBuilder.append(R.string.found_nigel_home);
+                        carcosaBuilder.append(getString(R.string.found_nigel_home));
                         break;
                     case 2:
-                        carcosaBuilder.append(R.string.found_nigel_engram);
+                        carcosaBuilder.append(getString(R.string.found_nigel_engram));
                         break;
                     case 3:
-                        carcosaBuilder.append(R.string.unable_find_nigel);
+                        carcosaBuilder.append(getString(R.string.unable_find_nigel));
                         break;
                 }
             }

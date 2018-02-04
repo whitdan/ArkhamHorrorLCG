@@ -38,10 +38,13 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
         setContentView(R.layout.c_activity_scenario_introduction);
         globalVariables = (GlobalVariables) this.getApplication();
 
-        // Set typefaces
+        // Set title
         TextView title = findViewById(R.id.current_scenario_name);
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         title.setTypeface(teutonic);
+        ScenarioMainActivity.setTitle(title);
+
+        // Set typefaces
         TextView introduction = findViewById(R.id.introduction_text);
         TextView introductionA = findViewById(R.id.introduction_text_one);
         TextView introductionB = findViewById(R.id.introduction_text_two);
@@ -75,11 +78,9 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
             case 1:
                 switch (globalVariables.CurrentScenario) {
                     case 1:
-                        title.setText(R.string.night_scenario_one);
                         introduction.setText(R.string.gathering_introduction);
                         break;
                     case 2:
-                        title.setText(R.string.night_scenario_two);
                         if (globalVariables.LitaChantler == 2) {
                             introduction.setText(R.string.midnight_introduction_one);
                         } else {
@@ -87,7 +88,6 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         }
                         break;
                     case 3:
-                        title.setText(R.string.night_scenario_three);
                         introduction.setText(R.string.devourer_introduction);
                         break;
                 }
@@ -95,15 +95,12 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
             case 2:
                 switch (globalVariables.CurrentScenario) {
                     case 1:
-                        title.setText(R.string.dunwich_scenario_one);
                         introduction.setText(R.string.extracurricular_introduction);
                         break;
                     case 2:
-                        title.setText(R.string.dunwich_scenario_two);
                         introduction.setText(R.string.house_introduction);
                         break;
                     case 4:
-                        title.setText(R.string.dunwich_scenario_three);
                         if (globalVariables.HenryArmitage == 0) {
                             introduction.setText(R.string.miskatonic_introduction_one);
                         } else {
@@ -111,15 +108,12 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         }
                         break;
                     case 5:
-                        title.setText(R.string.dunwich_scenario_four);
                         introduction.setText(R.string.essex_introduction);
                         break;
                     case 6:
-                        title.setText(R.string.dunwich_scenario_five);
                         introduction.setText(R.string.blood_introduction);
                         break;
                     case 8:
-                        title.setText(R.string.dunwich_scenario_six);
                         introduction.setText(R.string.undimensioned_introduction);
                         introductionOptions.setVisibility(VISIBLE);
                         introductionOptionOne.setText(R.string.undimensioned_introduction_option_one);
@@ -143,7 +137,6 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         });
                         break;
                     case 9:
-                        title.setText(R.string.dunwich_scenario_seven);
                         if (globalVariables.ObannionGang == 0) {
                             introduction.setText(R.string.doom_introduction_one);
                         } else {
@@ -151,11 +144,9 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         }
                         break;
                     case 10:
-                        title.setText(R.string.dunwich_scenario_eight);
                         introduction.setText(R.string.lost_introduction);
                         break;
                     case 11:
-                        title.setText(R.string.dunwich_epilogue);
                         if (globalVariables.TownsfolkAction == 1) {
                             introduction.setText(R.string.dunwich_epilogue_one);
                         } else if (globalVariables.TownsfolkAction == 2) {
@@ -167,15 +158,12 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
             case 3:
                 switch (globalVariables.CurrentScenario) {
                     case 1:
-                        title.setText(R.string.carcosa_scenario_one);
                         introduction.setText(R.string.curtain_introduction);
                         break;
                     case 2:
-                        title.setText(R.string.carcosa_scenario_two);
                         introduction.setText(R.string.king_introduction);
                         break;
                     case 4:
-                        title.setText(R.string.carcosa_scenario_three);
                         if (globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4) {
                             introduction.setText(R.string.echoes_introduction_two);
                         } else {
@@ -183,7 +171,6 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         }
                         break;
                     case 5:
-                        title.setText(R.string.carcosa_scenario_four);
                         if (globalVariables.Onyx == 4) {
                             introduction.setText(R.string.unspeakable_introduction_one);
                         } else {
@@ -195,7 +182,6 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         }
                         break;
                     case 7:
-                        title.setText(R.string.carcosa_scenario_five);
                         if (globalVariables.Asylum == 1) {
                             introduction.setText(R.string.dream_one_one);
                         } else {
@@ -274,11 +260,9 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
         if (globalVariables.CurrentScenario > 100) {
             switch (globalVariables.CurrentScenario) {
                 case 101:
-                    title.setText(R.string.rougarou_scenario);
                     introduction.setText(R.string.rougarou_introduction);
                     break;
                 case 102:
-                    title.setText(R.string.carnevale_scenario);
                     introduction.setText(R.string.carnevale_introduction);
                     break;
             }

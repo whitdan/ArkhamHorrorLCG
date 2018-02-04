@@ -86,9 +86,18 @@
             android:name=".A_Menus.SettingsMenuActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".D_Misc.EditStatsActivity">
+        <activity android:name=".D_Misc.EditStatsActivity"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".D_Misc.EditLogActivity">
+        <activity android:name=".D_Misc.EditLogActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".D_Misc.LoadChaosBagActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".D_Misc.CustomChaosBagActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan">
         </activity>
     </application>
 

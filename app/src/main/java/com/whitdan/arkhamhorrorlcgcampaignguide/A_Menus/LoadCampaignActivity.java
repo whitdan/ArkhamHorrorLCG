@@ -252,6 +252,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
             String[] campaignProjection = {
                     ArkhamContract.CampaignEntry._ID,
                     CampaignEntry.COLUMN_CAMPAIGN_VERSION,
+                    CampaignEntry.COLUMN_CHAOS_BAG,
                     CampaignEntry.COLUMN_CURRENT_CAMPAIGN,
                     CampaignEntry.COLUMN_CURRENT_SCENARIO,
                     CampaignEntry.COLUMN_DIFFICULTY,
@@ -294,6 +295,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
             while (campaignCursor.moveToNext()) {
                 globalVariables.CampaignID = campaignCursor.getLong(campaignCursor
                         .getColumnIndexOrThrow(CampaignEntry._ID));
+                globalVariables.ChaosBagID = campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow(CampaignEntry
+                        .COLUMN_CHAOS_BAG));
                 globalVariables.CampaignVersion = campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_CAMPAIGN_VERSION));
                 globalVariables.CurrentCampaign=(campaignCursor.getInt(campaignCursor
@@ -672,7 +675,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
         }
     }
 
-    // OPens a dialog to delete a campaign when it is long clicked
+    // Opens a dialog to delete a campaign when it is long clicked
     private class CampaignsOnLongClickListener implements AdapterView.OnItemLongClickListener{
 
         @Override

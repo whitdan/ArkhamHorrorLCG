@@ -39,6 +39,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + CampaignEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + CampaignEntry.COLUMN_CAMPAIGN_VERSION + " INTEGER NOT NULL, "
                 + CampaignEntry.COLUMN_CAMPAIGN_NAME + " STRING NOT NULL, "
+                + CampaignEntry.COLUMN_CHAOS_BAG + " INTEGER NOT NULL, "
                 + CampaignEntry.COLUMN_CURRENT_CAMPAIGN + " INTEGER NOT NULL, "
                 + CampaignEntry.COLUMN_CURRENT_SCENARIO + " INTEGER NOT NULL, "
                 + CampaignEntry.COLUMN_DIFFICULTY + " INTEGER, "
@@ -148,12 +149,35 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + ArkhamContract.CarcosaEntry.COLUMN_DREAMS + " INTEGER NOT NULL, "
                 + ArkhamContract.CarcosaEntry.COLUMN_NIGEL + " INTEGER);";
 
+        // Chaos bag table
+        String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ArkhamContract.ChaosBagEntry.TABLE_NAME + " ("
+                + ArkhamContract.ChaosBagEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_CHAOS_BAG_NAME + " STRING NOT NULL, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_CAMPAIGN_TOKENS + " INTEGER NOT NULL, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_ONE + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_TWO + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_THREE + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_FOUR + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_FIVE + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_SIX + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_SEVEN + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_EIGHT + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_NINE + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_TEN + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_ELEVEN + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_TWELVE + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_THIRTEEN + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_FOURTEEN + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_FIFTEEN + " INTEGER, "
+                + ArkhamContract.ChaosBagEntry.COLUMN_SIXTEEN + " INTEGER);";
+
         // Execute the SQL statements
         db.execSQL(SQL_CREATE_CAMPAIGNS_TABLE);
         db.execSQL(SQL_CREATE_INVESTIGATORS_TABLE);
         db.execSQL(SQL_CREATE_NIGHT_TABLE);
         db.execSQL(SQL_CREATE_DUNWICH_TABLE);
         db.execSQL(SQL_CREATE_CARCOSA_TABLE);
+        db.execSQL(SQL_CREATE_CHAOS_BAG_TABLE);
     }
 
     @Override
@@ -368,6 +392,31 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 String SQL_UPGRADE_EIGHTEEN = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
                         CampaignEntry.COLUMN_NORMAN_INUSE + " INTEGER";
                 db.execSQL(SQL_UPGRADE_EIGHTEEN);
+            case 21:
+                String SQL_UPGRADE_NINETEEN = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_CHAOS_BAG + " INTEGER";
+                String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ArkhamContract.ChaosBagEntry.TABLE_NAME + " ("
+                        + ArkhamContract.ChaosBagEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_CHAOS_BAG_NAME + " STRING NOT NULL, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_CAMPAIGN_TOKENS + " INTEGER NOT NULL, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_ONE + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_TWO + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_THREE + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_FOUR + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_FIVE + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_SIX + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_SEVEN + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_EIGHT + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_NINE + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_TEN + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_ELEVEN + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_TWELVE + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_THIRTEEN + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_FOURTEEN + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_FIFTEEN + " INTEGER, "
+                        + ArkhamContract.ChaosBagEntry.COLUMN_SIXTEEN + " INTEGER);";
+                db.execSQL(SQL_UPGRADE_NINETEEN);
+                db.execSQL(SQL_CREATE_CHAOS_BAG_TABLE);
         }
     }
 }

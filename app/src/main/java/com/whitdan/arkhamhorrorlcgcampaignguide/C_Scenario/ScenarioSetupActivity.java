@@ -47,6 +47,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
 
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
+        ScenarioMainActivity.setTitle(title);
         TextView subTitle = findViewById(R.id.scenario_setup);
         subTitle.setTypeface(teutonic);
         TextView setsHeading = findViewById(R.id.sets_heading);
@@ -83,7 +84,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
             case 1:
                 switch (globalVariables.CurrentScenario) {
                     case 1:
-                        title.setText(R.string.night_scenario_one);
                         sets.setText(R.string.gathering_sets);
                         setsImage.setImageResource(R.drawable.gathering_sets);
                         locations.setText(R.string.gathering_locations);
@@ -91,7 +91,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(R.string.no_additional);
                         break;
                     case 2:
-                        title.setText(R.string.night_scenario_two);
                         sets.setText(R.string.midnight_sets);
                         setsImage.setImageResource(R.drawable.midnight_sets);
                         setAside.setText(R.string.midnight_set_aside);
@@ -133,7 +132,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(midnightAdditional.trim());
                         break;
                     case 3:
-                        title.setText(R.string.night_scenario_three);
                         sets.setText(R.string.devourer_sets);
                         setsImage.setImageResource(R.drawable.devourer_sets);
                         setsTwo.setText(R.string.devourer_sets_two);
@@ -182,7 +180,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
             case 2:
                 switch (globalVariables.CurrentScenario) {
                     case 1:
-                        title.setText(R.string.dunwich_scenario_one);
                         sets.setText(R.string.extracurricular_sets);
                         setsImage.setImageResource(R.drawable.extracurricular_sets);
                         // Larger image so set layoutparams
@@ -206,7 +203,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(R.string.no_additional);
                         break;
                     case 2:
-                        title.setText(R.string.dunwich_scenario_two);
                         sets.setText(R.string.house_sets);
                         setsImage.setImageResource(R.drawable.house_sets);
                         setAside.setText(R.string.house_set_aside);
@@ -217,11 +213,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         locations.setText(R.string.house_locations);
                         additional.setText(R.string.house_additional);
                         break;
-                    case 3:
-                        title.setText(R.string.dunwich_interlude_one);
-                        break;
                     case 4:
-                        title.setText(R.string.dunwich_scenario_three);
                         sets.setText(R.string.miskatonic_sets);
                         setsImage.setImageResource(R.drawable.miskatonic_sets);
                         setAside.setText(R.string.miskatonic_set_aside);
@@ -229,7 +221,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(R.string.miskatonic_additional);
                         break;
                     case 5:
-                        title.setText(R.string.dunwich_scenario_four);
                         sets.setText(R.string.essex_sets);
                         setsImage.setImageResource(R.drawable.essex_sets);
                         setAside.setText(R.string.essex_set_aside);
@@ -237,7 +228,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(R.string.essex_additional);
                         break;
                     case 6:
-                        title.setText(R.string.dunwich_scenario_five);
                         sets.setText(R.string.blood_sets);
                         setsImage.setImageResource(R.drawable.blood_sets);
                         if (globalVariables.ObannionGang == 0) {
@@ -274,11 +264,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         String bloodAdditional = bloodAdditionalBuilder.toString();
                         additional.setText(bloodAdditional.trim());
                         break;
-                    case 7:
-                        title.setText(R.string.dunwich_interlude_two);
-                        break;
                     case 8:
-                        title.setText(R.string.dunwich_scenario_six);
                         sets.setText(R.string.undimensioned_sets);
                         setsImage.setImageResource(R.drawable.undimensioned_sets);
                         setAside.setText(R.string.undimensioned_set_aside);
@@ -336,7 +322,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(undimensionedAdditional.trim());
                         break;
                     case 9:
-                        title.setText(R.string.dunwich_scenario_seven);
                         if (globalVariables.SilasBishop == 1) {
                             sets.setText(R.string.doom_sets_two);
                             setsImage.setImageResource(R.drawable.doom_sets_two);
@@ -384,22 +369,17 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(doomAdditional.trim());
                         break;
                     case 10:
-                        title.setText(R.string.dunwich_scenario_eight);
                         sets.setText(R.string.lost_sets);
                         setsImage.setImageResource(R.drawable.lost_sets);
                         setAside.setText(R.string.lost_set_aside);
                         locations.setText(R.string.lost_locations);
                         additional.setText(R.string.no_additional);
                         break;
-                    case 11:
-                        title.setText(R.string.dunwich_epilogue);
-                        break;
                 }
                 break;
             case 3:
                 switch (globalVariables.CurrentScenario) {
                     case 1:
-                        title.setText(R.string.carcosa_scenario_one);
                         sets.setText(R.string.curtain_sets);
                         setsImage.setImageResource(R.drawable.curtain_sets);
                         boolean lola = false;
@@ -419,7 +399,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(R.string.no_additional);
                         break;
                     case 2:
-                        title.setText(R.string.carcosa_scenario_two);
                         sets.setText(R.string.king_sets);
                         setsImage.setImageResource(R.drawable.king_sets);
                         locations.setText(R.string.king_locations);
@@ -442,7 +421,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         }
                         break;
                     case 4:
-                        title.setText(R.string.carcosa_scenario_three);
                         sets.setText(R.string.echoes_sets);
                         setsImage.setImageResource(R.drawable.echoes_sets);
                         locations.setText(R.string.echoes_locations);
@@ -476,7 +454,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(echoesAdditionalString.trim());
                         break;
                     case 5:
-                        title.setText(R.string.carcosa_scenario_four);
                         sets.setText(R.string.unspeakable_sets);
                         setsImage.setImageResource(R.drawable.unspeakable_sets);
                         locations.setText(R.string.unspeakable_locations);
@@ -498,7 +475,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         }
                         break;
                     case 7:
-                        title.setText(R.string.carcosa_scenario_five);
                         sets.setText(R.string.phantom_sets);
                         setsImage.setImageResource(R.drawable.phantom_sets);
                         if (globalVariables.Jordan == 1 || globalVariables.Jordan == 4) {
@@ -529,7 +505,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
         if (globalVariables.CurrentScenario > 100) {
             switch (globalVariables.CurrentScenario) {
                 case 101:
-                    title.setText(R.string.rougarou_scenario);
                     sets.setText(R.string.rougarou_sets);
                     setsImage.setImageResource(R.drawable.rougarou_sets);
                     setAside.setText(R.string.rougarou_set_aside);
@@ -541,7 +516,6 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                     additional.setText(R.string.no_additional);
                     break;
                 case 102:
-                    title.setText(R.string.carnevale_scenario);
                     sets.setText(R.string.carnevale_sets);
                     setsImage.setImageResource(R.drawable.carnevale_sets);
                     setAside.setText(R.string.carnevale_set_aside);

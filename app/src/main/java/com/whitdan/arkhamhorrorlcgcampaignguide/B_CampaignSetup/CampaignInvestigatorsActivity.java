@@ -997,6 +997,7 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         ContentValues campaignValues = new ContentValues();
         campaignValues.put(CampaignEntry.COLUMN_CAMPAIGN_VERSION, 2);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CAMPAIGN_NAME, campaignName);
+        campaignValues.put(CampaignEntry.COLUMN_CHAOS_BAG, -1);
         campaignValues.put(CampaignEntry.COLUMN_CURRENT_CAMPAIGN, globalVariables.CurrentCampaign);
         campaignValues.put(CampaignEntry.COLUMN_CURRENT_SCENARIO, globalVariables.CurrentScenario);
         campaignValues.put(CampaignEntry.COLUMN_DIFFICULTY, globalVariables.CurrentDifficulty);

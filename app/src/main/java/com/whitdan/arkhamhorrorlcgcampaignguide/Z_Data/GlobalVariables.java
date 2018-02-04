@@ -14,6 +14,7 @@ public class GlobalVariables extends Application {
         Campaign variables - All of the variables associated with the campaign generally
      */
     public long CampaignID;                        // Corresponds to the SQLite database
+    public long ChaosBagID;                        // Corresponds to SQLite database for chaos bag (-1 = default)
     public int CampaignVersion;                    // 1 = Original, 2 = added total XP)
     public int CurrentCampaign;                    // 1 = Night, 2 = Dunwich, 3 = Carcosa
     public int CurrentScenario;                    // 0 = campaign setup, >100 = standalone, 1000 = between campaigns
