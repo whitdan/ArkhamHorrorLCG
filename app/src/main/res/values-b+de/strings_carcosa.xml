@@ -69,6 +69,30 @@
     <string name="unable_find_nigel">Nigel Engram konnte nicht gefunden werden.\n\n</string>
 
 
+    <!--Edit log-->
+    <string name="doubt_heading">Zweifel</string>
+    <string name="conviction_heading">Überzeugung</string>
+    <string name="chasing_stranger_heading">Jagd nach dem Fremden</string>
+    <string name="theatre_heading">Chaosbeutel</string>
+    <string name="theatre_one">2 Kultisten-Marker wurden hinzugefügt.</string>
+    <string name="theatre_two">2 Tafel-Marker wurden hinzugefügt.</string>
+    <string name="theatre_three">2 Älteres Wesen-Marker wurden hinzugefügt.</string>
+    <string name="theatre_four">1 Kultisten-, 1 Tafel- und 1 Älteres Wesen-Marker wurden hinzugefügt.</string>
+    <string name="stranger_heading">Der Fremde</string>
+    <string name="not_stranger">Der Fremde ist nicht hinter den Ermittlern her.</string>
+    <string name="police_heading">Polizei</string>
+    <string name="police_none">Die Polizei wurde nicht involviert.</string>
+    <string name="police_warned_and_suspicious">Die Ermittler haben versucht, die Polizei zu warnen, und dabei den
+        Verdacht auf sich gezogen.</string>
+    <string name="party_heading">Feier</string>
+    <string name="no_party">Die Ermittler haben die Feier verlassen.</string>
+    <string name="onyx_heading">Spange aus Onyx</string>
+    <string name="asylum_heading">Arkham Sanatorium</string>
+    <string name="daniel_heading">Daniels Warnung</string>
+    <string name="no_daniel">Daniels Warnung wurde übersehen.</string>
+    <string name="nigel_heading">Nigel Engram</string>
+
+
     <!--Chaos bag-->
     <string name="curtain_skull_one">-1 (-3 stattdessen, falls du 3 oder mehr Horror hast).</string>
     <string name="curtain_skull_two">-X, wobei X die Anzahl deiner Horrormarker ist. (Falls du keinen Horror hast, ist X

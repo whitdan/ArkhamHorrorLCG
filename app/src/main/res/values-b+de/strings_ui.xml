@@ -16,7 +16,7 @@
 
     <string name="scenario_setup">Einleitung</string>
     <string name="setup_instructions">Aufbau</string>
-    <string name="add_side_story">Nebengesch.\nbeginnen</string>
+    <string name="add_side_story">Neben-\ngeschichte beginnen</string>
     <string name="campaign_log">Kampagnenlogbuch</string>
     <string name="edit_team">Ermittler-\ngruppe ändern</string>
     <string name="scenario_resolution">Auflösung</string>
@@ -70,6 +70,19 @@
     <string name="strange_solution">Du hast die Lösung identifiziert.\n\n</string>
     <string name="archaic_glyphs_dialog">Ein Ermittler hat die Glyphen übersetzt</string>
     <string name="archaic_glyphs">Du hast die Glyphen übersetzt.\n\n</string>
+
+    <string name="default_chaos_bag">Standard</string>
+    <string name="chaos_bag_name">Name des Chaosbeutels (erforderlich)</string>
+    <string name="campaign_chaos_tokens">Automatisch Chaosmarker der Kampagne hinzufügen</string>
+    <string name="campaign_chaos_tokens_list">+ Chaosmarker der Kampagne</string>
+    <string name="select_chaos_bag">Chaosbeutel wählen</string>
+    <string name="custom_chaos_bag">Eigener Chaosbeutel</string>
+    <string name="maximum_chaos_bag">Der Chaosbeutel kann nicht mehr als 50 Marker enthalten.</string>
+    <string name="save_bag">Beutel speichern</string>
+    <string name="must_token">Du musst mindestens einen Chaosmarker wählen.</string>
+    <string name="must_bag">Du musst einen Namen für den Chaosbeutel eingeben.</string>
+    <string name="delete_bag">Chaosbeutel löschen</string>
+    <string name="confirm_delete_bag">Bist du dir sicher, dass du diesen Chaosbeutel löschen willst?</string>
 
 
     <!--Toast messages-->
@@ -167,6 +180,7 @@
         <item>William Yorick</item>
         <item>Lola Hayes</item>
         <item>Marie Lambeau</item>
+        <item>Norman Withers</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -185,6 +199,7 @@
     <string name="william_yorick">William Yorick</string>
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
+    <string name="norman_withers">Norman Withers</string>
 
     <string name="cover_up">Nicht abgeschlossenes <i>Vertuschen</i> im Spiel</string>
     <string name="hospital_debts">Nicht bezahlte <i>Krankenhausrechnungen</i> im Spiel</string>

@@ -39,6 +39,17 @@
     <string name="umordhoth_repelled">\nDie Ermittler haben Umôrdhoth zurückgetrieben.\n</string>
     <string name="umordhoth_sacrificed">\nDie Ermittler haben Lita Chantler Umôrdhoth geopfert.\n</string>
 
+    <!--Edit log-->
+    <string name="house_heading">Dein Haus</string>
+    <string name="ghoul_heading">Der Ghulpriester</string>
+    <string name="ghoul_priest_dead">Der Ghulpriester wurde getötet.</string>
+    <string name="lita_heading">Lita Chantler</string>
+    <string name="lita_not_obtained">Die Ermittler unterstützen Lita nicht.</string>
+    <string name="lita_obtained">Die Ermittler unterstützen Lita bei ihrem Ziel.</string>
+    <string name="midnight_heading">Mitternacht</string>
+    <string name="not_past_midnight">Es ist vor Mitternacht.</string>
+    <string name="conclusion">Abschluss</string>
+
 
     <!--Chaos bag-->
     <string name="gathering_skull_one">-X. X ist die Anzahl der <b><i>Ghul</i></b>-Gegner an deinem Ort.</string>

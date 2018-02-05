@@ -102,7 +102,7 @@ public class ChaosBagActivity extends AppCompatActivity {
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        MainMenuActivity.setTitle(title);
+        globalVariables.setTitle(title);
         CheckBox box = findViewById(R.id.chaos_bag_checkbox);
         box.setTypeface(arnopro);
         final RadioGroup options = findViewById(R.id.chaos_bag_options);

@@ -38,7 +38,7 @@ public class CampaignLogActivity extends AppCompatActivity {
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        MainMenuActivity.setTitle(title);
+        globalVariables.setTitle(title);
 
         // Get views and set fonts
         TextView log = findViewById(R.id.campaign_log);
