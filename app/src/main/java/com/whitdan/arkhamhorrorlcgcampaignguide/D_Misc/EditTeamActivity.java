@@ -85,7 +85,7 @@ public class EditTeamActivity extends AppCompatActivity {
         // Set title
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        MainMenuActivity.setTitle(title);
+        globalVariables.setTitle(title);
 
         // Setup checkboxes for saved investigators
         LinearLayout savedInvestigators = findViewById(R.id.saved_investigators_layout);

@@ -46,7 +46,7 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
         TextView title = findViewById(R.id.current_scenario_name);
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         title.setTypeface(teutonic);
-        MainMenuActivity.setTitle(title);
+        globalVariables.setTitle(title);
 
         // Set typefaces
         final TextView introduction = findViewById(R.id.introduction_text);

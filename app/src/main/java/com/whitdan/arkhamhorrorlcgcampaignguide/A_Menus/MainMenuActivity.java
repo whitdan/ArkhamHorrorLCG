@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
@@ -117,114 +116,6 @@ public class MainMenuActivity extends AppCompatActivity {
             con.startActivity(refresh);
             Activity activity = (Activity) con;
             activity.finish();
-        }
-    }
-
-    public static void setTitle(TextView title){
-        switch (globalVariables.CurrentCampaign) {
-            case 1:
-                switch (globalVariables.CurrentScenario) {
-                    case 1:
-                        title.setText(R.string.night_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.night_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.night_scenario_three);
-                        break;
-                }
-                break;
-            case 2:
-                switch (globalVariables.CurrentScenario) {
-                    case 1:
-                        title.setText(R.string.dunwich_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.dunwich_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.dunwich_interlude_one);
-                        break;
-                    case 4:
-                        title.setText(R.string.dunwich_scenario_three);
-                        break;
-                    case 5:
-                        title.setText(R.string.dunwich_scenario_four);
-                        break;
-                    case 6:
-                        title.setText(R.string.dunwich_scenario_five);
-                        break;
-                    case 7:
-                        title.setText(R.string.dunwich_interlude_two);
-                        break;
-                    case 8:
-                        title.setText(R.string.dunwich_scenario_six);
-                        break;
-                    case 9:
-                        title.setText(R.string.dunwich_scenario_seven);
-                        break;
-                    case 10:
-                        title.setText(R.string.dunwich_scenario_eight);
-                        break;
-                    case 11:
-                        title.setText(R.string.dunwich_epilogue);
-                        break;
-                }
-                break;
-            case 3:
-                switch (globalVariables.CurrentScenario) {
-                    case 0:
-                        title.setText(R.string.carcosa_lola_prologue);
-                        break;
-                    case 1:
-                        title.setText(R.string.carcosa_scenario_one);
-                        break;
-                    case 2:
-                        title.setText(R.string.carcosa_scenario_two);
-                        break;
-                    case 3:
-                        title.setText(R.string.carcosa_interlude_one);
-                        break;
-                    case 4:
-                        title.setText(R.string.carcosa_scenario_three);
-                        break;
-                    case 5:
-                        title.setText(R.string.carcosa_scenario_four);
-                        break;
-                    case 6:
-                        title.setText(R.string.carcosa_interlude_two);
-                        break;
-                    case 7:
-                        title.setText(R.string.carcosa_scenario_five);
-                        break;
-                    case 8:
-                        title.setText(R.string.carcosa_scenario_six);
-                        break;
-                    case 9:
-                        title.setText(R.string.carcosa_scenario_seven);
-                        break;
-                    case 10:
-                        title.setText(R.string.carcosa_scenario_eight);
-                        break;
-                    case 11:
-                        title.setText(R.string.carcosa_epilogue);
-                        break;
-                    case 12:
-                        title.setText(R.string.campaign_completed);
-                        break;
-                }
-                break;
-        }
-        if (globalVariables.CurrentScenario > 100) {
-            switch (globalVariables.CurrentScenario) {
-                case 101:
-                    title.setText(R.string.rougarou_scenario);
-                    break;
-                case 102:
-                    title.setText(R.string.carnevale_scenario);
-                    break;
-            }
         }
     }
 }

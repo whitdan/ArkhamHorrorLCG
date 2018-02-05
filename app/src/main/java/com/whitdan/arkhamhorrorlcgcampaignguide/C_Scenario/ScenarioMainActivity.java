@@ -69,7 +69,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        MainMenuActivity.setTitle(title);
+        globalVariables.setTitle(title);
 
         // Setup investigator views
         LinearLayout investigatorList = findViewById(R.id.investigators_list);
