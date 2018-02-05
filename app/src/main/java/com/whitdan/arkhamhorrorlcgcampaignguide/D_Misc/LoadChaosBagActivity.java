@@ -379,6 +379,11 @@ public class LoadChaosBagActivity extends AppCompatActivity {
                     Cursor bagCursor = db.rawQuery("SELECT  * FROM " + ArkhamContract.ChaosBagEntry.TABLE_NAME, null);
                     chaosBagListAdapter.swapCursor(bagCursor);
                     dismiss();
+                    if(position == globalVariables.ChaosBagID){
+                        globalVariables.ChaosBagID = -1;
+                        getActivity().finish();
+                        startActivity(getActivity().getIntent());
+                    }
                 }
             });
 

@@ -49,7 +49,7 @@ public class EditLogActivity extends AppCompatActivity {
         campaign.setTypeface(teutonic);
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        ScenarioMainActivity.setTitle(title);
+        MainMenuActivity.setTitle(title);
         switch (globalVariables.CurrentCampaign) {
             case 1:
                 campaign.setText(R.string.night_campaign);

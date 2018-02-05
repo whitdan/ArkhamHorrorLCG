@@ -60,7 +60,7 @@ public class EditStatsActivity extends AppCompatActivity {
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        ScenarioMainActivity.setTitle(title);
+        MainMenuActivity.setTitle(title);
 
         // Setup titles
         TextView currentTeam = findViewById(R.id.current_team);

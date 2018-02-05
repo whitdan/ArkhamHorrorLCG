@@ -49,8 +49,9 @@ public class StandaloneActivity extends AppCompatActivity {
     private class StandaloneClickListener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
-            // Set the campaign number
+            // Set the campaign number and chaos bag to default
             globalVariables.CurrentCampaign = 999;
+            globalVariables.ChaosBagID = -1;
 
             // Set the scenario number
             switch(view.getId()){

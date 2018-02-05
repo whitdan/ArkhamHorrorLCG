@@ -85,7 +85,7 @@
     <string name="default_chaos_bag">Default</string>
     <string name="chaos_bag_name">Chaos bag name (required)</string>
     <string name="campaign_chaos_tokens">Automatically add campaign chaos tokens</string>
-    <string name="campaign_chaos_tokens_list">+ campaign chaos tokens</string>
+    <string name="campaign_chaos_tokens_list">+ Campaign chaos tokens</string>
     <string name="select_chaos_bag">Select Chaos Bag</string>
     <string name="custom_chaos_bag">Custom Chaos Bag</string>
     <string name="maximum_chaos_bag">Maximum size of the chaos bag is 50 tokens.</string>

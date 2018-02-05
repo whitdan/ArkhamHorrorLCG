@@ -22,7 +22,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 21;
+    private static final int DATABASE_VERSION = 22;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -394,7 +394,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_EIGHTEEN);
             case 21:
                 String SQL_UPGRADE_NINETEEN = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
-                        CampaignEntry.COLUMN_CHAOS_BAG + " INTEGER";
+                        CampaignEntry.COLUMN_CHAOS_BAG + " INTEGER NOT NULL DEFAULT -1";
                 String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ArkhamContract.ChaosBagEntry.TABLE_NAME + " ("
                         + ArkhamContract.ChaosBagEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                         + ArkhamContract.ChaosBagEntry.COLUMN_CHAOS_BAG_NAME + " STRING NOT NULL, "

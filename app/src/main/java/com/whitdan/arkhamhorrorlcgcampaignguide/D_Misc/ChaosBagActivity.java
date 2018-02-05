@@ -24,7 +24,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
-import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioMainActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioResolutionActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
@@ -103,7 +102,7 @@ public class ChaosBagActivity extends AppCompatActivity {
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        ScenarioMainActivity.setTitle(title);
+        MainMenuActivity.setTitle(title);
         CheckBox box = findViewById(R.id.chaos_bag_checkbox);
         box.setTypeface(arnopro);
         final RadioGroup options = findViewById(R.id.chaos_bag_options);

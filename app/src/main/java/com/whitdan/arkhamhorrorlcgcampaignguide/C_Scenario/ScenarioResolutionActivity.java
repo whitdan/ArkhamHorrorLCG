@@ -119,7 +119,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         });
 
         // Set title
-        ScenarioMainActivity.setTitle(title);
+        MainMenuActivity.setTitle(title);
 
         // Set fonts to the defeated layout
         TextView investigatorOneName = findViewById(R.id.investigator_one_name);

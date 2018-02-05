@@ -163,14 +163,14 @@
         the game.\n
         \nPut the Northside, Easttown, Rivertown, St. Mary\'s Hospital, Graveyard, Miskatonic
         University, and Your House locations into play.\n
-    \Each investigator begins play at Your House.\n</string>
+    \nEach investigator begins play at Your House.\n</string>
     <string name="midnight_locations_no_house">Choose one of the two Downtown locations and one of the two Southside
         locations at random and put them into play. Remove the other versions of Downtown and Southside from
         the game.\n
         \nPut the Northside, Easttown, Rivertown, St. Mary\'s Hospital, Graveyard, and Miskatonic
         University locations into play.\n
         \nRemove Your House from the game.\n
-    \Each investigator begins play at Rivertown.\n</string>
+    \nEach investigator begins play at Rivertown.\n</string>
     <string name="midnight_set_aside">Cult of Umordhoth encounter set as a separate \"Cultist
         Deck\".\n</string>
     <string name="midnight_additional_two">Search the gathered encounter sets for 1 copy of Acolyte and spawn

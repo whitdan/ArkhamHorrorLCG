@@ -47,7 +47,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
 
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
-        ScenarioMainActivity.setTitle(title);
+        MainMenuActivity.setTitle(title);
         TextView subTitle = findViewById(R.id.scenario_setup);
         subTitle.setTypeface(teutonic);
         TextView setsHeading = findViewById(R.id.sets_heading);
