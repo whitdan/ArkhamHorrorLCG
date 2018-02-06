@@ -52,6 +52,7 @@ public class StandaloneActivity extends AppCompatActivity {
             // Set the campaign number and chaos bag to default
             globalVariables.CurrentCampaign = 999;
             globalVariables.ChaosBagID = -1;
+            globalVariables.CurrentDifficulty = 1;
 
             // Set the scenario number
             switch(view.getId()){

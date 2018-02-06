@@ -1,6 +1,7 @@
 package com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc;
 
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,6 +10,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,6 +72,28 @@ public class ChaosBagActivity extends AppCompatActivity {
         token = -1;
         basebagResult = basebag(this);
         setupBag(this);
+
+        // If bag is empty for any reason, reset to default, save and restart the activity
+        int count = 0;
+        for (int i : basebagResult) {
+            count += i;
+        }
+        if(count == 0){
+            globalVariables.ChaosBagID = -1;
+            ArkhamDbHelper dbHelper = new ArkhamDbHelper(this);
+            final SQLiteDatabase db = dbHelper.getWritableDatabase();
+            ContentValues campaignValues = new ContentValues();
+            campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CHAOS_BAG, -1);
+            String campaignSelection = ArkhamContract.CampaignEntry._ID + " LIKE ?";
+            String[] campaignSelectionArgs = {Long.toString(globalVariables.CampaignID)};
+            db.update(
+                    ArkhamContract.CampaignEntry.TABLE_NAME,
+                    campaignValues,
+                    campaignSelection,
+                    campaignSelectionArgs);
+            finish();
+            startActivity(getIntent());
+        }
 
         // If custom bag, check if adding campaign tokens
         campaignTokens = 1;
@@ -568,6 +592,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                         }
                         break;
                 }
+                Log.i("Difficulty: ", Integer.toString(globalVariables.CurrentDifficulty));
             }
         } else {
             // Get access to a writable SQLite database
@@ -998,5 +1023,12 @@ public class ChaosBagActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        finish();
+        startActivity(getIntent());
     }
 }

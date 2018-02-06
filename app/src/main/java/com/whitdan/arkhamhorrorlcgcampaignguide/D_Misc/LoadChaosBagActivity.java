@@ -381,6 +381,17 @@ public class LoadChaosBagActivity extends AppCompatActivity {
                     dismiss();
                     if(position == globalVariables.ChaosBagID){
                         globalVariables.ChaosBagID = -1;
+                        ArkhamDbHelper dbHelper = new ArkhamDbHelper(getActivity());
+                        SQLiteDatabase db = dbHelper.getWritableDatabase();
+                        ContentValues campaignValues = new ContentValues();
+                        campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CHAOS_BAG, -1);
+                        String campaignSelection = ArkhamContract.CampaignEntry._ID + " LIKE ?";
+                        String[] campaignSelectionArgs = {Long.toString(globalVariables.CampaignID)};
+                        db.update(
+                                ArkhamContract.CampaignEntry.TABLE_NAME,
+                                campaignValues,
+                                campaignSelection,
+                                campaignSelectionArgs);
                         getActivity().finish();
                         startActivity(getActivity().getIntent());
                     }
