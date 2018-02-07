@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
@@ -945,7 +946,7 @@ public class EditLogActivity extends AppCompatActivity {
                 View strangerCounter = View.inflate(this, R.layout.d_item_counter, null);
                 final TextView strangerAmount = strangerCounter.findViewById(R.id.amount);
                 strangerAmount.setId(R.id.chasing_stranger);
-                strangerAmount.setText(String.valueOf(globalVariables.Stranger));
+                strangerAmount.setText(String.valueOf(globalVariables.ChasingStranger));
                 strangerAmount.setTypeface(arnopro);
                 ImageView strangerDecrement = strangerCounter.findViewById(R.id.decrement);
                 strangerDecrement.setOnClickListener(new View.OnClickListener() {
