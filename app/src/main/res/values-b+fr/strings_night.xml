@@ -39,6 +39,17 @@
     <string name="umordhoth_sacrificed">\nles investigateurs ont sacrifié Lita Chantler à Umôrdhoth. Chaque
 		investigateur doit chercher dans la collection une faiblesse de base <i>Folie</i> prise au hasard
 		et l’ajouter à son deck.\n</string>
+		
+	 <!--Edit log-->
+    <string name="house_heading">Votre Maison</string>
+    <string name="ghoul_heading">Prêtre Goule</string>
+    <string name="ghoul_priest_dead">Le Prêtre Goule a été tué.</string>
+    <string name="lita_heading">Lita Chantler</string>
+    <string name="lita_not_obtained">Vous n\'avez pas rejoint Lita pour soutenir sa cause.</string>
+    <string name="lita_obtained">Vous avez rejoint Lita pour soutenir sa cause.</string>
+    <string name="midnight_heading">Minuit</string>
+    <string name="not_past_midnight">Il n\'est pas minuit passé.</string>
+    <string name="conclusion">Conclusion d la Campagne</string>
 
 
 	 <!--Chaos bag-->
