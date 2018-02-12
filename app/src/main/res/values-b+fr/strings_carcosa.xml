@@ -432,12 +432,12 @@
 		mais l\'appel de la vérité est trop fort. Il semble que vous ne soyez pas les premiers à enquêter
 		sur les étranges événements qui entourent <i>Le Roi en Jaune</i>. Un autre groupe d\'investigateurs
 		avait également effectué des recherches à ce sujet. Quelques jours à peine après la représentation
-		à Arkham, ils furent été internés à l'asile, fulminant sans cesse sur le retour du Roi et sur les 
+		à Arkham, ils furent été internés à l\'asile, fulminant sans cesse sur le retour du Roi et sur les
 		\"monstres\" qui les avaient attaqués. Quelque part, cela ne vous surprend pas. Leur sort ne fait que
 		vous conforter dans l\'idée que vous êtes sur la bonne voie... et dans la certitude qu\'il vaudrait mieux
-		arrêter tant qu'il est encore temps.\n
+		arrêter tant qu\'il est encore temps.\n
     \nVous avez mis la main sur les dossiers que ces investigateurs avaient constitués avant leur internement,
-		et repris la piste là où ils l'avaient laissée. Ils avaient interrogé plusieurs membres de la troupe
+		et repris la piste là où ils l\'avaient laissée. Ils avaient interrogé plusieurs membres de la troupe
 		du <i>Roi en Jaune</i> et découvert des informations vitales. Leurs recherches contiennent également
 		des notes sur leur visite à la Société des Historiens d\'Arkham et des comptes rendus des événements à 
 		l\'asile, y compris leurs interactions avec un patient nommé \"Daniel Chersterfield". Après une nuit
@@ -685,7 +685,7 @@
     \nMettez en jeu les lieux restants (Montparnasse, Gare d\'Orsay, Grand Guignol, Canal Saint-Martin, 
 		Cimetière du Père Lachaise, Notre-Dame et Jardins du Luxembourg).\n
     \n Chaque investigateur commence la partie à Montparnasse.\n</string>
-    <string name="phantom_set_aside">L'Organiste, et chaque copie restante de la faiblesse Âme perdue.\n</string>
+    <string name="phantom_set_aside">L\'Organiste, et chaque copie restante de la faiblesse Âme perdue.\n</string>
     <string name="phantom_additional_one">Cherchez les 2 exemplaires de Soleils Jumeaux et les
 		3 exemplaires d\'Ombre Chasseresse dans les sets de rencontre réunis et retirez-les de la partie.\n
     \nUtilisez l\'Acte 1 — La Conspiration Parisienne (v. I).</string>

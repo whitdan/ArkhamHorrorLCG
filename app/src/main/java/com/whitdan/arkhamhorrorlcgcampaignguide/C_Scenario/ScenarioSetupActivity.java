@@ -499,6 +499,20 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                             }
                         }
                         break;
+                    case 8:
+                        sets.setText(R.string.pallid_sets);
+                        setsImage.setImageResource(R.drawable.pallid_sets);
+                        if(globalVariables.Nigel == 0 || globalVariables.Nigel == 3){
+                            locations.setText(R.string.pallid_locations_one);
+                        } else {
+                            locations.setText(R.string.pallid_locations_two);
+                        }
+                        setAside.setText(R.string.pallid_set_aside);
+                        if(globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4){
+                            additional.setText(R.string.pallid_additional);
+                        } else {
+                            additional.setText(R.string.no_additional);
+                        }
                 }
                 break;
         }

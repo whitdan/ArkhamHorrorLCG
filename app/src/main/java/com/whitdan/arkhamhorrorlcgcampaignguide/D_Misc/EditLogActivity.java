@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
@@ -1351,6 +1350,85 @@ public class EditLogActivity extends AppCompatActivity {
                 }
             }
 
+            if (scenario > 8) {
+                // Investigators who read Act II
+                View readActHeading = View.inflate(this, R.layout.d_item_heading, null);
+                TextView readActHeadingText = readActHeading.findViewById(R.id.heading);
+                readActHeadingText.setText(R.string.select_read_act);
+                readActHeadingText.setTypeface(teutonic);
+                editLayout.addView(readActHeading, lp);
+                String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+                View investigatorOneReadAct = View.inflate(this, R.layout.d_item_checkbox, null);
+                CheckBox invOneReadActBox = investigatorOneReadAct.findViewById(R.id.checkbox);
+                invOneReadActBox.setId(R.id.inv_one_read_act);
+                invOneReadActBox.setTypeface(arnopro);
+                editLayout.addView(investigatorOneReadAct, lp);
+                if (globalVariables.InvOneReadAct > 0) {
+                    invOneReadActBox.setChecked(true);
+                    if (globalVariables.InvOneReadAct == 999) {
+                        invOneReadActBox.setText(getString(R.string.inv_one_read_act).trim());
+                    } else {
+                        invOneReadActBox.setText(investigatorNames[globalVariables.InvOneReadAct] + getString(R
+                                .string.read_act)
+                                .trim());
+                    }
+                } else {
+                    invOneReadActBox.setText(getString(R.string.inv_one_read_act).trim());
+                }
+                View investigatorTwoReadAct = View.inflate(this, R.layout.d_item_checkbox, null);
+                CheckBox invTwoReadActBox = investigatorTwoReadAct.findViewById(R.id.checkbox);
+                invTwoReadActBox.setId(R.id.inv_two_read_act);
+                invTwoReadActBox.setTypeface(arnopro);
+                editLayout.addView(investigatorTwoReadAct, lp);
+                if (globalVariables.InvTwoReadAct > 0) {
+                    invTwoReadActBox.setChecked(true);
+                    if (globalVariables.InvTwoReadAct == 999) {
+                        invTwoReadActBox.setText(getString(R.string.inv_two_read_act).trim());
+                    } else {
+                        invTwoReadActBox.setText(investigatorNames[globalVariables.InvTwoReadAct] + getString(R
+                                .string.read_act)
+                                .trim());
+                    }
+                } else {
+                    invTwoReadActBox.setText(getString(R.string.inv_two_read_act).trim());
+                }
+                View investigatorThreeReadAct = View.inflate(this, R.layout.d_item_checkbox, null);
+                CheckBox invThreeReadActBox = investigatorThreeReadAct.findViewById(R.id.checkbox);
+                invThreeReadActBox.setId(R.id.inv_three_read_act);
+                invThreeReadActBox.setTypeface(arnopro);
+                editLayout.addView(investigatorThreeReadAct, lp);
+                if (globalVariables.InvThreeReadAct > 0) {
+                    invThreeReadActBox.setChecked(true);
+                    if (globalVariables.InvThreeReadAct == 999) {
+                        invThreeReadActBox.setText(getString(R.string.inv_three_read_act).trim());
+                    } else {
+                        invThreeReadActBox.setText(investigatorNames[globalVariables.InvThreeReadAct] + getString(R
+                                .string
+                                .read_act)
+                                .trim());
+                    }
+                } else {
+                    invThreeReadActBox.setText(getString(R.string.inv_three_read_act).trim());
+                }
+                View investigatorFourReadAct = View.inflate(this, R.layout.d_item_checkbox, null);
+                CheckBox invFourReadActBox = investigatorFourReadAct.findViewById(R.id.checkbox);
+                invFourReadActBox.setId(R.id.inv_four_read_act);
+                invFourReadActBox.setTypeface(arnopro);
+                editLayout.addView(investigatorFourReadAct, lp);
+                if (globalVariables.InvFourReadAct > 0) {
+                    invFourReadActBox.setChecked(true);
+                    if (globalVariables.InvFourReadAct == 999) {
+                        invFourReadActBox.setText(getString(R.string.inv_four_read_act).trim());
+                    } else {
+                        invFourReadActBox.setText(investigatorNames[globalVariables.InvFourReadAct] + getString(R
+                                .string.read_act)
+                                .trim());
+                    }
+                } else {
+                    invFourReadActBox.setText(getString(R.string.inv_four_read_act).trim());
+                }
+            }
+
         }
 
         if (globalVariables.Rougarou > 0) {
@@ -2002,57 +2080,93 @@ public class EditLogActivity extends AppCompatActivity {
                         RadioButton danielOne = findViewById(R.id.daniel_one);
                         RadioButton danielTwo = findViewById(R.id.daniel_two);
                         RadioButton danielThree = findViewById(R.id.daniel_three);
-                        if(danielOne.isChecked()){
+                        if (danielOne.isChecked()) {
                             globalVariables.DanielsWarning = 0;
-                        } else if(danielTwo.isChecked()){
+                        } else if (danielTwo.isChecked()) {
                             globalVariables.DanielsWarning = 1;
-                        } else if(danielThree.isChecked()){
+                        } else if (danielThree.isChecked()) {
                             globalVariables.DanielsWarning = 2;
                         }
                     }
 
-                    if(scenario > 7){
+                    if (scenario > 7) {
                         // Nigel
                         RadioButton nigelOne = findViewById(R.id.nigel_one);
                         RadioButton nigelTwo = findViewById(R.id.nigel_two);
                         RadioButton nigelThree = findViewById(R.id.nigel_three);
                         RadioButton nigelFour = findViewById(R.id.nigel_four);
-                        if(nigelOne.isChecked()){
+                        if (nigelOne.isChecked()) {
                             globalVariables.Nigel = 0;
-                        } else if(nigelTwo.isChecked()){
+                        } else if (nigelTwo.isChecked()) {
                             globalVariables.Nigel = 1;
-                        } else if(nigelThree.isChecked()){
+                        } else if (nigelThree.isChecked()) {
                             globalVariables.Nigel = 2;
-                        } else if(nigelFour.isChecked()){
+                        } else if (nigelFour.isChecked()) {
                             globalVariables.Nigel = 3;
+                        }
+                    }
+
+                    if (scenario > 8) {
+                        // InvReadAct
+                        CheckBox invOneReadAct = findViewById(R.id.inv_one_read_act);
+                        CheckBox invTwoReadAct = findViewById(R.id.inv_two_read_act);
+                        CheckBox invThreeReadAct = findViewById(R.id.inv_three_read_act);
+                        CheckBox invFourReadAct = findViewById(R.id.inv_four_read_act);
+                        if (invOneReadAct.isChecked()) {
+                            if (globalVariables.InvOneReadAct == 0) {
+                                globalVariables.InvOneReadAct = 999;
+                            }
+                        } else {
+                            globalVariables.InvOneReadAct = 0;
+                        }
+                        if (invTwoReadAct.isChecked()) {
+                            if (globalVariables.InvTwoReadAct == 0) {
+                                globalVariables.InvTwoReadAct = 999;
+                            }
+                        } else {
+                            globalVariables.InvTwoReadAct = 0;
+                        }
+                        if (invThreeReadAct.isChecked()) {
+                            if (globalVariables.InvThreeReadAct == 0) {
+                                globalVariables.InvThreeReadAct = 999;
+                            }
+                        } else {
+                            globalVariables.InvThreeReadAct = 0;
+                        }
+                        if (invFourReadAct.isChecked()) {
+                            if (globalVariables.InvFourReadAct == 0) {
+                                globalVariables.InvFourReadAct = 999;
+                            }
+                        } else {
+                            globalVariables.InvFourReadAct = 0;
                         }
                     }
                 }
 
-                if(globalVariables.Rougarou > 0){
+                if (globalVariables.Rougarou > 0) {
                     // Rougarou
                     RadioButton rougarouOne = findViewById(R.id.rougarou_one);
                     RadioButton rougarouTwo = findViewById(R.id.rougarou_two);
                     RadioButton rougarouThree = findViewById(R.id.rougarou_three);
-                    if(rougarouOne.isChecked()){
+                    if (rougarouOne.isChecked()) {
                         globalVariables.Rougarou = 1;
-                    } else if(rougarouTwo.isChecked()){
+                    } else if (rougarouTwo.isChecked()) {
                         globalVariables.Rougarou = 2;
-                    } else if(rougarouThree.isChecked()){
+                    } else if (rougarouThree.isChecked()) {
                         globalVariables.Rougarou = 3;
                     }
                 }
 
-                if(globalVariables.Carnevale > 0){
+                if (globalVariables.Carnevale > 0) {
                     // Carnevale
                     RadioButton carnevaleOne = findViewById(R.id.carnevale_one);
                     RadioButton carnevaleTwo = findViewById(R.id.carnevale_two);
                     RadioButton carnevaleThree = findViewById(R.id.carnevale_three);
-                    if(carnevaleOne.isChecked()){
+                    if (carnevaleOne.isChecked()) {
                         globalVariables.Carnevale = 1;
-                    } else if(carnevaleTwo.isChecked()){
+                    } else if (carnevaleTwo.isChecked()) {
                         globalVariables.Carnevale = 2;
-                    } else if (carnevaleThree.isChecked()){
+                    } else if (carnevaleThree.isChecked()) {
                         globalVariables.Carnevale = 3;
                     }
 
@@ -2060,11 +2174,11 @@ public class EditLogActivity extends AppCompatActivity {
                     RadioButton carnevaleRewardOne = findViewById(R.id.carnevale_reward_one);
                     RadioButton carnevaleRewardTwo = findViewById(R.id.carnevale_reward_two);
                     RadioButton carnevaleRewardThree = findViewById(R.id.carnevale_reward_three);
-                    if(carnevaleRewardOne.isChecked()){
+                    if (carnevaleRewardOne.isChecked()) {
                         globalVariables.CarnevaleReward = 0;
-                    } else if(carnevaleRewardTwo.isChecked()){
+                    } else if (carnevaleRewardTwo.isChecked()) {
                         globalVariables.CarnevaleReward = 1;
-                    } else if(carnevaleRewardThree.isChecked()){
+                    } else if (carnevaleRewardThree.isChecked()) {
                         globalVariables.CarnevaleReward = 2;
                     }
                 }
