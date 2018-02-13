@@ -253,6 +253,21 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                             introductionTwo.setVisibility(VISIBLE);
                             introductionTwo.setText(R.string.dream_jordan);
                         }
+                        break;
+                    case 8:
+                        if(globalVariables.Nigel == 0 || globalVariables.Nigel == 3){
+                            if(globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4){
+                                introduction.setText(R.string.pallid_introduction_one_two);
+                            } else {
+                                introduction.setText(R.string.pallid_introduction_one_one);
+                            }
+                        } else {
+                            if(globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4){
+                                introduction.setText(R.string.pallid_introduction_two_two);
+                            } else {
+                                introduction.setText(R.string.pallid_introduction_two_one);
+                            }
+                        }
                 }
                 break;
         }

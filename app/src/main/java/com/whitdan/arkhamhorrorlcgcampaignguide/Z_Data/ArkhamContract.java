@@ -134,6 +134,10 @@ public class ArkhamContract {
         public static final String COLUMN_DANIELS_WARNING = "daniels_warning";
         public static final String COLUMN_DREAMS = "dreams_action";
         public static final String COLUMN_NIGEL = "nigel";
+        public static final String COLUMN_INV_ONE_READ_ACT = "inv_one_read_act";
+        public static final String COLUMN_INV_TWO_READ_ACT = "inv_two_read_act";
+        public static final String COLUMN_INV_THREE_READ_ACT = "inv_three_read_act";
+        public static final String COLUMN_INV_FOUR_READ_ACT = "inv_four_read_act";
     }
 
     public static class ChaosBagEntry implements BaseColumns{

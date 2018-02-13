@@ -100,6 +100,10 @@ public class GlobalVariables extends Application {
     public int DanielsWarning;
     public int DreamsAction;    // 0 = not set
     public int Nigel;
+    public int InvOneReadAct;
+    public int InvTwoReadAct;
+    public int InvThreeReadAct;
+    public int InvFourReadAct;
 
     // VIPS - 0 = not interviewed or killed, 1 = interviewed, 2 = killed, 3 = interviewed (crossed out), 4 =
     // interviewed and killed, 5 = interviewed (crossed out) and killed

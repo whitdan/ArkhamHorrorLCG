@@ -252,10 +252,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         resolutionFour.setVisibility(VISIBLE);
                         break;
                     case 5:
-                        resolutionThree.setVisibility(VISIBLE);
-                        break;
                     case 7:
                         resolutionThree.setVisibility(VISIBLE);
+                        break;
                 }
                 break;
         }
@@ -853,6 +852,13 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             additionalCheckbox.setVisibility(VISIBLE);
                             additionalCheckbox.setText(R.string.jordan_victory);
                         }
+                        break;
+                    case 8:
+                        if(globalVariables.Ishimaru == 0 || globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 3){
+                            additionalCheckbox.setVisibility(VISIBLE);
+                            additionalCheckbox.setText(R.string.ishimaru_victory);
+                        }
+                        break;
                 }
                 break;
         }
@@ -1006,6 +1012,21 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
+                    case 3:
+                        switch (globalVariables.CurrentScenario){
+                            case 8:
+                                // Make sure someone read Act II
+                                if (!selectInvestigatorOne.isChecked() && !selectInvestigatorTwo.isChecked()
+                                        && !selectInvestigatorThree.isChecked() && !selectInvestigatorFour
+                                        .isChecked() && globalVariables.ScenarioResolution == 0) {
+                                    dialog = false;
+                                    Toast toast = Toast.makeText(ScenarioResolutionActivity.this, R.string
+                                            .must_read_act, Toast
+                                            .LENGTH_SHORT);
+                                    toast.show();
+                                }
+                                break;
+                        }
                 }
                 // Open dialog if requirements are met
                 if (dialog) {
@@ -1755,6 +1776,52 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 case 3:
                                     resolutionTextView.setText(R.string.phantom_resolution_three);
                                     break;
+                            }
+                            break;
+                        case 8:
+                            switch(globalVariables.ScenarioResolution){
+                                case 0:
+                                    resolutionTextView.setText(R.string.pallid_no_resolution);
+                                    break;
+                                case 1:
+                                    resolutionTextView.setText(R.string.pallid_resolution_one);
+                                    break;
+                                case 2:
+                                    resolutionTextView.setText(R.string.pallid_resolution_two);
+                                    break;
+                            }
+                            // Set up checkboxes to select who read Act II
+                            if (globalVariables.ScenarioResolution == 0) {
+                                selectInvestigatorHeading.setVisibility(VISIBLE);
+                                selectInvestigatorHeading.setText(R.string.select_read_act);
+                                selectInvestigator.setVisibility(VISIBLE);
+                                String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+                                switch (globalVariables.Investigators.size()) {
+                                    case 4:
+                                        selectInvestigatorFour.setVisibility(VISIBLE);
+                                        selectInvestigatorFour.setText(investigatorNames[globalVariables
+                                                .Investigators.get(3)
+                                                .Name]);
+                                    case 3:
+                                        selectInvestigatorThree.setVisibility(VISIBLE);
+                                        selectInvestigatorThree.setText(investigatorNames[globalVariables
+                                                .Investigators.get
+                                                        (2).Name]);
+                                    case 2:
+                                        selectInvestigatorTwo.setVisibility(VISIBLE);
+                                        selectInvestigatorTwo.setText(investigatorNames[globalVariables
+                                                .Investigators.get(1)
+                                                .Name]);
+                                    case 1:
+                                        selectInvestigatorOne.setVisibility(VISIBLE);
+                                        selectInvestigatorOne.setText(investigatorNames[globalVariables
+                                                .Investigators.get(0)
+                                                .Name]);
+                                        break;
+                                }
+                            } else {
+                                selectInvestigatorHeading.setVisibility(GONE);
+                                selectInvestigator.setVisibility(GONE);
                             }
                             break;
                     }
@@ -2984,6 +3051,57 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
+                    // The Pallid Mask
+                    case 8:
+                        if (additionalCheckbox.isChecked()) {
+                            if (globalVariables.Ishimaru == 0) {
+                                globalVariables.Ishimaru = 1;
+                            } else if (globalVariables.Ishimaru == 1) {
+                                globalVariables.Ishimaru = 4;
+                            } else if (globalVariables.Ishimaru == 3) {
+                                globalVariables.Ishimaru = 5;
+                            }
+                        }
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                        }
+                        switch(globalVariables.ScenarioResolution){
+                            case 0:
+                                globalVariables.Theatre = 3;
+                                if(investigatorOne.isChecked()){
+                                    globalVariables.Investigators.get(0).AvailableXP += 2;
+                                    globalVariables.InvOneReadAct = globalVariables.Investigators.get(0).Name;
+                                } else{
+                                    globalVariables.InvOneReadAct = 0;
+                                }
+                                if(investigatorTwo.isChecked()){
+                                    globalVariables.Investigators.get(1).AvailableXP += 2;
+                                    globalVariables.InvTwoReadAct = globalVariables.Investigators.get(1).Name;
+                                }else{
+                                    globalVariables.InvTwoReadAct = 0;
+                                }
+                                if(investigatorThree.isChecked()){
+                                    globalVariables.Investigators.get(2).AvailableXP += 2;
+                                    globalVariables.InvThreeReadAct = globalVariables.Investigators.get(2).Name;
+                                }else{
+                                    globalVariables.InvThreeReadAct = 0;
+                                }
+                                if(investigatorFour.isChecked()){
+                                    globalVariables.Investigators.get(3).AvailableXP += 2;
+                                    globalVariables.InvFourReadAct = globalVariables.Investigators.get(3).Name;
+                                }else{
+                                    globalVariables.InvFourReadAct = 0;
+                                }
+                                break;
+                            case 1:
+                                globalVariables.Theatre = 1;
+                                break;
+                            case 2:
+                                globalVariables.Theatre = 2;
+                                globalVariables.ChasingStranger += 2;
+                                break;
+                        }
+                        break;
                 }
                 break;
         }
@@ -3285,6 +3403,10 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING, globalVariables.DanielsWarning);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_DREAMS, globalVariables.DreamsAction);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_NIGEL, globalVariables.Nigel);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_ONE_READ_ACT, globalVariables.InvOneReadAct);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_READ_ACT, globalVariables.InvTwoReadAct);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_READ_ACT, globalVariables.InvThreeReadAct);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT, globalVariables.InvFourReadAct);
 
             String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " LIKE ?";
             String[] carcosaSelectionArgs = {Long.toString(globalVariables.CampaignID)};

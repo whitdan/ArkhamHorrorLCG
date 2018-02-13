@@ -346,91 +346,93 @@ public class CampaignLogActivity extends AppCompatActivity {
             carcosaBuilder.append(doubt);
             carcosaBuilder.append(conviction);
             // First scenario log
-            if(scenario > 1){
+            if (scenario > 1) {
                 String stranger = getString(R.string.stranger_counter) + " " + Integer.toString(globalVariables
                         .ChasingStranger) +
                         "\n\n";
                 carcosaBuilder.append(stranger);
-                if(globalVariables.Stranger == 1){
+                if (globalVariables.Stranger == 1) {
                     carcosaBuilder.append(getString(R.string.stranger));
                 }
-                if(globalVariables.Police == 1 || globalVariables.Police == 2){
+                if (globalVariables.Police == 1 || globalVariables.Police == 2) {
                     carcosaBuilder.append(getString(R.string.warned_police));
-                } else if (globalVariables.Police == 3){
+                } else if (globalVariables.Police == 3) {
                     carcosaBuilder.append(getString(R.string.not_police));
                 }
-                if(globalVariables.Police == 2){
+                if (globalVariables.Police == 2) {
                     carcosaBuilder.append(getString(R.string.police_suspicious));
                 }
             }
             // Second scenario log
-            if(scenario > 2){
+            if (scenario > 2) {
                 carcosaBuilder.append(getString(R.string.vips_interviewed_log));
                 int vipsInterviewed = 0;
-                if(globalVariables.Constance == 1 || globalVariables.Constance == 4){
+                if (globalVariables.Constance == 1 || globalVariables.Constance == 4) {
                     carcosaBuilder.append(getString(R.string.constance_log));
                     vipsInterviewed++;
                 }
-                if(globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4){
+                if (globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4) {
                     carcosaBuilder.append(getString(R.string.ishimaru_log));
                     vipsInterviewed++;
                 }
-                if(globalVariables.Jordan == 1 || globalVariables.Jordan == 4){
+                if (globalVariables.Jordan == 1 || globalVariables.Jordan == 4) {
                     carcosaBuilder.append(getString(R.string.jordan_log));
                     vipsInterviewed++;
                 }
-                if(globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4){
+                if (globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4) {
                     carcosaBuilder.append(getString(R.string.sebastien_log));
                     vipsInterviewed++;
                 }
-                if(globalVariables.Ashleigh == 1 || globalVariables.Ashleigh == 4){
+                if (globalVariables.Ashleigh == 1 || globalVariables.Ashleigh == 4) {
                     carcosaBuilder.append(getString(R.string.ashleigh_log));
                     vipsInterviewed++;
                 }
-                if(vipsInterviewed == 0){
+                if (vipsInterviewed == 0) {
                     carcosaBuilder.append(getString(R.string.no_vips));
                 }
                 carcosaBuilder.append("\n");
                 carcosaBuilder.append(getString(R.string.vips_slain_log));
                 int vipsSlain = 0;
-                if(globalVariables.Constance == 2 || globalVariables.Constance == 4 || globalVariables.Constance == 5){
+                if (globalVariables.Constance == 2 || globalVariables.Constance == 4 || globalVariables.Constance ==
+                        5) {
                     carcosaBuilder.append(getString(R.string.constance_log));
                     vipsSlain++;
                 }
-                if(globalVariables.Ishimaru == 2 || globalVariables.Ishimaru == 4 || globalVariables.Ishimaru == 5){
+                if (globalVariables.Ishimaru == 2 || globalVariables.Ishimaru == 4 || globalVariables.Ishimaru == 5) {
                     carcosaBuilder.append(getString(R.string.ishimaru_log));
                     vipsSlain++;
                 }
-                if(globalVariables.Jordan == 2 || globalVariables.Jordan == 4 || globalVariables.Jordan == 5){
+                if (globalVariables.Jordan == 2 || globalVariables.Jordan == 4 || globalVariables.Jordan == 5) {
                     carcosaBuilder.append(getString(R.string.jordan_log));
                     vipsSlain++;
                 }
-                if(globalVariables.Sebastien == 2 || globalVariables.Sebastien == 4 || globalVariables.Sebastien == 5){
+                if (globalVariables.Sebastien == 2 || globalVariables.Sebastien == 4 || globalVariables.Sebastien ==
+                        5) {
                     carcosaBuilder.append(getString(R.string.sebastien_log));
                     vipsSlain++;
                 }
-                if(globalVariables.Ashleigh == 2 || globalVariables.Ashleigh == 4 || globalVariables.Ashleigh == 5){
+                if (globalVariables.Ashleigh == 2 || globalVariables.Ashleigh == 4 || globalVariables.Ashleigh == 5) {
                     carcosaBuilder.append(getString(R.string.ashleigh_log));
                     vipsSlain++;
                 }
-                if(vipsSlain == 0){
+                if (vipsSlain == 0) {
                     carcosaBuilder.append(getString(R.string.no_vips));
                 }
                 carcosaBuilder.append("\n");
             }
             // Interlude log
-            if(scenario > 3){
-                if(globalVariables.Party == 1){
+            if (scenario > 3) {
+                if (globalVariables.Party == 1) {
                     carcosaBuilder.append(getString(R.string.intruded));
-                } else if (globalVariables.Party == 2){
+                } else if (globalVariables.Party == 2) {
                     carcosaBuilder.append(getString(R.string.fled));
-                } else if (globalVariables.Party == 3){
+                } else if (globalVariables.Party == 3) {
                     carcosaBuilder.append(getString(R.string.slayed));
                 }
             }
             // Echoes of the Past
-            if(scenario > 4){
-                switch(globalVariables.Onyx){
+            if (scenario > 4) {
+                switch (globalVariables.Onyx) {
                     case 1:
                         carcosaBuilder.append(getString(R.string.onyx_taken));
                         break;
@@ -446,8 +448,8 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Unspeakable Oath
-            if(scenario > 5){
-                switch(globalVariables.Asylum){
+            if (scenario > 5) {
+                switch (globalVariables.Asylum) {
                     case 1:
                         carcosaBuilder.append(getString(R.string.king_victims));
                         break;
@@ -459,8 +461,8 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Interlude 2
-            if(scenario > 6){
-                switch(globalVariables.DanielsWarning){
+            if (scenario > 6) {
+                switch (globalVariables.DanielsWarning) {
                     case 1:
                         carcosaBuilder.append(getString(R.string.warning_ignored));
                         break;
@@ -470,8 +472,8 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Phantom of Truth
-            if(scenario > 7){
-                switch(globalVariables.Nigel){
+            if (scenario > 7) {
+                switch (globalVariables.Nigel) {
                     case 0:
                         carcosaBuilder.append(getString(R.string.not_escape_gaze));
                         break;
@@ -484,6 +486,48 @@ public class CampaignLogActivity extends AppCompatActivity {
                     case 3:
                         carcosaBuilder.append(getString(R.string.unable_find_nigel));
                         break;
+                }
+            }
+            // Pallid Mask
+            if (scenario > 8) {
+                if (globalVariables.Nigel == 0 || globalVariables.Nigel == 3) {
+                    carcosaBuilder.append(getString(R.string.awoke_catacombs));
+                } else {
+                    carcosaBuilder.append(getString(R.string.entered_catacombs));
+                }
+                carcosaBuilder.append(getString(R.string.know_site));
+                String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+                if (globalVariables.InvOneReadAct > 0) {
+                    if (globalVariables.InvOneReadAct == 999) {
+                        carcosaBuilder.append(getString(R.string.inv_one_read_act));
+                    } else {
+                        carcosaBuilder.append(investigatorNames[globalVariables.InvOneReadAct] + " ");
+                        carcosaBuilder.append(getString(R.string.read_act));
+                    }
+                }
+                if (globalVariables.InvTwoReadAct > 0) {
+                    if (globalVariables.InvTwoReadAct == 999) {
+                        carcosaBuilder.append(getString(R.string.inv_two_read_act));
+                    } else {
+                        carcosaBuilder.append(investigatorNames[globalVariables.InvTwoReadAct] + " ");
+                        carcosaBuilder.append(getString(R.string.read_act));
+                    }
+                }
+                if (globalVariables.InvThreeReadAct > 0) {
+                    if (globalVariables.InvThreeReadAct == 999) {
+                        carcosaBuilder.append(getString(R.string.inv_three_read_act));
+                    } else {
+                        carcosaBuilder.append(investigatorNames[globalVariables.InvThreeReadAct] + " ");
+                        carcosaBuilder.append(getString(R.string.read_act));
+                    }
+                }
+                if (globalVariables.InvFourReadAct > 0) {
+                    if (globalVariables.InvFourReadAct == 999) {
+                        carcosaBuilder.append(getString(R.string.inv_four_read_act));
+                    } else {
+                        carcosaBuilder.append(investigatorNames[globalVariables.InvFourReadAct] + " ");
+                        carcosaBuilder.append(getString(R.string.read_act));
+                    }
                 }
             }
 

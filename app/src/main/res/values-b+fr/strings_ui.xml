@@ -23,6 +23,8 @@
     <string name="edit_team">Modifier l\'Équipe</string>
     <string name="scenario_resolution">Conclusion de Scénario</string>
     <string name="main_menu">Menu\nPrincipal</string>
+	<string name="edit_stats">Modifier Stats Investigateur</string>
+    <string name="edit_log">Modifier Carnet de Campagne</string>
 
     <string name="decklist">Deck</string>
     <string name="killed">Tué</string>
@@ -72,7 +74,19 @@
     <string name="strange_solution">Vous avez identifié la solution.\n\n</string>
     <string name="archaic_glyphs_dialog">Vous avez traduit les glyphes</string>
     <string name="archaic_glyphs">Vous avez traduit les glyphes.\n\n</string>
-
+	
+	<string name="default_chaos_bag">Par défaut</string>
+    <string name="chaos_bag_name">Nom de la réserve du Chaos (obligatoire)</string>
+    <string name="campaign_chaos_tokens">Ajouter automatiquement les pions Chaos de la campagne</string>
+    <string name="campaign_chaos_tokens_list">+ Pions Chaos de la campagne</string>
+    <string name="select_chaos_bag">Choisir la Réserve du Chaos</string>
+    <string name="custom_chaos_bag">Réserve du Chaos personnalisée</string>
+    <string name="maximum_chaos_bag">La taille maximale de la réserve du Chaos est de 50 pions.</string>
+    <string name="save_bag">Sauvegarder la réserve</string>
+    <string name="must_token">Vous devez choisir au moins un pion Chaos.</string>
+    <string name="must_bag">Vous devez entrer un nom pour la réserve du Chaos.</string>
+    <string name="delete_bag">Supprimer la réserve du Chaos</string>
+    <string name="confirm_delete_bag">Voulez-vous vraiment supprimer cette réserve du Chaos ?</string>
 
     <!--Toast messages-->
     <string name="must_option">Vous devez choisir une option.</string>
@@ -121,6 +135,7 @@
     <string name="standard">Standard</string>
     <string name="hard">Diffic.</string>
     <string name="expert">Expert</string>
+	  <string name="scenario_card">Carte Scénario</string>
     <string name="current_setup">Mise en Place Actuelle</string>
     <string name="draw_token">Piocher le jeton</string>
     <string name="add_token">Ajouter</string>
@@ -154,6 +169,7 @@
         <item>William Yorick</item>
         <item>Lola Hayes</item>
         <item>Marie Lambeau</item>
+        <item>Norman Withers</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -172,6 +188,7 @@
     <string name="william_yorick">William Yorick</string>
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
+    <string name="norman_withers">Norman Withers</string>
 
     <string name="cover_up">Effacer les Traces non résolu en jeu</string>
     <string name="hospital_debts">Frais d\'Hôpitaux non résolu en jeu</string>

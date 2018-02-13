@@ -1,6 +1,7 @@
 package com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc;
 
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,6 +10,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,8 +70,6 @@ public class ChaosBagActivity extends AppCompatActivity {
         setContentView(R.layout.d_activity_chaos_bag);
         globalVariables = (GlobalVariables) this.getApplication();
         token = -1;
-        basebagResult = basebag(this);
-        setupBag(this);
 
         // If custom bag, check if adding campaign tokens
         campaignTokens = 1;
@@ -95,6 +95,32 @@ public class ChaosBagActivity extends AppCompatActivity {
                 campaignTokens = cursor.getInt(cursor.getColumnIndexOrThrow(ChaosBagEntry.COLUMN_CAMPAIGN_TOKENS));
             }
             cursor.close();
+        }
+
+        // Setup bag
+        basebagResult = basebag(this);
+        setupBag(this);
+
+        // If bag is empty for any reason, reset to default, save and restart the activity
+        int count = 0;
+        for (int i : basebagResult) {
+            count += i;
+        }
+        if(count == 0){
+            globalVariables.ChaosBagID = -1;
+            ArkhamDbHelper dbHelper = new ArkhamDbHelper(this);
+            final SQLiteDatabase db = dbHelper.getWritableDatabase();
+            ContentValues campaignValues = new ContentValues();
+            campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CHAOS_BAG, -1);
+            String campaignSelection = ArkhamContract.CampaignEntry._ID + " LIKE ?";
+            String[] campaignSelectionArgs = {Long.toString(globalVariables.CampaignID)};
+            db.update(
+                    ArkhamContract.CampaignEntry.TABLE_NAME,
+                    campaignValues,
+                    campaignSelection,
+                    campaignSelectionArgs);
+            finish();
+            startActivity(getIntent());
         }
 
         // Set title and setup checkbox if necessary
@@ -568,6 +594,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                         }
                         break;
                 }
+                Log.i("Difficulty: ", Integer.toString(globalVariables.CurrentDifficulty));
             }
         } else {
             // Get access to a writable SQLite database
@@ -729,7 +756,7 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     private void setupScenarioCard(Activity activity) {
         LinearLayout scenarioLayout = activity.findViewById(R.id.scenario_card_layout);
-        if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario > 7) {
+        if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 9) {
             scenarioLayout.setVisibility(GONE);
         }
         LinearLayout skullLayout = activity.findViewById(R.id.skull_layout);
@@ -964,6 +991,19 @@ public class ChaosBagActivity extends AppCompatActivity {
                             thing.setText(R.string.phantom_thing_two);
                         }
                         break;
+                    case 8:
+                        if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
+                            skull.setText(R.string.pallid_skull_one);
+                            cultist.setText(R.string.pallid_cultist_one);
+                            tablet.setText(R.string.pallid_tablet_one);
+                            thing.setText(R.string.pallid_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3) {
+                            skull.setText(R.string.pallid_skull_two);
+                            cultist.setText(R.string.pallid_cultist_two);
+                            tablet.setText(R.string.pallid_tablet_two);
+                            thing.setText(R.string.pallid_thing_two);
+                        }
+                        break;
                 }
                 break;
         }
@@ -998,5 +1038,12 @@ public class ChaosBagActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        finish();
+        startActivity(getIntent());
     }
 }

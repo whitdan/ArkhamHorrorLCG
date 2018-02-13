@@ -90,6 +90,26 @@
     <string name="closed_tear">Les investigateurs ont fermé la faille dans la réalité.\n\n</string>
     <string name="yog_fled">Yog-Sothoth a fui vers une autre dimension.\n\n</string>
 	
+	<!--Edit log-->
+    <string name="unconscious_heading">Investigateurs inconscients</string>
+    <string name="not_unconscious">Les investigateurs ne sont pas inconscients.</string>
+    <string name="students_heading">Destin des Étudiants</string>
+    <string name="obannion_heading">Gang O\'Bannion</string>
+    <string name="cheated_heading">Triche des Investigateurs</string>
+    <string name="cheated">Un investigateur a \"triché\".</string>
+    <string name="not_cheated">Aucun investigateur n\'a \"triché\".</string>
+    <string name="necronomicon_heading">Necronomicon</string>
+    <string name="lynch_heading">Adam Lynch ou Harold Walsted</string>
+    <string name="not_lynch">Adam Lynch et Harold Walsted n\'ont pas quitté le jeu.</string>
+    <string name="delayed_heading">Investigateurs retardés</string>
+    <string name="not_delayed">Les investigateurs n\'ont pas été retardés.</string>
+    <string name="silas_heading">Silas Bishop</string>
+    <string name="ally_heading">Alliés sacrifiés</string>
+    <string name="ally_not_sacrificed">Aucun allié n\'a été sacrifié à Yog-Sothoth.</string>
+    <string name="townsfolk_heading">Villageois de Dunwich</string>
+    <string name="brood_heading">Rejetons évanouis dans la nature</string>
+    <string name="gate_heading">Barrière entre les Mondes</string>
+	
 	
 	<!--Chaos bag-->
     <string name="extracurricular_skull_one">-1. En cas d\'échec, défaussez les 3 cartes du dessus de votre deck.</string>
@@ -763,6 +783,8 @@
 		Épuisé et terrifié, vous vous repliez vers la maison de Zebulon en espérant survivre à la nuit…</string>
     <string name="undimensioned_resolution_two">Après avoir vaincu ce qui semble être le dernier des monstres en furie,
 		vous vous repliez vers la maison de Zebulon, épuisé et ébranlé par les expériences de cette nuit.</string>
+	<string
+        name="undimensioned_resolution_powder"><b>Retirez la Poudre d\'Ibn-Ghazi du deck qui la contient.</b></string>
 
     <string name="doom_no_resolution">En cherchant à obtenir des pouvoirs occultes venus d\'au-delà du monde,
 		les sorciers de Dunwich ont réussi là où Wilbur et le Vieux Whateley ont échoué. Par des sacrifices de sang

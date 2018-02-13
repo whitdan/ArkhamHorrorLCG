@@ -19,6 +19,7 @@
         ajoutée au deck de chaque investigateur.\n\n</string>
     <string name="carnevale_retreated">Cnidathqua s\'est retiré pour soigner ses blessures. Carte <i>Masque</i>
         ajoutée au deck de chaque investigateur.\n\n</string>
+	<string name="no_reward">Aucune carte supplémentaire ajoutée.</string>
     <string name="carnevale_sacrifice_made">Faiblesse de base aléatoire <i>Folie</i>, <i>Blessure</i>, ou <i>Monstre</i> ajoutée
 		au deck de chaque investigateur.\n\n</string>
     <string name="carnevale_abbess_satisfied">Abbesse Allegria Di Biase ajoutée au deck d\'un investigateur.\n\n</string>

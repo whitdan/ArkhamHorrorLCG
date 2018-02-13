@@ -260,6 +260,7 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
             case 3:
                 ContentValues carcosaValues = new ContentValues();
                 carcosaValues.put(ArkhamContract.CarcosaEntry.PARENT_ID, newCampaignId);
+                carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_DREAMS, 0);
                 db.insert(ArkhamContract.CarcosaEntry.TABLE_NAME, null, carcosaValues);
                 break;
         }
