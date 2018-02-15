@@ -91,6 +91,27 @@
     <string name="yog_fled">Yog-Sothoth ist in eine andere Dimension geflohen.\n\n</string>
 
 
+    <!--Edit log-->
+    <string name="unconscious_heading">Bewusstlose Ermittler</string>
+    <string name="not_unconscious">Die Ermittler waren nicht bewusstlos.</string>
+    <string name="students_heading">Das Schicksal der Studenten</string>
+    <string name="obannion_heading">Die O\'Bannion-Gang</string>
+    <string name="cheated_heading">Falsch spielende Ermittler</string>
+    <string name="cheated">Ein Ermittler hat „falsch gespielt“.</string>
+    <string name="not_cheated">Die Ermittler haben nicht „falsch gespielt“.</string>
+    <string name="necronomicon_heading">Das Necronomicon</string>
+    <string name="lynch_heading">Adam Lynch und Harold Walsted</string>
+    <string name="not_lynch">Adam Lynch und Harold Walsted haben das Spiel nicht verlassen.</string>
+    <string name="delayed_heading">Aufgehaltene Ermittler</string>
+    <string name="not_delayed">Die Ermittler wurden nicht aufgehalten.</string>
+    <string name="silas_heading">Silas Bishop</string>
+    <string name="ally_heading">Geopferte Verbündete</string>
+    <string name="ally_not_sacrificed">Kein Verbündeter wurde Yog-Sothoth geopfert.</string>
+    <string name="townsfolk_heading">Die Einwohner von Dunwich</string>
+    <string name="brood_heading">Entkommene Bruten</string>
+    <string name="gate_heading">Das Tor zwischen den Welten</string>
+
+
     <!--Chaos bag-->
     <string name="extracurricular_skull_one">-1. Falls die Probe misslingt, lege die obersten 3 Karten deines Decks
         ab.</string>
