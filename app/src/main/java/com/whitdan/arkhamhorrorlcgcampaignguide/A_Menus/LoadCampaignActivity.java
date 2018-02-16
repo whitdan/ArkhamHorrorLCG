@@ -123,108 +123,16 @@ public class LoadCampaignActivity extends AppCompatActivity {
 
             // Populate fields with extracted properties
             campaignNameView.setText(campaignName);
+            globalVariables.setTitle(currentScenarioName);
             switch (currentCampaign) {
                 case 1:
                     currentCampaignName.setText(R.string.night_campaign);
-                    switch (currentScenario) {
-                        case 1:
-                            currentScenarioName.setText(R.string.night_scenario_one);
-                            break;
-                        case 2:
-                            currentScenarioName.setText(R.string.night_scenario_two);
-                            break;
-                        case 3:
-                            currentScenarioName.setText(R.string.night_scenario_three);
-                            break;
-                        case 4:
-                            currentScenarioName.setText(R.string.campaign_completed);
-                            break;
-                    }
                     break;
                 case 2:
                     currentCampaignName.setText(R.string.dunwich_campaign);
-                    switch (currentScenario) {
-                        case 1:
-                            currentScenarioName.setText(R.string.dunwich_scenario_one);
-                            break;
-                        case 2:
-                            currentScenarioName.setText(R.string.dunwich_scenario_two);
-                            break;
-                        case 3:
-                            currentScenarioName.setText(R.string.dunwich_interlude_one);
-                            break;
-                        case 4:
-                            currentScenarioName.setText(R.string.dunwich_scenario_three);
-                            break;
-                        case 5:
-                            currentScenarioName.setText(R.string.dunwich_scenario_four);
-                            break;
-                        case 6:
-                            currentScenarioName.setText(R.string.dunwich_scenario_five);
-                            break;
-                        case 7:
-                            currentScenarioName.setText(R.string.dunwich_interlude_two);
-                            break;
-                        case 8:
-                            currentScenarioName.setText(R.string.dunwich_scenario_six);
-                            break;
-                        case 9:
-                            currentScenarioName.setText(R.string.dunwich_scenario_seven);
-                            break;
-                        case 10:
-                            currentScenarioName.setText(R.string.dunwich_scenario_eight);
-                            break;
-                        case 11:
-                            currentScenarioName.setText(R.string.dunwich_epilogue);
-                            break;
-                        case 12:
-                            currentScenarioName.setText(R.string.campaign_completed);
-                            break;
-                    }
                     break;
                 case 3:
                     currentCampaignName.setText(R.string.carcosa_campaign);
-                    switch (currentScenario) {
-                        case 0:
-                            currentScenarioName.setText(R.string.carcosa_interlude_zero);
-                            break;
-                        case 1:
-                            currentScenarioName.setText(R.string.carcosa_scenario_one);
-                            break;
-                        case 2:
-                            currentScenarioName.setText(R.string.carcosa_scenario_two);
-                            break;
-                        case 3:
-                            currentScenarioName.setText(R.string.carcosa_interlude_one);
-                            break;
-                        case 4:
-                            currentScenarioName.setText(R.string.carcosa_scenario_three);
-                            break;
-                        case 5:
-                            currentScenarioName.setText(R.string.carcosa_scenario_four);
-                            break;
-                        case 6:
-                            currentScenarioName.setText(R.string.carcosa_interlude_two);
-                            break;
-                        case 7:
-                            currentScenarioName.setText(R.string.carcosa_scenario_five);
-                            break;
-                        case 8:
-                            currentScenarioName.setText(R.string.carcosa_scenario_six);
-                            break;
-                        case 9:
-                            currentScenarioName.setText(R.string.carcosa_scenario_seven);
-                            break;
-                        case 10:
-                            currentScenarioName.setText(R.string.carcosa_scenario_eight);
-                            break;
-                        case 11:
-                            currentScenarioName.setText(R.string.carcosa_epilogue);
-                            break;
-                        case 12:
-                            currentScenarioName.setText(R.string.campaign_completed);
-                            break;
-                    }
                     break;
             }
         }
