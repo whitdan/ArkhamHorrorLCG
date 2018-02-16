@@ -12,11 +12,13 @@
     <string name="campaign_completed">Kampagne abgeschlossen</string>
     <string name="delete_campaign">Kampagne löschen</string>
     <string name="confirm_delete_campaign">Bist du sicher, dass du diese Kampagne löschen willst?</string>
-
+    <string name="corrupt_campaign">Fehlerhafte Kampagne</string>
+    <string name="confirm_corrupt_campaign">Diese Kampagnendaten wurden durch einen Programmfehler beschädigt. Lege
+            bitte eine neue Kampagne an. Möchtest du wirklich fortfahren?</string>
 
     <string name="scenario_setup">Einleitung</string>
     <string name="setup_instructions">Aufbau</string>
-    <string name="add_side_story">Nebengesch.\nbeginnen</string>
+    <string name="add_side_story">Neben-\ngeschichte beginnen</string>
     <string name="campaign_log">Kampagnenlogbuch</string>
     <string name="edit_team">Ermittler-\ngruppe ändern</string>
     <string name="scenario_resolution">Auflösung</string>
@@ -65,11 +67,24 @@
     <string name="finish_delete_campaign">Kampagne beenden und löschen</string>
     <string name="finish_save_campaign">Kampagne beenden und speichern</string>
 
-    <string name="player_cards">Spielerkarten</string>
+    <string name="player_cards">Spieler-\nkarten</string>
     <string name="strange_solution_dialog">Ein Ermittler hat die Lösung identifiziert</string>
     <string name="strange_solution">Du hast die Lösung identifiziert.\n\n</string>
     <string name="archaic_glyphs_dialog">Ein Ermittler hat die Glyphen übersetzt</string>
     <string name="archaic_glyphs">Du hast die Glyphen übersetzt.\n\n</string>
+
+    <string name="default_chaos_bag">Standard</string>
+    <string name="chaos_bag_name">Name des Chaosbeutels (erforderlich)</string>
+    <string name="campaign_chaos_tokens">Automatisch Chaosmarker der Kampagne hinzufügen</string>
+    <string name="campaign_chaos_tokens_list">+ Chaosmarker der Kampagne</string>
+    <string name="select_chaos_bag">Chaosbeutel wählen</string>
+    <string name="custom_chaos_bag">Eigener Chaosbeutel</string>
+    <string name="maximum_chaos_bag">Der Chaosbeutel kann nicht mehr als 50 Marker enthalten.</string>
+    <string name="save_bag">Beutel speichern</string>
+    <string name="must_token">Du musst mindestens einen Chaosmarker wählen.</string>
+    <string name="must_bag">Du musst einen Namen für den Chaosbeutel eingeben.</string>
+    <string name="delete_bag">Chaosbeutel löschen</string>
+    <string name="confirm_delete_bag">Bist du sicher, dass du diesen Chaosbeutel löschen willst?</string>
 
 
     <!--Toast messages-->
@@ -112,7 +127,7 @@
     <string name="finish_scenario">Szenario beenden</string>
     <string name="select_lead_investigator">Ermittlungsleiter wählen</string>
     <string name="confirm_finish_scenario">Szenario beenden und Kampagne speichern?</string>
-    <string name="investigator_weaknesses">Schwächen d. Ermittler</string>
+    <string name="investigator_weaknesses">Schwächen\nder Ermittler</string>
 
 
     <!--Difficulties-->
@@ -186,6 +201,7 @@
     <string name="william_yorick">William Yorick</string>
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
+    <string name="norman_withers">Norman Withers</string>
 
     <string name="cover_up">Nicht abgeschlossenes <i>Vertuschen</i> im Spiel</string>
     <string name="hospital_debts">Nicht bezahlte <i>Krankenhausrechnungen</i> im Spiel</string>

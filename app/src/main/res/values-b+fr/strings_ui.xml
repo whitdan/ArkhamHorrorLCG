@@ -14,7 +14,9 @@
     <string name="campaign_completed">Campagne Terminée</string>
     <string name="delete_campaign">Supprimer Campagne</string>
     <string name="confirm_delete_campaign">Êtes-vous sûr de vouloir supprimer cette campagne ?</string>
-
+	<string name="corrupt_campaign">Campagne Corrompue</string>
+    <string name="confirm_corrupt_campaign">Cette campagne est devenue corrompue suite à un bug. Merci 
+		de créer une nouvelle campagne. Êtes-vous sûr de vouloir continuer ?</string>
 
     <string name="scenario_setup">Mise en Place du Scénario</string>
     <string name="setup_instructions">Continuer la Mise en Place</string>

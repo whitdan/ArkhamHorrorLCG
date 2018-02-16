@@ -34,6 +34,9 @@
     <string name="sebastien_victory">Sebastien Moreau befindet sich im Siegpunktestapel</string>
     <string name="constance_victory">Constance Dumaine befindet sich im Siegpunktestapel</string>
     <string name="jordan_victory">Jordan Perry befindet sich im Siegpunktestapel</string>
+    <string name="ishimaru_victory">Ishimaru Haruko befindet sich im Siegpunktestapel</string>
+    <string name="must_read_act">Mindestens ein Ermittler muss Akt II lesen.</string>
+    <string name="select_read_act">Ermittler, die Akt II lesen:</string>
 
 
     <!--Campaign Log-->
@@ -67,6 +70,38 @@
     <string name="found_nigel_home">Nigels Haus wurde gefunden.\n\n</string>
     <string name="found_nigel_engram">Nigel Engram wurde gefunden.\n\n</string>
     <string name="unable_find_nigel">Nigel Engram konnte nicht gefunden werden.\n\n</string>
+    <string name="awoke_catacombs">Die Ermittler sind in den Katakomben aufgewacht.\n\n</string>
+    <string name="entered_catacombs">Die Ermittler haben die Katakomben alleine betreten.\n\n</string>
+    <string name="know_site">Die Ermittler wissen, wo das Tor zu finden ist.\n\n</string>
+    <string name="read_act"> hat Akt II gelesen.\n\n</string>
+    <string name="inv_one_read_act">Ermittler 1 hat Akt II gelesen.\n\n</string>
+    <string name="inv_two_read_act">Ermittler 2 hat Akt II gelesen.\n\n</string>
+    <string name="inv_three_read_act">Ermittler 3 hat Akt II gelesen.\n\n</string>
+    <string name="inv_four_read_act">Ermittler 4 hat Akt II gelesen.\n\n</string>
+
+
+    <!--Edit log-->
+    <string name="doubt_heading">Zweifel</string>
+    <string name="conviction_heading">Überzeugung</string>
+    <string name="chasing_stranger_heading">Jagd nach dem Fremden</string>
+    <string name="theatre_heading">Chaosbeutel</string>
+    <string name="theatre_one">2 Kultisten-Marker wurden hinzugefügt.</string>
+    <string name="theatre_two">2 Tafel-Marker wurden hinzugefügt.</string>
+    <string name="theatre_three">2 Älteres Wesen-Marker wurden hinzugefügt.</string>
+    <string name="theatre_four">1 Kultisten-, 1 Tafel- und 1 Älteres Wesen-Marker wurden hinzugefügt.</string>
+    <string name="stranger_heading">Der Fremde</string>
+    <string name="not_stranger">Der Fremde ist nicht hinter den Ermittlern her.</string>
+    <string name="police_heading">Polizei</string>
+    <string name="police_none">Die Polizei wurde nicht involviert.</string>
+    <string name="police_warned_and_suspicious">Die Ermittler haben versucht, die Polizei zu warnen, und dabei den
+        Verdacht auf sich gezogen.</string>
+    <string name="party_heading">Feier</string>
+    <string name="no_party">Die Ermittler haben die Feier verlassen.</string>
+    <string name="onyx_heading">Spange aus Onyx</string>
+    <string name="asylum_heading">Arkham Sanatorium</string>
+    <string name="daniel_heading">Daniels Warnung</string>
+    <string name="no_daniel">Daniels Warnung wurde übersehen.</string>
+    <string name="nigel_heading">Nigel Engram</string>
 
 
     <!--Chaos bag-->
@@ -137,6 +172,22 @@
         ist, 1 Ressource.</string>
     <string name="phantom_thing_two">–3. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen
         ist, 1 Ressource.</string>
+
+    <string name="pallid_skull_one">–X. X ist die Anzahl der Orte, die du vom Startort entfernt bist (max. 5).</string>
+    <string name="pallid_skull_two">–X. X ist die Anzahl der Orte, die du vom Startort entfernt bist.</string>
+    <string name="pallid_cultist_one">–2. Falls dieser Marker während eines Angriffs aufgedeckt wird und die Probe
+        gelingt, fügt der Angriff 1 Schaden weniger zu.</string>
+    <string name="pallid_cultist_two">–3. Falls dieser Marker während eines Angriffs aufgedeckt wird und die Probe
+        gelingt, fügt der Angriff keinen Schaden zu.</string>
+    <string name="pallid_tablet_one">–2. Falls sich ein spielbereiter <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner
+        an deinem Ort befindet, greift er dich an <i>(falls es mehr als einen gibt, wähle einen von ihnen)</i>.</string>
+    <string name="pallid_tablet_two">–3. Falls sich ein <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner an deinem Ort
+        befindet, wird er spielbereit gemacht und greift dich an <i>(falls es mehr als einen gibt, wähle einen von
+        ihnen)</i>.</string>
+    <string name="pallid_thing_one">–2. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den Ablagestapel
+        nach einem <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner und ziehe ihn.</string>
+    <string name="pallid_thing_two">–4. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den Ablagestapel
+        nach einem <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner und ziehe ihn.</string>
 
 
     <!-- Campaign introduction-->
@@ -522,12 +573,49 @@
         Dir bleibt nur eine Möglichkeit, wenn du deine Ermittlungen fortsetzen willst. Du musst Nigel Engram, Regisseur
         von Der König in Gelb und Erschaffer dieses Wahnsinns finden. Nur er wird die Antworten auf deine Fragen haben.
         Du packst deine Taschen und planst eine Reise nach Paris, in die Stadt der Lichter.</string>
-    <string name="dream_jordan">\n<b>Jordans informationen</b>\nVon Mr. Jordan Perry, der für einige Aufführungen von
+    <string name="dream_jordan">\n<b>Jordans Informationen</b>\nVon Mr. Jordan Perry, der für einige Aufführungen von
         <i>Der König in Gelb</i> überall auf der Welt als Geldgeber fungiert hat, hast du erfahren, dass Nigel Engram
         ein exzentrischer Mann ist, dessen Leidenschaft beinahe an Manie grenzt. Man sagt, dass er, seit er <i>Der König
         in Gelb</i> entdeckt hat, nichts anderes mehr inszeniert hat. Jordan hat Mr. Engram zum ersten Mal in einem Café
         in Montparnasse getroffen, dem „L\'agneau Perdu“. Dorthin wird dich deine Reise zuerst führen, weil du hoffst
         Mr. Engram dort zu finden…</string>
+
+    <string name="pallid_introduction_one_one">Du fährst aus dem Schlaf hoch, die Luft ist schmutzig und abgestanden und
+        du hast Staub in deiner Kehle. Du liegst auf einer kalten Steinplatte in einem lichtlosen unterirdischen Gang.
+        Wie bist du hierher gekommen? Und wo genau bist du eigentlich? Du erschauderst und deine Nackenhaare sträuben
+        sich. Dann stehst du auf und beginnst mit einer Untersuchung der Umgebung. Die Wände und die Decke sind mit
+        Knochen verziert. Schädel mit aufgerissenen Mündern starren dich an, egal wohin du schaust.</string>
+    <string name="pallid_introduction_one_two">Du fährst aus dem Schlaf hoch, die Luft ist schmutzig und abgestanden und
+        du hast Staub in deiner Kehle. Du liegst auf einer kalten Steinplatte in einem lichtlosen unterirdischen Gang.
+        Wie bist du hierher gekommen? Und wo genau bist du eigentlich? Du erschauderst und deine Nackenhaare sträuben
+        sich. Dann stehst du auf und beginnst mit einer Untersuchung der Umgebung. Die Wände und die Decke sind mit
+        Knochen verziert. Schädel mit aufgerissenen Mündern starren dich an, egal wohin du schaust.\n
+    \nDirekt hinter dem steinernen Torbogen, der dir am nächsten ist, siehst du ein vertrautes Symbol, das in den
+        Schädel eines Schafes eingeritzt wurde: Linien konzentrischer Halbkreise, gesäumt von exotischen Runen. Zwei
+        Wellenlinien führen von der Zeichnung herunter zum Unterkieferknochen des Schädels. Du erkennst das Muster
+        wieder, das Haruko dir gezeigt hat. Du fragst dich, warum du es hier findest, und untersuchst den Schädel
+        genauer. Als du die Unterseite des Kiefers berührst, öffnet sich plötzlich der Mund. Die Knochen fallen zu
+        Boden, die Wände gleiten zur Seite und geben einen neuen Weg frei.\n
+    \n<b>Merke dir, dass „die Ermittler einen Geheimgang geöffnet haben“.</b></string>
+    <string name="pallid_introduction_two_one">Der Inhalt von Nigels Haus liefert dir keine Antworten auf deine Fragen
+        zu <i>Der König in Gelb</i>. Es gibt aber Hinweise darauf, wo du als Nächstes suchen solltest. Die alte,
+        zerschlissene Karte, die du auf dem Couchtisch gefunden hast, zeigt einen Teil der berüchtigten Katakomben von
+        Paris. Ein Raum wurde auf der Karte durch einen Kreis markiert, daneben befindet sich die Anmerkung: „Der
+        Schlüssel zum Öffnen des Pfads befindet sich hier!“ Du schluckst deine Furcht hinunter und begibst dich sofort
+        auf die Suche nach dem Eingang der Katakomben unter der Rue de la Tombe-Issoire.</string>
+    <string name="pallid_introduction_two_two">Der Inhalt von Nigels Haus liefert dir keine Antworten auf deine Fragen
+        zu <i>Der König in Gelb</i>. Es gibt aber Hinweise darauf, wo du als Nächstes suchen solltest. Die alte,
+        zerschlissene Karte, die du auf dem Couchtisch gefunden hast, zeigt einen Teil der berüchtigten Katakomben von
+        Paris. Ein Raum wurde auf der Karte durch einen Kreis markiert, daneben befindet sich die Anmerkung: „Der
+        Schlüssel zum Öffnen des Pfads befindet sich hier!“ Du schluckst deine Furcht hinunter und begibst dich sofort
+        auf die Suche nach dem Eingang der Katakomben unter der Rue de la Tombe-Issoire.\n
+    \nDirekt hinter dem steinernen Torbogen, der dir am nächsten ist, siehst du ein vertrautes Symbol, das in den
+        Schädel eines Schafes eingeritzt wurde: Linien konzentrischer Halbkreise, gesäumt von exotischen Runen. Zwei
+        Wellenlinien führen von der Zeichnung herunter zum Unterkieferknochen des Schädels. Du erkennst das Muster
+        wieder, das Haruko dir gezeigt hat. Du fragst dich, warum du es hier findest, und untersuchst den Schädel
+        genauer. Als du die Unterseite des Kiefers berührst, öffnet sich plötzlich der Mund. Die Knochen fallen zu
+        Boden, die Wände gleiten zur Seite und geben einen neuen Weg frei.\n
+    \n<b>Merke dir, dass „die Ermittler einen Geheimgang geöffnet haben“.</b></string>
 
 
     <!--Scenario set-up instructions-->
@@ -681,6 +769,35 @@
         Spiel entfernen.\n
     \nVerwende Szene 1 — „Die Pariser Verschwörung (V. II)“.\n
     \nJeder Ermittler beginnt das Spiel mit 3 zusätzlichen Ressourcen.</string>
+
+    <string name="pallid_sets">Die Bleiche Maske, Ghule, Heimsuchungen und Grabeskälte.</string>
+    <string name="pallid_locations_one">Die Karten Gruft der Schatten und Versperrter Gang (beide sind enthüllte Seiten
+        von Katakombenorten) werden herausgesucht und als nicht im Spiel befindlich beiseitegelegt.\n
+    \nEin zufälliger Katakombenort wird mit der Katakomben-Seite nach oben ins Spiel gebracht (nicht die
+        beiseitegelegten Karten Gruft der Schatten oder Versperrter Gang). Für den Rest des Szenarios gilt dieser Ort
+        als „Startort“. Ein Ressourcenmarker wird auf diesen Ort platziert, um ihn als Startort zu markieren. <b>Zu
+        diesem Zeitpunkt wird noch kein Ermittler dort platziert.</b>\n
+    \nAlle anderen Orte werden als separates „Katakombendeck“ beiseitegelegt. Dazu sind folgende Schritte nötig:\n
+    \nDie beiseitegelegten Orte Gruft der Schatten, Versperrter Gang und 3 weitere zufällige Katakombenorte werden
+        (mit der Katakomben-Seite nach oben) zusammengemischt und bilden die 5 untersten Karten des Katakombendecks.\n
+    \nDann werden die übrigen Katakombenorte in zufälliger Reihenfolge daraufgelegt. Alle Karten des Katakombendecks
+        sollten mit der Katakomben-Seite nach oben liegen, damit die Spieler nicht wissen, welche Karte welche ist.\n
+    \nJeder Ermittler beginnt das Spiel am Startort. <i>(<b>Erzwungen</b>-Effekte auf diesem Ort werden ausgelöst,
+        sobald die Karte enthüllt wird.)</i>\n</string>
+    <string name="pallid_locations_two">Die Karte Das Tor zur Hölle wird herausgesucht (es handelt sich um die enthüllte
+        Seite eines Katakombenortes) und mit der Katakomben-Seite nach oben ins Spiel gebracht. Für den Rest des
+        Szenarios gilt dieser Ort als „Startort“. Ein Ressourcenmarker wird auf diesen Ort platziert, um ihn als
+        Startort zu markieren. <b>Zu diesem Zeitpunkt wird noch kein Ermittler dort platziert.</b>\n
+    \nAlle anderen Orte werden als separates „Katakombendeck“ beiseitegelegt. Dazu sind folgende Schritte nötig:\n
+    \nDie beiseitegelegten Orte Gruft der Schatten, Versperrter Gang und 3 weitere zufällige Katakombenorte werden
+        (mit der Katakomben-Seite nach oben) zusammengemischt und bilden die 5 untersten Karten des Katakombendecks.\n
+    \nDann werden die übrigen Katakombenorte in zufälliger Reihenfolge daraufgelegt. Alle Karten des Katakombendecks
+        sollten mit der Katakomben-Seite nach oben liegen, damit die Spieler nicht wissen, welche Karte welche ist.\n
+    \nJeder Ermittler beginnt das Spiel am Startort. <i>(<b>Erzwungen</b>-Effekte auf diesem Ort werden ausgelöst,
+        sobald die Karte enthüllt wird.)</i>\n</string>
+    <string name="pallid_set_aside">Der Träger der Schwäche Der Mann mit der Bleichen Maske durchsucht sein Deck nach
+        dieser Karte und legt sie als nicht im Spiel befindlich beiseite.\n</string>
+    <string name="pallid_additional">Wähle einen Katakombenort, der zum Startort benachtbart ist, und enthülle ihn.</string>
 
 
     <!--Scenario resolutions-->
@@ -1062,4 +1179,54 @@
         Paris verfolgt hast. Als du aufwachst, befindest du dich nicht länger im Hotelzimmer.\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
             Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+
+    <string name="pallid_no_resolution">Ein Polizist rüttelt dich wach und zieht dich auf die Füße. Du fühlst dich, als
+        ob dich ein Zug überfahren hätte. Der Schmerz ist unerträglich. Der Mann leuchtet dir mit einer Taschenlampe in
+        die Augen und stellt dir auf Französisch einige Fragen. Benommen wie du bist, fällt es dir schwer, Antworten
+        darauf zu finden. Er zeigt auf die Treppe in deiner Nähe und schiebt dich von den Katakomben weg. Du stolperst
+        auf die Rue de la Tombe-Issoire und machst dich langsam auf den Weg zu einem Hotel, in dem du übernachten
+        kannst.\n
+    \nAuch nach einigen Tagen weiterer Untersuchungen hast du die Bedeutung der merkwürdigen Zeichnung, die du in den
+        Katakomben gesehen hast, immer noch nicht verstanden. Langsam hast du das Gefühl, dass die ganze Suche sinnlos
+        ist. Als du gerade den Entschluss gefasst hast, aufzugeben, siehst du ein verblichenes gelbes Buch auf dem Tisch
+        neben dir. Überrascht musst du feststellen, dass es sich um eine ungekürzte Ausgabe von <i>Der König in Gelb</i>
+        handelt. Auf dem Buchdeckel befindet sich eine Zeichnung in schwarzer Tinte – es handelt sich um die Zeichnung,
+        die seit Tagen dafür sorgt, dass du schlaflose Nächte durchlebst. Wer hat das Buch hierhin gelegt? Wie ist es in
+        dein Hotelzimmer gekommen? Wie auch immer, auf jeden Fall weißt du, was du zu tun hast. Das Geheimnis steht in
+        dem Stück – das hat es schon immer – und trotzdem hast du dich bisher aus Aberglauben geweigert den zweiten Akt
+        zu lesen. Die Worte können dir nicht mehr anhaben als die Kreaturen und Fanatiker, denen du begegnet bist.
+        Zitternd öffnest du den zweiten Teil und beginnst zu lesen.\n
+    \n<b>Jeder Ermittler muss wählen, ob er Akt II von <i>Der König in Gelb</i> liest oder nicht. Mindestens ein
+        Ermittler muss Akt II lesen. Gib unten ein, welche Ermittler sich dazu entschlossen haben, Akt II zu lesen.
+        Jeder Ermittler, der Akt II liest, durchsucht die Sammlung nach einer zufälligen <i><b>Wahnsinn</b></i>- oder
+        <i><b>Pakt</b></i>-Schwäche und fügt sie seinem Deck hinzu (zählt nicht gegen die Deckgröße). Jeder Ermittler,
+        der Akt II gelesen hat, verdient außerdem 2 zusätzliche Erfahrungspunkte, weil er Einsicht in die
+        Machenschaften des Königs in Lumpen gewonnen hat.</b></string>
+    <string name="pallid_resolution_one">Der verbrannte Schädel ist der Schlüssel zu allem. Da bist du dir sicher. Du
+        hast jede dir bekannte Methode angewendet, das Geheimnis der Zeichnung darauf zu entschlüsseln, aber noch immer
+        bleibt die Antwort vor dir verschlossen. Du hast den Schädel Experten, Okkultisten und Professoren gezeigt. Du
+        hast sogar mehr als einmal versucht mit dem Schädel zu sprechen. Verzweifelt legst du ihn auf deinen Nachttisch
+        und versuchst zum ersten Mal seit deiner Flucht aus den Katakomben etwas Schlaf zu finden. Als du einschläfst,
+        kannst du den Anblick der Zeichnung, die auf der Stirn des Schädels eingraviert ist, nicht abschütteln.\n
+    \nAls du aufwachst, ist dir eine Erkenntnis gekommen und du eilst in den Louvre, das berühmte Pariser Museum, in dem
+        tausende Gemälde, Zeichnungen und archäologische Funde ausgestellt sind. Du verbringst Tage damit, das Museum zu
+        erforschen – jede Ausstellung, jede Sammlung, jedes einzelne Kunstwerk, das den Schlüssel zu der Bedeutung der
+        Zeichnung enthalten könnte. Endlich findest du ein Gemälde, das eine wunderschöne Stadt auf einer Insel in einem
+        starken, sintflutartigen Sturm zeigt. Wellen schlagen heftig gegen die äußere Steinmauer und die Flut droht die
+        Insel als Ganzes zu verschlingen. Blitze zucken um den Turm der Abtei außerhalb der Stadt. Ein Wirbel aus
+        schwarzen Wolken dreht sich am aufgewühlten Himmel. Die Zeichnung auf dem verbrannten Schädel in deiner Hand
+        wiederholt sich perfekt im Buntglas der Fenster der Abtei. Der Name des Kunstwerkes ist „Der Pfad ist offen“.
+    </string>
+    <string name="pallid_resolution_two">Du fällst immer weiter in den leeren Abgrund. Keine Luft bremst deinen Fall
+        oder streicht auch nur durch deine Haare. Es ist ein Durchgang, frei von jeglicher Realität. Schließlich kommst
+        du durch ein unsichtbares Tor und betrittst ein anderes Reich. Über und unter dir siehst du zwei Silhouetten
+        einer Stadt. Die eine stellt eine verzerrte Spiegelung der anderen dar. Zwischen ihnen befindet sich ein Wirbel
+        aus schwarzen Wolken und donnernden Wellen. Du betrachtest beide Seiten genau – die dir vertraute Stadt und ihr
+        seltsames Spiegelbild. Könnte dies der Pfad nach Carcosa sein? Ein Durchgang zwischen den Realitäten, eine
+        Stelle, an der die Reiche zusammentreffen? Falls das so ist, bleibt dir nur noch herauszufinden, wo dieses Tor
+        auf der Erde erscheint. Dann fällst du in den Wirbel unter dir.\n
+    \nEin Polizist rüttelt dich wach und zieht dich auf die Füße. Du fühlst dich, als ob dich ein Zug überfahren hätte.
+        Der Schmerz ist unerträglich. Der Mann leuchtet dir mit einer Taschenlampe in die Augen und stellt dir auf
+        Französisch einige Fragen. Deine Augen werden groß, als du die Situation erfasst und du reißt dich aus dem Griff
+        des verwirrten Polizisten los. „Ich muss sofort los!“</string>
 </resources>
