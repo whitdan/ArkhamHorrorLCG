@@ -185,7 +185,7 @@ public class GlobalVariables extends Application {
             case 3:
                 switch (CurrentScenario) {
                     case 0:
-                        title.setText(R.string.carcosa_lola_prologue);
+                        title.setText(R.string.carcosa_interlude_zero);
                         break;
                     case 1:
                         title.setText(R.string.carcosa_scenario_one);

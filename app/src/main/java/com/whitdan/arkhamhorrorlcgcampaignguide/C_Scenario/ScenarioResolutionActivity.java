@@ -289,8 +289,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         selectInvestigatorFour.setTypeface(arnopro);
         selectInvestigatorFive.setTypeface(arnopro);
         LinearLayout additionalGroup = findViewById(R.id.additional_group);
-        CheckBox additionalGroupOne = findViewById(R.id.additional_group_one);
-        CheckBox additionalGroupTwo = findViewById(R.id.additional_group_two);
+        LinearLayout additionalGroupSetTwo = findViewById(R.id.additional_group_set_two);
+        final CheckBox additionalGroupOne = findViewById(R.id.additional_group_one);
+        final CheckBox additionalGroupTwo = findViewById(R.id.additional_group_two);
         CheckBox additionalGroupThree = findViewById(R.id.additional_group_three);
         CheckBox additionalGroupFour = findViewById(R.id.additional_group_four);
         CheckBox additionalGroupFive = findViewById(R.id.additional_group_five);
@@ -854,10 +855,41 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         }
                         break;
                     case 8:
+                        resignedOne.setText(defeated);
+                        resignedTwo.setText(defeated);
+                        resignedThree.setText(defeated);
+                        resignedFour.setText(defeated);
                         if(globalVariables.Ishimaru == 0 || globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 3){
                             additionalCheckbox.setVisibility(VISIBLE);
                             additionalCheckbox.setText(R.string.ishimaru_victory);
                         }
+                        additionalGroupHeading.setVisibility(VISIBLE);
+                        additionalGroupHeading.setText(R.string.advanced_2b);
+                        additionalGroup.setVisibility(VISIBLE);
+                        additionalGroupOne.setVisibility(VISIBLE);
+                        additionalGroupOne.setText(R.string.man_in_pallid_mask_defeated);
+                        additionalGroupOne.setOnCheckedChangeListener(new CompoundButton
+                                .OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                                if (compoundButton.isChecked()) {
+                                    additionalGroupTwo.setChecked(false);
+                                }
+                            }
+                        });
+                        additionalGroupTwo.setVisibility(VISIBLE);
+                        additionalGroupTwo.setText(R.string.spent_clues_advance);
+                        additionalGroupTwo.setOnCheckedChangeListener(new CompoundButton
+                                .OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                                if (compoundButton.isChecked()) {
+                                    additionalGroupOne.setChecked(false);
+                                }
+                            }
+                        });
+                        additionalGroupThree.setVisibility(GONE);
+                        additionalGroupSetTwo.setVisibility(GONE);
                         break;
                 }
                 break;
@@ -3062,8 +3094,16 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 globalVariables.Ishimaru = 5;
                             }
                         }
+                        if (additionalOne.isChecked()){
+                            globalVariables.Conviction += 2;
+                        } else if (additionalTwo.isChecked()){
+                            globalVariables.Doubt += 2;
+                        }
                         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
                             globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                            if (globalVariables.Investigators.get(i).TempStatus == 1) {
+                                globalVariables.Investigators.get(i).Damage += 1;
+                            }
                         }
                         switch(globalVariables.ScenarioResolution){
                             case 0:
