@@ -14,6 +14,9 @@
     <string name="campaign_completed">Campaña completada</string>
     <string name="delete_campaign">Borrar campaña</string>
     <string name="confirm_delete_campaign">¿Está seguro de que desea borrar esta campaña?</string>
+    <string name="corrupt_campaign">Campaña corrupta</string>
+    <string name="confirm_corrupt_campaign">La campaña ha sido corrompida debido a un error. Por favor, cree
+        una nueva campaña.\n\n¿Seguro que quiere continuar?</string>
 
 
     <string name="scenario_setup">Preparación del escenario</string>
@@ -74,6 +77,19 @@
     <string name="strange_solution">Habéis identificado la solución.\n\n</string>
     <string name="archaic_glyphs_dialog">Habéis traducido los signos</string>
     <string name="archaic_glyphs">Habéis traducido los signos.\n\n</string>
+
+    <string name="default_chaos_bag">Por defecto</string>
+    <string name="chaos_bag_name">Nombre de la bolsa (requerido)</string>
+    <string name="campaign_chaos_tokens">Añadir automáticamente fichas durante la campaña</string>
+    <string name="campaign_chaos_tokens_list">+ fichas de Caos de la Campaña</string>
+    <string name="select_chaos_bag">Eleegir Bolsa de Caos</string>
+    <string name="custom_chaos_bag">Bolsa de Caos personalizada</string>
+    <string name="maximum_chaos_bag">El tamaño máximo de la Bolsa de Caos es de 50 fichas.</string>
+    <string name="save_bag">Guardar Bolsa</string>
+    <string name="must_token">Debes añadir al menos una ficha.</string>
+    <string name="must_bag">Debes introducir un nombre para la Bolsa de Caos</string>
+    <string name="delete_bag">Eliminar Bolsa de Caos</string>
+    <string name="confirm_delete_bag">¿Seguro que desea eliminar esta Bolsa de Caos?</string>
 
 
     <!--Toast messages-->

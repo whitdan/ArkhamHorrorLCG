@@ -35,6 +35,8 @@
     <string name="constance_victory">Constance Dumaine in the victory display</string>
     <string name="jordan_victory">Jordan Perry in the victory display</string>
     <string name="ishimaru_victory">Ishimaru Haruko in the victory display</string>
+    <string name="man_in_pallid_mask_defeated">The Man in the Pallid Mask was defeated</string>
+    <string name="spent_clues_advance">You spent clues to advance</string>
     <string name="must_read_act">An investigator must read Act II.</string>
     <string name="select_read_act">Read Act II</string>
 
@@ -165,7 +167,7 @@
     <string name="pallid_tablet_one">–2. If there is a ready <b><i>Ghoul</i></b> or <b><i>Geist</i></b> enemy at your
         location, it attacks you (if there is more than one, choose one).</string>
     <string name="pallid_tablet_two">–3. If there is a <b><i>Ghoul</i></b> or <b><i>Geist</i></b> enemy at your location, it readies and attacks you (if there is more than one, choose one).</string>
-    <string name="pallid_thing_one">–2. If you fail, search the encounter deck and discard pile for a <b><i>Ghoul</i></b> or <b><i>Geist</i></b> enemy and draw it.</string>
+    <string name="pallid_thing_one">–3. If you fail, search the encounter deck and discard pile for a <b><i>Ghoul</i></b> or <b><i>Geist</i></b> enemy and draw it.</string>
     <string name="pallid_thing_two">–4. If you fail, search the encounter deck and discard pile for a <b><i>Ghoul</i></b> or <b><i>Geist</i></b> enemy and draw it.</string>
 
 

@@ -34,6 +34,9 @@
 	<string name="sebastien_victory">Sebastien Moreau dans la pile de victoire</string>
 	<string name="constance_victory">Constance Dumaine dans la pile de victoire</string>
 	<string name="jordan_victory">Jordan Perry dans la pile de victoire</string>	
+	 <string name="ishimaru_victory">Ishimaru Haruko dans la pile de victoire</string>
+    <string name="must_read_act">Un investigateur doit lire l\'Acte II.</string>
+    <string name="select_read_act">Lisez l\'Acte II.</string>
 	
 	<!--Edit log-->
     <string name="doubt_heading">Doute</string>
@@ -89,6 +92,14 @@
     <string name="found_nigel_home">Vous avez trouvé la demeure de Nigel\n\n</string>
     <string name="found_nigel_engram">Vous avez trouvé Nigel Engram.\n\n</string>
     <string name="unable_find_nigel">Vous n\'avez pas réussi à trouver Nigel.\n\n</string>	
+	<string name="awoke_catacombs">Vous vous êtes réveillé dans les catacombes.\n\n</string>
+    <string name="entered_catacombs">Vous avez pénétré dans les catacombes de votre plein gré.\n\n</string>
+    <string name="know_site">Vous connaissez l\'emplacement de la porte.\n\n</string>
+    <string name="read_act"> lisez l\'Acte II.\n\n</string>
+    <string name="inv_one_read_act">L\'investigateur Un lit l\'Acte II.\n\n</string>
+    <string name="inv_two_read_act">L\'investigateur Deux lit l\'Acte II.</string>
+    <string name="inv_three_read_act">L\'investigateur Trois lit l\'Acte II.\n\n</string>
+    <string name="inv_four_read_act">L\'investigateur Quatre lit l\'Acte II.\n\n</string>
 
 
 	<!--Chaos bag-->
@@ -143,30 +154,20 @@
     <string name="phantom_thing_two">–3. En cas d\'échec, perdez 1 ressource pour chaque point manquant.</string>
 																															 
 																													
-																									 
-																													
-																									 
-
-																													 
-					  
-																													
-														
-																									 
-																						
-																		   
-															  
-																					  
-																												  
-
-																									 
-																								  
-																								  
-																					 
-																									
-																					   
-																												   
-																									  
-
+	<string name="pallid_skull_one">–X. X est le nombre de lieux vous séparant de votre lieu de départ (5 max).</string>
+    <string name="pallid_skull_two">–X. X est le nombre de lieux vous séparant de votre lieu de départ.</string>
+    <string name="pallid_cultist_one">–2. Si ce pion est révélé pendant une attaque, et si le test est réussi, cette attaque inflige 1 dégât de moins.</string>
+    <string name="pallid_cultist_two">–3. Si ce pion est révélé pendant une attaque, et si le test est réussi, cette attaque n\'inflige pas de dégât.</string>
+    <string name="pallid_tablet_one">–2. S\'il y a un ennemi <b><i>Goule</i></b> ou <b><i>Geist</i></b> redressé dans votre lieu, il vous attaque
+		(s\'il y en a plusieurs, vous en choisissez un).</string>
+    <string name="pallid_tablet_two">–3.S\'il y a un ennemi <b><i>Goule</i></b> ou <b><i>Geist</i></b> dans votre lieu, il se redresse et vous attaque
+		(s\'il y en a plusieurs, vous en choisissez un).</string>
+    <string name="pallid_thing_one">–2. En cas d\'échec, cherchez un ennemi <b><i>Goule</i></b> ou <b><i>Geist</i></b> dans le deck de rencontre ou dans la pile
+		de défausse, et piochez-le.</string>
+    <string name="pallid_thing_two">–4.  En cas d\'échec, cherchez un ennemi <b><i>Goule</i></b> ou <b><i>Geist</i></b> dans le deck de rencontre ou dans la pile
+		de défausse, et piochez-le.</string>
+																								 
+																				
 
     <!-- Campaign introduction-->
     <string name="carcosa_introduction"><b>Prologue</b>\n
@@ -537,8 +538,41 @@
 		dans un café de Montparnasse, \"L\'Agneau Perdu\". Ce sera votgre première destination : M. Engram s\'y trouvera
 		peut-être.</string>
 
-																											
-
+	<string name="pallid_introduction_one_one">Vous êtes tiré du sommeil par l\'air vicié sentant le renfermé et par la
+		poussière qui vous irrite la gorge. Vous êtes allongé sur une dalle de pierre froide dans ce qui semble être un
+		sombre couloir souterrain. Comment êtes-vous arrivé jusqu\'ici ? Et d\'ailleurs, où se trouve \"ici\" exactement ?
+		Un frisson vous parcourt le corps et vos poils se hérissent. Vous vous mettez debout et tentez de prendre la 
+		mesure de la situation. Les murs et les plafonds sont recouverts d\'ossements et, où que vous regardiez, des
+		crânes à la bouche ouverte semblent vous observer.</string>
+    <string name="pallid_introduction_one_two">Vous êtes tiré du sommeil par l\'air vicié sentant le renfermé et par la
+		poussière qui vous irrite la gorge. Vous êtes allongé sur une dalle de pierre froide dans ce qui semble être un
+		sombre couloir souterrain. Comment êtes-vous arrivé jusqu\'ici ? Et d\'ailleurs, où se trouve \"ici\" exactement ?
+		Un frisson vous parcourt le corps et vos poils se hérissent. Vous vous mettez debout et tentez de prendre la 
+		mesure de la situation. Les murs et les plafonds sont recouverts d\'ossements et, où que vous regardiez, des
+		crânes à la bouche ouverte semblent vous observer.\n
+    \nEn franchissant l\'arche la plus proche, vous apercevez un symbole familier gravé dans le crâne d\'un mouton : une 
+		série de demi-cercles concentriques alignés avec de drôles de runes. Deux lignes ondulées descendent du tracé
+		jusqu\'à la mâchoire du crâne. Vous reconnaissez le dessin qu\'Haruko vous a montré. Vous demandant ce qu\'il 
+		fait là, vous observez le crâne plus en détail. À peine avez-vous touché l\'intérieur de la mâchoire que la bouche
+		s\'ouvre d\'un coup. Les os tombent au sol et les murs dévoilent un nouveau passage.\n
+    \n<b>Souvenez-vous que \"vous avez ouvert un passage secret\".</b></string>
+    <string name="pallid_introduction_two_one">Le contenu de la maison de Nigel Engram ne répond à aucune de vos
+		questions sur <i>Le Roi en Jaune</i> mais vous donne une idée de votre prochaine piste. La vieille carte
+		déchirée trouvée sur la table basse représente une section des infâmes catacombes de Paris. Une pièce en 
+		particulier a été entourée au crayon et annotée : \"La clé pour ouvrir la Route se trouve ici !\" Vous
+		ravalez vos peurs et vous vous dirigez vers l\'entrée des catacombes, rue de la Tombe-Issoire.</string>
+    <string name="pallid_introduction_two_two">Le contenu de la maison de Nigel Engram ne répond à aucune de vos
+		questions sur <i>Le Roi en Jaune</i> mais vous donne une idée de votre prochaine piste. La vieille carte
+		déchirée trouvée sur la table basse représente une section des infâmes catacombes de Paris. Une pièce en 
+		particulier a été entourée au crayon et annotée : \"La clé pour ouvrir la Route se trouve ici !\" Vous
+		ravalez vos peurs et vous vous dirigez vers l\'entrée des catacombes, rue de la Tombe-Issoire.\n
+    \nEn franchissant l\'arche la plus proche, vous apercevez un symbole familier gravé dans le crâne d\'un mouton : une 
+		série de demi-cercles concentriques alignés avec de drôles de runes. Deux lignes ondulées descendent du tracé
+		jusqu\'à la mâchoire du crâne. Vous reconnaissez le dessin qu\'Haruko vous a montré. Vous demandant ce qu\'il 
+		fait là, vous observez le crâne plus en détail. À peine avez-vous touché l\'intérieur de la mâchoire que la bouche
+		s\'ouvre d\'un coup. Les os tombent au sol et les murs dévoilent un nouveau passage.\n
+    \n<b>Souvenez-vous que \"vous avez ouvert un passage secret\".</b></string>																											
+	
 
 
     <!--Scenario set-up instructions-->
@@ -700,6 +734,34 @@
 		2 exemplaires de Fausse Piste dans les sets de rencontre réunis et retirez-les de la partie.\n
     \nUtilisez l\'Acte 1 — La Conspiration Parisienne (v. II).\n
     \nChaque investigateur commence la partie avec 3 ressources supplémentaires.</string>
+	
+	<string name="pallid_sets">Le Masque Blême, Les Goules, Hantises, et Un Froid Mordant.</string>
+    <string name="pallid_locations_one">Trouvez la Tombe des Ombres et le Passage Bloqué (il s\'agit des faces révélées
+		de deux lieux Les Catacombes). Mettez-les de côté, hors jeu.\n
+    \nPrenez un lieu Les Catacombes (autre que ceux mis de côté : Tombe des Ombres et Passage Bloqué) au hasard et 
+		mettez-le en jeu, face Catacombes visible. Pour la suite du scénario, ce lieu est considéré comme le 
+		\"lieu de départ\". Placez un pion ressource sur ce lieu afin de le différencier des autres. <b>N\'y placez
+		pas encore les investigateurs.</b>\n
+    \n Mélangez ensemble la Tombe des Ombres, le Passage Bloqué et trois autres lieux Les Catacombes, face Catacombes 
+		visible, afin de constituer les 5 cartes du dessous du deck Catacombes.\n
+    \nEnsuite, placez tous les autres lieux Les Catacombes au-dessus dans un ordre aléatoire. Les cartes du deck Catacombes
+        ne doivent exposer que leur face Catacombes, afin que les joueurs ne puissent pas les différencier.\n
+    \nChaque investigateur commence la partie dans le lieu de départ <i>(N\'oubliez pas de déclencher l\'effet Forcé
+		de ce lieu quand il est révélé).</i>\n</string>
+    <string name="pallid_locations_two">Trouvez La Porte de l\'Enfer (il s\'agit de la face révélée d\'un lieu Les Catacombes).
+		Mettez en jeu La Porte de l\'Enfer, face Catacombes visible. Pour la suite du scénario, La Porte de l\'Enfer est
+		considérée comme le \"lieu de départ\". Placez un pion ressource sur La Porte de l\'Enfer afin de le différencier
+		des autres. <b>N\'y placez pas encore les investigateurs.</b> \n
+    \nMélangez ensemble la Tombe des Ombres, le Passage Bloqué et trois autres lieux Les Catacombes, face Catacombes 
+		visible, afin de constituer les 5 cartes du dessous du deck Catacombes.\n
+    \nEnsuite, placez tous les autres lieux Les Catacombes au-dessus dans un ordre aléatoire. Les cartes du deck Catacombes
+        ne doivent exposer que leur face Catacombes, afin que les joueurs ne puissent pas les différencier.\n
+    \nChaque investigateur commence la partie dans le lieu de départ <i>(N\'oubliez pas de déclencher l\'effet Forcé
+		de ce lieu quand il est révélé).</i>\n</string>
+    <string name="pallid_set_aside">Le détenteur de la faiblesse L\'Homme au Masque Blême la cherche dans son deck 
+		et la met de côté, hors jeu.\n</string>
+    <string name="pallid_additional">Choisissez un lieu Les Catacombes adjacent au lieu de départ et révélez-le.</string>
+
 	
 		
     <!--Scenario resolutions-->
@@ -1121,5 +1183,50 @@
 		En vous réveillant, vous découvrez que vous n\'êtes plus dans votre chambre d\'hôtel.\n
     \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez deux
 		pions Chose Ancienne dans la réserve du Chaos.</b></string>
+		
+	<string name="pallid_no_resolution">Un agent de police vous réveille en vous secouant et vous aide à 
+		vous remettre sur pied. Vous avez l\'impression d\'être passé sous un train. La douleur est intolérable.
+		L\'homme vous braque sa torche sur le visage et vous pose des questions en français. Hébété, vous avez du mal
+		à répondre. Il pointe l\'escalier du doigt et vous traîne hors des catacombes. Vous titubez dans la rue de la
+		Tombe-Issoire et parcourez lentement le chemin jusqu\'à un hôtel où vous pourrez passer la nuit.\n
+    \nAprès quelques jours de recherches, la signification de l\'étrange motif aperçu dans les catacombes vous échappe
+		toujours. Vous avez l\'impression d\'avoir été envoyé à la chasse au dahu. Vous êtes sur le point d\'abandonner
+		quand vous apercevez un vieux livre jaune sur la table. Vous découvrez avec surprise qu\'il s\'agit d\'un script
+		intégral du <i>Roi en Jaune</i>. Sur la couverture, le motif dont vous essayez de percer la signification depuis
+		plusieurs nuits est dessiné à l\'encre noire. Qui l\'a placé là ? Et comment est-il entré dans votre chambre 
+		d\'hôtel ? Quoi qu\'il en soit, vous savez ce qu\'il vous reste à faire. La pièce recèle des secrets - elle en
+		contient tout du long - mais, pour l\'instant, vous avez soigneusement évité de lire l\'Acte II. Quelle folle
+		superstition. Ses mots ne peuvent pas vous faire plus de mal que les créatures et les fanatiques que vous avez
+		croisé jusqu\'ici. Tremblant de tous vos membres, vous ouvrez le livre à la deuxième partie et commencez à lire.\n
+    \n<b>Chaque investigateur doit choisir s\'il souhaite ou non lire l\'Acte II du <i>Roi en Jaune</i>. Au moins un 
+			investigateur doit lire l\'Acte II. Indiquez ci-dessous les investigateurs qui ont lu l\'Acte II. Chaque 
+			investigateur qui a lu l\'Acte II cherche une faiblesse de base Folie ou Pacte au hasard dans la collection,
+			et l\'ajoute à son deck (ne compte pas dans la Taille du Deck). Chaque investigateur qui a lu l\'Acte II
+			reçoit 2 points d\'expérience supplémentaires pour avoir entraperçu les machinations du Roi en Guenilles.</b></string>
+    <string name="pallid_resolution_one">Le crâne calciné est la clé de tout. Vous en êtes sûr. Vous avez employé tous les 
+		moyens possibles pour étudier le motif qu\'il arbore, mais la réponse vous échappe toujours. Vous avez montré 
+		le crâne à des experts, à des occultistes, à des professeurs. Vous vous êtes même surpris à lui parler une fois
+		ou deux. Exaspéré, vous placez le crâne sur votre table de chevet et tenez de trouver le sommeil pour la première
+		fois depuis votre sortie des catacombes. En vous endormant, vous ne parvenez pas à chasser la vision du motif
+		gravé sur le front du crâne.\n
+    \nVous vous réveillez avec une inspiration subite et foncez au Louvre, le célèbre musée parisien contenant des milliers
+		de peintures, de dessins et de trouvailles archéologiques. Vous passez des jours à explorer le musée - chaque
+		œuvre, chaque collection, chaque petit objet d\'art qui pourrait vous révéler la signification de ce motif.
+		Finalement, vous tombez sur un tableau représentant une magnifique ville insulaire assaillie par une tempête.
+		Des vagues s\'écrasent contre les murailles de pierre de la ville, menaçant d\'engloutir l\'île toute entière.
+		Des éclairs zèbrent le ciel autour du clocher de l\'abbaye qui surplombe le village. Une nuée de nuages noirs
+		recouvre le ciel. Et sur le vitrait de l\'abbaye, vous apercevez la copie conforme du motif du crâne calciné
+		que vous tenez entre vos mains. Le titre de cette œuvre : \"La Route est Ouverte\".</string>
+    <string name="pallid_resolution_two">Vous tombez sans discontinuer à travers l\'abîme infini. Aucun air ne ralentit
+		votre descente ni ne s\'engouffre dans vos cheveux. Cet endroit n\'est pas réel. Finalement, vous traverser une
+		porte invisible et entrez dans un autre monde. Au-dessus et au-dessous de vous surgissent deux lignes d\'horizon,
+		l\'un reflétant l\'autre. Un tourbillon de nuages noirs et de vagues s\'amoncelle entre les deux. Vous observez
+		les deux côtés - la ville familière et son étrange reflet. Cela pourrait-il être la route de Carcosa ? Un passage
+		entre les réalités ? Le lieu où deux mondes convergent ? Si tel est le cas, tout ce qu\'il vous reste à faire est 
+		de trouver l\'endroit où la porte apparaît sur Terre. Vous tombez dans le vortex en dessous.\n
+    \nUn agent de police vous réveille en vous secouant et vous aide à vous remettre sur pied. Vous avez l\'impression
+		d\'être passé sous un train. La douleur est intolérable. L\'homme vous braque sa torche sur le visage et vous
+		pose des questions en français. Vos yeux s\'écarquillent à mesure que vous reprenez conscience. Vous libérez votre
+		bras de la poigne du policier déboussolé. \"Il faut qu\'y aille, maintenant !\"</string>
 							
 </resources>

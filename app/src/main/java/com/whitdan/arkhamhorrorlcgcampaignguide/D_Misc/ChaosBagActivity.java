@@ -344,7 +344,9 @@ public class ChaosBagActivity extends AppCompatActivity {
                     break;
             }
             setupScenarioCard(ChaosBagActivity.this);
+            basebagResult = basebag(ChaosBagActivity.this);
             setupBag(ChaosBagActivity.this);
+            token = -1;
 
             // Clear all current token views
             LinearLayout tokens = findViewById(R.id.token_layout);

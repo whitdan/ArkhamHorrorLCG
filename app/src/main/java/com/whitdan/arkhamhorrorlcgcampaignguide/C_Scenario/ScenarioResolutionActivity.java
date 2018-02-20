@@ -289,8 +289,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         selectInvestigatorFour.setTypeface(arnopro);
         selectInvestigatorFive.setTypeface(arnopro);
         LinearLayout additionalGroup = findViewById(R.id.additional_group);
-        CheckBox additionalGroupOne = findViewById(R.id.additional_group_one);
-        CheckBox additionalGroupTwo = findViewById(R.id.additional_group_two);
+        LinearLayout additionalGroupSetTwo = findViewById(R.id.additional_group_set_two);
+        final CheckBox additionalGroupOne = findViewById(R.id.additional_group_one);
+        final CheckBox additionalGroupTwo = findViewById(R.id.additional_group_two);
         CheckBox additionalGroupThree = findViewById(R.id.additional_group_three);
         CheckBox additionalGroupFour = findViewById(R.id.additional_group_four);
         CheckBox additionalGroupFive = findViewById(R.id.additional_group_five);
@@ -854,10 +855,41 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         }
                         break;
                     case 8:
+                        resignedOne.setText(defeated);
+                        resignedTwo.setText(defeated);
+                        resignedThree.setText(defeated);
+                        resignedFour.setText(defeated);
                         if(globalVariables.Ishimaru == 0 || globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 3){
                             additionalCheckbox.setVisibility(VISIBLE);
                             additionalCheckbox.setText(R.string.ishimaru_victory);
                         }
+                        additionalGroupHeading.setVisibility(VISIBLE);
+                        additionalGroupHeading.setText(R.string.advanced_2b);
+                        additionalGroup.setVisibility(VISIBLE);
+                        additionalGroupOne.setVisibility(VISIBLE);
+                        additionalGroupOne.setText(R.string.man_in_pallid_mask_defeated);
+                        additionalGroupOne.setOnCheckedChangeListener(new CompoundButton
+                                .OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                                if (compoundButton.isChecked()) {
+                                    additionalGroupTwo.setChecked(false);
+                                }
+                            }
+                        });
+                        additionalGroupTwo.setVisibility(VISIBLE);
+                        additionalGroupTwo.setText(R.string.spent_clues_advance);
+                        additionalGroupTwo.setOnCheckedChangeListener(new CompoundButton
+                                .OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                                if (compoundButton.isChecked()) {
+                                    additionalGroupOne.setChecked(false);
+                                }
+                            }
+                        });
+                        additionalGroupThree.setVisibility(GONE);
+                        additionalGroupSetTwo.setVisibility(GONE);
                         break;
                 }
                 break;
@@ -1888,108 +1920,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             okayButton.setTypeface(teutonic);
 
             // Set title
-            switch (globalVariables.CurrentCampaign) {
-                case 1:
-                    switch (globalVariables.CurrentScenario) {
-                        case 1:
-                            title.setText(R.string.night_scenario_one);
-                            break;
-                        case 2:
-                            title.setText(R.string.night_scenario_two);
-                            break;
-                        case 3:
-                            title.setText(R.string.night_scenario_three);
-                            break;
-                    }
-                    break;
-                case 2:
-                    switch (globalVariables.CurrentScenario) {
-                        case 1:
-                            title.setText(R.string.dunwich_scenario_one);
-                            break;
-                        case 2:
-                            title.setText(R.string.dunwich_scenario_two);
-                            break;
-                        case 3:
-                            title.setText(R.string.dunwich_interlude_one);
-                            break;
-                        case 4:
-                            title.setText(R.string.dunwich_scenario_three);
-                            break;
-                        case 5:
-                            title.setText(R.string.dunwich_scenario_four);
-                            break;
-                        case 6:
-                            title.setText(R.string.dunwich_scenario_five);
-                            break;
-                        case 7:
-                            title.setText(R.string.dunwich_interlude_two);
-                            break;
-                        case 8:
-                            title.setText(R.string.dunwich_scenario_six);
-                            break;
-                        case 9:
-                            title.setText(R.string.dunwich_scenario_seven);
-                            break;
-                        case 10:
-                            title.setText(R.string.dunwich_scenario_eight);
-                            break;
-                        case 11:
-                            title.setText(R.string.dunwich_epilogue);
-                            break;
-                    }
-                    break;
-                case 3:
-                    switch (globalVariables.CurrentScenario) {
-                        case 1:
-                            title.setText(R.string.carcosa_scenario_one);
-                            break;
-                        case 2:
-                            title.setText(R.string.carcosa_scenario_two);
-                            break;
-                        case 3:
-                            title.setText(R.string.carcosa_interlude_one);
-                            break;
-                        case 4:
-                            title.setText(R.string.carcosa_scenario_three);
-                            break;
-                        case 5:
-                            title.setText(R.string.carcosa_scenario_four);
-                            break;
-                        case 6:
-                            title.setText(R.string.carcosa_interlude_two);
-                            break;
-                        case 7:
-                            title.setText(R.string.carcosa_scenario_five);
-                            break;
-                        case 8:
-                            title.setText(R.string.carcosa_scenario_six);
-                            break;
-                        case 9:
-                            title.setText(R.string.carcosa_scenario_seven);
-                            break;
-                        case 10:
-                            title.setText(R.string.carcosa_scenario_eight);
-                            break;
-                        case 11:
-                            title.setText(R.string.carcosa_epilogue);
-                            break;
-                        case 12:
-                            title.setText(R.string.campaign_completed);
-                            break;
-                    }
-                    break;
-            }
-            if (globalVariables.CurrentScenario > 100) {
-                switch (globalVariables.CurrentScenario) {
-                    case 101:
-                        title.setText(R.string.rougarou_scenario);
-                        break;
-                    case 102:
-                        title.setText(R.string.carnevale_scenario);
-                        break;
-                }
-            }
+            globalVariables.setTitle(title);
 
             // Set resolution number and victory display
             TextView resolution = v.findViewById(R.id.current_resolution);
@@ -3062,8 +2993,16 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 globalVariables.Ishimaru = 5;
                             }
                         }
+                        if (additionalOne.isChecked()){
+                            globalVariables.Conviction += 2;
+                        } else if (additionalTwo.isChecked()){
+                            globalVariables.Doubt += 2;
+                        }
                         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
                             globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                            if (globalVariables.Investigators.get(i).TempStatus == 1) {
+                                globalVariables.Investigators.get(i).Damage += 1;
+                            }
                         }
                         switch(globalVariables.ScenarioResolution){
                             case 0:

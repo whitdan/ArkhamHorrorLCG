@@ -143,6 +143,9 @@ public class GlobalVariables extends Application {
                     case 3:
                         title.setText(R.string.night_scenario_three);
                         break;
+                    case 4:
+                        title.setText(R.string.campaign_completed);
+                        break;
                 }
                 break;
             case 2:
@@ -180,12 +183,15 @@ public class GlobalVariables extends Application {
                     case 11:
                         title.setText(R.string.dunwich_epilogue);
                         break;
+                    case 12:
+                        title.setText(R.string.campaign_completed);
+                        break;
                 }
                 break;
             case 3:
                 switch (CurrentScenario) {
                     case 0:
-                        title.setText(R.string.carcosa_lola_prologue);
+                        title.setText(R.string.carcosa_interlude_zero);
                         break;
                     case 1:
                         title.setText(R.string.carcosa_scenario_one);
