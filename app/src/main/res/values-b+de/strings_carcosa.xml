@@ -83,7 +83,7 @@
     <!--Edit log-->
     <string name="doubt_heading">Zweifel</string>
     <string name="conviction_heading">Überzeugung</string>
-    <string name="chasing_stranger_heading">Jagd nach dem Fremden</string>
+    <string name="chasing_stranger_heading">Die Jagd nach dem Fremden</string>
     <string name="theatre_heading">Chaosbeutel</string>
     <string name="theatre_one">2 Kultisten-Marker wurden hinzugefügt.</string>
     <string name="theatre_two">2 Tafel-Marker wurden hinzugefügt.</string>
@@ -95,10 +95,10 @@
     <string name="police_none">Die Polizei wurde nicht involviert.</string>
     <string name="police_warned_and_suspicious">Die Ermittler haben versucht, die Polizei zu warnen, und dabei den
         Verdacht auf sich gezogen.</string>
-    <string name="party_heading">Feier</string>
+    <string name="party_heading">Die Feier</string>
     <string name="no_party">Die Ermittler haben die Feier verlassen.</string>
-    <string name="onyx_heading">Spange aus Onyx</string>
-    <string name="asylum_heading">Arkham Sanatorium</string>
+    <string name="onyx_heading">Die Spange aus Onyx</string>
+    <string name="asylum_heading">Das Arkham-Sanatorium</string>
     <string name="daniel_heading">Daniels Warnung</string>
     <string name="no_daniel">Daniels Warnung wurde übersehen.</string>
     <string name="nigel_heading">Nigel Engram</string>
