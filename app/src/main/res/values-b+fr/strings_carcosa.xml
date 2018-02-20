@@ -34,7 +34,9 @@
 	<string name="sebastien_victory">Sebastien Moreau dans la pile de victoire</string>
 	<string name="constance_victory">Constance Dumaine dans la pile de victoire</string>
 	<string name="jordan_victory">Jordan Perry dans la pile de victoire</string>	
-	 <string name="ishimaru_victory">Ishimaru Haruko dans la pile de victoire</string>
+	<string name="ishimaru_victory">Ishimaru Haruko dans la pile de victoire</string>
+	<string name="man_in_pallid_mask_defeated">L\'Homme au Masque Blême a été vaincu</string>
+    <string name="spent_clues_advance">Vous avez dépensé des indices pour avancer</string>
     <string name="must_read_act">Un investigateur doit lire l\'Acte II.</string>
     <string name="select_read_act">Lisez l\'Acte II.</string>
 	
