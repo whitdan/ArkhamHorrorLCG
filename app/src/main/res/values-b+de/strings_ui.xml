@@ -67,7 +67,7 @@
     <string name="finish_delete_campaign">Kampagne beenden und löschen</string>
     <string name="finish_save_campaign">Kampagne beenden und speichern</string>
 
-    <string name="player_cards">Spieler-\nkarten</string>
+    <string name="player_cards">Spielerkarten</string>
     <string name="strange_solution_dialog">Ein Ermittler hat die Lösung identifiziert</string>
     <string name="strange_solution">Du hast die Lösung identifiziert.\n\n</string>
     <string name="archaic_glyphs_dialog">Ein Ermittler hat die Glyphen übersetzt</string>
@@ -135,6 +135,7 @@
     <string name="standard">Norm.</string>
     <string name="hard">Schwer</string>
     <string name="expert">Experte</string>
+    <string name="scenario_card">Szenariokarte</string>
     <string name="current_setup">Aktueller Chaosbeutel</string>
     <!--<string name="one" translatable="false">1</string>
     <string name="two" translatable="false">2</string>
