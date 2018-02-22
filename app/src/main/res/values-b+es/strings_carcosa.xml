@@ -37,8 +37,8 @@
     <string name="ishimaru_victory">Ishimaru Haruko en la zona de victoria</string>
     <string name="man_in_pallid_mask_defeated">El hombre de la máscara pálida ha sido derrotado</string>
     <string name="spent_clues_advance">Gastásteis pistas para avanzar</string>
-    <string name="must_read_act">Un investigador debe leer el Acto II.</string>
-    <string name="select_read_act">Leyó el Acto II</string>
+    <string name="must_read_act">Un investigador debe leer el segundo acto.</string>
+    <string name="select_read_act">Leyó el segundo acto</string>
 
 
     <!--Campaign Log-->
@@ -68,18 +68,18 @@
     <string name="escaped_asylum">Los investigadores escaparon del manicomio.\n\n</string>
     <string name="warning_heeded">Los investigadores hicieron caso de la advertencia de Daniel.\n\n</string>
     <string name="warning_ignored">Los investigadores ignoraron la advertencia de Daniel.\n\n</string>
-    <string name="not_escape_gaze">You did not escape the gaze of the phantom.\n\n</string>
-    <string name="found_nigel_home">You found Nigel\'s home.\n\n</string>
-    <string name="found_nigel_engram">You found Nigel Engram.\n\n</string>
-    <string name="unable_find_nigel">You were unable to find Nigel.\n\n</string>
-    <string name="awoke_catacombs">You awoke inside the catacombs.\n\n</string>
-    <string name="entered_catacombs">You entered the catacombs on your own.\n\n</string>
-    <string name="know_site">You know the site of the gate.\n\n</string>
-    <string name="read_act"> read Act II.\n\n</string>
-    <string name="inv_one_read_act">Investigator One read Act II.\n\n</string>
-    <string name="inv_two_read_act">Investigator Two read Act II.\n\n</string>
-    <string name="inv_three_read_act">Investigator Three read Act II.\n\n</string>
-    <string name="inv_four_read_act">Investigator Four read Act II.\n\n</string>
+    <string name="not_escape_gaze">Los investigadores no escaparon de la mirada del Fantasma.\n\n</string>
+    <string name="found_nigel_home">Los investigadores encontraron la casa de Nigel.\n\n</string>
+    <string name="found_nigel_engram">Los investigadores encontraron a Nigel Engram.\n\n</string>
+    <string name="unable_find_nigel">Los investigadores no lograron encontrar a Nigel.\n\n</string>
+    <string name="awoke_catacombs">Los investigadores despertaron en las catacumbas.\n\n</string>
+    <string name="entered_catacombs">Los investigadores entraron en las catacumbas por su cuenta.\n\n</string>
+    <string name="know_site">Los investigadores conocen la ubicación del portal.\n\n</string>
+    <string name="read_act"> leyó el segundo acto.\n\n</string>
+    <string name="inv_one_read_act">El investigador uno leyó el segundo acto.\n\n</string>
+    <string name="inv_two_read_act">El investigador dos leyó el segundo acto.\n\n</string>
+    <string name="inv_three_read_act">El investigador tres leyó el segundo acto.\n\n</string>
+    <string name="inv_four_read_act">El investigador cuatro leyó el segundo acto.\n\n</string>
 
 
     <!--Edit log-->
@@ -92,15 +92,15 @@
     <string name="theatre_three">2 fichas de Antiguo añadidas.</string>
     <string name="theatre_four">1 ficha de Sectario, 1 ficha de Lápida y 1 ficha de Antiguo añadidas.</string>
     <string name="stranger_heading">El Extranjero</string>
-    <string name="not_stranger">The Stranger is not on to you.</string>
+    <string name="not_stranger">El Extranjero no sabe lo que intentan hacer los investigadores.</string>
     <string name="police_heading">Policía</string>
     <string name="police_none">La policía no ha sido involucrada.</string>
     <string name="police_warned_and_suspicious">Los investigadores trataron de avisar a la policía y la policía
         sospecha de los investigadores.</string>
-    <string name="party_heading">Dinner Party</string>
-    <string name="no_party">You left the dinner party.</string>
-    <string name="onyx_heading">The Clasp of Black Onyx</string>
-    <string name="asylum_heading">Manicomo de Arkham</string>
+    <string name="party_heading">La fiesta</string>
+    <string name="no_party">Los investigadores se marcharon de la fiesta.</string>
+    <string name="onyx_heading">El broche de ónice negro</string>
+    <string name="asylum_heading">Manicomio de Arkham</string>
     <string name="daniel_heading">Advertencia de Daniel</string>
     <string name="no_daniel">Los investigadores no escucharon las advertencias de Daniel.</string>
     <string name="nigel_heading">Nigel Engram</string>
@@ -451,137 +451,133 @@
         durante un escenario (o durante la preparación de un escenario), ese investigador debe recibir 1 punto de horror
         inmediatamente.</b></string>
 
-    <string name="dream_one_one">Several months have passed since <i>The King in Yellow</i> came to the Ward
-        Theatre. You and your companions have been investigating the strange incidents that followed in its wake.
-        What you have found makes you question the wisdom of continuing your investigation, but the truth calls out
-        to you, and you cannot help but answer. It seems you weren’t the first to piece together the strange
-        happenings surrounding <i>The King in Yellow</i>. Another group of investigators had been researching these
-        events as well. Just a matter of days after the performance in Arkham, they were admitted to the asylum,
-        ranting about the King’s return and the “monsters” that had attacked them. Somehow this doesn’t surprise you.
-        Their fate makes you all the more certain you are on the right trail... And all the more certain that you
-        should stop while you still have the chance.\n
-    \nYou’ve found the records those investigators kept before their incarceration, and picked up the trail where
-        they left off. They had interviewed some of the cast and crew of <i>The King in Yellow</i>, and discovered
-        several pieces of vital information. Their research also contains notes about their discoveries in Arkham’s
-        Historical Society, and accounts from their time spent in the asylum, including interactions with a patient
-        named “Daniel Chesterfield.” After a long night of compiling and comparing notes, you fall into a deep
-        slumber. In your dreams, you are subjected to visions of Carcosa—its black stars, twin suns, shattered moons,
-        and twisted spires.\n
-    \n<b>Dream 1</b>\nYou fall through the empty abyss of Hali. Creatures of unknown and impossible origin lurk just beyond the
-        darkness of your sight. Hastur looms above you, magnificent and yet bound in his prison of madness,
-        manipulating your torturous descent with a sole outstretched arm.\n
-    \n<b>Each investigator has earned the Lost Soul weakness (<i>The Path to Carcosa #227</i>).</b>\n
-    \n<b>Dream 2</b>\nConstance takes your hand and pulls you onto the polished dance floor. “Come now, don’t be shy. Tonight is a
-        night for dancing! For celebration!”</string>
-    <string name="dream_one_two">It has been several weeks since the events in the asylum, and you are still no
-        closer to the truth about <i>The King in Yellow</i> and Carcosa. You have scoured the city for signs of the
-        others Daniel had mentioned—the ones who are “opening the path to Carcosa”—but found nothing. Either the
-        trail has gone cold, or they’re no longer in Arkham. Perhaps Daniel truly was insane, and you are only
-        following him deeper down the rabbit hole. Every night, you toss and turn as you are subjected to vivid
-        dreams of Carcosa—its black stars, twin suns, shattered moons, and twisted spires.\n
-    \n<b>Dream 1</b>\nYou fall through the empty abyss of Hali. Creatures of unknown and impossible origin lurk just beyond the
-        darkness of your sight. Hastur looms above you, magnificent and yet bound in his prison of madness,
-        manipulating your torturous descent with a sole outstretched arm.\n
-    \n<b>Each investigator has earned the Lost Soul weakness (<i>The Path to Carcosa #227</i>).</b>\n
-    \n<b>Dream 2</b>\nConstance takes your hand and pulls you onto the polished dance floor. “Come now, don’t be shy. Tonight is a
-        night for dancing! For celebration!”</string>
-    <string name="dream_five">\n<b>Dream 5</b>\nYou peer in the mirror, and your reflection gives you a curious glance. “Wait a second,
-        this isn’t <b>Dream 1</b>,” you say.</string>
-    <string name="dream_three_six">\n<b>Dream 3</b>\n“Ah, if it isn’t our esteemed guest,” the man with the mustache and the silver-handled cane says. He grabs a
-        bottle of wine from the nearby countertop and pours you a glass. “I hear you have taken quite the interest in
-        our little production,” he says with a smile. “Tell me: how are you enjoying Act 2, so far?”\n
-    \n<b>Dream 6</b>\nThe lights of the theatre dim and a spotlight shines on the stage. “Welcome, ladies and gentleman!” the
-        creature exclaims. Its many tentacles reach across the stage, up into the rafters, and throughout the aisles.
-        It tears the curtains down, and tattered red cloth falls over its bulbous form.</string>
-    <string name="dream_four_six">\n<b>Dream 4</b>\nSmoke and embers float upwards into the starless night sky. The screams of burning creatures fill you with a
-        horrid sense of accomplishment. <i>They almost sound human</i>, you consider. But you know that isn’t true.\n
-    \n<b>Dream 6</b>\nThe lights of the theatre dim and a spotlight shines on the stage. “Welcome, ladies and gentleman!” the
-        creature exclaims. Its many tentacles reach across the stage, up into the rafters, and throughout the aisles.
-        It tears the curtains down, and tattered red cloth falls over its bulbous form.</string>
-    <string name="dream_six">\n<b>Dream 6</b>\nThe lights of the theatre dim and a spotlight shines on the stage. “Welcome, ladies and gentleman!” the
-        creature exclaims. Its many tentacles reach across the stage, up into the rafters, and throughout the aisles.
-        It tears the curtains down, and tattered red cloth falls over its bulbous form.</string>
-    <string name="dream_seven_eight">\n<b>Dream 7</b>\nYou find yourself inside the Arkham Police Department, desperately trying to explain to the desk sergeant what
-        happened in the Ward Theatre. He scoffs and refuses to believe you. “We know what you’re really up to,” he
-        says, and claps a pair of handcuffs over your wrists. “You’re under arrest for larceny. Boys, take ‘em away.”
-        Several other cops flank you and prevent any escape. Your protests go unheard as you are firmly escorted down
-        a flight of concrete stairs and hurled into a cold jail cell. “Maybe some time in lockup will change your
-        story,” the desk sergeant shouts. He slams the door behind him, leaving you with your spiraling thoughts. How
-        did they find out? How could they possibly know?\n
-        \n<b>Choose an investigator. The chosen investigator has earned the Paranoia weakness (<i>Core 97</i>).</b>\n
-    \n<b>Dream 8</b>\nYou peer in the mirror, and the Stranger peers back at you. His gaze drills into your mind. The mirror
-        shatters.</string>
-    <string name="dream_eight">\n<b>Dream 8</b>\nYou peer in the mirror, and the Stranger peers back at you. His gaze drills into your mind. The mirror
-        shatters.</string>
-    <string name="dream_nine_awake">\n<b>Dream 9</b>\nYou chase the Stranger through dark, chilly passageways
-        composed of hundreds of thousands of skeletal bodies.
-        Skulls watch as you run, their mouths rattling a mocking taunt as you pass. The Stranger reaches a solid wall
-        of bone, and is grabbed by bony hands and pulled into the wall. Their mocking laughs reach an awful
-        crescendo.\n
-    \n<b>Dream 13</b>\nDaniel’s voice calls out to you. “They are opening the path to Carcosa.”\n
-    \n<b>Awakening</b>\nYou awaken from your fitful dream, sweating and gagging. This cannot go on any longer. You have only one option
-        if you are to continue your investigation. You must find Nigel Engram, director of <i>The King in Yellow</i>,
-        and architect of this madness. Only he will have the answers you seek. You pack your bags and plan your trip
-        to Paris, the City of Lights.</string>
-    <string name="dream_ten">\n<b>Dream 10</b>\nYou chase the Stranger up a steep staircase of broken stone, a torrent of rain crashing upon your back as you
-        run. Lighting flashes in the distance. A vortex of swirling black clouds looms above you, threatening to
-        swallow the world whole. The masked man dashes through a wide set of doors atop the stairs, and you follow
-        close behind. The sound of crashing thunder is muffled as the doors close behind you. Looking up, you see a
-        familiar depiction in stained glass. “Beautiful, is it not?” the Stranger says quietly.</string>
-    <string name="dream_ten_option_one">“How could any of this be beautiful to you?”</string>
-    <string name="dream_ten_option_two">“What exactly am I looking at?”</string>
-    <string name="dream_eleven_awake"><b>Dream 11</b>\nYou avoid looking at the stained glass. If this vile man considers it to be beautiful, it is probably some trap
-        meant to ensnare your mind. You clench your fist until your knuckles are white and step forward to confront
-        the Stranger.\n
-    \n<b>Dream 13</b>\nDaniel’s voice calls out to you. “They are opening the path to Carcosa.”\n
-    \n<b>Awakening</b>\nYou awaken from your fitful dream, sweating and gagging. This cannot go on any longer. You have only one option
-        if you are to continue your investigation. You must find Nigel Engram, director of <i>The King in Yellow</i>,
-        and architect of this madness. Only he will have the answers you seek. You pack your bags and plan your trip
-        to Paris, the City of Lights.</string>
-    <string name="dream_twelve_awake"><b>Dream 12</b>\nYou peer up at the stained glass, curious. What is the shape of the shadow along the window? What is the
-        meaning behind this strange design?\n
-    \n<b>Dream 13</b>\nDaniel’s voice calls out to you. “They are opening the path to Carcosa.”\n
-    \n<b>Awakening</b>\nYou awaken from your fitful dream, sweating and gagging. This cannot go on any longer. You have only one option
-        if you are to continue your investigation. You must find Nigel Engram, director of <i>The King in Yellow</i>,
-        and architect of this madness. Only he will have the answers you seek. You pack your bags and plan your trip
-        to Paris, the City of Lights.</string>
-    <string name="dream_jordan">\n<b>Jordan\'s information</b>\nAccording to Mr. Jordan Perry, who had financed several performances of <i>The King in Yellow</i> across the
-        world, Nigel Engram was an eccentric and impassioned man, almost to the point of mania. Rumor was, he hadn’t
-        directed any other works since discovering <i>The King in Yellow</i>. Jordan had first met with Mr. Engram at
-        a café in Montparnasse, “L’agneau Perdu.” You travel there first, hoping to find Mr. Engram...</string>
+    <string name="dream_one_one">Han pasado varios meses desde que <i>El Rey de Amarillo</i> se representara en el teatro
+        Ward. Tus compañeros y tú habéis estado investigando los extraños incidentes que se produjeron después. Lo que habéis
+        encontrado hace que te preguntes si es sensato proseguir la investigación, pero la verdad te llama, y no puedes evitar
+        responder a su llamada. Parece que no sois los únicos que unisteis las piezas que vinculaban los extraños acontecimientos
+        que rodean a <i>El Rey de Amarillo</i>. Otro grupo de investigadores también ha investigado estos sucesos. Unos días
+        después de la representación en Arkham, fueron ingresados en el manicomio, desvariando acerca del regreso del Rey y de los
+        “monstruos” que los habían atacado. La noticia no te sorprende. Su destino te hace estar aún más seguro de que estás
+        siguiendo el rastro correcto… Y mucho más de que deberías parar mientras aún estás a tiempo.\n
+    \nHas encontrado los documentos que tenían esos investigadores antes de su ingreso y has seguido las pistas que dejaron.
+        Habían interrogado a parte del elenco y del equipo de <i>El Rey de Amarillo</i> y descubierto varias informaciones de
+        vital importancia. su investigación también contiene notas sobre sus descubrimientos en la Sociedad Histórica de Arkham,
+        además de la narración del tiempo que pasaron en el manicomio, incluido el encuentro con un paciente llamado “Daniel
+        Chesterfield”. Tras una larga noche de recopilar y comparar notas, te quedas profundamente dormido. En tus sueños, te ves
+        sometido a visiones de Carcosa: de sus estrellas negras, soles gemelos, lunas destrozadas y torres retorcidas.\n
+    \n<b>Sueño 1</b>\nCaes por el vacío abismal de Hali. Unas criaturas de origen desconocido e imposible acechan en la oscuridad,
+        donde no puedes verlas. Hastur se alza sobre ti de forma gloriosa, pero cautivo de su prisión de locura, manipulando tu
+        tortuoso descenso con un brazo extendido.\n
+    \n<b>Todos los investigadores reciben la Debilidad “Alma perdida” (<i>El camino a Carcosa 227</i>).</b>\n
+    \n<b>Sueño 2</b>\nConstance te coge de la mano y te lleva a la reluciente pista de baile. —Vamos, que no te dé vergüenza.
+        ¡Hoy es una noche para bailar! ¡Para celebrar!</string>
+    <string name="dream_one_two">Han pasado varias semanas desde los sucesos ocurridos en el manicomio, y sigues igual de lejos de
+        la verdad sobre <i>El Rey de Amarillo</i> y Carcosa. Has registrado la ciudad en busca de algún indicio de aquellos que
+        mencionó Daniel, los que estaban “abriendo el camino a Carcosa”, pero no has encontrado nada. O el rastro se ha enfriado
+        o ya no están en Arkham. Puede que Daniel estuviera loco de verdad, y que lo único que estés haciendo sea seguirlo cada vez
+        más dentro de la madriguera del conejo. Cada noche, te agitas mientras duermes al verte expuesto a vívidos sueños de Carcosa:
+        de sus estrellas negras, soles gemelos, lunas destrozadas y torres retorcidas.\n
+    \n<b>Sueño 1</b>\nCaes por el vacío abismal de Hali. Unas criaturas de origen desconocido e imposible acechan en la oscuridad,
+        donde no puedes verlas. Hastur se alza sobre ti de forma gloriosa, pero cautivo de su prisión de locura, manipulando tu
+        tortuoso descenso con un brazo extendido.\n
+    \n<b>Todos los investigadores reciben la Debilidad “Alma perdida” (<i>El camino a Carcosa 227</i>).</b>\n
+    \n<b>Sueño 2</b>\nConstance te coge de la mano y te lleva a la reluciente pista de baile. —Vamos, que no te dé vergüenza.
+        ¡Hoy es una noche para bailar! ¡Para celebrar!</string>
+    <string name="dream_five">\n<b>Sueño 5</b>\nMiras en el espejo, y tu reflejo te observa con curiosidad. —Espera un momento,
+        éste no es el <b>Sueño 1</b> —dices.</string>
+    <string name="dream_three_six">\n<b>Sueño 3</b>\n—Vaya, vaya, si es nuestro estimado invitado —dice el hombre del bigote y
+        el bastón de mango de plata. Coge una botella de vino de una encimera cercana y te sirve un vaso—. Me han dicho que tiene
+        un gran interés por nuestra modesta producción —dice con una sonrisa—. Dígame, ¿cómo le está pareciendo el segundo acto
+        hasta ahora?\n
+    \n<b>Sueño 6</b>\nLas luces del auditorio se atenúan, y un foco ilumina el escenario. —¡Bienvenidos, damas y caballeros! —exclama
+        la criatura. Sus numerosos tentáculos recorren el escenario, llegan hasta el techo y penetran en los pasillos. Arranca el
+        telón, y una andrajosa tela roja cae sobre su bulbosa forma.</string>
+    <string name="dream_four_six">\n<b>Sueño 4</b>\nHumo y ascuas flotan hacia el cielo nocturno carente de estrellas. Los gritos de
+        criaturas que arden hacen que te invada la horrenda sensación de haberlo logrado. <i>Casi parecen gritos humanos</i>, piensas.
+        Pero sabes que no es verdad.\n
+    \n<b>Sueño 6</b>\nLas luces del auditorio se atenúan, y un foco ilumina el escenario. —¡Bienvenidos, damas y caballeros! —exclama
+        la criatura. Sus numerosos tentáculos recorren el escenario, llegan hasta el techo y penetran en los pasillos. Arranca el
+        telón, y una andrajosa tela roja cae sobre su bulbosa forma.</string>
+    <string name="dream_six">\n<b>Sueño 6</b>\nLas luces del auditorio se atenúan, y un foco ilumina el escenario. —¡Bienvenidos, damas y caballeros! —exclama
+        la criatura. Sus numerosos tentáculos recorren el escenario, llegan hasta el techo y penetran en los pasillos. Arranca el
+        telón, y una andrajosa tela roja cae sobre su bulbosa forma.</string>
+    <string name="dream_seven_eight">\n<b>Sueño 7</b>\nTe encuentras en el interior de la comisaría de policía de Arkham, tratando
+        desesperadamente de explicarle al sargento de guardia lo que ha ocurrido en el Teatro Ward. Éste hace una mueca burlona y se niega
+        a creerte: —Sabemos lo que intentas hacer —dice mientras te pone unas esposas en las muñecas—. Quedas arrestrado por robo.
+        Chicos, lleváoslo —varios agentes te rodean para evitar que huyas. Nadie escucha tus protestas mientras te llevan escaleras
+        abajo y te meten en una fría celda—. Quizás pasarte un tiempo encerrado te haga cambiar el cuento —grita el sargento de guardia.
+        Cierra la puerta de un golpe y te deja sumido en una cascada de pensamientos. ¿Cómo se han enterado? ¿Cómo han podido saberlo?\n
+        \n<b>Elige un investigador. El investigador elegido ha obtenido la Debilidad “Paranoia” (<i>Básico 97</i>).</b>\n
+    \n<b>Sueño 8</b>\nMiras en el espejo, y el Extranjero te devuelve la mirada. Sus ojos penetran en tu
+        mente. El espejo se hace pedazos.</string>
+    <string name="dream_eight">\n<b>Sueño 8</b>\nMiras en el espejo, y el Extranjero te devuelve la mirada. Sus ojos penetran en tu
+        mente. El espejo se hace pedazos.</string>
+    <string name="dream_nine_awake">\n<b>Sueño 9</b>\nPersigues al Extranjero por oscuros corredores fríos como el hielo y formados
+        por cientos de miles de esqueletos. Los cráneos te miran correr, castañateando de forma burlona sus mandíbulas cuando pasas.
+        El Extranjero llega a una pared hecha de hueso y unas manos huesudas lo agarran y lo meten en la pared. Sus burlonas risas
+        llegan a un terrible crescendo.\n
+    \n<b>Sueño 13</b>\nLa voz de Daniel te llama: —Están abriendo el camino a Carcosa.\n
+    \n<b>Despertar</b>\nDespiertas de tu agitado sueño, sudoroso y boqueante. Esto no puede continuar. Sólo tienes una opción si
+        quieres continuar tu investigación. Debes encontrar a Nigel Engram, director de <i>El Rey de Amarillo</i> y arquitecto de
+        esta locura. Sólo él tendrá las respuestas que buscas. Haces las maletas y preparas tu viaje a París, la Ciudad de la Luz.</string>
+    <string name="dream_ten">\n<b>Sueño 10</b>\nPersigues al Extranjero por una empinada escalera de piedra rota mientras una lluvia
+        torrencial descarga sobre ti mientras corres. Ves relámpagos a lo lejos. Un remolino de nubes negras se forma sobre ti,
+        amenazando con tragarse el mundo. El enmascarado atraviesa a la carrera unas anchas puertas que hay en lo alto de las
+        escaleras, y le sigues de cerca. El sonido del trueno queda amortiguado cuando las puertas se cierran a tu espalda. Al levantar
+        la vista, ves una imagen familiar en una vidriera. —¿Verdad que es precioso? —dice el Extranjero en voz baja.</string>
+    <string name="dream_ten_option_one">—¿Cómo puede resultarte precioso nada de estp?</string>
+    <string name="dream_ten_option_two">—¿Eso qué es exactamente?</string>
+    <string name="dream_eleven_awake"><b>Sueño 11</b>\nEvitas mirar la vidriera. Si este hombre malvado la considera preciosa,
+        probablemente sea una trampa para atrapar tu mente. Aprietas los puños hasta que se te ponen blancos los nudillos y avanzas
+        para enfrentarte al Extranjero.\n
+    \n<b>Sueño 13</b>\nLa voz de Daniel te llama: —Están abriendo el camino a Carcosa.\n
+    \n<b>Despertar</b>\nDespiertas de tu agitado sueño, sudoroso y boqueante. Esto no puede continuar. Sólo tienes una opción si
+        quieres continuar tu investigación. Debes encontrar a Nigel Engram, director de <i>El Rey de Amarillo</i> y arquitecto de
+        esta locura. Sólo él tendrá las respuestas que buscas. Haces las maletas y preparas tu viaje a París, la Ciudad de la Luz.</string>
+    <string name="dream_twelve_awake"><b>Sueño 12</b>\nLevantas la vista hacia la vidriera por curiosidad. ¿Qué es esa sombra que
+        hay en la ventana? ¿Qué significado tiene este extraño diseño?\n
+    \n<b>Sueño 13</b>\nLa voz de Daniel te llama: —Están abriendo el camino a Carcosa.\n
+    \n<b>Despertar</b>\nDespiertas de tu agitado sueño, sudoroso y boqueante. Esto no puede continuar. Sólo tienes una opción si
+        quieres continuar tu investigación. Debes encontrar a Nigel Engram, director de <i>El Rey de Amarillo</i> y arquitecto de
+        esta locura. Sólo él tendrá las respuestas que buscas. Haces las maletas y preparas tu viaje a París, la Ciudad de la Luz.</string>
+    <string name="dream_jordan">\n<b>Información de Jordan</b>\nSegún el Sr. Jordan Perry, que financió varias representaciones de
+        <i>El Rey de Amarillo</i> por todo el mundo, Nigel Engram era un hombre excéntrico y apasionado, rozando lo obsesivo. Se
+        rumorea que, desde que descubrió <i>El Rey de Amarillo</i>, no ha dirigido ninguna otra bora. Jordan conoció al Sr. Engram
+        en una cafetería de Montparnasse, “L’agneau perdu”. Es allí adonde vas primero, con la esperanza de poder encontrar el
+        Sr. Engram…</string>
 
-    <string name="pallid_introduction_one_one">You are stirred awake by dirty, stale air and dust in your throat. You
-        are lying on a slab of cold stone inside a lightless underground passageway. How did you get here? And where
-        is “here” exactly? A shiver courses up your body, and your hair stands on end. Rising to your feet, you take
-        stock of your surroundings. Bones decorate the walls and ceiling around you, open-mouthed skulls peering back
-        at you everywhere you look.</string>
-    <string name="pallid_introduction_one_two">You are stirred awake by dirty, stale air and dust in your throat. You
-        are lying on a slab of cold stone inside a lightless underground passageway. How did you get here? And where
-        is “here” exactly? A shiver courses up your body, and your hair stands on end. Rising to your feet, you take
-        stock of your surroundings. Bones decorate the walls and ceiling around you, open-mouthed skulls peering back
-        at you everywhere you look.\n
-    \nJust past the archway closest to you, you see a familiar symbol etched into the skull of a sheep: rows of
-        concentric semicircles, lined with exotic runes. Two wavy lines descend from the design, leading into the
-        skull’s lower jawbone. You recognize it as the pattern Haruko had shown you. Wondering why it would appear
-        here, you examine the skull in greater detail. As soon as you touch the underside of the skull’s jawbone, its
-        mouth suddenly opens. Bones collapse to the ground as the wall slides to reveal a new path.\n
-    \n<b>Remember that "you opened a secret passageway."</b></string>
-    <string name="pallid_introduction_two_one">The contents of Nigel Engram’s home answer none of your questions
-        about <i>The King in Yellow</i>, but do hint at where you should head next. The old, tattered map you found
-        on his coffee table depicts a section of the infamous Catacombs of Paris. One particular room on the map has
-        been circled with pen, and next to it is written: “The key to opening the Path lies here!” You swallow your
-        fear and head immediately for the entrance to the catacombs underneath Rue de la Tombe-Issoire.</string>
-    <string name="pallid_introduction_two_two">The contents of Nigel Engram’s home answer none of your questions
-        about <i>The King in Yellow</i>, but do hint at where you should head next. The old, tattered map you found
-        on his coffee table depicts a section of the infamous Catacombs of Paris. One particular room on the map has
-        been circled with pen, and next to it is written: “The key to opening the Path lies here!” You swallow your
-        fear and head immediately for the entrance to the catacombs underneath Rue de la Tombe-Issoire.\n
-    \nJust past the archway closest to you, you see a familiar symbol etched into the skull of a sheep: rows of
-        concentric semicircles, lined with exotic runes. Two wavy lines descend from the design, leading into the
-        skull’s lower jawbone. You recognize it as the pattern Haruko had shown you. Wondering why it would appear
-        here, you examine the skull in greater detail. As soon as you touch the underside of the skull’s jawbone, its
-        mouth suddenly opens. Bones collapse to the ground as the wall slides to reveal a new path.\n
-    \n<b>Remember that "you opened a secret passageway."</b></string>
+    <string name="pallid_introduction_one_one">Te despiertan el aire sucio y rancio y el polvo que se cuelan en tu garganta.
+        Estás tendido sobre una losa fría de piedra en un pasadizo subterráneo sin ninguna luz. ¿Cómo has llegado aquí? ¿Y
+        dónde estás exactamente? Un escalofrío te recorre el cuerpo, y se te ponen los pelos de punta. Al levantarte, examinas
+        tus alrededores. Las paredes y el techo están decorados con huesos, y ves cráneos con la boca abierta que te devuelven
+        la mirada allí donde pones los ojos.</string>
+    <string name="pallid_introduction_one_two">Te despiertan el aire sucio y rancio y el polvo que se cuelan en tu garganta.
+        Estás tendido sobre una losa fría de piedra en un pasadizo subterráneo sin ninguna luz. ¿Cómo has llegado aquí? ¿Y
+        dónde estás exactamente? Un escalofrío te recorre el cuerpo, y se te ponen los pelos de punta. Al levantarte, examinas
+        tus alrededores. Las paredes y el techo están decorados con huesos, y ves cráneos con la boca abierta que te devuelven
+        la mirada allí donde pones los ojos.\n
+    \nDespués del arco más cercano, ves un símbolo familiar grabado en el cráneo de una oveja: filas de semicírculos concéntricos
+        y runas exóticas. Dos líneas onduladas bajan desde el diseño hacia la mandíbula inferior del cráneo. Reconoces el dibujo
+        que te mostró Haruko. Preguntándote por qué aparece aquí, examinas el cráneo con atención. En cuanto tocas la parte
+        inferior de la mandíbula del cráneo, su boca se abre de repente. Varios huesos caen al suelo cuando la pared se desliza
+        para revelar un nuevo camino.\n
+    \n<b>Recuerda que “los investigadores abrieron un pasadizo secreto”.</b></string>
+    <string name="pallid_introduction_two_one">Lo que contenía la casa de Nigel Engram no responde a ninguna de tus preguntas
+        sobre <i>El Rey de Amarillo</i>, pero sí te da una pista de tu siguiente destion. El viejo y raído mapa que encontraste
+        en la mesita muestra una sección de infames catacumbas de París. Una de las salas del mapa está rodeada por un círculo
+        a bolígrafo, y junto a ella hay escrito: “¡Aquí está la llave para abrir el camino!”. Te tragas el miedo y te diriges
+        inmediatamente a la entrada de las catacumbas que hay bajo la Rue de la Tombe-Issoire.</string>
+    <string name="pallid_introduction_two_two">Lo que contenía la casa de Nigel Engram no responde a ninguna de tus preguntas
+        sobre <i>El Rey de Amarillo</i>, pero sí te da una pista de tu siguiente destion. El viejo y raído mapa que encontraste
+        en la mesita muestra una sección de infames catacumbas de París. Una de las salas del mapa está rodeada por un círculo
+        a bolígrafo, y junto a ella hay escrito: “¡Aquí está la llave para abrir el camino!”. Te tragas el miedo y te diriges
+        inmediatamente a la entrada de las catacumbas que hay bajo la Rue de la Tombe-Issoire.\n
+    \nDespués del arco más cercano, ves un símbolo familiar grabado en el cráneo de una oveja: filas de semicírculos concéntricos
+        y runas exóticas. Dos líneas onduladas bajan desde el diseño hacia la mandíbula inferior del cráneo. Reconoces el dibujo
+        que te mostró Haruko. Preguntándote por qué aparece aquí, examinas el cráneo con atención. En cuanto tocas la parte
+        inferior de la mandíbula del cráneo, su boca se abre de repente. Varios huesos caen al suelo cuando la pared se desliza
+        para revelar un nuevo camino.\n
+    \n<b>Recuerda que “los investigadores abrieron un pasadizo secreto”.</b></string>
 
 
 
@@ -688,64 +684,60 @@
         si fuera un Apoyo <b><i>Coraje</i></b> de coste 0, sin iconos y con 2 puntos de cordura. Descarta esta carta si abandona
         el juego por cualquier motivo.</string>
 
-    <string name="phantom_sets">A Phantom of Truth, Evil Portents, Byakhee, The Stranger, Agents of Hastur, and The
-        Midnight Masks.\n
-    \nWhen gathering The Midnight Masks encounter set, only gather the 5 treachery cards (2x False Lead and 3x
-        Hunting Shadow).</string>
-    <string name="phantom_locations_one">Choose one of the two Montmartre locations, one of the two Opéra Garnier
-        locations, and one of the two Le Marais locations, at random. Put the chosen locations into play. Remove the
-        other versions of those locations from the game.\n
-    \nPut the remaining locations (Montparnasse, Gare d\’Orsay, Grand Guignol, Canal Saint-Martin, Père Lachaise
-        Cemetery, Notre-Dame, and Gardens of Luxembourg) into play.\n
-    \nEach investigator begins play at Gare d\'Orsay.\n</string>
-    <string name="phantom_locations_two">Choose one of the two Montmartre locations, one of the two Opéra Garnier
-        locations, and one of the two Le Marais locations, at random. Put the chosen locations into play. Remove the
-        other versions of those locations from the game.\n
-    \nPut the remaining locations (Montparnasse, Gare d\’Orsay, Grand Guignol, Canal Saint-Martin, Père Lachaise
-        Cemetery, Notre-Dame, and Gardens of Luxembourg) into play.\n
-    \nEach investigator begins play at Montparnasse.\n</string>
-    <string name="phantom_set_aside">The Organist, and any remaining copies of the Lost Soul weakness.\n</string>
-    <string name="phantom_additional_one">Search the gathered encounter sets for both copies of Twin Suns and all 3
-        copies of Hunting Shadow, and remove them from the game.\n
-    \nUse Act 1—The Parisian Conspiracy (v. I).</string>
-    <string name="phantom_additional_two">Search the gathered encounter sets for both copies of Black Stars Rise and
-        both copies of False Lead, and remove them from the game.\n
-    \nUse Act 1—The Parisian Conspiracy (v. II).</string>
-    <string name="phantom_additional_one_jordan">Search the gathered encounter sets for both copies of Twin Suns and all 3
-        copies of Hunting Shadow, and remove them from the game.\n
-    \nUse Act 1—The Parisian Conspiracy (v. I).\n
-    \nEach investigator begins the game with 3 additional resources.</string>
-    <string name="phantom_additional_two_jordan">Search the gathered encounter sets for both copies of Black Stars Rise and
-        both copies of False Lead, and remove them from the game.\n
-    \nUse Act 1—The Parisian Conspiracy (v. II).\n
-    \nEach investigator begins the game with 3 additional resources.</string>
+    <string name="phantom_sets">El fantasma de la Verdad, Portentos malignos, Byakhee, El Extranjero, Agentes de Hastur y Las
+        máscaras de medianoche.\n
+    \nAl reunir el conjunto de encuentros Las máscaras de medianoche, coge sólo las 5 cartas de Traición (2x Pista falsa y 3x
+        Sombra acechante).</string>
+    <string name="phantom_locations_one">Elige al azar 1 de los 2 Lugares “Montmartre”, 1 de los 2 Lugares “Ópera Garnier” y 1
+        de los 2 Lugares “Le Marais”. Pon en juego los Lugares elegidos. Retira de la partida las otras versiones de esos Lugares.\n
+    \nPon en juego los Lugares restantes (Montparnasse, Gare d\’Orsay, Grand Guignol, Canal Saint-Martin, Cementerio Père Lachaise,
+        Notre-Dame y Jardines de Luxemburgo).\n
+    \nCada investigador comienza la partida en la Gare d\'Orsay.\n</string>
+    <string name="phantom_locations_two">Elige al azar 1 de los 2 Lugares “Montmartre”, 1 de los 2 Lugares “Ópera Garnier” y 1
+        de los 2 Lugares “Le Marais”. Pon en juego los Lugares elegidos. Retira de la partida las otras versiones de esos Lugares.\n
+    \nPon en juego los Lugares restantes (Montparnasse, Gare d\’Orsay, Grand Guignol, Canal Saint-Martin, Cementerio Père Lachaise,
+        Notre-Dame y Jardines de Luxemburgo).\n
+    \nCada investigador comienza la partida en Montparnasse.\n</string>
+    <string name="phantom_set_aside">El organista, y cada copia restante de la Debilidad “Alma perdida”.\n</string>
+    <string name="phantom_additional_one">Busca las 2 copias de Soles gemelos y las 3 copias de Sombra acechante en los conjuntos
+        de encuentros reunidos y retíralas de la partida.\n
+    \nUsa el Acto 1 — La conspiración parisina (v.I)</string>
+    <string name="phantom_additional_two">Busca las 2 copias de Surgen estrellas negras y de Pista falsa y retíralas de la partida.\n
+    \nUsa el Acto 1 — La conspiración parisina (v.II)</string>
+    <string name="phantom_additional_one_jordan">Busca las 2 copias de Soles gemelos y las 3 copias de Sombra acechante en los conjuntos
+        de encuentros reunidos y retíralas de la partida.\n
+    \nUsa el Acto 1 — La conspiración parisina (v.I)\n
+    \nCada investigador comienza la partida con 3 recursos adicionales.</string>
+    <string name="phantom_additional_two_jordan">Busca las 2 copias de Surgen estrellas negras y de Pista falsa y retíralas de la partida.\n
+    \nUsa el Acto 1 — La conspiración parisina (v.II)\n
+    \nCada investigador comienza la partida con 3 recursos adicionales.</string>
 
-    <string name="pallid_sets">The Pallid Mask, Ghouls, Hauntings, and Chilling Cold.</string>
-    <string name="pallid_locations_one">Find the Tomb of Shadows and the Blocked Passage (each one is the revealed
-        side of a Catacombs location). Set them aside, out of play.\n
-    \nPut a random Catacombs location (other than the set-aside Tomb of Shadows or Blocked Passage) into play,
-        Catacombs side faceup. For the remainder of the scenario, that location is referred to as “the starting
-        location.” Place a resource token on this location to mark it as the starting location. <b>Do not place
-        investigators here yet.</b>\n
-    \nShuffle the set-aside Tomb of Shadows, the set-aside Blocked Passage, and 3 other Catacombs locations together
-        to form the bottom 5 cards of the Catacombs Deck, Catacombs side faceup.\n
-    \nThen, place all of the other Catacombs locations on top, in a random order. All of the cards in the Catacombs
-        Deck should be showing only the Catacombs side, so that the players do not know which is which.\n
-    \nEach investigator begins play at the starting location. <i>(Remember to trigger the Forced effect on that location
-        when it is revealed.)</i>\n</string>
-    <string name="pallid_locations_two">Find The Gate to Hell (it is the revealed side of a Catacombs location). Put
-        The Gate to Hell into play, Catacombs side faceup. For the remainder of the scenario, The Gate to Hell is
-        referred to as “the starting location.” Place a resource token on The Gate to Hell to mark it as the starting
-        location. <b>Do not place investigators here yet.</b>\n
-    \nShuffle the set-aside Tomb of Shadows, the set-aside Blocked Passage, and 3 other Catacombs locations together
-        to form the bottom 5 cards of the Catacombs Deck, Catacombs side faceup.\n
-    \nThen, place all of the other Catacombs locations on top, in a random order. All of the cards in the Catacombs
-        Deck should be showing only the Catacombs side, so that the players do not know which is which.\n
-    \nEach investigator begins play at the starting location. <i>(Remember to trigger the Forced effect on that location
-        when it is revealed.)</i>\n</string>
-    <string name="pallid_set_aside">The bearer of The Man in the Pallid Mask weakness searches his or her deck for it
-        and sets it aside, out of play.\n</string>
-    <string name="pallid_additional">Choose a Catacombs location adjacent to the starting location and reveal it.</string>
+    <string name="pallid_sets">La máscara pálida, Gules, Apariciones y Frío helador.</string>
+    <string name="pallid_locations_one">Busca la Tumba de sombras y el Pasadizo bloqueado (son lados revelados de un Lugar
+        “Catacumbas”). Ponlos aparte, fuera de juego.\n
+    \nPon en juego un Lugar “Catacumbas” aleatorio (que no sea la Tumba de sombras ni el Pasadizo bloqueado puestos aparte),
+        con el lado Catacumbas boca arriba. Durante el resto del escenario, se hará referencia a ese Lugar como “el Lugar inicial”.
+        Pon una ficha de Recursos sobre este Lugar para indicar que se trata del Lugar inicial. <b>No coloques aún a los investigadores
+        aquí.</b>\n
+    \nAñade la Tumba de sombras y el Pasadizo bloqueado puestos aparte a otros 3 Lugares “Catacumbas” y barájalos para tener las
+        5 cartas inferiores del mazo de Catacumbas, con el lado Catacumbas boca arriba.\n
+    \nA continuación, coloca todos los demás Lugares “Catacumbas” sobre ellos, en orden aleatorio. Todas las cartas del mazo de
+        Catacumbas deben mostrar sólo el lado Catacumbas, de forma que los jugadores no sepan cuál es cuál.
+    \nCada investigador comienza la partida en el Lugar inicial <i>(recuerda activar el efecto <b>Obligado</b> de ese Lugar cuando
+        sea revelado).</i>\n</string>
+    <string name="pallid_locations_two">Busca La puerta al Infierno (es una lado revelado de un Lugar “Catacumbas”). Pon en juego
+        La puerta al Infierno, con el lado Catacumbas boca arriba. Durante el resto del escenario, se hará referencia a ese Lugar
+        como “el Lugar inicial”. Pon una ficha de Recursos sobre este Lugar para indicar que se trata del Lugar inicial. <b>No
+        coloques aún a los investigadores aquí.</b>\n
+    \nAñade la Tumba de sombras y el Pasadizo bloqueado puestos aparte a otros 3 Lugares “Catacumbas” y barájalos para tener las
+        5 cartas inferiores del mazo de Catacumbas, con el lado Catacumbas boca arriba.\n
+    \nA continuación, coloca todos los demás Lugares “Catacumbas” sobre ellos, en orden aleatorio. Todas las cartas del mazo de
+        Catacumbas deben mostrar sólo el lado Catacumbas, de forma que los jugadores no sepan cuál es cuál.
+    \nCada investigador comienza la partida en el Lugar inicial <i>(recuerda activar el efecto <b>Obligado</b> de ese Lugar cuando
+        sea revelado).</i>\n</string>
+    <string name="pallid_set_aside">El afectado por la Debilidad “El hombre de la máscara pálida” la busca en su mazo y la pone
+        aparte, fuera del juego.\n</string>
+    <string name="pallid_additional">Elige un Lugar “Catacumbas” adyacente al Lugar inicial y revélalo.</string>
 
 
     <!--Scenario resolutions-->
@@ -1099,105 +1091,107 @@
         name="unspeakable_resolution_onyx"><b>Elige a un nuevo investigador para que lleve el broche. Ese investigador
         debe incluir la Debilidad “Broche de ónice negro” en su mazo.</b></string>
 
-    <string name="phantom_no_resolution">You lose track of yourself within the city as you flee for your life. Your
-        feet move of their own accord. The beating of sinewy wings and screeching of creatures above you spurs you
-        onward. Soon you find yourself running down a narrow avenue, passing a set of heavy iron gates. You are in a
-        dead end—a court with tall, old houses on either side. You turn back toward the entrance to find the shapes
-        of many winged creatures barring your path. They are perched on the gates and on the balconies above,
-        awaiting your doom. Walking with cold, sinister confidence, the man in black opens the iron gate and enters
-        the court. His face gleams in the darkness. His eyes pierce your soul. For a moment, you recognize him for
-        what he truly is. It is the last you remember of that night.\n
-    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Elder Thing tokens to the chaos
-            bag.</b></string>
-    <string name="phantom_resolution_one">You can only assume this house belongs to Nigel Engram, the director of <i>The
-        King in Yellow</i>. At last, you have finally found your quarry…and yet, it is little relief to your
-        straining sanity. You feel like a dog being led by a leash, your fate decided by a cruel master who has long
-        kept you in the dark. You push these gloomy thoughts to the back of your mind and knock on Mr. Engram’s door.
-        There is no response but a flock of magpies that scatter from the rooftop at the sudden noise. You try the
-        doorknob, hoping you won’t have to resort to more forceful measures. To your surprise, you find the door
-        unlocked.\n
-    \nInside, Nigel’s home is a mess of notes, old books, and strange diagrams. Covering the coffee table in his
-        living room is an old, faded map, bearing many fold creases and tattered edges. It looks to be an incomplete
-        map of the catacombs beneath Paris, or at least a section of it. The food in his pantry is old and rotten.
-        There is no sign of anyone having lived here for years, and yet the ink upon the living room walls is wet and
-        fresh. Over and over, across nearly every inch of the wallpaper, it reads:\n
-    \n<center>He is already here.</center>\n
-    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Cultist tokens to the chaos
-            bag.</b></string>
-    <string name="phantom_resolution_two">You can only assume this house belongs to Nigel Engram, the director of
-        <i>The King in Yellow</i>. At last, you have finally found your quarry…and yet, it is little relief to your
-        straining sanity. You feel like a dog being led by a leash, your fate decided by a cruel master who has long
-        kept you in the dark. You push these gloomy thoughts to the back of your mind and knock on Mr. Engram’s door.
-        A flock of magpies scatters from the rooftop at the sudden noise. Then, to your surprise, the door opens.\n
-    \nAcross the threshold of the doorway stands a tall man with a thick, brown mustache. A familiar silver-handled
-        cane leans against the wall next to his coat hanger. “So it’s you,” he says. “Come in. I have expected you
-        for some time now.” He turns away and walks toward his kitchen. You can hear a teapot whistling, as though
-        he’d been preparing for your arrival.\n
-    \nYou enter his home, unsure of what to do next. This gentle, unassuming man is not quite what you had expected.
-        Nigel’s home is a mess of notes, old books, and strange diagrams. Covering the coffee table in his living
-        room is an old, faded map, bearing many fold creases and tattered edges. It looks to be an incomplete map of
-        the catacombs beneath Paris, or at least a section of it. Mr. Engram returns moments later with hot tea and a
-        plate of cheese and crackers. “I assume you are here to find the path to Carcosa?” he asks, wearing an
-        excited grin. You shake your head in response, but he doesn’t seem to notice. He paces back and forth around
-        the room as he speaks rapidly. “He told me that you would be arriving soon. That I should… Prepare.” Nigel
-        turns toward you as he reaches the wooden door across from you, his eyes flashing. “Don’t worry. All is
-        ready. The way is paved.” He opens the door to his study and steps inside, leaving you behind to interpret
-        his cryptic comments. You wait a few minutes for him to return, but when he does not, you begin to worry.
-        Then you notice that mold has already begun to grow over the cheese he’d brought you. “Mr. Engram?” you call
-        out, and you hesitantly knock on the door to his study. There is no response. When you enter the room, you
-        find him hanging from the ceiling fan, his body rotting from weeks of decomposition.\n
-    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Tablet tokens to the chaos
-            bag.</b></string>
-    <string name="phantom_resolution_three">As the sun rises once more over the skyline of Paris, you lose sight of
-        the mysterious figure. Frustrated at your failure, you return to your hotel to sleep and recover from the
-        horrors of the past few nights. Your fitful dreams return—dreams of Carcosa, of the King in Tatters, and of
-        the shadowy figure whom you had pursued through the streets of Paris. When you awaken, you are no longer in
-        your hotel room.\n
-    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Elder Thing tokens to the chaos
-            bag.</b></string>
+    <string name="phantom_no_resolution">Ni siquiera miras por dónde vas mientras huyes por la ciudad para ponerte a
+        salvo. Tus pies se mueven solos. El batir de unas alas fuertes y el chillido de las criaturas que te sobrevuelan
+        te hacen ir más rápido. Pronto te encuentras corriendo por una estrecha avenida, por unos pesados portones de
+        hierro. Estás en un callejón sin salida; un patio con altas casas antiguas en todos sus lados. Te vuelves hacia
+        la entrada y ves las siluetas de muchas criaturas aladas que te bloquean el paso. Están posadas en los portones
+        y en los balcones de los pisos superiores, esperando tu muerte. Caminando con fría y siniestra confianza, el hombre
+        de negro abre el portón de hierro y entra en el patio. Su rostro brilla en la oscuridad. Sus ojos atraviesan el
+        alma. Durante un instante, reconoces su verdadero ser. Es lo último que recuerdas de esa noche.\n
+    \n<b>Retira todas las fichas Sectario, Lápida y Antiguo de la bolsa de caos. A continuación, añade 2 fichas Antiguo
+        a la bolsa de caos.</b></string>
+    <string name="phantom_resolution_one">Supones que esta casa pertenece a Nigel Engram, el director de <i>El Rey de
+        Amarillo</i>. Por fin has encontrado tu objetivo… y aun así, no alivia tu forzada cordura. Te sientes como un
+        perro al que llevan de una correa, con tu destino decidido por un cruel amo que te mantiene en la ignorancia.
+        Apartas estos pesimistas pensamientos de tu mente y llamas a la puerta del Sr. Engram. No hay respuesta, pero
+        una bandada de urracas sale volando del tejado por el ruido. Agarras el picaporte, esperando no tener que recurrir
+        a la fuerza, pero, para tu sorpresa, la puerta está abierta.\n
+    \nEl interior del hogar de Nigel es un batiburrillo de notas, viejos libros y extraños diagramas. Sobre la mesita
+        de su sala de estar hay un viejo mapa desvaído con muchos dobleces y bordes desgastados. Parece un mapa incompleto
+        de las catacumbas que hay bajo París, o al menos parte de ellas. La comida de la despensa lleva allí mucho tiempo
+        y está podrida. No parece que nadie haya vivido aquí desde hace años, y aun así, la tinta de las paredes de la
+        sala de estar está húmeda y parece fresca. Cada centímetro del papel pintado está cubierto por una frase que se
+        repite una y tora vez:\n
+    \n<center>Ya está aquí.</center>\n
+    \n<b>Retira todas las fichas Sectario, Lápida y Antiguo de la bolsa de caos. A continuación, añade 2 fichas Sectario
+        a la bolsa de caos.</b></string>
+    <string name="phantom_resolution_two">>Supones que esta casa pertenece a Nigel Engram, el director de <i>El Rey de
+        Amarillo</i>. Por fin has encontrado tu objetivo… y aun así, no alivia tu forzada cordura. Te sientes como un
+        perro al que llevan de una correa, con tu destino decidido por un cruel amo que te mantiene en la ignorancia.
+        Apartas estos pesimistas pensamientos de tu mente y llamas a la puerta del Sr. Engram. No hay respuesta, pero
+        una bandada de urracas sale volando del tejado por el ruido. Para tu sorpresa, la puerta se abre.\n
+    \nEn el umbral de la puerta se encuentra un hombre alto con un poblado bigoté marrón. Junto al perchero hay un familiar
+        bastón con mango de plata apoyado en la pared. —Así que eres tú —dice el hombre—. Pasa. Llevo tiempo esperándote
+        —Se gira y camina hacia la cocina. Oyes el silbido de una tetera, como si hubiera preparado tu llegada.\n
+    \nEntras en su casa sin saber muy bien qué hacer. Este amable y sencillo hombre no es precisamente como esperabas. El
+        interior del hogar de Nigel es un batiburrillo de notas, viejos libros y extraños diagramas. Sobre la mesita de
+        su sala de estar hay un viejo mapa desvaído con muchos dobleces y bordes desgastados. Parece un mapa incompleto
+        de las catacumbas que hay bajo París, o al menos parte de ellas. El Sr. Engram regresa poco después con té caliente
+        y un plato de queso y galletas saladas. —¿Has venido para encontrar el camino hacia Carcosa? —pregunta con una
+        sonrisa de emoción. Sacudes la cabeza como respuesta, pero no parece darse cuenta. Va de un lado para otro de la
+        habitación mientras habla rápidamente—. Me dijo que llegarías pronto. Que debería… prepararme —Nigel se vuelve
+        hacia ti con los ojos brillantes mientras extiende la mano hacia la puerta de madera que tienes enfrente—. No te
+        preocupes. Todo está listo. El camino está creado —Abre la puerta de su estudio y entra, dejándote fuera mientras
+        tratas de interpretar sus enigmáticos comentarios. Esperas unos minutos a que vuelva, pero al ver que no lo hace,
+        comienzas a preocuparte. Entonces te das cuenta de que ya ha empezado a aparecer moho sobre el queso que ha traído—.
+        ¿Señor Engram? —le llamas, y das unos golpecitos en la puerta del estudio. No hay respuesta. Cuando entras en la
+        habitación le encuentras ahorcado del ventilador del techo, podrido tras semanas de descomposición.\n
+    \n<b>Retira todas las fichas Sectario, Lápida y Antiguo de la bolsa de caos. A continuación, añade 2 fichas Lápida
+        a la bolsa de caos.</b></string>
+    <string name="phantom_resolution_three">Cuando el sol vuelve a salir sobre los tejados de París, pierdes de vista la
+        misteriosa figura. Frustrado por tu fracaso, vuelves a tu hotel para dormir y recuperarte de los horrores de las
+        noches pasadas. Tus agitados sueños regresan: sueños de Carcosa, del Rey Andrajoso y de la sombría figura a la
+        que perseguiste por las calles de París. Cuando despiertas, no estás en tu habitación del hotel.\n
+    \n<b>Retira todas las fichas Sectario, Lápida y Antiguo de la bolsa de caos. A continuación, añade 2 fichas Antiguo
+        a la bolsa de caos.</b></string>
 
-    <string name="pallid_no_resolution">You are shaken awake by a police officer and lifted to your feet. You feel as
-        though the weight of a train has slammed into your head. The pain is unbearable. The man shines a flashlight
-        in your eyes and asks you several questions in French. Dazed as you are, you find it difficult to answer. He
-        points toward the staircase nearby and pushes you away from the catacombs. You stumble onto the Rue de la
-        Tombe-Issoire and slowly make your way to a hotel where you can stay the night.\n
-    \nSeveral days of research later, the meaning of the strange diagrams you saw within the catacombs still escapes
-        you. You feel as though you have been led on a wild goose chase. Just as you are about to give up, you see a
-        faded yellow book on the table nearest to you. You are stunned to discover that it is the unabridged script
-        of <i>The King in Yellow</i>. Drawn on the cover in black ink is the very same diagram whose meaning you have
-        been struggling to interpret for several sleepless nights. Who had placed it here? How had it come to your
-        hotel room? Regardless, you know what you must do. The play holds the secrets—it has all along—and yet like a
-        fool you have avoided reading Act II out of superstition. Its words cannot harm you any more than the
-        creatures and fanatics you have already encountered. Trembling, you open to the second part, and begin to
-        read.\n
-    \n<b>Each investigator must choose whether or not to read Act II of <i>The King in Yellow</i>. At least one
-            investigator must read Act II. Record below which investigators read Act II. Each investigator who read Act
-            II searches the collection for a random basic Madness or Pact weakness, and adds it to his or her deck
-            (does not count toward deck size). Each investigator who read Act II earns 2 additional experience as
-            they gain insight into the machinations of the Tattered King.</b></string>
-    <string name="pallid_resolution_one">The burned skull holds the key to everything. You are sure of it. You have
-        tried every method available to you in studying the diagram it bears, but the answer eludes you still. You
-        have brought the skull to experts, occultists, and professors. You have even tried speaking with the skull on
-        more than one occasion. Exasperated, you place the skull on your night table and try to get some sleep for
-        the first time since escaping the catacombs. As you fall asleep, you cannot shake the sight of the diagram
-        etched in the skull’s forehead.\n
-    \nYou awaken with a spark of inspiration and rush to the Musée du Louvre, a famous Parisian museum housing tens
-        of thousands of paintings, drawings, and archaeological finds. You spend days exploring the museum—every
-        display, every collection, every single object of art that might hold a clue to the diagram’s meaning.
-        Finally, you see it: a painting depicting a beautiful island town weathering a torrential storm. Waves crash
-        against the stone of the outer wall, the tide threatening to swallow the island whole. Lightning flashes
-        around the tower of the abbey above the village. A whirlwind of black clouds churns in the sky above. The
-        diagram from the burned skull you hold in your hands is recreated perfectly in the stained glass of the
-        abbey. The title of the piece is “The Path Is Open.”</string>
-    <string name="pallid_resolution_two">You fall ceaselessly through the empty abyss. No air slows your descent or
-        courses through your hair. It is a passageway devoid of reality. Finally, you pass through an invisible
-        gateway and enter another realm. Looming above and below you are two skylines, one a warped reflection of the
-        other. A vortex of swirling black clouds and crashing waves lies in between them. You study both sides—the
-        familiar city and its strange mirror. Could this be the path to Carcosa? A passageway between realities,
-        where realms converge? If so, all that is left is to find where this gate appears on Earth. You fall into the
-        vortex below.\n
-    \nYou are shaken awake by a police officer and lifted to your feet. You feel as though the weight of a train has
-        slammed into your head. The pain is unbearable. The man shines a flashlight in your eyes and asks you several
-        questions in French. Your eyes widen with realization and you wrest your arm free from the confused man’s
-        grip. “I have to go at once!”</string>
+    <string name="pallid_no_resolution">Te despierta el zarandeo de un agente de policía que te pone en pie. Te sientes
+        como si un tren se hubiera estrellado contra tu cabeza. El dolor es insoportable. El hombre te apunta con una 
+        linterna a los ojos y te hace varias preguntas en francés. Conmocionado como estás, te resulta difícil responder.
+        Señala la escalera cercana y te saca a empujones de las catacumbas. Sales a trompicones a la Rue de la Tombe-Issoire
+        y te diriges lentamente hacia un hotel en el que puedas pasar la noche.\n
+    \nTras varios días de investigación, sigues sin entender el significado de los extraños diagramas que viste en las
+        catacumbas. Notas como si te hubieran puesto a buscar una aguja en un pajar. Cuando está a punto de darte por vencido,
+        ves un desvaído libro amarillo en la mesa que tienes más cerca. Te asombra descubrir que es el guion completo de
+        <i>El Rey de Amarillo</i>. Dibujado con tinta negra en la portada vez el mismo diagrama cuyo significado llevas
+        tratando de interpretar varias noches insomnes. ¿Quién lo ha puesto aquí? ¿Cómo ha llegado a tu habitación? Independientemente
+        de eso, sabes lo que debes hacer. La obra contiene los secretos, lo ha hecho todo el tiempo, y aun así, como un
+        idiota, has evitado leer el segundo acto por pura superstición. Sus palabras no pueden dañarte más que las criaturas
+        y fanáticos que has encontrado. Tembloroso, abres la segunda parte y comienzas a leer.\n
+    \n<b>Cada investigador debe elegir si lee o no el segundo acto de <i>El Rey de Amarillo</i>. Al menos 1 investigador
+        debe leer el segundo acto. Anota aquí abajo el nombre de cada investigador que eligiera leer el segundo acto. Cada
+        investigador que lea el segundo acto busca en su colección una Debilidad básica aleatoria <i>Locura</i> o <i>Pacto</i>
+        y la añade a su mazo. Esta Debilidad no cuenta para el tamaño del mazo. Cada investigador que lea el segundo acto
+        obtiene 2 puntos de experiencia adicionales por recibir información sobre las maquinaciones del Rey Andrajoso.</b>\n
+    \n<b>Retira todas las fichas Sectario, Lápida y Antiguo de la bolsa de caos. A continuación, añade 2 fichas Antiguo
+        a la bolsa de caos.</b></string>
+    <string name="pallid_resolution_one">El cráneo calcinado es la clave de todo. Estás seguro. Has intentado todos los
+        métodos que tienes a tu disposición para estudiar el diagrama que lleva, pero se te sigue escapando la respuesta.
+        Has llevado el cráneo a expertos, ocultistas y profesores. Incluso has tratado de hablar con el cráneo en más de
+        una ocasión. Exasperado, colocas el cráneo en tu mesilla de noche y tratas de dormir por primera vez desde que
+        escapaste de las catacumbas. Cuando te quedas dormido, no logras borrar la imagen del diagrama grabado en la frente
+        del cráneo.\n
+    \nTe despiertas con una chispa de inspiración y te diriges corriendo al Museé du Louvre, un famoso museo parisino que
+        alberga decenas de miles de cuadros, dibujos y hallazgos arqueológicos. Pasas días explorando el museo; cada exposición,
+        colección y objeto de arte que podría contener alguna pista sobre el significado del diagrama. Por fin lo ves: un
+        cuadro que muestra una preciosa ciudad isleña que soporta una tormenta torrencial. Las olas chocan contra la piedra
+        de la muralla exterior, y la marea amenaza con engullir la isla entera. Hay destellos de relámpagos alrededor de la
+        torre de la abadía que hay sobre la aldea. Un remolino de nubes negras gira en el cielo. El diagrama del cráneo
+        quemado que tienes en las manos aparece perfectamente recreado en una vidriera de la abadía. El título del cuadro es
+        “El camino está abierto”.\n
+    \n<b>Retira todas las fichas Sectario, Lápida y Antiguo de la bolsa de caos. A continuación, añade 2 fichas Sectario
+        a la bolsa de caos.</b></string>
+    <string name="pallid_resolution_two">Caes sin cesar por un abismo vacío. No hay aire que ralentice tu descenso ni recorra
+        tu pelo. Es un pasaje desprovisto de realidad. Por fin, atraviesas un portal invisible y entras en otro reino. Por encima
+        y por debajo de ti hay dos firmamentos, y uno es el distorsionado reflejo del otro. Entre ellos se encuentra un
+        remolino de nubes negras y olas rompientes. Estudias ambos lados: la familiar ciudad y su extraño reflejo. ¿Podría ser
+        éste el camino a Carcosa? ¿Un pasaje entre realidades, donde convergen los reinos? Si es así, todo lo que debes hacer
+        es encontrar dónde aparece este portal en la Tierra. Te precipitas al vórtice que tienes debajo.\n
+    \nTe despierta el zarandeo de un agente de policía que te pone en pie. Te sientes como si un tren se hubiera estrellado
+        contra tu cabeza. El dolor es insoportable. El hombre te apunta con una linterna a los ojos y te hace varias preguntas
+        en francés. Abres los ojos como platos al comprenderlo todo, y te sueltas del agarre del confundido hombre. —¡Debo irme
+        de inmediato!\n
+    \n<b>Retira todas las fichas Sectario, Lápida y Antiguo de la bolsa de caos. A continuación, añade 2 fichas Lápida
+        a la bolsa de caos.</b></string>
 </resources>
