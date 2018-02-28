@@ -8,7 +8,7 @@
 
 
     <!--Miscellaneous-->
-    <string name="ghoul_priest_additional">Mélangez le Prêtre Goule dans le deck Rencotnre.\n\n</string>
+    <string name="ghoul_priest_additional">Mélangez le Prêtre Goule dans le deck Rencontre.\n\n</string>
     <string name="ghoul_priest_checkbox">Le Prêtre Goule est tué.</string>
     <string name="cultists_interrogated">Cultistes interrogé s: \n</string>
     <string name="cultists_interrogated_resolution">Cultistes interrogés</string>
@@ -26,7 +26,7 @@
     <string name="ghoul_priest_alive">Le Prêtre Goule est toujours vivant.\n\n</string>
     <string name="lita_forced"> Lita a dû trouver d’autres personnes pour soutenir sa cause.\n\n</string>
     <string name="past_midnight">Il est minuit passé.\n\n</string>
-    <string name="drew_log">\t\t"Wolf-Man" Drew\n</string>
+    <string name="drew_log">\t\t « Wolf-Man » Drew\n</string>
     <string name="herman_log">\t\tHerman Collins\n</string>
     <string name="peter_log">\t\tPeter Warren\n</string>
     <string name="victoria_log">\t\tVictoria Devereux\n</string>
@@ -45,40 +45,40 @@
     <string name="ghoul_heading">Prêtre Goule</string>
     <string name="ghoul_priest_dead">Le Prêtre Goule a été tué.</string>
     <string name="lita_heading">Lita Chantler</string>
-    <string name="lita_not_obtained">Vous n\'avez pas rejoint Lita pour soutenir sa cause.</string>
+    <string name="lita_not_obtained">Vous n’avez pas rejoint Lita pour soutenir sa cause.</string>
     <string name="lita_obtained">Vous avez rejoint Lita pour soutenir sa cause.</string>
     <string name="midnight_heading">Minuit</string>
-    <string name="not_past_midnight">Il n\'est pas minuit passé.</string>
+    <string name="not_past_midnight">Il n’est pas minuit passé.</string>
     <string name="conclusion">Conclusion d la Campagne</string>
 
 
 	 <!--Chaos bag-->
-    <string name="gathering_skull_one">-X. X est le nombre d\'ennemis <b><i>Goule</i></b> dans votre lieu.</string>
-    <string name="gathering_skull_two">-2. En cas d\'échec, après ce test de compétence, cherchez un ennemi <b><i>Goule</i></b>
+    <string name="gathering_skull_one">-X. X est le nombre d’ennemis <b><i>Goule</i></b> dans votre lieu.</string>
+    <string name="gathering_skull_two">-2. En cas d’échec, après ce test de compétence, cherchez un ennemi <b><i>Goule</i></b>
 		dans le deck Rencontre ou dans la pile de défausse Rencontre et piochez-le. Mélangez le deck Rencontre.</string>
-    <string name="gathering_cultist_one">-1. En cas d\'échec, subissez 1 horreur.</string>
-    <string name="gathering_cultist_two">Révélez un autre pion Chaos. En cas d\'échec, subissez 2 horreurs.</string>
-    <string name="gathering_tablet_one">-2. S\'il y a un ennemi <b><i>Goule</i></b> dans votre lieu, subissez 1 dégât.</string>
-    <string name="gathering_tablet_two">-4. S\'il y a un ennemi <b><i>Goule</i></b> dans votre lieu, subissez 1 dégât et 1 horreur.</string>
+    <string name="gathering_cultist_one">-1. En cas d’échec, subissez 1 horreur.</string>
+    <string name="gathering_cultist_two">Révélez un autre pion Chaos. En cas d’échec, subissez 2 horreurs.</string>
+    <string name="gathering_tablet_one">-2. S’il y a un ennemi <b><i>Goule</i></b> dans votre lieu, subissez 1 dégât.</string>
+    <string name="gathering_tablet_two">-4. S’il y a un ennemi <b><i>Goule</i></b> dans votre lieu, subissez 1 dégât et 1 horreur.</string>
 
     <string name="midnight_skull_one">-X. X est le plus grand nombre de fatalités sur un ennemi <b><i>Cultiste</i></b>en jeu.</string>
     <string name="midnight_skull_two">-X. X est le nombre total de fatalités en jeu.</string>
-    <string name="midnight_cultist_one">-2. Placez 1 fatalité sur l\'ennemi <b><i>Cultiste</i></b> le plus proche.</string>
-    <string name="midnight_cultist_two">-2. Placez 1 fatalité sur chaque ennemi <b><i>Cultiste</i></b> en jeu. S\'il n\'y a aucun
+    <string name="midnight_cultist_one">-2. Placez 1 fatalité sur l’ennemi <b><i>Cultiste</i></b> le plus proche.</string>
+    <string name="midnight_cultist_two">-2. Placez 1 fatalité sur chaque ennemi <b><i>Cultiste</i></b> en jeu. S’il n’y a aucun
         ennemi <b><i>Cultiste</i></b> en jeu, révélez un autre pion Chaos.</string>
-    <string name="midnight_tablet_one">-3. En cas d\'échec, placez 1 de vos indices sur votre lieu.</string>
+    <string name="midnight_tablet_one">-3. En cas d’échec, placez 1 de vos indices sur votre lieu.</string>
     <string name="midnight_tablet_two">-4. En cas d\`échec, placez tous vos indices sur votre lieu.</string>
 
-    <string name="devourer_skull_one">-X. X est le nombre d\'ennemis <b><i>Monstre</i></b> en jeu.</string>
-    <string name="devourer_skull_two">-3. En cas d\'échec, après ce test de compétence, cherchez un ennemi
+    <string name="devourer_skull_one">-X. X est le nombre d’ennemis <b><i>Monstre</i></b> en jeu.</string>
+    <string name="devourer_skull_two">-3. En cas d’échec, après ce test de compétence, cherchez un ennemi
         <b><i>Monstre</i></b> dans le deck Rencontre ou dans la pile de défausse Rencontre et piochez-le.
 		Mélangez le deck Rencontre.</string>
-    <string name="devourer_cultist_one">-2. Placez 1 fatalité sur l\'ennemi le plus proche.</string>
-    <string name="devourer_cultist_two">-4. Placez 2 fatalités sur l\'ennemi le plus proche.</string>
-    <string name="devourer_tablet_one">-3. S\'il y a un ennemi <b><i>Monstre</i></b> dans votre lieu, subissez 1 dégât.</string>
-    <string name="devourer_tablet_two">-5. S\'il y a un ennemi <b><i>Monstre</i></b> dans votre lieu, subissez 1 dégât et 1 horreur.</string>
-    <string name="devourer_thing_one">-5. S\'il y a un ennemi <b><i>Grand Ancien</i></b> en jeu, révélez un autre pion Chaos.</string>
-    <string name="devourer_thing_two">-7. S\'il y a un ennemi <b><i>Grand Ancien</i></b> en jeu, révélez un autre pion Chaos.</string>
+    <string name="devourer_cultist_one">-2. Placez 1 fatalité sur l’ennemi le plus proche.</string>
+    <string name="devourer_cultist_two">-4. Placez 2 fatalités sur l’ennemi le plus proche.</string>
+    <string name="devourer_tablet_one">-3. S’il y a un ennemi <b><i>Monstre</i></b> dans votre lieu, subissez 1 dégât.</string>
+    <string name="devourer_tablet_two">-5. S’il y a un ennemi <b><i>Monstre</i></b> dans votre lieu, subissez 1 dégât et 1 horreur.</string>
+    <string name="devourer_thing_one">-5. S’il y a un ennemi <b><i>Grand Ancien</i></b> en jeu, révélez un autre pion Chaos.</string>
+    <string name="devourer_thing_two">-7. S’il y a un ennemi <b><i>Grand Ancien</i></b> en jeu, révélez un autre pion Chaos.</string>
 				
     <!--Campaign introduction-->
     <string name="night_introduction"><b>The Ghouls Hunger…</b>\n
@@ -167,7 +167,7 @@
 		mettez-les en jeu. Retirez les autres exemplaires du CentreVille et du Quartier Sud de la partie. \n
     \nMettez en jeu les cartes Quartier Nord, Quartier Est, Quartier de la Rivière, Hôpital St. Mary, Cimetière,
 			Université Miskatonic et Votre Maison.\n
-    \nChaque investigateur débute la partie dans Votre Maison..\n</string>
+    \nChaque investigateur débute la partie dans Votre Maison.\n</string>
     <string name="midnight_locations_no_house">Prenez au hasard l’un des deux lieux Centre-Ville et l’un des deux lieux Quartier Sud et
 		mettez-les en jeu. Retirez les autres exemplaires du CentreVille et du Quartier Sud de la partie.\n
         \nMettez en jeu les cartes Quartier Nord, Quartier Est, Quartier de la Rivière, Hôpital St. Mary, Cimetière,
