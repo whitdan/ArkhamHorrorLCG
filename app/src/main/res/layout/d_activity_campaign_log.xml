@@ -169,6 +169,31 @@
                 android:textSize="@dimen/arnopro_textsize"
                 android:visibility="gone"/>
 
+            <TextView
+                android:id="@+id/notes_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/notes"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/notes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:visibility="gone"/>
+
             <android.support.v4.widget.Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

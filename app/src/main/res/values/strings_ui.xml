@@ -73,6 +73,7 @@
     <string name="okay">OK</string>
     <string name="cancel">Cancel</string>
     <string name="nothing">Nothing to show.</string>
+    <string name="notes">Notes</string>
 
     <string name="campaign_finished">Campaign Finished</string>
     <string name="finish_campaign">Finish Campaign</string>
