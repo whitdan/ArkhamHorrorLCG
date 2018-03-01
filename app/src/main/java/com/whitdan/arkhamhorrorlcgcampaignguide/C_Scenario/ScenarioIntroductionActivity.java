@@ -255,19 +255,27 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         }
                         break;
                     case 8:
-                        if(globalVariables.Nigel == 0 || globalVariables.Nigel == 3){
-                            if(globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4){
+                        if (globalVariables.Nigel == 0 || globalVariables.Nigel == 3) {
+                            if (globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4) {
                                 introduction.setText(R.string.pallid_introduction_one_two);
                             } else {
                                 introduction.setText(R.string.pallid_introduction_one_one);
                             }
                         } else {
-                            if(globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4){
+                            if (globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4) {
                                 introduction.setText(R.string.pallid_introduction_two_two);
                             } else {
                                 introduction.setText(R.string.pallid_introduction_two_one);
                             }
                         }
+                        break;
+                    case 9:
+                        if (globalVariables.Ashleigh == 1 || globalVariables.Ashleigh == 4) {
+                            introduction.setText(R.string.black_stars_introduction_ashleigh);
+                        } else {
+                            introduction.setText(R.string.black_stars_introduction);
+                        }
+                        break;
                 }
                 break;
         }

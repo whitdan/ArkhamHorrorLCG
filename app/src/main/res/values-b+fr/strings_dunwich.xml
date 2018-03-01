@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ressources>
+<resources>
     <string name="dunwich_campaign">L\'Héritage de Dunwich</string>
     <string name="dunwich_scenario_one">Scénario 1-A: Activité Extrascolaire</string>
     <string name="dunwich_scenario_two">Scénario 1-B: La Banque Gagne Toujours</string>
@@ -896,4 +896,4 @@
     \n<b>Chaque investigateur survivant devient dément.</b>\n
     \n<b>Les investigateur ont perdu la campagne.</b></string>
 
-</ressources>
+</resources>

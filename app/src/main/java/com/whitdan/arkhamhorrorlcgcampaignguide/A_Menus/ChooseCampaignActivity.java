@@ -90,6 +90,7 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.CurrentDifficulty = 1;
         globalVariables.NightCompleted = 0;
         globalVariables.DunwichCompleted = 0;
+        globalVariables.CarcosaCompleted = 0;
         globalVariables.AdamLynchHaroldWalsted = 0;
         globalVariables.TownsfolkAction = 0;
         globalVariables.Rougarou = 0;

@@ -241,6 +241,9 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                     if (globalVariables.CurrentCampaign == 2 && globalVariables.DunwichCompleted == 1) {
                         intent = new Intent(ScenarioInterludeActivity.this, CampaignFinishedActivity.class);
                     }
+                    if (globalVariables.CurrentCampaign == 3 && globalVariables.CarcosaCompleted == 1) {
+                        intent = new Intent(ScenarioInterludeActivity.this, CampaignFinishedActivity.class);
+                    }
                     startActivity(intent);
                 }
             }

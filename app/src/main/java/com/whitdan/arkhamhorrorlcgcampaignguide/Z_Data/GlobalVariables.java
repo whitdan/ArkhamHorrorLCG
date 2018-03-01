@@ -24,6 +24,7 @@ public class GlobalVariables extends Application {
     public int CurrentDifficulty;                  // 0 = easy, 1 = normal, 2 = hard, 3 = expert (except standalones)
     public int NightCompleted;
     public int DunwichCompleted;
+    public int CarcosaCompleted;
 
     /*
         Scenario variables - All of the variables associated with the scenario generally
@@ -104,6 +105,7 @@ public class GlobalVariables extends Application {
     public int InvTwoReadAct;
     public int InvThreeReadAct;
     public int InvFourReadAct;
+    public int Path;
 
     // VIPS - 0 = not interviewed or killed, 1 = interviewed, 2 = killed, 3 = interviewed (crossed out), 4 =
     // interviewed and killed, 5 = interviewed (crossed out) and killed

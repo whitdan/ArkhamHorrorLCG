@@ -294,6 +294,9 @@ public class CampaignFinishedActivity extends AppCompatActivity {
             if (globalVariables.DunwichCompleted == 1) {
                 dunwich.setVisibility(GONE);
             }
+            if(globalVariables.CarcosaCompleted == 1){
+                carcosa.setVisibility(GONE);
+            }
 
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
             TextView title = v.findViewById(R.id.finish_campaign);
@@ -363,6 +366,11 @@ public class CampaignFinishedActivity extends AppCompatActivity {
                             getActivity().finish();
                         }
                     } else if (carcosa.isChecked()) {
+                        if (globalVariables.CarcosaCompleted == 1) {
+                            Toast toast = Toast.makeText(getActivity(), R.string.already_completed_campaign,
+                                    Toast.LENGTH_SHORT);
+                            toast.show();
+                        } else{
                         globalVariables.CurrentCampaign = 3;
                         boolean lola = false;
                         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
@@ -378,7 +386,7 @@ public class CampaignFinishedActivity extends AppCompatActivity {
                         Intent intent = new Intent(getActivity(), CampaignIntroductionActivity.class);
                         startActivity(intent);
                         getActivity().finish();
-                    }
+                    }}
                     dismiss();
                 }
             });

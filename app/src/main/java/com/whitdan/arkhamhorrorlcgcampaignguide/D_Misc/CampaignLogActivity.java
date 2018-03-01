@@ -336,7 +336,7 @@ public class CampaignLogActivity extends AppCompatActivity {
         /*
             Path to Carcosa log
          */
-        if (globalVariables.CurrentCampaign == 3) {
+        if (globalVariables.CurrentCampaign == 3 || globalVariables.CarcosaCompleted == 1) {
             carcosaHeading.setVisibility(VISIBLE);
             carcosaLog.setVisibility(VISIBLE);
             StringBuilder carcosaBuilder = new StringBuilder();
@@ -346,7 +346,7 @@ public class CampaignLogActivity extends AppCompatActivity {
             carcosaBuilder.append(doubt);
             carcosaBuilder.append(conviction);
             // First scenario log
-            if (scenario > 1) {
+            if (scenario > 1 || globalVariables.CarcosaCompleted == 1) {
                 String stranger = getString(R.string.stranger_counter) + " " + Integer.toString(globalVariables
                         .ChasingStranger) +
                         "\n\n";
@@ -364,7 +364,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Second scenario log
-            if (scenario > 2) {
+            if (scenario > 2 || globalVariables.CarcosaCompleted == 1) {
                 carcosaBuilder.append(getString(R.string.vips_interviewed_log));
                 int vipsInterviewed = 0;
                 if (globalVariables.Constance == 1 || globalVariables.Constance == 4) {
@@ -421,7 +421,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 carcosaBuilder.append("\n");
             }
             // Interlude log
-            if (scenario > 3) {
+            if (scenario > 3 || globalVariables.CarcosaCompleted == 1) {
                 if (globalVariables.Party == 1) {
                     carcosaBuilder.append(getString(R.string.intruded));
                 } else if (globalVariables.Party == 2) {
@@ -431,7 +431,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Echoes of the Past
-            if (scenario > 4) {
+            if (scenario > 4 || globalVariables.CarcosaCompleted == 1) {
                 switch (globalVariables.Onyx) {
                     case 1:
                         carcosaBuilder.append(getString(R.string.onyx_taken));
@@ -448,7 +448,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Unspeakable Oath
-            if (scenario > 5) {
+            if (scenario > 5 || globalVariables.CarcosaCompleted == 1) {
                 switch (globalVariables.Asylum) {
                     case 1:
                         carcosaBuilder.append(getString(R.string.king_victims));
@@ -461,7 +461,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Interlude 2
-            if (scenario > 6) {
+            if (scenario > 6 || globalVariables.CarcosaCompleted == 1) {
                 switch (globalVariables.DanielsWarning) {
                     case 1:
                         carcosaBuilder.append(getString(R.string.warning_ignored));
@@ -472,7 +472,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Phantom of Truth
-            if (scenario > 7) {
+            if (scenario > 7 || globalVariables.CarcosaCompleted == 1) {
                 switch (globalVariables.Nigel) {
                     case 0:
                         carcosaBuilder.append(getString(R.string.not_escape_gaze));
@@ -489,7 +489,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Pallid Mask
-            if (scenario > 8) {
+            if (scenario > 8 || globalVariables.CarcosaCompleted == 1) {
                 if (globalVariables.Nigel == 0 || globalVariables.Nigel == 3) {
                     carcosaBuilder.append(getString(R.string.awoke_catacombs));
                 } else {
@@ -528,6 +528,20 @@ public class CampaignLogActivity extends AppCompatActivity {
                         carcosaBuilder.append(investigatorNames[globalVariables.InvFourReadAct] + " ");
                         carcosaBuilder.append(getString(R.string.read_act));
                     }
+                }
+            }
+            // Black Stars Rise
+            if(scenario > 9 || globalVariables.CarcosaCompleted == 1){
+                switch(globalVariables.Path){
+                    case 0:
+                        carcosaBuilder.append(getString(R.string.carcosa_merged));
+                        break;
+                    case 1:
+                        carcosaBuilder.append(getString(R.string.path_below));
+                        break;
+                    case 2:
+                        carcosaBuilder.append(getString(R.string.path_above));
+                        break;
                 }
             }
 

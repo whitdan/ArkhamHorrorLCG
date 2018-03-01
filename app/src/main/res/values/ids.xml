@@ -111,6 +111,11 @@
     <item name="inv_two_read_act" type="id" />
     <item name="inv_three_read_act" type="id" />
     <item name="inv_four_read_act" type="id" />
+    <item name="path_one" type="id" />
+    <item name="path_two" type="id" />
+    <item name="path_three" type="id" />
+
+
     <item name="rougarou_one" type="id" />
     <item name="rougarou_two" type="id" />
     <item name="rougarou_three" type="id" />

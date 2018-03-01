@@ -65,6 +65,9 @@ public class EditLogActivity extends AppCompatActivity {
                 break;
             case 3:
                 campaign.setText(R.string.carcosa_campaign);
+                if (globalVariables.CarcosaCompleted == 1) {
+                    title.setVisibility(GONE);
+                }
                 break;
         }
 
@@ -1368,7 +1371,7 @@ public class EditLogActivity extends AppCompatActivity {
                     if (globalVariables.InvOneReadAct == 999) {
                         invOneReadActBox.setText(getString(R.string.inv_one_read_act).trim());
                     } else {
-                        invOneReadActBox.setText(investigatorNames[globalVariables.InvOneReadAct] + getString(R
+                        invOneReadActBox.setText(investigatorNames[globalVariables.InvOneReadAct] + " " + getString(R
                                 .string.read_act)
                                 .trim());
                     }
@@ -1385,7 +1388,7 @@ public class EditLogActivity extends AppCompatActivity {
                     if (globalVariables.InvTwoReadAct == 999) {
                         invTwoReadActBox.setText(getString(R.string.inv_two_read_act).trim());
                     } else {
-                        invTwoReadActBox.setText(investigatorNames[globalVariables.InvTwoReadAct] + getString(R
+                        invTwoReadActBox.setText(investigatorNames[globalVariables.InvTwoReadAct] + " " + getString(R
                                 .string.read_act)
                                 .trim());
                     }
@@ -1402,7 +1405,7 @@ public class EditLogActivity extends AppCompatActivity {
                     if (globalVariables.InvThreeReadAct == 999) {
                         invThreeReadActBox.setText(getString(R.string.inv_three_read_act).trim());
                     } else {
-                        invThreeReadActBox.setText(investigatorNames[globalVariables.InvThreeReadAct] + getString(R
+                        invThreeReadActBox.setText(investigatorNames[globalVariables.InvThreeReadAct] + " " + getString(R
                                 .string
                                 .read_act)
                                 .trim());
@@ -1420,7 +1423,7 @@ public class EditLogActivity extends AppCompatActivity {
                     if (globalVariables.InvFourReadAct == 999) {
                         invFourReadActBox.setText(getString(R.string.inv_four_read_act).trim());
                     } else {
-                        invFourReadActBox.setText(investigatorNames[globalVariables.InvFourReadAct] + getString(R
+                        invFourReadActBox.setText(investigatorNames[globalVariables.InvFourReadAct] + " " + getString(R
                                 .string.read_act)
                                 .trim());
                     }
@@ -1429,6 +1432,36 @@ public class EditLogActivity extends AppCompatActivity {
                 }
             }
 
+            if(scenario > 9){
+                // Path to Carcosa
+                View pathHeading = View.inflate(this, R.layout.d_item_heading, null);
+                TextView pathHeadingText = pathHeading.findViewById(R.id.heading);
+                pathHeadingText.setText(R.string.path_heading);
+                pathHeadingText.setTypeface(teutonic);
+                editLayout.addView(pathHeading, lp);
+                View pathOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                RadioButton pathOptionOne = pathOptions.findViewById(R.id.option_one);
+                RadioButton pathOptionTwo = pathOptions.findViewById(R.id.option_two);
+                RadioButton pathOptionThree = pathOptions.findViewById(R.id.option_three);
+                pathOptionThree.setVisibility(VISIBLE);
+                pathOptionOne.setId(R.id.path_one);
+                pathOptionTwo.setId(R.id.path_two);
+                pathOptionThree.setId(R.id.path_three);
+                pathOptionOne.setText(getString(R.string.path_below).trim());
+                pathOptionTwo.setText(getString(R.string.path_above).trim());
+                pathOptionThree.setText(getString(R.string.carcosa_merged).trim());
+                pathOptionOne.setTypeface(arnopro);
+                pathOptionTwo.setTypeface(arnopro);
+                pathOptionThree.setTypeface(arnopro);
+                editLayout.addView(pathOptions, lp);
+                if (globalVariables.Path == 0) {
+                    pathOptionThree.setChecked(true);
+                } else if (globalVariables.Path == 1) {
+                    pathOptionOne.setChecked(true);
+                } else if (globalVariables.Path == 2) {
+                    pathOptionTwo.setChecked(true);
+                }
+            }
         }
 
         if (globalVariables.Rougarou > 0) {
@@ -2139,6 +2172,19 @@ public class EditLogActivity extends AppCompatActivity {
                             }
                         } else {
                             globalVariables.InvFourReadAct = 0;
+                        }
+                    }
+
+                    if(scenario > 9){
+                        CheckBox pathOne = findViewById(R.id.path_one);
+                        CheckBox pathTwo = findViewById(R.id.path_two);
+                        CheckBox pathThree = findViewById(R.id.path_three);
+                        if(pathOne.isChecked()){
+                            globalVariables.Path = 1;
+                        } else if (pathTwo.isChecked()){
+                            globalVariables.Path = 2;
+                        } else if (pathThree.isChecked()){
+                            globalVariables.Path = 0;
                         }
                     }
                 }

@@ -123,16 +123,108 @@ public class LoadCampaignActivity extends AppCompatActivity {
 
             // Populate fields with extracted properties
             campaignNameView.setText(campaignName);
-            globalVariables.setTitle(currentScenarioName);
             switch (currentCampaign) {
                 case 1:
                     currentCampaignName.setText(R.string.night_campaign);
+                    switch (currentScenario) {
+                        case 1:
+                            currentScenarioName.setText(R.string.night_scenario_one);
+                            break;
+                        case 2:
+                            currentScenarioName.setText(R.string.night_scenario_two);
+                            break;
+                        case 3:
+                            currentScenarioName.setText(R.string.night_scenario_three);
+                            break;
+                        case 4:
+                            currentScenarioName.setText(R.string.campaign_completed);
+                            break;
+                    }
                     break;
                 case 2:
                     currentCampaignName.setText(R.string.dunwich_campaign);
+                    switch (currentScenario) {
+                        case 1:
+                            currentScenarioName.setText(R.string.dunwich_scenario_one);
+                            break;
+                        case 2:
+                            currentScenarioName.setText(R.string.dunwich_scenario_two);
+                            break;
+                        case 3:
+                            currentScenarioName.setText(R.string.dunwich_interlude_one);
+                            break;
+                        case 4:
+                            currentScenarioName.setText(R.string.dunwich_scenario_three);
+                            break;
+                        case 5:
+                            currentScenarioName.setText(R.string.dunwich_scenario_four);
+                            break;
+                        case 6:
+                            currentScenarioName.setText(R.string.dunwich_scenario_five);
+                            break;
+                        case 7:
+                            currentScenarioName.setText(R.string.dunwich_interlude_two);
+                            break;
+                        case 8:
+                            currentScenarioName.setText(R.string.dunwich_scenario_six);
+                            break;
+                        case 9:
+                            currentScenarioName.setText(R.string.dunwich_scenario_seven);
+                            break;
+                        case 10:
+                            currentScenarioName.setText(R.string.dunwich_scenario_eight);
+                            break;
+                        case 11:
+                            currentScenarioName.setText(R.string.dunwich_epilogue);
+                            break;
+                        case 12:
+                            currentScenarioName.setText(R.string.campaign_completed);
+                            break;
+                    }
                     break;
                 case 3:
                     currentCampaignName.setText(R.string.carcosa_campaign);
+                    switch (currentScenario) {
+                        case 0:
+                            currentScenarioName.setText(R.string.carcosa_interlude_zero);
+                            break;
+                        case 1:
+                            currentScenarioName.setText(R.string.carcosa_scenario_one);
+                            break;
+                        case 2:
+                            currentScenarioName.setText(R.string.carcosa_scenario_two);
+                            break;
+                        case 3:
+                            currentScenarioName.setText(R.string.carcosa_interlude_one);
+                            break;
+                        case 4:
+                            currentScenarioName.setText(R.string.carcosa_scenario_three);
+                            break;
+                        case 5:
+                            currentScenarioName.setText(R.string.carcosa_scenario_four);
+                            break;
+                        case 6:
+                            currentScenarioName.setText(R.string.carcosa_interlude_two);
+                            break;
+                        case 7:
+                            currentScenarioName.setText(R.string.carcosa_scenario_five);
+                            break;
+                        case 8:
+                            currentScenarioName.setText(R.string.carcosa_scenario_six);
+                            break;
+                        case 9:
+                            currentScenarioName.setText(R.string.carcosa_scenario_seven);
+                            break;
+                        case 10:
+                            currentScenarioName.setText(R.string.carcosa_scenario_eight);
+                            break;
+                        case 11:
+                            currentScenarioName.setText(R.string.carcosa_epilogue);
+                            break;
+                        case 12:
+                            currentScenarioName.setText(R.string.campaign_completed);
+                            break;
+                    }
                     break;
             }
         }
@@ -167,6 +259,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     CampaignEntry.COLUMN_DIFFICULTY,
                     CampaignEntry.COLUMN_NIGHT_COMPLETED,
                     CampaignEntry.COLUMN_DUNWICH_COMPLETED,
+                    CampaignEntry.COLUMN_CARCOSA_COMPLETED,
                     CampaignEntry.COLUMN_ROLAND_INUSE,
                     CampaignEntry.COLUMN_DAISY_INUSE,
                     CampaignEntry.COLUMN_SKIDS_INUSE,
@@ -218,6 +311,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         (CampaignEntry.COLUMN_NIGHT_COMPLETED)));
                 globalVariables.DunwichCompleted = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_DUNWICH_COMPLETED)));
+                globalVariables.CarcosaCompleted = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
+                        (CampaignEntry.COLUMN_CARCOSA_COMPLETED)));
                 globalVariables.InvestigatorsInUse[Investigator.ROLAND_BANKS] = campaignCursor.getInt(campaignCursor
                         .getColumnIndexOrThrow(CampaignEntry.COLUMN_ROLAND_INUSE));
                 globalVariables.InvestigatorsInUse[Investigator.DAISY_WALKER] = campaignCursor.getInt(campaignCursor
@@ -488,7 +583,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
             }
 
             // Set the relevant Carcosa variables from the database
-            if (globalVariables.CurrentCampaign == 3) {
+            if (globalVariables.CurrentCampaign == 3 || globalVariables.CarcosaCompleted == 1) {
                 String[] carcosaProjection = {
                         ArkhamContract.CarcosaEntry.COLUMN_DOUBT,
                         ArkhamContract.CarcosaEntry.COLUMN_CONVICTION,
@@ -511,7 +606,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         ArkhamContract.CarcosaEntry.COLUMN_INV_ONE_READ_ACT,
                         ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_READ_ACT,
                         ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_READ_ACT,
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT
+                        ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT,
+                        ArkhamContract.CarcosaEntry.COLUMN_PATH
                 };
                 String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " = ?";
                 Cursor carcosaCursor = db.query(
@@ -569,6 +665,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             (ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_READ_ACT)));
                     globalVariables.InvFourReadAct = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
                             (ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT)));
+                    globalVariables.Path = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_PATH)));
                 }
                 if (carcosaCursor.getCount() <= 0) {
                     corrupt = true;
@@ -612,8 +710,12 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             case 0:
                             case 3:
                             case 6:
+                            case 11:
                                 intent = new Intent(context, ScenarioInterludeActivity.class);
                                 break;
+                        }
+                        if (globalVariables.CarcosaCompleted == 1) {
+                            intent = new Intent(context, CampaignFinishedActivity.class);
                         }
                         break;
                 }
@@ -825,8 +927,12 @@ public class LoadCampaignActivity extends AppCompatActivity {
                                 case 0:
                                 case 3:
                                 case 6:
+                                case 11:
                                     intent = new Intent(getActivity(), ScenarioInterludeActivity.class);
                                     break;
+                            }
+                            if (globalVariables.CarcosaCompleted == 1) {
+                                intent = new Intent(getActivity(), CampaignFinishedActivity.class);
                             }
                             break;
                     }

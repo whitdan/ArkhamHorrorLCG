@@ -27,6 +27,7 @@ public class ArkhamContract {
         public static final String COLUMN_DIFFICULTY = "difficulty";
         public static final String COLUMN_NIGHT_COMPLETED = "night_completed";
         public static final String COLUMN_DUNWICH_COMPLETED = "dunwich_completed";
+        public static final String COLUMN_CARCOSA_COMPLETED = "carcosa_completed";
         public static final String COLUMN_ROLAND_INUSE = "roland";
         public static final String COLUMN_DAISY_INUSE = "daisy";
         public static final String COLUMN_SKIDS_INUSE = "skids";
@@ -138,6 +139,7 @@ public class ArkhamContract {
         public static final String COLUMN_INV_TWO_READ_ACT = "inv_two_read_act";
         public static final String COLUMN_INV_THREE_READ_ACT = "inv_three_read_act";
         public static final String COLUMN_INV_FOUR_READ_ACT = "inv_four_read_act";
+        public static final String COLUMN_PATH = "path";
     }
 
     public static class ChaosBagEntry implements BaseColumns{

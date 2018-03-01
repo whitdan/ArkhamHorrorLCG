@@ -61,6 +61,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
 
         TextView sets = findViewById(R.id.sets_one);
         TextView setsTwo = findViewById(R.id.sets_two);
+        TextView setsThree = findViewById(R.id.sets_three);
         ImageView setsImage = findViewById(R.id.sets_one_image);
         ImageView setsTwoImage = findViewById(R.id.sets_two_image);
         TextView locations = findViewById(R.id.locations);
@@ -73,6 +74,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
 
         sets.setTypeface(arnopro);
         setsTwo.setTypeface(arnopro);
+        setsThree.setTypeface(arnopro);
         locations.setTypeface(arnopro);
         setAside.setTypeface(arnopro);
         setAsideTwo.setTypeface(arnopro);
@@ -502,17 +504,39 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                     case 8:
                         sets.setText(R.string.pallid_sets);
                         setsImage.setImageResource(R.drawable.pallid_sets);
-                        if(globalVariables.Nigel == 0 || globalVariables.Nigel == 3){
+                        if (globalVariables.Nigel == 0 || globalVariables.Nigel == 3) {
                             locations.setText(R.string.pallid_locations_one);
                         } else {
                             locations.setText(R.string.pallid_locations_two);
                         }
                         setAside.setText(R.string.pallid_set_aside);
-                        if(globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4){
+                        if (globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4) {
                             additional.setText(R.string.pallid_additional);
                         } else {
                             additional.setText(R.string.no_additional);
                         }
+                        break;
+                    case 9:
+                        sets.setText(R.string.black_stars_sets);
+                        setsImage.setImageResource(R.drawable.black_stars_sets);
+                        setsTwo.setVisibility(VISIBLE);
+                        setsTwo.setText(R.string.black_stars_sets_two);
+                        setsTwoImage.setVisibility(VISIBLE);
+                        setsTwoImage.setImageResource(R.drawable.black_stars_sets_two);
+                        setsThree.setVisibility(VISIBLE);
+                        setsThree.setText(R.string.black_stars_sets_three);
+                        locations.setText(R.string.black_stars_locations);
+                        locationPlacement.setVisibility(VISIBLE);
+                        locationPlacement.setImageResource(R.drawable.black_stars_locations);
+                        setAside.setText(R.string.black_stars_set_aside);
+                        if (globalVariables.Ashleigh == 1 || globalVariables.Ashleigh == 4) {
+                            additionalTwo.setVisibility(VISIBLE);
+                            additionalTwo.setText(R.string.black_stars_additional);
+                            additional.setText(R.string.black_stars_additional_ashleigh);
+                        } else {
+                            additional.setText(R.string.black_stars_additional);
+                        }
+                        break;
                 }
                 break;
         }

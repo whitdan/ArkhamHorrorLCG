@@ -35,10 +35,16 @@
     <string name="constance_victory">Constance Dumaine in the victory display</string>
     <string name="jordan_victory">Jordan Perry in the victory display</string>
     <string name="ishimaru_victory">Ishimaru Haruko in the victory display</string>
+    <string name="ashleigh_victory">Ashleigh Clarke in the victory display</string>
     <string name="man_in_pallid_mask_defeated">The Man in the Pallid Mask was defeated</string>
     <string name="spent_clues_advance">You spent clues to advance</string>
     <string name="must_read_act">An investigator must read Act II.</string>
     <string name="select_read_act">Read Act II</string>
+    <string name="advanced_agenda_one">Advanced to Agenda 1b or Agenda 1d</string>
+    <string name="agenda_one_effect">Agenda 1b or Agenda 1d</string>
+    <string name="mark_one_conviction">Marked one Conviction</string>
+    <string name="mark_one_doubt">Marked one Doubt</string>
+    <string name="must_agenda_one_effect">You must select an effect for Agenda 1b or Agenda 1d</string>
 
 
     <!--Campaign Log-->
@@ -80,6 +86,9 @@
     <string name="inv_two_read_act">Investigator Two read Act II.\n\n</string>
     <string name="inv_three_read_act">Investigator Three read Act II.\n\n</string>
     <string name="inv_four_read_act">Investigator Four read Act II.\n\n</string>
+    <string name="carcosa_merged">The realm of Carcosa merged with our own, and Hastur rules over them both.\n\n</string>
+    <string name="path_below">You opened the path below.\n\n</string>
+    <string name="path_above">You opened the path above.\n\n</string>
 
 
     <!--Edit log-->
@@ -104,6 +113,7 @@
     <string name="daniel_heading">Daniel\'s Warning</string>
     <string name="no_daniel">You did not hear Daniel\'s warning.</string>
     <string name="nigel_heading">Nigel Engram</string>
+    <string name="path_heading">Path to Carcosa</string>
 
 
     <!--Chaos bag-->
@@ -169,6 +179,16 @@
     <string name="pallid_tablet_two">–3. If there is a <b><i>Ghoul</i></b> or <b><i>Geist</i></b> enemy at your location, it readies and attacks you (if there is more than one, choose one).</string>
     <string name="pallid_thing_one">–3. If you fail, search the encounter deck and discard pile for a <b><i>Ghoul</i></b> or <b><i>Geist</i></b> enemy and draw it.</string>
     <string name="pallid_thing_two">–4. If you fail, search the encounter deck and discard pile for a <b><i>Ghoul</i></b> or <b><i>Geist</i></b> enemy and draw it.</string>
+
+    <string name="black_stars_skull_one">–X. X is the highest amount of doom on an agenda in play.</string>
+    <string name="black_stars_skull_two">–X. X is the total amount of doom on agendas in play.</string>
+    <string name="black_stars_cultist_one">Reveal another token. If this token is revealed during an attack or evasion attempt against an enemy with doom on it, this skill test automatically fails instead.</string>
+    <string name="black_stars_cultist_two">Reveal another token. If there is an enemy with 1 or more doom on it at your location, this test automatically fails instead.</string>
+    <string name="black_stars_tablet_one">Reveal another token. If you fail, place 1 doom on each agenda.</string>
+    <string name="black_stars_tablet_two">Reveal another token. If you do not succeed by at least 1, place 1 doom on each agenda.</string>
+    <string name="black_stars_thing_one">–2. If you fail, search the encounter deck and discard pile for a
+        <b><i>Byakhee</i></b> enemy and draw it.</string>
+    <string name="black_stars_thing_two">–3. If you fail, search the encounter deck and discard pile for a <b><i>Byakhee</i></b>enemy and draw it.</string>
 
 
     <!-- Campaign introduction-->
@@ -546,6 +566,27 @@
         mouth suddenly opens. Bones collapse to the ground as the wall slides to reveal a new path.\n
     \n<b>Remember that "you opened a secret passageway."</b></string>
 
+    <string name="black_stars_introduction">The island commune of Mont Saint-Michel lies off the northwestern coast
+        of France. It is beautiful, elegant, and enigmatic—a place out of a fairy tale. Only this tale is one of
+        horrors and madness. During low tide, you would be able to reach the island on foot by crossing the tidal
+        causeway that emerges from the sea. However, by the time you reach the coast, the tide is much higher than
+        you’d anticipated. Dark clouds cover the sky, and a distant crash of thunder signals the start of the
+        oncoming storm. You find a boat whose captain is willing to take you to the island, and prepare for the
+        ritual to come.</string>
+    <string name="black_stars_introduction_ashleigh">The island commune of Mont Saint-Michel lies off the northwestern coast
+        of France. It is beautiful, elegant, and enigmatic—a place out of a fairy tale. Only this tale is one of
+        horrors and madness. During low tide, you would be able to reach the island on foot by crossing the tidal
+        causeway that emerges from the sea. However, by the time you reach the coast, the tide is much higher than
+        you’d anticipated. Dark clouds cover the sky, and a distant crash of thunder signals the start of the
+        oncoming storm. You find a boat whose captain is willing to take you to the island, and prepare for the
+        ritual to come.\n
+    \nYou recall the night where this all began, and your thoughts drift to the mesmerizing song Ashleigh sang that
+        night. Somehow you remember the lyrics perfectly after all this time, and its haunting melody is ingrained in
+        your mind. “Above the city the storm clouds rage, and waves crash through the gilded cage… Below the earth
+        the salt water seeps, the shadows fall as the red sun sleeps…” Studying the island that lies before you,
+        illuminated by flashes of lighting and assaulted by tumultuous waves, you can’t help but wonder if Ashleigh
+        was singing about this very moment.</string>
+
 
 
     <!--Scenario set-up instructions-->
@@ -707,6 +748,38 @@
     <string name="pallid_set_aside">The bearer of The Man in the Pallid Mask weakness searches his or her deck for it
         and sets it aside, out of play.\n</string>
     <string name="pallid_additional">Choose a Catacombs location adjacent to the starting location and reveal it.</string>
+
+    <string name="black_stars_sets">Black Stars Rise, Evil Portents, Byakhee, Inhabitants of Carcosa, The Stranger,
+        Dark Cult, and Ancient Evils.</string>
+    <string name="black_stars_sets_two">Some cards from the <i>Black Stars Rise</i> encounter set have multiple
+        versions, some with <i>The Flood Below</i> encounter set icon on their reverse side, and some with <i>The
+            Vortex Above</i> encounter set icon on their reverse side.</string>
+    <string name="black_stars_sets_three">Sort each copy of the following cards into two separate piles, based on the
+        encounter set icon on their reverse side: Agenda 2a—Let The Storm Rage, Agenda 2c—The Entity Above, Chapel of
+        St. Aubert, and Abbey Tower.\n
+    \nRandomize the two piles so you cannot tell which is which. Choose one pile at random to remove from the game
+        and one pile at random to use throughout this scenario’s setup.\n</string>
+    <string name="black_stars_locations">Choose one of the two North Tower locations, one of the two Outer Wall
+        locations, and one of the two Broken Steps locations, at random. Put the chosen locations into play. Remove
+        the other versions of those locations from the game.\n
+        \nThen, put Porte de l’Avancée, Grand Rue, and Abbey Church into play.\n
+        \nEach investigator begins play at Porte de l’Avancée.\n</string>
+    <string name="black_stars_set_aside">Both act cards (Act 3a and Act 3c), Beast of Aldebaran, each copy of Tidal
+        Terror, each copy of Rift Seeker, Cloister, Knight’s Hall, Abbey Tower, and Chapel of St. Aubert.\n</string>
+    <string name="black_stars_additional">Based on your difficulty level, add the following chaos token to the chaos
+        bag, for the remainder of the campaign:\n
+    \n\t\t<b>Easy:</b> -3\n
+    \n\t\t<b>Standard:</b> -5\n
+    \n\t\t<b>Hard:</b> -6\n
+    \n\t\t<b>Expert:</b> -7\n
+    \nThis scenario does not have an act deck. Instead, it has two agenda decks. One agenda deck is built using
+        agendas 1a, 2a, and 3a. The other agenda deck is built using agendas 1c, 2c, and 3c.\n
+    \nChoose one of the two Choeur Gothique locations, at random, and set it aside. Remove the other version of
+        Choeur Gothique from the game.\n
+    \nEach investigator searches the collection for a random basic <b><i>Madness</i></b>, <b><i>Pact</i></b>, <b><i>
+            Cultist</i></b>, or <b><i>Detective</i></b> weakness, and adds it to his or her deck.</string>
+    <string name="black_stars_additional_ashleigh">\nDuring this scenario, as a free triggered ability, an investigator
+        may remove 1 doom from an agenda in play. (Group limit once per game.)</string>
 
 
     <!--Scenario resolutions-->
@@ -1062,7 +1135,9 @@
             investigator must read Act II. Record below which investigators read Act II. Each investigator who read Act
             II searches the collection for a random basic Madness or Pact weakness, and adds it to his or her deck
             (does not count toward deck size). Each investigator who read Act II earns 2 additional experience as
-            they gain insight into the machinations of the Tattered King.</b></string>
+            they gain insight into the machinations of the Tattered King.</b>\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Elder Thing tokens to the chaos
+            bag.</b></string>
     <string name="pallid_resolution_one">The burned skull holds the key to everything. You are sure of it. You have
         tried every method available to you in studying the diagram it bears, but the answer eludes you still. You
         have brought the skull to experts, occultists, and professors. You have even tried speaking with the skull on
@@ -1076,7 +1151,9 @@
         against the stone of the outer wall, the tide threatening to swallow the island whole. Lightning flashes
         around the tower of the abbey above the village. A whirlwind of black clouds churns in the sky above. The
         diagram from the burned skull you hold in your hands is recreated perfectly in the stained glass of the
-        abbey. The title of the piece is “The Path Is Open.”</string>
+        abbey. The title of the piece is “The Path Is Open.”\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Cultist tokens to the chaos
+            bag.</b></string>
     <string name="pallid_resolution_two">You fall ceaselessly through the empty abyss. No air slows your descent or
         courses through your hair. It is a passageway devoid of reality. Finally, you pass through an invisible
         gateway and enter another realm. Looming above and below you are two skylines, one a warped reflection of the
@@ -1087,5 +1164,27 @@
     \nYou are shaken awake by a police officer and lifted to your feet. You feel as though the weight of a train has
         slammed into your head. The pain is unbearable. The man shines a flashlight in your eyes and asks you several
         questions in French. Your eyes widen with realization and you wrest your arm free from the confused man’s
-        grip. “I have to go at once!”</string>
+        grip. “I have to go at once!”\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Tablet tokens to the chaos
+            bag.</b></string>
+
+    <string name="black_stars_resolution_one">You hold your breath as you swim through freezing water toward the
+        spires below. As you get closer, you see ripples throughout the water, as though you are peering into a
+        reflection upon the sea’s surface. You break through the surface and gasp as air fills your lungs.\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Cultist tokens and 2 Tablet
+            tokens to the chaos bag.</b></string>
+    <string name="black_stars_resolution_two">You marvel at the cloud-waves encircling you and fly toward the spires
+        above. The desolate and inscrutable city of Carcosa towers before you. You suddenly realize you are
+        falling—not floating—and a pulling force takes hold of your body.\n
+    \n<b>Remove all Cultist, Tablet, and Elder tokens from the chaos bag. Then, add 2 Cultist tokens and 2 Elder Thing
+            tokens to the chaos bag.</b></string>
+    <string name="black_stars_resolution_three">When you awaken, you are sitting in the choeur gothique of Mont
+        Saint-Michel’s abbey. No rain pelts the glass of the windows above, and you hear no thunder, nor the
+        screeching of winged horrors overhead. Somehow, you had escaped the island’s certain doom. You creep to the
+        door of the abbey and open it with trepidation. A dazzling light sears your eyes, and you lift your hand to
+        block the glare of two suns. You stand overlooking the Lake of Hali. Black stars hang in the heavens above.
+        Beyond, over leagues of tossing cloudwaves, the towers of Carcosa rise behind the shattered moon.\n
+    \n<b>You’ve met with a terrible fate, haven’t you?</b>\n
+    \n<b>Each investigator is driven insane.</b>\n
+    \n<b>The investigators lose the campaign.</b></string>
 </resources>

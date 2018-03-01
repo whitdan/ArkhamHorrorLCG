@@ -468,6 +468,10 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 break;
                         }
                     }
+                    if(scenario > 9){
+                        chaosbag.add(12);
+                        chaosbag.add(12);
+                    }
                     break;
             }
         }
@@ -758,7 +762,7 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     private void setupScenarioCard(Activity activity) {
         LinearLayout scenarioLayout = activity.findViewById(R.id.scenario_card_layout);
-        if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 9) {
+        if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 10) {
             scenarioLayout.setVisibility(GONE);
         }
         LinearLayout skullLayout = activity.findViewById(R.id.skull_layout);
@@ -1004,6 +1008,19 @@ public class ChaosBagActivity extends AppCompatActivity {
                             cultist.setText(R.string.pallid_cultist_two);
                             tablet.setText(R.string.pallid_tablet_two);
                             thing.setText(R.string.pallid_thing_two);
+                        }
+                        break;
+                    case 9:
+                        if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
+                            skull.setText(R.string.black_stars_skull_one);
+                            cultist.setText(R.string.black_stars_cultist_one);
+                            tablet.setText(R.string.black_stars_tablet_one);
+                            thing.setText(R.string.black_stars_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3) {
+                            skull.setText(R.string.black_stars_skull_two);
+                            cultist.setText(R.string.black_stars_cultist_two);
+                            tablet.setText(R.string.black_stars_tablet_two);
+                            thing.setText(R.string.black_stars_thing_two);
                         }
                         break;
                 }

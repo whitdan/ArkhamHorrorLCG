@@ -91,7 +91,8 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
         // Continue button
         Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
-        if (globalVariables.NightCompleted == 1 || globalVariables.DunwichCompleted == 1) {
+        if (globalVariables.NightCompleted == 1 || globalVariables.DunwichCompleted == 1 || globalVariables
+                .CarcosaCompleted == 1) {
             continueButton.setText(R.string.next_scenario);
             continueButton.setOnClickListener(new View.OnClickListener() {
                 @Override

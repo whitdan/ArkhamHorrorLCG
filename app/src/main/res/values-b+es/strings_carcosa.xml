@@ -647,7 +647,7 @@
     <string name="unspeakable_set_aside">Daniel Chesterfield y todas las copias de Aislamiento de pacientes.\n
         \nPon aparte, en un montón separado, todos los Enemigos <b><i>Monstruo</i></b> que haya en los conjuntos
             de encuentros reunidos. Debería haber 7 Enemigos <b><i>Monstruo</i></b> en total.\n
-    \nPon aparte, en un montón separado, todos los Enemigos <b><i>Lunático<i><b> que haya en los conjuntos de
+    \nPon aparte, en un montón separado, todos los Enemigos <b><i>Lunático</i></b> que haya en los conjuntos de
         encuentros reunidos. Debería haber 7 Enemigos <b><i>Lunático</i></b> en total.\n</string>
     <string name="unspeakable_additional_one">En función de tu nivel de dificultad, añade las siguientes fichas de Caos
         a la bolsa de caos durante el resto de la campaña:\n
@@ -663,7 +663,8 @@
     \n\t\t<b>Difícil:</b> -4\n
     \n\t\t<b>Experto:</b> -5\n
     \nUsa el Acto 2 — “Los realmente graves” (v. II).</string>
-    <string name="unspeakable_additional_one_constance"En función de tu nivel de dificultad, añade las siguientes fichas de Caos
+    <string name="unspeakable_additional_one_constance">En función de tu nivel de dificultad, añade las siguientes
+        fichas de Caos
         a la bolsa de caos durante el resto de la campaña:\n
     \n\t\t<b>Fácil:</b> -2\n
     \n\t\t<b>Normal:</b> -3\n
