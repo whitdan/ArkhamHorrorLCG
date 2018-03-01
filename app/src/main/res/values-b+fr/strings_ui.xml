@@ -8,7 +8,7 @@
     <string name="expansions_owned">Collection</string>
     <string name="language">Langue</string>
     <string name="saved_campaigns">Campagnes Sauvegardées</string>
-    <string name="scenario_not_available">Ce scénario n\'est pas encore disponible.</string>
+    <string name="scenario_not_available">Ce scénario n’est pas encore disponible.</string>
     <string name="current_campaign">Campagne Actuelle : </string>
     <string name="current_scenario">Scénario Actuel : </string>
     <string name="campaign_completed">Campagne Terminée</string>
@@ -22,7 +22,7 @@
     <string name="setup_instructions">Continuer la Mise en Place</string>
     <string name="add_side_story">Scénario indépendant</string>
     <string name="campaign_log">Carnet de Campagne</string>
-    <string name="edit_team">Modifier l\'Équipe</string>
+    <string name="edit_team">Modifier l’Équipe</string>
     <string name="scenario_resolution">Conclusion de Scénario</string>
     <string name="main_menu">Menu\nPrincipal</string>
 	<string name="edit_stats">Modifier Stats Investigateur</string>
@@ -41,7 +41,7 @@
     <string name="locations">Lieux</string>
     <string name="set_aside">Mis de Côté</string>
     <string name="additional_setup">Mise en Place Supplémentaire</string>
-    <string name="no_additional">Aucun changement n\'est effectué.</string>
+    <string name="no_additional">Aucun changement n’est effectué.</string>
 
     <!--General-->
     <string name="back">Retour</string>
@@ -99,11 +99,11 @@
     <string name="must_resolution">Vous devez choisir une conclusion.</string>
     <string name="must_lead_investigator">Vous devez choisir un investigateur principal.</string>
     <string name="must_engine_car">Vous devez indiquer quel investigateur est entré dans la locomotive.</string>
-    <string name="must_act_ended">Vous devez indiquer l\'Acte à la fin du scénario.</string>
+    <string name="must_act_ended">Vous devez indiquer l’Acte à la fin du scénario.</string>
     <string name="already_completed_scenario">Vous avez déjà terminé ce scénario.</string>
     <string name="already_completed_campaign">Vous avez déjà terminé la campagne.</string>
-    <string name="not_enough_xp_one">Vous n\'avez pas assez d\'EXP (coût : 1 par investigateur).</string>
-    <string name="not_enough_xp_three">Vous n\'avez pas assez d\'EXP (coût : 3 par investigateur).</string>
+    <string name="not_enough_xp_one">Vous n’avez pas assez d’EXP (coût : 1 par investigateur).</string>
+    <string name="not_enough_xp_three">Vous n’avez pas assez d’EXP (coût : 3 par investigateur).</string>
     <string name="cannot_back">Retour impossible.</string>
 
 
@@ -127,9 +127,9 @@
     <string name="resolution_four">Conclusion Quatre</string>
     <string name="victory_display">Pile de Victoire : </string>
     <string name="finish_scenario">Terminer le Scénario</string>
-    <string name="select_lead_investigator">Choisir l\'Investigateur Principal</string>
+    <string name="select_lead_investigator">Choisir l’Investigateur Principal</string>
     <string name="confirm_finish_scenario">Terminer le scénario et sauvegarder la campagne ?</string>
-    <string name="investigator_weaknesses">Faiblesses de l\'Investigateur</string>
+    <string name="investigator_weaknesses">Faiblesses de l’Investigateur</string>
 
 
     <!--Difficulties-->
@@ -156,14 +156,14 @@
         <item>None</item>
         <item>Roland Banks</item>
         <item>Daisy Walker</item>
-        <item>Skids O\'Toole</item>
+        <item>Skids O’Toole</item>
         <item>Agnes Baker</item>
         <item>Wendy Adams</item>
         <item>Zoey Samaras</item>
         <item>Rex Murphy</item>
         <item>Jenny Barnes</item>
         <item>Jim Culver</item>
-        <item>\"Ashcan\" Pete</item>
+        <item>« Ashcan » Pete</item>
         <item>Mark Harrigan</item>
         <item>Minh Thi Phan</item>
         <item>Sefina Rousseau</item>
@@ -175,14 +175,14 @@
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
-    <string name="skids_otoole">Skids O\'Toole</string>
+    <string name="skids_otoole">Skids O’Toole</string>
     <string name="agnes_baker">Agnes Baker</string>
     <string name="wendy_adams">Wendy Adams</string>
     <string name="zoey_samaras">Zoey Samaras</string>
     <string name="rex_murphy">Rex Murphy</string>
     <string name="jenny_barnes">Jenny Barnes</string>
     <string name="jim_culver">Jim Culver</string>
-    <string name="ashcan_pete">\"Ashcan\" Pete</string>
+    <string name="ashcan_pete">« Ashcan » Pete</string>
     <string name="mark_harrigan">Mark Harrigan</string>
     <string name="minh_thi_phan">Minh Thi Phan</string>
     <string name="sefina_rousseau">Sefina Rousseau</string>
@@ -193,8 +193,8 @@
     <string name="norman_withers">Norman Withers</string>
 
     <string name="cover_up">Effacer les Traces non résolu en jeu</string>
-    <string name="hospital_debts">Frais d\'Hôpitaux non résolu en jeu</string>
+    <string name="hospital_debts">Frais d’Hôpitaux non résolu en jeu</string>
     <string name="smite_the_wicked">Châtier le Mal non résolu en jeu</string>
-    <string name="searching_for_izzie">À la Recherche d\'Izzie non résolu en jeu</string>
+    <string name="searching_for_izzie">À la Recherche d’Izzie non résolu en jeu</string>
     <string name="angered_spirits">Esprits en Colère non résolu en jeu</string>
 </resources>
