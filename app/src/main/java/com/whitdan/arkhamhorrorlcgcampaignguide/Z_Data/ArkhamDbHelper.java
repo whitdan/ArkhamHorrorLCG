@@ -43,6 +43,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + CampaignEntry.COLUMN_CURRENT_CAMPAIGN + " INTEGER NOT NULL, "
                 + CampaignEntry.COLUMN_CURRENT_SCENARIO + " INTEGER NOT NULL, "
                 + CampaignEntry.COLUMN_DIFFICULTY + " INTEGER, "
+                + CampaignEntry.COLUMN_NOTES + " STRING, "
                 + CampaignEntry.COLUMN_NIGHT_COMPLETED + " INTEGER, "
                 + CampaignEntry.COLUMN_DUNWICH_COMPLETED + " INTEGER, "
                 + CampaignEntry.COLUMN_CARCOSA_COMPLETED + " INTEGER, "
@@ -444,8 +445,11 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                         CampaignEntry.COLUMN_CARCOSA_COMPLETED + " INTEGER";
                 String SQL_UPGRADE_TWENTYONE_B = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_PATH + " INTEGER";
+                String SQL_UPGRADE_TWENTYONE_C = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_NOTES + " STRING";
                 db.execSQL(SQL_UPGRADE_TWENTYONE_A);
                 db.execSQL(SQL_UPGRADE_TWENTYONE_B);
+                db.execSQL(SQL_UPGRADE_TWENTYONE_C);
         }
     }
 }

@@ -53,6 +53,8 @@ public class CampaignLogActivity extends AppCompatActivity {
         sideHeading.setTypeface(teutonic);
         TextView playerHeading = findViewById(R.id.player_heading);
         playerHeading.setTypeface(teutonic);
+        TextView notesHeading = findViewById(R.id.notes_heading);
+        notesHeading.setTypeface(teutonic);
         TextView nightLog = findViewById(R.id.night_log_text);
         nightLog.setTypeface(arnopro);
         TextView dunwichLog = findViewById(R.id.dunwich_log_text);
@@ -63,6 +65,8 @@ public class CampaignLogActivity extends AppCompatActivity {
         sideLog.setTypeface(arnopro);
         TextView playerLog = findViewById(R.id.player_log_text);
         playerLog.setTypeface(arnopro);
+        TextView notesLog = findViewById(R.id.notes_text);
+        notesLog.setTypeface(arnopro);
 
         int scenario;
         if (globalVariables.CurrentScenario > 100) {
@@ -594,6 +598,15 @@ public class CampaignLogActivity extends AppCompatActivity {
             }
             String playerLogText = playerBuilder.toString().trim();
             playerLog.setText(playerLogText);
+        }
+
+        /*
+            Notes
+         */
+        if(globalVariables.Notes != null && globalVariables.Notes.length() > 0){
+            notesHeading.setVisibility(VISIBLE);
+            notesLog.setVisibility(VISIBLE);
+            notesLog.setText(globalVariables.Notes);
         }
 
         // Edit log button

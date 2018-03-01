@@ -3306,6 +3306,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CURRENT_CAMPAIGN, globalVariables.CurrentCampaign);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CURRENT_SCENARIO, globalVariables.CurrentScenario);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_DIFFICULTY, globalVariables.CurrentDifficulty);
+        campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_NOTES, globalVariables.Notes);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_NIGHT_COMPLETED, globalVariables
                 .NightCompleted);
         campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_DUNWICH_COMPLETED, globalVariables

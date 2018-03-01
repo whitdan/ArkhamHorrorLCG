@@ -22,6 +22,7 @@ public class GlobalVariables extends Application {
     public int CurrentCampaign;                    // 1 = Night, 2 = Dunwich, 3 = Carcosa
     public int CurrentScenario;                    // 0 = campaign setup, >100 = standalone, 1000 = between campaigns
     public int CurrentDifficulty;                  // 0 = easy, 1 = normal, 2 = hard, 3 = expert (except standalones)
+    public String Notes;
     public int NightCompleted;
     public int DunwichCompleted;
     public int CarcosaCompleted;

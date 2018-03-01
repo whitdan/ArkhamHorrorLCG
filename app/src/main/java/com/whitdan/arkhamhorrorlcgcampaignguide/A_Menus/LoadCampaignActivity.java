@@ -257,6 +257,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     CampaignEntry.COLUMN_CURRENT_CAMPAIGN,
                     CampaignEntry.COLUMN_CURRENT_SCENARIO,
                     CampaignEntry.COLUMN_DIFFICULTY,
+                    CampaignEntry.COLUMN_NOTES,
                     CampaignEntry.COLUMN_NIGHT_COMPLETED,
                     CampaignEntry.COLUMN_DUNWICH_COMPLETED,
                     CampaignEntry.COLUMN_CARCOSA_COMPLETED,
@@ -307,6 +308,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         .getColumnIndexOrThrow(CampaignEntry.COLUMN_CURRENT_SCENARIO)));
                 globalVariables.CurrentDifficulty = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_DIFFICULTY)));
+                globalVariables.Notes = (campaignCursor.getString(campaignCursor.getColumnIndexOrThrow(CampaignEntry
+                        .COLUMN_NOTES)));
                 globalVariables.NightCompleted = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_NIGHT_COMPLETED)));
                 globalVariables.DunwichCompleted = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow

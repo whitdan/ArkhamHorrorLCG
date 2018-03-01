@@ -85,6 +85,7 @@ public class ChooseCampaignActivity extends AppCompatActivity {
     // variables from carrying through to a new campaign
     private void resetVariables(){
         globalVariables.CampaignVersion = 2;
+        globalVariables.Notes = null;
         globalVariables.ChaosBagID = -1;
         globalVariables.InvestigatorsInUse = new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         globalVariables.CurrentDifficulty = 1;

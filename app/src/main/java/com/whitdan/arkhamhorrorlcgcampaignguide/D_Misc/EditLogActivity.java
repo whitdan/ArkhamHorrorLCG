@@ -1,13 +1,18 @@
 package com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
@@ -41,6 +46,7 @@ public class EditLogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.d_activity_edit_log);
         globalVariables = (GlobalVariables) this.getApplication();
+        setupUI(findViewById(R.id.parent_layout), this);
 
         // Set title
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
@@ -69,6 +75,15 @@ public class EditLogActivity extends AppCompatActivity {
                     title.setVisibility(GONE);
                 }
                 break;
+        }
+
+        // Setup notes section
+        TextView notesHeading = findViewById(R.id.notes_heading);
+        notesHeading.setTypeface(teutonic);
+        final EditText notes = findViewById(R.id.edit_notes);
+        notes.setTypeface(arnopro);
+        if(globalVariables.Notes != null && globalVariables.Notes.length() > 0){
+            notes.setText(globalVariables.Notes);
         }
 
         // Get layout to add views and get scenario
@@ -2229,6 +2244,8 @@ public class EditLogActivity extends AppCompatActivity {
                     }
                 }
 
+                globalVariables.Notes = notes.getText().toString().trim();
+
                 // Save campaign
                 ScenarioResolutionActivity.saveCampaign(EditLogActivity.this, globalVariables);
 
@@ -2248,5 +2265,31 @@ public class EditLogActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    // Hides the soft keyboard when someone clicks outside the EditText
+    public static void setupUI(final View view, final Activity activity) {
+
+        // Set up touch listener for non-text box views to hide keyboard.
+        if (!(view instanceof EditText)) {
+            view.setOnTouchListener(new View.OnTouchListener() {
+                public boolean onTouch(View v, MotionEvent event) {
+                    InputMethodManager inputMethodManager =
+                            (InputMethodManager) activity.getSystemService(
+                                    Activity.INPUT_METHOD_SERVICE);
+                    inputMethodManager.hideSoftInputFromWindow(
+                            view.getWindowToken(), 0);
+                    return false;
+                }
+            });
+        }
+
+        //If a layout container, iterate over children and seed recursion.
+        if (view instanceof ViewGroup) {
+            for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++) {
+                View innerView = ((ViewGroup) view).getChildAt(i);
+                setupUI(innerView, activity);
+            }
+        }
     }
 }
