@@ -35,37 +35,21 @@
 	<string name="constance_victory">Constance Dumaine dans la pile de victoire</string>
 	<string name="jordan_victory">Jordan Perry dans la pile de victoire</string>	
 	<string name="ishimaru_victory">Ishimaru Haruko dans la pile de victoire</string>
+    <string name="ashleigh_victory">Ashleigh Clarke dans la pile de victoire</string>																				   
 	<string name="man_in_pallid_mask_defeated">L’Homme au Masque Blême a été vaincu</string>
     <string name="spent_clues_advance">Vous avez dépensé des indices pour avancer</string>
     <string name="must_read_act">Un investigateur doit lire l’Acte II.</string>
     <string name="select_read_act">Lisez l’Acte II.</string>
-	
-	<!--Edit log-->
-    <string name="doubt_heading">Doute</string>
-    <string name="conviction_heading">Conviction</string>
-    <string name="chasing_stranger_heading">Poursuite de l’Étranger</string>
-    <string name="theatre_heading">Réserve du Chaos</string>
-    <string name="theatre_one">2 pions Cultiste ajoutés.</string>
-    <string name="theatre_two">2 pions Tablette ajoutés.</string>
-    <string name="theatre_three">2 pions Choses Anciennes ajoutés.</string>
-    <string name="theatre_four">1 jeton Cultiste, 1 jeton Tablette, et 1 jeton Chose Ancienne ajoutés.</string>
-    <string name="stranger_heading">L’Étranger</string>
-    <string name="not_stranger">L’Étranger ne vous a pas à l’œil.</string>
-    <string name="police_heading">Police</string>
-    <string name="police_none">La police n’est pas impliquée.</string>
-    <string name="police_warned_and_suspicious">Vous avez tenté de prévenir la police et la police vous suspecte.</string>
-    <string name="party_heading">Réception</string>
-    <string name="no_party">Vous avez fui la réception.</string>
-    <string name="onyx_heading">La Broche d’Onyx Noir</string>
-    <string name="asylum_heading">Asile d’Arkham</string>
-    <string name="daniel_heading">Avertissement de Daniel</string>
-    <string name="no_daniel">Vous n’avez pas entendu l’avertissement de Daniel.</string>
-    <string name="nigel_heading">Nigel Engram</string>
+	<string name="advanced_agenda_one">Avancé à l’Intrigue 1b ou à l’Intrigue 1d</string>
+    <string name="agenda_one_effect">Intrigue 1b ou Intrigue 1d</string>
+    <string name="mark_one_conviction">Marqué une Certitude</string>
+    <string name="mark_one_doubt">Marqué un Doute</string>
+    <string name="must_agenda_one_effect">Vous devez choisir un effet pour l’Intrigue 1b ou l’Intrigue 1d</string>
 
 
     <!--Campaign Log-->
     <string name="doubt">Doute : </string>
-    <string name="conviction">Conviction: </string>
+    <string name="conviction">Certitude : </string>
     <string name="stranger">L’Étranger vous a à l’œil.\n\n</string>
     <string name="warned_police">Vous avez tenté de prévenir la police.\n\n</string>
     <string name="not_police">Vous avez choisi de ne pas aller voir la police.\n\n</string>
@@ -102,6 +86,32 @@
     <string name="inv_two_read_act">L’investigateur Deux lit l’Acte II.</string>
     <string name="inv_three_read_act">L’investigateur Trois lit l’Acte II.\n\n</string>
     <string name="inv_four_read_act">L’investigateur Quatre lit l’Acte II.\n\n</string>
+	<string name="carcosa_merged">Le royaume de Carcosa a fusionné avec notre monde, et Hastur règne sur les deux.\n\n</string>
+    <string name="path_below">Vous avez ouvert la voie d’en bas.\n\n</string>
+    <string name="path_above">Vous avez ouvert la voie d’en haut.\n\n</string>																													 
+
+		<!--Edit log-->
+    <string name="doubt_heading">Doute</string>
+    <string name="conviction_heading">Certitude</string>
+    <string name="chasing_stranger_heading">Poursuite de l’Étranger</string>
+    <string name="theatre_heading">Réserve du Chaos</string>
+    <string name="theatre_one">2 pions Cultiste ajoutés.</string>
+    <string name="theatre_two">2 pions Tablette ajoutés.</string>
+    <string name="theatre_three">2 pions Choses Anciennes ajoutés.</string>
+    <string name="theatre_four">1 jeton Cultiste, 1 jeton Tablette, et 1 jeton Chose Ancienne ajoutés.</string>
+    <string name="stranger_heading">L’Étranger</string>
+    <string name="not_stranger">L’Étranger ne vous a pas à l’œil.</string>
+    <string name="police_heading">Police</string>
+    <string name="police_none">La police n’est pas impliquée.</string>
+    <string name="police_warned_and_suspicious">Vous avez tenté de prévenir la police et la police vous suspecte.</string>
+    <string name="party_heading">Réception</string>
+    <string name="no_party">Vous avez fui la réception.</string>
+    <string name="onyx_heading">La Broche d’Onyx Noir</string>
+    <string name="asylum_heading">Asile d’Arkham</string>
+    <string name="daniel_heading">Avertissement de Daniel</string>
+    <string name="no_daniel">Vous n’avez pas entendu l’avertissement de Daniel.</string>
+    <string name="nigel_heading">Nigel Engram</string>																 
+	<string name="path_heading">Route de Carcosa</string>													
 
 
 	<!--Chaos bag-->
@@ -171,6 +181,19 @@
 																								 
 																				
 
+		 <string name="black_stars_skull_one">–X. X est le plus grand nombre de fatalités sur une Intrigue en jeu.</string>
+    <string name="black_stars_skull_two">–X. X est le nombre total de fatalités sur les Intrigues en jeu.</string>
+    <string name="black_stars_cultist_one">Révélez un autre pion Chaos. Si ce pion est révélé pendant une attaque ou une tentative d’évasion contre un ennemi avec une fatalité sur lui,
+		ce test échoue automatiquement à la place.</string>
+    <string name="black_stars_cultist_two">Révélez un autre pion Chaos. S’il y a un ennemi avec une ou plusieurs fatalités sur lui dans votre lieu,
+		ce test échoue automatiquement à la place.</string>
+    <string name="black_stars_tablet_one">Révélez un autre pion Chaos. En cas d’échec, placez une fatalité sur chaque Intrigue.</string>
+    <string name="black_stars_tablet_two">Révélez un autre pion Chaos. Si vous ne réussissez pas d’au moins 1, placez 1 fatalité sur chaque Intrigue.</string>
+    <string name="black_stars_thing_one">–2. En cas d’échec, cherchez dans le deck de rencontre et dans la pile de défausse un ennemi <b><i>Byakhee</i></b> 
+		et piochez-le.</string>
+    <string name="black_stars_thing_two">–3. En cas d’échec, cherchez dans le deck de rencontre et dans la pile de défausse un ennemi <b><i>Byakhee</i></b> 
+		et piochez-le.</string>
+																									 
     <!-- Campaign introduction-->
     <string name="carcosa_introduction"><b>Prologue</b>\n
     \nVous retournez le dépliant dans votre main, le feuilletant pour ce qui vous semble être la centième
@@ -575,6 +598,24 @@
 		s’ouvre d’un coup. Les os tombent au sol et les murs dévoilent un nouveau passage.\n
     \n<b>Souvenez-vous que « vous avez ouvert un passage secret » .</b></string>																											
 	
+	<string name="black_stars_introduction">La ville insulaire du Mont Saint-Michel se situe sur la côte au nord-ouest de la France.
+		C’est un lieu magnifique, élégant et énigmatique, tout droit échappé d’un conte de fées – ou en l’occurrence,
+		plutôt d’un conte d’horreur et de folie. À marée basse, une bande de terre qui émerge de la mer permet de rejoindre l’île à pied.
+		Cependant, le temps que vous arriviez, la marée est plus haute que vous ne vous y attendiez. De sombres nuages recouvrent les cieux,
+		et le bruit encore lointain du tonnerre présage de l’arrivée d’une tempête. Vous dénichez un capitaine qui accepte de vous emmener sur l’île
+		et vous vous préparez au rituel qui va s’y dérouler.</string>
+    <string name="black_stars_introduction_ashleigh">La ville insulaire du Mont Saint-Michel se situe sur la côte au nord-ouest de la France.
+		C’est un lieu magnifique, élégant et énigmatique, tout droit échappé d’un conte de fées – ou en l’occurrence,
+		plutôt d’un conte d’horreur et de folie. À marée basse, une bande de terre qui émerge de la mer permet de rejoindre l’île à pied.
+		Cependant, le temps que vous arriviez, la marée est plus haute que vous ne vous y attendiez. De sombres nuages recouvrent les cieux,
+		et le bruit encore lointain du tonnerre présage de l’arrivée d’une tempête. Vous dénichez un capitaine qui accepte de vous emmener sur l’île
+		et vous vous préparez au rituel qui va s’y dérouler.\n
+    \n Vous vous remémorez la nuit où tout a commencé et vos pensées dérivent vers l’hypnotique mélodie qu’Ashleigh chanta cette nuit-là.
+		Étrangement, vous vous souvenez parfaitement des paroles, même après tout ce temps, et sa mélodie entêtante hante votre esprit.
+		« Au-dessus de la ville gronde un terrible orage, et les vagues se brisent sur l’or pur de la cage. Au-dessous de la terre
+		plongent les eaux salées ; l’astre rouge décroît, laissant l’ombre régner  » En regardant l’île qui se dresse devant vous,
+		illuminée par les éclairs et assaillie par les vagues tumultueuses, vous ne pouvez vous empêcher de vous demander si 
+		la chanson d’Ashleigh ne concernait pas ce moment précis.</string>
 
 
     <!--Scenario set-up instructions-->
@@ -740,6 +781,38 @@
     <string name="pallid_set_aside">Le détenteur de la faiblesse L’Homme au Masque Blême la cherche dans son deck 
 		et la met de côté, hors jeu.\n</string>
     <string name="pallid_additional">Choisissez un lieu Les Catacombes adjacent au lieu de départ et révélez-le.</string>
+	 <string name="black_stars_sets">Sous les Étoiles Noires, Présages Funestes, Les Byakhees, Les Habitants de Carcosa,
+		L’Étranger, Sombre Culte et Antiques Fléaux.</string>
+    <string name="black_stars_sets_two">Certaines cartes du set de rencontre <i>Sous les Étoiles Noires</i> existent
+		en plusieurs versions, certaines avec l’icône du set de rencontre <i>Le Déluge En Dessous</i> au verso,
+		et d’autres avec l’icône du set de rencontre <i>Le Tourbillon Au-Dessus</i> au verso.</string>
+    <string name="black_stars_sets_three">Triez chaque exemplaire des cartes suivantes en deux piles séparées en fonction
+		du set de rencontre sur leur verso : Intrigue 2a – Que Gronde l’Orage, Intrigue 2c – Le Phénomène Au-Dessus,
+		Chapelle Saint-Aubert et Tour de l’Abbaye.\n
+    \n Disposez les deux piles au hasard de manière à ne pas pouvoir les distinguer. Prenez l’une des deux piles au hasard
+	et retirez-la de la partie. L’autre pile sera utilisée lors de la mise en place de ce scénario. \n</string>
+    <string name="black_stars_locations">Prenez au hasard l’un des deux lieux Tour Nord, l’un des deux lieux Rempart
+		Extérieur et l’un des deux lieux Marches Brisées. Mettez-les en jeu. Retirez de la partie les autres versions de ces lieux.\n
+        \nEnsuite, mettez en jeu la Porte de l’Avancée, la Grand-Rue et l’Église Abbatiale.\n
+        \nChaque investigateur commence la partie à la Porte de l’Avancée.\n</string>
+    <string name="black_stars_set_aside">Les deux cartes Actes (Acte 3a et Acte 3c), Bête d’Aldébaran, chaque exemplaire de
+		Terreur des Marées, chaque exemplaire de Chercheur de Failles, Cloître, Salle des Chevaliers, Tour de l’Abbaye
+		et Chapelle Saint-Aubert.\n</string>
+    <string name="black_stars_additional">Selon le niveau de difficulté, ajoutez le pion Chaos suivant à la réserve du Chaos
+		pour le reste de la campagne :\n
+    \n\t\t<b>Facile:</b> -3\n
+    \n\t\t<b>Standard:</b> -5\n
+    \n\t\t<b>Difficile:</b> -6\n
+    \n\t\t<b>Expert:</b> -7\n
+    \nCe scénario ne dispose pas de deck Acte.  À la place, il possède deux decks Intrigue. Un deck Intrigue utilise
+		les intrigues 1a, 2a et 3a. . L’autre deck Intrigue utilise les intrigues 1c, 2c et 3c.\n
+    \nPrenez au hasard l’un des deux lieux Chœur Gothique et mettez-le de côté. Retirez l’autre version du Chœur Gothique de la partie.\n
+    \nChaque investigateur cherche une faiblesse de base <b><i>Folie</i></b>, <b><i>Pacte</i></b>, <b><i>Cultiste</i></b>,
+		ou <b><i>Détective</i></b> au hasard dans la collection et l’ajoute à son deck.</string>
+    <string name="black_stars_additional_ashleigh">\nLors de ce scénario, un investigateur a le droit de retirer 1 fatalité d’une
+		intrigue en jeu en tant que capacité déclenchée. (Limite collective d’une fois par partie.)</string>
+
+					   
 
 	
 		
@@ -1055,8 +1128,7 @@
 		et détalez à toutes jambes une fois de l’autre côté.\n
     \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Chose Ancienne
 		dans la réserve du Chaos.</b></string>
-	<string
-        name="unspeakable_resolution_onyx"><b>Choisissez un nouvel investigateur qui doit inclure la faiblesse Broche d’Onyx Noir 
+	<string name="unspeakable_resolution_onyx"><b>Choisissez un nouvel investigateur qui doit inclure la faiblesse Broche d’Onyx Noir 
 			dans son deck.</b></string>	
 
 
@@ -1171,5 +1243,26 @@
 		d’être passé sous un train. La douleur est intolérable. L’homme vous braque sa torche sur le visage et vous
 		pose des questions en français. Vos yeux s’écarquillent à mesure que vous reprenez conscience. Vous libérez votre
 		bras de la poigne du policier déboussolé. « Il faut qu’y aille, maintenant ! » </string>
-							
+		
+
+<string name="black_stars_resolution_one">Vous retenez votre souffle et nagez dans l’eau glacée vers les
+		tours au-dessous. En approchant, vous apercevez des ondulations dans l’eau semblables à des reflets à la surface de la mer.
+		Vous traversez cette démarcation et poussez un cri de surprise en constatant que l’air emplit vos poumons.\n
+    \n<b>Retirez tous les pions Cultiste, Tablette et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Cultiste 
+		et 2 pions Tablette dans la réserve du Chaos.</b></string>
+    <string name="black_stars_resolution_two">Vous vous émerveillez des vagues de nuages qui vous entourent et vous volez vers les tours au-dessus. 
+		La cité désolée et impénétrable de Carcosa se dresse devant vous. Vous réalisez soudain que vous n’êtes pas en train de flotter mais de tomber,
+		et la force d’attraction s’empare de votre corps.\n
+    \n<b>Retirez tous les pions Cultiste, Tablette et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Cultiste 
+		et 2 pions Chose Ancienne dans la réserve du Chaos.</b></string>
+    <string name="black_stars_resolution_three">Vous vous réveillez dans le chœur gothique de l’abbaye du Mont Saint-Michel. Le bruit de
+		la pluie sur les vitraux a cessé et vous n’entendez plus ni le tonnerre, ni le bruissement des horreurs ailées. Vous avez visiblement 
+		échappé au funeste destin de l’île. Vous rampez jusqu’à la porte de l’abbaye et l’ouvrez avec appréhension. Une lumière aveuglante vous
+		éblouit et vous levez la main pour protéger vos yeux de l’éclat des deux soleils. Vous restez là un instant à observer le lac de Hali,
+		les Étoiles Noires suspendues à la voûte céleste au-dessus de vous. Au-delà, après des lieues de vagues-nuages tourbillonnants,
+		les hautes tours de Carcosa s’élèvent derrière la lune brisée.\n
+    \n<b>Vous avez rencontré un funeste destin, n’est-ce pas ?</b>\n
+    \n<b>Chaque investigateur devient dément.</b>\n
+    \n<b>Les investigateurs ont perdu la campagne.</b></string>
+																		
 </resources>

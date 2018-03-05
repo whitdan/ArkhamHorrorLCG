@@ -65,6 +65,7 @@
     <string name="okay">Valider</string>
     <string name="cancel">Annuler</string>
     <string name="nothing">Rien à afficher.</string>
+    <string name="notes">Notes</string>
 
     <string name="campaign_finished">Campagne Terminée</string>
     <string name="finish_campaign">Terminer la Campagne</string>
