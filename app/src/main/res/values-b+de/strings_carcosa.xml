@@ -207,10 +207,10 @@
     <string name="black_stars_skull_two">–X. X ist die Gesamtanzahl an Verderbensmarkern auf allen Agenden im
         Spiel.</string>
     <string name="black_stars_cultist_one">Enthülle einen weiteren Marker. Falls dieser Marker während eines Angriffs
-        oder eines Entkommen-Versuchs gegen einen Gegner mit einem Verderbensmarker enthüllt wird, misslingt die Probe
-        stattdessen automatisch.</string>
-    <string name="black_stars_cultist_two">Enthülle einen weiteren Marker. Falls sich an deinem Ort ein Gegner mit
-        einem Verderbensmarkern befindet, misslingt die Probe stattdessen automatisch.</string>
+        oder eines Entkommen-Versuchs gegen einen Gegner mit Verderben enthüllt wird, misslingt diese Probe stattdessen
+        automatisch.</string>
+    <string name="black_stars_cultist_two">Enthülle einen weiteren Marker. Falls sich ein Gegner mit Verderben an deinem
+        Ort befindet, misslingt die Probe stattdessen automatisch.</string>
     <string name="black_stars_tablet_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere 1
         Verderbensmarker auf jede Agenda.</string>
     <string name="black_stars_tablet_two">Enthülle einen weiteren Marker. Falls die Probe nicht um mindestens 1
