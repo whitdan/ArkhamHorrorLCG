@@ -181,17 +181,18 @@
 																								 
 																				
 
-		 <string name="black_stars_skull_one">–X. X est le plus grand nombre de fatalités sur une Intrigue en jeu.</string>
-    <string name="black_stars_skull_two">–X. X est le nombre total de fatalités sur les Intrigues en jeu.</string>
-    <string name="black_stars_cultist_one">Révélez un autre pion Chaos. Si ce pion est révélé pendant une attaque ou une tentative d’évasion contre un ennemi avec une fatalité sur lui,
-		ce test échoue automatiquement à la place.</string>
-    <string name="black_stars_cultist_two">Révélez un autre pion Chaos. S’il y a un ennemi avec une ou plusieurs fatalités sur lui dans votre lieu,
-		ce test échoue automatiquement à la place.</string>
-    <string name="black_stars_tablet_one">Révélez un autre pion Chaos. En cas d’échec, placez une fatalité sur chaque Intrigue.</string>
-    <string name="black_stars_tablet_two">Révélez un autre pion Chaos. Si vous ne réussissez pas d’au moins 1, placez 1 fatalité sur chaque Intrigue.</string>
-    <string name="black_stars_thing_one">–2. En cas d’échec, cherchez dans le deck de rencontre et dans la pile de défausse un ennemi <b><i>Byakhee</i></b> 
+		 <string name="black_stars_skull_one">–X. X est le plus grand nombre de fatalités sur une intrigue en jeu.</string>
+    <string name="black_stars_skull_two">–X. X est le nombre total de fatalités sur les intrigues en jeu.</string>
+    <string name="black_stars_cultist_one">Révélez un autre pion. Au lieu de révéler cet autre pion, ce test échoue automatiquement si le pion 
+		a été révélé lors d’une attaque ou tentative d’évasion contre un ennemi avec de la fatalité sur lui.</string>
+    <string name="black_stars_cultist_two">Révélez un autre pion. Au lieu de révéler cet autre pion, ce test échoue automatiquement s’il y a
+		un ennemi avec de la fatalité sur lui dans votre lieu.</string>
+    <string name="black_stars_tablet_one">Révélez un autre pion. En cas d’échec, placez une fatalité sur chaque intrigue.</string>
+    <string name="black_stars_tablet_two">Révélez un autre pion. Si vous ne réussissez pas avec une différence d’au moins 1,
+		placez 1 fatalité sur chaque intrigue.</string>
+    <string name="black_stars_thing_one">–2. En cas d’échec, cherchez un ennemi <b><i>Byakhee</i></b>  dans le deck Rencontre ou dans la pile de défausse Rencontre
 		et piochez-le.</string>
-    <string name="black_stars_thing_two">–3. En cas d’échec, cherchez dans le deck de rencontre et dans la pile de défausse un ennemi <b><i>Byakhee</i></b> 
+    <string name="black_stars_thing_two">–3. En cas d’échec, cherchez un ennemi <b><i>Byakhee</i></b>  dans le deck Rencontre ou dans la pile de défausse Rencontre
 		et piochez-le.</string>
 																									 
     <!-- Campaign introduction-->
