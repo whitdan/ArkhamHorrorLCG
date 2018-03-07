@@ -35,8 +35,16 @@
     <string name="constance_victory">Constance Dumaine befindet sich im Siegpunktestapel</string>
     <string name="jordan_victory">Jordan Perry befindet sich im Siegpunktestapel</string>
     <string name="ishimaru_victory">Ishimaru Haruko befindet sich im Siegpunktestapel</string>
+    <string name="ashleigh_victory">Ashleigh Clarke befindet sich im Siegpunktestapel</string>
+    <string name="man_in_pallid_mask_defeated">Der Mann mit der Bleichen Maske wurde besiegt</string>
+    <string name="spent_clues_advance">Mit Hinweismarkern vorgerückt</string>
     <string name="must_read_act">Mindestens ein Ermittler muss Akt II lesen.</string>
     <string name="select_read_act">Ermittler, die Akt II lesen:</string>
+    <string name="advanced_agenda_one">Agenda 1b oder Agenda 1d wurde erreicht</string>
+    <string name="agenda_one_effect">Agenda 1b oder Agenda 1d</string>
+    <string name="mark_one_conviction">1 Überzeugung angekreuzt</string>
+    <string name="mark_one_doubt">1 Zweifel angekreuzt</string>
+    <string name="must_agenda_one_effect">Du musst noch einen Effekt für Agenda 1b oder Agenda 1d wählen</string>
 
 
     <!--Campaign Log-->
@@ -78,6 +86,10 @@
     <string name="inv_two_read_act">Ermittler 2 hat Akt II gelesen.\n\n</string>
     <string name="inv_three_read_act">Ermittler 3 hat Akt II gelesen.\n\n</string>
     <string name="inv_four_read_act">Ermittler 4 hat Akt II gelesen.\n\n</string>
+    <string name="carcosa_merged"> Das Reich von Carcosa ist mit unserem verschmolzen und Hastur regiert über
+        beide.\n\n</string>
+    <string name="path_below">Die Ermittler haben den unteren Pfad geöffnet.\n\n</string>
+    <string name="path_above">Die Ermittler haben den oberen Pfad geöffnet.\n\n</string>
 
 
     <!--Edit log-->
@@ -91,7 +103,7 @@
     <string name="theatre_four">1 Kultisten-, 1 Tafel- und 1 Älteres Wesen-Marker wurden hinzugefügt.</string>
     <string name="stranger_heading">Der Fremde</string>
     <string name="not_stranger">Der Fremde ist nicht hinter den Ermittlern her.</string>
-    <string name="police_heading">Polizei</string>
+    <string name="police_heading">Die Polizei</string>
     <string name="police_none">Die Polizei wurde nicht involviert.</string>
     <string name="police_warned_and_suspicious">Die Ermittler haben versucht, die Polizei zu warnen, und dabei den
         Verdacht auf sich gezogen.</string>
@@ -100,8 +112,9 @@
     <string name="onyx_heading">Die Spange aus Onyx</string>
     <string name="asylum_heading">Das Arkham-Sanatorium</string>
     <string name="daniel_heading">Daniels Warnung</string>
-    <string name="no_daniel">Daniels Warnung wurde übersehen.</string>
+    <string name="no_daniel">Daniels Warnung wurde nicht gehört.</string>
     <string name="nigel_heading">Nigel Engram</string>
+    <string name="path_heading">Der Pfad nach Carcosa</string>
 
 
     <!--Chaos bag-->
@@ -188,6 +201,24 @@
         nach einem <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner und ziehe ihn.</string>
     <string name="pallid_thing_two">–4. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den Ablagestapel
         nach einem <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner und ziehe ihn.</string>
+
+    <string name="black_stars_skull_one">–X. X ist die höchste Anzahl an Verderbensmarkern auf einer Agenda im
+        Spiel.</string>
+    <string name="black_stars_skull_two">–X. X ist die Gesamtanzahl an Verderbensmarkern auf allen Agenden im
+        Spiel.</string>
+    <string name="black_stars_cultist_one">Enthülle einen weiteren Marker. Falls dieser Marker während eines Angriffs
+        oder eines Entkommen-Versuchs gegen einen Gegner mit Verderben enthüllt wird, misslingt diese Probe stattdessen
+        automatisch.</string>
+    <string name="black_stars_cultist_two">Enthülle einen weiteren Marker. Falls sich ein Gegner mit Verderben an deinem
+        Ort befindet, misslingt die Probe stattdessen automatisch.</string>
+    <string name="black_stars_tablet_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere 1
+        Verderbensmarker auf jede Agenda.</string>
+    <string name="black_stars_tablet_two">Enthülle einen weiteren Marker. Falls die Probe nicht um mindestens 1
+        gelingt, platziere 1 Verderbensmarker auf jede Agenda.</string>
+    <string name="black_stars_thing_one">–2. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den
+        Ablagestapel nach einem <b><i>Byakhee</i></b>-Gegner und ziehe ihn.</string>
+    <string name="black_stars_thing_two">–3. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den
+        Ablagestapel nach einem <b><i>Byakhee</i></b>-Gegner und ziehe ihn.</string>
 
 
     <!-- Campaign introduction-->
@@ -306,35 +337,35 @@
         immer noch erschreckend präsent. Du merkst, dass du häufig in den Rückspiegel schaust, in der Erwartung, dass
         dich das ausdruckslose Gesicht seiner Maske wieder heimsucht. Stattdessen siehst du aber nichts als die neblige,
         sternenlose Nacht und eine menschenleere Straße hinter dir.\n
-    \nDeine Gedanken kreisen wie schon so oft in den letzten Stunden um <i>Der Königin Gelb</i> und die Stadt Carcosa
+    \nDeine Gedanken kreisen wie schon so oft in den letzten Stunden um <i>Der König in Gelb</i> und die Stadt Carcosa
         und ihre Einwohner. Welche verborgene Botschaft enthält dieses fürchterliche Stück und was ist die wahre
-        Bedeutung seines Wahnsinns: Dann drängt sich eine Kleinigkeit in dein Bewusstsein, etwas, das du in einem
-        Gespräch im Herrenhaus von Ms. Dumaine mitgehört hast – die heutige Aufführung von <i>Der Königin Gelb</i> war
+        Bedeutung seines Wahnsinns? Dann drängt sich eine Kleinigkeit in dein Bewusstsein, etwas, das du in einem
+        Gespräch im Herrenhaus von Ms. Dumaine mitgehört hast – die heutige Aufführung von <i>Der König in Gelb</i> war
         nicht die erste dieser widerlichen Inszenierung in Arkham. Es hat mindestens eine weitere Aufführung in der
         Vergangenheit gegeben, mit demselben Regisseur: Nigel Engram.\n
     \nIn Arkham gibt es einen Ort, an dem Aufzeichnungen über wichtige Ereignisse in der Stadt aufbewahrt werden: das
         Anwesen der Gesellschaft für Geschichte in der Südstadt. Falls es Berichte über die frühere Aufführung von
-        <i>Der Königin Gelb gibt</i>, wird die Gesellschaft für Geschichte sie haben. Vielleicht findest du dort die
+        <i>Der König in Gelb gibt</i>, wird die Gesellschaft für Geschichte sie haben. Vielleicht findest du dort die
         Antworten auf die brennenden Fragen, die deinen Geist quälen.</string>
     <string name="echoes_introduction_two">Ein dumpfer Schmerz pulsiert in deinem Kopf, während du durch die regennassen
         Straßen von Arkham zu deinem nächsten Ziel unterwegs bist. Die Bedrohung durch den Fremden ist in deinem Geist
         immer noch erschreckend präsent. Du merkst, dass du häufig in den Rückspiegel schaust, in der Erwartung, dass
         dich das ausdruckslose Gesicht seiner Maske wieder heimsucht. Stattdessen siehst du aber nichts als die neblige,
         sternenlose Nacht und eine menschenleere Straße hinter dir.\n
-    \nDeine Gedanken kreisen wie schon so oft in den letzten Stunden um <i>Der Königin Gelb</i> und die Stadt Carcosa
+    \nDeine Gedanken kreisen wie schon so oft in den letzten Stunden um <i>Der König in Gelb</i> und die Stadt Carcosa
         und ihre Einwohner. Welche verborgene Botschaft enthält dieses fürchterliche Stück und was ist die wahre
-        Bedeutung seines Wahnsinns: Dann drängt sich eine Kleinigkeit in dein Bewusstsein, etwas, das du in einem
-        Gespräch im Herrenhaus von Ms. Dumaine mitgehört hast – die heutige Aufführung von <i>Der Königin Gelb</i> war
+        Bedeutung seines Wahnsinns? Dann drängt sich eine Kleinigkeit in dein Bewusstsein, etwas, das du in einem
+        Gespräch im Herrenhaus von Ms. Dumaine mitgehört hast – die heutige Aufführung von <i>Der König in Gelb</i> war
         nicht die erste dieser widerlichen Inszenierung in Arkham. Es hat mindestens eine weitere Aufführung in der
         Vergangenheit gegeben, mit demselben Regisseur: Nigel Engram.\n
     \nIn Arkham gibt es einen Ort, an dem Aufzeichnungen über wichtige Ereignisse in der Stadt aufbewahrt werden: das
         Anwesen der Gesellschaft für Geschichte in der Südstadt. Falls es Berichte über die frühere Aufführung von
-        <i>Der Königin Gelb gibt</i>, wird die Gesellschaft für Geschichte sie haben. Vielleicht findest du dort die
+        <i>Der König in Gelb gibt</i>, wird die Gesellschaft für Geschichte sie haben. Vielleicht findest du dort die
         Antworten auf die brennenden Fragen, die deinen Geist quälen.\n
     \nSebastiens Informationen: Du erinnerst dich an etwas, was Sebastien dir auf der Feier erzählt hat. <i>Der König in
         Gelb</i> gastierte vor einigen Jahrzehnten schon einmal in Arkham, lange bevor es das Ward-Theater gegeben hat.
         Er war nicht überrascht, dass nur wenige Menschen sich daran erinnern – eines der Ziele der heutigen Aufführung
-        war <i>Der König in Gelb</i> einem breiteren Publikum bekannt zu machen. Die Gesellschaft für Geschichte könnte
+        war, <i>Der König in Gelb</i> einem breiteren Publikum bekannt zu machen. Die Gesellschaft für Geschichte könnte
         Aufzeichnungen über diese frühere Inszenierung aufbewahrt haben, besonders wenn damals ähnliche Ereignisse in
         ihrem Umfeld stattgefunden haben wie heute. Vielleicht findest du dort Zeitungsausschnitte oder andere Berichte
         über die Ereignisse aus der Vergangenheit.</string>
@@ -617,6 +648,28 @@
         Boden, die Wände gleiten zur Seite und geben einen neuen Weg frei.\n
     \n<b>Merke dir, dass „die Ermittler einen Geheimgang geöffnet haben“.</b></string>
 
+    <string name="black_stars_introduction">Die Inselgemeinde Mont Saint-Michel liegt an der Nordwestküste von
+        Frankreich. Sie ist wunderschön, elegant und rätselhaft – ein Ort wie aus einem Märchen. Nur dass es sich dabei
+        um ein Märchen voller Schrecken und Wahnsinn handelt. Bei Ebbe ist die Insel zu Fuß über den Damm zu erreichen,
+        der sich aus dem Meer erhebt. Aber als du an der Küste ankommst, ist die Flut bereits deutlich höher, als du
+        erwartet hattest. Dunkle Wolken bedecken den Himmel und ein Donnergrollen in der Ferne kündigt einen
+        aufziehenden Sturm an. Endlich findest du ein Boot, dessen Kapitän bereit ist dich zur Insel überzusetzen. Du
+        bereitest dich auf das bevorstehende Ritual vor.</string>
+    <string name="black_stars_introduction_ashleigh">Die Inselgemeinde Mont Saint-Michel liegt an der Nordwestküste von
+        Frankreich. Sie ist wunderschön, elegant und rätselhaft – ein Ort wie aus einem Märchen. Nur dass es sich dabei
+        um ein Märchen voller Schrecken und Wahnsinn handelt. Bei Ebbe ist die Insel zu Fuß über den Damm zu erreichen,
+        der sich aus dem Meer erhebt. Aber als du an der Küste ankommst, ist die Flut bereits deutlich höher, als du
+        erwartet hattest. Dunkle Wolken bedecken den Himmel und ein Donnergrollen in der Ferne kündigt einen
+        aufziehenden Sturm an. Endlich findest du ein Boot, dessen Kapitän bereit ist dich zur Insel überzusetzen. Du
+        bereitest dich auf das bevorstehende Ritual vor.\n
+    \nDu erinnerst dich an die Nacht, in der alles anfing. Deine Gedanken schweifen zu dem hypnotisierenden Lied, das
+        Ashleigh in jener Nacht gesungen hat. Irgendwie kannst du dich nach all der Zeit, die vergangen ist, an jedes
+        Wort des Liedes erinnern und die eindringliche Melodie ist tief in deinem Geist eingegraben. „Über den Dächern
+        jagt ein finstres Wolkenheer… Der goldne Käfig zerbirst im Wellenmeer… Tief unten salziges Wasser die Erde
+        durchdringt… Die rote Sonne im Schlaf dunkle Schatten bringt…“ Du betrachtest die Insel vor dir, die von
+        zuckenden Blitzen erhellt und von tosenden Wellen bedroht ist. Du kannst nicht anders, als dich zu fragen, ob
+        Ashleighs Lied genau diesen Moment beschrieben hat.</string>
+
 
     <!--Scenario set-up instructions-->
     <string name="curtain_sets">Ruf vor den Vorhang, Böse Vorzeichen, Wahnvorstellungen, Heimsuchungen, Kult des gelben
@@ -639,28 +692,28 @@
     <string name="king_set_aside">Dianne Devine.\n</string>
     <string name="king_additional_one">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
-        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 2 Hinweise
+        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jede dieser Vorteilskarten werden 2 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und unter die Szenarioübersichtskarte
-        gelegt.</string>
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und ohne sie anzusehen unter die
+        Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_two">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
-        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 3 Hinweise
+        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jede dieser Vorteilskarten werden 3 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und unter die Szenarioübersichtskarte
-        gelegt.</string>
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und ohne sie anzusehen unter die
+        Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_three">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
-        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 4 Hinweise
+        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jede dieser Vorteilskarten werden 4 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und unter die Szenarioübersichtskarte
-        gelegt.</string>
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und ohne sie anzusehen unter die
+        Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_four">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
-        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jeder dieser Vorteilskarten werden 5 Hinweise
+        ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jede dieser Vorteilskarten werden 5 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und unter die Szenarioübersichtskarte
-        gelegt.</string>
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und ohne sie anzusehen unter die
+        Szenarioübersichtskarte gelegt.</string>
 
     <string name="echoes_sets">Widerhall aus der Vergangenheit, Kult des gelben Zeichens, Wahnvorstellungen,
         Die Mitternachtsmasken, Verschlossene Türen and Dunkler Kult.\n
@@ -683,7 +736,7 @@
     <string name="echoes_additional_four_players">Durchsuche die Begegnungssets nach drei Exemplaren von Sucher von
         Carcosa. Sie erscheinen an drei unterschiedlichen Orten der Gesellschaft für Geschichte mit dem Merkmal
         <b><i>Erster Stock</i></b> oder <b><i>Zweiter Stock</i></b>.\n\n</string>
-    <string name="echoes_additional_sebastien">Platziere einen Hinweis pro Ermittler auf dem Eingangsbereich.
+    <string name="echoes_additional_sebastien">Platziere einen Hinweis pro Ermittler auf den Eingangsbereich.
         \n\n</string>
     <string name="echoes_additional_dinner">Du kommst frühzeitig beim Anwesen der Gesellschaft für Geschichte an. Jeder
         Ermittler kann in der ersten Runde des Spiels eine zusätzliche Aktion nehmen.</string>
@@ -692,7 +745,7 @@
         Verfall und Schmutz und Anhänger von Hastur.</string>
     <string name="unspeakable_locations">1 Exemplar von Sanatoriumsflur <i>(Östlicher Patientenflügel)</i> und 1
         Exemplar von Sanatoriumsflur <i>(Westlicher Patientenflügel)</i> werden zufällig bestimmt und aus dem Spiel
-        entfernt. Die übrigen Exemplare von Sanatoriumsflut werden ins Spiel gebracht.\n
+        entfernt. Die übrigen Exemplare von Sanatoriumsflur werden ins Spiel gebracht.\n
         \nDie Orte Speisesaal, Küche, Hof, Garten, Krankenstation und Kellerflur werden ins Spiel gebracht.\n
         \nJeder Ermittler beginnt das Spiel auf einem Sanatoriumsflur seiner Wahl.\n</string>
     <string name="unspeakable_set_aside">Daniel Chesterfield und jedes Exemplar von Sicherheitszelle.\n
@@ -798,6 +851,41 @@
     <string name="pallid_set_aside">Der Träger der Schwäche Der Mann mit der Bleichen Maske durchsucht sein Deck nach
         dieser Karte und legt sie als nicht im Spiel befindlich beiseite.\n</string>
     <string name="pallid_additional">Wähle einen Katakombenort, der zum Startort benachtbart ist, und enthülle ihn.</string>
+
+    <string name="black_stars_sets">Die Schwarzen Sterne gehen auf, Böse Vorzeichen, Byakhee, Bewohner von Carcosa, Der
+        Fremde, Dunkler Kult und Böses aus uralter Zeit.</string>
+    <string name="black_stars_sets_two">Manche Karten des Begegnungssets <i>Die Schwarzen Sterne gehen auf</i>
+        existieren in unterschiedlichen Versionen: Einige von ihnen tragen das Begegnungssetsymbol <i>Die Flut
+        darunter</i> auf ihrer Rückseite, andere das von <i>Der Wirbel am Himmel</i>.</string>
+    <string name="black_stars_sets_three">Alle Exemplare der folgenden Karten werden nach dem Begegnungssetsymbol auf
+        ihrer Rückseite in zwei Stapel sortiert: Agenda 2a (Lass den Sturm toben), Agenda 2c (Die Präsenz am Himmel),
+        Kapelle von St. Aubert und Turm der Abtei.\n
+    \nDie Karten beider Stapel werden umgedreht, sodass nur das Begegnungssetsymbol für <i>Die Schwarzen Sterne gehen
+        auf</i> auf ihnen zu sehen ist. Dann wird ein zufällig bestimmter dieser Stapel aus dem Spiel entfernt, ohne
+        dass die Spieler wissen, welcher der beiden Stapel aus dem Spiel entfernt wurde. Die Karten des anderen Stapels
+        werden bei der Vorbereitung des Szenarios verwendet.\n</string>
+    <string name="black_stars_locations">Jeweils ein Exemplar der Orte Nordturm, Äußere Mauer und Zerstörte Stufen wird
+        zufällig bestimmt und ins Spiel gebracht. Die anderen Versionen dieser Orte werden aus dem Spiel entfernt.\n
+        \nDann werden die Orte Porte de l’Avancée, Grand Rue und Abteikirche ins Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel an der Porte de l’Avancée.\n</string>
+    <string name="black_stars_set_aside">Beide Szenenkarten (Szene 3a und Szene 3c), Bestie von Aldebaran, alle
+        Exemplare von Schrecken aus den Fluten, alle Exemplare von Riss-Sucher, Kloster, Rittersaal, Turm der Abtei und
+        Kapelle von St. Aubert.\n</string>
+    <string name="black_stars_additional">Abhängig vom Schwierigkeitsgrad wird für den Rest der Kampagne
+        der folgende Chaosmarker dem Chaosbeutel hinzugefügt:\n
+        \n\t\t<b>Einfach:</b> -3\n
+        \n\t\t<b>Normal:</b> -5\n
+        \n\t\t<b>Schwer:</b> -6\n
+        \n\t\t<b>Experte:</b> -7\n
+    \nIn diesem Szenario gibt es kein Szenendeck. Stattdessen gibt es zwei Agendadecks. Das eine besteht aus den
+        Agenden 1a, 2a und 3a. Das andere besteht aus den Agenden 1c, 2c und 3c.\n
+    \nEin zufälliges Exemplar von Chœur Gothique wird beiseitegelegt. Die andere Version von Chœur Gothique wird aus dem
+        Spiel entfernt.\n
+    \nJeder Ermittler durchsucht die Sammlung nach einer zufälligen <b><i>Wahnsinn</i></b>-, <b><i>Pakt</i></b>-,
+        <b><i>Kultist</i></b>- oder <b><i>Detective</i></b>-Grundschwäche und fügt sie seinem Deck hinzu.</string>
+    <string name="black_stars_additional_ashleigh">\nWährend dieses Szenarios darf ein Ermittler als freie ausgelöste
+        Fähigkeit 1 Verderben von einer Agenda im Spiel entfernen. (Nur einmal pro Spiel für die gesamte
+        Gruppe.)</string>
 
 
     <!--Scenario resolutions-->
@@ -967,17 +1055,17 @@
     <string name="echoes_resolution_one">Es gibt keine Zufälle, wenn es um <i>Der König in Gelb</i> geht. Du hast keinen
         Zweifel daran, dass dieses Ding, das du gefunden hast, wichtig ist. Du entscheidest dich dafür, es mitzunehmen,
         und setzt deine Ermittlungen fort. Beim letzten Bericht, den du im Zusammenhang mit der früheren Inszenierung
-        von <i>Der Königin Gelb</i> gefunden hast, handelt es sich um ein psychologisches Gutachten über einengewissen
+        von <i>Der König in Gelb</i> gefunden hast, handelt es sich um ein psychologisches Gutachten über einen gewissen
         Daniel Chesterfield, einen Bühnenarbeiter, der nach der letzten Aufführung den Verstand verloren hat. Scheinbar
         wurde er nach dem Ende der Produktion ins Sanatorium eingewiesen. Vielleicht ist er immer noch da…\n
     \n<b>Für den Rest der Kampagne muss ein Ermittler die Schwäche Spange aus schwarzem Onyx in sein Deck aufnehmen.
-            Diese Karte zählt nichtgegen die Deckgröße dieses Ermittlers.</b>\n
+            Diese Karte zählt nicht gegen die Deckgröße dieses Ermittlers.</b>\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
             Kultist-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
     <string name="echoes_resolution_two">Diese Ermittlung würde jeden paranoid machen. Es ist gefährlich, allem, was du
         findest, eine tiefere Bedeutung beizumessen. Du bist dir aber sicher, dass diese Spange keine Bedeutung hat,
         vielleicht handelt es sich um eine Requisite aus der Originalinszenierung. Du lässt sie zurück und setzt deine
-        Ermittlung fort. Beim letzten Bericht, den du im Zusammenhang mit der früheren Inszenierung von <i>Der Königin
+        Ermittlung fort. Beim letzten Bericht, den du im Zusammenhang mit der früheren Inszenierung von <i>Der König in
         in Gelb</i> gefunden hast, handelt es sich um ein psychologisches Gutachten über einen gewissen Daniel
         Chesterfield, einen Bühnenarbeiter, der nach der letzten Aufführung den Verstand verloren hat. Scheinbar wurde
         er nach dem Ende der Produktion ins Sanatorium eingewiesen. Vielleicht ist er immer noch da…\n
@@ -1201,7 +1289,9 @@
         Jeder Ermittler, der Akt II liest, durchsucht die Sammlung nach einer zufälligen <i><b>Wahnsinn</b></i>- oder
         <i><b>Pakt</b></i>-Schwäche und fügt sie seinem Deck hinzu (zählt nicht gegen die Deckgröße). Jeder Ermittler,
         der Akt II gelesen hat, verdient außerdem 2 zusätzliche Erfahrungspunkte, weil er Einsicht in die
-        Machenschaften des Königs in Lumpen gewonnen hat.</b></string>
+        Machenschaften des Königs in Lumpen gewonnen hat.</b>\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+        Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
     <string name="pallid_resolution_one">Der verbrannte Schädel ist der Schlüssel zu allem. Da bist du dir sicher. Du
         hast jede dir bekannte Methode angewendet, das Geheimnis der Zeichnung darauf zu entschlüsseln, aber noch immer
         bleibt die Antwort vor dir verschlossen. Du hast den Schädel Experten, Okkultisten und Professoren gezeigt. Du
@@ -1215,8 +1305,9 @@
         starken, sintflutartigen Sturm zeigt. Wellen schlagen heftig gegen die äußere Steinmauer und die Flut droht die
         Insel als Ganzes zu verschlingen. Blitze zucken um den Turm der Abtei außerhalb der Stadt. Ein Wirbel aus
         schwarzen Wolken dreht sich am aufgewühlten Himmel. Die Zeichnung auf dem verbrannten Schädel in deiner Hand
-        wiederholt sich perfekt im Buntglas der Fenster der Abtei. Der Name des Kunstwerkes ist „Der Pfad ist offen“.
-    </string>
+        wiederholt sich perfekt im Buntglas der Fenster der Abtei. Der Name des Kunstwerkes ist „Der Pfad ist offen“.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+        Kultist-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
     <string name="pallid_resolution_two">Du fällst immer weiter in den leeren Abgrund. Keine Luft bremst deinen Fall
         oder streicht auch nur durch deine Haare. Es ist ein Durchgang, frei von jeglicher Realität. Schließlich kommst
         du durch ein unsichtbares Tor und betrittst ein anderes Reich. Über und unter dir siehst du zwei Silhouetten
@@ -1228,5 +1319,29 @@
     \nEin Polizist rüttelt dich wach und zieht dich auf die Füße. Du fühlst dich, als ob dich ein Zug überfahren hätte.
         Der Schmerz ist unerträglich. Der Mann leuchtet dir mit einer Taschenlampe in die Augen und stellt dir auf
         Französisch einige Fragen. Deine Augen werden groß, als du die Situation erfasst und du reißt dich aus dem Griff
-        des verwirrten Polizisten los. „Ich muss sofort los!“</string>
+        des verwirrten Polizisten los. „Ich muss sofort los!“\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+        Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+
+    <string name="black_stars_resolution_one">Du hältst den Atem an, während du durch das kalte Wasser in Richtung der
+        Türme am Grund tauchst. Als du näher kommst, siehst du kleine Wellen im Wasser, als ob du auf eine Spiegelung
+        auf der Oberfläche des Meeres blicken würdest. Du durchbrichst die Oberfläche und saugst gierig die Luft in
+        deine Lungen.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+        Kultist-Chaosmarker und 2 Tafel-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="black_stars_resolution_two"> Du sinnierst über die Wolkenwellen um dich herum nach und fliegst in
+        Richtung der Türme am Himmel. Vor dir ragt die trostlose und unerklärliche Stadt Carcosa auf. Plötzlich erkennst
+        du, dass du fällst – und nicht schwebst – und irgendeine Kraft beginnt an deinem Körper zu zerren.\n
+    \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
+        Kultist-Chaosmarker und 2 Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
+    <string name="black_stars_resolution_three">Als du erwachst, sitzt du im Chœur Gothique der Abtei Mont Saint-Michel.
+        Der Regen prasselt nicht mehr auf das Glas der Fenster über dir und du hörst weder Donner noch das Kreischen der
+        geflügelten Schrecken am Himmel. Irgendwie bist du dem sicheren Verderben der Insel entkommen. Du kriechst zur
+        Tür der Abtei und öffnest sie beklommen. Grelles Licht bohrt sich in deine Augen und du hebst die Hand, um sie
+        vor dem gleißenden Licht der Zwillingssonnen zu schützen. Von deiner Position aus kannst du über den See von
+        Hali schauen. Am Himmel über dir stehen schwarze Sterne. Meilenweit in der Ferne siehst du hinter den Wellen die
+        Türme von Carcosa vor dem zersprungenen Mond.\n
+    \n<b>Dir ist ein fürchterliches Schicksal widerfahren, nicht wahr?</b>\n
+    \n<b>Alle Ermittler werden wahnsinnig.</b>\n
+    \n<b>Die Ermittler haben die Kamagne verloren.</b></string>
 </resources>
