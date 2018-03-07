@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+
     <!-- Main Menu -->
     <string name="new_campaign">Neue Kampagne</string>
     <string name="load_campaign">Kampagne laden</string>
     <string name="standalone_scenarios">Einzelspiel-\nszenario</string>
+    <string name="settings">Einstellungen</string>
     <string name="expansions_owned">Sammlung</string>
+    <string name="language">Sprache</string>
+    <!--<string name="english" translatable="false">English</string>
+    <string name="german" translatable="false">Deutsch</string>
+    <string name="french" translatable="false">Français</string>
+    <string name="spanish" translatable="false">Español</string>-->
     <string name="saved_campaigns">Gespeicherte Kampagnen</string>
     <string name="scenario_not_available">Dieses Szenario ist noch nicht verfügbar.</string>
     <string name="current_campaign">Aktuelle Kampagne: </string>
@@ -16,6 +25,7 @@
     <string name="confirm_corrupt_campaign">Diese Kampagnendaten wurden durch einen Programmfehler beschädigt. Lege
             bitte eine neue Kampagne an. Möchtest du wirklich fortfahren?</string>
 
+
     <string name="scenario_setup">Einleitung</string>
     <string name="setup_instructions">Aufbau</string>
     <string name="add_side_story">Neben-\ngeschichte beginnen</string>
@@ -23,6 +33,8 @@
     <string name="edit_team">Ermittler-\ngruppe ändern</string>
     <string name="scenario_resolution">Auflösung</string>
     <string name="main_menu">Hauptmenü</string>
+    <string name="edit_stats">Ermittlerwerte ändern</string>
+    <string name="edit_log">Kampagnenlogbuch ändern</string>
 
     <string name="decklist">Deckliste</string>
     <string name="killed">Getötet</string>
@@ -104,7 +116,6 @@
     <string name="not_enough_xp_three">Du hast nicht genug EP (Kosten: 3 pro Ermittler).</string>
     <string name="cannot_back">Du kannst nicht zurückgehen.</string>
 
-
     <!--Resolution screen-->
     <string name="investigators_defeated">Besiegte Ermittler</string>
     <string name="resigned">Aufgegeb.</string>
@@ -131,8 +142,8 @@
 
 
     <!--Difficulties-->
-    <string name="easy">Einfach</string>
-    <string name="standard">Norm.</string>
+    <string name="easy">Leicht</string>
+    <string name="standard">Normal</string>
     <string name="hard">Schwer</string>
     <string name="expert">Experte</string>
     <string name="scenario_card">Szenariokarte</string>
