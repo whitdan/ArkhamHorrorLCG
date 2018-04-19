@@ -193,6 +193,10 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             }
                         });
                         break;
+                    case 11:
+                        introduction.setText(R.string.carcosa_epilogue_one);
+                        globalVariables.CarcosaCompleted = 1;
+                        break;
                 }
                 break;
         }

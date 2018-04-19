@@ -548,6 +548,55 @@ public class CampaignLogActivity extends AppCompatActivity {
                         break;
                 }
             }
+            // Dim Carcosa
+            if((scenario > 10 || globalVariables.CarcosaCompleted == 1) && globalVariables.Path != 0){
+                switch(globalVariables.Hastur){
+                    case 1:
+                    case 2:
+                    case 3:
+                        carcosaBuilder.append(getString(R.string.prevented_hastur));
+                        break;
+                    case 4:
+                        carcosaBuilder.append(getString(R.string.carcosa_merged));
+                        break;
+                    case 5:
+                        carcosaBuilder.append(getString(R.string.hasturs_grasp));
+                        break;
+                }
+                String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+                if (globalVariables.InvOnePossessed > 0) {
+                    if (globalVariables.InvOnePossessed == 999) {
+                        carcosaBuilder.append(getString(R.string.inv_one_possessed));
+                    } else {
+                        carcosaBuilder.append(investigatorNames[globalVariables.InvOnePossessed] + " ");
+                        carcosaBuilder.append(getString(R.string.possessed));
+                    }
+                }
+                if (globalVariables.InvTwoPossessed > 0) {
+                    if (globalVariables.InvTwoPossessed == 999) {
+                        carcosaBuilder.append(getString(R.string.inv_two_possessed));
+                    } else {
+                        carcosaBuilder.append(investigatorNames[globalVariables.InvTwoPossessed] + " ");
+                        carcosaBuilder.append(getString(R.string.possessed));
+                    }
+                }
+                if (globalVariables.InvThreePossessed > 0) {
+                    if (globalVariables.InvThreePossessed == 999) {
+                        carcosaBuilder.append(getString(R.string.inv_three_possessed));
+                    } else {
+                        carcosaBuilder.append(investigatorNames[globalVariables.InvThreePossessed] + " ");
+                        carcosaBuilder.append(getString(R.string.possessed));
+                    }
+                }
+                if (globalVariables.InvFourPossessed > 0) {
+                    if (globalVariables.InvFourPossessed == 999) {
+                        carcosaBuilder.append(getString(R.string.inv_four_possessed));
+                    } else {
+                        carcosaBuilder.append(investigatorNames[globalVariables.InvFourPossessed] + " ");
+                        carcosaBuilder.append(getString(R.string.possessed));
+                    }
+                }
+            }
 
             String carcosaLogText = carcosaBuilder.toString().trim();
             carcosaLog.setText(carcosaLogText);

@@ -45,6 +45,7 @@
     <string name="mark_one_conviction">Marked one Conviction</string>
     <string name="mark_one_doubt">Marked one Doubt</string>
     <string name="must_agenda_one_effect">You must select an effect for Agenda 1b or Agenda 1d</string>
+    <string name="possession">Possession treachery in hand</string>
 
 
     <!--Campaign Log-->
@@ -89,6 +90,13 @@
     <string name="carcosa_merged">The realm of Carcosa merged with our own, and Hastur rules over them both.\n\n</string>
     <string name="path_below">You opened the path below.\n\n</string>
     <string name="path_above">You opened the path above.\n\n</string>
+    <string name="prevented_hastur">The investigators prevented Hastur from escaping his prison.\n\n</string>
+    <string name="hasturs_grasp">Hastur has you in his grasp.\n\n</string>
+    <string name="possessed"> was possessed.\n\n</string>
+    <string name="inv_one_possessed">Investigator One was possessed.\n\n</string>
+    <string name="inv_two_possessed">Investigator Two was possessed.\n\n</string>
+    <string name="inv_three_possessed">Investigator Three was possessed.\n\n</string>
+    <string name="inv_four_possessed">Investigator Four was possessed.\n\n</string>
 
 
     <!--Edit log-->
@@ -114,6 +122,8 @@
     <string name="no_daniel">You did not hear Daniel\'s warning.</string>
     <string name="nigel_heading">Nigel Engram</string>
     <string name="path_heading">Path to Carcosa</string>
+    <string name="hastur_heading">Hastur</string>
+    <string name="possessed_heading">Possessed</string>
 
 
     <!--Chaos bag-->
@@ -189,6 +199,20 @@
     <string name="black_stars_thing_one">–2. If you fail, search the encounter deck and discard pile for a
         <b><i>Byakhee</i></b> enemy and draw it.</string>
     <string name="black_stars_thing_two">–3. If you fail, search the encounter deck and discard pile for a <b><i>Byakhee</i></b>enemy and draw it.</string>
+
+    <string name="dim_skull_one">–2 (–4 instead if you have no sanity remaining).</string>
+    <string name="dim_skull_two">–X. X is the amount of horror on you.</string>
+    <string name="dim_cultist_one">Reveal another token. If you fail, take 1 horror.</string>
+    <string name="dim_cultist_two">Reveal another token. If you fail, take 2 horror.</string>
+    <string name="dim_tablet_one">–3. If you fail and Hastur is in play, place 1 clue on your location (<i>from
+        the token bank</i>).</string>
+    <string name="dim_tablet_two">–5. If you fail and Hastur is in play, place 1 clue on your location (<i>from
+        the token bank</i>).</string>
+    <string name="dim_thing_one">–3. If this token is revealed during an attack or evasion attempt against a <b><i>
+        Monster</i></b> or <b><i>Ancient One</i></b> enemy, lose 1 action.</string>
+    <string name="dim_thing_two">–5. If this token is revealed during an attack or evasion attempt against a <b><i>
+        Monster</i></b> or <b><i>Ancient One</i></b> enemy, lose 1 action.</string>
+
 
 
     <!-- Campaign introduction-->
@@ -587,6 +611,31 @@
         illuminated by flashes of lighting and assaulted by tumultuous waves, you can’t help but wonder if Ashleigh
         was singing about this very moment.</string>
 
+    <string name="dim_introduction_below">You swim to the edge of the water and throw yourself upon the rocky shore,
+        gasping for air. You lie there for some time, utterly exhausted. Every muscle in your body aches. Before you
+        lies a desolate expanse of plain. In the distance, the alien spires of a warped city rise into the clouds.
+        Behind you, the dark surface of the lake from which you’d emerged reflects the glare of two suns. When you
+        peer back into the murky depths, you see no sign of the chapel where you’d made the leap, or of Mont
+        Saint-Michel, or even of Earth. This is Carcosa—the realm of madness in the stars, where Hastur reigns
+        supreme.</string>
+    <string name="dim_introduction_above">You land on a piece of black obsidian stone winding up a dark spire. You
+        cough blood and feel a searing pain in your gut, as though you’d broken a rib. Before you lies a warped,
+        alien city. Its twisting streets and aberrant architecture have no semblance of order or structure. In the
+        distance, a murky lake reflects the glare of two suns. When you look up, the abbey of Mont Saint-Michel peeks
+        just below the clouds, flipped upside-down. This is Carcosa—the realm of madness in the stars, where Hastur
+        reigns supreme.</string>
+
+    <string name="carcosa_epilogue_one"><b>Only possessed investigators read:</b>\n
+    \nIt has taken months of preparation, but you are finally ready to unveil your latest work to the world.
+        Gathering financial investments was your first task, of course. That hadn’t taken too long given the
+        connections you’d made during your stay in Paris. You have been assured that the cast assembled is the finest
+        that money could afford, but still you strive to make everything perfect. It <i>must</i> be perfect. The
+        story must be told, so that the world knows. You’ve heard the troupe whisper behind your back: the remarks
+        about your bizarre passion, the concern about your piercing yellow eyes. It matters not to you. All you care
+        about is the performance. The pronunciation of the words. The melody of Cassilda’s song. The design of the
+        Stranger’s mask.\n
+    \nThis would be the greatest performance of <i>The King in Yellow</i> ever.</string>
+
 
 
     <!--Scenario set-up instructions-->
@@ -780,6 +829,33 @@
             Cultist</i></b>, or <b><i>Detective</i></b> weakness, and adds it to his or her deck.</string>
     <string name="black_stars_additional_ashleigh">\nDuring this scenario, as a free triggered ability, an investigator
         may remove 1 doom from an agenda in play. (Group limit once per game.)</string>
+
+    <string name="dim_sets">Dim Carcosa, Delusions, Cult of the Yellow Sign, Inhabitants of Carcosa, Agents of
+        Hastur, and Striking Fear.</string>
+    <string name="dim_locations_below">Randomly put 1 copy of Bleak Plains, 1 copy of Dim Streets, 1 copy of Ruins of
+        Carcosa, and 1 copy of Depths of Demhe into play.\n
+    \nPut Shores of Hali, Dark Spires, and Palace of the King into play.\n
+    \nEach investigator begins play at Shores of Hali.\n</string>
+    <string name="dim_locations_above">Randomly put 1 copy of Bleak Plains, 1 copy of Dim Streets, 1 copy of Ruins of
+        Carcosa, and 1 copy of Depths of Demhe into play.\n
+    \nPut Shores of Hali, Dark Spires, and Palace of the King play.\n
+    \nEach investigator begins play at Dark Spires.\n</string>
+    <string name="dim_set_aside">Each other copy of Bleak Plains, Dim Streets, Ruins of Carcosa and Depths of
+        Demhe.\n
+    \nHastur (<i>The King in Yellow</i>), Hastur (<i>Lord of Carcosa</i>), Hastur (<i>The Tattered King</i>), and Beast
+            of Aldebaran.\n
+    \nThe bearer of The Man in the Pallid Mask weakness searches his or her deck for it and sets it aside, out of
+        play.\n</string>
+    <string name="dim_act_one">Use Act 2—Search For the Stranger (v. I).\n</string>
+    <string name="dim_act_two">Use Act 2—Search For the Stranger (v. II).\n</string>
+    <string name="dim_act_three">Use Act 2—Search For the Stranger (v. III).\n</string>
+    <string name="dim_act_four">You may choose to use either Act 2—Search For the Stranger (v. II) or Act 2—Search
+        For the Stranger (v. III).\n</string>
+    <string name="dim_doom_one">\nAdd 3 doom to agenda 1a.\n</string>
+    <string name="dim_doom_two">\nAdd 2 doom to agenda 1a.\n</string>
+    <string name="dim_doom_three">\nAdd 1 doom to agenda 1a.\n</string>
+    <string name="dim_additional">\nEach investigator takes direct horror equal to half his or her sanity, rounded down
+        (cannot be prevented). This horror cannot cause you to become defeated.</string>
 
 
     <!--Scenario resolutions-->
@@ -1185,6 +1261,59 @@
         block the glare of two suns. You stand overlooking the Lake of Hali. Black stars hang in the heavens above.
         Beyond, over leagues of tossing cloudwaves, the towers of Carcosa rise behind the shattered moon.\n
     \n<b>You’ve met with a terrible fate, haven’t you?</b>\n
+    \n<b>Each investigator is driven insane.</b>\n
+    \n<b>The investigators lose the campaign.</b></string>
+
+    <string name="dim_resolution_one">You stand atop the balcony of the abbey tower in Mont Saint-Michel, wet wind
+        coursing through your hair. The Pallid Mask lies in your hands, devoid of warmth. You can scarcely bring
+        yourself to look at it. You remember everything now—how it all began, how it ended, and everything in
+        between. There is only one thing left to do. You hurl the mask into the air with all of your strength and
+        watch as it flies into the tempest-tossed waves below.\n
+    \n<b>The investigators have triumphed over their own selves—the most dangerous of foes.</b>\n
+    \n<b>The investigators win the campaign!</b></string>
+    <string name="dim_resolution_two">A roar of applause startles you awake. The crowd of the theatre rises to their
+        feet, cheering endlessly. Several patrons in the front row are throwing roses to the actors on stage, who are
+        bowing with wide smiles across their faces. A searing headache crawls through your temples. How did you get
+        back here? Were you in the theatre all along? What about the dinner party? The asylum? The catacombs?…
+        Carcosa? Was it all just a terrible dream?\n
+    \nYou exit the auditorium before the crowd rushes to do the same. Dizziness and exhaustion harries your senses.
+        The weight of your lengthy investigation is crushing your mind. By the time you finally reach the lobby, you
+        are clawing your way across the ground. Just then, a man in an elegant suit reaches down and grabs you by
+        your arm, pulling you to your feet. You are about to thank him when you realize who he is. The sight of him
+        causes you to stagger backward in horror momentarily. The actor who plays the role of the Stranger is still
+        wearing his pale, featureless mask. He gives you a wordless bow, then turns and leaves through the Ward
+        Theatre’s front entrance.\n
+    \n<b>The investigators have learned the truth behind <i>The King in Yellow</i>.</b>\n
+    \n<b>The investigators win the campaign!</b></string>
+    <string name="dim_resolution_three">When you awaken, you are sitting in the choeur gothique of Mont
+        Saint-Michel’s abbey. No rain pelts the glass of the windows above, and you hear no thunder, nor the
+        screeching of winged horrors overhead. Somehow, you have escaped. You creep to the door of the abbey and open
+        it with trepidation. A dazzling light sears your eyes, and you lift your hand to block the glare of the sun.
+        You stand overlooking beautiful Mont Saint-Michel. Seagulls fly over the abbey under a backdrop of cloudless
+        sky. The waters around the abbey are calm and azure-blue.\n
+    \n“I’ve been looking all over for you!” You hear a voice exclaim behind you. You turn with a startle. For a
+        moment you expect to see the Stranger and his Pallid Mask, but instead, the boat captain you’d hired to take
+        you to Mont Saint-Michel stands at the edge of the steps, smiling at you. “Are you ready to head
+        back?”\n
+    \n<b>The investigators have learned the truth behind <i>The King in Yellow</i>.</b>\n
+    \n<b>The investigators win the campaign!</b></string>
+    <string name="dim_resolution_four">When you awaken, you are sitting in the choeur gothique of Mont Saint-Michel’s
+        abbey. No rain pelts the glass of the windows above, and you hear no thunder, nor the screeching of winged
+        horrors overhead. Somehow, you have escaped the island’s certain doom. You creep to the door of the abbey and
+        open it with trepidation. A dazzling light sears your eyes, and you lift your hand to block the glare of two
+        suns. You stand overlooking the Lake of Hali. Black stars hang in the heavens above. Beyond, over leagues of
+        tossing cloud-waves, the towers of Carcosa rise behind the shattered moon.\n
+    \n<b>You’ve met with a terrible fate, haven’t you?</b>\n
+    \n<b>Each investigator is driven insane.</b>\n
+    \n<b>The investigators lose the campaign.</b></string>
+    <string name="dim_resolution_five">The outside world will never know how you tried to save them. They treat you
+        with pity, with scorn and contempt, but you know the truth. They are resigned to their hideous fate, but
+        still you try day after day to bring them your message. You must warn them of <i>The King in Yellow</i>, of
+        Hastur and of Carcosa. “Another lost soul,” they say, but they cannot possibly fathom what you have gone
+        through in your attempt to save them. You warn them that he is coming to claim them, but they never believe
+        you. You write of Aldebaran and of the black stars on the wall of your cell, but the words become faded as
+        the years go by. Your warning is never heeded.\n
+    \n<b>You didn’t really think you could escape, did you?</b>\n
     \n<b>Each investigator is driven insane.</b>\n
     \n<b>The investigators lose the campaign.</b></string>
 </resources>

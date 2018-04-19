@@ -82,7 +82,7 @@ public class EditLogActivity extends AppCompatActivity {
         notesHeading.setTypeface(teutonic);
         final EditText notes = findViewById(R.id.edit_notes);
         notes.setTypeface(arnopro);
-        if(globalVariables.Notes != null && globalVariables.Notes.length() > 0){
+        if (globalVariables.Notes != null && globalVariables.Notes.length() > 0) {
             notes.setText(globalVariables.Notes);
         }
 
@@ -1420,10 +1420,11 @@ public class EditLogActivity extends AppCompatActivity {
                     if (globalVariables.InvThreeReadAct == 999) {
                         invThreeReadActBox.setText(getString(R.string.inv_three_read_act).trim());
                     } else {
-                        invThreeReadActBox.setText(investigatorNames[globalVariables.InvThreeReadAct] + " " + getString(R
-                                .string
-                                .read_act)
-                                .trim());
+                        invThreeReadActBox.setText(investigatorNames[globalVariables.InvThreeReadAct] + " " +
+                                getString(R
+                                        .string
+                                        .read_act)
+                                        .trim());
                     }
                 } else {
                     invThreeReadActBox.setText(getString(R.string.inv_three_read_act).trim());
@@ -1447,7 +1448,7 @@ public class EditLogActivity extends AppCompatActivity {
                 }
             }
 
-            if(scenario > 9){
+            if (scenario > 9) {
                 // Path to Carcosa
                 View pathHeading = View.inflate(this, R.layout.d_item_heading, null);
                 TextView pathHeadingText = pathHeading.findViewById(R.id.heading);
@@ -1475,6 +1476,118 @@ public class EditLogActivity extends AppCompatActivity {
                     pathOptionOne.setChecked(true);
                 } else if (globalVariables.Path == 2) {
                     pathOptionTwo.setChecked(true);
+                }
+            }
+
+            if (scenario > 10 && globalVariables.Path != 0) {
+                // Hastur
+                View hasturHeading = View.inflate(this, R.layout.d_item_heading, null);
+                TextView hasturHeadingText = hasturHeading.findViewById(R.id.heading);
+                hasturHeadingText.setText(R.string.hastur_heading);
+                hasturHeadingText.setTypeface(teutonic);
+                editLayout.addView(hasturHeading, lp);
+                View hasturOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                RadioButton hasturOptionOne = hasturOptions.findViewById(R.id.option_one);
+                RadioButton hasturOptionTwo = hasturOptions.findViewById(R.id.option_two);
+                RadioButton hasturOptionThree = hasturOptions.findViewById(R.id.option_three);
+                hasturOptionThree.setVisibility(VISIBLE);
+                hasturOptionOne.setId(R.id.hastur_one);
+                hasturOptionTwo.setId(R.id.hastur_two);
+                hasturOptionThree.setId(R.id.hastur_three);
+                hasturOptionOne.setText(getString(R.string.prevented_hastur).trim());
+                hasturOptionTwo.setText(getString(R.string.carcosa_merged).trim());
+                hasturOptionThree.setText(getString(R.string.hasturs_grasp).trim());
+                hasturOptionOne.setTypeface(arnopro);
+                hasturOptionTwo.setTypeface(arnopro);
+                hasturOptionThree.setTypeface(arnopro);
+                editLayout.addView(hasturOptions, lp);
+                if (globalVariables.Hastur <= 3) {
+                    hasturOptionOne.setChecked(true);
+                } else if (globalVariables.Hastur == 4) {
+                    hasturOptionTwo.setChecked(true);
+                } else if (globalVariables.Hastur == 5) {
+                    hasturOptionThree.setChecked(true);
+                }
+
+                // Investigators who were possessed
+                View possessedHeading = View.inflate(this, R.layout.d_item_heading, null);
+                TextView possessedHeadingText = possessedHeading.findViewById(R.id.heading);
+                possessedHeadingText.setText(R.string.possessed_heading);
+                possessedHeadingText.setTypeface(teutonic);
+                editLayout.addView(possessedHeading, lp);
+                String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+                View investigatorOnePossessed = View.inflate(this, R.layout.d_item_checkbox, null);
+                CheckBox invOnePossessedBox = investigatorOnePossessed.findViewById(R.id.checkbox);
+                invOnePossessedBox.setId(R.id.inv_one_possessed);
+                invOnePossessedBox.setTypeface(arnopro);
+                editLayout.addView(investigatorOnePossessed, lp);
+                if (globalVariables.InvOnePossessed > 0) {
+                    invOnePossessedBox.setChecked(true);
+                    if (globalVariables.InvOnePossessed == 999) {
+                        invOnePossessedBox.setText(getString(R.string.inv_one_possessed).trim());
+                    } else {
+                        invOnePossessedBox.setText(investigatorNames[globalVariables.InvOnePossessed] + " " +
+                                getString(R
+                                        .string.possessed)
+                                        .trim());
+                    }
+                } else {
+                    invOnePossessedBox.setText(getString(R.string.inv_one_possessed).trim());
+                }
+                View investigatorTwoPossessed = View.inflate(this, R.layout.d_item_checkbox, null);
+                CheckBox invTwoPossessedBox = investigatorTwoPossessed.findViewById(R.id.checkbox);
+                invTwoPossessedBox.setId(R.id.inv_two_possessed);
+                invTwoPossessedBox.setTypeface(arnopro);
+                editLayout.addView(investigatorTwoPossessed, lp);
+                if (globalVariables.InvTwoPossessed > 0) {
+                    invTwoPossessedBox.setChecked(true);
+                    if (globalVariables.InvTwoPossessed == 999) {
+                        invTwoPossessedBox.setText(getString(R.string.inv_two_possessed).trim());
+                    } else {
+                        invTwoPossessedBox.setText(investigatorNames[globalVariables.InvTwoPossessed] + " " +
+                                getString(R
+                                        .string.possessed)
+                                        .trim());
+                    }
+                } else {
+                    invTwoPossessedBox.setText(getString(R.string.inv_two_possessed).trim());
+                }
+                View investigatorThreePossessed = View.inflate(this, R.layout.d_item_checkbox, null);
+                CheckBox invThreePossessedBox = investigatorThreePossessed.findViewById(R.id.checkbox);
+                invThreePossessedBox.setId(R.id.inv_three_possessed);
+                invThreePossessedBox.setTypeface(arnopro);
+                editLayout.addView(investigatorThreePossessed, lp);
+                if (globalVariables.InvThreePossessed > 0) {
+                    invThreePossessedBox.setChecked(true);
+                    if (globalVariables.InvThreePossessed == 999) {
+                        invThreePossessedBox.setText(getString(R.string.inv_three_possessed).trim());
+                    } else {
+                        invThreePossessedBox.setText(investigatorNames[globalVariables.InvThreePossessed] + " " +
+                                getString(R
+                                        .string
+                                        .possessed)
+                                        .trim());
+                    }
+                } else {
+                    invThreePossessedBox.setText(getString(R.string.inv_three_possessed).trim());
+                }
+                View investigatorFourPossessed = View.inflate(this, R.layout.d_item_checkbox, null);
+                CheckBox invFourPossessedBox = investigatorFourPossessed.findViewById(R.id.checkbox);
+                invFourPossessedBox.setId(R.id.inv_four_possessed);
+                invFourPossessedBox.setTypeface(arnopro);
+                editLayout.addView(investigatorFourPossessed, lp);
+                if (globalVariables.InvFourPossessed > 0) {
+                    invFourPossessedBox.setChecked(true);
+                    if (globalVariables.InvFourPossessed == 999) {
+                        invFourPossessedBox.setText(getString(R.string.inv_four_possessed).trim());
+                    } else {
+                        invFourPossessedBox.setText(investigatorNames[globalVariables.InvFourPossessed] + " " +
+                                getString(R
+                                        .string.possessed)
+                                        .trim());
+                    }
+                } else {
+                    invFourPossessedBox.setText(getString(R.string.inv_four_possessed).trim());
                 }
             }
         }
@@ -2190,15 +2303,64 @@ public class EditLogActivity extends AppCompatActivity {
                         }
                     }
 
-                    if(scenario > 9){
-                        CheckBox pathOne = findViewById(R.id.path_one);
-                        CheckBox pathTwo = findViewById(R.id.path_two);
-                        CheckBox pathThree = findViewById(R.id.path_three);
-                        if(pathOne.isChecked()){
+                    // Out of order so that a change to Path does not break things
+                    if (scenario > 10 && globalVariables.Path != 0) {
+                        // Hastur
+                        RadioButton hasturOne = findViewById(R.id.hastur_one);
+                        RadioButton hasturTwo = findViewById(R.id.hastur_two);
+                        RadioButton hasturThree = findViewById(R.id.hastur_three);
+                        if (hasturOne.isChecked()) {
+                            globalVariables.Hastur = 1;
+                        } else if (hasturTwo.isChecked()) {
+                            globalVariables.Hastur = 4;
+                        } else if (hasturThree.isChecked()) {
+                            globalVariables.Hastur = 5;
+                        }
+
+                        // InvPossessed
+                        CheckBox invOnePossessed = findViewById(R.id.inv_one_possessed);
+                        CheckBox invTwoPossessed = findViewById(R.id.inv_two_possessed);
+                        CheckBox invThreePossessed = findViewById(R.id.inv_three_possessed);
+                        CheckBox invFourPossessed = findViewById(R.id.inv_four_possessed);
+                        if (invOnePossessed.isChecked()) {
+                            if (globalVariables.InvOnePossessed == 0) {
+                                globalVariables.InvOnePossessed = 999;
+                            }
+                        } else {
+                            globalVariables.InvOnePossessed = 0;
+                        }
+                        if (invTwoPossessed.isChecked()) {
+                            if (globalVariables.InvTwoPossessed == 0) {
+                                globalVariables.InvTwoPossessed = 999;
+                            }
+                        } else {
+                            globalVariables.InvTwoPossessed = 0;
+                        }
+                        if (invThreePossessed.isChecked()) {
+                            if (globalVariables.InvThreePossessed == 0) {
+                                globalVariables.InvThreePossessed = 999;
+                            }
+                        } else {
+                            globalVariables.InvThreePossessed = 0;
+                        }
+                        if (invFourPossessed.isChecked()) {
+                            if (globalVariables.InvFourPossessed == 0) {
+                                globalVariables.InvFourPossessed = 999;
+                            }
+                        } else {
+                            globalVariables.InvFourPossessed = 0;
+                        }
+                    }
+
+                    if (scenario > 9) {
+                        RadioButton pathOne = findViewById(R.id.path_one);
+                        RadioButton pathTwo = findViewById(R.id.path_two);
+                        RadioButton pathThree = findViewById(R.id.path_three);
+                        if (pathOne.isChecked()) {
                             globalVariables.Path = 1;
-                        } else if (pathTwo.isChecked()){
+                        } else if (pathTwo.isChecked()) {
                             globalVariables.Path = 2;
-                        } else if (pathThree.isChecked()){
+                        } else if (pathThree.isChecked()) {
                             globalVariables.Path = 0;
                         }
                     }

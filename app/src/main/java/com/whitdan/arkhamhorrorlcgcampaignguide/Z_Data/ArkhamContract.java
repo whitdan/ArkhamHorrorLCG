@@ -141,6 +141,11 @@ public class ArkhamContract {
         public static final String COLUMN_INV_THREE_READ_ACT = "inv_three_read_act";
         public static final String COLUMN_INV_FOUR_READ_ACT = "inv_four_read_act";
         public static final String COLUMN_PATH = "path";
+        public static final String COLUMN_HASTUR = "hastur";
+        public static final String COLUMN_INV_ONE_POSSESSED = "inv_one_possessed";
+        public static final String COLUMN_INV_TWO_POSSESSED = "inv_two_possessed";
+        public static final String COLUMN_INV_THREE_POSSESSED = "inv_three_possessed";
+        public static final String COLUMN_INV_FOUR_POSSESSED = "inv_four_possessed";
     }
 
     public static class ChaosBagEntry implements BaseColumns{

@@ -254,6 +254,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     case 5:
                     case 7:
                     case 9:
+                    case 10:
                         resolutionThree.setVisibility(VISIBLE);
                         break;
                 }
@@ -927,6 +928,35 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         additionalGroupThree.setVisibility(GONE);
                         additionalGroupSetTwo.setVisibility(GONE);
                         break;
+                    case 10:
+                        resignedOne.setText(R.string.killed);
+                        resignedTwo.setText(R.string.killed);
+                        resignedThree.setText(R.string.killed);
+                        resignedFour.setText(R.string.killed);
+                        selectInvestigatorHeading.setText(R.string.possession);
+                        switch (globalVariables.Investigators.size()) {
+                            case 4:
+                                selectInvestigatorFour.setVisibility(VISIBLE);
+                                selectInvestigatorFour.setText(investigatorNames[globalVariables
+                                        .Investigators.get(3)
+                                        .Name]);
+                            case 3:
+                                selectInvestigatorThree.setVisibility(VISIBLE);
+                                selectInvestigatorThree.setText(investigatorNames[globalVariables
+                                        .Investigators.get
+                                                (2).Name]);
+                            case 2:
+                                selectInvestigatorTwo.setVisibility(VISIBLE);
+                                selectInvestigatorTwo.setText(investigatorNames[globalVariables
+                                        .Investigators.get(1)
+                                        .Name]);
+                            case 1:
+                                selectInvestigatorOne.setVisibility(VISIBLE);
+                                selectInvestigatorOne.setText(investigatorNames[globalVariables
+                                        .Investigators.get(0)
+                                        .Name]);
+                                break;
+                        }
                 }
                 break;
         }
@@ -1905,6 +1935,34 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     break;
                                 case 3:
                                     resolutionTextView.setText(R.string.black_stars_resolution_three);
+                                    break;
+                            }
+                            break;
+                        case 10:
+                            switch (globalVariables.ScenarioResolution) {
+                                case 0:
+                                    if (globalVariables.Conviction >= globalVariables.Doubt) {
+                                        resolutionTextView.setText(R.string.dim_resolution_four);
+                                    } else if (globalVariables.Doubt > globalVariables.Conviction) {
+                                        resolutionTextView.setText(R.string.dim_resolution_five);
+                                    }
+                                    selectInvestigatorHeading.setVisibility(GONE);
+                                    selectInvestigator.setVisibility(GONE);
+                                    break;
+                                case 1:
+                                    resolutionTextView.setText(R.string.dim_resolution_one);
+                                    selectInvestigatorHeading.setVisibility(VISIBLE);
+                                    selectInvestigator.setVisibility(VISIBLE);
+                                    break;
+                                case 2:
+                                    resolutionTextView.setText(R.string.dim_resolution_two);
+                                    selectInvestigatorHeading.setVisibility(VISIBLE);
+                                    selectInvestigator.setVisibility(VISIBLE);
+                                    break;
+                                case 3:
+                                    resolutionTextView.setText(R.string.dim_resolution_three);
+                                    selectInvestigatorHeading.setVisibility(VISIBLE);
+                                    selectInvestigator.setVisibility(VISIBLE);
                                     break;
                             }
                             break;
@@ -3111,16 +3169,16 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     globalVariables.Ashleigh = 5;
                                 }
                             }
-                            if(additionalOne.isChecked()){
+                            if (additionalOne.isChecked()) {
                                 globalVariables.Conviction += 1;
-                            } else if(additionalTwo.isChecked()){
+                            } else if (additionalTwo.isChecked()) {
                                 globalVariables.Doubt += 1;
                             }
                             for (int i = 0; i < globalVariables.Investigators.size(); i++) {
                                 globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
                             }
                         }
-                        switch(globalVariables.ScenarioResolution){
+                        switch (globalVariables.ScenarioResolution) {
                             case 0:
                             case 3:
                                 globalVariables.Path = 0;
@@ -3139,6 +3197,80 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 globalVariables.Theatre = 3;
                                 globalVariables.Path = 2;
                                 break;
+                        }
+                        globalVariables.Hastur = 0;
+                        break;
+                    // Dim Carcosa
+                    case 10:
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            if(globalVariables.Investigators.get(i).TempStatus == 1){
+                                globalVariables.Investigators.get(i).Damage = globalVariables
+                                        .Investigators.get(i).Health;
+                            }
+                        }
+                        globalVariables.Hastur = globalVariables.ScenarioResolution;
+                        switch (globalVariables.ScenarioResolution) {
+                            case 0:
+                                if (globalVariables.Conviction >= globalVariables.Doubt) {
+                                    globalVariables.Hastur = 4;
+                                } else if (globalVariables.Doubt > globalVariables.Conviction) {
+                                    globalVariables.Hastur = 5;
+                                }
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).Status = 2;
+                                    globalVariables.Investigators.get(i).Horror = globalVariables
+                                            .Investigators.get(i).Sanity;
+                                }
+                                globalVariables.CarcosaCompleted = 1;
+                                break;
+                            case 1:
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).Damage += 2;
+                                    globalVariables.Investigators.get(i).Horror += 2;
+                                    globalVariables.Investigators.get(i).AvailableXP += (globalVariables
+                                            .VictoryDisplay + 5);
+                                }
+                                break;
+                            case 2:
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).Horror += 2;
+                                    globalVariables.Investigators.get(i).AvailableXP += (globalVariables
+                                            .VictoryDisplay + 5);
+                                }
+                                break;
+                            case 3:
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).Damage += 2;
+                                    globalVariables.Investigators.get(i).AvailableXP += (globalVariables
+                                            .VictoryDisplay + 5);
+                                }
+                                break;
+                        }
+                        if (globalVariables.ScenarioResolution != 0) {
+                            if (investigatorOne.isChecked()) {
+                                globalVariables.InvOnePossessed = globalVariables.Investigators.get(0).Name;
+                            } else {
+                                globalVariables.InvOnePossessed = 0;
+                            }
+                            if (investigatorTwo.isChecked()) {
+                                globalVariables.InvTwoPossessed = globalVariables.Investigators.get(1).Name;
+                            } else {
+                                globalVariables.InvTwoPossessed = 0;
+                            }
+                            if (investigatorThree.isChecked()) {
+                                globalVariables.InvThreePossessed = globalVariables.Investigators.get(2).Name;
+                            } else {
+                                globalVariables.InvThreePossessed = 0;
+                            }
+                            if (investigatorFour.isChecked()) {
+                                globalVariables.InvFourPossessed = globalVariables.Investigators.get(3).Name;
+                            } else {
+                                globalVariables.InvFourPossessed = 0;
+                            }
+                            if(!investigatorOne.isChecked() && !investigatorTwo.isChecked() && !investigatorThree
+                                    .isChecked() && !investigatorFour.isChecked()){
+                                globalVariables.CarcosaCompleted = 1;
+                            }
                         }
                         break;
                 }
@@ -3281,7 +3413,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         if (globalVariables.CurrentCampaign == 2 && globalVariables.DunwichCompleted == 1) {
             nextScenario = 12;
         }
-        if(globalVariables.CurrentCampaign == 3 && globalVariables.CarcosaCompleted == 1){
+        if (globalVariables.CurrentCampaign == 3 && globalVariables.CarcosaCompleted == 1) {
             nextScenario = 12;
         }
         globalVariables.CurrentScenario = nextScenario;
@@ -3452,6 +3584,12 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_READ_ACT, globalVariables.InvThreeReadAct);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT, globalVariables.InvFourReadAct);
             carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_PATH, globalVariables.Path);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_HASTUR, globalVariables.Hastur);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_ONE_POSSESSED, globalVariables.InvOnePossessed);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_POSSESSED, globalVariables.InvTwoPossessed);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_POSSESSED, globalVariables
+                    .InvThreePossessed);
+            carcosaValues.put(ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_POSSESSED, globalVariables.InvFourPossessed);
 
             String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " LIKE ?";
             String[] carcosaSelectionArgs = {Long.toString(globalVariables.CampaignID)};

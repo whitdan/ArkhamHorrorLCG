@@ -114,6 +114,13 @@
     <item name="path_one" type="id" />
     <item name="path_two" type="id" />
     <item name="path_three" type="id" />
+    <item name="hastur_one" type="id" />
+    <item name="hastur_two" type="id" />
+    <item name="hastur_three" type="id" />
+    <item name="inv_one_possessed" type="id" />
+    <item name="inv_two_possessed" type="id" />
+    <item name="inv_three_possessed" type="id" />
+    <item name="inv_four_possessed" type="id" />
 
 
     <item name="rougarou_one" type="id" />

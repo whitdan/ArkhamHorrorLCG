@@ -537,6 +537,38 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                             additional.setText(R.string.black_stars_additional);
                         }
                         break;
+                    case 10:
+                        sets.setText(R.string.dim_sets);
+                        setsImage.setImageResource(R.drawable.dim_sets);
+                        if (globalVariables.Path == 1) {
+                            locations.setText(R.string.dim_locations_below);
+                        } else if (globalVariables.Path == 2) {
+                            locations.setText(R.string.dim_locations_above);
+                        }
+                        locationPlacement.setVisibility(VISIBLE);
+                        locationPlacement.setImageResource(R.drawable.dim_locations);
+                        setAside.setText(R.string.dim_set_aside);
+                        StringBuilder dimAdditionalBuilder = new StringBuilder();
+                        if((globalVariables.Doubt + globalVariables.Conviction) <= 5){
+                            dimAdditionalBuilder.append(getString(R.string.dim_act_one));
+                        } else if(globalVariables.Doubt > globalVariables.Conviction){
+                            dimAdditionalBuilder.append(getString(R.string.dim_act_two));
+                        } else if(globalVariables.Conviction > globalVariables.Doubt){
+                            dimAdditionalBuilder.append(getString(R.string.dim_act_three));
+                        } else if (globalVariables.Doubt == globalVariables.Conviction){
+                            dimAdditionalBuilder.append(getString(R.string.dim_act_four));
+                        }
+                        if(globalVariables.ChasingStranger <= 2){
+                            dimAdditionalBuilder.append(getString(R.string.dim_doom_one));
+                        } else if (globalVariables.ChasingStranger >= 3 && globalVariables.ChasingStranger <= 5){
+                            dimAdditionalBuilder.append(getString(R.string.dim_doom_two));
+                        } else if (globalVariables.ChasingStranger >= 6 && globalVariables.ChasingStranger <= 8){
+                            dimAdditionalBuilder.append(getString(R.string.dim_doom_three));
+                        }
+                        dimAdditionalBuilder.append(getString(R.string.dim_additional));
+                        String dimAdditional = dimAdditionalBuilder.toString();
+                        additional.setText(dimAdditional.trim());
+                        break;
                 }
                 break;
         }

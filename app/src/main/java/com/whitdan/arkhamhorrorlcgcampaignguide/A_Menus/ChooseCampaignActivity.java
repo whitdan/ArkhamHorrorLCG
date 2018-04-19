@@ -105,5 +105,6 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.Theatre = 0;
         globalVariables.Onyx = 0;
         globalVariables.DreamsAction = 0;
+        globalVariables.Hastur = 0;
     }
 }

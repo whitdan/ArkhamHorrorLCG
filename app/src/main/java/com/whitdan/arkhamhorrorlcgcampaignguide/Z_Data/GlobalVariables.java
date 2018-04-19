@@ -107,6 +107,11 @@ public class GlobalVariables extends Application {
     public int InvThreeReadAct;
     public int InvFourReadAct;
     public int Path;
+    public int Hastur;
+    public int InvOnePossessed;
+    public int InvTwoPossessed;
+    public int InvThreePossessed;
+    public int InvFourPossessed;
 
     // VIPS - 0 = not interviewed or killed, 1 = interviewed, 2 = killed, 3 = interviewed (crossed out), 4 =
     // interviewed and killed, 5 = interviewed (crossed out) and killed

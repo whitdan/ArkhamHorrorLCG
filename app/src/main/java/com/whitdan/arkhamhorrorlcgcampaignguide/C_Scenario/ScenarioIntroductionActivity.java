@@ -276,6 +276,13 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                             introduction.setText(R.string.black_stars_introduction);
                         }
                         break;
+                    case 10:
+                        if (globalVariables.Path == 1){
+                            introduction.setText(R.string.dim_introduction_below);
+                        } else if (globalVariables.Path == 2){
+                            introduction.setText(R.string.dim_introduction_above);
+                        }
+                        break;
                 }
                 break;
         }

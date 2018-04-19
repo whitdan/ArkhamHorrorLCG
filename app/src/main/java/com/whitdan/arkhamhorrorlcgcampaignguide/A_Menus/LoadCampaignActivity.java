@@ -610,7 +610,12 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_READ_ACT,
                         ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_READ_ACT,
                         ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT,
-                        ArkhamContract.CarcosaEntry.COLUMN_PATH
+                        ArkhamContract.CarcosaEntry.COLUMN_PATH,
+                        ArkhamContract.CarcosaEntry.COLUMN_HASTUR,
+                        ArkhamContract.CarcosaEntry.COLUMN_INV_ONE_POSSESSED,
+                        ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_POSSESSED,
+                        ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_POSSESSED,
+                        ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_POSSESSED
                 };
                 String carcosaSelection = ArkhamContract.CarcosaEntry.PARENT_ID + " = ?";
                 Cursor carcosaCursor = db.query(
@@ -670,6 +675,16 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             (ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT)));
                     globalVariables.Path = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
                             .CarcosaEntry.COLUMN_PATH)));
+                    globalVariables.Hastur = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_HASTUR)));
+                    globalVariables.InvOnePossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_INV_ONE_POSSESSED)));
+                    globalVariables.InvTwoPossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_INV_TWO_POSSESSED)));
+                    globalVariables.InvThreePossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_INV_THREE_POSSESSED)));
+                    globalVariables.InvFourPossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                            .CarcosaEntry.COLUMN_INV_FOUR_POSSESSED)));
                 }
                 if (carcosaCursor.getCount() <= 0) {
                     corrupt = true;

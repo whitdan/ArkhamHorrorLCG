@@ -1023,6 +1023,19 @@ public class ChaosBagActivity extends AppCompatActivity {
                             thing.setText(R.string.black_stars_thing_two);
                         }
                         break;
+                    case 10:
+                        if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
+                            skull.setText(R.string.dim_skull_one);
+                            cultist.setText(R.string.dim_cultist_one);
+                            tablet.setText(R.string.dim_tablet_one);
+                            thing.setText(R.string.dim_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3) {
+                            skull.setText(R.string.dim_skull_two);
+                            cultist.setText(R.string.dim_cultist_two);
+                            tablet.setText(R.string.dim_tablet_two);
+                            thing.setText(R.string.dim_thing_two);
+                        }
+                        break;
                 }
                 break;
         }
