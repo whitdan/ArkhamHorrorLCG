@@ -45,6 +45,7 @@
     <string name="mark_one_conviction">Marqué une Certitude</string>
     <string name="mark_one_doubt">Marqué un Doute</string>
     <string name="must_agenda_one_effect">Vous devez choisir un effet pour l’Intrigue 1b ou l’Intrigue 1d</string>
+	<string name="possession">Traîtrise Possession en main</string>															   
 
 
     <!--Campaign Log-->
@@ -89,6 +90,13 @@
 	<string name="carcosa_merged">Le royaume de Carcosa a fusionné avec notre monde, et Hastur règne sur les deux.\n\n</string>
     <string name="path_below">Vous avez ouvert la voie d’en bas.\n\n</string>
     <string name="path_above">Vous avez ouvert la voie d’en haut.\n\n</string>																													 
+	<string name="prevented_hastur">Les investigateurs ont empêché Hastur de s’échapper de sa prison.\n\n</string>
+    <string name="hasturs_grasp">Hastur a mis la main sur vous.\n\n</string>
+    <string name="possessed"> a été possédé.\n\n</string>
+    <string name="inv_one_possessed">L’Investigateur Un a été possédé.\n\n</string>
+    <string name="inv_two_possessed">L’Investigateur Deux a été possédé.\n\n</string>
+    <string name="inv_three_possessed">L’Investigateur Trois a été possédé.\n\n</string>
+    <string name="inv_four_possessed">L’Investigateur Quatre a été possédé.\n\n</string>																										 
 
 		<!--Edit log-->
     <string name="doubt_heading">Doute</string>
@@ -112,6 +120,8 @@
     <string name="no_daniel">Vous n’avez pas entendu l’avertissement de Daniel.</string>
     <string name="nigel_heading">Nigel Engram</string>																 
 	<string name="path_heading">Route de Carcosa</string>													
+	<string name="hastur_heading">Hastur</string>
+    <string name="possessed_heading">Possédés</string>											 
 
 
 	<!--Chaos bag-->
@@ -181,7 +191,7 @@
 																								 
 																				
 
-		 <string name="black_stars_skull_one">–X. X est le plus grand nombre de fatalités sur une intrigue en jeu.</string>
+	<string name="black_stars_skull_one">–X. X est le plus grand nombre de fatalités sur une intrigue en jeu.</string>
     <string name="black_stars_skull_two">–X. X est le nombre total de fatalités sur les intrigues en jeu.</string>
     <string name="black_stars_cultist_one">Révélez un autre pion. Au lieu de révéler cet autre pion, ce test échoue automatiquement si le pion 
 		a été révélé lors d’une attaque ou tentative d’évasion contre un ennemi avec de la fatalité sur lui.</string>
@@ -194,6 +204,17 @@
 		et piochez-le.</string>
     <string name="black_stars_thing_two">–3. En cas d’échec, cherchez un ennemi <b><i>Byakhee</i></b>  dans le deck Rencontre ou dans la pile de défausse Rencontre
 		et piochez-le.</string>
+		
+	<string name="dim_skull_one">–2 (-4 à la place s’il ne vous reste plus de santé mentale).</string>
+    <string name="dim_skull_two">–X. X est le nombre d’horreurs sur vous.</string>
+    <string name="dim_cultist_one">Révélez un autre pion. En cas d’échec, subissez 1 horreur.</string>
+    <string name="dim_cultist_two">Révélez un autre pion. En cas d’échec, subissez 2 horreurs.</string>
+    <string name="dim_tablet_one">-3. En cas d’échec, si Hastur est en jeu, placez 1 indice (<i>pris dans la réserve de pions</i>) sur votre lieu.</string>
+    <string name="dim_tablet_two">-5. En cas d’échec, si Hastur est en jeu, placez 1 indice (<i>pris dans la réserve de pions</i>) sur votre lieu.</string>
+    <string name="dim_thing_one">–3. Si ce pion est révélé lors d’une attaque ou d’une tentative d’évasion
+		contre un ennemi <b><i>Monstre</i></b> ou <b><i>Grand Ancien</i></b>, perdez 1 action.</string>
+    <string name="dim_thing_two">–5. Si ce pion est révélé lors d’une attaque ou d’une tentative d’évasion
+		contre un ennemi <b><i>Monstre</i></b> ou <b><i>Grand Ancien</i></b>, perdez 1 action.</string>
 																									 
     <!-- Campaign introduction-->
     <string name="carcosa_introduction"><b>Prologue</b>\n
@@ -617,6 +638,38 @@
 		plongent les eaux salées ; l’astre rouge décroît, laissant l’ombre régner  » En regardant l’île qui se dresse devant vous,
 		illuminée par les éclairs et assaillie par les vagues tumultueuses, vous ne pouvez vous empêcher de vous demander si 
 		la chanson d’Ashleigh ne concernait pas ce moment précis.</string>
+		
+		
+		
+	<string name="dim_introduction_below">Vous nagez jusqu’au bord de l’eau et vous vous jetez sur le rivage
+		rocheux, reprenant votre souffle. Vous restez ici un instant, totalement exténué. Chacun de
+		vos muscles est endolori. Devant vous s’étend une vaste plaine. Au loin, les étranges tours de
+		la cité difforme s’élèvent dans les nuages. Derrière vous, la surface sombre du lac dont vous
+		avez émergé reflète l’image de deux soleils. En scrutant les abysses, vous n’apercevez aucun
+		signe de la chapelle dont vous venez, du Mont Saint-Michel, ni même de la Terre. Vous êtes
+		à Carcosa – le royaume de la folie dans les étoiles, où Hastur règne en maître.</string>
+		
+	<string name="dim_introduction_above">Vous atterrissez sur un bloc d’obsidienne noire entourant une tour
+		sombre. Vous crachez du sang et sentez une douleur fulgurante dans votre ventre, comme
+		si vous vous étiez cassé une côte. Devant vous s’étend une ville étrange et difforme. Ses rues
+		tortueuses et son architecture aberrante semblent n’avoir aucune cohérence. Au loin, un
+		lac sombre reflète l’image de deux soleils. En regardant le ciel, l’abbaye du Mont Saint-Michel
+		apparaît sous la couverture de nuages, sens dessus-dessous. Vous êtes à Carcosa – le
+		royaume de la folie dans les étoiles, où Hastur règne en maître.</string>
+		
+		
+	<string name="carcosa_epilogue_one"><b>Seuls les investigeurs possédés lisent :</b>\n
+	\nLa préparation a pris des mois, mais vous êtes désormais prêt à révéler au monde votre
+		toute dernière œuvre. Votre première tâche avait été de trouver des investisseurs financiers,
+		bien entendu. Cela ne prit pas très longtemps grâce aux contacts que vous vous étiez faits à
+		Paris. On vous a assuré que la troupe réunie était la meilleure que vous pouviez rassembler
+		avec vos moyens financiers, mais vous travaillez toujours d’arrache-pied pour que tout soit
+		parfait. Cela doit être parfait. L’histoire doit être racontée afin que le monde sache. Vous
+		avez entendu les membres de la troupe murmurer derrière votre dos  : des remarques à
+		propos de votre étrange passion, des inquiétudes quant à vos yeux jaunes et perçants. Peu
+		vous importe. Tout ce qui vous intéresse, c’est la représentation. La prononciation des mots.
+		La mélodie de la chanson de Cassilda. La forme du masque de l’Étranger.\n
+	\nCe sera la plus belle représentation du Roi en Jaune que le monde a jamais vue.</string>
 
 
     <!--Scenario set-up instructions-->
@@ -782,6 +835,7 @@
     <string name="pallid_set_aside">Le détenteur de la faiblesse L’Homme au Masque Blême la cherche dans son deck 
 		et la met de côté, hors jeu.\n</string>
     <string name="pallid_additional">Choisissez un lieu Les Catacombes adjacent au lieu de départ et révélez-le.</string>
+	
 	 <string name="black_stars_sets">Sous les Étoiles Noires, Présages Funestes, Les Byakhees, Les Habitants de Carcosa,
 		L’Étranger, Sombre Culte et Antiques Fléaux.</string>
     <string name="black_stars_sets_two">Certaines cartes du set de rencontre <i>Sous les Étoiles Noires</i> existent
@@ -813,8 +867,34 @@
     <string name="black_stars_additional_ashleigh">\nLors de ce scénario, un investigateur a le droit de retirer 1 fatalité d’une
 		intrigue en jeu en tant que capacité déclenchée. (Limite collective d’une fois par partie.)</string>
 
-					   
+	<string name="dim_sets">La Pâle Carcosa, Hallucinations, Culte du Signe Jaune, Les Habitants de Carcosa,
+		Agents d’Hastur et Répandre la Peur.</string>	
+    <string name="dim_locations_below">Mettez en jeu 1 exemplaire pris au hasard de chacune des cartes suivantes  :
+		Plaines Désolées, Rues Mornes, Ruines de Carcosa et Profondeurs de Demhe.\n
+    \nMettez en jeu Rives du Lac de Hali, Sombres Clochers et Palais du Roi.\n
+    \nChaque investigateur commence la partie sur les Rives du Lac de Hali\n</string>
+    <string name="dim_locations_above">Mettez en jeu 1 exemplaire pris au hasard de chacune des cartes suivantes  :
+		Plaines Désolées, Rues Mornes, Ruines de Carcosa et Profondeurs de Demhe.\n
+	\nMettez en jeu Rives du Lac de Hali, Sombres Clochers et Palais du Roi. \n
+    \nChaque investigateur commence la partie sur les Sombres Clochers\n</string>
 
+	<string name="dim_set_aside">Tous les autres exemplaires de Plaines Désolées, Rues Mornes, Ruines de Carcosa et Profondeur de Demhe.\n
+	\nHastur (<i>Le Roi en Jaune</i>), Hastur (<i>Seigneur de Carcosa</i>), Hastur (<i>Le Roi en Guenilles</i>), et Bête d’Aldébaran.\n
+    \nLe détenteur de la faiblesse L’Homme au Masque Blême la cherche dans son
+		deck et la met de côté, hors jeu.\n</string>
+    <string name="dim_act_one">Utilisez l’Acte 2 — À la Recherche de l’Étranger (v. I).\n</string>
+    <string name="dim_act_two">Utilisez l’Acte 2 — À la Recherche de l’Étranger (v. II).\n</string>
+    <string name="dim_act_three">Utilisez l’Acte 2 — À la Recherche de l’Étranger (v. III).\n</string>
+    <string name="dim_act_four">Vous avez le droit de choisir d’utiliser l’Acte 2 — À la Recherche de l’Étranger (v. II) ou l’Acte 2 — À la Recherche
+		de l’Étranger (v. III).\n</string>
+    <string name="dim_doom_one">\nAjoutez 3 fatalités à l’intrigue 1a.\n</string>
+    <string name="dim_doom_two">\nAjoutez 2 fatalités à l’intrigue 1a.\n</string>
+    <string name="dim_doom_three">\nAjoutez 1 fatalité à l’intrigue 1a.\n</string>
+    <string name="dim_additional">\nChaque investigateur subit un montant d’horreurs directes égal à la moitié de
+		sa santé mentale, arrondi au nombre inférieur (ne peut pas être annulé). Ces
+		horreurs ne peuvent pas entraîner que les investigateurs soient vaincus.</string>
+
+	
 	
 		
     <!--Scenario resolutions-->
@@ -1129,8 +1209,10 @@
 		et détalez à toutes jambes une fois de l’autre côté.\n
     \n<b>Retirez tous les pions Cultiste, Tablette, et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Chose Ancienne
 		dans la réserve du Chaos.</b></string>
-	<string name="unspeakable_resolution_onyx"><b>Choisissez un nouvel investigateur qui doit inclure la faiblesse Broche d’Onyx Noir 
+		
+		<string name="unspeakable_resolution_onyx"><b>Choisissez un nouvel investigateur qui doit inclure la faiblesse Broche d’Onyx Noir 
 			dans son deck.</b></string>	
+
 
 
 
@@ -1246,7 +1328,7 @@
 		bras de la poigne du policier déboussolé. « Il faut qu’y aille, maintenant ! » </string>
 		
 
-<string name="black_stars_resolution_one">Vous retenez votre souffle et nagez dans l’eau glacée vers les
+	<string name="black_stars_resolution_one">Vous retenez votre souffle et nagez dans l’eau glacée vers les
 		tours au-dessous. En approchant, vous apercevez des ondulations dans l’eau semblables à des reflets à la surface de la mer.
 		Vous traversez cette démarcation et poussez un cri de surprise en constatant que l’air emplit vos poumons.\n
     \n<b>Retirez tous les pions Cultiste, Tablette et Chose Ancienne de la réserve du Chaos. Ensuite, ajoutez 2 pions Cultiste 
@@ -1265,5 +1347,81 @@
     \n<b>Vous avez rencontré un funeste destin, n’est-ce pas ?</b>\n
     \n<b>Chaque investigateur devient dément.</b>\n
     \n<b>Les investigateurs ont perdu la campagne.</b></string>
+	
+	<string name="dim_resolution_one">Vous vous tenez debout sur le balcon de la tour de l’abbaye du
+		Mont Saint-Michel, où un vent humide agite vos cheveux. Le Masque Blême
+		repose entre vos mains, dépourvu de la moindre chaleur. Vous ne parvenez
+		pas à le regarder. Tout vous revient en mémoire – comment cela a commencé,
+		comment l’histoire s’est terminée, et tout ce qui s’est passé entre temps. Il ne reste
+		qu’une seule chose à faire. De toutes vos forces, vous jetez le masque au loin et le
+		regardez sombrer dans les vagues tumultueuses en contrebas.\n
+	\n<b>Chaque investigateur a triomphé de lui-même, le plus dangereux.<b/>\n
+	\n<b>Les investigateurs ont gagné la campagne !</b></string>
+		
+	<string name="dim_resolution_two">Un tonnerre d’applaudissements vous réveille. Le public se
+		lève, redoublant d’enthousiasme. Plusieurs spectateurs du premier rang lancent
+		des roses aux acteurs présents sur scène qui saluent le public, un large sourire
+		aux lèvres. Un mal de crâne insidieux tambourine sous vos tempes. Comment
+		êtes-vous revenu ici ? Êtes-vous resté dans le théâtre tout du long ? Qu’en est-il
+		de la réception ? De l’asile ? Des catacombes ? De Carcosa ? Tout cela n’était-il
+		qu’un terrible cauchemar ?\n
+	\nVous quittez l’auditorium avant que la foule ne se rue vers la sortie. La fatigue
+		et les vertiges atténuent vos sens. Le poids de votre longue enquête pèse sur
+		votre esprit. Le temps d’atteindre le hall d’entrée, vous ne parvenez plus qu’à
+		ramper sur le sol. À cet instant, un homme vêtu d’un élégant costume se baisse
+		et vous saisit par les épaules, vous aidant à vous relever. Vous vous apprêtez à
+		le remercier quand vous réalisez de qui il s’agit. Sa vue vous fait reculer dans
+		un sursaut d’horreur. L’acteur incarnant l’Étranger porte toujours son masque
+		pâle sans visage. Il vous adresse une révérence silencieuse, tourne les talons et
+		quitte le théâtre Ward par la porte d’entrée.\n
+	\n<b>Les investigateurs ont découvert la vérité derrière <i>Le Roi en Jaune<i>.<b/>\n
+	\n<b>Les investigateurs ont gagné la campagne !</b></string>
+
+
+
+	<string name="dim_resolution_three">Vous vous réveillez dans le chœur gothique de l’abbaye
+		du Mont Saint-Michel. Le bruit de la pluie sur les vitraux a cessé et vous
+		n’entendez plus ni le tonnerre, ni le bruissement des horreurs ailées. Vous vous
+		êtes visiblement échappé. Vous rampez jusqu’à la porte de l’abbaye et l’ouvrez
+		avec appréhension. Une lumière aveuglante vous éblouit et vous levez la main
+		pour protéger vos yeux de l’éclat du soleil. Vous restez là un instant, à admirer la
+		beauté saisissante du Mont Saint-Michel. Des mouettes survolent l’abbaye sous
+		un ciel sans nuages. Les eaux entourant l’abbaye sont calmes et d’un bleu azur.\n
+	\n«  Justement, je vous cherchais  !  », s’exclame une voix dans votre dos. Vous
+		faites volte-face dans un sursaut. Un court instant, vous craignez de croiser le
+		regard de l’Étranger et de son Masque Blême ; mais au lieu de cela, le capitaine
+		du bateau qui vous a amené sur le Mont Saint-Michel se tient au sommet de
+		l’escalier, tout sourire. « Êtes-vous prêt à rentrer ? »\n
+	\n<b>Les investigateurs ont découvert la vérité derrière <i>Le Roi en Jaune<i>.<b/>\n
+	\n<b>Les investigateurs ont gagné la campagne !</b></string>
+
+	<string name="dim_resolution_four">: Vous vous réveillez dans le chœur gothique de l’abbaye du
+		Mont Saint-Michel. Le bruit de la pluie sur les vitraux a cessé et vous n’entendez
+		plus ni le tonnerre, ni le bruissement des horreurs ailées. Vous avez visiblement
+		échappé au funeste destin de l’île. Vous rampez jusqu’à la porte de l’abbaye et
+		l’ouvrez avec appréhension. Une lumière aveuglante vous éblouit et vous levez la
+		main pour protéger vos yeux de l’éclat des deux soleils. Vous restez là un instant,
+		à observer le lac de Hali et les Étoiles Noires suspendues à la voûte céleste
+		au-dessus de vous. Au-delà, après des lieues d’un océan de nuages tourbillonnants,
+		les hautes tours de Carcosa s’élèvent derrière la lune brisée. \n
+	\n<b>Vous avez rencontré un funeste destin, n’est-ce pas ?</b>\n
+	\n<b>Chaque investigateur devient dément.</b>\n
+	\n<b>Les investigateurs ont perdu la campagne.</b></string>
+
+	<string name="dim_resolution_five">Le reste du monde ne saura jamais que vous avez tenté de le
+		sauver. Les gens vous traitent avec miséricorde, mépris ou dédain, mais vous
+		connaissez la vérité. Ils sont résignés à leur atroce destinée, mais vous tentez jour
+		après jour de leur apporter votre message. Vous devez les mettre en garde contre
+		Le Roi en Jaune, Hastur et Carcosa. « Une autre âme perdue », disent-ils,
+		mais ils ne peuvent pas comprendre ce que vous avez traversé pour tenter de les
+		sauver. Vous leur répétez qu’il vient pour les réclamer, mais ils ne vous croient
+		pas. Vous écrivez sur les murs capitonnés de votre cellule des avertissements à
+		propos d’Aldébaran et des étoiles noires, mais les mots s’effacent à mesure que
+		passent les années. Personne n’écoutera jamais vos mises en garde.
+	\n<b>Vous ne pensiez tout de même pas pouvoir vous échapper, n’est-ce pas ?</b>\n
+	\n<b>Chaque investigateur devient dément.</b>\n
+	\n<b>Les investigateurs ont perdu la campagne.</b></string>
+
+   
 																		
 </resources>
