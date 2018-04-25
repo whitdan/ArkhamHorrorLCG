@@ -45,6 +45,7 @@
     <string name="mark_one_conviction">1 Überzeugung angekreuzt</string>
     <string name="mark_one_doubt">1 Zweifel angekreuzt</string>
     <string name="must_agenda_one_effect">Du musst noch einen Effekt für Agenda 1b oder Agenda 1d wählen</string>
+    <string name="possession">„Besessenheit“-Karte auf der Hand</string>
 
 
     <!--Campaign Log-->
@@ -90,6 +91,13 @@
         beide.\n\n</string>
     <string name="path_below">Die Ermittler haben den unteren Pfad geöffnet.\n\n</string>
     <string name="path_above">Die Ermittler haben den oberen Pfad geöffnet.\n\n</string>
+    <string name="prevented_hastur">Die Ermittler haben verhindert, dass Hastur seinem Gefängnis entkommt.\n\n</string>
+    <string name="hasturs_grasp">Hastur hat die Ermittler im Griff.\n\n</string>
+    <string name="possessed"> war besessen.\n\n</string>
+    <string name="inv_one_possessed">Ermittler 1 war besessen.\n\n</string>
+    <string name="inv_two_possessed">Ermittler 2 war besessen.\n\n</string>
+    <string name="inv_three_possessed">Ermittler 3 war besessen.\n\n</string>
+    <string name="inv_four_possessed">Ermittler 4 war besessen.\n\n</string>
 
 
     <!--Edit log-->
@@ -115,6 +123,8 @@
     <string name="no_daniel">Daniels Warnung wurde nicht gehört.</string>
     <string name="nigel_heading">Nigel Engram</string>
     <string name="path_heading">Der Pfad nach Carcosa</string>
+    <string name="hastur_heading">Hastur</string>
+    <string name="possessed_heading">Besessenheit</string>
 
 
     <!--Chaos bag-->
@@ -219,6 +229,19 @@
         Ablagestapel nach einem <b><i>Byakhee</i></b>-Gegner und ziehe ihn.</string>
     <string name="black_stars_thing_two">–3. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den
         Ablagestapel nach einem <b><i>Byakhee</i></b>-Gegner und ziehe ihn.</string>
+
+    <string name="dim_skull_one">–2 (–4 stattdessen, falls du keine verbliebene geistige Gesundheit hast).</string>
+    <string name="dim_skull_two">–X. X ist die Anzahl deines Horrors.</string>
+    <string name="dim_cultist_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, nimm 1 Horror.</string>
+    <string name="dim_cultist_two">Enthülle einen weiteren Marker. Falls die Probe misslingt, nimm 2 Horror.</string>
+    <string name="dim_tablet_one">–3. Falls die Probe misslingt und Hastur im Spiel ist, platziere 1 Hinweis (<i>aus
+        dem Markervorrat</i>) auf deinen Ort.</string>
+    <string name="dim_tablet_two">–5. Falls die Probe misslingt und Hastur im Spiel ist, platziere 1 Hinweis (<i>aus
+        dem Markervorrat</i>) auf deinen Ort.</string>
+    <string name="dim_thing_one">–3. Falls dieser Marker während eines Angriffs oder eines Entkommen-Versuches gegen
+        einen <b><i>Monster-</i></b> or <b><i>Großer Alter-</i></b>Gegner enthüllt wird, verlierst du 1 Aktion.</string>
+    <string name="dim_thing_two">–5. Falls dieser Marker während eines Angriffs oder eines Entkommen-Versuches gegen
+        einen <b><i>Monster-</i></b> or <b><i>Großer Alter-</i></b>Gegner enthüllt wird, verlierst du 1 Aktion.</string>
 
 
     <!-- Campaign introduction-->
@@ -670,6 +693,33 @@
         zuckenden Blitzen erhellt und von tosenden Wellen bedroht ist. Du kannst nicht anders, als dich zu fragen, ob
         Ashleighs Lied genau diesen Moment beschrieben hat.</string>
 
+    <string name="dim_introduction_below">Du schwimmst zum Ufer, ziehst dich auf die Felsen und schnappst nach Luft.
+        Einige Zeit bleibst du völlig erschöpft liegen. Jeder Muskel in deinem Körper schmerzt. Vor dir liegt eine
+        einsame Welt des Schmerzes. In der Ferne siehst du die fremdartigen Türme einer verzerrten Stadt in die Wolken
+        reichen. Hinter dir spiegeln sich in der dunkeln Oberfläche des Sees, aus dem du gerade aufgetaucht bist, die
+        Zwillingssonnen. Als du zurück in die schlammigen Tiefen blickst, entdeckst du keine Spur von der Kapelle, von
+        der aus du gesprungen bist, oder von Mont Saint-Michel, nicht einmal von der Erde. Dies ist Carcosa — das Reich
+        des Wahnsinns in den Sternen, über das Hastur uneingeschränkt gebietet.</string>
+    <string name="dim_introduction_above">Du landest auf schwarzem Obsidian, der sich an einer Turmspitze entlang
+        windet. Du hustest Blut und ein stechender Schmerz fährt durch deine Eingeweide, als ob du dir eine Rippe
+        gebrochen hättest. Vor dir liegt eine verzerrte, fremdartige Stadt. Ihre sich windenden Straßen und die von
+        jeglicher Norm abweichende Bauweise zeigen nicht das kleinste Bisschen Ordnung oder Struktur. In der Ferne
+        spiegelt ein schlammiger See das Gleißen der Zwillingssonnen wider. Als du aufsiehst, bemerkst du hinter den
+        Wolken die auf den Kopf gestellte Abtei von Mont Saint-Michel. Dies ist Carcosa — das Reich des Wahnsinns in
+        den Sternen, über das Hastur uneingeschränkt gebietet.</string>
+
+    <string name="carcosa_epilogue_one"><b>Nur Ermittler, die am Ende der Kampagne besessen waren, dürfen den folgenden
+        Text lesen:</b>\n
+    \nDu hast einige Monate für die Vorbereitung gebraucht, aber jetzt bist du endlich bereit, der Welt dein neuestes
+        Werk vorzustellen. Zunächst musstest du natürlich Sponsoren finden. Aber dank deiner Verbindungen in Paris hat
+        das nicht lange gedauert. Man hat dir versichert, dass die Besetzung die beste ist, die man für Geld anwerben
+        kann, aber trotzdem strebst du immer noch danach, alles zu perfektionieren. Es <i>muss</i> perfekt sein. Die
+        Geschichte muss erzählt werden, damit die Welt es versteht. Du hörst, wie die Schauspieler hinter deinem Rücken
+        flüstern: ihre Bemerkungen über deine bizarre Leidenschaft, ihre Besorgnis über deine durchdringenden gelben
+        Augen. Aber das interessiert dich nicht. Du machst dir nur Gedanken über die Aufführung. Die Aussprache der
+        Worte. Die Melodie von Cassildas Lied. Die Gestaltung der Maske des Fremden.\n
+    \nDas wird die größte Aufführung von <i>Der König in Gelb</i>, die die Welt je gesehen hat.</string>
+
 
     <!--Scenario set-up instructions-->
     <string name="curtain_sets">Ruf vor den Vorhang, Böse Vorzeichen, Wahnvorstellungen, Heimsuchungen, Kult des gelben
@@ -887,6 +937,46 @@
         Fähigkeit 1 Verderben von einer Agenda im Spiel entfernen. (Nur einmal pro Spiel für die gesamte
         Gruppe.)</string>
 
+    <string name="dim_sets">Finsteres Carcosa, Wahnvorstellungen, Kult des Gelben Zeichens, Bewohner von Carcosa,
+        Anhänger von Hastur und Lähmende Angst.</string>
+    <string name="dim_locations_below">(Kein Ort in diesem Szenario hat eine verhüllte Seite; jeder Ort kommt daher mit
+        der enthüllten Seite nach oben ins Spiel. Anstelle einer verhüllten Seite befinden sich Handlungskarten auf
+        ihren Rückseiten. Bei Spielbeginn werden wie üblich Hinweise in Höhe des Hinweiswertes auf jeden Ort
+        platziert.)\n
+        Jeweils ein Exemplar der Orte Trostlose Ebene, Finstere Straßen, Ruinen von Carcosa und Tiefen von Demhe wird
+        zufällig bestimmt und ins Spiel gebracht.\n
+    \nDann werden die Orte Küste von Hali, Dunkle Turmspitzen und Palast des Königs ins Spiel gebracht.\n
+    \nJeder Ermittler beginnt das Spiel an der Küste von Hali.\n</string>
+    <string name="dim_locations_above">(Kein Ort in diesem Szenario hat eine verhüllte Seite; jeder Ort kommt daher mit
+        der enthüllten Seite nach oben ins Spiel. Anstelle einer verhüllten Seite befinden sich Handlungskarten auf
+        ihren Rückseiten. Bei Spielbeginn werden wie üblich Hinweise in Höhe des Hinweiswertes auf jeden Ort
+        platziert.)\n
+        Jeweils ein Exemplar der Orte Trostlose Ebene, Finstere Straßen, Ruinen von Carcosa und Tiefen von Demhe wird
+        zufällig bestimmt und ins Spiel gebracht.\n
+    \nDann werden die Orte Küste von Hali, Dunkle Turmspitzen und Palast des Königs ins Spiel gebracht.\n
+    \nJeder Ermittler beginnt das Spiel auf den dunklen Turmspitzen.\n</string>
+    <string name="dim_set_aside">Hastur (<i>Der König in Gelb</i>), Hastur (<i>Herr über Carcosa</i>), Hastur (<i>Der
+        Lumpenkönig</i>), Bestie von Aldebaran und die übrigen Exemplare der Orte Trostlose Ebene, Finstere Straßen,
+        Ruinen von Carcosa und Tiefen von Demhe.\n
+    \nDer Träger der Schwäche Der Mann mit der Bleichen Maske durchsucht sein Deck nach dieser Karte und legt sie als
+        nicht im Spiel befindlich beiseite.\n</string>
+    <string name="dim_act_one">Verwende Szene 2 — Suche nach dem Fremden (V. I).\n</string>
+    <string name="dim_act_two">Verwende Szene 2 — Suche nach dem Fremden (V. II).\n</string>
+    <string name="dim_act_three">Verwende Szene 2 — Suche nach dem Fremden (V. III).\n</string>
+    <string name="dim_act_four">Entscheide, ob Szene 2 — Suche nach dem Fremden (V. II) oder Szene 2 — Suche nach dem
+        Fremden (V. III) verwendet wird.\n</string>
+    <string name="dim_doom_one">\nPlatziere 3 Verderben auf Agenda 1a.\n</string>
+    <string name="dim_doom_two">\nPlatziere 2 Verderben auf Agenda 1a.\n</string>
+    <string name="dim_doom_three">\nPlatziere 1 Verderben auf Agenda 1a.\n</string>
+    <string name="dim_additional">\nJeder Ermittler nimmt direkten Horror in Höhe der Hälfte seiner geistigen
+        Gesundheit (abgerundet, kann nicht verhindert werden).\n
+    \nIn dem verzerrten und Wahnsinn auslösenden Reich von Carcosa ist der Verlust von geistiger Gesundheit
+        unausweichlich. Aber der Schaden, den die Ermittler an Verstand und Seele nehmen, beendet nicht ihre
+        Ermittlungen. <b>Während dieses Szenarios werden Ermittler nicht dadurch besiegt, dass sie Horror in Höhe ihrer
+        geistigen Gesundheit (oder darüber hinaus) erlitten haben.</b> Die Ermittler dürfen Horror über ihre geistige
+        Gesundheit hinaus nehmen. Solange ein Ermittler mehr Horror genommen hat als er über geistige Gesundheit
+        verfügt, zählt seine verbliebene geistige Gesundheit als 0.</string>
+
 
     <!--Scenario resolutions-->
     <string name="curtain_no_resolution">Erneut schreckst du aus dem Schlaf hoch, diesmal, weil du die kalten, feuchten
@@ -1066,7 +1156,7 @@
         findest, eine tiefere Bedeutung beizumessen. Du bist dir aber sicher, dass diese Spange keine Bedeutung hat,
         vielleicht handelt es sich um eine Requisite aus der Originalinszenierung. Du lässt sie zurück und setzt deine
         Ermittlung fort. Beim letzten Bericht, den du im Zusammenhang mit der früheren Inszenierung von <i>Der König in
-        in Gelb</i> gefunden hast, handelt es sich um ein psychologisches Gutachten über einen gewissen Daniel
+        Gelb</i> gefunden hast, handelt es sich um ein psychologisches Gutachten über einen gewissen Daniel
         Chesterfield, einen Bühnenarbeiter, der nach der letzten Aufführung den Verstand verloren hat. Scheinbar wurde
         er nach dem Ende der Produktion ins Sanatorium eingewiesen. Vielleicht ist er immer noch da…\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
@@ -1284,7 +1374,7 @@
         dem Stück – das hat es schon immer – und trotzdem hast du dich bisher aus Aberglauben geweigert den zweiten Akt
         zu lesen. Die Worte können dir nicht mehr anhaben als die Kreaturen und Fanatiker, denen du begegnet bist.
         Zitternd öffnest du den zweiten Teil und beginnst zu lesen.\n
-    \n<b>Jeder Ermittler muss wählen, ob er Akt II von <i>Der König in Gelb</i> liest oder nicht. Mindestens ein
+    \n<b>Jeder Ermittler muss entscheiden, ob er Akt II von <i>Der König in Gelb</i> liest oder nicht. Mindestens ein
         Ermittler muss Akt II lesen. Gib unten ein, welche Ermittler sich dazu entschlossen haben, Akt II zu lesen.
         Jeder Ermittler, der Akt II liest, durchsucht die Sammlung nach einer zufälligen <i><b>Wahnsinn</b></i>- oder
         <i><b>Pakt</b></i>-Schwäche und fügt sie seinem Deck hinzu (zählt nicht gegen die Deckgröße). Jeder Ermittler,
@@ -1342,6 +1432,61 @@
         Hali schauen. Am Himmel über dir stehen schwarze Sterne. Meilenweit in der Ferne siehst du hinter den Wellen die
         Türme von Carcosa vor dem zersprungenen Mond.\n
     \n<b>Dir ist ein fürchterliches Schicksal widerfahren, nicht wahr?</b>\n
+    \n<b>Alle Ermittler werden wahnsinnig.</b>\n
+    \n<b>Die Ermittler haben die Kamagne verloren.</b></string>
+
+    <string name="dim_resolution_one">Du stehst auf der Empore des Turms der Abtei von Mont Saint-Michel und ein
+        nasskalter Wind fährt durch deine Haare. Die Bleiche Maske ruht in deiner Hand. Ihr fehlt jegliche Wärme. Du
+        kannst dich kaum dazu überwinden, sie anzusehen. Nun kannst du dich an alles erinnern — wie alles anfing, wie
+        es endete und alles, was dazwischen geschehen ist. Du musst nur noch eine Sache erledigen. Du schleuderst die
+        Maske mit aller Kraft in die Luft und siehst zu, wie sie in die sturmumtosten Wellen unter dir fällt.\n
+    \n<b>Jeder Ermittler konnte sich gegen den gefährlichsten aller Feinde durchsetzen — gegen sich selbst.</b>\n
+    \n<b>Die Ermittler haben die Kampagne gewonnen!</b></string>
+    <string name="dim_resolution_two">Donnernder Applaus lässt dich aus dem Schlaf hochfahren. Das Publikum im Theater
+        springt auf und jubelt scheinbar endlos. Einige Mäzene in der ersten Reihe werfen den Schauspielern, die sich
+        mit warmem, breitem Lächeln verbeugen, Rosen zu. An deinen Schläfen verspürst du einen schneidenden Schmerz. Wie
+        bist du hierher zurückgekommen? Warst du die ganze Zeit über im Theater? Was war mit der Feier? Dem Sanatorium?
+        Den Katakomben? … Carcosa? War das alles nur ein fürchterlicher Albtraum?\n
+    \nDu verlässt den Zuschauersaal, bevor sich die Menge entscheidet, dies ebenfalls zu tun. Deine Wahrnehmung ist von
+        Schwindelgefühlen und Erschöpfung getrübt. Das Gewicht deiner langen Erinnerungen lastet schwer auf deinem
+        Geist. Schließlich erreichst du das Foyer und kriechst mühsam weiter. In diesem Moment ergreift ein Mann in
+        elegantem Anzug deinen Arm und zieht dich hoch. Du willst ihm gerade danken, als du ihn erkennst. Sein Anblick
+        lässt dich für einen Moment schreckerfüllt zurückweichen. Der Schauspieler, der die Rolle des Fremden gespielt
+        hat, trägt immer noch seine bleiche, ausdruckslose Maske. Er verneigt sich wortlos vor dir und wendet sich dann
+        ab, um das Ward-Theater durch den Vordereingang zu verlassen.\n
+    \n<b>Die Ermittler haben die Wahrheit hinter <i>Der König in Gelb</i> erfahren.</b>\n
+    \n<b>Die Ermittler haben die Kampagne gewonnen!</b></string>
+    <string name="dim_resolution_three">Als du erwachst, sitzt du im Chœur Gothique der Abtei Mont Saint-Michel. Der
+        Regen prasselt nicht mehr auf das Glas der Fenster über dir und du hörst weder Donner noch das Kreischen der
+        geflügelten Schrecken am Himmel. Irgendwie bist du entkommen. Du kriechst zur Tür der Abtei und öffnest sie
+        beklommen. Grelles licht bohrt sich in deine Augen und du hebst die Hand, um sie vor dem Licht der Sonne zu
+        schützen. Du stehst über dem wunderschönen Mont Saint-Michel. Möwen kreisen am wolkenlosen Himmel über der
+        Abtei. Das Wasser um die Abtei ist ruhig und azurblau.\n
+    \n„Ich habe Sie überall gesucht!“, hörst du eine Stimme hinter dir ausrufen. Du drehst dich erschrocken um. Einen
+        Moment lang erwartest du, den Fremden und seine bleiche Maske zu sehen, aber stattdessen steht der Kapitän, den
+        du angeheuert hast, um dich nach Mont Saint-Michel zu bringen, am Rand der Stufen und lächelt dich an. „Bereit
+        für die Rückfahrt?“\n
+    \n<b>Die Ermittler haben die Wahrheit hinter <i>Der König in Gelb</i> erfahren.</b>\n
+    \n<b>Die Ermittler haben die Kampagne gewonnen!</b></string>
+    <string name="dim_resolution_four">Als du erwachst, sitzt du im Chœur Gothique der Abtei Mont Saint-Michel. Der
+        Regen prasselt nicht mehr auf das Glas der Fenster über dir und du hörst weder Donner noch das Kreischen der
+        geflügelten Schrecken am Himmel. Irgendwie bist du dem sicheren Verderben der Insel entkommen. Du kriechst zur
+        Tür der Abtei und öffnest sie beklommen. Grelles licht bohrt sich in deine Augen und du hebst die Hand, um sie
+        vor dem gleißenden Licht der Zwillingssonnen zu schützen. Von deiner Position aus kannst du über den See von
+        Hali schauen. Am Himmel über dir stehen schwarze Sterne. Meilenweit in der Ferne siehst du hinter den Wellen die
+        Türme von Carcosa vor dem zersprungenen Mond.\n
+    \n<b>Dir ist ein fürchterliches Schicksal widerfahren, nicht wahr?</b>\n
+    \n<b>Alle Ermittler werden wahnsinnig.</b>\n
+    \n<b>Die Ermittler haben die Kamagne verloren.</b></string>
+    <string name="dim_resolution_five">Die Welt da draußen wird nie erfahren, wie du versucht hast, sie zu retten. Sie
+        behandeln dich mit Mitleid, mit Zorn und Verachtung, aber du kennst die Wahrheit. Sie haben sich ihrem
+        fürchterlichen Schicksal ergeben, aber du versuchst weiterhin jeden Tag, ihnen die Botschaft zu überbringen. Du
+        musst sie vor <i>Der König in Gelb</i>, vor Hastur und Carcosa warnen. „Eine weitere verlorene Seele“ sagen sie,
+        aber sie können sich nicht vorstellen, was du durchgemacht hast bei dem Versuch, sie zu retten. Du warnst sie
+        davor, dass er kommen wird, um sie für sich zu beanspruchen, aber sie glauben dir nie. An den Wänden deiner
+        Zelle schreibst du über Aldebaran und die schwarzen Sterne, aber die Worte verblassen mit den Jahren. Niemand
+        nimmt sich deine Warnung zu Herzen.\n
+    \n<b>Du hast doch nicht geglaubt entkommen zu können, oder?</b>\n
     \n<b>Alle Ermittler werden wahnsinnig.</b>\n
     \n<b>Die Ermittler haben die Kamagne verloren.</b></string>
 </resources>

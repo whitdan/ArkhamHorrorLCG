@@ -385,7 +385,7 @@
     \n<b>Falls sich Dr. Henry Armitage nicht bereits in einem Ermittlerdeck befindet, darf ein beliebiger Ermittler
             diese Karte seinem Deck hinzufügen.</b></string>
     <string name="survivors_interlude_two">\nProfessor Rice schiebt seine Brille zurecht und studiert die Dokumente und
-        arkanen Manuskripte, die in der Kammer liegen. „Ich dachte, dieser Albtraum wäre für immer vorbei“, seufzte er.
+        arkanen Manuskripte, die in der Kammer liegen. „Ich dachte, dieser Albtraum wäre für immer vorbei“, seufzt er.
         „Aber wir haben die Pflicht, uns darum zu kümmern. Wir müssen diese Kreaturen aufhalten, sonst wird nicht nur
         Dunwich in Schwierigkeiten sein. Diese Pulvermischung von Armitage, mit der man die Kreaturen sichtbar machen
         kann, wird uns retten“, erklärt er und beginnt sofort damit, das Pulver erneut herzustellen.\n
@@ -524,7 +524,7 @@
         Curtis entschied, dass er so etwas finden müsste.</string>
     <string name="dunwich_epilogue_two">Gené kniete sich hin, um das Zeichen im Staub zu untersuchen. Die Form des
         Zeichens war ihr unbekannt, die Spuren, denen sie hierher gefolgt war, hatte sie noch nie zuvor gesehen. Und
-        dann noch der Bericht von der Universität ... sie wusste einfach nicht, was sie davon halten sollte. „Ms.
+        dann noch der Bericht von der Universität… sie wusste einfach nicht, was sie davon halten sollte. „Ms.
         Beauregard“, rief ihr Assistent ihr zu. „Haben Sie etwas gefunden?“\n
     \nGené stand auf und betrachtete den Studienanfänger, der ihr zugewiesen worden war. Er war ein guter Junge, etwas
         unreif, aber er arbeitete hart und war wild darauf, sich zu beweisen. „Dieser Platz sollte abgesperrt werden“,
@@ -656,11 +656,11 @@
         \n\t\t<b>Normal:</b> -5\n
         \n\t\t<b>Schwer:</b> -6\n
         \n\t\t<b>Experte:</b> -7\n</string>
-    <string name="doom_additional_act_one">Verwende Szene 2 - Den Hügel besteigen (v. I). Alle anderen Versionen von
+    <string name="doom_additional_act_one">Verwende Szene 2 — Den Hügel besteigen (v. I). Alle anderen Versionen von
         Szene 2 werden aus dem Spiel entfernt.\n\n</string>
-    <string name="doom_additional_act_two">Verwende Szene 2 - Den Hügel besteigen (v. II). Alle anderen Versionen von
+    <string name="doom_additional_act_two">Verwende Szene 2 — Den Hügel besteigen (v. II). Alle anderen Versionen von
         Szene 2 werden aus dem Spiel entfernt.\n\n</string>
-    <string name="doom_additional_act_three">Verwende Szene 2 - Den Hügel besteigen (v. III). Alle anderen Versionen von
+    <string name="doom_additional_act_three">Verwende Szene 2 — Den Hügel besteigen (v. III). Alle anderen Versionen von
         Szene 2 werden aus dem Spiel entfernt.\n\n</string>
     <string name="doom_additional_obannion_one">Der Ermittlungsleiter erhält einen Hinweis aus dem Markervorrat.
         \n\n</string>
@@ -880,6 +880,8 @@
         </string>
     <string name="undimensioned_resolution_two">Nachdem du die scheinbar letzten tobenden Monster getötet hast, ziehst
         du dich von dieser Erfahrung aufgewühlt und erschöpft in Zebulons Haus zurück.</string>
+    <string name="undimensioned_resolution_powder"><b>Falls das Deck eines Ermittlers die Karte Pulver von Ibn-Ghazi
+        enthält, wird sie aus dem Deck dieses Ermittlers entfernt.</b></string>
 
     <string name="doom_no_resolution">Die Zauberer aus Dunwich, die arkane Macht aus einem Reich außerhalb unserer
         Dimension suchten, haben erreicht, was Wilbur und der alte Whateley nicht geschafft haben. Durch Blutopfer und
