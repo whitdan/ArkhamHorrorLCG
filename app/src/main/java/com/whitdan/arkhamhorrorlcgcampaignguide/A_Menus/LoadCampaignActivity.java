@@ -279,9 +279,17 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     CampaignEntry.COLUMN_LOLA_INUSE,
                     CampaignEntry.COLUMN_MARIE_INUSE,
                     CampaignEntry.COLUMN_NORMAN_INUSE,
+                    CampaignEntry.COLUMN_CAROLYN_INUSE,
+                    CampaignEntry.COLUMN_SILAS_INUSE,
+                    CampaignEntry.COLUMN_LEO_INUSE,
+                    CampaignEntry.COLUMN_URSULA_INUSE,
+                    CampaignEntry.COLUMN_FINN_INUSE,
+                    CampaignEntry.COLUMN_MATEO_INUSE,
+                    CampaignEntry.COLUMN_CALVIN_INUSE,
                     CampaignEntry.COLUMN_ROUGAROU_STATUS,
                     CampaignEntry.COLUMN_STRANGE_SOLUTION,
                     CampaignEntry.COLUMN_ARCHAIC_GLYPHS,
+                    CampaignEntry.COLUMN_CHARONS_OBOL,
                     CampaignEntry.COLUMN_CARNEVALE_STATUS,
                     CampaignEntry.COLUMN_CARNEVALE_REWARDS
             };
@@ -352,12 +360,28 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         .getColumnIndexOrThrow(CampaignEntry.COLUMN_MARIE_INUSE));
                 globalVariables.InvestigatorsInUse[Investigator.NORMAN_WITHERS] = campaignCursor.getInt
                         (campaignCursor.getColumnIndexOrThrow(CampaignEntry.COLUMN_NORMAN_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.CAROLYN_FERN] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_CAROLYN_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.SILAS_MARSH] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_SILAS_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.LEO_ANDERSON] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_LEO_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.URSULA_DOWNS] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_URSULA_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.FINN_EDWARDS] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_FINN_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.FATHER_MATEO] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_MATEO_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.CALVIN_WRIGHT] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_CALVIN_INUSE));
                 globalVariables.Rougarou = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_ROUGAROU_STATUS)));
                 globalVariables.StrangeSolution = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_STRANGE_SOLUTION)));
                 globalVariables.ArchaicGlyphs = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_ARCHAIC_GLYPHS)));
+                globalVariables.CharonsObol = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
+                        (CampaignEntry.COLUMN_CHARONS_OBOL)));
                 globalVariables.Carnevale = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_CARNEVALE_STATUS)));
                 globalVariables.CarnevaleReward = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow

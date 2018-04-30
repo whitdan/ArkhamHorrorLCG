@@ -322,6 +322,12 @@ public class ChaosBagActivity extends AppCompatActivity {
                 }
             });
         }
+
+        // If standalone chaos bag and default chaos bag, jump to LoadChaosBagActivity
+        if(globalVariables.CurrentCampaign == 1000 && globalVariables.ChaosBagID == -1){
+            Intent standaloneIntent = new Intent(ChaosBagActivity.this, LoadChaosBagActivity.class);
+            startActivity(standaloneIntent);
+        }
     }
 
     // Listener for the difficulty checkboxes to set the difficulty and refresh the chaosbag when done
@@ -762,7 +768,8 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     private void setupScenarioCard(Activity activity) {
         LinearLayout scenarioLayout = activity.findViewById(R.id.scenario_card_layout);
-        if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 10) {
+        if ((globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 1) || globalVariables
+                .CurrentCampaign == 1000) {
             scenarioLayout.setVisibility(GONE);
         }
         LinearLayout skullLayout = activity.findViewById(R.id.skull_layout);

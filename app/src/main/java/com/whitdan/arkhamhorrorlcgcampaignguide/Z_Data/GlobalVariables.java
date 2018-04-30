@@ -19,7 +19,8 @@ public class GlobalVariables extends Application {
     public long CampaignID;                        // Corresponds to the SQLite database
     public long ChaosBagID;                        // Corresponds to SQLite database for chaos bag (-1 = default)
     public int CampaignVersion;                    // 1 = Original, 2 = added total XP)
-    public int CurrentCampaign;                    // 1 = Night, 2 = Dunwich, 3 = Carcosa
+    public int CurrentCampaign;                    // 1 = Night, 2 = Dunwich, 3 = Carcosa, 999 = standalone,
+                                                    // 1000 = standalone chaos bag
     public int CurrentScenario;                    // 0 = campaign setup, >100 = standalone, 1000 = between campaigns
     public int CurrentDifficulty;                  // 0 = easy, 1 = normal, 2 = hard, 3 = expert (except standalones)
     public String Notes;
@@ -42,8 +43,8 @@ public class GlobalVariables extends Application {
     public String[] PlayerNames = new String[4];
     public String[] DeckNames = new String[4];
     public String[] DeckLists = new String[4];
-    public int[] InvestigatorsInUse = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};      // Matches up to the names in the
-                                                                                                // string array
+    public int[] InvestigatorsInUse = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+                                                                        // Matches up to the names in the string array
 
     /*
         Night of the Zealot variables - All of the variables associated with the Night of the Zealot campaign
@@ -134,6 +135,7 @@ public class GlobalVariables extends Application {
      */
     public int StrangeSolution;
     public int ArchaicGlyphs;
+    public int CharonsObol;
 
     /*
         Method for each scenario to set its title

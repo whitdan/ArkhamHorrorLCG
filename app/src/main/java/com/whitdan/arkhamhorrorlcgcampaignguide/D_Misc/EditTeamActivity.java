@@ -33,6 +33,7 @@ import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.Investigator;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
+import static com.whitdan.arkhamhorrorlcgcampaignguide.R.array.investigators;
 
 public class EditTeamActivity extends AppCompatActivity {
 
@@ -60,7 +61,7 @@ public class EditTeamActivity extends AppCompatActivity {
         globalVariables = (GlobalVariables) this.getApplication();
 
         // Get array of the names of all of the game's investigators
-        String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+        String[] investigatorNames = getResources().getStringArray(investigators);
 
         investigatorsCount = 0;
         investigatorOne = null;
@@ -143,7 +144,7 @@ public class EditTeamActivity extends AppCompatActivity {
             savedInvestigators.addView(investigator);
             investigator.setChecked(false);
         }
-        if(savedInvestigators.getChildCount() == 0){
+        if (savedInvestigators.getChildCount() == 0) {
             saved.setVisibility(GONE);
         }
 
@@ -151,8 +152,11 @@ public class EditTeamActivity extends AppCompatActivity {
         LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
         LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
         LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
+        LinearLayout forgottenCheckboxes = findViewById(R.id.forgotten_investigators);
         LinearLayout marieCheckbox = findViewById(R.id.marie_promo);
         LinearLayout normanCheckbox = findViewById(R.id.norman_promo);
+        LinearLayout silasCheckbox = findViewById(R.id.silas_promo);
+        LinearLayout carolynCheckbox = findViewById(R.id.carolyn_promo);
         for (int i = 0; i < coreCheckboxes.getChildCount(); i++) {
             View view = coreCheckboxes.getChildAt(i);
             if (view instanceof CheckBox) {
@@ -174,6 +178,15 @@ public class EditTeamActivity extends AppCompatActivity {
                 }
             }
         }
+        for (int i = 0; i < forgottenCheckboxes.getChildCount(); i++) {
+            LinearLayout layout = (LinearLayout) forgottenCheckboxes.getChildAt(i);
+            for (int a = 0; a < layout.getChildCount(); a++) {
+                View view = layout.getChildAt(a);
+                if (view instanceof CheckBox) {
+                    ((CheckBox) view).setTypeface(arnopro);
+                }
+            }
+        }
         for (int i = 0; i < marieCheckbox.getChildCount(); i++) {
             View view = marieCheckbox.getChildAt(i);
             if (view instanceof CheckBox) {
@@ -186,25 +199,46 @@ public class EditTeamActivity extends AppCompatActivity {
                 ((CheckBox) view).setTypeface(arnopro);
             }
         }
+        for (int i = 0; i < carolynCheckbox.getChildCount(); i++) {
+            View view = carolynCheckbox.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
+            }
+        }
+        for (int i = 0; i < silasCheckbox.getChildCount(); i++) {
+            View view = silasCheckbox.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
+            }
+        }
 
         // Get sharedpreferences on expansions owned
         String sharedPrefs = getResources().getString(R.string.shared_prefs);
         String dunwichOwnedString = getResources().getString(R.string.dunwich_setting);
         String carcosaOwnedString = getResources().getString(R.string.carcosa_setting);
+        String forgottenOwnedString = getResources().getString(R.string.forgotten_setting);
         String marieOwnedString = getResources().getString(R.string.marie_lambeau);
         String normanOwnedString = getResources().getString(R.string.norman_withers);
+        String carolynOwnedString = getResources().getString(R.string.carolyn_fern);
+        String silasOwnedString = getResources().getString(R.string.silas_marsh);
         SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
         boolean dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
         boolean carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
+        boolean forgottenOwned = settings.getBoolean(forgottenOwnedString, true);
         boolean marieOwned = settings.getBoolean(marieOwnedString, false);
         boolean normanOwned = settings.getBoolean(normanOwnedString, false);
+        boolean carolynOwned = settings.getBoolean(carolynOwnedString, false);
+        boolean silasOwned = settings.getBoolean(silasOwnedString, false);
 
         // Investigators counts how many investigators are still unused (to determine if the players have lost)
         int core = 0;
         int dunwich = 0;
         int carcosa = 0;
+        int forgotten = 0;
         int marie = 0;
         int norman = 0;
+        int carolyn = 0;
+        int silas = 0;
 
         // Setup CheckBoxes with OnCheckedChangeListeners, as long as the investigator is not in use
         if (globalVariables.InvestigatorsInUse[Investigator.ROLAND_BANKS] == 0) {
@@ -340,6 +374,49 @@ public class EditTeamActivity extends AppCompatActivity {
             carcosaCheckboxes.setVisibility(GONE);
         }
 
+        // Setup checkboxes for Forgotten Age investigators
+        if (forgottenOwned) {
+            if (globalVariables.InvestigatorsInUse[Investigator.LEO_ANDERSON] == 0) {
+                CheckBox leo = findViewById(R.id.leo_anderson);
+                leo.setVisibility(VISIBLE);
+                leo.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                forgotten++;
+            }
+            if (globalVariables.InvestigatorsInUse[Investigator.URSULA_DOWNS] == 0) {
+                CheckBox ursula = findViewById(R.id.ursula_downs);
+                ursula.setVisibility(VISIBLE);
+                ursula.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                forgotten++;
+            }
+            if (globalVariables.InvestigatorsInUse[Investigator.FINN_EDWARDS] == 0) {
+                CheckBox finn = findViewById(R.id.finn_edwards);
+                finn.setVisibility(VISIBLE);
+                finn.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                forgotten++;
+            }
+            if (globalVariables.InvestigatorsInUse[Investigator.FATHER_MATEO] == 0) {
+                CheckBox mateo = findViewById(R.id.father_mateo);
+                mateo.setVisibility(VISIBLE);
+                mateo.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                forgotten++;
+            }
+            if (globalVariables.InvestigatorsInUse[Investigator.CALVIN_WRIGHT] == 0) {
+                CheckBox calvin = findViewById(R.id.calvin_wright);
+                calvin.setVisibility(VISIBLE);
+                calvin.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                forgotten++;
+            }
+        }
+        // Hide LinearLayout if all Dunwich investigators are dead or if Dunwich is not owned
+        if (forgotten == 5 || !forgottenOwned) {
+            forgottenCheckboxes.setVisibility(GONE);
+        }
+
         // Marie Lambeau
         if (marieOwned) {
             if (globalVariables.InvestigatorsInUse[Investigator.MARIE_LAMBEAU] == 0) {
@@ -362,12 +439,40 @@ public class EditTeamActivity extends AppCompatActivity {
             }
         }
 
+        // Carolyn Fern
+        if (carolynOwned) {
+            if (globalVariables.InvestigatorsInUse[Investigator.CAROLYN_FERN] == 0) {
+                CheckBox carolynBox = findViewById(R.id.carolyn_fern);
+                carolynBox.setVisibility(VISIBLE);
+                carolynBox.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                carolyn++;
+            }
+        }
+
+        // Silas Marsh
+        if (silasOwned) {
+            if (globalVariables.InvestigatorsInUse[Investigator.SILAS_MARSH] == 0) {
+                CheckBox silasBox = findViewById(R.id.silas_marsh);
+                silasBox.setVisibility(VISIBLE);
+                silasBox.setOnCheckedChangeListener(new InvestigatorsCheckedChangeListener());
+            } else {
+                silas++;
+            }
+        }
+
         // Hide LinearLayout if all Dunwich investigators are dead or if Dunwich is not owned
         if (marie == 1 || !marieOwned) {
             marieCheckbox.setVisibility(GONE);
         }
         if (norman == 1 || !normanOwned) {
             normanCheckbox.setVisibility(GONE);
+        }
+        if (carolyn == 1 || !carolynOwned) {
+            carolynCheckbox.setVisibility(GONE);
+        }
+        if (silas == 1 || !silasOwned) {
+            silasCheckbox.setVisibility(GONE);
         }
 
         // Edit stats button
@@ -670,6 +775,86 @@ public class EditTeamActivity extends AppCompatActivity {
                         }
                     }
                     break;
+                case R.id.leo_anderson:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.LEO_ANDERSON);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.LEO_ANDERSON) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
+                case R.id.ursula_downs:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.URSULA_DOWNS);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.URSULA_DOWNS) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
+                case R.id.finn_edwards:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.FINN_EDWARDS);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.FINN_EDWARDS) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
+                case R.id.father_mateo:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.FATHER_MATEO);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.FATHER_MATEO) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
+                case R.id.calvin_wright:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.CALVIN_WRIGHT);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.CALVIN_WRIGHT) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
                 case R.id.marie_lambeau:
                     if (isChecked && investigatorsCount < 4) {
                         globalVariables.InvestigatorNames.add(Investigator.MARIE_LAMBEAU);
@@ -696,6 +881,38 @@ public class EditTeamActivity extends AppCompatActivity {
                         investigatorsCount--;
                         for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
                             if (globalVariables.InvestigatorNames.get(i) == Investigator.NORMAN_WITHERS) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
+                case R.id.carolyn_fern:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.CAROLYN_FERN);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.CAROLYN_FERN) {
+                                removeInvestigator = i;
+                                globalVariables.InvestigatorNames.remove(i);
+                            }
+                        }
+                    }
+                    break;
+                case R.id.silas_marsh:
+                    if (isChecked && investigatorsCount < 4) {
+                        globalVariables.InvestigatorNames.add(Investigator.SILAS_MARSH);
+                        investigatorsCount++;
+                    } else if (isChecked) {
+                        buttonView.setChecked(false);
+                    } else {
+                        investigatorsCount--;
+                        for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.SILAS_MARSH) {
                                 removeInvestigator = i;
                                 globalVariables.InvestigatorNames.remove(i);
                             }
@@ -828,7 +1045,7 @@ public class EditTeamActivity extends AppCompatActivity {
             TextView investigatorTwoLink = parent.findViewById(R.id.investigator_two_link);
             TextView investigatorThreeLink = parent.findViewById(R.id.investigator_three_link);
             TextView investigatorFourLink = parent.findViewById(R.id.investigator_four_link);
-            String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+            String[] investigatorNames = getResources().getStringArray(investigators);
 
             // Set fonts
             Typeface arnoprobold = Typeface.createFromAsset(getAssets(), "fonts/arnoprobold.otf");
@@ -1009,7 +1226,7 @@ public class EditTeamActivity extends AppCompatActivity {
             setupUI(v, getActivity());
 
             // Get the name of the investigator
-            String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+            String[] investigatorNames = getResources().getStringArray(investigators);
             String name = investigatorNames[globalVariables.InvestigatorNames.get(investigator)];
 
             // Get the relevant views and set fonts

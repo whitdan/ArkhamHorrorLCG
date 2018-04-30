@@ -47,9 +47,17 @@ public class ArkhamContract {
         public static final String COLUMN_LOLA_INUSE = "lola";
         public static final String COLUMN_MARIE_INUSE = "marie";
         public static final String COLUMN_NORMAN_INUSE = "norman";
+        public static final String COLUMN_CAROLYN_INUSE = "carolyn";
+        public static final String COLUMN_SILAS_INUSE = "silas";
+        public static final String COLUMN_LEO_INUSE = "leo";
+        public static final String COLUMN_URSULA_INUSE = "ursula";
+        public static final String COLUMN_FINN_INUSE = "finn";
+        public static final String COLUMN_MATEO_INUSE = "mateo";
+        public static final String COLUMN_CALVIN_INUSE = "calvin";
         public static final String COLUMN_ROUGAROU_STATUS = "rougarou_status";
         public static final String COLUMN_STRANGE_SOLUTION = "strange_solution";
         public static final String COLUMN_ARCHAIC_GLYPHS = "archaic_glyphs";
+        public static final String COLUMN_CHARONS_OBOL = "charons_obol";
         public static final String COLUMN_CARNEVALE_STATUS = "carnevale_status";
         public static final String COLUMN_CARNEVALE_REWARDS = "carnevale_rewards";
     }

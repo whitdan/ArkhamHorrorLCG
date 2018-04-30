@@ -75,54 +75,56 @@ public class LoadChaosBagActivity extends AppCompatActivity {
         chaosBagItems.setAdapter(chaosBagListAdapter);
 
         // Add header view
-        LinearLayout default_view = new LinearLayout(this);
-        int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, getResources()
-                .getDisplayMetrics());
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup
-                .LayoutParams.WRAP_CONTENT);
-        default_view.setPadding(0, height, 0, height);
-        default_view.setLayoutParams(lp);
-        TextView default_chaos_bag = new TextView(this);
-        default_chaos_bag.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup
-                .LayoutParams.WRAP_CONTENT));
-        default_chaos_bag.setText(R.string.default_chaos_bag);
-        default_chaos_bag.setAllCaps(true);
-        default_chaos_bag.setTypeface(teutonic);
-        default_chaos_bag.setTextColor(getResources().getColor(R.color.colorBlack));
-        default_chaos_bag.setTextScaleX(1.2f);
-        default_chaos_bag.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-        default_chaos_bag.setGravity(Gravity.CENTER_VERTICAL);
-        default_view.addView(default_chaos_bag);
-        if (globalVariables.ChaosBagID == -1) {
-            default_view.setBackgroundColor(getResources().getColor(R.color.colorBlackTint));
-        } else {
-            default_view.setBackgroundColor(getResources().getColor(R.color.colorClear));
-        }
-        default_view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                globalVariables.ChaosBagID = -1;
-
-                // Get a writable database
-                ArkhamDbHelper dbHelper = new ArkhamDbHelper(LoadChaosBagActivity.this);
-                SQLiteDatabase db = dbHelper.getWritableDatabase();
-                ContentValues campaignValues = new ContentValues();
-                campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CHAOS_BAG, -1);
-                String campaignSelection = ArkhamContract.CampaignEntry._ID + " LIKE ?";
-                String[] campaignSelectionArgs = {Long.toString(globalVariables.CampaignID)};
-                db.update(
-                        ArkhamContract.CampaignEntry.TABLE_NAME,
-                        campaignValues,
-                        campaignSelection,
-                        campaignSelectionArgs);
-
-                Intent intent = new Intent(LoadChaosBagActivity.this, ChaosBagActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-                finish();
+        if (globalVariables.CurrentCampaign != 1000) {
+            LinearLayout default_view = new LinearLayout(this);
+            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, getResources()
+                    .getDisplayMetrics());
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup
+                    .LayoutParams.WRAP_CONTENT);
+            default_view.setPadding(0, height, 0, height);
+            default_view.setLayoutParams(lp);
+            TextView default_chaos_bag = new TextView(this);
+            default_chaos_bag.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup
+                    .LayoutParams.WRAP_CONTENT));
+            default_chaos_bag.setText(R.string.default_chaos_bag);
+            default_chaos_bag.setAllCaps(true);
+            default_chaos_bag.setTypeface(teutonic);
+            default_chaos_bag.setTextColor(getResources().getColor(R.color.colorBlack));
+            default_chaos_bag.setTextScaleX(1.2f);
+            default_chaos_bag.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+            default_chaos_bag.setGravity(Gravity.CENTER_VERTICAL);
+            default_view.addView(default_chaos_bag);
+            if (globalVariables.ChaosBagID == -1) {
+                default_view.setBackgroundColor(getResources().getColor(R.color.colorBlackTint));
+            } else {
+                default_view.setBackgroundColor(getResources().getColor(R.color.colorClear));
             }
-        });
-        chaosBagItems.addHeaderView(default_view);
+            default_view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    globalVariables.ChaosBagID = -1;
+
+                    // Get a writable database
+                    ArkhamDbHelper dbHelper = new ArkhamDbHelper(LoadChaosBagActivity.this);
+                    SQLiteDatabase db = dbHelper.getWritableDatabase();
+                    ContentValues campaignValues = new ContentValues();
+                    campaignValues.put(ArkhamContract.CampaignEntry.COLUMN_CHAOS_BAG, -1);
+                    String campaignSelection = ArkhamContract.CampaignEntry._ID + " LIKE ?";
+                    String[] campaignSelectionArgs = {Long.toString(globalVariables.CampaignID)};
+                    db.update(
+                            ArkhamContract.CampaignEntry.TABLE_NAME,
+                            campaignValues,
+                            campaignSelection,
+                            campaignSelectionArgs);
+
+                    Intent intent = new Intent(LoadChaosBagActivity.this, ChaosBagActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+            chaosBagItems.addHeaderView(default_view);
+        }
 
         // Setup and attach onItemClickListener to the ListView to allow loading a chaos bag on click
         ChaosBagOnClickListener chaosBagOnClickListener = new ChaosBagOnClickListener(this);
@@ -150,7 +152,14 @@ public class LoadChaosBagActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                if (globalVariables.CurrentCampaign == 1000 && globalVariables.ChaosBagID == -1) {
+                    Intent intent = new Intent(LoadChaosBagActivity.this, MainMenuActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    finish();
+                }
             }
         });
     }
@@ -240,7 +249,7 @@ public class LoadChaosBagActivity extends AppCompatActivity {
                     currentChaosBagTwo.addView(tokenView);
                 } else if (currentChaosBagThree.getChildCount() < 10) {
                     currentChaosBagThree.addView(tokenView);
-                } else if (currentChaosBagFour.getChildCount() < 10){
+                } else if (currentChaosBagFour.getChildCount() < 10) {
                     currentChaosBagFour.addView(tokenView);
                 } else {
                     currentChaosBagFive.addView(tokenView);
@@ -248,9 +257,10 @@ public class LoadChaosBagActivity extends AppCompatActivity {
             }
 
             // Display relevant text if adding campaign tokens
-            int campaignTokens = cursor.getInt(cursor.getColumnIndexOrThrow(ArkhamContract.ChaosBagEntry.COLUMN_CAMPAIGN_TOKENS));
+            int campaignTokens = cursor.getInt(cursor.getColumnIndexOrThrow(ArkhamContract.ChaosBagEntry
+                    .COLUMN_CAMPAIGN_TOKENS));
             TextView campaignTokenView = view.findViewById(R.id.campaign_chaos_tokens);
-            if(campaignTokens == 1){
+            if (campaignTokens == 1) {
                 campaignTokenView.setVisibility(VISIBLE);
                 Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
                 campaignTokenView.setTypeface(arnopro);
@@ -379,7 +389,7 @@ public class LoadChaosBagActivity extends AppCompatActivity {
                     Cursor bagCursor = db.rawQuery("SELECT  * FROM " + ArkhamContract.ChaosBagEntry.TABLE_NAME, null);
                     chaosBagListAdapter.swapCursor(bagCursor);
                     dismiss();
-                    if(position == globalVariables.ChaosBagID){
+                    if (position == globalVariables.ChaosBagID) {
                         globalVariables.ChaosBagID = -1;
                         ArkhamDbHelper dbHelper = new ArkhamDbHelper(getActivity());
                         SQLiteDatabase db = dbHelper.getWritableDatabase();
