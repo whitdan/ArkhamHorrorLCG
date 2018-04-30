@@ -66,6 +66,7 @@
     <string name="okay">Aceptar</string>
     <string name="cancel">Cancelar</string>
     <string name="nothing">Nada que mostrar.</string>
+    <string name="notes">Notas</string>
 
     <string name="campaign_finished">Campaña terminada</string>
     <string name="finish_campaign">Terminar campaña</string>
