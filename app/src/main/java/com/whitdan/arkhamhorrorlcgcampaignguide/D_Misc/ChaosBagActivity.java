@@ -1,6 +1,8 @@
 package com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +11,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.TypedValue;
@@ -49,8 +52,12 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     static GlobalVariables globalVariables;
     static ArrayList<Integer> chaosbag;
+    static ArrayList<Integer> seal;
     static int basebagResult[];
     static int campaignTokens;
+    static int sealCount;
+    static int tempCount;
+    static int drawCount;
     int token;
     boolean draw;
 
@@ -69,6 +76,8 @@ public class ChaosBagActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.d_activity_chaos_bag);
         globalVariables = (GlobalVariables) this.getApplication();
+        seal = new ArrayList<>();
+        sealCount = 0;
         token = -1;
 
         // If custom bag, check if adding campaign tokens
@@ -99,14 +108,14 @@ public class ChaosBagActivity extends AppCompatActivity {
 
         // Setup bag
         basebagResult = basebag(this);
-        setupBag(this);
+        setupBag(this, false);
 
         // If bag is empty for any reason, reset to default, save and restart the activity
         int count = 0;
         for (int i : basebagResult) {
             count += i;
         }
-        if(count == 0){
+        if (count == 0) {
             globalVariables.ChaosBagID = -1;
             ArkhamDbHelper dbHelper = new ArkhamDbHelper(this);
             final SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -157,7 +166,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 } else {
                                     globalVariables.AdamLynchHaroldWalsted = 0;
                                 }
-                                setupBag(ChaosBagActivity.this);
+                                setupBag(ChaosBagActivity.this, false);
                             }
                         });
                         break;
@@ -184,7 +193,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                                     options.setVisibility(GONE);
                                     options.clearCheck();
                                     globalVariables.Theatre = 0;
-                                    setupBag(ChaosBagActivity.this);
+                                    setupBag(ChaosBagActivity.this, false);
                                 }
                             }
                         });
@@ -209,7 +218,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 } else if (optionThree.isChecked()) {
                                     globalVariables.Theatre = 3;
                                 }
-                                setupBag(ChaosBagActivity.this);
+                                setupBag(ChaosBagActivity.this, false);
                             }
                         });
                         break;
@@ -258,6 +267,13 @@ public class ChaosBagActivity extends AppCompatActivity {
                 break;
         }
 
+        // Change relevant views if standalone chaos bag
+        if (globalVariables.CurrentCampaign == 1000) {
+            title.setText(R.string.chaos_bag);
+            chaosBag.setVisibility(GONE);
+            difficulty.setVisibility(GONE);
+        }
+
         // Setup chaos drawing buttons
         Button drawButton = findViewById(R.id.draw_token);
         drawButton.setTypeface(teutonic);
@@ -286,6 +302,17 @@ public class ChaosBagActivity extends AppCompatActivity {
             }
         });
 
+        // Seal button
+        Button sealButton = findViewById(R.id.seal_button);
+        sealButton.setTypeface(teutonic);
+        sealButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogFragment sealDialog = new SealDialog();
+                sealDialog.show(getFragmentManager(), "seal");
+            }
+        });
+
         // Select chaos bag button
         Button selectButton = findViewById(R.id.select_chaos_bag);
         selectButton.setTypeface(teutonic);
@@ -311,7 +338,7 @@ public class ChaosBagActivity extends AppCompatActivity {
         continueButton.setTypeface(teutonic);
         if (globalVariables.CurrentCampaign == 999) {
             globalVariables.CurrentDifficulty = 1;
-            setupBag(this);
+            setupBag(this, false);
             standard.setChecked(true);
             continueButton.setVisibility(VISIBLE);
             continueButton.setOnClickListener(new View.OnClickListener() {
@@ -324,7 +351,7 @@ public class ChaosBagActivity extends AppCompatActivity {
         }
 
         // If standalone chaos bag and default chaos bag, jump to LoadChaosBagActivity
-        if(globalVariables.CurrentCampaign == 1000 && globalVariables.ChaosBagID == -1){
+        if (globalVariables.CurrentCampaign == 1000 && globalVariables.ChaosBagID == -1) {
             Intent standaloneIntent = new Intent(ChaosBagActivity.this, LoadChaosBagActivity.class);
             startActivity(standaloneIntent);
         }
@@ -351,7 +378,7 @@ public class ChaosBagActivity extends AppCompatActivity {
             }
             setupScenarioCard(ChaosBagActivity.this);
             basebagResult = basebag(ChaosBagActivity.this);
-            setupBag(ChaosBagActivity.this);
+            setupBag(ChaosBagActivity.this, false);
             token = -1;
 
             // Clear all current token views
@@ -363,7 +390,7 @@ public class ChaosBagActivity extends AppCompatActivity {
     }
 
     // Sets up the chaos bag with all of the relevant tokens
-    private static void setupBag(Activity activity) {
+    private static void setupBag(Activity activity, boolean draw) {
         // Setup chaos bag by adding relevant tokens
         chaosbag = new ArrayList<>();
         for (int i = 0; i < 17; i++) {
@@ -474,7 +501,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 break;
                         }
                     }
-                    if(scenario > 9){
+                    if (scenario > 9) {
                         chaosbag.add(12);
                         chaosbag.add(12);
                     }
@@ -508,6 +535,15 @@ public class ChaosBagActivity extends AppCompatActivity {
             tokenView.setLayoutParams(new ViewGroup.LayoutParams(width, height));
             int tokenId = activity.getResources().getIdentifier("drawable/token_" + currentToken, null, activity
                     .getPackageName());
+            // Show sealed token instead if token is sealed
+            if (seal != null) {
+                for (int a = 0; a < seal.size(); a++) {
+                    if (i == seal.get(a)) {
+                        tokenId = activity.getResources().getIdentifier("drawable/seal_token_" + currentToken, null,
+                                activity.getPackageName());
+                    }
+                }
+            }
             tokenView.setImageResource(tokenId);
 
             if (currentChaosBagOne.getChildCount() < 10) {
@@ -516,12 +552,21 @@ public class ChaosBagActivity extends AppCompatActivity {
                 currentChaosBagTwo.addView(tokenView);
             } else if (currentChaosBagThree.getChildCount() < 10) {
                 currentChaosBagThree.addView(tokenView);
-            } else if (currentChaosBagFour.getChildCount() < 10){
+            } else if (currentChaosBagFour.getChildCount() < 10) {
                 currentChaosBagFour.addView(tokenView);
-            } else if (currentChaosBagFive.getChildCount() <10){
+            } else if (currentChaosBagFive.getChildCount() < 10) {
                 currentChaosBagFive.addView(tokenView);
             } else {
                 currentChaosBagSix.addView(tokenView);
+            }
+        }
+
+        // Remove sealed tokens from the bag if drawing
+        if (draw) {
+            if (seal != null) {
+                for (int i = 0; i < seal.size(); i++) {
+                    chaosbag.set(seal.get(i), 999);
+                }
             }
         }
     }
@@ -674,50 +719,58 @@ public class ChaosBagActivity extends AppCompatActivity {
 
         // If not using the add button
         if (draw) {
-            // Resets the bag
-            resetBag(ChaosBagActivity.this);
+            // Won't allow drawing beyond size of bag
+            if (sealCount < chaosbag.size()) {
+                // Resets the bag
+                resetBag(ChaosBagActivity.this, true);
 
-            // Removes the last token in the token stream
-            if (tokens.getChildCount() == 6) {
-                tokens.removeViewAt(0);
-            }
-            // Adds the previous token to the tokens view
-            if (token >= 0) {
-                ImageView tokenView = new ImageView(view.getContext());
-                int savedHeight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources()
+                // Removes the last token in the token stream
+                if (tokens.getChildCount() == 6) {
+                    tokens.removeViewAt(0);
+                }
+                // Adds the previous token to the tokens view
+                if (token >= 0) {
+                    ImageView tokenView = new ImageView(view.getContext());
+                    int savedHeight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources()
+                            .getDisplayMetrics());
+                    int savedWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources()
+                            .getDisplayMetrics());
+                    tokenView.setLayoutParams(new ViewGroup.LayoutParams(savedWidth, savedHeight));
+                    int tokenId = view.getContext().getResources().getIdentifier("drawable/token_" + token, null, view
+                            .getContext().getPackageName());
+                    tokenView.setImageResource(tokenId);
+                    tokens.addView(tokenView);
+                }
+
+                // Randomly pick the next token
+                do {
+                    int chosen = new Random().nextInt(chaosbag.size());
+                    token = chaosbag.get(chosen);
+                    chaosbag.set(chosen, 999);
+                } while (token == 999);
+                drawCount++;
+
+                // Adds the token to the main token view with the animation
+                ImageView currentToken = new ImageView(view.getContext());
+                int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 75, getResources()
                         .getDisplayMetrics());
-                int savedWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources()
+                int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 75, getResources()
                         .getDisplayMetrics());
-                tokenView.setLayoutParams(new ViewGroup.LayoutParams(savedWidth, savedHeight));
-                int tokenId = view.getContext().getResources().getIdentifier("drawable/token_" + token, null, view
+                currentToken.setLayoutParams(new ViewGroup.LayoutParams(width, height));
+                int currentTokenId = view.getContext().getResources().getIdentifier("drawable/token_" + token, null,
+                        view
                         .getContext().getPackageName());
-                tokenView.setImageResource(tokenId);
-                tokens.addView(tokenView);
+                currentToken.setImageResource(currentTokenId);
+                currentTokens.addView(currentToken);
+                Animation tokenAnimation = AnimationUtils.loadAnimation(this, R.anim.chaos_bag_animation);
+                currentToken.startAnimation(tokenAnimation);
             }
-
-            // Randomly pick the next token
-            int chosen = new Random().nextInt(chaosbag.size());
-            token = chaosbag.get(chosen);
-            chaosbag.remove(chosen);
-
-            // Adds the token to the main token view with the animation
-            ImageView currentToken = new ImageView(view.getContext());
-            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 75, getResources()
-                    .getDisplayMetrics());
-            int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 75, getResources()
-                    .getDisplayMetrics());
-            currentToken.setLayoutParams(new ViewGroup.LayoutParams(width, height));
-            int currentTokenId = view.getContext().getResources().getIdentifier("drawable/token_" + token, null, view
-                    .getContext().getPackageName());
-            currentToken.setImageResource(currentTokenId);
-            currentTokens.addView(currentToken);
-            Animation tokenAnimation = AnimationUtils.loadAnimation(this, R.anim.chaos_bag_animation);
-            currentToken.startAnimation(tokenAnimation);
         }
         // If using the add button
         else {
-            // Won't allow drawing more than 5 tokens at a time
-            if (numberOfViews < 5 && numberOfViews < (chaosbag.size() + 1)) {
+            // Won't allow drawing more than 5 tokens at a time or drawing beyond size of bag
+            if ((numberOfViews < 5 && numberOfViews < (chaosbag.size() + 1)) && ((sealCount + drawCount) < chaosbag
+                    .size())) {
                 // Removes the last token in the token stream
                 if (tokens.getChildCount() == 6) {
                     tokens.removeViewAt(0);
@@ -737,9 +790,12 @@ public class ChaosBagActivity extends AppCompatActivity {
                 }
 
                 // Randomly pick the next token
-                int chosen = new Random().nextInt(chaosbag.size());
-                token = chaosbag.get(chosen);
-                chaosbag.remove(chosen);
+                do {
+                    int chosen = new Random().nextInt(chaosbag.size());
+                    token = chaosbag.get(chosen);
+                    chaosbag.set(chosen, 999);
+                } while (token == 999);
+                drawCount++;
 
                 // Adds the drawn token to the main token view
                 ImageView currentToken = new ImageView(view.getContext());
@@ -760,10 +816,11 @@ public class ChaosBagActivity extends AppCompatActivity {
     }
 
     // Resets the bag by setting it up again
-    private static void resetBag(Activity activity) {
+    private static void resetBag(Activity activity, Boolean draw) {
         LinearLayout currentToken = activity.findViewById(R.id.current_token_layout);
         currentToken.removeAllViews();
-        setupBag(activity);
+        drawCount = 0;
+        setupBag(activity, draw);
     }
 
     private void setupScenarioCard(Activity activity) {
@@ -1079,8 +1136,161 @@ public class ChaosBagActivity extends AppCompatActivity {
         }
     }
 
+    public static class SealDialog extends DialogFragment {
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            // Get the layout inflater and inflate the view
+            View v = View.inflate(getActivity(), R.layout.d_dialog_seal, null);
+
+            final ArrayList<Integer> tempSeal;
+            tempCount = sealCount;
+            if (seal != null) {
+                tempSeal = seal;
+            } else {
+                tempSeal = new ArrayList<>();
+            }
+
+            Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
+            Typeface arnoprobold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
+            Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
+            Typeface wolgastbold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wolgastbold.otf");
+            TextView title = v.findViewById(R.id.seal_tokens);
+            Button cancelButton = v.findViewById(R.id.cancel_button);
+            Button okayButton = v.findViewById(R.id.okay_button);
+            title.setTypeface(teutonic);
+            cancelButton.setTypeface(teutonic);
+            okayButton.setTypeface(teutonic);
+
+            setupBag(getActivity(), false);
+            // Get relevant views
+            Collections.sort(chaosbag);
+            LinearLayout currentChaosBagOne = v.findViewById(R.id.current_chaos_bag_one);
+            LinearLayout currentChaosBagTwo = v.findViewById(R.id.current_chaos_bag_two);
+            LinearLayout currentChaosBagThree = v.findViewById(R.id.current_chaos_bag_three);
+            LinearLayout currentChaosBagFour = v.findViewById(R.id.current_chaos_bag_four);
+            LinearLayout currentChaosBagFive = v.findViewById(R.id.current_chaos_bag_five);
+            LinearLayout currentChaosBagSix = v.findViewById(R.id.current_chaos_bag_six);
+            LinearLayout currentChaosBagSeven = v.findViewById(R.id.current_chaos_bag_seven);
+            LinearLayout currentChaosBagEight = v.findViewById(R.id.current_chaos_bag_eight);
+            currentChaosBagOne.removeAllViews();
+            currentChaosBagTwo.removeAllViews();
+            currentChaosBagThree.removeAllViews();
+            currentChaosBagFour.removeAllViews();
+            currentChaosBagFive.removeAllViews();
+            currentChaosBagSix.removeAllViews();
+            currentChaosBagSeven.removeAllViews();
+            currentChaosBagEight.removeAllViews();
+
+            // Adds views for every chaos token in the bag to the relevant layouts
+            for (int i = 0; i < chaosbag.size(); i++) {
+                int currentToken = chaosbag.get(i);
+                final ImageView tokenView = new ImageView(getActivity());
+                tokenView.setId(i);
+                int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getActivity()
+                        .getResources()
+                        .getDisplayMetrics());
+                int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getActivity()
+                        .getResources()
+                        .getDisplayMetrics());
+                tokenView.setLayoutParams(new ViewGroup.LayoutParams(width, height));
+                int tokenId = getActivity().getResources().getIdentifier("drawable/token_" + currentToken, null,
+                        getActivity()
+                                .getPackageName());
+                // Show sealed token instead if token is sealed
+                if (seal != null) {
+                    for (int a = 0; a < seal.size(); a++) {
+                        if (i == seal.get(a)) {
+                            tokenId = getActivity().getResources().getIdentifier("drawable/seal_token_" +
+                                            currentToken, null,
+                                    getActivity().getPackageName());
+                        }
+                    }
+                }
+                tokenView.setImageResource(tokenId);
+
+                tokenView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int id = view.getId();
+                        boolean sealed = false;
+                        // Check if already sealed
+                        for (int i = 0; i < tempSeal.size(); i++) {
+                            if (tempSeal.get(i) == id) {
+                                sealed = true;
+                            }
+                        }
+                        // If not sealed, add to seal array and change view
+                        if (!sealed) {
+                            int currentToken = chaosbag.get(id);
+                            int tokenId = getActivity().getResources().getIdentifier("drawable/seal_token_" +
+                                            currentToken, null,
+                                    getActivity().getPackageName());
+                            tokenView.setImageResource(tokenId);
+                            tempSeal.add(id);
+                            tempCount++;
+                        }
+                        // If sealed, remove from seal array and change view
+                        else {
+                            int currentToken = chaosbag.get(id);
+                            int tokenId = getActivity().getResources().getIdentifier("drawable/token_" +
+                                            currentToken, null,
+                                    getActivity().getPackageName());
+                            tokenView.setImageResource(tokenId);
+                            for (int i = 0; i < tempSeal.size(); i++) {
+                                if (tempSeal.get(i) == id) {
+                                    tempSeal.remove(i);
+                                }
+                            }
+                            tempCount--;
+                        }
+                    }
+                });
+
+                if (currentChaosBagOne.getChildCount() < 7) {
+                    currentChaosBagOne.addView(tokenView);
+                } else if (currentChaosBagTwo.getChildCount() < 7) {
+                    currentChaosBagTwo.addView(tokenView);
+                } else if (currentChaosBagThree.getChildCount() < 7) {
+                    currentChaosBagThree.addView(tokenView);
+                } else if (currentChaosBagFour.getChildCount() < 7) {
+                    currentChaosBagFour.addView(tokenView);
+                } else if (currentChaosBagFive.getChildCount() < 7) {
+                    currentChaosBagFive.addView(tokenView);
+                } else if (currentChaosBagSix.getChildCount() < 7) {
+                    currentChaosBagSix.addView(tokenView);
+                } else if (currentChaosBagSeven.getChildCount() < 7) {
+                    currentChaosBagSeven.addView(tokenView);
+                } else {
+                    currentChaosBagEight.addView(tokenView);
+                }
+            }
+
+            okayButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    seal = tempSeal;
+                    sealCount = tempCount;
+                    resetBag(getActivity(), false);
+                    dismiss();
+                }
+            });
+
+            cancelButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dismiss();
+                }
+            });
+
+            builder.setView(v);
+            return builder.create();
+        }
+
+    }
+
     @Override
-    public void onRestart(){
+    public void onRestart() {
         super.onRestart();
         finish();
         startActivity(getIntent());

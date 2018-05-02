@@ -23,10 +23,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
                 android:textScaleX="1.2"
@@ -37,9 +37,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
                 android:text="@string/saved_investigators"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
@@ -48,20 +48,20 @@
 
             <LinearLayout
                 android:id="@+id/saved_investigators_layout"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"/>
 
             <TextView
                 android:id="@+id/select_investigators"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
                 android:text="@string/new_investigators"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
@@ -312,77 +312,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/forgotten_investigators"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:baselineAligned="false"
-                android:orientation="vertical">
-
-                <CheckBox
-                    android:id="@+id/leo_anderson"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/leo_anderson"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
-
-                <CheckBox
-                    android:id="@+id/ursula_downs"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/ursula_downs"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
-
-                <CheckBox
-                    android:id="@+id/finn_edwards"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/finn_edwards"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
-
-                <CheckBox
-                    android:id="@+id/father_mateo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/father_mateo"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
-
-                <CheckBox
-                    android:id="@+id/calvin_wright"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/calvin_wright"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/marie_promo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -390,83 +319,161 @@
                 android:baselineAligned="false"
                 android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/marie_lambeau"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/marie_lambeau"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/forgotten_investigators"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/norman_promo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:baselineAligned="false"
-                android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/leo_anderson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_style"
+                        android:paddingBottom="@dimen/checkbox_padding"
+                        android:paddingTop="@dimen/checkbox_padding"
+                        android:text="@string/leo_anderson"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"
+                        android:visibility="gone"/>
 
-                <CheckBox
-                    android:id="@+id/norman_withers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/norman_withers"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
-            </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/ursula_downs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_style"
+                        android:paddingBottom="@dimen/checkbox_padding"
+                        android:paddingTop="@dimen/checkbox_padding"
+                        android:text="@string/ursula_downs"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"
+                        android:visibility="gone"/>
 
-            <LinearLayout
-                android:id="@+id/carolyn_promo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:baselineAligned="false"
-                android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/finn_edwards"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_style"
+                        android:paddingBottom="@dimen/checkbox_padding"
+                        android:paddingTop="@dimen/checkbox_padding"
+                        android:text="@string/finn_edwards"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"
+                        android:visibility="gone"/>
 
-                <CheckBox
-                    android:id="@+id/carolyn_fern"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/carolyn_fern"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
-            </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/father_mateo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_style"
+                        android:paddingBottom="@dimen/checkbox_padding"
+                        android:paddingTop="@dimen/checkbox_padding"
+                        android:text="@string/father_mateo"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"
+                        android:visibility="gone"/>
 
-            <LinearLayout
-                android:id="@+id/silas_promo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:baselineAligned="false"
-                android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/calvin_wright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_style"
+                        android:paddingBottom="@dimen/checkbox_padding"
+                        android:paddingTop="@dimen/checkbox_padding"
+                        android:text="@string/calvin_wright"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"
+                        android:visibility="gone"/>
+                </LinearLayout>
 
-                <CheckBox
-                    android:id="@+id/silas_marsh"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
-                    android:paddingTop="@dimen/checkbox_padding"
-                    android:text="@string/silas_marsh"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:visibility="gone"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/marie_promo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/marie_lambeau"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_style"
+                            android:paddingBottom="@dimen/checkbox_padding"
+                            android:paddingTop="@dimen/checkbox_padding"
+                            android:text="@string/marie_lambeau"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/norman_promo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/norman_withers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_style"
+                            android:paddingBottom="@dimen/checkbox_padding"
+                            android:paddingTop="@dimen/checkbox_padding"
+                            android:text="@string/norman_withers"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/carolyn_promo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/carolyn_fern"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_style"
+                            android:paddingBottom="@dimen/checkbox_padding"
+                            android:paddingTop="@dimen/checkbox_padding"
+                            android:text="@string/carolyn_fern"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/silas_promo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/silas_marsh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_style"
+                            android:paddingBottom="@dimen/checkbox_padding"
+                            android:paddingTop="@dimen/checkbox_padding"
+                            android:text="@string/silas_marsh"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </LinearLayout>
             </LinearLayout>
 
 
@@ -476,9 +483,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
                 android:text="@string/current_team"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
@@ -510,10 +517,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="@integer/inv_link_weight"
                     android:gravity="end"
+                    android:includeFontPadding="false"
                     android:text="@string/edit_info"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:includeFontPadding="false"/>
+                    android:textSize="@dimen/arnopro_textsize"/>
             </LinearLayout>
 
             <LinearLayout
@@ -541,10 +548,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="@integer/inv_link_weight"
                     android:gravity="end"
+                    android:includeFontPadding="false"
                     android:text="@string/edit_info"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:includeFontPadding="false"/>
+                    android:textSize="@dimen/arnopro_textsize"/>
 
             </LinearLayout>
 
@@ -573,10 +580,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="@integer/inv_link_weight"
                     android:gravity="end"
+                    android:includeFontPadding="false"
                     android:text="@string/edit_info"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:includeFontPadding="false"/>
+                    android:textSize="@dimen/arnopro_textsize"/>
 
             </LinearLayout>
 
@@ -605,10 +612,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="@integer/inv_link_weight"
                     android:gravity="end"
+                    android:includeFontPadding="false"
                     android:text="@string/edit_info"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/arnopro_textsize"
-                    android:includeFontPadding="false"/>
+                    android:textSize="@dimen/arnopro_textsize"/>
 
             </LinearLayout>
 
@@ -621,10 +628,10 @@
                 android:id="@+id/edit_stats_button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:background="@drawable/button_style"
                 android:includeFontPadding="false"
                 android:text="@string/edit_stats"

@@ -154,6 +154,8 @@
     <string name="one" translatable="false">1</string>
     <string name="two" translatable="false">2</string>
     <string name="three" translatable="false">3</string>
+    <string name="seal">Seal</string>
+    <string name="seal_tokens">Seal tokens</string>
     <string name="draw_token">Draw token</string>
     <string name="add_token">Add</string>
     <string name="plus_two" translatable="false">+2</string>

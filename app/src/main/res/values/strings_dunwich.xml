@@ -507,7 +507,12 @@
         form the bottom 3 cards of the Exhibit Deck, unrevealed side faceup.\n
     \nThen, place the other 3 Exhibit Hall locations on top, in a random order. All 6 cards of the Exhibit Hall
     deck should be showing only the unrevealed side, so that the players do not know which Exhibit Hall is the
-        Exhibit Hall (<i>Restricted Hall</i>).</string>
+        Exhibit Hall (<i>Restricted Hall</i>).\n</string>
+    <string name="miskatonic_rules_heading">“The Void”</string>
+    <string name="miskatonic_rules">Some cards in this scenario reference an area called “the void.” The void is an
+        out-of-play area next to the act and agenda deck which the Hunting Horror enemy can enter and leave via card
+        effects. While the Hunting Horror is in the void, it is considered out of play and cannot be affected by
+        player cards or investigator actions.</string>
 
     <string name="essex_sets">The Essex County Express, The Beyond, Striking Fear, Ancient Evils, and Dark Cult.</string>
     <string name="essex_locations">Put one of the three Engine Car locations into play at random and remove the
@@ -521,7 +526,11 @@
     \n\t\t<b>Easy:</b> -2\n
     \n\t\t<b>Standard:</b> -3\n
     \n\t\t<b>Hard:</b> -4\n
-    \n\t\t<b>Expert:</b> -5</string>
+    \n\t\t<b>Expert:</b> -5\n</string>
+    <string name="essex_rules_heading">Moving on the Train: “Left” and “Right”</string>
+    <string name="essex_rules">During this scenario, locations are lined up from left to right, with the Engine Car
+        as the rightmost location. Whenever a card effect refers to “the location to the left,” or “the location to
+        the right,” it refers to the location immediately to your location’s left or right.</string>
 
     <string name="blood_sets">Blood on the Altar, Dunwich, Whippoorwills, Nightgaunts, and Ancient Evils.</string>
     <string name="blood_sets_two">Seeking vengeance, the gang from the Clover Club has followed you to Dunwich.
@@ -542,6 +551,12 @@
     <string name="blood_additional_sacrifice_morgan">Dr. Francis Morgan,</string>
     <string name="blood_additional_sacrifice_two">Zebulon Whateley, and Earl Sawyer cards.\n\n</string>
     <string name="blood_additional_two">Add 1 doom to agenda 1a.\n\n</string>
+    <string name="blood_rules_heading">The Hidden Chamber</string>
+    <string name="blood_rules">This scenario includes a single-sided location (The Hidden Chamber) which has been
+        dealt facedown underneath a random location. The Hidden Chamber only has a revealed side, and has a <b>
+            Revelation</b> effect that puts it into play when drawn.\n
+    \nWhen put into play, a single-sided location is put into play with its revealed side faceup, because it has no
+        unrevealed side. Otherwise, it functions as a normal location in every other way.</string>
 
     <string name="undimensioned_sets">Undimensioned and Unseen, Whippoorwills, Beast-thralls, Dunwich, and Striking
         Fear.</string>
@@ -565,6 +580,10 @@
         may search his or her deck for it and put it into play.\n\n</string>
     <string name="undimensioned_additional">Each investigator searches the collection for a random basic Madness,
         Injury, or Pact weakness and adds it to his or her deck for the remainder of the campaign.\n\n</string>
+    <string name="undimensioned_rules_heading">Choosing a Random Location</string>
+    <string name="undimensioned_rules">During this scenario, you will often be instructed to choose a random
+        location. This should be done by shuffling together the 6 locations removed from the game during setup (the
+        versions of each location in play not currently being used) and drawing 1 at random.</string>
 
     <string name="doom_sets">Where Doom Awaits, Beast-thralls, Sorcery, Bishop\’s Thralls, Striking Fear, Ancient
         Evils, and Chilling Cold.</string>
@@ -598,6 +617,12 @@
     <string name="lost_locations">Put Another Dimension into play.\n
         \nEach investigator begins play in Another Dimension.\n</string>
     <string name="lost_set_aside">The Edge of the Universe, Tear Through Time, and Yog-Sothoth.\n</string>
+    <string name="lost_rules_heading">Locations in the Encounter Deck</string>
+    <string name="lost_rules">This scenario includes several single-sided locations that are shuffled into the
+        encounter deck along with the rest of the gathered encounter sets. These locations only have a revealed side,
+        and have a <b>Revelation</b> effect that puts them into play when drawn.\n
+    \nWhen put into play, a single-sided location is put into play with its revealed side faceup, because it has no
+        unrevealed side. Otherwise, it functions as a normal location in every other way.</string>
 
 
     <!--Scenario resolutions-->

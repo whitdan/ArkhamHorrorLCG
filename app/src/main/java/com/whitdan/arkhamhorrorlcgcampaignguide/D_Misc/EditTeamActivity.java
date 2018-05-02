@@ -179,12 +179,9 @@ public class EditTeamActivity extends AppCompatActivity {
             }
         }
         for (int i = 0; i < forgottenCheckboxes.getChildCount(); i++) {
-            LinearLayout layout = (LinearLayout) forgottenCheckboxes.getChildAt(i);
-            for (int a = 0; a < layout.getChildCount(); a++) {
-                View view = layout.getChildAt(a);
-                if (view instanceof CheckBox) {
-                    ((CheckBox) view).setTypeface(arnopro);
-                }
+            View view = forgottenCheckboxes.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
             }
         }
         for (int i = 0; i < marieCheckbox.getChildCount(); i++) {

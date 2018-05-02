@@ -125,16 +125,27 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:gravity="center">
 
-                <android.support.v4.widget.Space
-                    android:layout_width="80dp"
-                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/seal_button"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:includeFontPadding="false"
+                    android:text="@string/seal"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="1.2"
+                    android:textSize="18sp"/>
 
                 <Button
                     android:id="@+id/draw_token"
-                    android:layout_width="180dp"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
+                    android:layout_weight="2"
                     android:layout_marginLeft="@dimen/checkbox_padding"
                     android:layout_marginRight="@dimen/checkbox_padding"
                     android:background="@drawable/button_style"
@@ -146,8 +157,9 @@
 
                 <Button
                     android:id="@+id/add_token"
-                    android:layout_width="80dp"
+                    android:layout_width="0dp"
                     android:layout_height="50dp"
+                    android:layout_weight="1"
                     android:background="@drawable/button_style"
                     android:includeFontPadding="false"
                     android:text="@string/plus_one"
@@ -451,11 +463,6 @@
                     android:orientation="horizontal"/>
 
             </LinearLayout>
-
-            <android.support.v4.widget.Space
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/select_chaos_bag"
