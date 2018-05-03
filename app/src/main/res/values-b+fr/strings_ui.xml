@@ -77,6 +77,8 @@
     <string name="strange_solution">Vous avez identifié la solution.\n\n</string>
     <string name="archaic_glyphs_dialog">Vous avez traduit les glyphes</string>
     <string name="archaic_glyphs">Vous avez traduit les glyphes.\n\n</string>
+	<string name="charons_obol">Obole pour Charon</string>
+    <string name="charons_obol_in_play">Obole pour Charon en jeu</string>
 	
 	<string name="default_chaos_bag">Par défaut</string>
     <string name="chaos_bag_name">Nom de la réserve du Chaos (obligatoire)</string>
@@ -138,8 +140,10 @@
     <string name="standard">Standard</string>
     <string name="hard">Diffic.</string>
     <string name="expert">Expert</string>
-	  <string name="scenario_card">Carte Scénario</string>
+	<string name="scenario_card">Carte Scénario</string>
     <string name="current_setup">Mise en Place Actuelle</string>
+	<string name="seal">Sceller</string>
+    <string name="seal_tokens">Sceller pions</string>
     <string name="draw_token">Piocher le jeton</string>
     <string name="add_token">Ajouter</string>
     <string name="skull">Crâne</string>
@@ -199,10 +203,20 @@
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
     <string name="norman_withers">Norman Withers</string>
+	<string name="carolyn_fern">Carolyn Fern</string>
+    <string name="silas_marsh">Silas Marsh</string>
+    <string name="leo_anderson">Leo Anderson</string>
+    <string name="ursula_downs">Ursula Downs</string>
+    <string name="finn_edwards">Finn Edwards</string>
+    <string name="father_mateo">Father Mateo</string>
+    <string name="calvin_wright">Calvin Wright</string>
 
     <string name="cover_up">Effacer les Traces non résolu en jeu</string>
     <string name="hospital_debts">Frais d’Hôpitaux non résolu en jeu</string>
     <string name="smite_the_wicked">Châtier le Mal non résolu en jeu</string>
     <string name="searching_for_izzie">À la Recherche d’Izzie non résolu en jeu</string>
     <string name="angered_spirits">Esprits en Colère non résolu en jeu</string>
+	 <string name="voice_of_the_messenger">Voix du Messager résolu</string>
+    <string name="voice_of_the_messenger_heading">Voix du Messager</string>
+    <string name="voice_of_the_messenger_text">Traumatisme subi par la Voix du Messager :</string>
 </resources>

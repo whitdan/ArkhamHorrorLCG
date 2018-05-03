@@ -835,7 +835,23 @@
     <string name="pallid_set_aside">Le détenteur de la faiblesse L’Homme au Masque Blême la cherche dans son deck 
 		et la met de côté, hors jeu.\n</string>
     <string name="pallid_additional">Choisissez un lieu Les Catacombes adjacent au lieu de départ et révélez-le.</string>
-	
+	 <string name="pallid_rules_heading">Lieux Adjacents dans les Catacombes</string>
+	 <string name="pallid_rules">Lors de ce scénario, les lieux sont disposés selon un plan préétabli où les nouveaux
+		lieux issus du deck Catacombes apparaissent à gauche, à droite, au-dessus ou en
+		dessous des lieux existants lorsqu’ils sont révélés. Un lieu qui est mis en jeu à gauche,
+		à droite, au-dessus ou en dessous d’un autre lieu doit être placé à côté de ce lieu de la
+		manière décrite, sans aucun autre lieu entre les deux.\n
+    \nUn lieu qui se trouve ainsi placé à côté d’un autre lieu est considéré comme lui
+		étant <b>adjacent</b>. Les lieux sont adjacents orthogonalement (gauche, droite, dessus,
+		dessous), pas en diagonale. Durant ce scénario, les lieux adjacents sont considérés
+		comme étant connexes l’un à l’autre\n
+    \nVous ne pouvez pas mettre un lieu en jeu si un autre lieu est déjà placé à cet endroit.
+		Si vous avez le choix entre plusieurs emplacements possibles pour un lieu du deck
+		Catacombes et que l’un des emplacements est déjà occupé par un lieu existant, vous
+		ne pouvez pas choisir cet emplacement. Vous devez choisir un emplacement libre,
+		si possible. Si tous les emplacements spécifiés sont occupés par des lieux existants,
+		l’effet <b>Forcé</b> échoue et aucun nouveau lieu Les Catacombes n’est mis en jeu.</string>
+		
 	 <string name="black_stars_sets">Sous les Étoiles Noires, Présages Funestes, Les Byakhees, Les Habitants de Carcosa,
 		L’Étranger, Sombre Culte et Antiques Fléaux.</string>
     <string name="black_stars_sets_two">Certaines cartes du set de rencontre <i>Sous les Étoiles Noires</i> existent
@@ -866,7 +882,27 @@
 		ou <b><i>Détective</i></b> au hasard dans la collection et l’ajoute à son deck.</string>
     <string name="black_stars_additional_ashleigh">\nLors de ce scénario, un investigateur a le droit de retirer 1 fatalité d’une
 		intrigue en jeu en tant que capacité déclenchée. (Limite collective d’une fois par partie.)</string>
-
+	<string name="black_stars_rules_heading">Intrigues Duelles</string>
+	<string name="black_stars_rules">Lors de ce scénario, deux decks Intrigue cohabitent. L’un d’eux représente un moyen
+		pour vous et vos alliés d’ouvrir la route de Carcosa, et mène à l’une des deux cartes
+		Acte mises de côté. L’autre représente un moyen pour Hastur de s’introduire dans
+		notre monde et de sceller le destin de la Terre\n
+    \nEn jouant ce scénario, tant qu’il y a deux decks Intrigue en jeu, les joueurs doivent
+		suivre ces règles supplémentaires :\n
+    \n\u2022 Chaque fois que 1 ou plusieurs fatalités sont placées sur «  l’intrigue en
+		cours,  » les joueurs ont le droit de choisir sur laquelle des deux intrigues
+		placer ces fatalités.\n
+    \n\u2022 Les fatalités sur les cartes autre que les deux intrigues (comme les ennemis,
+		les lieux ou les soutiens) comptent pour le calcul du seuil de fatalité des
+		<b>deux</b> intrigues.\n
+    \n\u2022 Quand une intrigue avance, <b>les fatalités présentes sur l’autre intrigue ne
+		sont pas retirées</b>. Toutes les autres fatalités en jeu sont retirées.\n
+    \n\u2022 Si les seuils de fatalité des deux intrigues sont atteints en même temps lors de
+		l’étape de « vérification du seuil de fatalité » de la phase du Mythe, choisissez
+		une seule des deux intrigues et avancez-la. Ensuite, une fois que vous avez
+		effectué l’avancement de cette intrigue, vérifiez le seuil de fatalité de l’autre
+		intrigue et avancez-la si son seuil de fatalité est toujours atteint.</string>
+	
 	<string name="dim_sets">La Pâle Carcosa, Hallucinations, Culte du Signe Jaune, Les Habitants de Carcosa,
 		Agents d’Hastur et Répandre la Peur.</string>	
     <string name="dim_locations_below">Mettez en jeu 1 exemplaire pris au hasard de chacune des cartes suivantes  :
@@ -893,7 +929,14 @@
     <string name="dim_additional">\nChaque investigateur subit un montant d’horreurs directes égal à la moitié de
 		sa santé mentale, arrondi au nombre inférieur (ne peut pas être annulé). Ces
 		horreurs ne peuvent pas entraîner que les investigateurs soient vaincus.</string>
-
+	<string name="dim_rules_heading">Santé Mentale dans le Royaume de Carcosa</string>
+    <string name="dim_rules">La folie est inévitable dans le royaume tordu et dérangé de Carcosa mais, même avec
+		l’esprit brisé, vos investigations ne s’arrêtent pas là. <b>Lors de ce scénario, les investigateurs ne sont
+		pas vaincus lorsque leur nombre d’horreurs est supérieur ou 
+		égal à leur santé mentale.</b> Les investigateurs ont le droit de continuer à subir des
+		horreurs en excès par rapport à leur santé mentale. Tant qu’un investigateur a plus
+		d’horreurs sur lui que de santé mentale, sa « santé mentale restante » est considérée
+		comme étant 0.</string>
 	
 	
 		
