@@ -825,7 +825,20 @@
         sea revelado).</i>\n</string>
     <string name="pallid_set_aside">El afectado por la Debilidad “El hombre de la máscara pálida” la busca en su mazo y la pone
         aparte, fuera del juego.\n</string>
-    <string name="pallid_additional">Elige un Lugar “Catacumbas” adyacente al Lugar inicial y revélalo.</string>
+    <string name="pallid_additional">Elige un Lugar “Catacumbas” adyacente al Lugar inicial y revélalo.
+        \n</string>
+    <string name="pallid_rules_heading">Adyacencia de los Lugares en las catacumbas</string>
+    <string name="pallid_rules">Durante este escenario, los Lugares se colocarán de una forma determinada, de forma que los nuevos
+        Lugares del mazo de Catacumbas saldrán a la izquierda, derecha, por arriba o por debajo de los Lugares existentes al ser
+        revelador. Un Lugar que sea puesto en juego a la izquierda, derecha, por arriba o por abajo de otro Lugar debe colocarse
+        junto a dicho Lugar de la manera descrita, sin que haya otros Lugares entre ellos.\n
+    \nUn Lugar que esté junto a otro de este modo se considera <b>adyacente</b>. Los Lugares sólo están adyacentes a la izquierda,
+        derecha, por arriba o por abajo, y nunca de forma diagonal. Durante este escenario, los Lugares adyacentes se consideran
+        conectados entre sí.\n
+    \nNo puedes poner en juego un Lugar donde ya haya un Lugar existente. Si se te da la opción de colocar un Lugar del mazo de
+        Catacumbas en uno de varios sitios posibles, y uno de esos sitios ya está ocupado por un Lugar existente, no puedes elegir
+        dicho sitio. Debes elegir un sitio que no esté ocupado por un Lugar si es posible. Si todos los sitios especificados están
+        ocupados por Lugares existentes, el efecto <b>Obligado</b> falla y no se pone en juego ningún nuevo Lugar “Catacumbas”.</string>
 
     <string name="black_stars_sets">Surgen estrellas negras, Portentos malignos, Byakhee, Habitantes de Carcosa, El extranjero,
         Secta oscura y Antiguos males.</string>
@@ -856,9 +869,23 @@
     \nElige al azar 1 de las dos versiones del Lugar “Coro gótico” y ponla aparte. Retira de la partida la otra versión del
         Coro gótico.\n
     \nCada investigador busca en su colección una Debilidad básica aleatoria <b><i>Locura</i></b>, <b><i>Pacto</i></b>,
-        <b><i>Sectario</i></b> o <b><i>Detective</i></b> y la añade a su mazo.</string>
+        <b><i>Sectario</i></b> o <b><i>Detective</i></b> y la añade a su mazo.\n</string>
     <string name="black_stars_additional_ashleigh">\nDurante este escenario, como una capacidad gratuita rápida, un investigador
-        puede retirar 1 ficha de Perdición de un plan que esté en juego. Límite de grupo de una vez por partida.</string>
+        puede retirar 1 ficha de Perdición de un plan que esté en juego. Límite de grupo de una vez por partida.\n</string>
+    <string name="black_stars_rules_heading">Planes dobles</string>
+    <string name="black_stars_rules">Durante este escenario, hay 2 mazos de Plan. Uno representa un medio para que tú y tus
+        aliados abráis el camino a Carcosa, y lleva a una de las dos cartas de Acto puestas aparte. El otro representa un medio
+        para que Hastur escape y entre en nuestro mundo, y supone la perdición de la Tierra.\n
+    \nAl jugar este escenario, mientras haya 2 mazos de Plan en juego, los jugadores deben seguir estas reglas adicionales:\n
+    \n\u2022 Siempre que se coloquen 1 o más fichas de Perdición en “el plan en curso”, los jugadores pueden decidir en cuál
+        de los dos planes colocar esta perdición.\n
+    \n\u2022 La perdición que haya en otras cartas que no sean los dos planes (como Enemigos, Lugares o Apoyos) cuenta para
+        los umbrales de perdición de <b>ambos</b> planes.\n
+    \n\u2022 Cuando un plan avance, <b>no se retira la perdición del otro plan</b>. Sí que se retiran todas las demás fichas
+        de Perdición que haya en juego.\n
+    \n\u2022 Si se cumplen los umbrales de perdición de ambos planes durante el paso “Comprobar umbral de perdición” de la
+        fase de Mitos, elige sólo 1 plan para que avance. A continuación, cuando hayas hecho avanzar ese plan, comprueba
+        el umbral de perdición del otro plan y hazlo avanzar si se sigue cumpliendo.</string>
 
     <string name="dim_sets">Penumbrosa Carcosa, Delirios, Secta del Signo Amarillo, Habitantes de Carcosa, Agentes de Hastur y
         Miedo impactante.</string>
@@ -884,7 +911,13 @@
     <string name="dim_doom_two">\nAñade 2 fichas de Perdición al plan 1a.\n</string>
     <string name="dim_doom_three">\nAñade 1 ficha de Perdición al plan 1a.\n</string>
     <string name="dim_additional">\nCada investigador recibe una cantidad de horror directo igual a la mitad de su cordura,
-        redondeado hacia abajo (<i>no puede ser prevenido</i>). Este horror no puede hacer que quedes derrotado.</string>
+        redondeado hacia abajo (<i>no puede ser prevenido</i>). Este horror no puede hacer que quedes derrotado.\n</string>
+    <string name="dim_rules_heading">Cordura en el reino de Carcosa</string>
+    <string name="dim_rules">En el retorcido y enloquecedor reino de Carcosa, la locura es inevitable. Pero incluso con tu
+        mente fractura y rota, tu investigación no acaba aquí. <b>Durante este escenario, los investigadores no son derrotados
+        cuando tengan una cantidad de horror igual o mayor que su cordura.</b> Los investigadores pueden seguir recibiendo
+        horror incluso aunque supere su cordura. Mientras un investigador tenga más horror que cordura, su “cordura restante”
+        se considera 0.</string>
 
 
     <!--Scenario resolutions-->

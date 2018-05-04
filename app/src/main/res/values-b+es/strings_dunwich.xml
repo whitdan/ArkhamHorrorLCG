@@ -536,7 +536,12 @@
         3 cartas inferiores del mazo de Exposición, con el lado sin revelar boca arriba.\n
     \nA continuación, pon los otros 3 Lugares Sala de Exposición encima, en orden aleatorio. Las 6 cartas del mazo de
         Exposición sólo deben mostrar el lado sin revelar, de forma que los jugadores no sepan cuál de las Salas de exposición
-        es la Sala de exposicion (<i>Sala restringida</i>).</string>
+        es la Sala de exposicion (<i>Sala restringida</i>)\n</string>
+    <string name="miskatonic_rules_heading">“El vacío”</string>
+    <string name="miskatonic_rules">Algunas cartas de este escenario hacen referencia a una zona llamada “el vacío”. El vacío
+        es una zona fuera del juego junto a los mazos de Acto y de Plan en la que el Enemigo Horrendo cazador puede entrar y
+        salir mediante efectos de cartas. Mientras el Horrendo cazador esté en el vacío, se considera fuera del juego y no
+        puede ser afectado por cartas de Jugador ni por acciones de los investigadores.</string>
 
     <string name="essex_sets">El Essex County Express, El Más Allá, Miedo impactante, Antiguos males y Secta oscura.</string>
     <string name="essex_locations">Pon en juego, de forma aleatoria, 1 de los 3 Lugares Locomotora. Retira de la partida las
@@ -551,7 +556,11 @@
     \n\t\t<b>Fácil:</b> -2\n
     \n\t\t<b>Normal:</b> -3\n
     \n\t\t<b>Difícil:</b> -4\n
-    \n\t\t<b>Experto:</b> -5</string>
+    \n\t\t<b>Experto:</b> -5\n</string>
+    <string name="essex_rules_heading">Movimiento en el tren: “izquierda” y “derecha”</string>
+    <string name="essex_rules">Durante este escenario, los Lugares están colocados de izquierda a derecha, con la Locomotora en la
+        posición más a la derecha. Siempre que un efecto de una carta haga referencia al “Lugar de su izquierda” o al “Lugar de su
+        derecha”, se refiere al Lugar que esté inmediatamente a la izquierda o derecha de tu Lugar.</string>
 
     <string name="blood_sets">Sangre en el altar, Dunwich, Chotacabras, Ángeles descarnados y Antiguos males.</string>
     <string name="blood_sets_two">Buscando venganza, la banda del Clover Club os ha seguido hasta Dunwich.
@@ -571,6 +580,12 @@
     <string name="blood_additional_sacrifice_morgan">Dr. Francis Morgan,</string>
     <string name="blood_additional_sacrifice_two">Zebulon Whateley y Earl Sawyer.\n\n</string>
     <string name="blood_additional_two">Añade 1 ficha de Perdición al plan 1a.\n\n</string>
+    <string name="blood_rules_heading">La cámara oculta</string>
+    <string name="blood_rules">Este escenario incluye un Lugar de una sola cara (La cámara oculta) que se ha colocado
+        boca abajo bajo un Lugar al azar. La cámara oculta sólo tiene un lado revelado, y tiene un efecto <b>Revelación</b>
+        que lo pone en juego al ser robado.\n
+    \nCuando es puesto en juego, un Lugar de una sola cara lo hace con su lado revelado boca arriba, ya que no tiene lado
+        sin revelar. Por lo demás, funciona como un Lugar normal en todos los aspectos.</string>
 
     <string name="undimensioned_sets">Invisibles y sin dimensión, Chotacabras, Esclavos-bestia, Dunwich y Miedo impactante.</string>
     <string name="undimensioned_locations">Pon en juego, de forma aleatoria, 1 de las 2 versiones de los siguientes Lugares: Aldea
@@ -594,6 +609,10 @@
         en su mazo y ponerlo en juego.\n\n</string>
     <string name="undimensioned_additional">Cada investigador busca en la colección una Debilidad básica aleatoria Locura,
         Lesión o Pacto y la añade a su mazo durante el resto de la campaña.\n\n</string>
+    <string name="undimensioned_rules_heading">Elegir un Lugar aleatorio</string>
+    <string name="undimensioned_rules">Durante este escenario, a menudo tendrás que elegir un Lugar aleatorio. Para ello,
+        baraja los 6 Lugares que retiraste de la partida durante la preparación (las versiones de cada Lugar que no se está
+        usando) y roba 1 al azar.</string>
 
     <string name="doom_sets">Donde aguarda la perdición, Esclavos-bestia, Hechicería, Esclavos de Bishop, Miedo impactante,
         Antiguos males y Frío Helador.</string>
@@ -627,6 +646,12 @@
     <string name="lost_locations">Pon en juego Otra dimensión.\n
         \nCada investigador comienza la partida en Otra dimensión.\n</string>
     <string name="lost_set_aside">Los bordes del universo, Desgarro en el tiempo y Yog-Sothoth.\n</string>
+    <string name="lost_rules_heading">Lugares en el mazo de Encuentros</string>
+    <string name="lost_rules">Este escenario incluye varios Lugares de una sola cara que se añaden al mazo de Encuentros
+        junto con los demás conjuntos de encuentros reunidos. Estos Lugares sólo tienen un lado revelado, y tienen un
+        efecto <b>Revelación</b> que los pone en juego al ser robados.\n
+    \nCuando es puesto en juego, un Lugar de una sola cara lo hace con su lado revelado boca arriba, ya que no tiene lado
+        sin revelar. Por lo demás, funciona como un Lugar normal en todos los aspectos.</string>
 
 
     <!--Scenario resolutions-->

@@ -78,6 +78,8 @@
     <string name="strange_solution">Habéis identificado la solución.\n\n</string>
     <string name="archaic_glyphs_dialog">Habéis traducido los signos</string>
     <string name="archaic_glyphs">Habéis traducido los signos.\n\n</string>
+    <string name="charons_obol">Óbolo de Caronte</string>
+    <string name="charons_obol_in_play">Óbolo de Caronte en juego</string>
 
     <string name="default_chaos_bag">Por defecto</string>
     <string name="chaos_bag_name">Nombre de la bolsa (requerido)</string>
@@ -142,6 +144,8 @@
     <string name="expert">Experto</string>
     <string name="scenario_card">Carta de escenario</string>
     <string name="current_setup">Configuración actual</string>
+    <string name="seal">Sellar</string>
+    <string name="seal_tokens">Sellar fichas</string>
     <string name="draw_token">Revelar ficha</string>
     <string name="add_token">Añadir</string>
     <string name="skull">Calavera</string>
@@ -177,7 +181,7 @@
         <item>Leo Anderson</item>
         <item>Ursula Downs</item>
         <item>Finn Edwards</item>
-        <item>Father Mateo</item>
+        <item>Padre Mateo</item>
         <item>Calvin Wright</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
@@ -198,10 +202,20 @@
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
     <string name="norman_withers">Norman Withers</string>
+    <string name="carolyn_fern">Carolyn Fern</string>
+    <string name="silas_marsh">Silas Marsh</string>
+    <string name="leo_anderson">Leo Anderson</string>
+    <string name="ursula_downs">Ursula Downs</string>
+    <string name="finn_edwards">Finn Edwards</string>
+    <string name="father_mateo">Padre Mateo</string>
+    <string name="calvin_wright">Calvin Wright</string>
 
     <string name="cover_up">Encubrimiento en juego sin resolver</string>
     <string name="hospital_debts">Deudas en juego sin resolver</string>
     <string name="smite_the_wicked">Destruir a los malvados en juego sin resolver</string>
     <string name="searching_for_izzie">Buscando a Izzie en juego sin resolver</string>
     <string name="angered_spirits">Espíritus airados en juego sin resolver</string>
+    <string name="voice_of_the_messenger">Voz del mensajero resuelto</string>
+    <string name="voice_of_the_messenger_heading">Voz del mensajero</string>
+    <string name="voice_of_the_messenger_text">Trauma sufrido por la Voz del mensajero:</string>
 </resources>
