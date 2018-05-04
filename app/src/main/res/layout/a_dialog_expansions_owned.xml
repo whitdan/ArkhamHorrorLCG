@@ -47,6 +47,19 @@
         android:textSize="@dimen/arnopro_textsize"/>
 
     <CheckBox
+        android:id="@+id/forgotten_owned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:button="@drawable/checkbox_style"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:text="@string/forgotten_campaign"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/arnopro_textsize"/>
+
+    <CheckBox
         android:id="@+id/marie_xpac"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,6 +82,32 @@
         android:paddingBottom="@dimen/checkbox_padding"
         android:paddingTop="@dimen/checkbox_padding"
         android:text="@string/norman_withers"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/arnopro_textsize"/>
+
+    <CheckBox
+        android:id="@+id/carolyn_xpac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:button="@drawable/checkbox_style"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:text="@string/carolyn_fern"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/arnopro_textsize"/>
+
+    <CheckBox
+        android:id="@+id/silas_xpac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:button="@drawable/checkbox_style"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:text="@string/silas_marsh"
         android:textColor="@android:color/black"
         android:textSize="@dimen/arnopro_textsize"/>
 

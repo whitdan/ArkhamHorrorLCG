@@ -507,6 +507,13 @@
     \nEnsuite, placez les 3 autres lieux Salle d’Exposition au dessus dans un ordre aléatoire. Les 6 cartes du deck Exposition
 		ne doivent montrer que leur face non-révélée afin que les joueurs ne sachent pas quelle Salle d’Exposition est la
 		Salle d’Exposition (<i>Salle à Accès Restreint</i>).</string>
+	 <string name="miskatonic_rules_heading">« Le Néant »</string>
+    <string name="miskatonic_rules">Certaines cartes de ce scénario font référence à une zone appelée « le Néant ».
+		Le Néant est une zone hors jeu, située près des decks Acte et Intrigue, dans
+		laquelle l’ennemi Horreur Chasseresse peut entrer et sortir via des effets de
+		carte. Tant que l’Horreur Chasseresse est dans le Néant, elle est considérée
+		comme étant hors jeu et ne peut pas être aectée par des cartes Joueur ou des
+		actions d’investigateur.</string>
 
     <string name="essex_sets">L’Express du Comté d’Essex, L’Au-delà, Répandre la Peur, Antiques Fléaux et Sombre Culte.</string>
     <string name="essex_locations">Prenez au hasard l’un des trois lieux Locomotive et mettez-le en jeu. Retirez
@@ -521,6 +528,11 @@
     \n\t\t<b>Standard:</b> -3\n
     \n\t\t<b>Difficile:</b> -4\n
     \n\t\t<b>Expert:</b> -5</string>
+	<string name="essex_rules_heading">Se Déplacer dans le Train : « Gauche » et « Droite »</string>
+    <string name="essex_rules">Dans ce scénario, les lieux sont alignés de gauche à droite, la Locomotive étant
+		le lieu le plus à droite. Quand un effet de carte se réfère au « lieu à gauche » ou
+		au « lieu à droite », il se réfère au lieu situé immédiatement à la gauche ou à la
+		droite de votre lieu.</string>
 
     <string name="blood_sets">Du Sang sur l’Autel, Dunwich, Les Engoulevents, Maigres Bêtes de la Nuit et Antiques Fléaux.</string>
     <string name="blood_sets_two">Le gang du Club du Trèfle cherche à se venger et vous a suivi à Dunwich.
@@ -539,6 +551,13 @@
     <string name="blood_additional_sacrifice_morgan">Dr Francis Morgan,</string>
     <string name="blood_additional_sacrifice_two">Zebulon Whateley, et Earl Sawyer.\n\n</string>
     <string name="blood_additional_two">Placez 1 fatalité sur l’Intrigue 1a.\n\n</string>
+	<string name="blood_rules_heading">La Chambre Cachée</string>
+    <string name="blood_rules">Ce scénario comporte un lieu mono-face (La Chambre Cachée) qui a été
+		placé face cachée sous un lieu au hasard. La Chambre Cachée ne dispose que
+		d’une face révélée et possède un effet <b>Révélation</b> qui la met en jeu quand elle
+		est piochée.\n
+    \nQuand un lieu mono-face est mis en jeu, il est placé face révélée car il ne dispose
+		pas de face non-révélée. À part cela, il respecte les règles normales de fonctionnement des lieux.</string>
 
     <string name="undimensioned_sets">Aux Frontières du Visible, Les Engoulevents, Thralls Bestiaux, Dunwich et Répandre la Peur.</string>
     <string name="undimensioned_locations">Prenez au hasard l’une des deux versions des lieux suivants, et mettez-la
@@ -561,7 +580,12 @@
 		la chercher dans son deck et de la mettre en jeu.\n\n</string>
     <string name="undimensioned_additional">Chaque investigateur sélectionne dans la collection une faiblesse de base
 		au hasard Folie, Blessure ou Pacte et l’ajoute à son deck pour le reste de la campagne.\n\n</string>
-
+	<string name="undimensioned_rules_heading">Choisir un Lieu au Hasard</string>
+    <string name="undimensioned_rules">Durant ce scénario, il vous sera régulièrement demandé de choisir un lieu au
+		hasard. Pour cela, mélangez ensemble les 6 lieux retirés de la partie lors de la
+		mise en place (les autres versions inutilisées des lieux actuellement en jeu) et
+		piochez-en 1 au hasard.</string>
+		
     <string name="doom_sets">Là où le Destin Attend, Thralls Bestiaux, Sorcellerie, Les Thralls de Bishop, 
 		Répandre la Peur, Antiques Fléaux et Un Froid Mordant.</string>
     <string name="doom_sets_two">Là où le Destin Attend, Thralls Bestiaux, Sorcellerie, Les Thralls de Bishop, 
@@ -594,7 +618,13 @@
     <string name="lost_locations">Mettez en jeu Une Autre Dimension.\n
         \nChaque investigateur commence la partie dans Une Autre Dimension.\n</string>
     <string name="lost_set_aside">Le Bord de l’Univers, Déchirure dans le Temps et Yog-Sothoth.\n</string>
-
+	<string name="lost_rules_heading">Lieux dans le Deck Rencontre</string>
+    <string name="lost_rules">Ce scénario comporte plusieurs lieux mono-face qui sont mélangés dans le
+		deck Rencontre avec le reste des sets de rencontre. Ces lieux ne disposent que
+		d’une face révélée et possèdent un effet <b>Révélation</b> qui les met en jeu quand ils
+		sont piochés.\n
+    \nQuand un lieu mono-face est mis en jeu, il est placé face révélée car il ne dispose
+		pas de face non-révélée. À part cela, il respecte les règles normales de fonctionnement des lieux.</string>
 
     <!--Scenario resolutions-->
     <string name="extracurricular_no_resolution">Alors que vous fuyez l’université, vous entendez des hurlements provenant

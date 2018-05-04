@@ -22,7 +22,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 25;
+    private static final int DATABASE_VERSION = 26;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -65,9 +65,17 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + CampaignEntry.COLUMN_LOLA_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_MARIE_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_NORMAN_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_CAROLYN_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_SILAS_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_LEO_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_URSULA_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_FINN_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_MATEO_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_CALVIN_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_ROUGAROU_STATUS + " INTEGER, "
                 + CampaignEntry.COLUMN_STRANGE_SOLUTION + " INTEGER, "
                 + CampaignEntry.COLUMN_ARCHAIC_GLYPHS + " INTEGER, "
+                + CampaignEntry.COLUMN_CHARONS_OBOL + " INTEGER, "
                 + CampaignEntry.COLUMN_CARNEVALE_STATUS + " INTEGER, "
                 + CampaignEntry.COLUMN_CARNEVALE_REWARDS + " INTEGER);";
 
@@ -475,6 +483,32 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_TWENTYTWO_THREE);
                 db.execSQL(SQL_UPGRADE_TWENTYTWO_FOUR);
                 db.execSQL(SQL_UPGRADE_TWENTYTWO_FIVE);
+            case 25:
+                String SQL_UPGRADE_TWENTYTHREE_ONE = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry
+                        .COLUMN_CAROLYN_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYTHREE_TWO = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                    CampaignEntry.COLUMN_SILAS_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYTHREE_THREE = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_LEO_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYTHREE_FOUR = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_URSULA_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYTHREE_FIVE = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_FINN_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYTHREE_SIX = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_MATEO_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYTHREE_SEVEN = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_CALVIN_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYTHREE_EIGHT = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_CHARONS_OBOL + " INTEGER DEFAULT 0";
+                db.execSQL(SQL_UPGRADE_TWENTYTHREE_ONE);
+                db.execSQL(SQL_UPGRADE_TWENTYTHREE_TWO);
+                db.execSQL(SQL_UPGRADE_TWENTYTHREE_THREE);
+                db.execSQL(SQL_UPGRADE_TWENTYTHREE_FOUR);
+                db.execSQL(SQL_UPGRADE_TWENTYTHREE_FIVE);
+                db.execSQL(SQL_UPGRADE_TWENTYTHREE_SIX);
+                db.execSQL(SQL_UPGRADE_TWENTYTHREE_SEVEN);
+                db.execSQL(SQL_UPGRADE_TWENTYTHREE_EIGHT);
         }
     }
 }

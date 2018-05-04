@@ -58,6 +58,9 @@ public class ScenarioSetupActivity extends AppCompatActivity {
         setAsideHeading.setTypeface(teutonic);
         TextView additionalHeading = findViewById(R.id.additional_heading);
         additionalHeading.setTypeface(teutonic);
+        TextView rulesHeading = findViewById(R.id.rules_heading);
+        rulesHeading.setTypeface(teutonic);
+        LinearLayout rulesLayout = findViewById(R.id.rules_layout);
 
         TextView sets = findViewById(R.id.sets_one);
         TextView setsTwo = findViewById(R.id.sets_two);
@@ -71,6 +74,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
         ImageView setAsideImage = findViewById(R.id.set_aside_image);
         TextView additional = findViewById(R.id.additional);
         TextView additionalTwo = findViewById(R.id.additional_two);
+        TextView rules = findViewById(R.id.rules);
 
         sets.setTypeface(arnopro);
         setsTwo.setTypeface(arnopro);
@@ -80,6 +84,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
         setAsideTwo.setTypeface(arnopro);
         additional.setTypeface(arnopro);
         additionalTwo.setTypeface(arnopro);
+        rules.setTypeface(arnopro);
 
         // Set instructions
         switch (globalVariables.CurrentCampaign) {
@@ -221,6 +226,9 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         setAside.setText(R.string.miskatonic_set_aside);
                         locations.setText(R.string.miskatonic_locations);
                         additional.setText(R.string.miskatonic_additional);
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.miskatonic_rules_heading);
+                        rules.setText(R.string.miskatonic_rules);
                         break;
                     case 5:
                         sets.setText(R.string.essex_sets);
@@ -228,6 +236,9 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         setAside.setText(R.string.essex_set_aside);
                         locations.setText(R.string.essex_locations);
                         additional.setText(R.string.essex_additional);
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.essex_rules_heading);
+                        rules.setText(R.string.essex_rules);
                         break;
                     case 6:
                         sets.setText(R.string.blood_sets);
@@ -263,8 +274,12 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         if (globalVariables.InvestigatorsDelayed == 1) {
                             bloodAdditionalBuilder.append(getString(R.string.blood_additional_two));
                         }
-                        String bloodAdditional = bloodAdditionalBuilder.toString();
-                        additional.setText(bloodAdditional.trim());
+                        String bloodAdditional = bloodAdditionalBuilder.toString().trim();
+                        bloodAdditional += "\n";
+                        additional.setText(bloodAdditional);
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.blood_rules_heading);
+                        rules.setText(R.string.blood_rules);
                         break;
                     case 8:
                         sets.setText(R.string.undimensioned_sets);
@@ -320,8 +335,12 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                                     .undimensioned_additional_powder));
                         }
                         undimensionedAdditionalBuilder.append(getString(R.string.undimensioned_additional));
-                        String undimensionedAdditional = undimensionedAdditionalBuilder.toString();
-                        additional.setText(undimensionedAdditional.trim());
+                        String undimensionedAdditional = undimensionedAdditionalBuilder.toString().trim();
+                        undimensionedAdditional += "\n";
+                        additional.setText(undimensionedAdditional);
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.undimensioned_rules_heading);
+                        rules.setText(R.string.undimensioned_rules);
                         break;
                     case 9:
                         if (globalVariables.SilasBishop == 1) {
@@ -375,7 +394,11 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         setsImage.setImageResource(R.drawable.lost_sets);
                         setAside.setText(R.string.lost_set_aside);
                         locations.setText(R.string.lost_locations);
-                        additional.setText(R.string.no_additional);
+                        String lostAdditional = getResources().getString(R.string.no_additional) + "\n";
+                        additional.setText(lostAdditional);
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.lost_rules_heading);
+                        rules.setText(R.string.lost_rules);
                         break;
                 }
                 break;
@@ -513,8 +536,13 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         if (globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4) {
                             additional.setText(R.string.pallid_additional);
                         } else {
-                            additional.setText(R.string.no_additional);
+                            String pallidAdditional = getResources().getString(R.string.no_additional);
+                            pallidAdditional += "\n";
+                            additional.setText(pallidAdditional);
                         }
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.pallid_rules_heading);
+                        rules.setText(R.string.pallid_rules);
                         break;
                     case 9:
                         sets.setText(R.string.black_stars_sets);
@@ -536,6 +564,9 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         } else {
                             additional.setText(R.string.black_stars_additional);
                         }
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.black_stars_rules_heading);
+                        rules.setText(R.string.black_stars_rules);
                         break;
                     case 10:
                         sets.setText(R.string.dim_sets);
@@ -567,7 +598,10 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         }
                         dimAdditionalBuilder.append(getString(R.string.dim_additional));
                         String dimAdditional = dimAdditionalBuilder.toString();
-                        additional.setText(dimAdditional.trim());
+                        additional.setText(dimAdditional);
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.dim_rules_heading);
+                        rules.setText(R.string.dim_rules);
                         break;
                 }
                 break;

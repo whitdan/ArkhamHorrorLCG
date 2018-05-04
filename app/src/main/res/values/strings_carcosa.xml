@@ -796,7 +796,21 @@
         when it is revealed.)</i>\n</string>
     <string name="pallid_set_aside">The bearer of The Man in the Pallid Mask weakness searches his or her deck for it
         and sets it aside, out of play.\n</string>
-    <string name="pallid_additional">Choose a Catacombs location adjacent to the starting location and reveal it.</string>
+    <string name="pallid_additional">Choose a Catacombs location adjacent to the starting location and reveal it
+        .\n</string>
+    <string name="pallid_rules_heading">Location Adjacency in the Catacombs</string>
+    <string name="pallid_rules">During this scenario, locations will be arranged in a set pattern, with new locations
+        from the Catacombs Deck emerging to the left, right, above, or below existing locations, as they are
+        revealed. A location that is put into play to the left, right, above, or below another location should be set
+        next to that location in the manner described, with no other locations in between them.\n
+    \nA location that is next to another location in this manner is considered <b>adjacent</b>. Locations are only
+        adjacent orthogonally (left, right, above, and below), and are not adjacent diagonally. During this scenario,
+        adjacent locations are considered to be connected to one another.\n
+    \nYou cannot put a location into play where an existing location already is. If you are given the choice to place
+        a location from the Catacombs Deck in one of multiple spots, and one of those spots is occupied by an
+        existing location, you cannot choose that spot. You must choose a spot unoccupied by a location, if able. If
+        all of the specified spots are occupied by existing locations, the <b>Forced</b> effect fails and no new
+        Catacombs locations are put into play.</string>
 
     <string name="black_stars_sets">Black Stars Rise, Evil Portents, Byakhee, Inhabitants of Carcosa, The Stranger,
         Dark Cult, and Ancient Evils.</string>
@@ -826,9 +840,24 @@
     \nChoose one of the two Choeur Gothique locations, at random, and set it aside. Remove the other version of
         Choeur Gothique from the game.\n
     \nEach investigator searches the collection for a random basic <b><i>Madness</i></b>, <b><i>Pact</i></b>, <b><i>
-            Cultist</i></b>, or <b><i>Detective</i></b> weakness, and adds it to his or her deck.</string>
-    <string name="black_stars_additional_ashleigh">\nDuring this scenario, as a free triggered ability, an investigator
-        may remove 1 doom from an agenda in play. (Group limit once per game.)</string>
+            Cultist</i></b>, or <b><i>Detective</i></b> weakness, and adds it to his or her deck.\n</string>
+    <string name="black_stars_additional_ashleigh">During this scenario, as a free triggered ability, an investigator
+        may remove 1 doom from an agenda in play. (Group limit once per game.)\n</string>
+    <string name="black_stars_rules_heading">Dual Agendas</string>
+    <string name="black_stars_rules">During this scenario, there are two agenda decks. One represents a means for you
+        and your allies to open the path to Carcosa, and leads to one of the two set-aside act cards. The other
+        represents a means for Hastur to escape into our world, and spells demise for Earth.\n
+    \nWhen playing this scenario, while there are two agenda decks in play, players must observe the following
+        additional rules:\n
+    \n\u2022 Whenever 1 or more doom is placed on “the current agenda,” the players may decide which of the two
+        agendas to place this doom on.\n
+    \n\u2022 Doom on cards other than the two agendas (such as enemies, locations, or assets) count towards the
+        doom threshold of <b>both</b> agendas.\n
+    \n\u2022 When one agenda advances, <b>doom on the other agenda is not removed</b>. All other doom in play is
+        removed.\n
+    \n\u2022 If the doom thresholds of both agendas are satisfied during the “Check doom threshold” step of the
+        Mythos phase, choose only one agenda to advance. Then, once you have completed advancing that agenda, check
+        the doom threshold of the other agenda and advance it if its doom threshold is still satisfied.</string>
 
     <string name="dim_sets">Dim Carcosa, Delusions, Cult of the Yellow Sign, Inhabitants of Carcosa, Agents of
         Hastur, and Striking Fear.</string>
@@ -855,7 +884,13 @@
     <string name="dim_doom_two">\nAdd 2 doom to agenda 1a.\n</string>
     <string name="dim_doom_three">\nAdd 1 doom to agenda 1a.\n</string>
     <string name="dim_additional">\nEach investigator takes direct horror equal to half his or her sanity, rounded down
-        (cannot be prevented). This horror cannot cause you to become defeated.</string>
+        (cannot be prevented). This horror cannot cause you to become defeated.\n</string>
+    <string name="dim_rules_heading">Sanity in the Realm of Carcosa</string>
+    <string name="dim_rules">In the twisted and madness-inducing realm of Carcosa, insanity is an inevitability. But
+        even with your mind fractured and broken, your investigation does not end here. <b>During this scenario,
+            investigators are not defeated when they have horror on them equal to or greater than their sanity</b>.
+        Investigators may continue to take horror even in excess of their sanity. While an investigator has more
+        horror on them than sanity, their “remaining sanity” is considered to be 0.</string>
 
 
     <!--Scenario resolutions-->

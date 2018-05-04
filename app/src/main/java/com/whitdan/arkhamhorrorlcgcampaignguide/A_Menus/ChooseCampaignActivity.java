@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.B_CampaignSetup.CampaignIntroductionActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
@@ -31,17 +32,26 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         Button NightButton = findViewById(R.id.night_button);
         Button DunwichButton = findViewById(R.id.dunwich_button);
         Button CarcosaButton = findViewById(R.id.carcosa_button);
+        Button ForgottenButton = findViewById(R.id.forgotten_button);
 
         // Set correct font to all of the buttons
         Typeface teutonic = Typeface.createFromAsset(getAssets(), "fonts/teutonic.ttf");
         NightButton.setTypeface(teutonic);
         DunwichButton.setTypeface(teutonic);
         CarcosaButton.setTypeface(teutonic);
+        ForgottenButton.setTypeface(teutonic);
 
         // Attach click listener to each button
         NightButton.setOnClickListener(new NewCampaignClickListener());
         DunwichButton.setOnClickListener(new NewCampaignClickListener());
         CarcosaButton.setOnClickListener(new NewCampaignClickListener());
+        ForgottenButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
 
         // Back button
         Button backButton = findViewById(R.id.back_button);
@@ -87,7 +97,7 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.CampaignVersion = 2;
         globalVariables.Notes = null;
         globalVariables.ChaosBagID = -1;
-        globalVariables.InvestigatorsInUse = new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        globalVariables.InvestigatorsInUse = new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         globalVariables.CurrentDifficulty = 1;
         globalVariables.NightCompleted = 0;
         globalVariables.DunwichCompleted = 0;
@@ -97,6 +107,7 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.Rougarou = 0;
         globalVariables.StrangeSolution = 0;
         globalVariables.ArchaicGlyphs = 0;
+        globalVariables.CharonsObol = 0;
         globalVariables.Carnevale = 0;
         globalVariables.CarnevaleReward = 0;
         globalVariables.Doubt = 0;

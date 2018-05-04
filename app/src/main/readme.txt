@@ -20,3 +20,26 @@ ADD SCENARIO
 10. ScenarioResolutionActivity.saveCampaign
 11. LoadCampaignActivity
 12. Search and increment the scenario for toasts preventing advancing
+
+ADD CHARACTER
+
+1.  Investigator
+2.  ArkhamContract
+3.  ArkhamDbHelper
+4.  strings_ui
+        Add name to array in all language files
+5.  a_dialog_expansions_owned
+6.  SettingsMenuActivity
+7.  b_activity_campaign_investigators
+8.  d_activity_edit_team
+9.  CampaignInvestigatorsActivity
+10. EditTeamActivity
+11. ScenarioResolutionActivity
+        saveCampaign
+        WeaknessDialog
+12. LoadCampaignActivity
+13. GlobalVariables and ChooseCampaignActivity (InvestigatorsInUse)
+
+ADD CAMPAIGN
+
+X.  CampaignInvestigatorsActivity

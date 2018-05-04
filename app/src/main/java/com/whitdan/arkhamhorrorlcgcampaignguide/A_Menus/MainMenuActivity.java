@@ -13,6 +13,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
+import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.ChaosBagActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 
@@ -52,6 +53,7 @@ public class MainMenuActivity extends AppCompatActivity {
         Button NewCampaignButton = findViewById(R.id.new_campaign_button);
         Button LoadCampaignButton = findViewById(R.id.load_campaign_button);
         Button StandaloneButton = findViewById(R.id.standalone_scenario_button);
+        Button ChaosBagButton = findViewById(R.id.chaos_bag_button);
         Button SettingsButton = findViewById(R.id.settings_button);
 
         // Set correct font to all of the buttons
@@ -59,6 +61,7 @@ public class MainMenuActivity extends AppCompatActivity {
         NewCampaignButton.setTypeface(teutonic);
         LoadCampaignButton.setTypeface(teutonic);
         StandaloneButton.setTypeface(teutonic);
+        ChaosBagButton.setTypeface(teutonic);
         SettingsButton.setTypeface(teutonic);
 
         // Set onClickListener to the NewCampaignButton to go to the New Campaign screen
@@ -67,6 +70,7 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainMenuActivity.this, ChooseCampaignActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
             }
         });
 
@@ -85,6 +89,17 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), StandaloneActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
+            }
+        });
+
+        // Set onClickListener to the ChaosBagButton to go to the Chaos Bag screen
+        ChaosBagButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                globalVariables.CurrentCampaign = 1000;
+                Intent intent = new Intent(getBaseContext(), ChaosBagActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -94,6 +109,7 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), SettingsMenuActivity.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
             }
         });
     }

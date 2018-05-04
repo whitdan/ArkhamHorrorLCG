@@ -85,6 +85,8 @@
     <string name="strange_solution">You have identified the solution.\n\n</string>
     <string name="archaic_glyphs_dialog">You have translated the glyphs</string>
     <string name="archaic_glyphs">You have translated the glyphs.\n\n</string>
+    <string name="charons_obol">Charon\'s Obol</string>
+    <string name="charons_obol_in_play">Charon\'s Obol in play</string>
 
     <string name="default_chaos_bag">Default</string>
     <string name="chaos_bag_name">Chaos bag name (required)</string>
@@ -152,6 +154,8 @@
     <string name="one" translatable="false">1</string>
     <string name="two" translatable="false">2</string>
     <string name="three" translatable="false">3</string>
+    <string name="seal">Seal</string>
+    <string name="seal_tokens">Seal tokens</string>
     <string name="draw_token">Draw token</string>
     <string name="add_token">Add</string>
     <string name="plus_two" translatable="false">+2</string>
@@ -196,6 +200,13 @@
         <item>Lola Hayes</item>
         <item>Marie Lambeau</item>
         <item>Norman Withers</item>
+        <item>Carolyn Fern</item>
+        <item>Silas Marsh</item>
+        <item>Leo Anderson</item>
+        <item>Ursula Downs</item>
+        <item>Finn Edwards</item>
+        <item>Father Mateo</item>
+        <item>Calvin Wright</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -215,17 +226,28 @@
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
     <string name="norman_withers">Norman Withers</string>
+    <string name="carolyn_fern">Carolyn Fern</string>
+    <string name="silas_marsh">Silas Marsh</string>
+    <string name="leo_anderson">Leo Anderson</string>
+    <string name="ursula_downs">Ursula Downs</string>
+    <string name="finn_edwards">Finn Edwards</string>
+    <string name="father_mateo">Father Mateo</string>
+    <string name="calvin_wright">Calvin Wright</string>
 
     <string name="cover_up">Unresolved Cover Up in play</string>
     <string name="hospital_debts">Unresolved Hospital Debts in play</string>
     <string name="smite_the_wicked">Unresolved Smite the Wicked in play</string>
     <string name="searching_for_izzie">Unresolved Searching for Izzie in play</string>
     <string name="angered_spirits">Unresolved Angered Spirits in play</string>
+    <string name="voice_of_the_messenger">Voice of the Messenger resolved</string>
+    <string name="voice_of_the_messenger_heading">Voice of the Messenger</string>
+    <string name="voice_of_the_messenger_text">Trauma suffered from Voice of the Messenger:</string>
 
 
     <!--Shared Preferences - DO NOT TRANSLATE-->
     <string name="shared_prefs" translatable="false">Shared preferences</string>
     <string name="dunwich_setting" translatable="false">Dunwich setting</string>
     <string name="carcosa_setting" translatable="false">Carcosa setting</string>
+    <string name="forgotten_setting" translatable="false">Forgotten setting</string>
     <string name="language_setting" translatable="false">Language setting</string>
 </resources>
