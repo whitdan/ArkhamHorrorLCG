@@ -769,8 +769,8 @@ public class ChaosBagActivity extends AppCompatActivity {
         // If using the add button
         else {
             // Won't allow drawing more than 5 tokens at a time or drawing beyond size of bag
-            if ((numberOfViews < 5 && numberOfViews < (chaosbag.size() + 1)) && ((sealCount + drawCount) < chaosbag
-                    .size())) {
+            if ((numberOfViews < 5 && numberOfViews < (chaosbag.size() + 1) && numberOfViews != 0) && ((sealCount +
+                    drawCount) < chaosbag.size())) {
                 // Removes the last token in the token stream
                 if (tokens.getChildCount() == 6) {
                     tokens.removeViewAt(0);

@@ -3395,6 +3395,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         if (status >= 2) {
                             currentInvestigator.Status = 2;
                             currentInvestigator.Damage = currentInvestigator.Health;
+                            globalVariables.CharonsObol = 1;
                         } else {
                             currentInvestigator.AvailableXP += 2;
                             currentInvestigator.TotalXP += 2;
@@ -3406,6 +3407,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         if (status >= 2) {
                             currentInvestigator.Status = 2;
                             currentInvestigator.Damage = currentInvestigator.Health;
+                            globalVariables.CharonsObol = 1;
                         } else {
                             currentInvestigator.AvailableXP += 2;
                             currentInvestigator.TotalXP += 2;
@@ -3417,6 +3419,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         if (status >= 2) {
                             currentInvestigator.Status = 2;
                             currentInvestigator.Damage = currentInvestigator.Health;
+                            globalVariables.CharonsObol = 1;
                         } else {
                             currentInvestigator.AvailableXP += 2;
                             currentInvestigator.TotalXP += 2;
@@ -3428,6 +3431,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         if (status >= 2) {
                             currentInvestigator.Status = 2;
                             currentInvestigator.Damage = currentInvestigator.Health;
+                            globalVariables.CharonsObol = 1;
                         } else {
                             currentInvestigator.AvailableXP += 2;
                             currentInvestigator.TotalXP += 2;

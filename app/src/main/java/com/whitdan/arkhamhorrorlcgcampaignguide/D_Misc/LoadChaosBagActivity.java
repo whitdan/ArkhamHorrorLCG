@@ -9,6 +9,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
@@ -209,9 +210,9 @@ public class LoadChaosBagActivity extends AppCompatActivity {
             bag[16] = cursor.getInt(cursor.getColumnIndexOrThrow(ArkhamContract.ChaosBagEntry.COLUMN_SIXTEEN));
             Long bagId = cursor.getLong(cursor.getColumnIndexOrThrow(ArkhamContract.ChaosBagEntry._ID));
             if (globalVariables.ChaosBagID == bagId) {
-                view.setBackgroundColor(getColor(R.color.colorBlackTint));
+                view.setBackgroundColor(ContextCompat.getColor(context, R.color.colorBlackTint));
             } else {
-                view.setBackgroundColor(getColor(R.color.colorClear));
+                view.setBackgroundColor(ContextCompat.getColor(context, R.color.colorClear));
             }
 
             // Setup chaos bag by adding relevant tokens

@@ -166,7 +166,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
                         }
                         break;
                     case 3:
-                        if(globalVariables.CurrentScenario == 7 && globalVariables.DreamsAction == 0){
+                        if (globalVariables.CurrentScenario == 7 && globalVariables.DreamsAction == 0) {
                             setupRequired = true;
                         }
                         break;
@@ -345,7 +345,9 @@ public class ScenarioMainActivity extends AppCompatActivity {
                     decklistView.setVisibility(GONE);
                 }
                 if (deckName != null) {
-                    decklistView.setText(deckName);
+                    if (deckName.length() > 0) {
+                        decklistView.setText(deckName);
+                    }
                     decklistView.setPaintFlags(decklistView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
                 }
                 if (decklist != null) {
@@ -411,7 +413,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
 
                 // Hide total XP layout if not campaign version 2
                 LinearLayout totalXPLayout = listItemView.findViewById(R.id.total_xp_layout);
-                if(globalVariables.CampaignVersion < 2){
+                if (globalVariables.CampaignVersion < 2) {
                     totalXPLayout.setVisibility(GONE);
                 }
 
@@ -435,7 +437,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
                             values.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP,
                                     currentInvestigator.SpentXP);
                             String selection = ArkhamContract.InvestigatorEntry.PARENT_ID + " = ? AND " +
-                                ArkhamContract.InvestigatorEntry.INVESTIGATOR_ID + " = ?";
+                                    ArkhamContract.InvestigatorEntry.INVESTIGATOR_ID + " = ?";
                             String[] selectionArgs = {Long.toString(globalVariables.CampaignID), Integer.toString(pos)};
                             db.update(ArkhamContract.InvestigatorEntry.TABLE_NAME, values, selection, selectionArgs);
                         }
