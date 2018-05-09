@@ -136,6 +136,8 @@ public class GlobalVariables extends Application {
     public int StrangeSolution;
     public int ArchaicGlyphs;
     public int CharonsObol;
+    public int AncientStone;
+    public int Doomed;
 
     /*
         Method for each scenario to set its title

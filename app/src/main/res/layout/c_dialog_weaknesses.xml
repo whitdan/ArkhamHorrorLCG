@@ -20,165 +20,280 @@
         android:textScaleX="1.2"
         android:textSize="20sp"/>
 
-    <CheckBox
-        android:id="@+id/investigator_one_weakness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:button="@drawable/checkbox_style"
-        android:paddingBottom="@dimen/checkbox_padding"
-        android:paddingTop="@dimen/checkbox_padding"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/arnopro_textsize"
-        android:visibility="gone"/>
-
-    <CheckBox
-        android:id="@+id/investigator_two_weakness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:button="@drawable/checkbox_style"
-        android:paddingBottom="@dimen/checkbox_padding"
-        android:paddingTop="@dimen/checkbox_padding"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/arnopro_textsize"
-        android:visibility="gone"/>
-
-    <CheckBox
-        android:id="@+id/investigator_three_weakness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:button="@drawable/checkbox_style"
-        android:paddingBottom="@dimen/checkbox_padding"
-        android:paddingTop="@dimen/checkbox_padding"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/arnopro_textsize"
-        android:visibility="gone"/>
-
-    <CheckBox
-        android:id="@+id/investigator_four_weakness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:button="@drawable/checkbox_style"
-        android:paddingBottom="@dimen/checkbox_padding"
-        android:paddingTop="@dimen/checkbox_padding"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/arnopro_textsize"
-        android:visibility="gone"/>
-
-    <LinearLayout
-        android:id="@+id/calvin_weakness"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-        <TextView
-            android:id="@+id/calvin_weakness_heading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:text="@string/voice_of_the_messenger_heading"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/arnopro_textsize"/>
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <LinearLayout
+            android:id="@+id/test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/checkbox_padding"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/checkbox_padding"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/physical_trauma"
-                android:layout_width="0dp"
+            <CheckBox
+                android:id="@+id/doomed"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:text="@string/physical_trauma"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/arnopro_textsize"/>
+                android:textSize="@dimen/arnopro_textsize"
+                android:text="@string/doomed"/>
 
-            <ImageView
-                android:id="@+id/physical_decrement"
-                android:layout_width="0dp"
-                android:layout_height="20dp"
-                android:layout_weight="1"
-                android:src="@drawable/button_decrement"/>
-
-            <TextView
-                android:id="@+id/physical_amount"
-                android:layout_width="0dp"
+            <CheckBox
+                android:id="@+id/accursed_fate"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:includeFontPadding="false"
-                android:text="0"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/arnopro_textsize"/>
+                android:textSize="@dimen/arnopro_textsize"
+                android:text="@string/accursed_fate"
+                android:visibility="gone"/>
 
-            <ImageView
-                android:id="@+id/physical_increment"
-                android:layout_width="0dp"
-                android:layout_height="20dp"
-                android:layout_weight="1"
-                android:src="@drawable/button_increment"/>
+            <CheckBox
+                android:id="@+id/bell_tolls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:text="@string/bell_tolls"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/select_investigator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/select_investigator_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_double_margin"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:visibility="gone"/>
+
+                <CheckBox
+                    android:id="@+id/select_investigator_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_double_margin"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:visibility="gone"/>
+
+                <CheckBox
+                    android:id="@+id/select_investigator_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_double_margin"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:visibility="gone"/>
+
+                <CheckBox
+                    android:id="@+id/select_investigator_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_double_margin"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/investigator_one_weakness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/investigator_two_weakness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/investigator_three_weakness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/investigator_four_weakness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:button="@drawable/checkbox_style"
+                android:paddingBottom="@dimen/checkbox_padding"
+                android:paddingTop="@dimen/checkbox_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/arnopro_textsize"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/calvin_weakness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/calvin_weakness_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/voice_of_the_messenger_heading"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/checkbox_padding"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/checkbox_padding"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/physical_trauma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/physical_trauma"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"/>
+
+                    <ImageView
+                        android:id="@+id/physical_decrement"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/button_decrement"/>
+
+                    <TextView
+                        android:id="@+id/physical_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"/>
+
+                    <ImageView
+                        android:id="@+id/physical_increment"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/button_increment"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/checkbox_padding"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/checkbox_padding"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mental_trauma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/mental_trauma"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"/>
+
+                    <ImageView
+                        android:id="@+id/mental_decrement"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/button_decrement"/>
+
+                    <TextView
+                        android:id="@+id/mental_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/arnopro_textsize"/>
+
+                    <ImageView
+                        android:id="@+id/mental_increment"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/button_increment"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/checkbox_padding"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/checkbox_padding"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/mental_trauma"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:text="@string/mental_trauma"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/arnopro_textsize"/>
-
-            <ImageView
-                android:id="@+id/mental_decrement"
-                android:layout_width="0dp"
-                android:layout_height="20dp"
-                android:layout_weight="1"
-                android:src="@drawable/button_decrement"/>
-
-            <TextView
-                android:id="@+id/mental_amount"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:includeFontPadding="false"
-                android:text="0"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/arnopro_textsize"/>
-
-            <ImageView
-                android:id="@+id/mental_increment"
-                android:layout_width="0dp"
-                android:layout_height="20dp"
-                android:layout_weight="1"
-                android:src="@drawable/button_increment"/>
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
     <android.support.v4.widget.Space
         android:layout_width="match_parent"

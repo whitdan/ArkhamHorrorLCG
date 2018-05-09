@@ -108,6 +108,8 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.StrangeSolution = 0;
         globalVariables.ArchaicGlyphs = 0;
         globalVariables.CharonsObol = 0;
+        globalVariables.AncientStone = 0;
+        globalVariables.Doomed = 0;
         globalVariables.Carnevale = 0;
         globalVariables.CarnevaleReward = 0;
         globalVariables.Doubt = 0;

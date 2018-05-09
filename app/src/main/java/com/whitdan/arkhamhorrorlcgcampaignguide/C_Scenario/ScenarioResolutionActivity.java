@@ -1022,14 +1022,14 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     break;
             }
         }
-        if (weakness) {
-            weaknessButton.setVisibility(VISIBLE);
-        } else {
+        //       if (weakness) {
+        weaknessButton.setVisibility(VISIBLE);
+  /*      } else {
             LinearLayout buttonBar = findViewById(R.id.button_bar);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, (int)
                     getResources().getDimension(R.dimen.button_height));
             buttonBar.setLayoutParams(params);
-        }
+        }*/
         weaknessButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -3441,6 +3441,32 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             }
         }
 
+        // Doomed
+        if (globalVariables.Doomed > 2) {
+            switch (globalVariables.Doomed) {
+                case 3:
+                    globalVariables.Investigators.get(0).Status = 2;
+                    globalVariables.Investigators.get(0).Damage = globalVariables.Investigators.get(0).Health;
+                    globalVariables.Doomed = 0;
+                    break;
+                case 4:
+                    globalVariables.Investigators.get(1).Status = 2;
+                    globalVariables.Investigators.get(1).Damage = globalVariables.Investigators.get(1).Health;
+                    globalVariables.Doomed = 0;
+                    break;
+                case 5:
+                    globalVariables.Investigators.get(2).Status = 2;
+                    globalVariables.Investigators.get(2).Damage = globalVariables.Investigators.get(2).Health;
+                    globalVariables.Doomed = 0;
+                    break;
+                case 6:
+                    globalVariables.Investigators.get(3).Status = 2;
+                    globalVariables.Investigators.get(3).Damage = globalVariables.Investigators.get(3).Health;
+                    globalVariables.Doomed = 0;
+                    break;
+            }
+        }
+
         // Increment current scenario
         int nextScenario;
         if (globalVariables.CurrentCampaign == 2 && globalVariables.FirstScenario == 2) {
@@ -3734,12 +3760,16 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             View v = View.inflate(getActivity(), R.layout.c_dialog_player_cards, null);
 
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
+            Typeface arnoprobold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnoprobold.otf");
+            Typeface wolgastbold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wolgastbold.otf");
             final CheckBox solution = v.findViewById(R.id.strange_solution);
             final CheckBox glyphs = v.findViewById(R.id.archaic_glyphs);
             final CheckBox obol = v.findViewById(R.id.charons_obol);
+            final CheckBox stone = v.findViewById(R.id.ancient_stone);
             solution.setTypeface(arnopro);
             glyphs.setTypeface(arnopro);
             obol.setTypeface(arnopro);
+            stone.setTypeface(arnopro);
 
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
             TextView title = v.findViewById(R.id.player_cards);
@@ -3794,6 +3824,48 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 }
             });
 
+            final LinearLayout stoneCounter = v.findViewById(R.id.ancient_stone_counter);
+            TextView stoneCounterDifficulty = v.findViewById(R.id.test_difficulty);
+            stoneCounterDifficulty.setTypeface(arnoprobold);
+            ImageView testDecrement = v.findViewById(R.id.test_decrement);
+            final TextView testAmount = v.findViewById(R.id.test_amount);
+            testAmount.setTypeface(wolgastbold);
+            if (globalVariables.AncientStone > 0) {
+                testAmount.setText(String.valueOf(globalVariables.AncientStone));
+            }
+            ImageView testIncrement = v.findViewById(R.id.test_increment);
+            testDecrement.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int current = Integer.valueOf(testAmount.getText().toString());
+                    if (current > 0) {
+                        current += -1;
+                        testAmount.setText(String.valueOf(current));
+                    }
+                }
+            });
+            testIncrement.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int current = Integer.valueOf(testAmount.getText().toString());
+                    if (current < 99) {
+                        current += 1;
+                        testAmount.setText(String.valueOf(current));
+                    }
+                }
+            });
+
+            stone.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (compoundButton.isChecked()) {
+                        stoneCounter.setVisibility(VISIBLE);
+                    } else {
+                        stoneCounter.setVisibility(GONE);
+                    }
+                }
+            });
+
             if (globalVariables.StrangeSolution == 1) {
                 solution.setChecked(true);
             }
@@ -3815,6 +3887,10 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 if (globalVariables.CharonsObol % 7 == 0) {
                     selectInvestigatorFour.setChecked(true);
                 }
+            }
+            if (globalVariables.AncientStone > 0) {
+                stone.setChecked(true);
+                stoneCounter.setVisibility(VISIBLE);
             }
 
             okayButton.setOnClickListener(new View.OnClickListener() {
@@ -3847,6 +3923,11 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     } else {
                         globalVariables.CharonsObol = 0;
                     }
+                    if (stone.isChecked()) {
+                        globalVariables.AncientStone = Integer.valueOf(testAmount.getText().toString());
+                    } else {
+                        globalVariables.AncientStone = 0;
+                    }
                     dismiss();
                 }
             });
@@ -3872,6 +3953,130 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             View v = View.inflate(getActivity(), R.layout.c_dialog_weaknesses, null);
 
             Typeface arnopro = Typeface.createFromAsset(getActivity().getAssets(), "fonts/arnopro.otf");
+
+            final CheckBox doomed = v.findViewById(R.id.doomed);
+            final CheckBox accursed = v.findViewById(R.id.accursed_fate);
+            final CheckBox bell = v.findViewById(R.id.bell_tolls);
+            doomed.setTypeface(arnopro);
+            accursed.setTypeface(arnopro);
+            bell.setTypeface(arnopro);
+
+            final LinearLayout selectInvestigator = v.findViewById(R.id.select_investigator);
+            final CheckBox selectInvestigatorOne = v.findViewById(R.id.select_investigator_one);
+            final CheckBox selectInvestigatorTwo = v.findViewById(R.id.select_investigator_two);
+            final CheckBox selectInvestigatorThree = v.findViewById(R.id.select_investigator_three);
+            final CheckBox selectInvestigatorFour = v.findViewById(R.id.select_investigator_four);
+            selectInvestigatorOne.setTypeface(arnopro);
+            selectInvestigatorTwo.setTypeface(arnopro);
+            selectInvestigatorThree.setTypeface(arnopro);
+            selectInvestigatorFour.setTypeface(arnopro);
+
+            doomed.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (compoundButton.isChecked()) {
+                        accursed.setVisibility(VISIBLE);
+                    } else {
+                        accursed.setVisibility(GONE);
+                    }
+                }
+            });
+            accursed.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (compoundButton.isChecked()) {
+                        bell.setVisibility(VISIBLE);
+                    } else {
+                        bell.setVisibility(GONE);
+                    }
+                }
+            });
+            bell.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (compoundButton.isChecked()) {
+                        selectInvestigator.setVisibility(VISIBLE);
+                    } else {
+                        selectInvestigator.setVisibility(GONE);
+                    }
+                }
+            });
+
+            String[] investigatorNames = getResources().getStringArray(investigators);
+            switch (globalVariables.Investigators.size()) {
+                case 4:
+                    selectInvestigatorFour.setVisibility(VISIBLE);
+                    selectInvestigatorFour.setText(investigatorNames[globalVariables
+                            .Investigators.get(3)
+                            .Name]);
+                    selectInvestigatorFour.setOnCheckedChangeListener(new CompoundButton
+                            .OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                            if (compoundButton.isChecked()) {
+                                selectInvestigatorThree.setChecked(false);
+                                selectInvestigatorTwo.setChecked(false);
+                                selectInvestigatorOne.setChecked(false);
+                            }
+                        }
+                    });
+                case 3:
+                    selectInvestigatorThree.setVisibility(VISIBLE);
+                    selectInvestigatorThree.setText(investigatorNames[globalVariables
+                            .Investigators.get
+                                    (2).Name]);
+                    selectInvestigatorThree.setOnCheckedChangeListener(new CompoundButton
+                            .OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                            if (compoundButton.isChecked()) {
+                                selectInvestigatorFour.setChecked(false);
+                                selectInvestigatorTwo.setChecked(false);
+                                selectInvestigatorOne.setChecked(false);
+                            }
+                        }
+                    });
+                case 2:
+                    selectInvestigatorTwo.setVisibility(VISIBLE);
+                    selectInvestigatorTwo.setText(investigatorNames[globalVariables
+                            .Investigators.get(1)
+                            .Name]);
+                    selectInvestigatorTwo.setOnCheckedChangeListener(new CompoundButton
+                            .OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                            if (compoundButton.isChecked()) {
+                                selectInvestigatorFour.setChecked(false);
+                                selectInvestigatorThree.setChecked(false);
+                                selectInvestigatorOne.setChecked(false);
+                            }
+                        }
+                    });
+                case 1:
+                    selectInvestigatorOne.setVisibility(VISIBLE);
+                    selectInvestigatorOne.setText(investigatorNames[globalVariables
+                            .Investigators.get(0)
+                            .Name]);
+                    selectInvestigatorOne.setOnCheckedChangeListener(new CompoundButton
+                            .OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                            if (compoundButton.isChecked()) {
+                                selectInvestigatorFour.setChecked(false);
+                                selectInvestigatorThree.setChecked(false);
+                                selectInvestigatorTwo.setChecked(false);
+                            }
+                        }
+                    });
+            }
+
+            if (globalVariables.Doomed > 0) {
+                doomed.setChecked(true);
+            }
+            if (globalVariables.Doomed > 1) {
+                accursed.setChecked(true);
+            }
+
             final CheckBox investigatorOne = v.findViewById(R.id.investigator_one_weakness);
             final CheckBox investigatorTwo = v.findViewById(R.id.investigator_two_weakness);
             final CheckBox investigatorThree = v.findViewById(R.id.investigator_three_weakness);
@@ -3979,7 +4184,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         ImageView physicalDecrement = v.findViewById(R.id.physical_decrement);
                         final TextView physicalAmount = v.findViewById(R.id.physical_amount);
                         physicalAmount.setTypeface(wolgastbold);
-                        physicalAmount.setText(String.valueOf(globalVariables.Investigators.get(invNumber).TempWeaknessOne));
+                        physicalAmount.setText(String.valueOf(globalVariables.Investigators.get(invNumber)
+                                .TempWeaknessOne));
                         ImageView physicalIncrement = v.findViewById(R.id.physical_increment);
                         physicalDecrement.setOnClickListener(new View.OnClickListener() {
                             @Override
@@ -4042,6 +4248,24 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             okayButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    if (doomed.isChecked()) {
+                        globalVariables.Doomed = 1;
+                    }
+                    if (accursed.isChecked()) {
+                        globalVariables.Doomed = 2;
+                    }
+                    if (bell.isChecked()) {
+                        if (selectInvestigatorOne.isChecked()) {
+                            globalVariables.Doomed = 3;
+                        } else if (selectInvestigatorTwo.isChecked()) {
+                            globalVariables.Doomed = 4;
+                        } else if (selectInvestigatorThree.isChecked()) {
+                            globalVariables.Doomed = 5;
+                        } else if (selectInvestigatorFour.isChecked()) {
+                            globalVariables.Doomed = 6;
+                        }
+                    }
+
                     switch (globalVariables.Investigators.size()) {
                         case 4:
                             if (investigatorFour.isChecked()) {

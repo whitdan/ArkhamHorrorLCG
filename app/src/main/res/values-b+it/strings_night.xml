@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="night_campaign">La Notte dello Zelota</string>
+
+    <string name="night_scenario_one">Scenario 1: L\'Adunanza</string>
+    <string name="night_scenario_two">Scenario 2: Le Maschere di Mezzanotte</string>
+    <string name="night_scenario_three">Scenario 3: Il Divoratore Sotterraneo</string>
+
+
+    <!--Miscellaneous-->
+    <string name="ghoul_priest_additional">Aggiungete il Ghoul Sacerdote al mazzo degli incontri.\n\n</string>
+    <string name="ghoul_priest_checkbox">Ghoul Sacerdote ucciso</string>
+    <string name="cultists_interrogated">Cultisti Interrogati: \n</string>
+    <string name="cultists_interrogated_resolution">Cultisti Interrogati</string>
+    <string name="cultists_got_away">\nCultisti Fuggiti: \n</string>
+    <string name="drew">Drew "Uomo-Lupo"</string>
+    <string name="herman">Herman Collins</string>
+    <string name="peter">Peter Warren</string>
+    <string name="victoria">Victoria Devereux</string>
+    <string name="ruth">Ruth Turner</string>
+    <string name="masked_hunter">Cacciatore Mascherato</string>
+
+    <!--Campaign log-->
+    <string name="house_standing">La vostra casa è ancora in piedi.\n\n</string>
+    <string name="house_burned">La vostra casa è bruciata fino alle fondamenta.\n\n</string>
+    <string name="ghoul_priest_alive">Il Ghoul Sacerdote è ancora vivo.\n\n</string>
+    <string name="lita_forced">Lita è stata costretta a trovare altri che la aiutassero nella sua lotta.\n\n</string>
+    <string name="past_midnight">È passata la mezzanotte.\n\n</string>
+    <string name="drew_log">\t\tDrew "Uomo-Lupo"\n</string>
+    <string name="herman_log">\t\tHerman Collins\n</string>
+    <string name="peter_log">\t\tPeter Warren\n</string>
+    <string name="victoria_log">\t\tVictoria Devereux\n</string>
+    <string name="ruth_log">\t\tRuth Turner\n</string>
+    <string name="masked_hunter_log">\t\tCacciatore Mascherato\n</string>
+    <string name="no_cultist">\t\tNessuno\n</string>
+    <string name="umordhoth_succumbed">\nArkham è caduta sotto la terribile vendetta di Umôrdhoth.\n</string>
+    <string name="umordhoth_broken">\nIl rituale per evocare Umôrdhoth è stato interrotto.\n</string>
+    <string name="umordhoth_repelled">\nGli investigatori hanno respinto Umôrdhoth.\n</string>
+    <string name="umordhoth_sacrificed">\nGli investigatori hanno sacrificato Lita Chantler a Umôrdhoth.\n</string>
+
+    <!--Edit log-->
+    <string name="house_heading">Casa</string>
+    <string name="ghoul_heading">Ghoul Sacerdote</string>
+    <string name="ghoul_priest_dead">Il Ghoul Sacerdote è stato ucciso.</string>
+    <string name="lita_heading">Lita Chantler</string>
+    <string name="lita_not_obtained">Non vi siete uniti alla lotta di Lita.</string>
+    <string name="lita_obtained">Vi siete uniti alla lotta di Lita.</string>
+    <string name="midnight_heading">Mezzanotte</string>
+    <string name="not_past_midnight">Non è passata la mezzanotte.</string>
+    <string name="conclusion">Conclusione della Campagna</string>
+
+
+    <!--Chaos bag-->
+    <string name="gathering_skull_one">-X, dove X è il numero di nemici <b><i>Ghoul</i></b> nel tuo luogo.</string>
+    <string name="gathering_skull_two">-2. Se fallisci, dopo che questa prova è stata risolta cerca nel mazzo degli incontri 
+        e nella pila degli scarti degli incontri un nemico <b><i>Ghoul</i></b> e pescalo. Rimescola il mazzo degli incontri.</string>
+    <string name="gathering_cultist_one">-1. Se fallisci, subisci 1 orrore.</string>
+    <string name="gathering_cultist_two">Rivela 1 altro segnalino. Se fallisci, subisci 2 orrori.</string>
+    <string name="gathering_tablet_one">-2. Se ci sono nemici <b><i>Ghoul</i></b> nel tuo luogo, subisci 1 danno.</string>
+    <string name="gathering_tablet_two">-4. Se ci sono nemici <b><i>Ghoul</i></b> nel tuo luogo, subisci 1 danno e 1 orrore.</string>
+
+    <string name="midnight_skull_one">-X, dove X è l\'ammontare di destini più alto su un nemico <b><i>Cultista</i></b> in gioco.</string>
+    <string name="midnight_skull_two">-X, dove X è l\'ammontare totale di destini in gioco.</string>
+    <string name="midnight_cultist_one">-2. Colloca 1 destino sul nemico <b><i>Cultista</i></b> più vicino.</string>
+    <string name="midnight_cultist_two">-2. Colloca 1 destino su ogni nemico <b><i>Cultista</i></b> in gioco. Se non ci sono nemici
+        <b><i>Cultista</i></b> in gioco, rivela invece 1 altro segnalino.</string>
+    <string name="midnight_tablet_one">-3. Se fallisci, colloca 1 tuo indizio nel luogo.</string>
+    <string name="midnight_tablet_two">-4. Se fallisci, colloca tutti i tuoi indizi nel luogo.</string>
+
+    <string name="devourer_skull_one">-X, dove X è il numero di nemici <b><i>Mostro</i></b> in gioco.</string>
+    <string name="devourer_skull_two">-3. Se fallisci, dopo che questa prova di abilità è stata risolta cerca nel mazzo degli
+		incontri e nella pila degli scarti degli incontri un nemico <b><i>Mostor</i></b> e pescalo. Rimescola il mazzo degli incontri.</string>
+    <string name="devourer_cultist_one">-2. Colloca 1 destino sul nemico più vicino.</string>
+    <string name="devourer_cultist_two">-4. Colloca 2 destini sul nemico più vicino.</string>
+    <string name="devourer_tablet_one">-3. Se ci sono nemici <b><i>Mostro</i></b> nel tuo luogo, subisci 1 danno.</string>
+    <string name="devourer_tablet_two">-5. Se ci sono nemici <b><i>Mostro</i></b> nel tuo luogo, subisci 1 danno e 1 orrore.</string>
+    <string name="devourer_thing_one">-5. Se ci sono nemici <b><i>Grande Antico</i></b> in gioco, rivela 1 altro segnalino.</string>
+    <string name="devourer_thing_two">-7. Se ci sono nemici <b><i>Grande Antico</i></b> in gioco, rivela 1 altro segnalino.</string>
+
+
+    <!--Campaign introduction-->
+    <string name="night_introduction"><b>I Ghoul Hanno Fame…</b>\n
+        \nVenerdì, 18 Settembre, 1925. Arkham, Massachusetts. È la fine di un\'estate insolitamente calda e lunga. 
+		Compaiono le prime avvisaglie d\'autunno, ma la calura rimane opprimente e implacabile; la città è in preda 
+		a un silenzioso e indefinito nervosismo. La pazienza è al limite: soltanto nella scorsa settimana si sono 
+		verificate diverse segnalazioni di cittadini che si azzuffano l\'un l\'altro in accesi e violenti diverbi a
+		seguito di semplici equivoci.\n
+    \nE adesso è giunta una chiamata da James Hankerson, che afferma di avere trovato un corpo fatto a pezzi nel fienile.\n
+    \nDare la colpa al clima sarebbe troppo facile. C\'è qualcosa che non va in questa città, e ben poco che possa fare questa
+		vecchia indovina per frenare la caduta. I miei presagi indicano che un piccolo gruppo di investigatori prenderà presto
+		atto di questi strani eventi e si attiverà per sistemare le cose: seguirò i loro progressi… ma senza farmi troppe illusioni.</string>
+
+
+    <!--Scenario introductions-->
+    <string name="gathering_introduction">Il vostro gruppo di investigatori indaga sugli strani eventi che hanno messo in subbuglio
+		la vostra città natale di Arkham, nel Massachussets: nelle scorse settimane diversi cittadini sono misteriosamente scomparsi,
+		e di recente sono stati ritrovati i loro cadaveri nei boschi, dilaniati e parzialmente sbranati. La polizia e i giornali hanno 
+		dichiarato che è opera di alcune bestie selvariche, ma credete che ci sia sotto dell\'altro. Vi siete riuniti a casa del vostro 
+		capogruppo per discutere di questi bizzarri eventi.</string>
+
+    <string name="midnight_introduction_one">Quella donna si è presentata da voi in preda al panico, vaneggiando di 
+		mostri che emergono dal terreno in una casa vicino a River Town. “Sono riuscita a intrappolarli”, spiega, “ma
+		ce ne sono altri. Altre fosse. Altre zone.” Soltanto una settimana prima avreste pensato che fosse pazza, ma 
+		gli eventi reecnti hanno messo in dubbio la vostra percezione della normalità e decidete di ascoltarla.\n
+    \nSi presenta come Lita Chantler e racconta una storia che mette a dura prova i limiti della vostra incredulità. 
+		“Le creature di cui parlo”, esclama, “sono chiamate ghoul… esseri crudeli che infestano le cripte, le caverne e 
+		i tunnel” al di sotto della città di Arkham.”\n
+    \n“Queste creature si nutrono di cadaveri umani e godono dei servigi di un culto nascosto presente ad Arkham, i cui 
+		membri hanno inspiegabilmente iniziato a venerare l\'antico padrone dei ghoul. Questo culto ha ucciso diversi individui 
+		innocenti per darli in past ai ghoul e saziare la loro fame mostruosa… ma fino ad ora vigeva un oscuro equilibrio. 
+		Di recente”, prosegue Lita, “uno dei rifugi dove custodivano i loro cadaveri è stato distrutto: da allora i ghoul sono 
+		diventati più attivi del solito. Ho seguito i loro movimenti e ho provato a fare del mio meglio per impedire loro di 
+		aggirarsi indisturbati per la città, ma credo che stia accadendo qualcosa di peggio. Il culto ha pianificato qualcosa di 
+		ancora più orrendo e sinistro di quanto abbia mai visto: gli indizi suggeriscono che questo piano giungerà a compimento 
+		stanotte, poco dopo la mezzanotte. A parte questo, non so nemmeno immaginare cosa aspettarmi.”\n
+    \n“Molti cultisti”, continua Lita, “hanno l\'aspetto di persone comuni, nonostante le loro orribili intenzioni. Ogni volta che il 
+		culto si riunisce, i suoi membri indossano maschere a forma di teschio di vari animali per proteggere le proprie identità gli 
+		uni dagli altri. Queste maschere sono il nostro obiettivo, un simbolo di morte e decadimento. Dobbiamo smascherare i cultisti, 
+		rivelare il loro piano e sventarlo. Ci restano soltanto poche ore: quanti più cultisti riusciamo a trovare prima di mezzanotte, 
+		meglio sarà.”</string>
+    <string name="midnight_introduction_two">Dopo il disastro che ha colpito la vostra casa, Lita Chantler, la donna dai capelli rossi 
+		che avete incontrato in salotto, vi racconta una storia che, anche alla luce di ciò a cui avete appena assistito, mette a dura prova 
+		i limiti della vostra incredulità. “Le creature che avete visto nella vostra casa”, afferma, “sono chiamate ghoul… esseri crudeli che 
+		infestano le cripte, le caverne e i tunnel al di sotto della città di Arkham.”\n
+    \n“Queste creature si nutrono di cadaveri umani e godono dei servigi di un culto nascosto presente ad Arkham, i cui 
+		membri hanno inspiegabilmente iniziato a venerare l\'antico padrone dei ghoul. Questo culto ha ucciso diversi individui 
+		innocenti per darli in past ai ghoul e saziare la loro fame mostruosa… ma fino ad ora vigeva un oscuro equilibrio. 
+		Di recente”, prosegue Lita, “uno dei rifugi dove custodivano i loro cadaveri è stato distrutto: da allora i ghoul sono 
+		diventati più attivi del solito. Ho seguito i loro movimenti e ho provato a fare del mio meglio per impedire loro di 
+		aggirarsi indisturbati per la città, ma credo che stia accadendo qualcosa di peggio. Il culto ha pianificato qualcosa di 
+		ancora più orrendo e sinistro di quanto abbia mai visto: gli indizi suggeriscono che questo piano giungerà a compimento 
+		stanotte, poco dopo la mezzanotte. A parte questo, non so nemmeno immaginare cosa aspettarmi.”\n
+    \n“Molti cultisti”, continua Lita, “hanno l\'aspetto di persone comuni, nonostante le loro orribili intenzioni. Ogni volta che il 
+		culto si riunisce, i suoi membri indossano maschere a forma di teschio di vari animali per proteggere le proprie identità gli 
+		uni dagli altri. Queste maschere sono il nostro obiettivo, un simbolo di morte e decadimento. Dobbiamo smascherare i cultisti, 
+		rivelare il loro piano e sventarlo. Ci restano soltanto poche ore: quanti più cultisti riusciamo a trovare prima di mezzanotte, 
+		meglio sarà.”</string>
+
+    <string name="devourer_introduction">Dopo una frenetica ricerca notturna per tutta Arkham, avete rintracciato e interrogato 
+		diversi membri del culto. Ciò che scoprite è inquietante: affermano di venerare un essere chiamato Umôrdhoth, un\'entità 
+		mostruosa proveniente da un altro regno.\n
+    \nSiete in grado di confermare buona parte della storia di Lita. Il culto è turbato dalla distruzione di un rifugio dei ghoul, 
+		tuttavia scoprite anche un dettaglio inaspettato: chi h invaso il rifugio e messo in moto gli eventi di questa notte altri 
+		non è che Lita Chantler stessa! Non siete sicuri del perché questo dettaglio sia stato omesso dalla storia di Lita… che la donna 
+		vi abbia detto solo quanto bastasse per coinvolgervi nel suo conflitto? D\'altro canto, Lita sembra sinceramente intenzionata a 
+		proteggere la città di Arkham da una minaccia terribile.\n
+    \nL\'ultimo tassello dell\'enigma è scritto in un diario posseduto da uno dei cultisti, che descrive un rituale oscuro da celebrare nel 
+		cuore dei boschi a sud di Arkham, proprio questa notte. Stando al diario, il completamento del rituale aprirà un portale e consentirà 
+		all\'oscura entità venerata dal culto di entrare in questo mondo. “Se il culto non verrà fermato”, avverte Lita, “c\'è la possibilità 
+		che Umôrdhoth, nella sua furia, distrugga tutto ciò che incontrerà sul suo cammino.” Terrorizzati ma determinati a fermare il rituale, 
+		vi avventurate nei boschi.</string>
+
+
+    <!--Scenario setup instructions-->
+    <string name="gathering_sets">L\'Adunanza, Ratti, Ghoul, Paura Incombente, Mali Antichi e Freddo Raggelante.</string>
+    <string name="gathering_locations">Mettete in gioco lo Studio.\n
+    \nGli investigatori iniziano la partita nello Studio.\n</string>
+    <string name="gathering_set_aside">Tutti gli altri luoghi, il Ghoul Sacerdote e Lita Chantler.\n</string>
+
+    <string name="midnight_sets">Le Maschere di Mezzanotte, Freddo Raggelante, Magri Notturni, Culto Oscuro e Porte Chiuse a Chiave.</string>
+    <string name="midnight_locations">Scegliete casualmente 1 Centro Cittadino e 1 Southside e mettetele in gioco. Rimuovete le altre copie di 
+		questi luoghi dal gioco.\n
+    \nMettete in gioco i luoghi Northside, East Town, River Town, Ospedale St. Mary, Cimitero, Miskatonic University e Casa.\n
+    \nGli investigatori iniziano la partita nella Casa.\n</string>
+    <string name="midnight_locations_no_house">Scegliete casualmente 1 Centro Cittadino e 1 Southside e mettetele in gioco. Rimuovete le altre copie di 
+		questi luoghi dal gioco.\n
+    \nMettete in gioco i luoghi Northside, East Town, River Town, Ospedale St. Mary, Cimitero, Miskatonic University.\n
+    \nRimuovete dal gioco la Casa.\n
+    \nGli investigatori iniziano la partita a River Town.\n</string>
+    <string name="midnight_set_aside">Mettete da parte il set incontri Culto di Umôrdhoth per formare un \"Mazzo dei Cultisti\".\n</string>
+    <string name="midnight_additional_two">Cercate nel set di incontri radunati 1 Accolito e mettetelo in gioco nel Southside.\n\n</string>
+    <string name="midnight_additional_three">Cercate nel set di incontri radunati 2 copie dell\'Accolito e mettetene in gioco 1 nel Southside e 1 nel Centro Cittadino.\n\n</string>
+    <string name="midnight_additional_four">Cercate nel set di incontri radunati 3 copie dell\'Accolito e mettetene in gioco 1 nel Southside, 1 nel Centro Cittadino 
+		e 1 nel Cimitero.\n\n</string>
+
+    <string name="devourer_sets">Il Divoratore Sotterraneo, Mali Antichi, Paura Incombente, Ghoul e Culto Oscuro.</string>
+    <string name="devourer_sets_two">Scegliete casualmente 1 dei set incontri seguenti:\n
+    \nAgenti di Yog-Sothoth, Agenti di Shub-Niggurath, Agenti di Cthulhu o Agenti di Hastur.</string>
+    <string name="devourer_locations">Mettete in gioco il Sentiero Principale. Mettete in gioco 4 delle 6 copie dei Boschi di Arkham, 
+		scelte a caso e senza guardarne il lato aperto. Rimuovete le rimanenti 2 copie dal gioco.\n
+        \nGli investigatori iniziano la partita sul Sentiero Principale.\n</string>
+    <string name="devourer_set_aside">Sito del Rituale e Umôrdhoth.\n</string>
+    <string name="devourer_additional">Aggiungete 1 segnalino Antico al sacchetto del caos per il resto della campagna.\n\n</string>
+    <string name="devourer_additional_midnight">Ogni investigatore scarta 2 carte a caso dalla propria mano di partenza.\n\n</string>
+    <string name="devourer_cultists_one">Collocate 1 destino sulla Trama 1a.\n\n</string>
+    <string name="devourer_cultists_two">Collocate 2 destini sulla Trama 1a.\n\n</string>
+    <string name="devourer_cultists_three">Collocate 3 destini sulla Trama 1a.\n\n</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="gathering_no_resolution">Riuscite a malapena a fuggire dalla casa sani e salvi. La donna che avete 
+		incontrato in salotto vi segue oltre la porta d\'ingresso, chiudendola con un tonfo alle sue spalle: “Pazzi! 
+		Avete visto ciò che avete fatto?” Poi spinge una sedia davanti alla porta, incastrandola sotto la maniglia. 
+		“Dobbiamo andarcene da qui. Venite con me e vi dirò ciò che so. Siamo gli unici che possono evitre che la 
+		minaccia nascosta nel sottosuolo si scateni sulla città.” Non siete in condizione di ribattere. Annuendo, seguite 
+		la donna che si allontana dalla vostra veranda e si incammina a grandi passi sotto la pioggia, lungo la strada che 
+		porta a RIver Town.\n
+    \n<b>L\'investigatore capo può scegliere di aggiungere Lita Chantler al suo mazzo.</b></string>
+    <string name="gathering_resolution_one">Annuite e consentite alla donna dai capelli rossi di appiccare il fuoco alle 
+		mura e al pavimento della vostra casa: le fiamme si propagano rapidamente e correte fuori dalla porta d\'ingresso 
+		per evitare di essere coinvolti nell\'incendio, restando sul marciapiede a osservare le lingue di fuoco che consumano 
+		tutto ciò che possedevate. “Venite con me”, dice la donna, “dovete essere informati della minaccia che si annida nel 
+		sottosuolo. Da soli siamo sicuramente condannati… ma insieme possiamo fermarla.”\n
+    \n<b>L\'investigatore capo può scegliere di aggiungere Lita Chantler al suo mazzo.</b></string>
+    <string name="gathering_resolution_two">Vi rifiutate di eseguire gli ordini della fanatica e la sbattete fuori di casa 
+		per evitare che appicchi comunque il fuoco senza permesso. “Pazzi! State commettendo un grosso errore!”, vi avverte. 
+		“Non avete idea della minaccia che si annida nel sottosuolo… del tremendo pericolo che corriamo tutti quanti!”
+        Ancora scossi dagli eventi della nottata, decidete di ascoltare la donna: forse è in grado di fare chiarezza su questi 
+		bizzarri eventi… ma non sembra avere molta fiducia in voi.</string>
+    <string name="gathering_resolution_three">Correte verso il corridoio alla ricerca di un modo per lasciare l\'abitazione, 
+		ma la barriera incandescente vi blocca ancora il passaggio. Siete intrappolati: l\'orda di creature feroci che ha invaso 
+		la casa si avvicina, e non potete fuggire da nessuna parte.\n
+    \n<b>Ogni investigatore che non ha abbandonato è ucciso.</b>\n
+    \n<b>Se l\'investigatore capo è stato ucciso, un investigatore può scegliere di aggiungere Lita Chantler al proprio mazzo.</b></string>
+
+    <string name="midnight_no_resolution">Siete riusciti a ottenere alcune informazioni utili sul culto e sui suoi piani. Potete solo sperare 
+		che siano sufficienti.</string>
+    <string name="midnight_resolution_one">Siete riusciti a ottenere alcune informazioni utili sul culto e sui suoi piani. Potete solo sperare 
+		che siano sufficienti.</string>
+    <string name="midnight_resolution_two">Scoccano dodici rintocchi: è mezzanotte. Il tempo è scaduto e il rituale del culto inizierà a breve. 
+		Siete riusciti a ottenere alcune informazioni utili sul culto e sui suoi piani. Potete solo sperare 
+		che siano sufficienti.</string>
+
+    <string name="devourer_no_resolution">Troppo spaventata per affrontare il suo destino, Lita fugge nella notte: si rende conto di aver 
+		fallito e sa che la vendetta di Umôrdhoth la seguirà ovunque andrà. I tentacoli della creatura si insinuano in tutta Arkham per 
+		cercarla, penetrano nell\'oscurità di ogni angolo, logorando la trama della realtà; ma Lita è introvabile, e così la creatura ancora 
+		oggi attende nell\'ombra, continua a cercare… e a uccidere.\n
+    \n<b>Avete perso la campagna.</b></string>
+    <string name="devourer_resolution_one">Avete impedito al culto di evocare il suo padrone; sebbene non siate sicuri di cosa sarebbe 
+		accaduto se il culto avesse avuto successo, vi solleva il pensiero che, almeno nell\'immediato futuro, Arkham sia al sicuro. 
+		Fate arrestare tutti i cultisti che riuscite a trovare, ma ben pochi cittadini credono al vostro racconto. Forse, tutto sommato, 
+		ve lo siete soltanto immaginato.\n
+    \n<b>Avete vinto la campagna!</b></string>
+    <string name="devourer_resolution_two">Usando armi e forza di volontà, siete in qualche modo in grado di danneggiare Umôrdhoth 
+		quanto basta per ricacciarlo barcollante nella dimensione dalla quale è emerso: luce e calore tornano nei boschi mentre la 
+		massa simile al vuoto viene risucchiata su se stessa, svanendo in un istante. Non siete sicuri che un essere simile possa 
+		essere ucciso, ma per il momento sembra essersi ritirato. Con la scomparsa del loro padrone, i ghoul presenti si arrampicano 
+		nelle fosse aperte del sottosuolo, scappando tra terribili lamenti e grida. Avete sventato una terribile macchinazione, ma lo 
+		scontro ha avuto delle ripercussioni sul vostro corpo e sulla vostra mente; peggio ancora, non potete evitare di sentirvi 
+		insignificanti di fronte ai misteri del mondo. Quali altri orrori esistono nei profondi e oscuri angoli della realtà?\n
+    \n<b>Avete vinto la campagna!</b></string>
+    <string name="devourer_resolution_three">Di fronte a tale orrore, pensate che non ci sia nulla che possiate fare. Non avete che una 
+		possibilità se volete sopravvivere: vi rivoltate contro Lita e la gettate verso la terribile mostruosità, osservando terrorizzati 
+		mentre la vorticante massa simile al vuoto la divora. Lei grida di dolore mentre la vita le viene risucchiata dal corpo. 
+		“Umôrdhoth… Umôrdhoth…” cantilenano i cultisti mentre Lita Chantler svanisce senza lasciare traccia. Per un istante credete che la 
+		creatura si rivolga verso di voi, ma sentite uno dei cultisti dire “Umôrdhoth è un dio giusto che reclama solo i colpevoli e i morti. 
+		Andate e sarete risparmiati.” La massa vorticante scompare, e luce e calore tornano nel bosco. I cultisti sgattaiolano via, 
+		lasciandovi in vita. Gli ultimi istanti di Lita sono scolpiti per sempre nella vostra mente.\n
+    \n<b>Il senso di colpa per aver sacrificato Lita vi tormenterà per il resto della vostra vita. Ogni investigatore cerca nella collezione 
+		1 debolezza Follia casuale e la aggiunge al proprio mazzo.</b>\n
+    \n<b>Avete vinto la campagna, ma l\'atto che avete commesso graverà per sempre sulla vostra coscienza.</b></string>
+</resources>

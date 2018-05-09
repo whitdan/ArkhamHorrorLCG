@@ -635,7 +635,8 @@ public class CampaignLogActivity extends AppCompatActivity {
         /*
             Player cards log
          */
-        if (globalVariables.StrangeSolution == 1 || globalVariables.ArchaicGlyphs == 1) {
+        if (globalVariables.StrangeSolution == 1 || globalVariables.ArchaicGlyphs == 1 || globalVariables
+                .AncientStone > 0 || globalVariables.Doomed > 0) {
             playerHeading.setVisibility(VISIBLE);
             playerLog.setVisibility(VISIBLE);
             StringBuilder playerBuilder = new StringBuilder();
@@ -644,6 +645,17 @@ public class CampaignLogActivity extends AppCompatActivity {
             }
             if (globalVariables.ArchaicGlyphs == 1) {
                 playerBuilder.append(getString(R.string.archaic_glyphs));
+            }
+            if (globalVariables.AncientStone > 0){
+                playerBuilder.append(getString(R.string.ancient_stone));
+                playerBuilder.append(Integer.toString(globalVariables.AncientStone));
+                playerBuilder.append(")\n\n");
+            }
+            if(globalVariables.Doomed > 0){
+                playerBuilder.append(getString(R.string.doomed_log));
+            }
+            if(globalVariables.Doomed > 1){
+                playerBuilder.append(getString(R.string.accursed_fate_log));
             }
             String playerLogText = playerBuilder.toString().trim();
             playerLog.setText(playerLogText);

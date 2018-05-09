@@ -14,6 +14,7 @@
     <string name="german" translatable="false">Deutsch</string>
     <string name="french" translatable="false">Français</string>
     <string name="spanish" translatable="false">Español</string>
+    <string name="italian" translatable="false">Italiano</string>
     <string name="saved_campaigns">Saved Campaigns</string>
     <string name="scenario_not_available">This scenario is not yet available.</string>
     <string name="current_campaign">Current Campaign: </string>
@@ -87,6 +88,9 @@
     <string name="archaic_glyphs">You have translated the glyphs.\n\n</string>
     <string name="charons_obol">Charon\'s Obol</string>
     <string name="charons_obol_in_play">Charon\'s Obol in play</string>
+    <string name="ancient_stone_dialog">You have identified the stone</string>
+    <string name="ancient_stone">You have identified the stone. (</string>
+    <string name="test_difficulty">Skill test difficulty:</string>
 
     <string name="default_chaos_bag">Default</string>
     <string name="chaos_bag_name">Chaos bag name (required)</string>
@@ -242,6 +246,11 @@
     <string name="voice_of_the_messenger">Voice of the Messenger resolved</string>
     <string name="voice_of_the_messenger_heading">Voice of the Messenger</string>
     <string name="voice_of_the_messenger_text">Trauma suffered from Voice of the Messenger:</string>
+    <string name="doomed">Doom approaches</string>
+    <string name="doomed_log">Doom approaches.\n\n</string>
+    <string name="accursed_fate">The hour is nigh</string>
+    <string name="accursed_fate_log">The hour is nigh.\n\n</string>
+    <string name="bell_tolls">The hour of your demise has arrived</string>
 
 
     <!--Shared Preferences - DO NOT TRANSLATE-->

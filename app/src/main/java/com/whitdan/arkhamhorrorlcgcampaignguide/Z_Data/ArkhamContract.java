@@ -58,6 +58,8 @@ public class ArkhamContract {
         public static final String COLUMN_STRANGE_SOLUTION = "strange_solution";
         public static final String COLUMN_ARCHAIC_GLYPHS = "archaic_glyphs";
         public static final String COLUMN_CHARONS_OBOL = "charons_obol";
+        public static final String COLUMN_ANCIENT_STONE = "ancient_stone";
+        public static final String COLUMN_DOOMED = "doomed";
         public static final String COLUMN_CARNEVALE_STATUS = "carnevale_status";
         public static final String COLUMN_CARNEVALE_REWARDS = "carnevale_rewards";
     }

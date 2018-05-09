@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Menu -->
+    <string name="new_campaign">Nuova Campagna</string>
+    <string name="load_campaign">Carica Campagna</string>
+    <string name="standalone_scenarios">Scenari Secondari</string>
+    <string name="settings">Impostazioni</string>
+    <string name="expansions_owned">La Mia Collezione</string>
+    <string name="language">Lingua</string>
+    <string name="saved_campaigns">Campagne Salvate</string>
+    <string name="scenario_not_available">Questo scenario non è al momento disponibile.</string>
+    <string name="current_campaign">Campagna in corso: </string>
+    <string name="current_scenario">Scenario in corso: </string>
+    <string name="campaign_completed">Campagna Completata</string>
+    <string name="delete_campaign">Cancella Campagna</string>
+    <string name="confirm_delete_campaign">Sei sicuro di voler cancellare questa campagna?</string>
+
+
+    <string name="scenario_setup">Preparazione dello Scenario</string>
+    <string name="setup_instructions">Istruzioni per lo Scenario</string>
+    <string name="add_side_story">Aggiungi storia second.</string>
+    <string name="campaign_log">Diario della Campagna</string>
+    <string name="edit_team">Modifica Squadra</string>
+    <string name="scenario_resolution">Risoluzione dello Scenario</string>
+    <string name="main_menu">Menu\nPrincipale</string>
+    <string name="edit_stats">Modifica statistiche degli investigatori</string>
+    <string name="edit_log">Modifica il Diario della Campagna</string>
+
+    <string name="decklist">Lista mazzi</string>
+    <string name="killed">Ucciso</string>
+    <string name="insane">Impazzito</string>
+    <string name="physical_trauma">Traumi Fisici: </string>
+    <string name="mental_trauma">Traumi Mentali: </string>
+    <string name="total_xp">XP Totali: </string>
+    <string name="available_xp">XP Disponibili: </string>
+    <string name="xp_spent">XP Spesi: </string>
+
+    <string name="encounter_sets">Set degli Incontri</string>
+    <string name="locations">Luoghi</string>
+    <string name="set_aside">Mettete da parte</string>
+    <string name="additional_setup">Preparazioni aggiuntive</string>
+    <string name="no_additional">Nessuna ulteriore modifica.</string>
+
+    <!--General-->
+    <string name="back">Indietro</string>
+    <string name="continue_button">Continua</string>
+    <string name="difficulty">Prep. del Sacchetto del Caos</string>
+    <string name="chaos_bag">Sacchetto del Caos</string>
+    <string name="campaign_name">Nome della Campagna (obbligatorio)</string>
+    <string name="saved_investigators">Investigatori Salvati</string>
+    <string name="select_investigators">Seleziona Investigatori</string>
+    <string name="new_investigators">Nuovi Investigatori</string>
+    <string name="current_team">Squadra attuale</string>
+    <string name="finish_setup">Termina la preparazione</string>
+    <string name="next_scenario">Prossimo Scenario</string>
+    <string name="edit_info">Modifica informazioni</string>
+    <string name="player_name">Giocatore</string>
+    <string name="decklist_name">Nome del mazzo</string>
+    <string name="decklist_url">Link al mazzo</string>
+    <string name="start_campaign">Inizia Campagna</string>
+    <string name="confirm_start_campaign">Salvare e iniziare la campagna?</string>
+    <string name="confirm_changes">Conferma i cambiamenti</string>
+    <string name="okay">OK</string>
+    <string name="cancel">Annulla</string>
+    <string name="nothing">Nulla da mostrare.</string>
+
+    <string name="campaign_finished">Campagna terminata</string>
+    <string name="finish_campaign">Termina la Campagna</string>
+    <string name="finish_delete_campaign">Termina e cancella la Campagna</string>
+    <string name="finish_save_campaign">Termina e salva la Campagna</string>
+
+    <string name="player_cards">Carte Giocatore</string>
+    <string name="strange_solution_dialog">Hai identificato la soluzione.</string>
+    <string name="strange_solution">Hai identificato la soluzione.\n\n</string>
+    <string name="archaic_glyphs_dialog">Hai tradotto i glifi</string>
+    <string name="archaic_glyphs">Hai tradotto i glifi.\n\n</string>
+
+    <string name="default_chaos_bag">Base</string>
+    <string name="chaos_bag_name">Nome del Sacchetto (obbligatorio)</string>
+    <string name="campaign_chaos_tokens">Aggiungi automaticamente i segnalini del Caos della campagna</string>
+    <string name="campaign_chaos_tokens_list">+ segnalini del Caos della campagna</string>
+    <string name="select_chaos_bag">Seleziona Sacchetto del Caos</string>
+    <string name="custom_chaos_bag">Sacchetto del Caos personalizzato</string>
+    <string name="maximum_chaos_bag">La capacità massima del sacchetto è di 50 segnalini.</string>
+    <string name="save_bag">Salva Sacchetto</string>
+    <string name="must_token">Devi selezionare almeno un segnalino del Caos.</string>
+    <string name="must_bag">Devi inserire un nome per il sacchetto del Caos.</string>
+    <string name="delete_bag">Cancella Sacchetto del Caos</string>
+    <string name="confirm_delete_bag">Sei sicuro di voler cancellare questo sacchetto del caos?</string>
+
+
+    <!--Toast messages-->
+    <string name="must_option">Devi selezionare un\'opzione.</string>
+    <string name="must_investigator">Devi selezionare un investigatore.</string>
+    <string name="must_campaign_name">Devi inserire un nome per la campagna.</string>
+    <string name="must_scenario_setup">Devi affrontare la preparazione dello scenario.</string>
+    <string name="must_replace_investigators">Ogni investigatore ucciso o impazzito deve essere rimosso o sostituito.</string>
+    <string name="must_resolution">Devi selezionare una risoluzione.</string>
+    <string name="must_lead_investigator">Devi selezionare un investigatore capo.</string>
+    <string name="must_engine_car">Devi selezionare l\'investigatore che è entrato nella locomotiva.</string>
+    <string name="must_act_ended">Devi selezionare il Capitolo in cui è terminato lo scenario.</string>
+    <string name="already_completed_scenario">Hai già completato questo scenario.</string>
+    <string name="already_completed_campaign">Hai già completato questa campagna.</string>
+    <string name="not_enough_xp_one">Non hai abbastanza XP (costo: 1 per investigatore).</string>
+    <string name="not_enough_xp_three">Non hai abbastanza XP (costo: 3 per investigatore)</string>
+    <string name="cannot_back">Non puoi tornare indietro.</string>
+
+
+    <!--Resolution screen-->
+    <string name="investigators_defeated">Investigatori Sconfitti</string>
+    <string name="resigned">Abband.</string>
+    <string name="not_defeated">Non sconfitti</string>
+    <string name="defeated">Sconfitti</string>
+    <string name="defeated_damage">Sconfitto da danni</string>
+    <string name="defeated_horror">Sconfitto da orrori</string>
+    <string name="select_resolution">Seleziona una risoluzione</string>
+    <string name="no_r">Nessuna</string>
+    <string name="r_one">R1</string>
+    <string name="r_two">R2</string>
+    <string name="r_three">R3</string>
+    <string name="r_four">R4</string>
+    <string name="no_resolution">Nessuna Risoluzione</string>
+    <string name="resolution_one">Risoluzione Uno</string>
+    <string name="resolution_two">Risoluzione Due</string>
+    <string name="resolution_three">Risoluzione Tre</string>
+    <string name="resolution_four">Risoluzione Quattro</string>
+    <string name="victory_display">Galleria delle Vittorie: </string>
+    <string name="finish_scenario">Termina Scenario</string>
+    <string name="select_lead_investigator">Seleziona Investigatore Capo</string>
+    <string name="confirm_finish_scenario">Terminare lo scenario e salvare la campagna?</string>
+    <string name="investigator_weaknesses">Debolezze dell\'investigatore</string>
+
+
+    <!--Difficulties-->
+    <string name="easy">Facile</string>
+    <string name="standard">Standard</string>
+    <string name="hard">Diffic.</string>
+    <string name="expert">Esperto</string>
+    <string name="scenario_card">Carta Scenario</string>
+    <string name="current_setup">Impostazioni attuali</string>
+    <string name="draw_token">Pesca segnalino</string>
+    <string name="add_token">Aggiungi</string>
+    <string name="skull">Teschio</string>
+    <string name="cultist">Cultista</string>
+    <string name="tablet">Tavoletta</string>
+    <string name="elder_thing">Antico</string>
+    <string name="tentacles">Tentacoli</string>
+    <string name="elder_sign">Segno degli Antichi</string>
+
+
+
+
+    <!--Investigator names-->
+    <string-array name="investigators">
+        <item>None</item>
+        <item>Roland Banks</item>
+        <item>Daisy Walker</item>
+        <item>Skids O\'Toole</item>
+        <item>Agnes Baker</item>
+        <item>Wendy Adams</item>
+        <item>Zoey Samaras</item>
+        <item>Rex Murphy</item>
+        <item>Jenny Barnes</item>
+        <item>Jim Culver</item>
+        <item>\"Ashcan\" Pete</item>
+        <item>Mark Harrigan</item>
+        <item>Minh Thi Phan</item>
+        <item>Sefina Rousseau</item>
+        <item>Akachi Onyele</item>
+        <item>William Yorick</item>
+        <item>Lola Hayes</item>
+        <item>Marie Lambeau</item>
+        <item>Norman Withers</item>
+        <item>Carolyn Fern</item>
+        <item>Silas Marsh</item>
+        <item>Leo Anderson</item>
+        <item>Ursula Downs</item>
+        <item>Finn Edwards</item>
+        <item>Father Mateo</item>
+        <item>Calvin Wright</item>
+    </string-array>
+    <string name="roland_banks">Roland Banks</string>
+    <string name="daisy_walker">Daisy Walker</string>
+    <string name="skids_otoole">Skids O\'Toole</string>
+    <string name="agnes_baker">Agnes Baker</string>
+    <string name="wendy_adams">Wendy Adams</string>
+    <string name="zoey_samaras">Zoey Samaras</string>
+    <string name="rex_murphy">Rex Murphy</string>
+    <string name="jenny_barnes">Jenny Barnes</string>
+    <string name="jim_culver">Jim Culver</string>
+    <string name="ashcan_pete">\"Ashcan\" Pete</string>
+    <string name="mark_harrigan">Mark Harrigan</string>
+    <string name="minh_thi_phan">Minh Thi Phan</string>
+    <string name="sefina_rousseau">Sefina Rousseau</string>
+    <string name="akachi_onyele">Akachi Onyele</string>
+    <string name="william_yorick">William Yorick</string>
+    <string name="lola_hayes">Lola Hayes</string>
+    <string name="marie_lambeau">Marie Lambeau</string>
+    <string name="norman_withers">Norman Withers</string>
+
+    <string name="cover_up">Insabbiamento non risolto in gioco</string>
+    <string name="hospital_debts">Debiti Ospedalieri non risolta in gioco</string>
+    <string name="smite_the_wicked">Punire i Perversi non risolta in gioco</string>
+    <string name="searching_for_izzie">Alla Ricerca di Izzie non risolta in gioco</string>
+    <string name="angered_spirits">Spiriti Infuriati non risolta in gioco</string>
+
+</resources>
