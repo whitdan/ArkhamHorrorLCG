@@ -87,8 +87,7 @@
     <string name="inv_two_read_act">Ermittler 2 hat Akt II gelesen.\n\n</string>
     <string name="inv_three_read_act">Ermittler 3 hat Akt II gelesen.\n\n</string>
     <string name="inv_four_read_act">Ermittler 4 hat Akt II gelesen.\n\n</string>
-    <string name="carcosa_merged"> Das Reich von Carcosa ist mit unserem verschmolzen und Hastur regiert über
-        beide.\n\n</string>
+    <string name="carcosa_merged">Das Reich von Carcosa ist mit unserem verschmolzen und Hastur regiert über beide.\n\n</string>
     <string name="path_below">Die Ermittler haben den unteren Pfad geöffnet.\n\n</string>
     <string name="path_above">Die Ermittler haben den oberen Pfad geöffnet.\n\n</string>
     <string name="prevented_hastur">Die Ermittler haben verhindert, dass Hastur seinem Gefängnis entkommt.\n\n</string>
@@ -129,14 +128,11 @@
 
     <!--Chaos bag-->
     <string name="curtain_skull_one">-1 (-3 stattdessen, falls du 3 oder mehr Horror hast).</string>
-    <string name="curtain_skull_two">-X, wobei X die Anzahl deiner Horrormarker ist. (Falls du keinen Horror hast, ist X
-        gleich 1.)</string>
+    <string name="curtain_skull_two">-X, wobei X die Anzahl deiner Horrormarker ist. (Falls du keinen Horror hast, ist X gleich 1.)</string>
     <string name="curtain_combined_one">-4. Falls auf deinem Ort mindestens 1 Horror liegt, nimm 1 Horror (aus dem
-        Markervorrat). Falls kein Horror auf deinem Ort liegt, platziere stattdessen 1 Horror aus dem Markervorrat
-        darauf.</string>
+        Markervorrat). Falls kein Horror auf deinem Ort liegt, platziere stattdessen 1 Horror aus dem Markervorrat darauf.</string>
     <string name="curtain_combined_two">-5. Falls auf deinem Ort mindestens 1 Horror liegt, nimm 1 Horror (aus dem
-        Markervorrat). Falls kein Horror auf deinem Ort liegt, platziere stattdessen 1 Horror aus dem Markervorrat
-        darauf.</string>
+        Markervorrat). Falls kein Horror auf deinem Ort liegt, platziere stattdessen 1 Horror aus dem Markervorrat darauf.</string>
 
     <string name="king_skull_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere 1 Verderben auf
         einen <b><i>Verrückt</i></b>-Gegner im Spiel.</string>
@@ -147,20 +143,15 @@
     <string name="king_tablet_one">-4. Falls die Probe misslingt, nimm 1 Horror.</string>
     <string name="king_tablet_two">-4. Nimm 1 Horror.</string>
     <string name="king_thing_one">-X. X ist der Schleierwert deines Ortes.</string>
-    <string name="king_thing_two">-X. X ist der Schleierwert deines Ortes. Falls die Probe misslingt, nimm 1
-        Schaden.</string>
+    <string name="king_thing_two">-X. X ist der Schleierwert deines Ortes. Falls die Probe misslingt, nimm 1 Schaden.</string>
 
-    <string name="echoes_skull_one">-X. X ist die höchste Anzahl an Verderbensmarkern auf einem Gegner im
-        Spiel.</string>
+    <string name="echoes_skull_one">-X. X ist die höchste Anzahl an Verderbensmarkern auf einem Gegner im Spiel.</string>
     <string name="echoes_skull_two">-X. X ist die Gesamtanzahl an Verderbensmarkern auf allen Gegnern im Spiel.</string>
-    <string name="echoes_cultist_one">-2. Falls die Probe misslingt, platziere 1 Verderbensmarker auf den
-        nächstgelegenen Gegner.</string>
+    <string name="echoes_cultist_one">-2. Falls die Probe misslingt, platziere 1 Verderbensmarker auf den nächstgelegenen Gegner.</string>
     <string name="echoes_cultist_two">-4. Platziere 1 Verderbensmarker auf den nächstgelegenen Gegner.</string>
-    <string name="echoes_tablet_one">-2. Falls die Probe misslingt, lege eine zufällige Karte von deiner Hand
-        ab.</string>
+    <string name="echoes_tablet_one">-2. Falls die Probe misslingt, lege eine zufällige Karte von deiner Hand ab.</string>
     <string name="echoes_tablet_two">-4. Lege eine zufällige Karte von deiner Hand ab.</string>
-    <string name="echoes_thing_one">-2. Falls die Probe misslingt und sich ein Gegner an deinem Ort befindet, nimm 1
-        Horror.</string>
+    <string name="echoes_thing_one">-2. Falls die Probe misslingt und sich ein Gegner an deinem Ort befindet, nimm 1 Horror.</string>
     <string name="echoes_thing_two">-4. Falls sich ein Gegner an deinem Ort befindet, nimm 1 Horror.</string>
 
     <string name="unspeakable_skull_one">-1. Falls die Probe misslingt, bestimme zufällig einen der beiseitegelegten
@@ -169,17 +160,14 @@
         einen der beiseitegelegten <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn
         anzusehen. (Nur einmal pro Probe.)</string>
     <string name="unspeakable_cultist_one">-X. X ist die Anzahl deines Horrors.</string>
-    <string name="unspeakable_cultist_two">-X. X ist die Anzahl deines Horrors. Falls die Probe misslingt, nimm 1
-        Horror.</string>
+    <string name="unspeakable_cultist_two">-X. X ist die Anzahl deines Horrors. Falls die Probe misslingt, nimm 1 Horror.</string>
     <string name="unspeakable_tablet_one">-X. X ist der Grund-Schleierwert deines Ortes.</string>
     <string name="unspeakable_tablet_two">-X. X ist der Grund-Schleierwert deines Ortes. Falls die Probe misslingt,
         nimm 1 Horror.</string>
     <string name="unspeakable_thing_one">0. Bestimme entweder zufällig einen der beiseitegelegten
-        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck ohne ihn anzusehen, oder diese Probe
-        misslingt automatisch.</string>
+        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck ohne ihn anzusehen, oder diese Probe misslingt automatisch.</string>
     <string name="unspeakable_thing_two">0. Bestimme entweder zufällig einen der beiseitegelegten
-        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck ohne ihn anzusehen, oder diese Probe
-        misslingt automatisch.</string>
+        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck ohne ihn anzusehen, oder diese Probe misslingt automatisch.</string>
 
     <string name="phantom_skull_one">–X. X ist die Anzahl an Verderbensmarkern im Spiel (maximal 5).</string>
     <string name="phantom_skull_two">–X. X ist die Anzahl an Verderbensmarkern im Spiel.</string>
@@ -187,48 +175,30 @@
         <b><i>Byakhee</i></b> im Spiel einmal in Richtung des nächstgelegenen Ermittlers.</string>
     <string name="phantom_cultist_two">–2. bewege jedes nicht in einen Kampf verwickelte <b><i>Byakhee</i></b> im Spiel
         einmal in Richtung des nächstgelegenen Ermittlers.</string>
-    <string name="phantom_tablet_one">–3. Hebe die Effekte und Symbole jeder Fertigkeitskarte auf, die zu dieser Probe
-        beigetragen worden ist.</string>
-    <string name="phantom_tablet_two">–4. Hebe die Effekte und Symbole jeder Fertigkeitskarte auf, die zu dieser Probe
-        beigetragen worden ist.</string>
-    <string name="phantom_thing_one">–2. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen
-        ist, 1 Ressource.</string>
-    <string name="phantom_thing_two">–3. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen
-        ist, 1 Ressource.</string>
+    <string name="phantom_tablet_one">–3. Hebe die Effekte und Symbole jeder Fertigkeitskarte auf, die zu dieser Probe beigetragen worden ist.</string>
+    <string name="phantom_tablet_two">–4. Hebe die Effekte und Symbole jeder Fertigkeitskarte auf, die zu dieser Probe beigetragen worden ist.</string>
+    <string name="phantom_thing_one">–2. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen ist, 1 Ressource.</string>
+    <string name="phantom_thing_two">–3. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen ist, 1 Ressource.</string>
 
     <string name="pallid_skull_one">–X. X ist die Anzahl der Orte, die du vom Startort entfernt bist (max. 5).</string>
     <string name="pallid_skull_two">–X. X ist die Anzahl der Orte, die du vom Startort entfernt bist.</string>
-    <string name="pallid_cultist_one">–2. Falls dieser Marker während eines Angriffs aufgedeckt wird und die Probe
-        gelingt, fügt der Angriff 1 Schaden weniger zu.</string>
-    <string name="pallid_cultist_two">–3. Falls dieser Marker während eines Angriffs aufgedeckt wird und die Probe
-        gelingt, fügt der Angriff keinen Schaden zu.</string>
+    <string name="pallid_cultist_one">–2. Falls dieser Marker während eines Angriffs aufgedeckt wird und die Probe gelingt, fügt der Angriff 1 Schaden weniger zu.</string>
+    <string name="pallid_cultist_two">–3. Falls dieser Marker während eines Angriffs aufgedeckt wird und die Probe gelingt, fügt der Angriff keinen Schaden zu.</string>
     <string name="pallid_tablet_one">–2. Falls sich ein spielbereiter <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner
         an deinem Ort befindet, greift er dich an <i>(falls es mehr als einen gibt, wähle einen von ihnen)</i>.</string>
-    <string name="pallid_tablet_two">–3. Falls sich ein <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner an deinem Ort
-        befindet, wird er spielbereit gemacht und greift dich an <i>(falls es mehr als einen gibt, wähle einen von
-        ihnen)</i>.</string>
-    <string name="pallid_thing_one">–2. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den Ablagestapel
-        nach einem <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner und ziehe ihn.</string>
-    <string name="pallid_thing_two">–4. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den Ablagestapel
-        nach einem <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner und ziehe ihn.</string>
+    <string name="pallid_tablet_two">–3. Falls sich ein <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner an deinem Ort befindet, wird er spielbereit gemacht und greift dich an <i>(falls es mehr als einen gibt, wähle einen von ihnen)</i>.</string>
+    <string name="pallid_thing_one">–2. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den Ablagestapel nach einem <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner und ziehe ihn.</string>
+    <string name="pallid_thing_two">–4. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den Ablagestapel nach einem <b><i>Ghul</i></b>- oder <b><i>Spuk</i></b>-Gegner und ziehe ihn.</string>
 
-    <string name="black_stars_skull_one">–X. X ist die höchste Anzahl an Verderbensmarkern auf einer Agenda im
-        Spiel.</string>
-    <string name="black_stars_skull_two">–X. X ist die Gesamtanzahl an Verderbensmarkern auf allen Agenden im
-        Spiel.</string>
-    <string name="black_stars_cultist_one">Enthülle einen weiteren Marker. Falls dieser Marker während eines Angriffs
-        oder eines Entkommen-Versuchs gegen einen Gegner mit Verderben enthüllt wird, misslingt diese Probe stattdessen
-        automatisch.</string>
-    <string name="black_stars_cultist_two">Enthülle einen weiteren Marker. Falls sich ein Gegner mit Verderben an deinem
-        Ort befindet, misslingt die Probe stattdessen automatisch.</string>
-    <string name="black_stars_tablet_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere 1
-        Verderbensmarker auf jede Agenda.</string>
-    <string name="black_stars_tablet_two">Enthülle einen weiteren Marker. Falls die Probe nicht um mindestens 1
-        gelingt, platziere 1 Verderbensmarker auf jede Agenda.</string>
+    <string name="black_stars_skull_one">–X. X ist die höchste Anzahl an Verderbensmarkern auf einer Agenda im Spiel.</string>
+    <string name="black_stars_skull_two">–X. X ist die Gesamtanzahl an Verderbensmarkern auf allen Agenden im Spiel.</string>
+    <string name="black_stars_cultist_one">Enthülle einen weiteren Marker. Falls dieser Marker während eines Angriffs oder eines Entkommen-Versuchs gegen einen Gegner mit Verderben enthüllt wird, misslingt diese Probe stattdessen automatisch.</string>
+    <string name="black_stars_cultist_two">Enthülle einen weiteren Marker. Falls sich ein Gegner mit Verderben an deinem Ort befindet, misslingt die Probe stattdessen automatisch.</string>
+    <string name="black_stars_tablet_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere 1 Verderbensmarker auf jede Agenda.</string>
+    <string name="black_stars_tablet_two">Enthülle einen weiteren Marker. Falls die Probe nicht um mindestens 1 gelingt, platziere 1 Verderbensmarker auf jede Agenda.</string>
     <string name="black_stars_thing_one">–2. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den
         Ablagestapel nach einem <b><i>Byakhee</i></b>-Gegner und ziehe ihn.</string>
-    <string name="black_stars_thing_two">–3. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den
-        Ablagestapel nach einem <b><i>Byakhee</i></b>-Gegner und ziehe ihn.</string>
+    <string name="black_stars_thing_two">–3. Falls die Probe misslingt, durchsuche das Begegnungsdeck und den Ablagestapel nach einem <b><i>Byakhee</i></b>-Gegner und ziehe ihn.</string>
 
     <string name="dim_skull_one">–2 (–4 stattdessen, falls du keine verbliebene geistige Gesundheit hast).</string>
     <string name="dim_skull_two">–X. X ist die Anzahl deines Horrors.</string>
@@ -744,25 +714,25 @@
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
         ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jede dieser Vorteilskarten werden 2 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und ohne sie anzusehen unter die
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden ohne sie anzusehen gemischt und unter die
         Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_two">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
         ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jede dieser Vorteilskarten werden 3 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und ohne sie anzusehen unter die
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden ohne sie anzusehen gemischt und unter die
         Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_three">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
         ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jede dieser Vorteilskarten werden 4 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und ohne sie anzusehen unter die
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden ohne sie anzusehen gemischt und unter die
         Szenarioübersichtskarte gelegt.</string>
     <string name="king_additional_four">Die 5 <i><b>Unbeteiligter</b></i>-Vorteilskarten (Constance Dumaine, Jordan
         Perry, Ishimaru Haruko, Sebastien Moreau und Ashleigh Clarke) werden gemischt und jeweils eine zufällige von
         ihnen an jeden Ort mit Ausnahme der Eingangshalle gelegt. Auf jede dieser Vorteilskarten werden 5 Hinweise
         platziert.\n
-    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden gemischt und ohne sie anzusehen unter die
+    \nDie 5 Handlungskarten „Krankmachende Wirklichkeit“ werden ohne sie anzusehen gemischt und unter die
         Szenarioübersichtskarte gelegt.</string>
 
     <string name="echoes_sets">Widerhall aus der Vergangenheit, Kult des gelben Zeichens, Wahnvorstellungen,
@@ -854,22 +824,18 @@
     \nJeder Ermittler beginnt das Spiel in Montparnasse.\n</string>
     <string name="phantom_set_aside">Der Organist und alle verbliebenen Exemplare der Schwäche Verlorene
         Seele.\n</string>
-    <string name="phantom_additional_one">Die herausgesuchten Begegnungssets nach den beiden Exemplaren von
-        Zwillingssonnen und allen drei Exemplaren von Hetzender Schatten durchsuchen und diese Karten aus dem Spiel
-        entfernen.\n
+    <string name="phantom_additional_one">Beide Exemplaren von Zwillingssonnen und alle drei Exemplaren von Hetzender
+        Schatten werden aus dem Spiel entfernt.\n
     \nVerwende Szene 1 — „Die Pariser Verschwörung (V. I)“.</string>
-    <string name="phantom_additional_two">Die herausgesuchten Begegnungssets nach den beiden Exemplaren von
-        Aufgang der schwarzen Sterne und den beiden Exemplaren von Falsche Fährte durchsuchen und diese Karten aus dem
-        Spiel entfernen.\n
+    <string name="phantom_additional_two">Beide Exemplare von Aufgang der schwarzen Sterne und beiden Exemplare von
+        Falsche Fährte werden aus dem Spiel entfernt.\n
     \nVerwende Szene 1 — „Die Pariser Verschwörung (V. II)“.</string>
-    <string name="phantom_additional_one_jordan">Die herausgesuchten Begegnungssets nach den beiden Exemplaren von
-        Zwillingssonnen und allen drei Exemplaren von Hetzender Schatten durchsuchen und diese Karten aus dem Spiel
-        entfernen.\n
+    <string name="phantom_additional_one_jordan">Beide Exemplaren von Zwillingssonnen und alle drei Exemplaren von
+        Hetzender Schatten werden aus dem Spiel entfernt.\n
     \nVerwende Szene 1 — „Die Pariser Verschwörung (V. I)“.\n
     \nJeder Ermittler beginnt das Spiel mit 3 zusätzlichen Ressourcen.</string>
-    <string name="phantom_additional_two_jordan">Die herausgesuchten Begegnungssets nach den beiden Exemplaren von
-        Aufgang der schwarzen Sterne und den beiden Exemplaren von Falsche Fährte durchsuchen und diese Karten aus dem
-        Spiel entfernen.\n
+    <string name="phantom_additional_two_jordan">Beide Exemplare von Aufgang der schwarzen Sterne und beiden Exemplare
+        von Falsche Fährte werden aus dem Spiel entfernt.\n
     \nVerwende Szene 1 — „Die Pariser Verschwörung (V. II)“.\n
     \nJeder Ermittler beginnt das Spiel mit 3 zusätzlichen Ressourcen.</string>
 
@@ -900,7 +866,23 @@
         sobald die Karte enthüllt wird.)</i>\n</string>
     <string name="pallid_set_aside">Der Träger der Schwäche Der Mann mit der Bleichen Maske durchsucht sein Deck nach
         dieser Karte und legt sie als nicht im Spiel befindlich beiseite.\n</string>
-    <string name="pallid_additional">Wähle einen Katakombenort, der zum Startort benachtbart ist, und enthülle ihn.</string>
+    <string name="pallid_additional">Wähle einen Katakombenort, der zum Startort benachtbart ist, und enthülle
+        ihn.</string>
+    <string name="pallid_rules_heading">Benachbarte Orte in den Katakomben</string>
+    <string name="pallid_rules">Während dieses Szenarios werden die Orte in einem vorgegebenen Muster ausgelegt. Sobald
+        Orte enthüllt werden, werden neue Orte aus dem Katakombendeck rechts oder links bzw. über oder unter dem schon
+        bestehenden Ort angelegt. Ein Ort, der links oder rechts bzw. über oder unter einem anderen Ort ins Spiel
+        gebracht wird, sollte auf die beschriebene Art neben den Ort gelegt werden, sodass sich keine anderen Orte
+        zwischen den beiden Orten befinden.\n
+    \nEin Ort, der sich so neben einem anderen Ort befindet, gilt als <b>benachbart</b>. Orte sind nur orthogonal
+        benachbart (links, rechts, oben, unten), jedoch nicht diagonal. Während dieses Szenarios gelten benachbarte Orte
+        als miteinander verbunden.\n
+    \nOrte können nicht an einer Stelle ins Spiel gebracht werden, an der sich bereits ein anderer Ort befindet. Falls
+        die Spieler die Auswahl haben, an welcher Stelle sie einen Ort aus dem Katakombendeck ins Spiel bringen wollen,
+        und eine dieser Stellen bereits durch einen schon bestehenden Ort belegt ist, kann diese Stelle nicht gewählt
+        werden. Es muss eine noch nicht belegte Stelle gewählt werden. Falls alle angegebenen Stellen bereits durch
+        bestehende Orte belegt sind, misslingt der <b>Erzwungen</b>-Effekt und es wird kein neuer Katakombenort ins
+        Spiel gebracht.</string>
 
     <string name="black_stars_sets">Die Schwarzen Sterne gehen auf, Böse Vorzeichen, Byakhee, Bewohner von Carcosa, Der
         Fremde, Dunkler Kult und Böses aus uralter Zeit.</string>
@@ -936,6 +918,24 @@
     <string name="black_stars_additional_ashleigh">\nWährend dieses Szenarios darf ein Ermittler als freie ausgelöste
         Fähigkeit 1 Verderben von einer Agenda im Spiel entfernen. (Nur einmal pro Spiel für die gesamte
         Gruppe.)</string>
+    <string name="black_stars_rules_heading">Spiel mit zwei Agenden</string>
+    <string name="black_stars_rules">Während dieses Szenarios gibt es zwei Agendadecks. Eines steht für die
+        Möglichkeiten, die du und deine Verbündeten haben, den Weg nach Carcosa zu öffnen, und führt zu einer der beiden
+        beiseitegelegten Szenenkarten. Das andere steht für die Möglichkeiten, die Hastur hat, in unsere Welt zu
+        flüchten, und für das Verderben, das er über die Erde bringen würde.\n
+    \nIn diesem Szenario müssen die Spieler, solange zwei Agendadecks im Spiel sind, folgende zusätzliche Regeln
+        beachten:\n
+    \n\u2022 Immer wenn 1 oder mehr Verderben auf „die aktuelle Agenda“ platziert wird, dürfen die Spieler entscheiden,
+        auf welche der beiden Agenden sie dieses Verderben platzieren.\n
+    \n\u2022 Verderben auf anderen Karten als den beiden Agenden (z.B. auf Gegnern, Orten oder Vorteilskarten) zählt
+        zum Verderbensschwellenwert <b>beider</b> Agenden mit.\n
+    \n\u2022 Sobald eine Agenda vorrückt, <b>wird das Verderben auf der anderen Agenda nicht entfernt</b>b>. Alles
+        andere Verderben im Spiel wird entfernt.\n
+    \n\u2022 Falls der Verderbensschwellenwert beider Agenden während des Schritts „Überprüfung des
+        Verderbensschwellenwertes“ in der Mythosphase erreicht wird, wird nur eine Agenda gewählt, um diese vorzurücken.
+        Wenn das Vorrücken dieser Agenda vollständig abgeschlossen ist, wird dann der Verderbensschwellenwert der
+        anderen Agenda überprüft und es wird vorgerückt, falls der Verderbensschwellenwert immer noch erreicht
+        ist.</string>
 
     <string name="dim_sets">Finsteres Carcosa, Wahnvorstellungen, Kult des Gelben Zeichens, Bewohner von Carcosa,
         Anhänger von Hastur und Lähmende Angst.</string>
@@ -969,9 +969,10 @@
     <string name="dim_doom_two">\nPlatziere 2 Verderben auf Agenda 1a.\n</string>
     <string name="dim_doom_three">\nPlatziere 1 Verderben auf Agenda 1a.\n</string>
     <string name="dim_additional">\nJeder Ermittler nimmt direkten Horror in Höhe der Hälfte seiner geistigen
-        Gesundheit (abgerundet, kann nicht verhindert werden).\n
-    \nIn dem verzerrten und Wahnsinn auslösenden Reich von Carcosa ist der Verlust von geistiger Gesundheit
-        unausweichlich. Aber der Schaden, den die Ermittler an Verstand und Seele nehmen, beendet nicht ihre
+        Gesundheit (abgerundet, kann nicht verhindert werden).\n</string>
+    <string name="dim_rules_heading">Geistige Gesundheit im Reich von Carcosa</string>
+    <string name="dim_rules">In dem verzerrten und Wahnsinn auslösenden Reich von Carcosa ist der Verlust von geistiger
+        Gesundheit unausweichlich. Aber der Schaden, den die Ermittler an Verstand und Seele nehmen, beendet nicht ihre
         Ermittlungen. <b>Während dieses Szenarios werden Ermittler nicht dadurch besiegt, dass sie Horror in Höhe ihrer
         geistigen Gesundheit (oder darüber hinaus) erlitten haben.</b> Die Ermittler dürfen Horror über ihre geistige
         Gesundheit hinaus nehmen. Solange ein Ermittler mehr Horror genommen hat als er über geistige Gesundheit
@@ -1288,9 +1289,8 @@
         hast, deckst du den Stacheldraht ab, kletterst über den Zaun und fängst auf der anderen Seite an zu rennen.\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden 2
             Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
-    <string
-        name="unspeakable_resolution_onyx"><b>Es muss ein neuer Ermittler gewählt werden, der für den Rest der Kampagne
-            die Schwäche Spange aus Schwarzem Onyx in sein Deck aufnimmt.</b></string>
+    <string name="unspeakable_resolution_onyx"><b>Es muss ein neuer Ermittler gewählt werden, der für den Rest der
+        Kampagne die Schwäche Spange aus Schwarzem Onyx in sein Deck aufnimmt.</b></string>
 
     <string name="phantom_no_resolution">Du verirrst dich in der Stadt, während du um dein Leben rennst. Deine Füße
         bewegen sich wie von alleine. Das Schlagen sehniger Flügel und das Kreischen der Kreaturen über dir treibt dich

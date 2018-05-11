@@ -13,7 +13,8 @@
     <!--<string name="english" translatable="false">English</string>
     <string name="german" translatable="false">Deutsch</string>
     <string name="french" translatable="false">Français</string>
-    <string name="spanish" translatable="false">Español</string>-->
+    <string name="spanish" translatable="false">Español</string>
+    <string name="italian" translatable="false">Italiano</string>-->
     <string name="saved_campaigns">Gespeicherte Kampagnen</string>
     <string name="scenario_not_available">Dieses Szenario ist noch nicht verfügbar.</string>
     <string name="current_campaign">Aktuelle Kampagne: </string>
@@ -73,17 +74,23 @@
     <string name="okay">OK</string>
     <string name="cancel">Abbrechen</string>
     <string name="nothing">Hier steht noch nichts.</string>
+    <string name="notes">Notizen</string>
 
     <string name="campaign_finished">Kampagne abgeschlossen</string>
     <string name="finish_campaign">Kampagne beenden</string>
     <string name="finish_delete_campaign">Kampagne beenden und löschen</string>
     <string name="finish_save_campaign">Kampagne beenden und speichern</string>
 
-    <string name="player_cards">Spielerkarten</string>
+    <string name="player_cards">Spieler-\nkarten</string>
     <string name="strange_solution_dialog">Ein Ermittler hat die Lösung identifiziert</string>
     <string name="strange_solution">Du hast die Lösung identifiziert.\n\n</string>
     <string name="archaic_glyphs_dialog">Ein Ermittler hat die Glyphen übersetzt</string>
     <string name="archaic_glyphs">Du hast die Glyphen übersetzt.\n\n</string>
+    <string name="charons_obol">Charons Obolus</string>
+    <string name="charons_obol_in_play">Ermittler mit Charons Obolus im Spiel:</string>
+    <string name="ancient_stone_dialog">Ein Ermittler hat den Stein identifiziert</string>
+    <string name="ancient_stone">Du hast den Stein identifiziert. (</string>
+    <string name="test_difficulty">Schwierigkeit der Probe:</string>
 
     <string name="default_chaos_bag">Standard</string>
     <string name="chaos_bag_name">Name des Chaosbeutels (erforderlich)</string>
@@ -104,8 +111,7 @@
     <string name="must_investigator">Du musst einen Ermittler auswählen.</string>
     <string name="must_campaign_name">Du musst einen Namen für die Kampagne eingeben.</string>
     <string name="must_scenario_setup">Du musst noch die Einleitung lesen.</string>
-    <string name="must_replace_investigators">Alle getöteten und wahnsinnigen Ermittler müssen entfernt oder ersetzt
-        werden.</string>
+    <string name="must_replace_investigators">Alle getöteten und wahnsinnigen Ermittler müssen entfernt oder ersetzt werden.</string>
     <string name="must_resolution">Du musst eine Auflösung wählen.</string>
     <string name="must_lead_investigator">Du musst einen Ermittlungsleiter wählen.</string>
     <string name="must_engine_car">Du musst eingeben, welcher Ermittler die Lokomotive betreten hat.</string>
@@ -115,6 +121,7 @@
     <string name="not_enough_xp_one">Du hast nicht genug EP (Kosten: 1 pro Ermittler).</string>
     <string name="not_enough_xp_three">Du hast nicht genug EP (Kosten: 3 pro Ermittler).</string>
     <string name="cannot_back">Du kannst nicht zurückgehen.</string>
+
 
     <!--Resolution screen-->
     <string name="investigators_defeated">Besiegte Ermittler</string>
@@ -138,12 +145,12 @@
     <string name="finish_scenario">Szenario beenden</string>
     <string name="select_lead_investigator">Ermittlungsleiter wählen</string>
     <string name="confirm_finish_scenario">Szenario beenden und Kampagne speichern?</string>
-    <string name="investigator_weaknesses">Schwächen\nder Ermittler</string>
+    <string name="investigator_weaknesses">Schwächen d. Ermittler</string>
 
 
     <!--Difficulties-->
     <string name="easy">Leicht</string>
-    <string name="standard">Normal</string>
+    <string name="standard">Norm.</string>
     <string name="hard">Schwer</string>
     <string name="expert">Experte</string>
     <string name="scenario_card">Szenariokarte</string>
@@ -151,7 +158,9 @@
     <!--<string name="one" translatable="false">1</string>
     <string name="two" translatable="false">2</string>
     <string name="three" translatable="false">3</string>-->
-    <string name="draw_token">Ziehe</string>
+    <string name="seal">Siegel</string>
+    <string name="seal_tokens">Chaosmarker versiegeln</string>
+    <string name="draw_token">Ziehen</string>
     <string name="add_token">Füge</string>
     <!--<string name="plus_two" translatable="false">+2</string>
     <string name="plus_one" translatable="false">+1</string>
@@ -221,10 +230,33 @@
     <string name="lola_hayes">Lola Hayes</string>
     <string name="marie_lambeau">Marie Lambeau</string>
     <string name="norman_withers">Norman Withers</string>
+    <string name="carolyn_fern">Carolyn Fern</string>
+    <string name="silas_marsh">Silas Marsh</string>
+    <string name="leo_anderson">Leo Anderson</string>
+    <string name="ursula_downs">Ursula Downs</string>
+    <string name="finn_edwards">Finn Edwards</string>
+    <string name="father_mateo">Pater Mateo</string>
+    <string name="calvin_wright">Calvin Wright</string>
 
     <string name="cover_up">Nicht abgeschlossenes <i>Vertuschen</i> im Spiel</string>
     <string name="hospital_debts">Nicht bezahlte <i>Krankenhausrechnungen</i> im Spiel</string>
     <string name="smite_the_wicked">Nicht abgeschlossenes <i>Zerschmettere die Gottlosen</i> im Spiel</string>
     <string name="searching_for_izzie">Nicht abgeschlossene <i>Suche nach Izzie</i> im Spiel</string>
     <string name="angered_spirits">Nicht besänftigte <i>Wütende Geister</i> im Spiel</string>
+    <string name="voice_of_the_messenger"><i>Stimme des Boten</i> wurde abgehandelt</string>
+    <string name="voice_of_the_messenger_heading">Stimme des Boten</string>
+    <string name="voice_of_the_messenger_text">Durch die Stimme des Boten erlittene Traumata:</string>
+    <string name="doomed">Dein Verderben naht</string>
+    <string name="doomed_log">Das Verderben ist nahe.\n\n</string>
+    <string name="accursed_fate">Deine Stunde naht</string>
+    <string name="accursed_fate_log">Die Stunde ist nahe.\n\n</string>
+    <string name="bell_tolls">Deine Stunde hat geschlagen</string>
+
+
+    <!--Shared Preferences - DO NOT TRANSLATE-->
+    <!--<string name="shared_prefs" translatable="false">Shared preferences</string>
+    <string name="dunwich_setting" translatable="false">Dunwich setting</string>
+    <string name="carcosa_setting" translatable="false">Carcosa setting</string>
+    <string name="forgotten_setting" translatable="false">Forgotten setting</string>
+    <string name="language_setting" translatable="false">Language setting</string>-->
 </resources>
