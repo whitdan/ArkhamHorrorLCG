@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="forgotten_campaign">Das vergessene Zeitalter</string>
+    <string name="forgotten_scenario_one">Szenario 1: Die ungezähmte Wildnis</string>
+    <string name="forgotten_scenario_two">Szenario 2: Das Verderben von Eztli</string>
+    <string name="forgotten_scenario_three">Szenario 3: Fäden des Schicksals</string>
+    <string name="forgotten_scenario_four">Szenario 4: Die jenseitige Grenze</string>
+    <string name="forgotten_scenario_five">Szenario 5: Das Herz der Älteren</string>
+    <string name="forgotten_scenario_six">Szenario 6: Die Archivstadt</string>
+    <string name="forgotten_scenario_seven">Szenario 7: Die Tiefen von Yoth</string>
+    <string name="forgotten_scenario_eight">Szenario 8: Zerstörte Zeitalter</string>
+    <string name="forgotten_interlude_one">Zwischenspiel 1: Ruhelose Nächte</string>
+    <string name="forgotten_interlude_two">Zwischenspiel 2: Das Ende der Expedition</string>
+    <string name="forgotten_interlude_three">Zwischenspiel 3: Der Dschungel lockt</string>
+    <string name="forgotten_interlude_four">Zwischenspiel 4: Die Gefangenen</string>
+    <string name="forgotten_interlude_five">Zwischenspiel 5: Die Dunkelheit</string>
+    <string name="forgotten_epilogue">Epilog</string>
+</resources>

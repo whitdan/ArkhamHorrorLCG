@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="side_stories">Side Stories</string>
-    <string name="rougarou_scenario">Curse of the Rougarou</string>
-    <string name="carnevale_scenario">Carnevale of Horrors</string>
+    <string name="side_stories">Nebengeschichten</string>
+    <string name="rougarou_scenario">Der Fluch des Rougarou</string>
+    <string name="carnevale_scenario">Karneval des Schreckens</string>
 
     <!--Campaign log-->
     <string name="rougarou_alive">The Rougarou continues to haunt the bayou. Curse of the Rougarou weakness added to

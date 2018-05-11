@@ -566,7 +566,7 @@
     <string name="miskatonic_sets">Das Miskatonic-Museum, Pech, Zauberei, Das Jenseits, Grabeskälte und Verschlossene
         Türen.</string>
     <string name="miskatonic_locations">Ein zufälliges der beiden Verwaltunsbüros und ein zufälliges der beiden Büros
-        der Sicherheitskräfte werden ins Spiel gebracht. Die anderen Versionen dieser Orte werden aus dem Spiel
+        des Sicherheitsdienstes werden ins Spiel gebracht. Die anderen Versionen dieser Orte werden aus dem Spiel
         entfernt. Dann werden der Museumseingang und die Museumshalle ins Spiel gebracht.\n
         \nJeder Ermittler beginnt das Spiel am Museumseingang.\n</string>
     <string name="miskatonic_set_aside">Harold Walsted, Adam Lynch, Das Necronomicon (<i>Übersetzung von Olaus
@@ -578,6 +578,11 @@
     \nDann werden die 3 übrigen Ausstellungshallen-Orte in zufälliger Reihenfolge daraufgelegt. Alle 6 Karten des
         Ausstellungsdecks sollten mit der verhüllten Seite nach oben liegen, damit die Spieler nicht wissen, welche
         Ausstellungshalle die Ausstellungshalle (<i>Für Besucher geschlossen</i>) ist.</string>
+    <string name="miskatonic_rules_heading">„Die Leere“</string>
+    <string name="miskatonic_rules">Einige Karten in diesem Szenario beziehen sich auf eine Zone namens „Die Leere“. Die
+        Leere ist eine Zone außerhalb des Spiels, neben den Szenen- und Agendadecks, die der Hetzende Schrecken durch
+        Karteneffekte betreten und verlassen kann. Solange sich der Hetzende Schrecken in der Leere befindet, gilt er
+        als nicht im Spiel befindlich und kann nicht von Spielerkarten oder Ermittleraktionen betroffen werden.</string>
 
     <string name="essex_sets">Der Essex-County-Express, Das Jenseits, Lähmende Angst, Böses aus uralter Zeit und Dunkler
         Kult.</string>
@@ -594,6 +599,10 @@
     \n\t\t<b>Normal:</b> -3\n
     \n\t\t<b>Schwer:</b> -4\n
     \n\t\t<b>Experte:</b> -5</string>
+    <string name="essex_rules_heading">Bewegung im Zug: „Links“ und „Rechts“</string>
+    <string name="essex_rules">In diesem Szenario sind die Orte von links nach rechts angeordnet, wobei sich die
+        Lokomotive ganz rechts befindet. Immer wenn sich ein Karteneffekt auf „den Ort links von“ oder „den Ort rechts
+        von“ etwas bezieht, bezieht er sich auf den Ort direkt links oder direkt rechts von deinem Ort.</string>
 
     <string name="blood_sets">Blut auf dem Altar, Dunwich, Ziegenmelker, Dunkeldürre und Böses aus uralter
         Zeit.</string>
@@ -614,6 +623,12 @@
     <string name="blood_additional_sacrifice_morgan">Dr. Francis Morgan,</string>
     <string name="blood_additional_sacrifice_two">Zebulon Whateley und Earl Sawyer besteht, und mische ihn.\n\n</string>
     <string name="blood_additional_two">Füge 1 Verderben zu Agenda 1a hinzu.\n\n</string>
+    <string name="blood_rules_heading">Die verborgene Kammer</string>
+    <string name="blood_rules">Dieses Szenario enthält einen Ort mit nur einer bedruckten Seite (Die verborgene Kammer),
+        die verdeckt unter einen zufälligen Ort hinzugefügt worden ist. Die verborgene Kammer hat nur eine enthüllte
+        Seite mit einem <b>Enthüllung</b>-Effekt, der sie ins Spiel bringt, sobald sie gezogen wird.\n
+    \nSobald ein einseitig bedruckter Ort ins Spiel gebracht wird, geschieht dies mit der enthüllten Seite, weil er
+        keine verhüllte Seite hat. Ansonsten funktioniert er genau wie jeder andere Ort.</string>
 
     <string name="undimensioned_sets">Gestaltlos und unsichtbar, Ziegenmelker, Bestiendiener, Dunwich und Lähmende
         Angst.</string>
@@ -637,6 +652,10 @@
         sein Deck danach durchsuchen und die Karte ins Spiel bringen.\n\n</string>
     <string name="undimensioned_additional">Jeder Ermittler durchsucht die Sammlung nach einer zufälligen Wahnsinn-,
         Verletzung- oder Pakt-Grundschwäche und fügt sie für den Rest der Kampagne seinem Deck hinzu.\n\n</string>
+    <string name="undimensioned_rules_heading">Bestimmen eines zufälligen Ortes</string>
+    <string name="undimensioned_rules">In diesem Szenario gibt es häufiger die Anweisung, einen zufälligen Ort zu
+        bestimmen. Dafür werden die 6 während der Vorbereitung aus dem Spiel entfernten Orte gemischt (die Versionen
+        jedes Ortes im Spiel, die derzeit nicht verwendet werden) und 1 Karte davon wird zufällig gezogen.</string>
 
     <string name="doom_sets">Wo das Verderben wartet, Bestiendiener, Zauberei, Bishops Seelenlose Diener, Lähmende
         Angst, Böses aus uralter Zeit und Grabeskälte.</string>
@@ -676,6 +695,12 @@
     <string name="lost_locations">Eine andere Dimension wird ins Spiel gebracht.\n
         \nJeder Ermittler beginnt das Spiel auf Eine andere Dimension.\n</string>
     <string name="lost_set_aside">Rand des Universums, Riss durch die Zeit und Yog-Sothoth.\n</string>
+    <string name="lost_rules_heading">Orte im Begegnungsdeck</string>
+    <string name="lost_rules">Dieses Szenario enthält einige nur einseitig bedruckte Orte, die mit den übrigen
+        herausgesuchten Begegnungssets in das Begegnungsdeck gemischt werden. Diese Orte haben nur eine enthüllte Seite
+        und einen <b>Enthüllung</b>-Effekt, der sie ins Spiel bringt, sobald sie gezogen werden.\n
+    \nSobald ein einseitig bedruckter Ort ins Spiel gebracht wird, geschieht dies mit der enthüllten Seite, weil er
+        keine verhüllte Seite hat. Ansonsten funktioniert er genau wie jeder andere Ort.</string>
 
 
     <!--Scenario resolutions-->
