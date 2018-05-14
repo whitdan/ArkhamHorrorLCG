@@ -80,6 +80,10 @@
     <string name="archaic_glyphs">Habéis traducido los signos.\n\n</string>
     <string name="charons_obol">Óbolo de Caronte</string>
     <string name="charons_obol_in_play">Óbolo de Caronte en juego</string>
+    <string name="ancient_stone_dialog">Habéis identificado la piedra.</string>
+    <string name="ancient_stone">Habéis identificado la piedra. (</string>
+    <string name="test_difficulty">Dificultad de la prueba de habilidad:</string>
+
 
     <string name="default_chaos_bag">Por defecto</string>
     <string name="chaos_bag_name">Nombre de la bolsa (requerido)</string>
@@ -218,4 +222,9 @@
     <string name="voice_of_the_messenger">Voz del mensajero resuelto</string>
     <string name="voice_of_the_messenger_heading">Voz del mensajero</string>
     <string name="voice_of_the_messenger_text">Trauma sufrido por la Voz del mensajero:</string>
+    <string name="doomed">La perdición se acerca</string>
+    <string name="doomed_log">La perdición se acerca.\n\n</string>
+    <string name="accursed_fate">La hora está próxima</string>
+    <string name="accursed_fate_log">La hora está próxima.\n\n</string>
+    <string name="bell_tolls">Ha llegado la hora de tu defunción</string>
 </resources>
