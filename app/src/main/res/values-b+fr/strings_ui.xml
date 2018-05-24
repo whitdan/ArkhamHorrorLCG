@@ -79,6 +79,9 @@
     <string name="archaic_glyphs">Vous avez traduit les glyphes.\n\n</string>
 	<string name="charons_obol">Obole pour Charon</string>
     <string name="charons_obol_in_play">Obole pour Charon en jeu</string>
+	<string name="ancient_stone_dialog">Vous avez identifié la pierre</string>
+    <string name="ancient_stone">Vous avez identifié la pierre. (</string>
+    <string name="test_difficulty">Difficulté du test de compétence :</string>
 	
 	<string name="default_chaos_bag">Par défaut</string>
     <string name="chaos_bag_name">Nom de la réserve du Chaos (obligatoire)</string>
@@ -219,4 +222,9 @@
 	 <string name="voice_of_the_messenger">Voix du Messager résolu</string>
     <string name="voice_of_the_messenger_heading">Voix du Messager</string>
     <string name="voice_of_the_messenger_text">Traumatisme subi par la Voix du Messager :</string>
+	<string name="doomed">Le destin approche</string>
+    <string name="doomed_log">Le destin approche.\n\n</string>
+    <string name="accursed_fate">L'heure est sombre</string>
+    <string name="accursed_fate_log">L'heure est sombre.\n\n</string>
+    <string name="bell_tolls">L'heure de votre trépas a sonné</string>
 </resources>

@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="forgotten_campaign">La Civilisation Oubliée</string>
+	<string name="forgotten_scenario_one">Scénario 1 : Contrée Sauvage</string>
+    <string name="forgotten_scenario_two">Scénario 2 : Le Fléau des Eztli</string>
+    <string name="forgotten_scenario_three">Scénario 3 : Les Fils du Destin</string>
+    <string name="forgotten_scenario_four">Scénario 4 : Par-delà les Limites</string>
+    <string name="forgotten_scenario_five">Scénario 5 : Le Cœur des Anciens</string>
+    <string name="forgotten_scenario_six">Scénario 6 : La Cité des Archives</string>
+    <string name="forgotten_scenario_seven">Scénario 7 : Les Profondeurs de Yoth</string>
+    <string name="forgotten_scenario_eight">Scénario 8 : Paradoxes Temporels</string>
+    <string name="forgotten_interlude_one">Interlude 1: Nuits Agitées</string>
+    <string name="forgotten_interlude_two">Interlude 2: La Fin de l'Expédition</string>
+    <string name="forgotten_interlude_three">Interlude 3: L'Appel de la Jungle</string>
+    <string name="forgotten_interlude_four">Interlude 4: Les Captifs</string>
+    <string name="forgotten_interlude_five">Interlude 5: Les Ténèbres</string>
+    <string name="forgotten_epilogue">Épilogue</string>
 </resources>
