@@ -501,6 +501,22 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 break;
                         }
                     }
+                    if (scenario > 8) {
+                        switch (globalVariables.CurrentDifficulty) {
+                            case 0:
+                                chaosbag.add(5);
+                                break;
+                            case 1:
+                                chaosbag.add(7);
+                                break;
+                            case 2:
+                                chaosbag.add(8);
+                                break;
+                            case 3:
+                                chaosbag.add(9);
+                                break;
+                        }
+                    }
                     if (scenario > 9) {
                         chaosbag.add(12);
                         chaosbag.add(12);
