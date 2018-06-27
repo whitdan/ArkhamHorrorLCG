@@ -1,4 +1,4 @@
-package com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc;
+package com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -21,11 +21,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.ChaosBagActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.ChaosBagEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamDbHelper;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
+
+import java.util.ArrayList;
 
 public class CustomChaosBagActivity extends AppCompatActivity {
 
@@ -46,7 +49,7 @@ public class CustomChaosBagActivity extends AppCompatActivity {
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d_activity_custom_chaos_bag);
+        setContentView(R.layout.e_activity_custom_chaos_bag);
         globalVariables = (GlobalVariables) this.getApplication();
         count = 0;
 
@@ -327,6 +330,7 @@ public class CustomChaosBagActivity extends AppCompatActivity {
                             campaignSelection,
                             campaignSelectionArgs);
 
+                    globalVariables.seal = new ArrayList<>();
                     Intent intent = new Intent(CustomChaosBagActivity.this, ChaosBagActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -369,6 +373,7 @@ public class CustomChaosBagActivity extends AppCompatActivity {
                             bagSelection,
                             bagSelectionArgs);
 
+                    globalVariables.seal = new ArrayList<>();
                     Intent intent = new Intent(CustomChaosBagActivity.this, ChaosBagActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);

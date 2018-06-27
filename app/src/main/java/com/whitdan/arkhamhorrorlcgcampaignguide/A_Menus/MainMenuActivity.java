@@ -20,11 +20,6 @@ import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 import java.util.Locale;
 
 /*
-    TODO:   Custom chaos bag
-
- */
-
-/*
     MainMenuActivity - This is the main activity, and shows the title as well as buttons to take users to either
     start a new campaign, load an existing campaign, or select a standalone scenario; all of these buttons simply
     take the user to the relevant activity

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc.EditLogActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 
@@ -49,6 +50,10 @@ public class CampaignLogActivity extends AppCompatActivity {
         dunwichHeading.setTypeface(teutonic);
         TextView carcosaHeading = findViewById(R.id.carcosa_heading);
         carcosaHeading.setTypeface(teutonic);
+        TextView forgottenHeading = findViewById(R.id.forgotten_heading);
+        forgottenHeading.setTypeface(teutonic);
+        TextView suppliesHeading = findViewById(R.id.supplies_heading);
+        suppliesHeading.setTypeface(teutonic);
         TextView sideHeading = findViewById(R.id.side_heading);
         sideHeading.setTypeface(teutonic);
         TextView playerHeading = findViewById(R.id.player_heading);
@@ -61,6 +66,10 @@ public class CampaignLogActivity extends AppCompatActivity {
         dunwichLog.setTypeface(arnopro);
         TextView carcosaLog = findViewById(R.id.carcosa_log_text);
         carcosaLog.setTypeface(arnopro);
+        TextView forgottenLog = findViewById(R.id.forgotten_log_text);
+        forgottenLog.setTypeface(arnopro);
+        TextView suppliesLog = findViewById(R.id.supplies_log_text);
+        suppliesLog.setTypeface(arnopro);
         TextView sideLog = findViewById(R.id.side_log_text);
         sideLog.setTypeface(arnopro);
         TextView playerLog = findViewById(R.id.player_log_text);
@@ -74,6 +83,8 @@ public class CampaignLogActivity extends AppCompatActivity {
         } else {
             scenario = globalVariables.CurrentScenario;
         }
+
+        String[] investigatorNames = getResources().getStringArray(R.array.investigators);
 
         /*
         Night of the Zealot log
@@ -500,7 +511,6 @@ public class CampaignLogActivity extends AppCompatActivity {
                     carcosaBuilder.append(getString(R.string.entered_catacombs));
                 }
                 carcosaBuilder.append(getString(R.string.know_site));
-                String[] investigatorNames = getResources().getStringArray(R.array.investigators);
                 if (globalVariables.InvOneReadAct > 0) {
                     if (globalVariables.InvOneReadAct == 999) {
                         carcosaBuilder.append(getString(R.string.inv_one_read_act));
@@ -535,8 +545,8 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Black Stars Rise
-            if(scenario > 9 || globalVariables.CarcosaCompleted == 1){
-                switch(globalVariables.Path){
+            if (scenario > 9 || globalVariables.CarcosaCompleted == 1) {
+                switch (globalVariables.Path) {
                     case 0:
                         carcosaBuilder.append(getString(R.string.carcosa_merged));
                         break;
@@ -549,8 +559,8 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
             // Dim Carcosa
-            if((scenario > 10 || globalVariables.CarcosaCompleted == 1) && globalVariables.Path != 0){
-                switch(globalVariables.Hastur){
+            if ((scenario > 10 || globalVariables.CarcosaCompleted == 1) && globalVariables.Path != 0) {
+                switch (globalVariables.Hastur) {
                     case 1:
                     case 2:
                     case 3:
@@ -563,7 +573,6 @@ public class CampaignLogActivity extends AppCompatActivity {
                         carcosaBuilder.append(getString(R.string.hasturs_grasp));
                         break;
                 }
-                String[] investigatorNames = getResources().getStringArray(R.array.investigators);
                 if (globalVariables.InvOnePossessed > 0) {
                     if (globalVariables.InvOnePossessed == 999) {
                         carcosaBuilder.append(getString(R.string.inv_one_possessed));
@@ -600,6 +609,161 @@ public class CampaignLogActivity extends AppCompatActivity {
 
             String carcosaLogText = carcosaBuilder.toString().trim();
             carcosaLog.setText(carcosaLogText);
+        }
+
+        /*
+            Forgotten Age log
+         */
+        if (globalVariables.CurrentCampaign == 4) {
+            forgottenHeading.setVisibility(VISIBLE);
+            forgottenLog.setVisibility(VISIBLE);
+            StringBuilder forgottenBuilder = new StringBuilder();
+
+            if (scenario == 1 && globalVariables.ForgottenCompleted != 1) {
+                forgottenBuilder.append(getString(R.string.nothing));
+            }
+
+            // First scenario log
+            if (scenario > 1 || globalVariables.ForgottenCompleted == 1) {
+                String yigsFury = getString(R.string.yigs_fury) + " " + Integer.toString(globalVariables
+                        .YigsFury) +
+                        "\n\n";
+                forgottenBuilder.append(yigsFury);
+                if (globalVariables.Ruins == 1) {
+                    forgottenBuilder.append(getString(R.string.forced_wait));
+                } else if(globalVariables.Ruins == 2){
+                    forgottenBuilder.append(getString(R.string.cleared_path));
+                }
+                if(globalVariables.Ichtaca == 0){
+                    forgottenBuilder.append(getString(R.string.ichtaca_observed));
+                } else if(globalVariables.Ichtaca == 1){
+                    forgottenBuilder.append(getString(R.string.ichtaca_trust));
+                } else if(globalVariables.Ichtaca == 2){
+                    forgottenBuilder.append(getString(R.string.ichtaca_wary));
+                }
+                if(globalVariables.Alejandro == 1){
+                    forgottenBuilder.append(getString(R.string.alejandro_remained));
+                } else if(globalVariables.Alejandro == 2){
+                    forgottenBuilder.append(getString(R.string.alejandro_followed));
+                }
+            }
+
+            // Second scenario log
+            if(scenario > 6 || globalVariables.ForgottenCompleted == 1){
+                if(globalVariables.Relic == 1){
+                    forgottenBuilder.append(getString(R.string.investigators_recovered_relic));
+                } else if (globalVariables.Relic == 2){
+                    forgottenBuilder.append(getString(R.string.alejandro_recovered_relic));
+                }
+                if(globalVariables.Harbinger > -1){
+                    forgottenBuilder.append(getString(R.string.harbinger_alive));
+                    forgottenBuilder.append(" (");
+                    forgottenBuilder.append(Integer.toString(globalVariables.Harbinger));
+                    forgottenBuilder.append(")\n\n");
+                }
+            }
+
+            // Second interlude log
+            if(scenario > 7 || globalVariables.ForgottenCompleted == 1){
+                if(globalVariables.Custody == 1){
+                    forgottenBuilder.append(getString(R.string.custody_alejandro));
+                } else if (globalVariables.Custody == 2){
+                    forgottenBuilder.append(getString(R.string.custody_harlan));
+                }
+            }
+
+            String forgottenLogText = forgottenBuilder.toString().trim();
+            forgottenLog.setText(forgottenLogText);
+
+            // Supplies
+            suppliesHeading.setVisibility(VISIBLE);
+            suppliesLog.setVisibility(VISIBLE);
+            StringBuilder suppliesBuilder = new StringBuilder();
+            for(int i = 0; i < globalVariables.Investigators.size(); i++){
+                suppliesBuilder.append(investigatorNames[globalVariables.Investigators.get(i).Name]);
+                suppliesBuilder.append("\n");
+
+                boolean supplies = false;
+
+                if(globalVariables.Investigators.get(i).Provisions > 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(Integer.toString(globalVariables.Investigators.get(i).Provisions));
+                    suppliesBuilder.append(" ");
+                    suppliesBuilder.append(getResources().getString(R.string.provisions));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+
+                if(globalVariables.Investigators.get(i).Medicine > 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(Integer.toString(globalVariables.Investigators.get(i).Medicine));
+                    suppliesBuilder.append(" ");
+                    suppliesBuilder.append(getResources().getString(R.string.medicine));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+
+                if(globalVariables.Investigators.get(i).Supplies % 2 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.rope));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 3 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.blanket));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 5 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.canteen));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 7 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.torches));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 11 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.compass));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 13 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.map));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 17 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.binoculars));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 19 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.chalk));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 23 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.pendant));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(!supplies){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.no_supplies));
+                }
+            }
+            String suppliesLogText = suppliesBuilder.toString().trim();
+            suppliesLog.setText(suppliesLogText);
         }
 
         /*
@@ -646,15 +810,15 @@ public class CampaignLogActivity extends AppCompatActivity {
             if (globalVariables.ArchaicGlyphs == 1) {
                 playerBuilder.append(getString(R.string.archaic_glyphs));
             }
-            if (globalVariables.AncientStone > 0){
+            if (globalVariables.AncientStone > 0) {
                 playerBuilder.append(getString(R.string.ancient_stone));
                 playerBuilder.append(Integer.toString(globalVariables.AncientStone));
                 playerBuilder.append(")\n\n");
             }
-            if(globalVariables.Doomed > 0){
+            if (globalVariables.Doomed > 0) {
                 playerBuilder.append(getString(R.string.doomed_log));
             }
-            if(globalVariables.Doomed > 1){
+            if (globalVariables.Doomed > 1) {
                 playerBuilder.append(getString(R.string.accursed_fate_log));
             }
             String playerLogText = playerBuilder.toString().trim();
@@ -664,7 +828,7 @@ public class CampaignLogActivity extends AppCompatActivity {
         /*
             Notes
          */
-        if(globalVariables.Notes != null && globalVariables.Notes.length() > 0){
+        if (globalVariables.Notes != null && globalVariables.Notes.length() > 0) {
             notesHeading.setVisibility(VISIBLE);
             notesLog.setVisibility(VISIBLE);
             notesLog.setText(globalVariables.Notes);

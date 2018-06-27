@@ -1,4 +1,4 @@
-package com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc;
+package com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc;
 
 import android.content.Context;
 import android.content.Intent;
@@ -50,7 +50,7 @@ public class EditStatsActivity extends AppCompatActivity {
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d_activity_edit_stats);
+        setContentView(R.layout.e_activity_edit_stats);
         globalVariables = (GlobalVariables) this.getApplication();
 
         mDbHelper = new ArkhamDbHelper(this);
@@ -127,7 +127,7 @@ public class EditStatsActivity extends AppCompatActivity {
             View listItemView = convertView;
             if (listItemView == null) {
                 listItemView = LayoutInflater.from(getContext()).inflate(
-                        R.layout.d_item_edit_investigator, parent, false);
+                        R.layout.e_item_edit_investigator, parent, false);
             }
 
             if (currentInvestigator != null) {

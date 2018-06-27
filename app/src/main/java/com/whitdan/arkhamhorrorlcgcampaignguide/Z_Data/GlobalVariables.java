@@ -16,6 +16,7 @@ public class GlobalVariables extends Application {
     /*
         Campaign variables - All of the variables associated with the campaign generally
      */
+    public String CampaignName;
     public long CampaignID;                        // Corresponds to the SQLite database
     public long ChaosBagID;                        // Corresponds to SQLite database for chaos bag (-1 = default)
     public int CampaignVersion;                    // 1 = Original, 2 = added total XP)
@@ -27,6 +28,8 @@ public class GlobalVariables extends Application {
     public int NightCompleted;
     public int DunwichCompleted;
     public int CarcosaCompleted;
+    public int ForgottenCompleted;
+    public ArrayList<Integer> seal;
 
     /*
         Scenario variables - All of the variables associated with the scenario generally
@@ -121,6 +124,19 @@ public class GlobalVariables extends Application {
     public int Ishimaru;
     public int Sebastien;
     public int Ashleigh;
+
+    /*
+        Forgotten Age variables
+     */
+    public int YigsFury;
+    public int Ruins;
+    public int Ichtaca;
+    public int Alejandro;
+    public int LowRations;
+    public int Relic;
+    public int Harbinger;
+    public int Eztli;
+    public int Custody;
 
     /*
         Side story variables - All of the variables associated with side stories
@@ -243,6 +259,54 @@ public class GlobalVariables extends Application {
                         break;
                 }
                 break;
+            case 4:
+                switch(CurrentScenario){
+                    case 1:
+                        title.setText(R.string.forgotten_scenario_one);
+                        break;
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                        title.setText(R.string.forgotten_interlude_one);
+                        break;
+                    case 6:
+                        title.setText(R.string.forgotten_scenario_two);
+                        break;
+                    case 7:
+                        title.setText(R.string.forgotten_interlude_two);
+                        break;
+                    case 8:
+                        title.setText(R.string.forgotten_scenario_three);
+                        break;
+                    case 9:
+                        title.setText(R.string.forgotten_scenario_four);
+                        break;
+                    case 10:
+                        title.setText(R.string.forgotten_interlude_three);
+                        break;
+                    case 11:
+                        title.setText(R.string.forgotten_scenario_five);
+                        break;
+                    case 12:
+                        title.setText(R.string.forgotten_scenario_six);
+                        break;
+                    case 13:
+                        title.setText(R.string.forgotten_interlude_four);
+                        break;
+                    case 14:
+                        title.setText(R.string.forgotten_scenario_seven);
+                        break;
+                    case 15:
+                        title.setText(R.string.forgotten_interlude_five);
+                        break;
+                    case 16:
+                        title.setText(R.string.forgotten_scenario_eight);
+                        break;
+                    case 17:
+                        title.setText(R.string.forgotten_epilogue);
+                        break;
+                }
         }
         if (CurrentScenario > 100) {
             switch (CurrentScenario) {

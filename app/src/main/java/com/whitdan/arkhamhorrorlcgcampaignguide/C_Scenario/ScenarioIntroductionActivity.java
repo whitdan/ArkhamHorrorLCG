@@ -277,14 +277,27 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         }
                         break;
                     case 10:
-                        if (globalVariables.Path == 1){
+                        if (globalVariables.Path == 1) {
                             introduction.setText(R.string.dim_introduction_below);
-                        } else if (globalVariables.Path == 2){
+                        } else if (globalVariables.Path == 2) {
                             introduction.setText(R.string.dim_introduction_above);
                         }
                         break;
                 }
                 break;
+            case 4:
+                switch (globalVariables.CurrentScenario) {
+                    case 1:
+                        introduction.setText(R.string.untamed_introduction);
+                        break;
+                    case 6:
+                        if(globalVariables.Ruins == 1){
+                            introduction.setText(R.string.eztli_introduction_one);
+                        } else if (globalVariables.Ruins == 2){
+                            introduction.setText(R.string.eztli_introduction_two);
+                        }
+                        break;
+                }
         }
 
         if (globalVariables.CurrentScenario > 100) {

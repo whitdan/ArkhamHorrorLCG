@@ -121,6 +121,20 @@
     <item name="inv_two_possessed" type="id" />
     <item name="inv_three_possessed" type="id" />
     <item name="inv_four_possessed" type="id" />
+    <item name="yigs_fury" type="id" />
+    <item name="ruins_one" type="id" />
+    <item name="ruins_two" type="id" />
+    <item name="ichtaca_one" type="id" />
+    <item name="ichtaca_two" type="id" />
+    <item name="ichtaca_three" type="id" />
+    <item name="alejandro_one" type="id" />
+    <item name="alejandro_two" type="id" />
+    <item name="harbinger" type="id" />
+    <item name="harbinger_damage" type="id" />
+    <item name="relic_one" type="id" />
+    <item name="relic_two" type="id" />
+    <item name="custody_one" type="id" />
+    <item name="custody_two" type="id" />
 
 
     <item name="rougarou_one" type="id" />

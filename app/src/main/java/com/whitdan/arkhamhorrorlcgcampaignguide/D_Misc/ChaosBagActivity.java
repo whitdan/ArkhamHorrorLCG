@@ -52,7 +52,6 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     static GlobalVariables globalVariables;
     static ArrayList<Integer> chaosbag;
-    static ArrayList<Integer> seal;
     static int basebagResult[];
     static int campaignTokens;
     static int sealCount;
@@ -76,7 +75,6 @@ public class ChaosBagActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.d_activity_chaos_bag);
         globalVariables = (GlobalVariables) this.getApplication();
-        seal = new ArrayList<>();
         sealCount = 0;
         token = -1;
 
@@ -224,6 +222,52 @@ public class ChaosBagActivity extends AppCompatActivity {
                         break;
                 }
                 break;
+            case 4:
+                switch(globalVariables.CurrentScenario){
+                    case 1:
+                        if (globalVariables.Ichtaca > 0) {
+                            box.setChecked(true);
+                            options.setVisibility(VISIBLE);
+                        }
+                        box.setVisibility(VISIBLE);
+                        box.setText(R.string.advanced_act_three);
+                        optionOne.setText(R.string.untamed_ichtaca_three);
+                        optionTwo.setText(R.string.untamed_ichtaca_two);
+                        optionThree.setVisibility(GONE);
+                        box.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                                if (compoundButton.isChecked()) {
+                                    options.setVisibility(VISIBLE);
+                                } else {
+                                    options.setVisibility(GONE);
+                                    options.clearCheck();
+                                    globalVariables.Ichtaca = 0;
+                                    setupBag(ChaosBagActivity.this, false);
+                                }
+                            }
+                        });
+                        switch (globalVariables.Ichtaca) {
+                            case 1:
+                                optionOne.setChecked(true);
+                                break;
+                            case 2:
+                                optionTwo.setChecked(true);
+                                break;
+                        }
+                        options.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                                if (optionOne.isChecked()) {
+                                    globalVariables.Ichtaca = 1;
+                                } else if (optionTwo.isChecked()) {
+                                    globalVariables.Ichtaca = 2;
+                                }
+                                setupBag(ChaosBagActivity.this, false);
+                            }
+                        });
+                        break;
+                }
         }
         TextView chaosBag = findViewById(R.id.chaos_bag);
         chaosBag.setTypeface(teutonic);
@@ -501,9 +545,38 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 break;
                         }
                     }
+                    if(scenario > 8){
+                        switch (globalVariables.CurrentDifficulty) {
+                            case 0:
+                                chaosbag.add(5);
+                                break;
+                            case 1:
+                                chaosbag.add(7);
+                                break;
+                            case 2:
+                                chaosbag.add(8);
+                                break;
+                            case 3:
+                                chaosbag.add(9);
+                                break;
+                        }
+                    }
                     if (scenario > 9) {
                         chaosbag.add(12);
                         chaosbag.add(12);
+                    }
+                    break;
+                // The Forgotten Age
+                case 4:
+                    if (globalVariables.Ichtaca == 1) {
+                        chaosbag.add(12);
+                    } else if (globalVariables.Ichtaca == 2) {
+                        chaosbag.add(13);
+                    }
+                    if (scenario > 7) {
+                        if (globalVariables.Custody == 1) {
+                            chaosbag.add(13);
+                        }
                     }
                     break;
             }
@@ -536,9 +609,9 @@ public class ChaosBagActivity extends AppCompatActivity {
             int tokenId = activity.getResources().getIdentifier("drawable/token_" + currentToken, null, activity
                     .getPackageName());
             // Show sealed token instead if token is sealed
-            if (seal != null) {
-                for (int a = 0; a < seal.size(); a++) {
-                    if (i == seal.get(a)) {
+            if (globalVariables.seal != null) {
+                for (int a = 0; a < globalVariables.seal.size(); a++) {
+                    if (i == globalVariables.seal.get(a)) {
                         tokenId = activity.getResources().getIdentifier("drawable/seal_token_" + currentToken, null,
                                 activity.getPackageName());
                     }
@@ -563,9 +636,9 @@ public class ChaosBagActivity extends AppCompatActivity {
 
         // Remove sealed tokens from the bag if drawing
         if (draw) {
-            if (seal != null) {
-                for (int i = 0; i < seal.size(); i++) {
-                    chaosbag.set(seal.get(i), 999);
+            if (globalVariables.seal != null) {
+                for (int i = 0; i < globalVariables.seal.size(); i++) {
+                    chaosbag.set(globalVariables.seal.get(i), 999);
                 }
             }
         }
@@ -625,6 +698,24 @@ public class ChaosBagActivity extends AppCompatActivity {
                             bag = new int[]{0, 0, 1, 2, 2, 2, 2, 1, 1, 0, 1, 3, 0, 0, 0, 1, 1};
                             break;
                     }
+                    break;
+                // The Forgotten Age
+                case 4:
+                    switch (globalVariables.CurrentDifficulty) {
+                        case 0:
+                            bag = new int[]{0, 2, 3, 2, 1, 1, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 1};
+                            break;
+                        case 1:
+                            bag = new int[]{0, 1, 3, 1, 2, 1, 0, 1, 0, 0, 0, 2, 0, 0, 1, 1, 1};
+                            break;
+                        case 2:
+                            bag = new int[]{0, 1, 2, 1, 1, 2, 1, 0, 1, 0, 0, 2, 0, 0, 1, 1, 1};
+                            break;
+                        case 3:
+                            bag = new int[]{0, 0, 1, 1, 2, 2, 2, 0, 1, 0, 1, 2, 0, 0, 1, 1, 1};
+                            break;
+                    }
+                    break;
             }
             if (globalVariables.CurrentCampaign == 999) {
                 switch (globalVariables.CurrentScenario) {
@@ -759,7 +850,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                 currentToken.setLayoutParams(new ViewGroup.LayoutParams(width, height));
                 int currentTokenId = view.getContext().getResources().getIdentifier("drawable/token_" + token, null,
                         view
-                        .getContext().getPackageName());
+                                .getContext().getPackageName());
                 currentToken.setImageResource(currentTokenId);
                 currentTokens.addView(currentToken);
                 Animation tokenAnimation = AnimationUtils.loadAnimation(this, R.anim.chaos_bag_animation);
@@ -833,17 +924,20 @@ public class ChaosBagActivity extends AppCompatActivity {
         LinearLayout cultistLayout = activity.findViewById(R.id.cultist_layout);
         LinearLayout tabletLayout = activity.findViewById(R.id.tablet_layout);
         LinearLayout thingLayout = activity.findViewById(R.id.thing_layout);
+        LinearLayout cultistTabletLayout = activity.findViewById(R.id.cultist_tablet_layout);
         LinearLayout combinedLayout = activity.findViewById(R.id.combined_layout);
         TextView skull = activity.findViewById(R.id.skull_text);
         TextView cultist = activity.findViewById(R.id.cultist_text);
         TextView tablet = activity.findViewById(R.id.tablet_text);
         TextView thing = activity.findViewById(R.id.thing_text);
+        TextView cultistTablet = activity.findViewById(R.id.cultist_tablet_text);
         TextView combined = activity.findViewById(R.id.combined_text);
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         skull.setTypeface(arnopro);
         cultist.setTypeface(arnopro);
         tablet.setTypeface(arnopro);
         thing.setTypeface(arnopro);
+        cultistTablet.setTypeface(arnopro);
         combined.setTypeface(arnopro);
 
         switch (globalVariables.CurrentCampaign) {
@@ -1102,6 +1196,38 @@ public class ChaosBagActivity extends AppCompatActivity {
                         break;
                 }
                 break;
+            // Forgotten Age
+            case 4:
+                switch(globalVariables.CurrentScenario){
+                    case 1:
+                        if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
+                            skull.setText(R.string.untamed_skull_one);
+                            cultist.setText(R.string.untamed_cultist_one);
+                            tablet.setText(R.string.untamed_tablet_one);
+                            thing.setText(R.string.untamed_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3) {
+                            skull.setText(R.string.untamed_skull_two);
+                            cultist.setText(R.string.untamed_cultist_two);
+                            tablet.setText(R.string.untamed_tablet_two);
+                            thing.setText(R.string.untamed_thing_two);
+                        }
+                        break;
+                    case 6:
+                        cultistLayout.setVisibility(GONE);
+                        tabletLayout.setVisibility(GONE);
+                        cultistTabletLayout.setVisibility(VISIBLE);
+                        if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
+                            skull.setText(R.string.eztli_skull_one);
+                            cultistTablet.setText(R.string.eztli_cultist_tablet_one);
+                            thing.setText(R.string.eztli_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3) {
+                            skull.setText(R.string.eztli_skull_two);
+                            cultistTablet.setText(R.string.eztli_cultist_tablet_two);
+                            thing.setText(R.string.eztli_thing_two);
+                        }
+                        break;
+                }
+                break;
         }
 
         if (globalVariables.CurrentScenario > 100) {
@@ -1145,8 +1271,8 @@ public class ChaosBagActivity extends AppCompatActivity {
 
             final ArrayList<Integer> tempSeal;
             tempCount = sealCount;
-            if (seal != null) {
-                tempSeal = seal;
+            if (globalVariables.seal != null) {
+                tempSeal = globalVariables.seal;
             } else {
                 tempSeal = new ArrayList<>();
             }
@@ -1198,9 +1324,9 @@ public class ChaosBagActivity extends AppCompatActivity {
                         getActivity()
                                 .getPackageName());
                 // Show sealed token instead if token is sealed
-                if (seal != null) {
-                    for (int a = 0; a < seal.size(); a++) {
-                        if (i == seal.get(a)) {
+                if (globalVariables.seal != null) {
+                    for (int a = 0; a < globalVariables.seal.size(); a++) {
+                        if (i == globalVariables.seal.get(a)) {
                             tokenId = getActivity().getResources().getIdentifier("drawable/seal_token_" +
                                             currentToken, null,
                                     getActivity().getPackageName());
@@ -1269,7 +1395,7 @@ public class ChaosBagActivity extends AppCompatActivity {
             okayButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    seal = tempSeal;
+                    globalVariables.seal = tempSeal;
                     sealCount = tempCount;
                     resetBag(getActivity(), false);
                     dismiss();

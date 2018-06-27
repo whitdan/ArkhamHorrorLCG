@@ -31,6 +31,7 @@ import android.widget.Toast;
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioInterludeActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioMainActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc.ChooseSuppliesActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.CampaignEntry;
@@ -138,16 +139,16 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         if (!forgottenOwned) {
             forgottenCheckboxes.setVisibility(GONE);
         }
-        if (!marieOwned){
+        if (!marieOwned) {
             marieCheckbox.setVisibility(GONE);
         }
-        if(!normanOwned){
+        if (!normanOwned) {
             normanCheckbox.setVisibility(GONE);
         }
-        if(!carolynOwned){
+        if (!carolynOwned) {
             carolynCheckbox.setVisibility(GONE);
         }
-        if(!silasOwned){
+        if (!silasOwned) {
             silasCheckbox.setVisibility(GONE);
         }
         // Set fonts and listeners to all checkboxes
@@ -176,10 +177,10 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             }
         }
         for (int i = 0; i < forgottenCheckboxes.getChildCount(); i++) {
-                View view = forgottenCheckboxes.getChildAt(i);
-                if (view instanceof CheckBox) {
-                    ((CheckBox) view).setTypeface(arnopro);
-                    ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
+            View view = forgottenCheckboxes.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
+                ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
             }
         }
         for (int i = 0; i < marieCheckbox.getChildCount(); i++) {
@@ -240,6 +241,9 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         // Continue button
         Button continueButton = findViewById(R.id.continue_button);
         continueButton.setTypeface(teutonic);
+        if (globalVariables.CurrentCampaign == 4) {
+            continueButton.setText(R.string.choose_supplies);
+        }
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -969,6 +973,11 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             okayButton.setTypeface(teutonic);
             confirm.setTypeface(arnoprobold);
 
+            // Change confirm text if on Forgotten Age
+            if(globalVariables.CurrentCampaign == 4){
+                confirm.setText(R.string.continue_question);
+            }
+
             // Set campaign title
             TextView campaignName = v.findViewById(R.id.campaign_name);
             campaignName.setTypeface(wolgast);
@@ -1090,18 +1099,9 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                             globalVariables.InvestigatorsInUse[globalVariables.InvestigatorNames.get(i)] = 1;
 
                             // Check if Lola Hayes is in use for Carcosa prologue
-                            if(globalVariables.InvestigatorNames.get(i) == Investigator.LOLA_HAYES){
+                            if (globalVariables.InvestigatorNames.get(i) == Investigator.LOLA_HAYES) {
                                 lola = true;
                             }
-                        }
-
-                        // Set current scenario to first scenario
-                        if (globalVariables.CurrentCampaign == 2) {
-                            globalVariables.CurrentScenario = globalVariables.FirstScenario;
-                        } else if(globalVariables.CurrentCampaign == 3 && lola) {
-                            globalVariables.CurrentScenario = 0;
-                        } else {
-                            globalVariables.CurrentScenario = 1;
                         }
 
                         // Clear variables which have been used
@@ -1109,17 +1109,35 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                         globalVariables.PlayerNames = new String[4];
                         globalVariables.DeckLists = new String[4];
 
-                        // Save the new campaign
-                        newCampaign(getActivity(), campaign);
+                        // If on Forgotten Age, go to supplies screen
+                        if (globalVariables.CurrentCampaign == 4) {
+                            globalVariables.CampaignName = campaign;
+                            Intent intent = new Intent(getActivity(), ChooseSuppliesActivity.class);
+                            startActivity(intent);
+                            getActivity().finish();
+                            dismiss();
+                        } else {
+                            // Set current scenario to first scenario
+                            if (globalVariables.CurrentCampaign == 2) {
+                                globalVariables.CurrentScenario = globalVariables.FirstScenario;
+                            } else if (globalVariables.CurrentCampaign == 3 && lola) {
+                                globalVariables.CurrentScenario = 0;
+                            } else {
+                                globalVariables.CurrentScenario = 1;
+                            }
 
-                        // Go to scenario setup
-                        Intent intent = new Intent(getActivity(), ScenarioMainActivity
-                                .class);
-                        if(globalVariables.CurrentScenario == 0){
-                            intent = new Intent(getActivity(), ScenarioInterludeActivity.class);
+                            // Save the new campaign
+                            newCampaign(getActivity(), campaign);
+
+                            // Go to scenario setup
+                            Intent intent = new Intent(getActivity(), ScenarioMainActivity
+                                    .class);
+                            if (globalVariables.CurrentScenario == 0) {
+                                intent = new Intent(getActivity(), ScenarioInterludeActivity.class);
+                            }
+                            startActivity(intent);
+                            dismiss();
                         }
-                        startActivity(intent);
-                        dismiss();
                     }
                 }
             });
@@ -1141,7 +1159,7 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
     /*
      Saves a new campaign to the database (called from startScenario - included separately for neatness)
       */
-    private static void newCampaign(Context context, String campaignName) {
+    public static void newCampaign(Context context, String campaignName) {
 
         // Get a writable database
         ArkhamDbHelper dbHelper = new ArkhamDbHelper(context);
@@ -1234,6 +1252,9 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                 break;
             // The Forgotten Age
             case 4:
+                ContentValues forgottenValues = new ContentValues();
+                forgottenValues.put(ArkhamContract.ForgottenEntry.PARENT_ID, newCampaignId);
+                db.insert(ArkhamContract.ForgottenEntry.TABLE_NAME, null, forgottenValues);
                 break;
         }
 
@@ -1256,6 +1277,12 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                     .Investigators.get(i).DeckName);
             investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST, globalVariables
                     .Investigators.get(i).Decklist);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS, globalVariables
+                    .Investigators.get(i).Provisions);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE, globalVariables
+                    .Investigators.get(i).Medicine);
+            investigatorValues.put(ArkhamContract.InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES, globalVariables
+                    .Investigators.get(i).Supplies);
             db.insert(ArkhamContract.InvestigatorEntry.TABLE_NAME, null, investigatorValues);
         }
     }

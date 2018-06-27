@@ -5,7 +5,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.CampaignEntry;
+import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.CarcosaEntry;
+import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.ChaosBagEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.DunwichEntry;
+import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.ForgottenEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.InvestigatorEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.NightEntry;
 
@@ -22,7 +25,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 27;
+    private static final int DATABASE_VERSION = 28;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -95,7 +98,10 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP + " INTEGER NOT NULL, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER + " STRING, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_DECKNAME + " STRING, "
-                + InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST + " STRING);";
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST + " STRING, "
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS + " INTEGER, "
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE + " INTEGER, "
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES + " INTEGER);";
 
         // Night of the Zealot table
         String SQL_CREATE_NIGHT_TABLE = "CREATE TABLE " + NightEntry.TABLE_NAME + " ("
@@ -139,59 +145,73 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + DunwichEntry.COLUMN_YOG_SOTHOTH + " INTEGER);";
 
         // Path to Carcosa table
-        String SQL_CREATE_CARCOSA_TABLE = "CREATE TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ("
-                + ArkhamContract.CarcosaEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + ArkhamContract.CarcosaEntry.PARENT_ID + " INTEGER NOT NULL, "
-                + ArkhamContract.CarcosaEntry.COLUMN_DOUBT + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_CONVICTION + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_CHASING_STRANGER + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_STRANGER + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_POLICE + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_THEATRE + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_CONSTANCE + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_JORDAN + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_ISHIMARU + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_SEBASTIEN + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_ASHLEIGH + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_PARTY + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_ONYX + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_ASYLUM + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_DANIEL + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_DREAMS + " INTEGER NOT NULL, "
-                + ArkhamContract.CarcosaEntry.COLUMN_NIGEL + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_INV_ONE_READ_ACT + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_READ_ACT + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_READ_ACT + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_PATH + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_HASTUR + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_INV_ONE_POSSESSED + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_POSSESSED + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_POSSESSED + " INTEGER, "
-                + ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_POSSESSED + " INTEGER);";
+        String SQL_CREATE_CARCOSA_TABLE = "CREATE TABLE " + CarcosaEntry.TABLE_NAME + " ("
+                + CarcosaEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + CarcosaEntry.PARENT_ID + " INTEGER NOT NULL, "
+                + CarcosaEntry.COLUMN_DOUBT + " INTEGER, "
+                + CarcosaEntry.COLUMN_CONVICTION + " INTEGER, "
+                + CarcosaEntry.COLUMN_CHASING_STRANGER + " INTEGER, "
+                + CarcosaEntry.COLUMN_STRANGER + " INTEGER, "
+                + CarcosaEntry.COLUMN_POLICE + " INTEGER, "
+                + CarcosaEntry.COLUMN_THEATRE + " INTEGER, "
+                + CarcosaEntry.COLUMN_CONSTANCE + " INTEGER, "
+                + CarcosaEntry.COLUMN_JORDAN + " INTEGER, "
+                + CarcosaEntry.COLUMN_ISHIMARU + " INTEGER, "
+                + CarcosaEntry.COLUMN_SEBASTIEN + " INTEGER, "
+                + CarcosaEntry.COLUMN_ASHLEIGH + " INTEGER, "
+                + CarcosaEntry.COLUMN_PARTY + " INTEGER, "
+                + CarcosaEntry.COLUMN_ONYX + " INTEGER, "
+                + CarcosaEntry.COLUMN_ASYLUM + " INTEGER, "
+                + CarcosaEntry.COLUMN_DANIEL + " INTEGER, "
+                + CarcosaEntry.COLUMN_DANIELS_WARNING + " INTEGER, "
+                + CarcosaEntry.COLUMN_DREAMS + " INTEGER NOT NULL, "
+                + CarcosaEntry.COLUMN_NIGEL + " INTEGER, "
+                + CarcosaEntry.COLUMN_INV_ONE_READ_ACT + " INTEGER, "
+                + CarcosaEntry.COLUMN_INV_TWO_READ_ACT + " INTEGER, "
+                + CarcosaEntry.COLUMN_INV_THREE_READ_ACT + " INTEGER, "
+                + CarcosaEntry.COLUMN_INV_FOUR_READ_ACT + " INTEGER, "
+                + CarcosaEntry.COLUMN_PATH + " INTEGER, "
+                + CarcosaEntry.COLUMN_HASTUR + " INTEGER, "
+                + CarcosaEntry.COLUMN_INV_ONE_POSSESSED + " INTEGER, "
+                + CarcosaEntry.COLUMN_INV_TWO_POSSESSED + " INTEGER, "
+                + CarcosaEntry.COLUMN_INV_THREE_POSSESSED + " INTEGER, "
+                + CarcosaEntry.COLUMN_INV_FOUR_POSSESSED + " INTEGER);";
+
+        // The Forgotten Age table
+        String SQL_CREATE_FORGOTTEN_TABLE = "CREATE TABLE " + ForgottenEntry.TABLE_NAME + " ("
+                + ForgottenEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + ForgottenEntry.PARENT_ID + " INTEGER NOT NULL, "
+                + ForgottenEntry.COLUMN_YIGS_FURY + " INTEGER, "
+                + ForgottenEntry.COLUMN_RUINS + " INTEGER, "
+                + ForgottenEntry.COLUMN_ICHTACA + " INTEGER, "
+                + ForgottenEntry.COLUMN_ALEJANDRO + " INTEGER, "
+                + ForgottenEntry.COLUMN_LOW_RATIONS + " INTEGER, "
+                + ForgottenEntry.COLUMN_RELIC + " INTEGER, "
+                + ForgottenEntry.COLUMN_HARBINGER + " INTEGER, "
+                + ForgottenEntry.COLUMN_EZTLI + " INTEGER, "
+                + ForgottenEntry.COLUMN_CUSTODY + " INTEGER);";
 
         // Chaos bag table
-        String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ArkhamContract.ChaosBagEntry.TABLE_NAME + " ("
-                + ArkhamContract.ChaosBagEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_CHAOS_BAG_NAME + " STRING NOT NULL, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_CAMPAIGN_TOKENS + " INTEGER NOT NULL, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_ONE + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_TWO + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_THREE + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_FOUR + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_FIVE + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_SIX + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_SEVEN + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_EIGHT + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_NINE + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_TEN + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_ELEVEN + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_TWELVE + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_THIRTEEN + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_FOURTEEN + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_FIFTEEN + " INTEGER, "
-                + ArkhamContract.ChaosBagEntry.COLUMN_SIXTEEN + " INTEGER);";
+        String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ChaosBagEntry.TABLE_NAME + " ("
+                + ChaosBagEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + ChaosBagEntry.COLUMN_CHAOS_BAG_NAME + " STRING NOT NULL, "
+                + ChaosBagEntry.COLUMN_CAMPAIGN_TOKENS + " INTEGER NOT NULL, "
+                + ChaosBagEntry.COLUMN_ONE + " INTEGER, "
+                + ChaosBagEntry.COLUMN_TWO + " INTEGER, "
+                + ChaosBagEntry.COLUMN_THREE + " INTEGER, "
+                + ChaosBagEntry.COLUMN_FOUR + " INTEGER, "
+                + ChaosBagEntry.COLUMN_FIVE + " INTEGER, "
+                + ChaosBagEntry.COLUMN_SIX + " INTEGER, "
+                + ChaosBagEntry.COLUMN_SEVEN + " INTEGER, "
+                + ChaosBagEntry.COLUMN_EIGHT + " INTEGER, "
+                + ChaosBagEntry.COLUMN_NINE + " INTEGER, "
+                + ChaosBagEntry.COLUMN_TEN + " INTEGER, "
+                + ChaosBagEntry.COLUMN_ELEVEN + " INTEGER, "
+                + ChaosBagEntry.COLUMN_TWELVE + " INTEGER, "
+                + ChaosBagEntry.COLUMN_THIRTEEN + " INTEGER, "
+                + ChaosBagEntry.COLUMN_FOURTEEN + " INTEGER, "
+                + ChaosBagEntry.COLUMN_FIFTEEN + " INTEGER, "
+                + ChaosBagEntry.COLUMN_SIXTEEN + " INTEGER);";
 
         // Execute the SQL statements
         db.execSQL(SQL_CREATE_CAMPAIGNS_TABLE);
@@ -199,6 +219,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_NIGHT_TABLE);
         db.execSQL(SQL_CREATE_DUNWICH_TABLE);
         db.execSQL(SQL_CREATE_CARCOSA_TABLE);
+        db.execSQL(SQL_CREATE_FORGOTTEN_TABLE);
         db.execSQL(SQL_CREATE_CHAOS_BAG_TABLE);
     }
 
@@ -335,35 +356,35 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_TWELVE_SIX);
                 db.execSQL(SQL_UPGRADE_TWELVE_SEVEN);
             case 14:
-                String SQL_CREATE_CARCOSA_TABLE = "CREATE TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ("
-                        + ArkhamContract.CarcosaEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                        + ArkhamContract.CarcosaEntry.PARENT_ID + " INTEGER NOT NULL);";
+                String SQL_CREATE_CARCOSA_TABLE = "CREATE TABLE " + CarcosaEntry.TABLE_NAME + " ("
+                        + CarcosaEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                        + CarcosaEntry.PARENT_ID + " INTEGER NOT NULL);";
                 db.execSQL(SQL_CREATE_CARCOSA_TABLE);
             case 15:
-                String SQL_UPGRADE_THIRTEEN_ONE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DOUBT + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_TWO = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_CONVICTION + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_THREE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_CHASING_STRANGER + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_FOUR = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_STRANGER + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_FIVE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_POLICE + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_SIX = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_THEATRE + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_SEVEN = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_CONSTANCE + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_EIGHT = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_JORDAN + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_NINE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_ISHIMARU + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_TEN = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_SEBASTIEN + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_ELEVEN = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_ASHLEIGH + " INTEGER";
-                String SQL_UPGRADE_THIRTEEN_TWELVE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_PARTY + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_ONE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_DOUBT + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_TWO = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_CONVICTION + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_THREE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_CHASING_STRANGER + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_FOUR = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_STRANGER + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_FIVE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_POLICE + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_SIX = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_THEATRE + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_SEVEN = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_CONSTANCE + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_EIGHT = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_JORDAN + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_NINE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_ISHIMARU + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_TEN = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_SEBASTIEN + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_ELEVEN = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_ASHLEIGH + " INTEGER";
+                String SQL_UPGRADE_THIRTEEN_TWELVE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_PARTY + " INTEGER";
                 db.execSQL(SQL_UPGRADE_THIRTEEN_ONE);
                 db.execSQL(SQL_UPGRADE_THIRTEEN_TWO);
                 db.execSQL(SQL_UPGRADE_THIRTEEN_THREE);
@@ -377,8 +398,8 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_THIRTEEN_ELEVEN);
                 db.execSQL(SQL_UPGRADE_THIRTEEN_TWELVE);
             case 16:
-                String SQL_UPGRADE_FOURTEEN = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_ONYX + " INTEGER";
+                String SQL_UPGRADE_FOURTEEN = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_ONYX + " INTEGER";
                 db.execSQL(SQL_UPGRADE_FOURTEEN);
             case 17:
                 String SQL_UPGRADE_FIFTEEN_ONE = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
@@ -394,20 +415,20 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_FIFTEEN_THREE);
                 db.execSQL(SQL_UPGRADE_FIFTEEN_FOUR);
             case 18:
-                String SQL_UPGRADE_SIXTEEN_ONE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_ASYLUM + " INTEGER";
-                String SQL_UPGRADE_SIXTEEN_TWO = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DANIEL + " INTEGER";
-                String SQL_UPGRADE_SIXTEEN_THREE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DANIELS_WARNING + " INTEGER";
+                String SQL_UPGRADE_SIXTEEN_ONE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_ASYLUM + " INTEGER";
+                String SQL_UPGRADE_SIXTEEN_TWO = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_DANIEL + " INTEGER";
+                String SQL_UPGRADE_SIXTEEN_THREE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_DANIELS_WARNING + " INTEGER";
                 db.execSQL(SQL_UPGRADE_SIXTEEN_ONE);
                 db.execSQL(SQL_UPGRADE_SIXTEEN_TWO);
                 db.execSQL(SQL_UPGRADE_SIXTEEN_THREE);
             case 19:
-                String SQL_UPGRADE_SEVENTEEN_ONE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_DREAMS + " INTEGER NOT NULL DEFAULT 0";
-                String SQL_UPGRADE_SEVENTEEN_TWO = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_NIGEL + " INTEGER";
+                String SQL_UPGRADE_SEVENTEEN_ONE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_DREAMS + " INTEGER NOT NULL DEFAULT 0";
+                String SQL_UPGRADE_SEVENTEEN_TWO = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_NIGEL + " INTEGER";
                 db.execSQL(SQL_UPGRADE_SEVENTEEN_ONE);
                 db.execSQL(SQL_UPGRADE_SEVENTEEN_TWO);
             case 20:
@@ -417,40 +438,40 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
             case 21:
                 String SQL_UPGRADE_NINETEEN = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
                         CampaignEntry.COLUMN_CHAOS_BAG + " INTEGER NOT NULL DEFAULT -1";
-                String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ArkhamContract.ChaosBagEntry.TABLE_NAME + " ("
-                        + ArkhamContract.ChaosBagEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_CHAOS_BAG_NAME + " STRING NOT NULL, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_CAMPAIGN_TOKENS + " INTEGER NOT NULL, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_ONE + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_TWO + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_THREE + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_FOUR + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_FIVE + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_SIX + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_SEVEN + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_EIGHT + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_NINE + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_TEN + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_ELEVEN + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_TWELVE + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_THIRTEEN + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_FOURTEEN + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_FIFTEEN + " INTEGER, "
-                        + ArkhamContract.ChaosBagEntry.COLUMN_SIXTEEN + " INTEGER);";
+                String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ChaosBagEntry.TABLE_NAME + " ("
+                        + ChaosBagEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                        + ChaosBagEntry.COLUMN_CHAOS_BAG_NAME + " STRING NOT NULL, "
+                        + ChaosBagEntry.COLUMN_CAMPAIGN_TOKENS + " INTEGER NOT NULL, "
+                        + ChaosBagEntry.COLUMN_ONE + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_TWO + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_THREE + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_FOUR + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_FIVE + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_SIX + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_SEVEN + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_EIGHT + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_NINE + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_TEN + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_ELEVEN + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_TWELVE + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_THIRTEEN + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_FOURTEEN + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_FIFTEEN + " INTEGER, "
+                        + ChaosBagEntry.COLUMN_SIXTEEN + " INTEGER);";
                 db.execSQL(SQL_UPGRADE_NINETEEN);
                 db.execSQL(SQL_CREATE_CHAOS_BAG_TABLE);
             case 22:
-                String SQL_UPGRADE_TWENTY_ONE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD COLUMN " +
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_ONE_READ_ACT + " INTEGER";
-                String SQL_UPGRADE_TWENTY_TWO = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                String SQL_UPGRADE_TWENTY_ONE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD COLUMN " +
+                        CarcosaEntry.COLUMN_INV_ONE_READ_ACT + " INTEGER";
+                String SQL_UPGRADE_TWENTY_TWO = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " +
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_READ_ACT + " INTEGER";
-                String SQL_UPGRADE_TWENTY_THREE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        CarcosaEntry.COLUMN_INV_TWO_READ_ACT + " INTEGER";
+                String SQL_UPGRADE_TWENTY_THREE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " +
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_READ_ACT + " INTEGER";
-                String SQL_UPGRADE_TWENTY_FOUR = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        CarcosaEntry.COLUMN_INV_THREE_READ_ACT + " INTEGER";
+                String SQL_UPGRADE_TWENTY_FOUR = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " +
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_READ_ACT + " INTEGER";
+                        CarcosaEntry.COLUMN_INV_FOUR_READ_ACT + " INTEGER";
                 db.execSQL(SQL_UPGRADE_TWENTY_ONE);
                 db.execSQL(SQL_UPGRADE_TWENTY_TWO);
                 db.execSQL(SQL_UPGRADE_TWENTY_THREE);
@@ -458,28 +479,28 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
             case 23:
                 String SQL_UPGRADE_TWENTYONE_A = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
                         CampaignEntry.COLUMN_CARCOSA_COMPLETED + " INTEGER";
-                String SQL_UPGRADE_TWENTYONE_B = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_PATH + " INTEGER";
+                String SQL_UPGRADE_TWENTYONE_B = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_PATH + " INTEGER";
                 String SQL_UPGRADE_TWENTYONE_C = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
                         CampaignEntry.COLUMN_NOTES + " STRING";
                 db.execSQL(SQL_UPGRADE_TWENTYONE_A);
                 db.execSQL(SQL_UPGRADE_TWENTYONE_B);
                 db.execSQL(SQL_UPGRADE_TWENTYONE_C);
             case 24:
-                String SQL_UPGRADE_TWENTYTWO_ONE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                String SQL_UPGRADE_TWENTYTWO_ONE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " +
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_ONE_POSSESSED + " INTEGER";
-                String SQL_UPGRADE_TWENTYTWO_TWO = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        CarcosaEntry.COLUMN_INV_ONE_POSSESSED + " INTEGER";
+                String SQL_UPGRADE_TWENTYTWO_TWO = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " +
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_TWO_POSSESSED + " INTEGER";
-                String SQL_UPGRADE_TWENTYTWO_THREE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        CarcosaEntry.COLUMN_INV_TWO_POSSESSED + " INTEGER";
+                String SQL_UPGRADE_TWENTYTWO_THREE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " +
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_THREE_POSSESSED + " INTEGER";
-                String SQL_UPGRADE_TWENTYTWO_FOUR = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
+                        CarcosaEntry.COLUMN_INV_THREE_POSSESSED + " INTEGER";
+                String SQL_UPGRADE_TWENTYTWO_FOUR = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
                         "COLUMN " +
-                        ArkhamContract.CarcosaEntry.COLUMN_INV_FOUR_POSSESSED + " INTEGER";
-                String SQL_UPGRADE_TWENTYTWO_FIVE = "ALTER TABLE " + ArkhamContract.CarcosaEntry.TABLE_NAME + " ADD " +
-                        "COLUMN " + ArkhamContract.CarcosaEntry.COLUMN_HASTUR + " INTEGER";
+                        CarcosaEntry.COLUMN_INV_FOUR_POSSESSED + " INTEGER";
+                String SQL_UPGRADE_TWENTYTWO_FIVE = "ALTER TABLE " + CarcosaEntry.TABLE_NAME + " ADD " +
+                        "COLUMN " + CarcosaEntry.COLUMN_HASTUR + " INTEGER";
                 db.execSQL(SQL_UPGRADE_TWENTYTWO_ONE);
                 db.execSQL(SQL_UPGRADE_TWENTYTWO_TWO);
                 db.execSQL(SQL_UPGRADE_TWENTYTWO_THREE);
@@ -518,6 +539,43 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                         CampaignEntry.COLUMN_DOOMED + " INTEGER DEFAULT 0";
                 db.execSQL(SQL_UPGRADE_TWENTYFOUR_ONE);
                 db.execSQL(SQL_UPGRADE_TWENTYFOUR_TWO);
+            case 27:
+                String SQL_UPGRADE_TWENTYFIVE_ONE = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
+                        InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_TWO = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
+                        InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_THREE = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
+                        InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_FOUR = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_YIGS_FURY + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_FIVE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_RUINS + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_SIX = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_ICHTACA+ " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_SEVEN = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_ALEJANDRO + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_EIGHT = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_LOW_RATIONS + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_NINE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_RELIC + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_TEN = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_HARBINGER + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_ELEVEN = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_EZTLI + " INTEGER";
+                String SQL_UPGRADE_TWENTYFIVE_TWELVE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_CUSTODY + " INTEGER";
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_ONE);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_TWO);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_THREE);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_FOUR);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_FIVE);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_SIX);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_SEVEN);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_EIGHT);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_NINE);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_TEN);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_ELEVEN);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_TWELVE);
         }
     }
 }

@@ -7,7 +7,7 @@ ADD SCENARIO
         Set additional views
         Set resolution texts
         Set resolutions
-        *Check if any cards inflict trauma or record in the campaign log*
+        *Check if any cards inflict trauma or record in the campaign log or add chaos tokens*
 4.  CampaignLogActivity
 5.  EditLogActivity
         Add new views

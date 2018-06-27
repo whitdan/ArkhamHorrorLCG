@@ -28,7 +28,7 @@ import android.widget.Toast;
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.CampaignLogActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.ChaosBagActivity;
-import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.EditTeamActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc.EditTeamActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamDbHelper;
@@ -89,7 +89,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
         setup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 1) {
+                if (globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 8) {
                     Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
@@ -176,7 +176,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
                         investigatorDead = true;
                     }
                 }
-                if (globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 1) {
+                if (globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 8) {
                     Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
                     toast.show();
                 } else if (setupRequired) {

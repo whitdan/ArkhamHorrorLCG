@@ -580,20 +580,20 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         locationPlacement.setImageResource(R.drawable.dim_locations);
                         setAside.setText(R.string.dim_set_aside);
                         StringBuilder dimAdditionalBuilder = new StringBuilder();
-                        if((globalVariables.Doubt + globalVariables.Conviction) <= 5){
+                        if ((globalVariables.Doubt + globalVariables.Conviction) <= 5) {
                             dimAdditionalBuilder.append(getString(R.string.dim_act_one));
-                        } else if(globalVariables.Doubt > globalVariables.Conviction){
+                        } else if (globalVariables.Doubt > globalVariables.Conviction) {
                             dimAdditionalBuilder.append(getString(R.string.dim_act_two));
-                        } else if(globalVariables.Conviction > globalVariables.Doubt){
+                        } else if (globalVariables.Conviction > globalVariables.Doubt) {
                             dimAdditionalBuilder.append(getString(R.string.dim_act_three));
-                        } else if (globalVariables.Doubt == globalVariables.Conviction){
+                        } else if (globalVariables.Doubt == globalVariables.Conviction) {
                             dimAdditionalBuilder.append(getString(R.string.dim_act_four));
                         }
-                        if(globalVariables.ChasingStranger <= 2){
+                        if (globalVariables.ChasingStranger <= 2) {
                             dimAdditionalBuilder.append(getString(R.string.dim_doom_one));
-                        } else if (globalVariables.ChasingStranger >= 3 && globalVariables.ChasingStranger <= 5){
+                        } else if (globalVariables.ChasingStranger >= 3 && globalVariables.ChasingStranger <= 5) {
                             dimAdditionalBuilder.append(getString(R.string.dim_doom_two));
-                        } else if (globalVariables.ChasingStranger >= 6 && globalVariables.ChasingStranger <= 8){
+                        } else if (globalVariables.ChasingStranger >= 6 && globalVariables.ChasingStranger <= 8) {
                             dimAdditionalBuilder.append(getString(R.string.dim_doom_three));
                         }
                         dimAdditionalBuilder.append(getString(R.string.dim_additional));
@@ -605,6 +605,69 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         break;
                 }
                 break;
+            case 4:
+                switch (globalVariables.CurrentScenario) {
+                    case 1:
+                        sets.setText(R.string.untamed_sets);
+                        setsImage.setImageResource(R.drawable.untamed_sets);
+                        locations.setText(R.string.untamed_locations);
+                        setAside.setText(R.string.untamed_set_aside);
+                        setAsideImage.setVisibility(VISIBLE);
+                        setAsideImage.setImageResource(R.drawable.untamed_set_aside);
+                        additional.setText(R.string.untamed_additional);
+                        boolean untamedLeader = false;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            switch (globalVariables.Investigators.get(i).Name) {
+                                case Investigator.URSULA_DOWNS:
+                                case Investigator.LEO_ANDERSON:
+                                    untamedLeader = true;
+                                    break;
+                            }
+                        }
+                        if (untamedLeader) {
+                            additionalTwo.setVisibility(VISIBLE);
+                            additionalTwo.setText(R.string.untamed_additional_lead);
+                        }
+                        break;
+                    case 6:
+                        sets.setText(R.string.eztli_sets);
+                        setsImage.setImageResource(R.drawable.eztli_sets);
+                        locations.setText(R.string.eztli_locations);
+                        setAside.setText(R.string.eztli_set_aside);
+                        additional.setText(R.string.eztli_additional);
+                        boolean eztliLeader = false;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            switch (globalVariables.Investigators.get(i).Name) {
+                                case Investigator.URSULA_DOWNS:
+                                case Investigator.LEO_ANDERSON:
+                                    eztliLeader = true;
+                                    break;
+                            }
+                        }
+                        StringBuilder eztliBuilder = new StringBuilder();
+                        if(globalVariables.Eztli > 0){
+                            eztliBuilder.append(getString(R.string.eztli_additional_place));
+                            eztliBuilder.append(" ");
+                            eztliBuilder.append(Integer.toString(globalVariables.Eztli));
+                            eztliBuilder.append(" ");
+                            eztliBuilder.append(getString(R.string.eztli_additional_doom));
+                        }
+                        if (eztliLeader) {
+                            eztliBuilder.append(getString(R.string.eztli_additional_lead));
+                        }
+                        if(globalVariables.LowRations > 0){
+                            eztliBuilder.append(Integer.toString(globalVariables.LowRations));
+                            eztliBuilder.append(" ");
+                            eztliBuilder.append(getString(R.string.eztli_low_rations));
+                        }
+                        if(eztliBuilder.length() > 0){
+                            additionalTwo.setVisibility(VISIBLE);
+                            String eztliAdditional = eztliBuilder.toString().trim();
+                            eztliAdditional = eztliAdditional + "\n";
+                            additionalTwo.setText(eztliAdditional);
+                        }
+                        break;
+                }
         }
         if (globalVariables.CurrentScenario > 100) {
             switch (globalVariables.CurrentScenario) {

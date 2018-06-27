@@ -79,6 +79,9 @@ public class ArkhamContract {
         public static final String COLUMN_INVESTIGATOR_PLAYER = "player";
         public static final String COLUMN_INVESTIGATOR_DECKNAME = "deckname";
         public static final String COLUMN_INVESTIGATOR_DECKLIST = "decklist";
+        public static final String COLUMN_INVESTIGATOR_PROVISIONS = "provisions";
+        public static final String COLUMN_INVESTIGATOR_MEDICINE = "medicine";
+        public static final String COLUMN_INVESTIGATOR_SUPPLIES = "supplies";
     }
 
     public static class NightEntry implements BaseColumns{
@@ -156,6 +159,21 @@ public class ArkhamContract {
         public static final String COLUMN_INV_TWO_POSSESSED = "inv_two_possessed";
         public static final String COLUMN_INV_THREE_POSSESSED = "inv_three_possessed";
         public static final String COLUMN_INV_FOUR_POSSESSED = "inv_four_possessed";
+    }
+
+    public static class ForgottenEntry implements BaseColumns{
+        public static final String TABLE_NAME = "forgotten";
+        static final String _ID = BaseColumns._ID;
+        public static final String PARENT_ID = "parent_id";
+        public static final String COLUMN_YIGS_FURY = "yigs_fury";
+        public static final String COLUMN_RUINS = "ruins";
+        public static final String COLUMN_ICHTACA = "ichtaca";
+        public static final String COLUMN_ALEJANDRO = "alejandro";
+        public static final String COLUMN_LOW_RATIONS = "low_rations";
+        public static final String COLUMN_RELIC = "relic";
+        public static final String COLUMN_HARBINGER = "harbinger";
+        public static final String COLUMN_EZTLI = "eztli";
+        public static final String COLUMN_CUSTODY = "custody";
     }
 
     public static class ChaosBagEntry implements BaseColumns{

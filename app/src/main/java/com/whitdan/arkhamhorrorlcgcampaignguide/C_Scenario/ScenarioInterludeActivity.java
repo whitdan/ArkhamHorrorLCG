@@ -8,6 +8,10 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -51,9 +55,10 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
         // Set typefaces
         final TextView introduction = findViewById(R.id.introduction_text);
         Typeface arnoproitalic = Typeface.createFromAsset(getAssets(), "fonts/arnoproitalic.otf");
+        Typeface wolgastbold = Typeface.createFromAsset(getAssets(), "fonts/wolgastbold.otf");
         introduction.setTypeface(arnoproitalic);
         final TextView introductionOne = findViewById(R.id.introduction_text_additional_one);
-        TextView introductionTwo = findViewById(R.id.introduction_text_additional_two);
+        final TextView introductionTwo = findViewById(R.id.introduction_text_additional_two);
         TextView introductionThree = findViewById(R.id.introduction_text_additional_three);
         TextView introductionFour = findViewById(R.id.introduction_text_additional_four);
         TextView introductionFive = findViewById(R.id.introduction_text_additional_five);
@@ -68,10 +73,18 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
         final RadioButton introductionOptionOne = findViewById(R.id.introduction_option_one);
         final RadioButton introductionOptionTwo = findViewById(R.id.introduction_option_two);
         final RadioButton introductionOptionThree = findViewById(R.id.introduction_option_three);
+        final RadioButton introductionOptionFour = findViewById(R.id.introduction_option_four);
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
+        final Typeface arnoprobold = Typeface.createFromAsset(getAssets(), "fonts/arnoprobold.otf");
         introductionOptionOne.setTypeface(arnopro);
         introductionOptionTwo.setTypeface(arnopro);
         introductionOptionThree.setTypeface(arnopro);
+        introductionOptionFour.setTypeface(arnopro);
+        LinearLayout interludeLayout = findViewById(R.id.interlude_layout);
+        LinearLayout additionalLayout = findViewById(R.id.interlude_additional_layout);
+
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout
+                .LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
         // Set text and apply any resolutions
         switch (globalVariables.CurrentCampaign) {
@@ -199,6 +212,398 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                         break;
                 }
                 break;
+            case 4:
+                String[] investigatorNames = getResources().getStringArray(R.array.investigators);
+                switch (globalVariables.CurrentScenario) {
+                    case 2:
+                        StringBuilder blanket = new StringBuilder();
+                        blanket.append(getResources().getString(R.string.restless_blanket_one));
+                        int blanketCount = 0;
+                        StringBuilder noBlanket = new StringBuilder();
+                        noBlanket.append(getResources().getString(R.string.restless_no_blanket_one));
+                        int noBlanketCount = 0;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            if (globalVariables.Investigators.get(i).Supplies % 3 == 0) {
+                                blanket.append("\t");
+                                blanket.append(investigatorNames[globalVariables.Investigators.get(i).Name]);
+                                blanket.append("\n");
+                                blanketCount++;
+                            } else {
+                                noBlanket.append("\t");
+                                noBlanket.append(investigatorNames[globalVariables.Investigators.get(i).Name]);
+                                noBlanket.append("\n");
+                                noBlanketCount++;
+
+                                View noBlanketHeading = View.inflate(this, R.layout.e_item_heading, null);
+                                TextView noBlanketHeadingText = noBlanketHeading.findViewById(R.id.heading);
+                                noBlanketHeadingText.setText(investigatorNames[globalVariables.Investigators.get(i)
+                                        .Name]);
+                                noBlanketHeadingText.setTypeface(teutonic);
+                                interludeLayout.addView(noBlanketHeading, lp);
+
+                                View noBlanketOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                                RadioButton noBlanketOptionOne = noBlanketOptions.findViewById(R.id.option_one);
+                                RadioButton noBlanketOptionTwo = noBlanketOptions.findViewById(R.id.option_two);
+                                noBlanketOptionOne.setText(R.string.restless_no_blanket_option_one);
+                                noBlanketOptionTwo.setText(R.string.restless_no_blanket_option_two);
+                                noBlanketOptionOne.setTypeface(arnopro);
+                                noBlanketOptionTwo.setTypeface(arnopro);
+                                noBlanketOptionOne.setId(100 + i);
+                                noBlanketOptionTwo.setId(200 + i);
+                                interludeLayout.addView(noBlanketOptions, lp);
+                            }
+                        }
+                        blanket.append(getResources().getString(R.string.restless_blanket_two));
+                        noBlanket.append(getResources().getString(R.string.restless_no_blanket_two));
+
+                        if (blanketCount > 0) {
+                            introduction.setTypeface(arnoprobold);
+                            introduction.setText(blanket.toString());
+                            introductionOne.setVisibility(VISIBLE);
+                            introductionOne.setText(R.string.restless_restful_sleep);
+                        } else {
+                            introduction.setVisibility(GONE);
+                        }
+
+                        if (noBlanketCount > 0) {
+                            introductionTwo.setVisibility(VISIBLE);
+                            introductionTwo.setTypeface(arnoprobold);
+                            introductionTwo.setText(noBlanket.toString());
+                            introductionThree.setVisibility(VISIBLE);
+                            introductionThree.setText(R.string.restless_tossing_turning);
+                        }
+                        break;
+                    case 3:
+                        int provisions = 0;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            provisions += globalVariables.Investigators.get(i).Provisions;
+                        }
+                        introduction.setTypeface(arnoprobold);
+                        if ((globalVariables.Investigators.size() - provisions) <= 0) {
+                            introduction.setText(R.string.restless_not_low);
+                            int investigators = globalVariables.Investigators.size();
+                            for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                if (investigators > globalVariables.Investigators.get(i).Provisions) {
+                                    investigators = investigators - globalVariables.Investigators.get(i).Provisions;
+                                    globalVariables.Investigators.get(i).Provisions = 0;
+                                } else if (investigators != 0) {
+                                    globalVariables.Investigators.get(i).Provisions = globalVariables.Investigators
+                                            .get(i).Provisions - investigators;
+                                    investigators = 0;
+                                }
+                            }
+                            globalVariables.LowRations = 0;
+                        } else {
+                            for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                globalVariables.Investigators.get(i).Provisions = 0;
+                            }
+                            int low = globalVariables.Investigators.size() - provisions;
+                            globalVariables.LowRations = low;
+                            StringBuilder lowSupplies = new StringBuilder();
+                            lowSupplies.append(getResources().getString(R.string.restless_low_one));
+                            lowSupplies.append(" ");
+                            lowSupplies.append(Integer.toString(low));
+                            lowSupplies.append(" ");
+                            if (low == 1) {
+                                lowSupplies.append(getResources().getString(R.string.restless_investigator));
+                            } else {
+                                lowSupplies.append(getResources().getString(R.string.restless_investigators));
+                            }
+                            lowSupplies.append(" ");
+                            lowSupplies.append(getResources().getString(R.string.restless_low_two));
+                            introduction.setText(lowSupplies.toString());
+                            introductionOne.setVisibility(VISIBLE);
+                            introductionOne.setText(R.string.restless_low);
+                            introductionTwo.setVisibility(VISIBLE);
+                            introductionTwo.setTypeface(arnoprobold);
+                            introductionTwo.setText(R.string.restless_low_effect);
+                        }
+                        break;
+                    case 4:
+                        introduction.setTypeface(arnoprobold);
+                        introduction.setText(R.string.restless_choose_lookout);
+                        introductionOptions.setVisibility(VISIBLE);
+                        introductionOptionOne.setVisibility(GONE);
+                        introductionOptionTwo.setVisibility(GONE);
+                        introductionOptionThree.setVisibility(GONE);
+                        introductionOptionFour.setVisibility(GONE);
+                        switch (globalVariables.Investigators.size()) {
+                            case 4:
+                                introductionOptionFour.setVisibility(VISIBLE);
+                                String investigatorFour = investigatorNames[globalVariables.Investigators.get(3)
+                                        .Name];
+                                if (globalVariables.Investigators.get(3).Supplies % 17 == 0) {
+                                    investigatorFour = investigatorFour + " " + getResources().getString(R.string
+                                            .restless_binoculars);
+                                }
+                                introductionOptionFour.setText(investigatorFour);
+                            case 3:
+                                introductionOptionThree.setVisibility(VISIBLE);
+                                String investigatorThree = investigatorNames[globalVariables.Investigators.get(2)
+                                        .Name];
+                                if (globalVariables.Investigators.get(2).Supplies % 17 == 0) {
+                                    investigatorThree = investigatorThree + " " + getResources().getString(R.string
+                                            .restless_binoculars);
+                                }
+                                introductionOptionThree.setText(investigatorThree);
+                            case 2:
+                                introductionOptionTwo.setVisibility(VISIBLE);
+                                String investigatorTwo = investigatorNames[globalVariables.Investigators.get(1)
+                                        .Name];
+                                if (globalVariables.Investigators.get(1).Supplies % 17 == 0) {
+                                    investigatorTwo = investigatorTwo + " " + getResources().getString(R.string
+                                            .restless_binoculars);
+                                }
+                                introductionOptionTwo.setText(investigatorTwo);
+                            case 1:
+                                introductionOptionOne.setVisibility(VISIBLE);
+                                String investigatorOne = investigatorNames[globalVariables.Investigators.get(0)
+                                        .Name];
+                                if (globalVariables.Investigators.get(0).Supplies % 17 == 0) {
+                                    investigatorOne = investigatorOne + " " + getResources().getString(R.string
+                                            .restless_binoculars);
+                                }
+                                introductionOptionOne.setText(investigatorOne);
+                        }
+                        introductionOptions.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                                introductionOne.setVisibility(VISIBLE);
+                                introductionOne.setTypeface(arnoprobold);
+                                introductionOne.setText(R.string.restless_lookout_reads);
+                                introductionTwo.setVisibility(VISIBLE);
+                                switch (checkedId) {
+                                    case R.id.introduction_option_one:
+                                        if (globalVariables.Investigators.get(0).Supplies % 17 == 0) {
+                                            introductionTwo.setText(R.string.restless_shapes_trees);
+                                        } else {
+                                            introductionTwo.setText(R.string.restless_eyes_dark);
+                                        }
+                                        break;
+                                    case R.id.introduction_option_two:
+                                        if (globalVariables.Investigators.get(1).Supplies % 17 == 0) {
+                                            introductionTwo.setText(R.string.restless_shapes_trees);
+                                        } else {
+                                            introductionTwo.setText(R.string.restless_eyes_dark);
+                                        }
+                                        break;
+                                    case R.id.introduction_option_three:
+                                        if (globalVariables.Investigators.get(2).Supplies % 17 == 0) {
+                                            introductionTwo.setText(R.string.restless_shapes_trees);
+                                        } else {
+                                            introductionTwo.setText(R.string.restless_eyes_dark);
+                                        }
+                                        break;
+                                    case R.id.introduction_option_four:
+                                        if (globalVariables.Investigators.get(3).Supplies % 17 == 0) {
+                                            introductionTwo.setText(R.string.restless_shapes_trees);
+                                        } else {
+                                            introductionTwo.setText(R.string.restless_eyes_dark);
+                                        }
+                                        break;
+                                }
+                            }
+                        });
+                        break;
+                    case 5:
+                        int medicine = 0;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            medicine += globalVariables.Investigators.get(i).Medicine;
+                        }
+                        introduction.setTypeface(arnoprobold);
+                        if (medicine > 0) {
+                            StringBuilder medicineString = new StringBuilder();
+                            medicineString.append(Integer.toString(medicine));
+                            medicineString.append(" ");
+                            if (medicine == 1) {
+                                medicineString.append(getResources().getString(R.string.restless_investigator));
+                            } else {
+                                medicineString.append(getResources().getString(R.string.restless_investigators));
+                            }
+                            medicineString.append(" ");
+                            medicineString.append(getResources().getString(R.string.restless_poison_one));
+                            introduction.setText(medicineString.toString());
+
+                            View medicineHeading = View.inflate(this, R.layout.e_item_heading, null);
+                            TextView medicineHeadingText = medicineHeading.findViewById(R.id.heading);
+                            medicineHeadingText.setText(R.string.restless_poison_counter);
+                            medicineHeadingText.setTypeface(teutonic);
+                            additionalLayout.addView(medicineHeading, lp);
+                            View medicineCounter = View.inflate(this, R.layout.e_item_counter, null);
+                            final TextView amount = medicineCounter.findViewById(R.id.amount);
+                            amount.setId(R.id.medicine_amount);
+                            amount.setText("0");
+                            amount.setTypeface(arnopro);
+                            ImageView decrement = medicineCounter.findViewById(R.id.decrement);
+                            ImageView increment = medicineCounter.findViewById(R.id.increment);
+                            additionalLayout.addView(medicineCounter, lp);
+                            decrement.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    int current = Integer.valueOf(amount.getText().toString());
+                                    if (current > 0) {
+                                        current--;
+                                        amount.setText(Integer.toString(current));
+                                    }
+                                }
+                            });
+                            final int medicineAmount = medicine;
+                            increment.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    int current = Integer.valueOf(amount.getText().toString());
+                                    if (current < medicineAmount && current < globalVariables.Investigators.size()) {
+                                        current++;
+                                        amount.setText(Integer.toString(current));
+                                    }
+                                }
+                            });
+                        } else {
+                            introduction.setText(R.string.restless_poison_two);
+                        }
+
+                        View poisonedHeading = View.inflate(this, R.layout.e_item_heading, null);
+                        TextView poisonedHeadingText = poisonedHeading.findViewById(R.id.heading);
+                        poisonedHeadingText.setText(R.string.restless_poisoned_heading);
+                        poisonedHeadingText.setTypeface(teutonic);
+                        additionalLayout.addView(poisonedHeading, lp);
+
+                        View invOne = View.inflate(this, R.layout.e_item_checkbox, null);
+                        final CheckBox invOneBox = invOne.findViewById(R.id.checkbox);
+                        invOneBox.setTypeface(arnopro);
+                        additionalLayout.addView(invOne, lp);
+                        invOne.setVisibility(GONE);
+                        View invTwo = View.inflate(this, R.layout.e_item_checkbox, null);
+                        final CheckBox invTwoBox = invTwo.findViewById(R.id.checkbox);
+                        invTwoBox.setTypeface(arnopro);
+                        additionalLayout.addView(invTwo, lp);
+                        invTwo.setVisibility(GONE);
+                        View invThree = View.inflate(this, R.layout.e_item_checkbox, null);
+                        final CheckBox invThreeBox = invThree.findViewById(R.id.checkbox);
+                        invThreeBox.setTypeface(arnopro);
+                        additionalLayout.addView(invThree, lp);
+                        invThree.setVisibility(GONE);
+                        final View invFour = View.inflate(this, R.layout.e_item_checkbox, null);
+                        final CheckBox invFourBox = invFour.findViewById(R.id.checkbox);
+                        invFourBox.setTypeface(arnopro);
+                        additionalLayout.addView(invFour, lp);
+                        invFour.setVisibility(GONE);
+
+                        switch (globalVariables.Investigators.size()) {
+                            case 4:
+                                invFour.setVisibility(VISIBLE);
+                                invFourBox.setText(investigatorNames[globalVariables.Investigators.get(3).Name]);
+                                invFourBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            globalVariables.Investigators.get(3).Damage += 1;
+                                            introductionOne.setVisibility(VISIBLE);
+                                            introductionTwo.setVisibility(VISIBLE);
+                                        } else {
+                                            globalVariables.Investigators.get(3).Damage += -1;
+                                            if (!invOneBox.isChecked() && !invTwoBox.isChecked() && !invThreeBox
+                                                    .isChecked()) {
+                                                introductionOne.setVisibility(GONE);
+                                                introductionTwo.setVisibility(GONE);
+                                            }
+                                        }
+                                    }
+                                });
+                            case 3:
+                                invThree.setVisibility(VISIBLE);
+                                invThreeBox.setText(investigatorNames[globalVariables.Investigators.get(2).Name]);
+                                invThreeBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            globalVariables.Investigators.get(2).Damage += 1;
+                                            introductionOne.setVisibility(VISIBLE);
+                                            introductionTwo.setVisibility(VISIBLE);
+                                        } else {
+                                            globalVariables.Investigators.get(2).Damage += -1;
+                                            if (!invOneBox.isChecked() && !invTwoBox.isChecked() && !invFourBox
+                                                    .isChecked()) {
+                                                introductionOne.setVisibility(GONE);
+                                                introductionTwo.setVisibility(GONE);
+                                            }
+                                        }
+                                    }
+                                });
+                            case 2:
+                                invTwo.setVisibility(VISIBLE);
+                                invTwoBox.setText(investigatorNames[globalVariables.Investigators.get(1).Name]);
+                                invTwoBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            globalVariables.Investigators.get(1).Damage += 1;
+                                            introductionOne.setVisibility(VISIBLE);
+                                            introductionTwo.setVisibility(VISIBLE);
+                                        } else {
+                                            globalVariables.Investigators.get(1).Damage += -1;
+                                            if (!invOneBox.isChecked() && !invFourBox.isChecked() && !invThreeBox
+                                                    .isChecked()) {
+                                                introductionOne.setVisibility(GONE);
+                                                introductionTwo.setVisibility(GONE);
+                                            }
+                                        }
+                                    }
+                                });
+                            case 1:
+                                invOne.setVisibility(VISIBLE);
+                                invOneBox.setText(investigatorNames[globalVariables.Investigators.get(0).Name]);
+                                invOneBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            globalVariables.Investigators.get(0).Damage += 1;
+                                            introductionOne.setVisibility(VISIBLE);
+                                            introductionTwo.setVisibility(VISIBLE);
+                                        } else {
+                                            globalVariables.Investigators.get(0).Damage += -1;
+                                            if (!invFourBox.isChecked() && !invTwoBox.isChecked() && !invThreeBox
+                                                    .isChecked
+                                                    ()) {
+                                                introductionOne.setVisibility(GONE);
+                                                introductionTwo.setVisibility(GONE);
+                                            }
+                                        }
+                                    }
+                                });
+                        }
+
+                        introductionOne.setTypeface(arnoprobold);
+                        introductionOne.setText(R.string.restless_poison_three);
+                        introductionTwo.setText(R.string.restless_poison_spreads);
+                        break;
+                    case 7:
+                        resolution = 0;
+                        if (globalVariables.Relic == 1) {
+                            introduction.setText(R.string.expeditions_end_one);
+                            introductionOptions.setVisibility(VISIBLE);
+                            introductionOptionOne.setText(R.string.expeditions_end_option_one);
+                            introductionOptionTwo.setText(R.string.expeditions_end_option_two);
+                            introductionOptionThree.setVisibility(GONE);
+                            introductionOptions.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                                @Override
+                                public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                                    if (introductionOptionOne.isChecked()) {
+                                        introductionOne.setVisibility(VISIBLE);
+                                        introductionOne.setText(R.string.expeditions_end_two);
+                                        resolution = 1;
+                                    } else if (introductionOptionTwo.isChecked()) {
+                                        introductionOne.setVisibility(VISIBLE);
+                                        introductionOne.setText(R.string.expeditions_end_three);
+                                        resolution = 2;
+                                    }
+                                }
+                            });
+                        } else if (globalVariables.Relic == 2) {
+                            introduction.setText(R.string.expeditions_end_five);
+                        }
+                        break;
+                }
         }
 
         if (globalVariables.CurrentScenario > 100) {
@@ -228,16 +633,58 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                boolean progress = true;
                 if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 3 &&
                         !introductionOptionOne.isChecked() && !introductionOptionTwo.isChecked() &&
                         !introductionOptionThree.isChecked()) {
-                    Toast toast = Toast.makeText(getBaseContext(), R.string.must_option, Toast.LENGTH_SHORT);
-                    toast.show();
+                    progress = false;
                 } else if (globalVariables.CurrentCampaign == 3 && globalVariables.CurrentScenario == 6 &&
                         !introductionOptionOne.isChecked() && !introductionOptionTwo.isChecked()) {
-                    Toast toast = Toast.makeText(getBaseContext(), R.string.must_option, Toast.LENGTH_SHORT);
-                    toast.show();
-                } else {
+                    progress = false;
+                } else if (globalVariables.CurrentCampaign == 4) {
+                    switch (globalVariables.CurrentScenario) {
+                        case 2:
+                            for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                if (globalVariables.Investigators.get(i).Supplies % 3 != 0) {
+                                    RadioButton optionOne = findViewById(100 + i);
+                                    RadioButton optionTwo = findViewById(200 + i);
+                                    if (!optionOne.isChecked() && !optionTwo.isChecked()) {
+                                        progress = false;
+                                    }
+                                }
+                            }
+                            break;
+                        case 4:
+                            progress = false;
+                            switch (globalVariables.Investigators.size()) {
+                                case 4:
+                                    if (introductionOptionFour.isChecked()) {
+                                        progress = true;
+                                    }
+                                case 3:
+                                    if (introductionOptionThree.isChecked()) {
+                                        progress = true;
+                                    }
+                                case 2:
+                                    if (introductionOptionTwo.isChecked()) {
+                                        progress = true;
+                                    }
+                                case 1:
+                                    if (introductionOptionOne.isChecked()) {
+                                        progress = true;
+                                    }
+                            }
+                            break;
+                        case 7:
+                            if (globalVariables.Relic == 1 && !introductionOptionOne.isChecked() &&
+                                    !introductionOptionTwo.isChecked()) {
+                                progress = false;
+                            }
+                            break;
+                    }
+                }
+
+                if (progress) {
                     interludeResolutions();
                     globalVariables.CurrentScenario += 1;
                     ScenarioResolutionActivity.saveCampaign(ScenarioInterludeActivity.this, globalVariables);
@@ -248,7 +695,20 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                     if (globalVariables.CurrentCampaign == 3 && globalVariables.CarcosaCompleted == 1) {
                         intent = new Intent(ScenarioInterludeActivity.this, CampaignFinishedActivity.class);
                     }
+                    if (globalVariables.CurrentCampaign == 4) {
+                        switch (globalVariables.CurrentScenario) {
+                            case 3:
+                            case 4:
+                            case 5:
+                                intent = new Intent(ScenarioInterludeActivity.this, ScenarioInterludeActivity.class);
+                        }
+                    }
                     startActivity(intent);
+                } else
+
+                {
+                    Toast toast = Toast.makeText(getBaseContext(), R.string.must_option, Toast.LENGTH_SHORT);
+                    toast.show();
                 }
             }
         });
@@ -256,6 +716,11 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
 
     // Any resolutions which require implementing
     public void interludeResolutions() {
+        final RadioButton introductionOptionOne = findViewById(R.id.introduction_option_one);
+        final RadioButton introductionOptionTwo = findViewById(R.id.introduction_option_two);
+        final RadioButton introductionOptionThree = findViewById(R.id.introduction_option_three);
+        final RadioButton introductionOptionFour = findViewById(R.id.introduction_option_four);
+
         switch (globalVariables.CurrentCampaign) {
             case 3:
                 switch (globalVariables.CurrentScenario) {
@@ -334,7 +799,72 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                         }
                 }
                 break;
+            case 4:
+                switch (globalVariables.CurrentScenario) {
+                    case 2:
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            if (globalVariables.Investigators.get(i).Supplies % 3 != 0) {
+                                RadioButton optionOne = findViewById(100 + i);
+                                RadioButton optionTwo = findViewById(200 + i);
+                                if (optionOne.isChecked()) {
+                                    globalVariables.Investigators.get(i).Damage += 1;
+                                } else if (optionTwo.isChecked()) {
+                                    globalVariables.Investigators.get(i).Horror += 1;
+                                }
+                            }
+                        }
+                        break;
+                    case 4:
+                        switch (globalVariables.Investigators.size()) {
+                            case 4:
+                                if (introductionOptionFour.isChecked()) {
+                                    if (globalVariables.Investigators.get(3).Supplies % 17 == 0) {
+                                        globalVariables.Investigators.get(3).AvailableXP += 2;
+                                        globalVariables.Investigators.get(3).TotalXP += 2;
+                                    } else {
+                                        globalVariables.Investigators.get(3).Horror += 1;
+                                    }
+                                    break;
+                                }
+                            case 3:
+                                if (introductionOptionThree.isChecked()) {
+                                    if (globalVariables.Investigators.get(2).Supplies % 17 == 0) {
+                                        globalVariables.Investigators.get(2).AvailableXP += 2;
+                                        globalVariables.Investigators.get(2).TotalXP += 2;
+                                    } else {
+                                        globalVariables.Investigators.get(2).Horror += 1;
+                                    }
+                                    break;
+                                }
+                            case 2:
+                                if (introductionOptionTwo.isChecked()) {
+                                    if (globalVariables.Investigators.get(1).Supplies % 17 == 0) {
+                                        globalVariables.Investigators.get(1).AvailableXP += 2;
+                                        globalVariables.Investigators.get(1).TotalXP += 2;
+                                    } else {
+                                        globalVariables.Investigators.get(1).Horror += 1;
+                                    }
+                                    break;
+                                }
+                            case 1:
+                                if (introductionOptionOne.isChecked()) {
+                                    if (globalVariables.Investigators.get(0).Supplies % 17 == 0) {
+                                        globalVariables.Investigators.get(0).AvailableXP += 2;
+                                        globalVariables.Investigators.get(0).TotalXP += 2;
+                                    } else {
+                                        globalVariables.Investigators.get(0).Horror += 1;
+                                    }
+                                    break;
+                                }
+                        }
+                        break;
+                    case 7:
+                        globalVariables.Custody = resolution;
+                        break;
+                }
+                break;
         }
+
     }
 
     // Makes back button go up (back to home page - SelectCampaignActivity)

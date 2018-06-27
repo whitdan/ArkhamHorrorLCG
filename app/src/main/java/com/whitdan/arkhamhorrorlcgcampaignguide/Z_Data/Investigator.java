@@ -76,4 +76,10 @@ public class Investigator {
     public int TempHorror;
     public int TempTotalXP;
     public int TempAvailableXP;
+
+    // Supplies
+    public int SupplyPoints;
+    public int Provisions;
+    public int Medicine;
+    public int Supplies;
 }

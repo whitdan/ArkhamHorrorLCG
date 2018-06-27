@@ -25,6 +25,7 @@ import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.CampaignFinishedActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.CampaignEntry;
+import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.ForgottenEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.InvestigatorEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.NightEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamDbHelper;
@@ -226,6 +227,56 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             break;
                     }
                     break;
+                case 4:
+                    currentCampaignName.setText(R.string.forgotten_campaign);
+                    switch(currentScenario){
+                        case 1:
+                            currentScenarioName.setText(R.string.forgotten_scenario_one);
+                            break;
+                        case 2:
+                        case 3:
+                        case 4:
+                        case 5:
+                            currentScenarioName.setText(R.string.forgotten_interlude_one);
+                            break;
+                        case 6:
+                            currentScenarioName.setText(R.string.forgotten_scenario_two);
+                            break;
+                        case 7:
+                            currentScenarioName.setText(R.string.forgotten_interlude_two);
+                            break;
+                        case 8:
+                            currentScenarioName.setText(R.string.forgotten_scenario_three);
+                            break;
+                        case 9:
+                            currentScenarioName.setText(R.string.forgotten_scenario_four);
+                            break;
+                        case 10:
+                            currentScenarioName.setText(R.string.forgotten_interlude_three);
+                            break;
+                        case 11:
+                            currentScenarioName.setText(R.string.forgotten_scenario_five);
+                            break;
+                        case 12:
+                            currentScenarioName.setText(R.string.forgotten_scenario_six);
+                            break;
+                        case 13:
+                            currentScenarioName.setText(R.string.forgotten_interlude_four);
+                            break;
+                        case 14:
+                            currentScenarioName.setText(R.string.forgotten_scenario_seven);
+                            break;
+                        case 15:
+                            currentScenarioName.setText(R.string.forgotten_interlude_five);
+                            break;
+                        case 16:
+                            currentScenarioName.setText(R.string.forgotten_scenario_eight);
+                            break;
+                        case 17:
+                            currentScenarioName.setText(R.string.forgotten_epilogue);
+                            break;
+                    }
+                    break;
             }
         }
     }
@@ -400,7 +451,10 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     InvestigatorEntry.COLUMN_INVESTIGATOR_SPENT_XP,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_PLAYER,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_DECKNAME,
-                    InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST,
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS,
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE,
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES
             };
             String investigatorSelection = InvestigatorEntry.PARENT_ID + " = ?";
             Cursor investigatorCursor = db.query(
@@ -443,6 +497,12 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     globalVariables.Investigators.get(i).SpentXP = (investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
                                     .COLUMN_INVESTIGATOR_SPENT_XP)));
+                    globalVariables.Investigators.get(i).Provisions = investigatorCursor.getInt(investigatorCursor
+                            .getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS));
+                    globalVariables.Investigators.get(i).Medicine = investigatorCursor.getInt(investigatorCursor
+                            .getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE));
+                    globalVariables.Investigators.get(i).Supplies = investigatorCursor.getInt(investigatorCursor
+                            .getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES));
                     count++;
                 } else if (status == 3) {
                     globalVariables.SavedInvestigators.add(new Investigator(name, player, deckName, deck));
@@ -459,6 +519,12 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     globalVariables.SavedInvestigators.get(i - count).SpentXP = (investigatorCursor.getInt
                             (investigatorCursor.getColumnIndexOrThrow(InvestigatorEntry
                                     .COLUMN_INVESTIGATOR_SPENT_XP)));
+                    globalVariables.SavedInvestigators.get(i - count).Provisions = investigatorCursor.getInt
+                            (investigatorCursor.getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS));
+                    globalVariables.SavedInvestigators.get(i - count).Medicine = investigatorCursor.getInt
+                            (investigatorCursor.getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE));
+                    globalVariables.SavedInvestigators.get(i - count).Supplies = investigatorCursor.getInt
+                            (investigatorCursor.getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES));
                 }
             }
             investigatorCursor.close();
@@ -716,6 +782,55 @@ public class LoadCampaignActivity extends AppCompatActivity {
                 carcosaCursor.close();
             }
 
+            // Set the relevant Forgotten Age variables from the SQL database
+            if (globalVariables.CurrentCampaign == 4 || globalVariables.ForgottenCompleted == 1) {
+                String[] forgottenProjection = {
+                        ForgottenEntry.COLUMN_YIGS_FURY,
+                        ForgottenEntry.COLUMN_RUINS,
+                        ForgottenEntry.COLUMN_ICHTACA,
+                        ForgottenEntry.COLUMN_ALEJANDRO,
+                        ForgottenEntry.COLUMN_LOW_RATIONS,
+                        ForgottenEntry.COLUMN_RELIC,
+                        ForgottenEntry.COLUMN_HARBINGER,
+                        ForgottenEntry.COLUMN_EZTLI,
+                        ForgottenEntry.COLUMN_CUSTODY
+                };
+                String forgottenSelection = ForgottenEntry.PARENT_ID + " = ?";
+                Cursor forgottenCursor = db.query(
+                        ForgottenEntry.TABLE_NAME,
+                        forgottenProjection,
+                        forgottenSelection,
+                        selectionArgs,
+                        null,
+                        null,
+                        null
+                );
+                while (forgottenCursor.moveToNext()) {
+                    globalVariables.YigsFury = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_YIGS_FURY));
+                    globalVariables.Ruins = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_RUINS));
+                    globalVariables.Ichtaca = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_ICHTACA));
+                    globalVariables.Alejandro = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_ALEJANDRO));
+                    globalVariables.LowRations = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_LOW_RATIONS));
+                    globalVariables.Relic = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_RELIC));
+                    globalVariables.Harbinger = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_HARBINGER));
+                    globalVariables.Eztli = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_EZTLI));
+                    globalVariables.Custody = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_CUSTODY));
+                }
+                if (forgottenCursor.getCount() <= 0) {
+                    corrupt = true;
+                }
+                forgottenCursor.close();
+            }
+
             if (corrupt) {
                 // Show dialog if campaign is corrupt (due to no underlying SQL table existing)
                 CorruptCampaignDialogFragment newFragment = new CorruptCampaignDialogFragment();
@@ -758,6 +873,17 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         }
                         if (globalVariables.CarcosaCompleted == 1) {
                             intent = new Intent(context, CampaignFinishedActivity.class);
+                        }
+                        break;
+                    case 4:
+                        switch (globalVariables.CurrentScenario) {
+                            case 2:
+                            case 3:
+                            case 4:
+                            case 5:
+                            case 7:
+                                intent = new Intent(context, ScenarioInterludeActivity.class);
+                                break;
                         }
                         break;
                 }

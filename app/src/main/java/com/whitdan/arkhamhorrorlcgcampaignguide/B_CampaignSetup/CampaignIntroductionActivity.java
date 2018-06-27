@@ -76,6 +76,9 @@ public class CampaignIntroductionActivity extends AppCompatActivity {
                 title.setText(R.string.carcosa_campaign);
                 introduction.setText(R.string.carcosa_introduction);
                 break;
+            case 4:
+                title.setText(R.string.forgotten_campaign);
+                introduction.setText(R.string.forgotten_introduction);
         }
 
         // Back button

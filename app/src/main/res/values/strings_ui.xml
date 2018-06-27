@@ -70,6 +70,7 @@
     <string name="decklist_url">Decklist link</string>
     <string name="start_campaign">Start Campaign</string>
     <string name="confirm_start_campaign">Save and start the campaign?</string>
+    <string name="continue_question">Continue?</string>
     <string name="confirm_changes">Confirm Changes</string>
     <string name="okay">OK</string>
     <string name="cancel">Cancel</string>

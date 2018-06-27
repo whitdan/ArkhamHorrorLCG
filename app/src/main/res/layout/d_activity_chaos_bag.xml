@@ -332,6 +332,41 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/cultist_tablet_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/token_12"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:src="@drawable/token_13"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/cultist_tablet_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="5"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/arnopro_textsize"/>
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:id="@+id/thing_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

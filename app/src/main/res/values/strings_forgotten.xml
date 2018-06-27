@@ -1,4 +1,559 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="forgotten_campaign">The Forgotten Age</string>
+    <string name="forgotten_scenario_one">Scenario 1: The Untamed Wilds</string>
+    <string name="forgotten_scenario_two">Scenario 2: The Doom of Eztli</string>
+    <string name="forgotten_scenario_three">Scenario 3: Threads of Fate</string>
+    <string name="forgotten_scenario_four">Scenario 4: The Boundary Beyond</string>
+    <string name="forgotten_scenario_five">Scenario 5: Heart of the Elders</string>
+    <string name="forgotten_scenario_six">Scenario 6: The City of Archives</string>
+    <string name="forgotten_scenario_seven">Scenario 7: The Depths of Yoth</string>
+    <string name="forgotten_scenario_eight">Scenario 8: Shattered Aeons</string>
+    <string name="forgotten_interlude_one">Interlude 1: Restless Nights</string>
+    <string name="forgotten_interlude_two">Interlude 2: Expedition\'s End</string>
+    <string name="forgotten_interlude_three">Interlude 3: The Jungle Beckons</string>
+    <string name="forgotten_interlude_four">Interlude 4: Those Held Captive</string>
+    <string name="forgotten_interlude_five">Interlude 5: The Darkness</string>
+    <string name="forgotten_epilogue">Epilogue</string>
+
+
+    <!--Miscellaneous-->
+    <string name="vengeance_counter">Vengeance: </string>
+    <string name="advanced_act_three">Advanced to Act 3</string>
+    <string name="untamed_ichtaca_one">Scenario ended on Act 1 or 2</string>
+    <string name="untamed_ichtaca_two">You fought with Ichtaca</string>
+    <string name="untamed_ichtaca_three">Ichtaca is leading the way</string>
+    <string name="harbinger">Harbinger of Valusia is still in play or set aside</string>
+    <string name="harbinger_damage">Damage on the Harbinger of Valusia: </string>
+    <string name="eztli_resolution_three_option_one">“We can’t stop now—we have to go back inside!”</string>
+    <string name="eztli_resolution_three_option_two">“It’s too dangerous. This place must be destroyed.”</string>
+
+
+    <!--Supplies-->
+    <string name="supplies">Supplies</string>
+    <string name="choose_supplies">Choose Supplies</string>
+    <string name="points_available">pts available</string>
+    <string name="not_enough_points">You do not have enough supply points available.</string>
+    <string name="provisions_description">Provisions (1pt):
+        <i>Food and water for one person. A must-have for any journey.</i></string>
+    <string name="medicine_description">Medicine (2pts): <i>To stave off disease, infection, or venom.</i></string>
+    <string name="rope_description">Rope (3pts):
+        <i>Several long coils of strong rope. Vital for climbing and spelunking.</i></string>
+    <string name="blanket_description">Blanket (2pts): <i>For warmth at night.</i></string>
+    <string name="canteen_description">Canteen (2pts): <i>Can be refilled at streams and rivers.</i></string>
+    <string name="torches_description">Torches (3pts): <i>Can light up dark areas, or set sconces alight.</i></string>
+    <string name="compass_description">Compass (2pts): <i>Can guide you when you are hopelessly lost.</i></string>
+    <string name="map_description">Map (3pts): <i>Unmarked for now, but with time, you may be able to map out your
+        surroundings.</i></string>
+    <string name="binoculars_description">Binoculars (2pts): <i>To help you see faraway places.</i></string>
+    <string name="chalk_description">Chalk (2pts): <i>For writing on rough stone surfaces.</i></string>
+    <string name="pendant_description">Pendant (1pt):
+        <i>Useless, but fond memories bring comfort to travelers far from home.</i></string>
+    <string name="provisions_choose">Provisions (1pt):</string>
+    <string name="medicine_choose">Medicine (2pts):</string>
+    <string name="rope_choose">Rope (3pts)</string>
+    <string name="blanket_choose">Blanket (2pts)</string>
+    <string name="canteen_choose">Canteen (2pts)</string>
+    <string name="torches_choose">Torches (3pts)</string>
+    <string name="compass_choose">Compass (2pts)</string>
+    <string name="map_choose">Map (3pts)</string>
+    <string name="binoculars_choose">Binoculars (2pts)</string>
+    <string name="chalk_choose">Chalk (2pts)</string>
+    <string name="pendant_choose">Pendant (1pt)</string>
+    <string name="provisions">Provisions</string>
+    <string name="medicine">Medicine</string>
+    <string name="rope">Rope</string>
+    <string name="blanket">Blanket</string>
+    <string name="canteen">Canteen</string>
+    <string name="torches">Torches</string>
+    <string name="compass">Compass</string>
+    <string name="map">Map</string>
+    <string name="binoculars">Binoculars</string>
+    <string name="chalk">Chalk</string>
+    <string name="pendant">Pendant</string>
+    <string name="no_supplies">No supplies</string>
+
+
+    <!--Campaign log-->
+    <string name="yigs_fury">Yig’s Fury: </string>
+    <string name="forced_wait">The investigators were forced to wait for additional supplies.\n\n</string>
+    <string name="cleared_path">The investigators cleared a path to the Eztli ruins.\n\n</string>
+    <string name="ichtaca_observed">Ichtaca observed your progress with keen interest.\n\n</string>
+    <string name="ichtaca_trust">The investigators have earned Ichtaca’s trust.\n\n</string>
+    <string name="ichtaca_wary">Ichtaca is wary of the investigators.\n\n</string>
+    <string name="alejandro_remained">Alejandro chose to remain at camp.\n\n</string>
+    <string name="alejandro_followed">Alejandro followed the investigators into the ruins.\n\n</string>
+    <string name="investigators_recovered_relic">The investigators recovered the Relic of Ages.\n\n</string>
+    <string name="alejandro_recovered_relic">Alejandro recovered the Relic of Ages.\n\n</string>
+    <string name="harbinger_alive">The Harbinger is still alive.</string>
+    <string name="custody_alejandro">The investigators gave custody of the relic to Alejandro.\n\n
+    The investigators have earned Alejandro’s trust.\n\n</string>
+    <string name="custody_harlan">The investigators gave custody of the relic to Harlan Earnstone.\n\n
+    Alejandro is continuing his research on his own.\n\n</string>
+
+    <!--Edit log-->
+    <string name="yigs_fury_heading">Yig’s Fury</string>
+    <string name="ruins_heading">Eztli Ruins</string>
+    <string name="ichtaca_heading">Ichtaca</string>
+    <string name="alejandro_heading">Alejandro</string>
+    <string name="harbinger_heading">Harbinger of Valusia</string>
+    <string name="relic_heading">Relic of Ages</string>
+    <string name="custody_heading">Custody of the Relic</string>
+
+    <!--Chaos bag-->
+    <string name="untamed_skull_one">–X. X is the number of vengeance points in the victory display.</string>
+    <string name="untamed_skull_two">–X. X is 1 higher than the number of vengeance points in the victory display.</string>
+    <string name="untamed_cultist_one">–X. X is the number of locations in play (max 5).</string>
+    <string name="untamed_cultist_two">–X. X is the number of locations in play.</string>
+    <string name="untamed_tablet_one">–X. X is the number of cards in the exploration deck (max 5).</string>
+    <string name="untamed_tablet_two">–X. X is the number of cards in the exploration deck (min 3).</string>
+    <string name="untamed_thing_one">–2. If you are poisoned, this test automatically fails instead.</string>
+    <string name="untamed_thing_two">–3. If you are poisoned, this test automatically fails instead. If you are not
+        poisoned and you fail, put a set-aside Poisoned weakness into play in your threat area.</string>
+
+    <string name="eztli_skull_one">–1 (–3 instead if there is doom on your location).</string>
+    <string name="eztli_skull_two">–2 (–4 instead if there is doom on your location).</string>
+    <string name="eztli_cultist_tablet_one">–X. X is the number of locations with doom on them.</string>
+    <string name="eztli_cultist_tablet_two">–X. X is the total amount of doom on locations in play.</string>
+    <string name="eztli_thing_one">Reveal another chaos token. If you fail, place 1 doom on your location.</string>
+    <string name="eztli_thing_two">Reveal another chaos token. Place 1 doom on your location.</string>
+
+
+    <!--Campaign introduction-->
+    <string name="forgotten_introduction"><b>Prologue</b>\n
+    \nTuesday, June 2nd, 1925\n
+    \nThere will be no rest for us this summer, it seems.\n
+    \nToday I met with Harlan Earnstone, a historical theorist at Miskatonic University and an old friend of mine.
+        He’d said he had a job offer for me, but frankly, I didn’t know what to expect.\n
+    \nHarlan introduced me to an associate of his: Alejandro Vela, a distinguished historian from across the southern
+        border. Mr. Vela is a graduate of a prestigious university in Mexico City, and has spent many years
+        researching the Aztec Empire. He claims that he has found evidence regarding the existence of an unheard-of
+        Aztec city-state called Eztli. His strange and unprecedented findings were not accepted by the university,
+        and he’s become a pariah among his peers.\n
+    \nAlejandro came to Arkham to seek funding for an expedition into the rainforests of southern Mexico, where he
+        believes that the ruins of the Eztli altepetl lie undiscovered. His description of this city-state’s origins
+        defies modern understanding of Mesoamerican history. Despite this—or, knowing my old friend, because of
+        this—Harlan is enthralled by Alejandro’s discoveries. Miskatonic University has agreed to fund the expedition
+        (albeit meagerly), and Harlan wants me to go along.\n
+    \nThe way I see it, there’s a good chance we’re looking for something that doesn’t even exist. But if there’s
+        even a slight chance these Eztli people existed, the historical significance would be profound. We debated
+        the issue for some time, but in the end, we accepted Alejandro’s offer. Preparations are underway, and we
+        should be setting off by the end of the month. With any luck, we’ll have this journal filled with all manner
+        of interesting discoveries. If not, perhaps it’ll be a nice wedge to place beneath Harlan’s lopsided desk.</string>
+
+
+    <!--Interludes-->
+    <string name="restless_blanket_one">The following investigators have blankets and get a restful sleep:\n\n</string>
+    <string name="restless_blanket_two">\nThey read:</string>
+    <string name="restless_restful_sleep">Mercifully, I was able to sleep through each night. However, while my body
+        rested, my mind was plagued by nightmares. A cavern like a gaping maw, bathed in dim red light…the walls
+        slithering with the glimmering scales of a hundred vipers…it might have been better had I not slept at all.\n</string>
+    <string name="restless_no_blanket_one">The following investigators do not have blankets and are tossing and
+    turning:\n\n</string>
+    <string name="restless_no_blanket_two">\nThey read:</string>
+    <string name="restless_tossing_turning">Those nights in the jungle, I barely slept. A strange fog rolled through
+        the camp each night, plunging the area in an intense and peculiar cold. My bedroll offered some protection
+        against the elements, but we hadn’t been prepared for this unnatural weather. Flies and mosquitoes buzzed in
+        my ears every time I began to drift off. Even when I finally slept, I would soon be startled awake by the
+        crawling of an insect or lizard across my face. I wager I’ll get very little sleep on this journey…</string>
+    <string name="restless_no_blanket_option_one">Take a physical trauma</string>
+    <string name="restless_no_blanket_option_two">Take a mental trauma</string>
+
+    <string name="restless_not_low">The investigators have enough provisions.</string>
+    <string name="restless_low_one">The investigators do not have enough provisions and are low on rations.
+        Choose</string>
+    <string name="restless_investigator">investigator</string>
+    <string name="restless_investigators">investigators</string>
+    <string name="restless_low_two">to read:\n</string>
+    <string name="restless_low">We thought we’d brought enough food and water for everybody, but the journey had
+        taken its toll on our supplies. When the sun rose and it came time to eat, we discovered we were already
+        running out of provisions.\n</string>
+    <string name="restless_low_effect">Each of those investigators begins the next scenario with 3 fewer resources.</string>
+
+    <string name="restless_choose_lookout">The lead investigator must choose one investigator to be the group’s
+        lookout.</string>
+    <string name="restless_binoculars"> (has binoculars)</string>
+    <string name="restless_lookout_reads">\nThat investigator reads:</string>
+    <string name="restless_shapes_trees">Most of the nights passed without incident, but on this night, I was
+        startled by the rustling of tree branches along the southern border of our camp’s clearing. Despite the
+        darkness, I was able to use my binoculars to see shapes moving in the trees. The shapes appeared human,
+        but…why? Why do they only watch us from afar? What is their purpose?</string>
+    <string name="restless_eyes_dark">Each night, I was watched. I didn’t just feel watched: I saw the eyes peering
+        out from the inky darkness that surrounded our camp. They knew we were there. The yellow eyes watched me,
+        alert, my weapons drawn, ready to defend the camp if the need arose. Our eyes met, and a darkness seized my
+        heart.</string>
+
+    <string name="restless_poison_one">may use medicine and remove a Poisoned weakness from their
+        deck.</string>
+    <string name="restless_poison_counter">Medicine used</string>
+    <string name="restless_poisoned_heading">Investigators still poisoned</string>
+    <string name="restless_poison_two">The investigators have no medicine to cure their poison.</string>
+    <string name="restless_poison_three">\nEach investigator who still has a Poisoned weakness in their deck
+        reads:</string>
+    <string name="restless_poison_spreads">As the days went by, the poison continued to spread through my body. By
+        the second night, my skin was drenched in sweat. I started having difficutly breathing, and I began every
+        morning by retching up most of the previous night’s dinner.</string>
+
+    <string name="expeditions_end_one">Friday, July 17th, 1925\n
+    \nWe have finally made it back to Arkham, our expedition a “success.” Alejandro is excited to report his findings
+        to the university. How he maintains his starry-eyed idealism after the hell we went through in the jungle is
+        beyond me. His attention is fixated on the strange relic that we discovered in the ruins. I wish we knew a
+        little more about the artifact’s origins. It unsettles me greatly. It hums at all times and pulses with an
+        otherworldly energy I can scarcely describe. As we traveled home with the artifact in tow, our nights were
+        plagued by bizarre nightmares: dreams of other worlds and civilizations.\n
+    \nAlejandro wants to bring the relic to the Miskatonic Museum, to put on display along with the other Eztli
+        artifacts we discovered. My feelings are mixed. At the museum, it will receive proper care, and historians
+        will be able to study it and perhaps even discern its purpose. However, I fear that the relic may be too
+        dangerous for the public. After all, we still have no idea what the damned thing even is. Alejandro would
+        hate it, but perhaps it would be better to keep the relic somewhere safe, where Harlan and I can study it in
+        private. I’ll have to decide tonight; after tomorrow, there won’t be time to change my mind…</string>
+    <string name="expeditions_end_two">Sunday, July 19th, 1925\n
+    \nI’ve decided to give custody of the relic to Alejandro. This entire expedition was based on his research, after
+        all—he should be the one to study it. If anyone can discover the relic’s secrets, it’s him.\n
+    \nThe relic is to be the centerpiece of a new exhibit at the museum. Alejandro has already written extensively
+        about our discoveries, but his work has only just begun. Many mysteries about our expedition remain. How have
+        the Eztli people remained undiscovered for so long? Why did they appear to be guarding the jungle, and from
+        what? Who really built the temple ruins we explored? I have no doubt Alejandro will uncover the answers to
+        these questions, given enough time.\n
+    \nAs for me, my role in this endeavor has ended. However, I have yet to relax. My thoughts are constantly in the
+        jungle—serpentine figures in the shadows, obsidian arrows embedded in skeletal bodies, malformed voices
+        shrieking in the cavernous depths. When I walk through the streets, I find myself drawn toward the museum
+        without realizing it, as though possessed to see the relic once again. There is a nagging sensation in the
+        back of my mind, as though we have forgotten something important. What must I do to rid myself of—\n
+    \n(The journal entry ends abruptly.)\n
+        \n<b>If it is not already in an investigator’s deck, any one investigator may choose to add Alejandro Vela to
+            his or her deck.</b>\n
+    \nYou drop your pen as a loud knocking at the door startles you, and you jump to your feet. It is almost 2:30 in
+        the morning. Who could possibly be at your door at this hour? Your thoughts wander again to the jungle, and
+        you are faced with a vision of serpent-creatures attacking you in your own home. Shuddering, you find a
+        weapon and approach the front door carefully, ready to strike if need be. You take a long breath and open the
+        door.\n
+    \nOn the other side is a familiar woman with brown skin, long brown hair, and piercing yellow eyes set in a hard
+        glare. Though her attire has changed, you recognize her instantly as Ichtaca, the Eztli warrior you
+        encountered in the rainforest. Wearing a long coat and a Bollman hat, she is visibly uncomfortable in her
+        shoes. Her jaw is set in anger. You are about to raise your weapon in defense when she lets out a heavy sigh
+        and walks slowly over the threshold of your home, shutting your front door behind her. “Whatever you did, you
+        have to reverse it,” she intones darkly. “Or we will <i>all</i> cease to exist.”</string>
+    <string name="expeditions_end_three">Sunday, July 19th, 1925\n
+    \nI’ve decided to keep the relic hidden for now. Alejandro is not happy with my decision, but until we know what
+        the orb is capable of, it’s important that it stay somewhere safe, where it won’t endanger others. Harlan
+        agrees with me, and has offered to take custody of the relic and keep it in his private office. There, we can
+        study the artifact in secret.\n
+    \nAlejandro is staying in Arkham for the time being, recording his notes about the expedition and helping the
+        museum put together an exhibit displaying our other, less dangerous discoveries. As for me, I hope to find
+        answers to other mysteries: How have the Eztli people remained undiscovered for so long? Why did they appear
+        to be guarding the jungle, and from what? Who really built the temple ruins we explored?\n
+    \nMy thoughts are constantly in the jungle—serpentine figures in the shadows, obsidian arrows embedded in
+        skeletal bodies, malformed voices shrieking in the cavernous depths. Each time I leave Harlan’s office, I
+        find myself longing to head back and gaze upon the relic once more. There is a nagging sensation in the back
+        of my mind, as though we have forgotten something important. What must I do to rid myself of—\n
+    \n(The journal entry ends abruptly.)\n
+        \n<b>If Alejandro Vela is currently in an investigator’s deck, remove him from that investigator’s deck.</b>\n
+    \nYou drop your pen as a loud knocking at the door startles you, and you jump to your feet. It is almost 2:30 in
+        the morning. Who could possibly be at your door at this hour? Your thoughts wander again to the jungle, and
+        you are faced with a vision of serpent-creatures attacking you in your own home. Shuddering, you find a
+        weapon and approach the front door carefully, ready to strike if need be. You take a long breath and open the
+        door.\n
+    \nOn the other side is a familiar woman with brown skin, long brown hair, and piercing yellow eyes set in a hard
+        glare. Though her attire has changed, you recognize her instantly as Ichtaca, the Eztli warrior you
+        encountered in the rainforest. Wearing a long coat and a Bollman hat, she is visibly uncomfortable in her
+        shoes. Her jaw is set in anger. You are about to raise your weapon in defense when she lets out a heavy sigh
+        and walks slowly over the threshold of your home, shutting your front door behind her. “Whatever you did, you
+        have to reverse it,” she intones darkly. “Or we will <i>all</i> cease to exist.”</string>
+    <string name="expeditions_end_five">Harlan Earnstone paces across your living room, dabbing his wrinkled forehead
+        with his handkerchief. “It’s my fault. I should never have encouraged them to go on that dreadful
+        expedition.” Though your paths have only crossed a few times before, Mr. Earnstone has become a valuable
+        contact of yours within Miskatonic University. When the University’s latest expedition returned with only a
+        few survivors and a handful of strange, archaic artifacts, he came to you for advice.\n
+    \n“I know, I know. I should at least take solace in the fact that the expedition was successful, despite its
+        heavy losses. Alejandro was right all along. The Eztli people are real. And yet…I am concerned about some of
+        these findings.” Harlan pulls a small leather-bound journal from his suitcase and hands it to you. “Before
+        the expedition leader’s tragic death, the leader recorded many of the group’s discoveries in this journal.
+        One of the surviving members of the expedition managed to grab it from the camp before fleeing the jungle. I
+        think if you read these entries, you’ll understand what I mean. The things they experienced, the creatures
+        they encountered…” Harlan shudders and adjusts his glasses with too-shaky hands. “I am concerned not only for
+        Alejandro, but for all of us. Read this journal, and if you can, please keep an eye on my colleague.” You
+        agree to help, but his worry does not fade. “I only hope that I am not damning you to a similar fate by
+        asking for your aid.”\n
+    \nYou spend the remainder of that night studying the expedition journal, your mind swimming with thoughts of
+        strange serpent-creatures and Aztec warriors. Long after Harlan has left, a loud knocking at the door
+        startles you, and you jump to your feet. It is almost 2:30 in the morning. Who could possibly be at your door
+        at this hour? You open the front door warily. On the other side is a woman with brown skin, long brown hair,
+        and piercing yellow eyes set in a hard glare. She wears a long coat and a Bollman-style hat, visibly
+        uncomfortable in her shoes. Her jaw is set in anger. A sudden flash of insight crosses your mind, and you
+        realize at once who she must be. After all, you’ve read and re-read the journal’s description of Ichtaca, the
+        Eztli warrior. She lets out a heavy sigh and walks slowly over the threshold of your home, shutting your
+        front door behind her. “Whatever they did, you have to reverse it,” she intones darkly. “Or we will <i>all
+        </i> cease to exist.”</string>
+    <string name="expeditions_end_option_one">It belongs in a museum. Alejandro and the museum staff will be able to
+        study it and learn more about its purpose.</string>
+    <string name="expeditions_end_option_two">It is too dangerous to be on display. We should keep it hidden and safe
+        until we know more about it.</string>
+
+
+    <!--Scenario introductions-->
+    <string name="untamed_introduction">Sunday, June 28th, 1925\n
+    \nIt’s been a hell of a day. We’ve just set up camp along the northern border of the rainforest where Alejandro
+        believes the Eztli once dwelled. The jungle here is dense and untamed. The sky hides above the tree cover,
+        but I can tell from the crisp breeze that storm clouds are brewing overhead.\n
+    \nThe dangers of our expedition have been explained to us many times. We are hundreds of miles away from any sign
+        of civilization. Nobody in modern times has yet to pierce the heart of these wilds. Until now, nobody has had
+        reason to try. After all, it wouldn’t make sense to find Aztec ruins in this region of Mexico. And yet, here
+        we are: looking for ruins that may not exist in a place where, by all accounts, they should not.\n
+    \nAlready one of our surveyors has fallen ill, and another has been bitten by a viper. I’m starting to think the
+        rainforest doesn’t want us here. If this luck persists, ours will be the shortest expedition in Miskatonic
+        University’s history. Tonight, we rest. Tomorrow, we venture into uncharted wilds.</string>
+
+    <string name="eztli_introduction_one">Wednesday, July 8th, 1925\n
+    \nOur runners, José and Maria, returned several days later. They were fully stocked with food, water, aspirin,
+        and weapons. I am curious how deep Alejandro’s connections are in Mexico. For an outcast historian, he was
+        able to secure guns and ammunition faster than I had anticipated. But perhaps it is better if he keeps his
+        sources undisclosed.\n
+    \nWe ventured once more into the jungle. This time, we were prepared. We had learned from our previous excursion,
+        and we made our way across the river canyon, venturing deeper south than we had dared before. Eventually we
+        reached the ruins Alejandro sought, and soon we will enter what Alejandro believes is the main temple.
+        Strangely, the serpent creatures we encountered earlier didn’t attack in force as we had feared. Could they
+        have fled? Or are they simply lying in wait, preparing to ambush while we sleep at night?</string>
+    <string name="eztli_introduction_two">Friday, July 3rd, 1925\n
+    \nWe spent most of yesterday moving our camp to the edge of the ruins. With the serpentine creatures still
+        guarding the region, we have decided that a small party will have the best chance of slipping into the main
+        temple unnoticed. I told Maria, the expedition’s naturalist, to take one of the trucks and wait beyond the
+        northern edge of the rainforest. Our cartographer, José, is guarding the camp until we return. We’re on our
+        own, but at least we’ve cleared an escape route in the event things go sour…</string>
+
+
+    <!--Scenario setup-->
+    <string name="untamed_sets">The Untamed Wilds, Rainforest, Serpents, Expedition, Guardians of Time, Agents of
+        Yig, Poison, and Ancient Evils.</string>
+    <string name="untamed_locations">Put the Expedition Camp into play.\n
+        \nEach investigator begins play at the Expedition Camp.\n</string>
+    <string name="untamed_set_aside"> The three single-sided <b><i>Ruins</i></b> locations, the <i>Agents of Yig</i>
+        encounter set, the four Poisoned weaknesses, the Alejandro Vela asset, and the Ichtaca enemy.\n
+        \nThe <i>Agents of Yig</i> encounter set can be identified by this icon:</string>
+    <string name="untamed_additional">Create the exploration deck. This is done by taking the five single-sided
+        <b><i>Jungle</i></b> locations and shuffling them together, along with one copy each of the following
+        treachery cards: Lost in the Wilds, Overgrowth, Snake Bite, Low on Supplies, and Arrows from the Trees.</string>
+    <string name="untamed_additional_lead">Choose one of Ursula Downs, Leo Anderson or Monterey Jack to be the
+        expedition leader. That investigator begins Scenarios I and II as the lead investigator.\n</string>
+
+    <string name="eztli_sets">The Doom of Eztli, Agents of Yig, Yig’s Venom, Temporal Flux, Deadly Traps, Forgotten
+        Ruins, Poison, and Chilling Cold.</string>
+    <string name="eztli_locations">Put the Entryway into play.\n
+        \nEach investigator begins play in the Entryway.\n</string>
+    <string name="eztli_set_aside">The Harbinger of Valusia enemy, the Chamber of Time location, the Relic of Ages
+        asset, and each Poisoned weakness that is not already in an investigator’s deck.\n</string>
+    <string name="eztli_additional">Create the exploration deck. This is done by taking the five single-sided <b><i>
+        Ancient</i></b> locations and shuffling them together, along with one copy each of the following treachery
+        cards: Ill Omen, Deep Dark, Final Mistake, Entombed, and Crypt Chill.</string>
+    <string name="eztli_additional_place">Place</string>
+    <string name="eztli_additional_doom">doom on the Entryway.\n\n</string>
+    <string name="eztli_low_rations">investigators begin the scenario with 3 fewer resources.\n\n</string>
+    <string name="eztli_additional_lead">Whichever one of Ursula Downs, Leo Anderson or Monterey Jack was chosen to be
+        the expedition leader in Scenario I begins Scenario II as the lead investigator.</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="untamed_no_resolution">Wednesday, July 1st, 1925\n
+    \nI still have no idea how we made it back to camp alive.\n
+    \nThe jungle was more perilous than we could have possibly imagined. This may read like the ravings of a lunatic,
+        but I cannot explain it any other way. Being lost in the jungle was no picnic, but that was the least of our
+        worries. The rainforest was <i>guarded</i>. Guarded by unfathomable horrors: serpentine creatures driven by anger
+        and hate, hunting us relentlessly.\n
+    \nPerhaps just as deadly were the human natives of the rainforest. They appeared to be Aztec warriors as far as
+        dress and speech were concerned. Despite the conquering of the Aztec people hundreds of years ago, these
+        warriors somehow survived. How they managed to remain undiscovered this long is beyond us. I thought
+        Alejandro would be excited to learn more about them, but he was more disturbed than fascinated. I suppose he
+        has a right to be incredulous. Nothing about this expedition makes sense.\n
+    \nThe serpent creatures chased us for what seemed like days. Finally we were able to find our way back to camp,
+        but the price was steep. We had lost all progress we had made, and many of us were injured or afflicted by
+        serpent venom. We have no choice but to send runners to the nearest city for additional supplies and to wait
+        and recover from our wounds.</string>
+    <string name="untamed_resolution_one">Thursday, July 2nd, 1925\n
+    \nSomehow, after much toil and many hours of exploration we found the ruins that Alejandro sought, though we
+        scarcely could have been ready for what we encountered in the wilds of the jungle. The rainforest was
+        <i>guarded</i>. Guarded by unfathomable horrors: serpentine creatures driven by anger and hate. They hunted us
+        relentlessly, wielding primitive weaponry and communicating in sharp hisses.\n
+    \nPerhaps just as deadly were the human natives of the rainforest. They appeared to be Aztec warriors as far as
+        dress and speech were concerned. Despite the conquering of the Aztec people hundreds of years ago, these
+        warriors somehow survived. How they managed to remain undiscovered this long is beyond us. The warrior named
+        Ichtaca was particularly intriguing. We were able to defuse the initial encounter with her, and surprisingly,
+        she helped guide us through the jungle, only to disappear mysteriously when we reached the ruins. I have a
+        feeling we have not seen the last of her.\n
+    \nAlejandro did not agree with our decision to trust the Eztli warriors. He’s decided to stay at camp until
+        further notice, disturbed as he is by their presence. I thought he would be excited to learn more about them,
+        but I expect this discovery defies even his broad-minded theories. I suppose he has a right to be
+        distrustful. Nothing about this expedition makes sense.\n
+    \nWe have cleared a route to what Alejandro believes is the main temple of the ruins. There is little time to
+        rest. The serpent creatures seem intent on stopping us, so we cannot tarry any longer than necessary. Soon we
+        will enter the ruins to see what secrets they hide.</string>
+    <string name="untamed_resolution_two">Thursday, July 2nd, 1925\n
+    \nSomehow, after much toil and many hours of exploration, we found the ruins that Alejandro sought, though we
+        scarcely could have been ready for what we encountered in the wilds of the jungle. The rainforest was <i>
+            guarded</i>. Guarded by unfathomable horrors: serpentine creatures driven by anger and hate. They hunted
+        us relentlessly, wielding primitive weaponry and communicating in sharp hisses.\n
+    \nPerhaps just as deadly were the human natives of the rainforest. They appeared to be Aztec warriors as far as
+        dress and speech were concerned. Despite the conquering of the Aztec people hundreds of years ago, these
+        warriors somehow survived. How they managed to remain undiscovered this long is beyond us. I thought
+        Alejandro would be excited to learn more about them, but he shared our alarm. We managed to fend off and
+        interrogate their leader, a warrior named Ichtaca. Before she fled, she warned us to not go near the ruins.
+        Unfortunately for her, we refuse to go home empty-handed.\n
+    \nWith Alejandro leading the way, we’ve cleared a route to what he believes is the main temple of the ruins.
+        There is little time to rest. The serpent creatures seem intent on stopping us, so we cannot tarry any longer
+        than necessary. Soon we will enter the ruins to see what secrets they hide.\n
+    \n<b>Any one investigator may choose to add Alejandro Vela to his or her deck.</b></string>
+    <string name="untamed_add_alejandro"><b>Any one investigator may choose to add Alejandro Vela to his or her deck.</b></string>
+
+    <string name="eztli_resolution_one">(The following is scrawled below the previous journal entry.)\n
+    \nThe outside of the temple ruins appeared Aztec in origin, but once we breached the interior, it became clear
+        that these buildings had a very different and inhuman origin. The ruins were alive. The grooves in the walls
+        were illuminated as though powered by electricity, and a faint hum of energy reverberated throughout the
+        halls. In spite of the serpent creatures, we were able to reach a hidden passage that led deeper underground.\n
+    \nIn the central chamber of these underground halls, we found our prize: a steel orb of unknown origin, gently
+        humming and glowing with a dim blue light. It was attached delicately to a bronze frame, appearing almost
+        religious in its significance, and we knew it could not have been made by the Aztecs.\n
+    \nWith the artifact in tow, we fled the ruins. The building had started to crumble around us, as though the orb
+        was the only thing keeping it standing. Had it been powering the ruins, like a battery? What exactly was this
+        device that the serpents guarded so fervently?\n
+    \nMaria was waiting for us with the trucks when we finally reached the northern edge of the rainforest. We’re
+        getting the hell out of this serpent-infested jungle while we still can.\n
+    \n<b>One investigator must add the Relic of Ages to his or her deck.</b></string>
+    <string name="eztli_resolution_one_defeated_one"><b>Defeated investigators:</b>\n
+        \nThe temple shakes with the ferocity of an earthquake, causing you to collapse to the ground. Serpent
+        creatures emerge from the shadows around you, surrounding you completely. The thought, “<i>This is how it
+            ends</i>,”
+        flashes through your mind. For a moment, you contemplate the absurdity of your death. You can only hope that
+        nobody else will be foolish enough to try to explore these forsaken ruins.\n
+        \nThe creatures are upon you before you have time to react. You scream in agony as you are skewered by
+        razor-sharp spears.\n
+        \n<b>Each investigator who was defeated is killed.</b>\n
+        \n<b>Surviving investigators:</b>\n
+    \n(The following is scrawled below the previous journal entry.)\n
+    \nThe outside of the temple ruins appeared Aztec in origin, but once we breached the interior, it became clear
+        that these buildings had a very different and inhuman origin. The ruins were alive. The grooves in the walls
+        were illuminated as though powered by electricity, and a faint hum of energy reverberated throughout the
+        halls. In spite of the serpent creatures, we were able to reach a hidden passage that led deeper underground.\n
+    \nIn the central chamber of these underground halls, we found our prize: a steel orb of unknown origin, gently
+        humming and glowing with a dim blue light. It was attached delicately to a bronze frame, appearing almost
+        religious in its significance, and we knew it could not have been made by the Aztecs.\n
+    \nWith the artifact in tow, we fled the ruins. The building had started to crumble around us, as though the orb
+        was the only thing keeping it standing. Had it been powering the ruins, like a battery? What exactly was this
+        device that the serpents guarded so fervently?\n
+    \nMaria was waiting for us with the trucks when we finally reached the northern edge of the rainforest. We’re
+        getting the hell out of this serpent-infested jungle while we still can.\n
+    \n<b>One investigator must add the Relic of Ages to his or her deck.</b></string>
+    <string name="eztli_resolution_one_defeated_two"><b>Defeated investigators:</b>\n
+        \nThe temple shakes with the ferocity of an earthquake, causing you to collapse to the ground. Serpent
+        creatures emerge from the shadows around you, surrounding you completely. The thought, “<i>This is how it
+            ends</i>,”
+        flashes through your mind. For a moment, you contemplate the absurdity of your death. You can only hope that
+        nobody else will be foolish enough to try to explore these forsaken ruins.\n
+        \nSuddenly, a distant voice hisses to the others, and the serpents tentatively retreat into the darkness. You
+        run for your life, not taking any chances.\n
+        \n<b>Surviving investigators:</b>\n
+    \n(The following is scrawled below the previous journal entry.)\n
+    \nThe outside of the temple ruins appeared Aztec in origin, but once we breached the interior, it became clear
+        that these buildings had a very different and inhuman origin. The ruins were alive. The grooves in the walls
+        were illuminated as though powered by electricity, and a faint hum of energy reverberated throughout the
+        halls. In spite of the serpent creatures, we were able to reach a hidden passage that led deeper underground.\n
+    \nIn the central chamber of these underground halls, we found our prize: a steel orb of unknown origin, gently
+        humming and glowing with a dim blue light. It was attached delicately to a bronze frame, appearing almost
+        religious in its significance, and we knew it could not have been made by the Aztecs.\n
+    \nWith the artifact in tow, we fled the ruins. The building had started to crumble around us, as though the orb
+        was the only thing keeping it standing. Had it been powering the ruins, like a battery? What exactly was this
+        device that the serpents guarded so fervently?\n
+    \nMaria was waiting for us with the trucks when we finally reached the northern edge of the rainforest. We’re
+        getting the hell out of this serpent-infested jungle while we still can.\n
+    \n<b>One investigator must add the Relic of Ages to his or her deck.</b></string>
+    <string name="eztli_resolution_two">The temple shakes with the ferocity of an earthquake, causing you to collapse to the ground. Serpent
+        creatures emerge from the shadows around you, surrounding you completely. The thought, “<i>This is how it
+            ends</i>,”
+        flashes through your mind. For a moment, you contemplate the absurdity of your death. You can only hope that
+        nobody else will be foolish enough to try to explore these forsaken ruins.\n
+        \nThe creatures are upon you before you have time to react. You scream in agony as you are skewered by
+        razor-sharp spears.\n
+        \n<b>Each investigator is killed.</b>\n
+        \n(The following is scrawled below the previous journal entry.)\n
+    \nIt is not in my nature to leave a thing unfinished. For the sake of my fallen comrades, I have taken it upon
+        myself to record the remainder of our expedition in this journal.\n
+    \nThe others never made it out of the temple. I convinced two of the other members of the expedition, José and
+        Andrea, to venture in after the others…But now I fear a terrible fate has befallen them, as well.\n
+    \nThankfully, my gambit was worthwhile. While José and Andrea searched for the others, I snuck into the temple
+        and took a different route. Having seen what we have seen, knowing what we know now, I couldn’t have
+        returned to the university without evidence of our discovery. While the serpent creatures were distracted, I
+        was able to reach a hidden passageway that led deeper underground.\n
+    \nIn the central chamber of these underground halls, I found the device. The orb was made of an unnatural steel,
+        attached delicately to its bronze frame. It pulsed with power in my hands and glowed with a dim blue light.
+        Any fool could tell that it was not made by the Aztecs, but the other members of the expedition could not
+        even begin to understand its true significance. The ruins started to crumble around me as I left, but it
+        mattered not. The relic was all that mattered now.\n
+    \nWith the artifact in tow, I returned to camp and told the others it was time to depart. Maria was waiting for
+        us with the trucks when we finally reached the northern edge of the jungle. Now we are headed to Texas, where
+        we will cross the border into the United States.\n
+    \nIt is a shame what happened to the others. Their sacrifice will not be in vain. Now, my work can continue.\n
+    \n– Alejandro Vela</string>
+    <string name="eztli_resolution_three">(The following is scrawled below the previous journal entry.)\n
+    \nThis was a mistake. This was all a terrible mistake. We escaped the temple with our lives, but not a moment too
+        soon. The ruins were alive. It was as though the walls knew of our intrusion, hated us for our presence.
+        Wanted us out. Wanted us dead. We have gathered outside the temple where José is waiting for us. Alejandro,
+        unwilling to return home empty-handed, wants us to go back inside. We must decide what to do next.</string>
+    <string name="eztli_resolution_three_defeated_one"><b>Defeated investigators:</b>\n
+        \nThe temple shakes with the ferocity of an earthquake, causing you to collapse to the ground. Serpent
+        creatures emerge from the shadows around you, surrounding you completely. The thought, “<i>This is how it
+            ends</i>,”
+        flashes through your mind. For a moment, you contemplate the absurdity of your death. You can only hope that
+        nobody else will be foolish enough to try to explore these forsaken ruins.\n
+        \nThe creatures are upon you before you have time to react. You scream in agony as you are skewered by
+        razor-sharp spears.\n
+        \n<b>Each investigator who was defeated is killed.</b>\n
+        \n<b>Surviving investigators:</b>\n</string>
+    \n(The following is scrawled below the previous journal entry.)\n
+    \nThis was a mistake. This was all a terrible mistake. We escaped the temple with our lives, but not a moment too
+    soon. The ruins were alive. It was as though the walls knew of our intrusion, hated us for our presence.
+    Wanted us out. Wanted us dead. We have gathered outside the temple where José is waiting for us. Alejandro,
+    unwilling to return home empty-handed, wants us to go back inside. We must decide what to do next.
+    <string name="eztli_resolution_three_defeated_two"><b>Defeated investigators:</b>\n
+        \nThe temple shakes with the ferocity of an earthquake, causing you to collapse to the ground. Serpent
+        creatures emerge from the shadows around you, surrounding you completely. The thought, “<i>This is how it
+            ends</i>,”
+        flashes through your mind. For a moment, you contemplate the absurdity of your death. You can only hope that
+        nobody else will be foolish enough to try to explore these forsaken ruins.\n
+        \nSuddenly, a distant voice hisses to the others, and the serpents tentatively retreat into the darkness. You
+        run for your life, not taking any chances.\n
+        \n<b>Surviving investigators:</b>\n
+    \n(The following is scrawled below the previous journal entry.)\n
+    \nThis was a mistake. This was all a terrible mistake. We escaped the temple with our lives, but not a moment too
+        soon. The ruins were alive. It was as though the walls knew of our intrusion, hated us for our presence.
+        Wanted us out. Wanted us dead. We have gathered outside the temple where José is waiting for us. Alejandro,
+        unwilling to return home empty-handed, wants us to go back inside. We must decide what to do next.</string>
+    <string name="eztli_resolution_four">(The following is scrawled below the previous journal entry.)\n
+    \nWe’ve made our decision. Alejandro is right: we’ve come too far to back down now. Our plan is to regroup and
+        head back into the temple once more. Even from here, we can tell that the layout of the temple has warped and
+        changed. The ruins seem to have reset to their dormant state. With any luck, we’ll make it out this
+        time…\n
+    \n<b>The investigators must replay Scenario II: The Doom of Eztli.</b></string>
+    <string name="eztli_resolution_five">(The following is scrawled below the previous journal entry.)\n
+    \nWe made our decision. There was no way we were going back into that deathtrap. Thankfully, there was another
+        way. José had brought some TNT from the trucks, and there was more than enough to level the damned place.\n
+    \nThat night, we put on a hell of a fireworks show. The jungle protested. Birds scattered into the sky, the
+        ground rumbled, and hateful snarls surrounded our camp. But the dynamite did its job. Once the dust settled,
+        we began sifting through the debris in search of anything with historical or cultural significance we could
+        bring back to Arkham.\n
+    \nJosé was the first to notice the blue light peeking out from underneath the remains of the temple. The rays
+        grew in intensity with each passing moment. As we started clearing the rubble in order to discover the source
+        of the light, there was a sudden flash, and the debris at the center of the ruins scattered. A steel orb of
+        unknown origin lay on top of the rubble, gently humming. It was attached delicately to a bronze frame,
+        appearing almost religious in its significance. The blue glow emanating from the device dimmed as I touched
+        it. There was no way a device like this was built by the Aztecs.\n
+    \nWith the artifact in tow, we left the smoldering temple behind us. We had outstayed our welcome in this
+        rainforest, and we knew it. Around us, the jungle hissed. The ground slithered and crawled with snakes. In
+        the darkness, we heard shouts in a language we could not understand. There was no time to pack up camp; we
+        ran as soon as we had the chance. Andrea was struck in her throat by a black-feathered arrow, her startled
+        scream captured in grim perpetuity. José was grabbed by a giant boa as we fled north into the river canyon.
+        His neck snapped before we could reach him.\n
+    \nMaria was waiting for us with the trucks when we finally reached the northern edge of the jungle. We didn’t
+        stop until we crossed into Mexico City. Even now I do not feel safe: who could, after seeing what we have
+        seen?\n
+    \nTo hell with the Eztli and to hell with this forsaken place.\n
+    \n<b>One investigator must add the Relic of Ages to his or her deck.</b></string>
+
 </resources>

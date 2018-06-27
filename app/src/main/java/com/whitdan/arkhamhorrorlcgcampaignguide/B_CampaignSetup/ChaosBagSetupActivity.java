@@ -66,6 +66,9 @@ public class ChaosBagSetupActivity extends AppCompatActivity {
             case 3:
                 title.setText(R.string.carcosa_campaign);
                 break;
+            case 4:
+                title.setText(R.string.forgotten_campaign);
+                break;
         }
         TextView chaosBag = findViewById(R.id.chaos_bag);
         chaosBag.setTypeface(teutonic);
@@ -232,6 +235,24 @@ public class ChaosBagSetupActivity extends AppCompatActivity {
                         bag = new int[]{0, 0, 1, 2, 2, 2, 2, 1, 1, 0, 1, 3, 0, 0, 0, 1, 1};
                         break;
                 }
+                break;
+            // The Forgotten Age
+            case 4:
+                switch (globalVariables.CurrentDifficulty) {
+                    case 0:
+                        bag = new int[]{0, 2, 3, 2, 1, 1, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 1};
+                        break;
+                    case 1:
+                        bag = new int[]{0, 1, 3, 1, 2, 1, 0, 1, 0, 0, 0, 2, 0, 0, 1, 1, 1};
+                        break;
+                    case 2:
+                        bag = new int[]{0, 1, 2, 1, 1, 2, 1, 0, 1, 0, 0, 2, 0, 0, 1, 1, 1};
+                        break;
+                    case 3:
+                        bag = new int[]{0, 0, 1, 1, 2, 2, 2, 0, 1, 0, 1, 2, 0, 0, 1, 1, 1};
+                        break;
+                }
+                break;
         }
         if (globalVariables.CurrentCampaign == 999) {
             switch (globalVariables.CurrentScenario) {

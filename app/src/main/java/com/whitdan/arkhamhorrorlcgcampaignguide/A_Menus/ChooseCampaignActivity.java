@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.B_CampaignSetup.CampaignIntroductionActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
@@ -45,13 +44,7 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         NightButton.setOnClickListener(new NewCampaignClickListener());
         DunwichButton.setOnClickListener(new NewCampaignClickListener());
         CarcosaButton.setOnClickListener(new NewCampaignClickListener());
-        ForgottenButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
+        ForgottenButton.setOnClickListener(new NewCampaignClickListener());
 
         // Back button
         Button backButton = findViewById(R.id.back_button);
@@ -82,6 +75,9 @@ public class ChooseCampaignActivity extends AppCompatActivity {
                 case R.id.carcosa_button:
                     globalVariables.CurrentCampaign = 3;
                     break;
+                case R.id.forgotten_button:
+                    globalVariables.CurrentCampaign = 4;
+                    break;
             }
 
             // Set the scenario number to 0 to indicate campaign setup
@@ -102,6 +98,7 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.NightCompleted = 0;
         globalVariables.DunwichCompleted = 0;
         globalVariables.CarcosaCompleted = 0;
+        globalVariables.ForgottenCompleted = 0;
         globalVariables.AdamLynchHaroldWalsted = 0;
         globalVariables.TownsfolkAction = 0;
         globalVariables.Rougarou = 0;
@@ -119,5 +116,9 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.Onyx = 0;
         globalVariables.DreamsAction = 0;
         globalVariables.Hastur = 0;
+        globalVariables.Ichtaca = 0;
+        globalVariables.Eztli = 0;
+        globalVariables.YigsFury = 0;
+        globalVariables.Harbinger = -1;
     }
 }

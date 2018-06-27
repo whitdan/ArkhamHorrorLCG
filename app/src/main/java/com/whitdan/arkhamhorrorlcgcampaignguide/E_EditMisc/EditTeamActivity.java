@@ -1,4 +1,4 @@
-package com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc;
+package com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -57,7 +57,7 @@ public class EditTeamActivity extends AppCompatActivity {
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d_activity_edit_team);
+        setContentView(R.layout.e_activity_edit_team);
         globalVariables = (GlobalVariables) this.getApplication();
 
         // Get array of the names of all of the game's investigators

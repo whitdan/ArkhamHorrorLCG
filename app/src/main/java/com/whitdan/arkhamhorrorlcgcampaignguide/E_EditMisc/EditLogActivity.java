@@ -1,4 +1,4 @@
-package com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc;
+package com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -44,7 +45,7 @@ public class EditLogActivity extends AppCompatActivity {
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d_activity_edit_log);
+        setContentView(R.layout.e_activity_edit_log);
         globalVariables = (GlobalVariables) this.getApplication();
         setupUI(findViewById(R.id.parent_layout), this);
 
@@ -103,7 +104,7 @@ public class EditLogActivity extends AppCompatActivity {
 
             // Nothing to show
             if (scenario == 1) {
-                View nothing = View.inflate(this, R.layout.d_item_heading, null);
+                View nothing = View.inflate(this, R.layout.e_item_heading, null);
                 TextView nothingText = nothing.findViewById(R.id.heading);
                 nothingText.setText(R.string.nothing);
                 nothingText.setTypeface(arnopro);
@@ -117,12 +118,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 1) {
                 // Your House
-                View houseHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View houseHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView houseHeadingText = houseHeading.findViewById(R.id.heading);
                 houseHeadingText.setText(R.string.house_heading);
                 houseHeadingText.setTypeface(teutonic);
                 editLayout.addView(houseHeading, lp);
-                View houseOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View houseOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton houseOptionOne = houseOptions.findViewById(R.id.option_one);
                 RadioButton houseOptionTwo = houseOptions.findViewById(R.id.option_two);
                 houseOptionOne.setId(R.id.house_one);
@@ -139,12 +140,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Ghoul Priest
-                View ghoulHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View ghoulHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView ghoulHeadingText = ghoulHeading.findViewById(R.id.heading);
                 ghoulHeadingText.setText(R.string.ghoul_heading);
                 ghoulHeadingText.setTypeface(teutonic);
                 editLayout.addView(ghoulHeading, lp);
-                View ghoulOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View ghoulOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton ghoulOptionOne = ghoulOptions.findViewById(R.id.option_one);
                 RadioButton ghoulOptionTwo = ghoulOptions.findViewById(R.id.option_two);
                 ghoulOptionOne.setId(R.id.ghoul_one);
@@ -161,12 +162,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Lita Chantler
-                View litaHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View litaHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView litaHeadingText = litaHeading.findViewById(R.id.heading);
                 litaHeadingText.setText(R.string.lita_heading);
                 litaHeadingText.setTypeface(teutonic);
                 editLayout.addView(litaHeading, lp);
-                View litaOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View litaOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton litaOptionOne = litaOptions.findViewById(R.id.option_one);
                 RadioButton litaOptionTwo = litaOptions.findViewById(R.id.option_two);
                 RadioButton litaOptionThree = litaOptions.findViewById(R.id.option_three);
@@ -192,12 +193,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 2) {
                 // Past Midnight
-                View midnightHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View midnightHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView midnightHeadingText = midnightHeading.findViewById(R.id.heading);
                 midnightHeadingText.setText(R.string.midnight_heading);
                 midnightHeadingText.setTypeface(teutonic);
                 editLayout.addView(midnightHeading, lp);
-                View midnightOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View midnightOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton midnightOptionOne = midnightOptions.findViewById(R.id.option_one);
                 RadioButton midnightOptionTwo = midnightOptions.findViewById(R.id.option_two);
                 midnightOptionOne.setId(R.id.midnight_one);
@@ -214,12 +215,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Cultists interrogated
-                View cultistsHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View cultistsHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView cultistsHeadingText = cultistsHeading.findViewById(R.id.heading);
                 cultistsHeadingText.setText(R.string.cultists_interrogated_resolution);
                 cultistsHeadingText.setTypeface(teutonic);
                 editLayout.addView(cultistsHeading, lp);
-                View drew = View.inflate(this, R.layout.d_item_checkbox, null);
+                View drew = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox drewBox = drew.findViewById(R.id.checkbox);
                 drewBox.setId(R.id.drew);
                 drewBox.setText(R.string.drew);
@@ -228,7 +229,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.DrewInterrogated == 1) {
                     drewBox.setChecked(true);
                 }
-                View herman = View.inflate(this, R.layout.d_item_checkbox, null);
+                View herman = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox hermanBox = herman.findViewById(R.id.checkbox);
                 hermanBox.setId(R.id.herman);
                 hermanBox.setText(R.string.herman);
@@ -237,7 +238,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.HermanInterrogated == 1) {
                     hermanBox.setChecked(true);
                 }
-                View peter = View.inflate(this, R.layout.d_item_checkbox, null);
+                View peter = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox peterBox = peter.findViewById(R.id.checkbox);
                 peterBox.setId(R.id.peter);
                 peterBox.setText(R.string.peter);
@@ -246,7 +247,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.PeterInterrogated == 1) {
                     peterBox.setChecked(true);
                 }
-                View victoria = View.inflate(this, R.layout.d_item_checkbox, null);
+                View victoria = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox victoriaBox = victoria.findViewById(R.id.checkbox);
                 victoriaBox.setId(R.id.victoria);
                 victoriaBox.setText(R.string.victoria);
@@ -255,7 +256,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.VictoriaInterrogated == 1) {
                     victoriaBox.setChecked(true);
                 }
-                View ruth = View.inflate(this, R.layout.d_item_checkbox, null);
+                View ruth = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox ruthBox = ruth.findViewById(R.id.checkbox);
                 ruthBox.setId(R.id.ruth);
                 ruthBox.setText(R.string.ruth);
@@ -264,7 +265,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.RuthInterrogated == 1) {
                     ruthBox.setChecked(true);
                 }
-                View masked = View.inflate(this, R.layout.d_item_checkbox, null);
+                View masked = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox maskedBox = masked.findViewById(R.id.checkbox);
                 maskedBox.setId(R.id.masked);
                 maskedBox.setText(R.string.masked_hunter);
@@ -277,12 +278,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (globalVariables.NightCompleted == 1) {
                 // Umordhoth
-                View umordhothHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View umordhothHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView umordhothHeadingText = umordhothHeading.findViewById(R.id.heading);
                 umordhothHeadingText.setText(R.string.conclusion);
                 umordhothHeadingText.setTypeface(teutonic);
                 editLayout.addView(umordhothHeading, lp);
-                View umordhothOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View umordhothOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton umordhothOptionOne = umordhothOptions.findViewById(R.id.option_one);
                 RadioButton umordhothOptionTwo = umordhothOptions.findViewById(R.id.option_two);
                 RadioButton umordhothOptionThree = umordhothOptions.findViewById(R.id.option_three);
@@ -321,7 +322,7 @@ public class EditLogActivity extends AppCompatActivity {
             // Nothing to show
             if ((scenario == 1 && globalVariables.FirstScenario == 1) ||
                     (scenario == 2 && globalVariables.FirstScenario == 2)) {
-                View nothing = View.inflate(this, R.layout.d_item_heading, null);
+                View nothing = View.inflate(this, R.layout.e_item_heading, null);
                 TextView nothingText = nothing.findViewById(R.id.heading);
                 nothingText.setText(R.string.nothing);
                 nothingText.setTypeface(arnopro);
@@ -336,12 +337,12 @@ public class EditLogActivity extends AppCompatActivity {
             if ((scenario > 1 && globalVariables.FirstScenario == 1) ||
                     (scenario != 2 && globalVariables.FirstScenario == 2)) {
                 // Investigators unconscious
-                View unconsciousHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View unconsciousHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView unconsciousHeadingText = unconsciousHeading.findViewById(R.id.heading);
                 unconsciousHeadingText.setText(R.string.unconscious_heading);
                 unconsciousHeadingText.setTypeface(teutonic);
                 editLayout.addView(unconsciousHeading, lp);
-                View unconsciousOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View unconsciousOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton unconsciousOptionOne = unconsciousOptions.findViewById(R.id.option_one);
                 RadioButton unconsciousOptionTwo = unconsciousOptions.findViewById(R.id.option_two);
                 unconsciousOptionOne.setId(R.id.unconscious_one);
@@ -361,12 +362,12 @@ public class EditLogActivity extends AppCompatActivity {
             if ((scenario > 1 && globalVariables.FirstScenario == 1) ||
                     scenario > 2) {
                 // Warren Rice
-                View warrenHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View warrenHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView warrenHeadingText = warrenHeading.findViewById(R.id.heading);
                 warrenHeadingText.setText(R.string.warren_rice);
                 warrenHeadingText.setTypeface(teutonic);
                 editLayout.addView(warrenHeading, lp);
-                View warrenOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View warrenOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton warrenOptionOne = warrenOptions.findViewById(R.id.option_one);
                 RadioButton warrenOptionTwo = warrenOptions.findViewById(R.id.option_two);
                 RadioButton warrenOptionThree = warrenOptions.findViewById(R.id.option_three);
@@ -401,12 +402,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Students
-                View studentsHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View studentsHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView studentsHeadingText = studentsHeading.findViewById(R.id.heading);
                 studentsHeadingText.setText(R.string.students_heading);
                 studentsHeadingText.setTypeface(teutonic);
                 editLayout.addView(studentsHeading, lp);
-                View studentsOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View studentsOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton studentsOptionsOne = studentsOptions.findViewById(R.id.option_one);
                 RadioButton studentsOptionsTwo = studentsOptions.findViewById(R.id.option_two);
                 RadioButton studentsOptionsThree = studentsOptions.findViewById(R.id.option_three);
@@ -433,12 +434,12 @@ public class EditLogActivity extends AppCompatActivity {
             if ((scenario == 1 && globalVariables.FirstScenario == 2) ||
                     scenario > 2) {
                 // Francis Morgan
-                View francisHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View francisHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView francisHeadingText = francisHeading.findViewById(R.id.heading);
                 francisHeadingText.setText(R.string.francis_morgan);
                 francisHeadingText.setTypeface(teutonic);
                 editLayout.addView(francisHeading, lp);
-                View francisOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View francisOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton francisOptionsOne = francisOptions.findViewById(R.id.option_one);
                 RadioButton francisOptionsTwo = francisOptions.findViewById(R.id.option_two);
                 RadioButton francisOptionsThree = francisOptions.findViewById(R.id.option_three);
@@ -473,12 +474,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // O'Bannion Gang
-                View obannionHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View obannionHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView obannionHeadingText = obannionHeading.findViewById(R.id.heading);
                 obannionHeadingText.setText(R.string.obannion_heading);
                 obannionHeadingText.setTypeface(teutonic);
                 editLayout.addView(obannionHeading, lp);
-                View obannionOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View obannionOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton obannionOptionsOne = obannionOptions.findViewById(R.id.option_one);
                 RadioButton obannionOptionsTwo = obannionOptions.findViewById(R.id.option_two);
                 obannionOptionsOne.setId(R.id.obannion_one);
@@ -495,12 +496,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Investigators cheated
-                View cheatedHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View cheatedHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView cheatedHeadingText = cheatedHeading.findViewById(R.id.heading);
                 cheatedHeadingText.setText(R.string.cheated_heading);
                 cheatedHeadingText.setTypeface(teutonic);
                 editLayout.addView(cheatedHeading, lp);
-                View cheatedOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View cheatedOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton cheatedOptionOne = cheatedOptions.findViewById(R.id.option_one);
                 RadioButton cheatedOptionTwo = cheatedOptions.findViewById(R.id.option_two);
                 cheatedOptionOne.setId(R.id.cheated_one);
@@ -519,12 +520,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 3) {
                 // Henry Armitage
-                View armitageHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View armitageHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView armitageHeadingText = armitageHeading.findViewById(R.id.heading);
                 armitageHeadingText.setText(R.string.henry_armitage);
                 armitageHeadingText.setTypeface(teutonic);
                 editLayout.addView(armitageHeading, lp);
-                View armitageOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View armitageOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton armitageOptionOne = armitageOptions.findViewById(R.id.option_one);
                 RadioButton armitageOptionTwo = armitageOptions.findViewById(R.id.option_two);
                 RadioButton armitageOptionThree = armitageOptions.findViewById(R.id.option_three);
@@ -561,12 +562,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 4) {
                 // Necronomicon
-                View necronomiconHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View necronomiconHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView necronomiconHeadingText = necronomiconHeading.findViewById(R.id.heading);
                 necronomiconHeadingText.setText(R.string.necronomicon_heading);
                 necronomiconHeadingText.setTypeface(teutonic);
                 editLayout.addView(necronomiconHeading, lp);
-                View necronomiconOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View necronomiconOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton necronomiconOptionOne = necronomiconOptions.findViewById(R.id.option_one);
                 RadioButton necronomiconOptionTwo = necronomiconOptions.findViewById(R.id.option_two);
                 RadioButton necronomiconOptionThree = necronomiconOptions.findViewById(R.id.option_three);
@@ -599,12 +600,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Adam Lynch/Harold Walsted
-                View lynchHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View lynchHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView lynchHeadingText = lynchHeading.findViewById(R.id.heading);
                 lynchHeadingText.setText(R.string.lynch_heading);
                 lynchHeadingText.setTypeface(teutonic);
                 editLayout.addView(lynchHeading, lp);
-                View lynchOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View lynchOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton lynchOptionOne = lynchOptions.findViewById(R.id.option_one);
                 RadioButton lynchOptionTwo = lynchOptions.findViewById(R.id.option_two);
                 lynchOptionOne.setId(R.id.lynch_one);
@@ -623,12 +624,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 5) {
                 // Investigators delayed
-                View delayedHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View delayedHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView delayedHeadingText = delayedHeading.findViewById(R.id.heading);
                 delayedHeadingText.setText(R.string.delayed_heading);
                 delayedHeadingText.setTypeface(teutonic);
                 editLayout.addView(delayedHeading, lp);
-                View delayedOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View delayedOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton delayedOptionOne = delayedOptions.findViewById(R.id.option_one);
                 RadioButton delayedOptionTwo = delayedOptions.findViewById(R.id.option_two);
                 delayedOptionOne.setId(R.id.delayed_one);
@@ -647,12 +648,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 6) {
                 // Silas Bishop
-                View silasHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View silasHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView silasHeadingText = silasHeading.findViewById(R.id.heading);
                 silasHeadingText.setText(R.string.silas_heading);
                 silasHeadingText.setTypeface(teutonic);
                 editLayout.addView(silasHeading, lp);
-                View silasOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View silasOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton silasOptionOne = silasOptions.findViewById(R.id.option_one);
                 RadioButton silasOptionTwo = silasOptions.findViewById(R.id.option_two);
                 RadioButton silasOptionThree = silasOptions.findViewById(R.id.option_three);
@@ -683,12 +684,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Zebulon Whateley
-                View zebulonHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View zebulonHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView zebulonHeadingText = zebulonHeading.findViewById(R.id.heading);
                 zebulonHeadingText.setText(R.string.zebulon_whateley);
                 zebulonHeadingText.setTypeface(teutonic);
                 editLayout.addView(zebulonHeading, lp);
-                View zebulonOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View zebulonOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton zebulonOptionOne = zebulonOptions.findViewById(R.id.option_one);
                 RadioButton zebulonOptionTwo = zebulonOptions.findViewById(R.id.option_two);
                 zebulonOptionOne.setId(R.id.zebulon_one);
@@ -705,12 +706,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Earl Sawyer
-                View earlHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View earlHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView earlHeadingText = earlHeading.findViewById(R.id.heading);
                 earlHeadingText.setText(R.string.earl_sawyer);
                 earlHeadingText.setTypeface(teutonic);
                 editLayout.addView(earlHeading, lp);
-                View earlOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View earlOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton earlOptionOne = earlOptions.findViewById(R.id.option_one);
                 RadioButton earlOptionTwo = earlOptions.findViewById(R.id.option_two);
                 earlOptionOne.setId(R.id.sawyer_one);
@@ -727,12 +728,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Ally Sacrificed
-                View allyHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View allyHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView allyHeadingText = allyHeading.findViewById(R.id.heading);
                 allyHeadingText.setText(R.string.ally_heading);
                 allyHeadingText.setTypeface(teutonic);
                 editLayout.addView(allyHeading, lp);
-                View allyOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View allyOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton allyOptionOne = allyOptions.findViewById(R.id.option_one);
                 RadioButton allyOptionTwo = allyOptions.findViewById(R.id.option_two);
                 allyOptionOne.setId(R.id.ally_one);
@@ -751,12 +752,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 8) {
                 // Townsfolk action
-                View townsfolkHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View townsfolkHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView townsfolkHeadingText = townsfolkHeading.findViewById(R.id.heading);
                 townsfolkHeadingText.setText(R.string.townsfolk_heading);
                 townsfolkHeadingText.setTypeface(teutonic);
                 editLayout.addView(townsfolkHeading, lp);
-                View townsfolkOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View townsfolkOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton townsfolkOptionOne = townsfolkOptions.findViewById(R.id.option_one);
                 RadioButton townsfolkOptionTwo = townsfolkOptions.findViewById(R.id.option_two);
                 townsfolkOptionOne.setId(R.id.townsfolk_one);
@@ -773,12 +774,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Broods escaped
-                View broodHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View broodHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView broodHeadingText = broodHeading.findViewById(R.id.heading);
                 broodHeadingText.setText(R.string.brood_heading);
                 broodHeadingText.setTypeface(teutonic);
                 editLayout.addView(broodHeading, lp);
-                View broodCounter = View.inflate(this, R.layout.d_item_counter, null);
+                View broodCounter = View.inflate(this, R.layout.e_item_counter, null);
                 final TextView broodAmount = broodCounter.findViewById(R.id.amount);
                 broodAmount.setId(R.id.broods);
                 broodAmount.setText(String.valueOf(globalVariables.BroodsEscaped));
@@ -810,12 +811,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 9) {
                 // Investigators Gate
-                View gateHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View gateHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView gateHeadingText = gateHeading.findViewById(R.id.heading);
                 gateHeadingText.setText(R.string.gate_heading);
                 gateHeadingText.setTypeface(teutonic);
                 editLayout.addView(gateHeading, lp);
-                View gateOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View gateOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton gateOptionOne = gateOptions.findViewById(R.id.option_one);
                 RadioButton gateOptionTwo = gateOptions.findViewById(R.id.option_two);
                 gateOptionOne.setId(R.id.gate_one);
@@ -834,12 +835,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 10) {
                 // Yog-Sothoth
-                View yogHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View yogHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView yogHeadingText = yogHeading.findViewById(R.id.heading);
                 yogHeadingText.setText(R.string.conclusion);
                 yogHeadingText.setTypeface(teutonic);
                 editLayout.addView(yogHeading, lp);
-                View yogOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View yogOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton yogOptionsOne = yogOptions.findViewById(R.id.option_one);
                 RadioButton yogOptionsTwo = yogOptions.findViewById(R.id.option_two);
                 RadioButton yogOptionsThree = yogOptions.findViewById(R.id.option_three);
@@ -871,7 +872,7 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario == 1) {
                 // Nothing to show
-                View nothing = View.inflate(this, R.layout.d_item_heading, null);
+                View nothing = View.inflate(this, R.layout.e_item_heading, null);
                 TextView nothingText = nothing.findViewById(R.id.heading);
                 nothingText.setText(R.string.nothing);
                 nothingText.setTypeface(arnopro);
@@ -885,12 +886,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 1) {
                 // Doubt
-                View doubtHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View doubtHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView doubtHeadingText = doubtHeading.findViewById(R.id.heading);
                 doubtHeadingText.setText(R.string.doubt_heading);
                 doubtHeadingText.setTypeface(teutonic);
                 editLayout.addView(doubtHeading, lp);
-                View doubtCounter = View.inflate(this, R.layout.d_item_counter, null);
+                View doubtCounter = View.inflate(this, R.layout.e_item_counter, null);
                 final TextView doubtAmount = doubtCounter.findViewById(R.id.amount);
                 doubtAmount.setId(R.id.doubt);
                 doubtAmount.setText(String.valueOf(globalVariables.Doubt));
@@ -920,12 +921,12 @@ public class EditLogActivity extends AppCompatActivity {
                 editLayout.addView(doubtCounter, lp);
 
                 // Conviction
-                View convictionHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View convictionHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView convictionHeadingText = convictionHeading.findViewById(R.id.heading);
                 convictionHeadingText.setText(R.string.conviction_heading);
                 convictionHeadingText.setTypeface(teutonic);
                 editLayout.addView(convictionHeading, lp);
-                View convictionCounter = View.inflate(this, R.layout.d_item_counter, null);
+                View convictionCounter = View.inflate(this, R.layout.e_item_counter, null);
                 final TextView convictionAmount = convictionCounter.findViewById(R.id.amount);
                 convictionAmount.setId(R.id.conviction);
                 convictionAmount.setText(String.valueOf(globalVariables.Conviction));
@@ -955,12 +956,12 @@ public class EditLogActivity extends AppCompatActivity {
                 editLayout.addView(convictionCounter, lp);
 
                 // Chasing the Stranger
-                View chasingStrangerHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View chasingStrangerHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView chasingStrangerHeadingText = chasingStrangerHeading.findViewById(R.id.heading);
                 chasingStrangerHeadingText.setText(R.string.chasing_stranger_heading);
                 chasingStrangerHeadingText.setTypeface(teutonic);
                 editLayout.addView(chasingStrangerHeading, lp);
-                View strangerCounter = View.inflate(this, R.layout.d_item_counter, null);
+                View strangerCounter = View.inflate(this, R.layout.e_item_counter, null);
                 final TextView strangerAmount = strangerCounter.findViewById(R.id.amount);
                 strangerAmount.setId(R.id.chasing_stranger);
                 strangerAmount.setText(String.valueOf(globalVariables.ChasingStranger));
@@ -990,12 +991,12 @@ public class EditLogActivity extends AppCompatActivity {
                 editLayout.addView(strangerCounter, lp);
 
                 // Theatre (Chaos Bag)
-                View theatreHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View theatreHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView theatreHeadingText = theatreHeading.findViewById(R.id.heading);
                 theatreHeadingText.setText(R.string.theatre_heading);
                 theatreHeadingText.setTypeface(teutonic);
                 editLayout.addView(theatreHeading, lp);
-                View theatreOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View theatreOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton theatreOptionOne = theatreOptions.findViewById(R.id.option_one);
                 RadioButton theatreOptionTwo = theatreOptions.findViewById(R.id.option_two);
                 RadioButton theatreOptionThree = theatreOptions.findViewById(R.id.option_three);
@@ -1026,12 +1027,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Stranger
-                View strangerHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View strangerHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView strangerHeadingText = strangerHeading.findViewById(R.id.heading);
                 strangerHeadingText.setText(R.string.stranger_heading);
                 strangerHeadingText.setTypeface(teutonic);
                 editLayout.addView(strangerHeading, lp);
-                View strangerOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View strangerOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton strangerOptionOne = strangerOptions.findViewById(R.id.option_one);
                 RadioButton strangerOptionTwo = strangerOptions.findViewById(R.id.option_two);
                 strangerOptionOne.setId(R.id.stranger_one);
@@ -1048,12 +1049,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Police
-                View policeHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View policeHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView policeHeadingText = policeHeading.findViewById(R.id.heading);
                 policeHeadingText.setText(R.string.police_heading);
                 policeHeadingText.setTypeface(teutonic);
                 editLayout.addView(policeHeading, lp);
-                View policeOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View policeOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton policeOptionOne = policeOptions.findViewById(R.id.option_one);
                 RadioButton policeOptionTwo = policeOptions.findViewById(R.id.option_two);
                 RadioButton policeOptionThree = policeOptions.findViewById(R.id.option_three);
@@ -1086,12 +1087,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 2) {
                 // VIPS interviewed
-                View interviewedHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View interviewedHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView interviewedHeadingText = interviewedHeading.findViewById(R.id.heading);
                 interviewedHeadingText.setText(R.string.vips_interviewed);
                 interviewedHeadingText.setTypeface(teutonic);
                 editLayout.addView(interviewedHeading, lp);
-                View constanceInterviewed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View constanceInterviewed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox constanceInterviewedBox = constanceInterviewed.findViewById(R.id.checkbox);
                 constanceInterviewedBox.setId(R.id.constance_interviewed);
                 constanceInterviewedBox.setText(R.string.constance);
@@ -1100,7 +1101,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.Constance == 1 || globalVariables.Constance == 4) {
                     constanceInterviewedBox.setChecked(true);
                 }
-                View jordanInterviewed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View jordanInterviewed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox jordanInterviewedBox = jordanInterviewed.findViewById(R.id.checkbox);
                 jordanInterviewedBox.setId(R.id.jordan_interviewed);
                 jordanInterviewedBox.setText(R.string.jordan);
@@ -1109,7 +1110,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.Jordan == 1 || globalVariables.Jordan == 4) {
                     jordanInterviewedBox.setChecked(true);
                 }
-                View ishimaruInterviewed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View ishimaruInterviewed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox ishimaruInterviewedBox = ishimaruInterviewed.findViewById(R.id.checkbox);
                 ishimaruInterviewedBox.setId(R.id.ishimaru_interviewed);
                 ishimaruInterviewedBox.setText(R.string.ishimaru);
@@ -1118,7 +1119,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.Ishimaru == 1 || globalVariables.Ishimaru == 4) {
                     ishimaruInterviewedBox.setChecked(true);
                 }
-                View sebastienInterviewed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View sebastienInterviewed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox sebastienInterviewedBox = sebastienInterviewed.findViewById(R.id.checkbox);
                 sebastienInterviewedBox.setId(R.id.sebastien_interviewed);
                 sebastienInterviewedBox.setText(R.string.sebastien);
@@ -1127,7 +1128,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.Sebastien == 1 || globalVariables.Sebastien == 4) {
                     sebastienInterviewedBox.setChecked(true);
                 }
-                View ashleighInterviewed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View ashleighInterviewed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox ashleighInterviewedBox = ashleighInterviewed.findViewById(R.id.checkbox);
                 ashleighInterviewedBox.setId(R.id.ashleigh_interviewed);
                 ashleighInterviewedBox.setText(R.string.ashleigh);
@@ -1138,12 +1139,12 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // VIPS slain
-                View slainHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View slainHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView slainHeadingText = slainHeading.findViewById(R.id.heading);
                 slainHeadingText.setText(R.string.vips_slain);
                 slainHeadingText.setTypeface(teutonic);
                 editLayout.addView(slainHeading, lp);
-                View constanceSlain = View.inflate(this, R.layout.d_item_checkbox, null);
+                View constanceSlain = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox constanceSlainBox = constanceSlain.findViewById(R.id.checkbox);
                 constanceSlainBox.setId(R.id.constance_slain);
                 constanceSlainBox.setText(R.string.constance);
@@ -1153,7 +1154,7 @@ public class EditLogActivity extends AppCompatActivity {
                         5) {
                     constanceSlainBox.setChecked(true);
                 }
-                View jordanSlain = View.inflate(this, R.layout.d_item_checkbox, null);
+                View jordanSlain = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox jordanSlainBox = jordanSlain.findViewById(R.id.checkbox);
                 jordanSlainBox.setId(R.id.jordan_slain);
                 jordanSlainBox.setText(R.string.jordan);
@@ -1162,7 +1163,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.Jordan == 2 || globalVariables.Jordan == 4 || globalVariables.Jordan == 5) {
                     jordanSlainBox.setChecked(true);
                 }
-                View ishimaruSlain = View.inflate(this, R.layout.d_item_checkbox, null);
+                View ishimaruSlain = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox ishimaruSlainBox = ishimaruSlain.findViewById(R.id.checkbox);
                 ishimaruSlainBox.setId(R.id.ishimaru_slain);
                 ishimaruSlainBox.setText(R.string.ishimaru);
@@ -1171,7 +1172,7 @@ public class EditLogActivity extends AppCompatActivity {
                 if (globalVariables.Ishimaru == 2 || globalVariables.Ishimaru == 4 || globalVariables.Ishimaru == 5) {
                     ishimaruSlainBox.setChecked(true);
                 }
-                View sebastienSlain = View.inflate(this, R.layout.d_item_checkbox, null);
+                View sebastienSlain = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox sebastienSlainBox = sebastienSlain.findViewById(R.id.checkbox);
                 sebastienSlainBox.setId(R.id.sebastien_slain);
                 sebastienSlainBox.setText(R.string.sebastien);
@@ -1181,7 +1182,7 @@ public class EditLogActivity extends AppCompatActivity {
                         5) {
                     sebastienSlainBox.setChecked(true);
                 }
-                View ashleighSlain = View.inflate(this, R.layout.d_item_checkbox, null);
+                View ashleighSlain = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox ashleighSlainBox = ashleighSlain.findViewById(R.id.checkbox);
                 ashleighSlainBox.setId(R.id.ashleigh_slain);
                 ashleighSlainBox.setText(R.string.ashleigh);
@@ -1194,12 +1195,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 3) {
                 // Party
-                View partyHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View partyHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView partyHeadingText = partyHeading.findViewById(R.id.heading);
                 partyHeadingText.setText(R.string.party_heading);
                 partyHeadingText.setTypeface(teutonic);
                 editLayout.addView(partyHeading, lp);
-                View partyOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View partyOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton partyOptionOne = partyOptions.findViewById(R.id.option_one);
                 RadioButton partyOptionTwo = partyOptions.findViewById(R.id.option_two);
                 RadioButton partyOptionThree = partyOptions.findViewById(R.id.option_three);
@@ -1232,12 +1233,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 4) {
                 // Onyx
-                View onyxHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View onyxHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView onyxHeadingText = onyxHeading.findViewById(R.id.heading);
                 onyxHeadingText.setText(R.string.onyx_heading);
                 onyxHeadingText.setTypeface(teutonic);
                 editLayout.addView(onyxHeading, lp);
-                View onyxOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View onyxOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton onyxOptionOne = onyxOptions.findViewById(R.id.option_one);
                 RadioButton onyxOptionTwo = onyxOptions.findViewById(R.id.option_two);
                 RadioButton onyxOptionThree = onyxOptions.findViewById(R.id.option_three);
@@ -1270,12 +1271,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 5) {
                 // Asylum
-                View asylumHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View asylumHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView asylumHeadingText = asylumHeading.findViewById(R.id.heading);
                 asylumHeadingText.setText(R.string.asylum_heading);
                 asylumHeadingText.setTypeface(teutonic);
                 editLayout.addView(asylumHeading, lp);
-                View asylumOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View asylumOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton asylumOptionOne = asylumOptions.findViewById(R.id.option_one);
                 RadioButton asylumOptionTwo = asylumOptions.findViewById(R.id.option_two);
                 RadioButton asylumOptionThree = asylumOptions.findViewById(R.id.option_three);
@@ -1301,12 +1302,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 6) {
                 // Daniel's Warning
-                View danielHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View danielHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView danielHeadingText = danielHeading.findViewById(R.id.heading);
                 danielHeadingText.setText(R.string.daniel_heading);
                 danielHeadingText.setTypeface(teutonic);
                 editLayout.addView(danielHeading, lp);
-                View danielOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View danielOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton danielOptionOne = danielOptions.findViewById(R.id.option_one);
                 RadioButton danielOptionTwo = danielOptions.findViewById(R.id.option_two);
                 RadioButton danielOptionThree = danielOptions.findViewById(R.id.option_three);
@@ -1332,12 +1333,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 7) {
                 // Nigel
-                View nigelHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View nigelHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView nigelHeadingText = nigelHeading.findViewById(R.id.heading);
                 nigelHeadingText.setText(R.string.nigel_heading);
                 nigelHeadingText.setTypeface(teutonic);
                 editLayout.addView(nigelHeading, lp);
-                View nigelOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View nigelOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton nigelOptionOne = nigelOptions.findViewById(R.id.option_one);
                 RadioButton nigelOptionTwo = nigelOptions.findViewById(R.id.option_two);
                 RadioButton nigelOptionThree = nigelOptions.findViewById(R.id.option_three);
@@ -1370,13 +1371,13 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 8) {
                 // Investigators who read Act II
-                View readActHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View readActHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView readActHeadingText = readActHeading.findViewById(R.id.heading);
                 readActHeadingText.setText(R.string.select_read_act);
                 readActHeadingText.setTypeface(teutonic);
                 editLayout.addView(readActHeading, lp);
                 String[] investigatorNames = getResources().getStringArray(R.array.investigators);
-                View investigatorOneReadAct = View.inflate(this, R.layout.d_item_checkbox, null);
+                View investigatorOneReadAct = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox invOneReadActBox = investigatorOneReadAct.findViewById(R.id.checkbox);
                 invOneReadActBox.setId(R.id.inv_one_read_act);
                 invOneReadActBox.setTypeface(arnopro);
@@ -1393,7 +1394,7 @@ public class EditLogActivity extends AppCompatActivity {
                 } else {
                     invOneReadActBox.setText(getString(R.string.inv_one_read_act).trim());
                 }
-                View investigatorTwoReadAct = View.inflate(this, R.layout.d_item_checkbox, null);
+                View investigatorTwoReadAct = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox invTwoReadActBox = investigatorTwoReadAct.findViewById(R.id.checkbox);
                 invTwoReadActBox.setId(R.id.inv_two_read_act);
                 invTwoReadActBox.setTypeface(arnopro);
@@ -1410,7 +1411,7 @@ public class EditLogActivity extends AppCompatActivity {
                 } else {
                     invTwoReadActBox.setText(getString(R.string.inv_two_read_act).trim());
                 }
-                View investigatorThreeReadAct = View.inflate(this, R.layout.d_item_checkbox, null);
+                View investigatorThreeReadAct = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox invThreeReadActBox = investigatorThreeReadAct.findViewById(R.id.checkbox);
                 invThreeReadActBox.setId(R.id.inv_three_read_act);
                 invThreeReadActBox.setTypeface(arnopro);
@@ -1429,7 +1430,7 @@ public class EditLogActivity extends AppCompatActivity {
                 } else {
                     invThreeReadActBox.setText(getString(R.string.inv_three_read_act).trim());
                 }
-                View investigatorFourReadAct = View.inflate(this, R.layout.d_item_checkbox, null);
+                View investigatorFourReadAct = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox invFourReadActBox = investigatorFourReadAct.findViewById(R.id.checkbox);
                 invFourReadActBox.setId(R.id.inv_four_read_act);
                 invFourReadActBox.setTypeface(arnopro);
@@ -1450,12 +1451,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 9) {
                 // Path to Carcosa
-                View pathHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View pathHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView pathHeadingText = pathHeading.findViewById(R.id.heading);
                 pathHeadingText.setText(R.string.path_heading);
                 pathHeadingText.setTypeface(teutonic);
                 editLayout.addView(pathHeading, lp);
-                View pathOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View pathOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton pathOptionOne = pathOptions.findViewById(R.id.option_one);
                 RadioButton pathOptionTwo = pathOptions.findViewById(R.id.option_two);
                 RadioButton pathOptionThree = pathOptions.findViewById(R.id.option_three);
@@ -1481,12 +1482,12 @@ public class EditLogActivity extends AppCompatActivity {
 
             if (scenario > 10 && globalVariables.Path != 0) {
                 // Hastur
-                View hasturHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View hasturHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView hasturHeadingText = hasturHeading.findViewById(R.id.heading);
                 hasturHeadingText.setText(R.string.hastur_heading);
                 hasturHeadingText.setTypeface(teutonic);
                 editLayout.addView(hasturHeading, lp);
-                View hasturOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+                View hasturOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
                 RadioButton hasturOptionOne = hasturOptions.findViewById(R.id.option_one);
                 RadioButton hasturOptionTwo = hasturOptions.findViewById(R.id.option_two);
                 RadioButton hasturOptionThree = hasturOptions.findViewById(R.id.option_three);
@@ -1510,13 +1511,13 @@ public class EditLogActivity extends AppCompatActivity {
                 }
 
                 // Investigators who were possessed
-                View possessedHeading = View.inflate(this, R.layout.d_item_heading, null);
+                View possessedHeading = View.inflate(this, R.layout.e_item_heading, null);
                 TextView possessedHeadingText = possessedHeading.findViewById(R.id.heading);
                 possessedHeadingText.setText(R.string.possessed_heading);
                 possessedHeadingText.setTypeface(teutonic);
                 editLayout.addView(possessedHeading, lp);
                 String[] investigatorNames = getResources().getStringArray(R.array.investigators);
-                View investigatorOnePossessed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View investigatorOnePossessed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox invOnePossessedBox = investigatorOnePossessed.findViewById(R.id.checkbox);
                 invOnePossessedBox.setId(R.id.inv_one_possessed);
                 invOnePossessedBox.setTypeface(arnopro);
@@ -1534,7 +1535,7 @@ public class EditLogActivity extends AppCompatActivity {
                 } else {
                     invOnePossessedBox.setText(getString(R.string.inv_one_possessed).trim());
                 }
-                View investigatorTwoPossessed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View investigatorTwoPossessed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox invTwoPossessedBox = investigatorTwoPossessed.findViewById(R.id.checkbox);
                 invTwoPossessedBox.setId(R.id.inv_two_possessed);
                 invTwoPossessedBox.setTypeface(arnopro);
@@ -1552,7 +1553,7 @@ public class EditLogActivity extends AppCompatActivity {
                 } else {
                     invTwoPossessedBox.setText(getString(R.string.inv_two_possessed).trim());
                 }
-                View investigatorThreePossessed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View investigatorThreePossessed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox invThreePossessedBox = investigatorThreePossessed.findViewById(R.id.checkbox);
                 invThreePossessedBox.setId(R.id.inv_three_possessed);
                 invThreePossessedBox.setTypeface(arnopro);
@@ -1571,7 +1572,7 @@ public class EditLogActivity extends AppCompatActivity {
                 } else {
                     invThreePossessedBox.setText(getString(R.string.inv_three_possessed).trim());
                 }
-                View investigatorFourPossessed = View.inflate(this, R.layout.d_item_checkbox, null);
+                View investigatorFourPossessed = View.inflate(this, R.layout.e_item_checkbox, null);
                 CheckBox invFourPossessedBox = investigatorFourPossessed.findViewById(R.id.checkbox);
                 invFourPossessedBox.setId(R.id.inv_four_possessed);
                 invFourPossessedBox.setTypeface(arnopro);
@@ -1592,14 +1593,272 @@ public class EditLogActivity extends AppCompatActivity {
             }
         }
 
+        /*
+            Forgotten Age log
+         */
+        if (globalVariables.CurrentCampaign == 4) {
+
+            if (scenario == 1) {
+                // Nothing to show
+                View nothing = View.inflate(this, R.layout.e_item_heading, null);
+                TextView nothingText = nothing.findViewById(R.id.heading);
+                nothingText.setText(R.string.nothing);
+                nothingText.setTypeface(arnopro);
+                nothingText.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen
+                        .arnopro_textsize));
+                nothingText.setAllCaps(false);
+                nothingText.setTextScaleX(1);
+                lp.setMargins(16, 0, 16, 0);
+                editLayout.addView(nothing, lp);
+            }
+
+            if (scenario > 1) {
+                // Yigs Fury
+                View yigsFuryHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView yigsFuryHeadingText = yigsFuryHeading.findViewById(R.id.heading);
+                yigsFuryHeadingText.setText(R.string.yigs_fury_heading);
+                yigsFuryHeadingText.setTypeface(teutonic);
+                editLayout.addView(yigsFuryHeading, lp);
+                View yigsFuryCounter = View.inflate(this, R.layout.e_item_counter, null);
+                final TextView yigsFuryAmount = yigsFuryCounter.findViewById(R.id.amount);
+                yigsFuryAmount.setId(R.id.yigs_fury);
+                yigsFuryAmount.setText(String.valueOf(globalVariables.YigsFury));
+                yigsFuryAmount.setTypeface(arnopro);
+                ImageView yigsFuryDecrement = yigsFuryCounter.findViewById(R.id.decrement);
+                yigsFuryDecrement.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int amount = Integer.valueOf(yigsFuryAmount.getText().toString());
+                        if (amount > 0) {
+                            amount += -1;
+                            yigsFuryAmount.setText(String.valueOf(amount));
+                        }
+                    }
+                });
+                ImageView yigsFuryIncrement = yigsFuryCounter.findViewById(R.id.increment);
+                yigsFuryIncrement.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int amount = Integer.valueOf(yigsFuryAmount.getText().toString());
+                        if (amount < 99) {
+                            amount += 1;
+                            yigsFuryAmount.setText(String.valueOf(amount));
+                        }
+                    }
+                });
+                editLayout.addView(yigsFuryCounter, lp);
+
+                // Ruins
+                View ruinsHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView ruinsHeadingText = ruinsHeading.findViewById(R.id.heading);
+                ruinsHeadingText.setText(R.string.ruins_heading);
+                ruinsHeadingText.setTypeface(teutonic);
+                editLayout.addView(ruinsHeading, lp);
+                View ruinsOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton ruinsOptionOne = ruinsOptions.findViewById(R.id.option_one);
+                RadioButton ruinsOptionTwo = ruinsOptions.findViewById(R.id.option_two);
+                ruinsOptionOne.setId(R.id.ruins_one);
+                ruinsOptionTwo.setId(R.id.ruins_two);
+                ruinsOptionOne.setText(getString(R.string.forced_wait).trim());
+                ruinsOptionTwo.setText(getString(R.string.cleared_path).trim());
+                ruinsOptionOne.setTypeface(arnopro);
+                ruinsOptionTwo.setTypeface(arnopro);
+                editLayout.addView(ruinsOptions, lp);
+                if (globalVariables.Ruins == 1) {
+                    ruinsOptionOne.setChecked(true);
+                } else if (globalVariables.Ruins == 2) {
+                    ruinsOptionTwo.setChecked(true);
+                }
+
+                // Ichtaca
+                View ichtacaHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView ichtacaHeadingText = ichtacaHeading.findViewById(R.id.heading);
+                ichtacaHeadingText.setText(R.string.ichtaca_heading);
+                ichtacaHeadingText.setTypeface(teutonic);
+                editLayout.addView(ichtacaHeading, lp);
+                View ichtacaOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton ichtacaOptionOne = ichtacaOptions.findViewById(R.id.option_one);
+                RadioButton ichtacaOptionTwo = ichtacaOptions.findViewById(R.id.option_two);
+                RadioButton ichtacaOptionThree = ichtacaOptions.findViewById(R.id.option_three);
+                ichtacaOptionThree.setVisibility(VISIBLE);
+                ichtacaOptionOne.setId(R.id.ichtaca_one);
+                ichtacaOptionTwo.setId(R.id.ichtaca_two);
+                ichtacaOptionThree.setId(R.id.ichtaca_three);
+                ichtacaOptionOne.setText(getString(R.string.ichtaca_observed).trim());
+                ichtacaOptionTwo.setText(getString(R.string.ichtaca_trust).trim());
+                ichtacaOptionThree.setText(getString(R.string.ichtaca_wary).trim());
+                ichtacaOptionOne.setTypeface(arnopro);
+                ichtacaOptionTwo.setTypeface(arnopro);
+                ichtacaOptionThree.setTypeface(arnopro);
+                editLayout.addView(ichtacaOptions, lp);
+                if (globalVariables.Rougarou == 1) {
+                    ichtacaOptionOne.setChecked(true);
+                } else if (globalVariables.Rougarou == 2) {
+                    ichtacaOptionTwo.setChecked(true);
+                } else if (globalVariables.Rougarou == 3) {
+                    ichtacaOptionThree.setChecked(true);
+                }
+
+                // Alejandro
+                View alejandroHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView alejandroHeadingText = alejandroHeading.findViewById(R.id.heading);
+                alejandroHeadingText.setText(R.string.alejandro_heading);
+                alejandroHeadingText.setTypeface(teutonic);
+                editLayout.addView(alejandroHeading, lp);
+                View alejandroOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton alejandroOptionOne = alejandroOptions.findViewById(R.id.option_one);
+                RadioButton alejandroOptionTwo = alejandroOptions.findViewById(R.id.option_two);
+                alejandroOptionOne.setId(R.id.alejandro_one);
+                alejandroOptionTwo.setId(R.id.alejandro_two);
+                alejandroOptionOne.setText(getString(R.string.alejandro_remained).trim());
+                alejandroOptionTwo.setText(getString(R.string.alejandro_followed).trim());
+                alejandroOptionOne.setTypeface(arnopro);
+                alejandroOptionTwo.setTypeface(arnopro);
+                editLayout.addView(alejandroOptions, lp);
+                if (globalVariables.Alejandro == 1) {
+                    alejandroOptionOne.setChecked(true);
+                } else if (globalVariables.Alejandro == 2) {
+                    alejandroOptionTwo.setChecked(true);
+                }
+            }
+
+            if (scenario > 6) {
+                // Harbinger
+                View harbingerHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView harbingerHeadingText = harbingerHeading.findViewById(R.id.heading);
+                harbingerHeadingText.setText(R.string.harbinger_heading);
+                harbingerHeadingText.setTypeface(teutonic);
+                editLayout.addView(harbingerHeading, lp);
+                View harbinger = View.inflate(this, R.layout.e_item_checkbox, null);
+                CheckBox harbingerBox = harbinger.findViewById(R.id.checkbox);
+                harbingerBox.setId(R.id.harbinger);
+                harbingerBox.setText(R.string.harbinger_alive);
+                harbingerBox.setTypeface(arnopro);
+                editLayout.addView(harbinger, lp);
+                if (globalVariables.Harbinger > -1) {
+                    harbingerBox.setChecked(true);
+                }
+                final View harbingerCounter = View.inflate(this, R.layout.e_item_counter, null);
+                final TextView harbingerAmount = harbingerCounter.findViewById(R.id.amount);
+                harbingerAmount.setId(R.id.harbinger_damage);
+                if (globalVariables.Harbinger == -1) {
+                    harbingerAmount.setText("0");
+                } else {
+                    harbingerAmount.setText(String.valueOf(globalVariables.Harbinger));
+                }
+                harbingerAmount.setTypeface(arnopro);
+                ImageView harbingerDecrement = harbingerCounter.findViewById(R.id.decrement);
+                harbingerDecrement.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int amount = Integer.valueOf(harbingerAmount.getText().toString());
+                        if (amount > 0) {
+                            amount += -1;
+                            harbingerAmount.setText(String.valueOf(amount));
+                        }
+                    }
+                });
+                ImageView harbingerIncrement = harbingerCounter.findViewById(R.id.increment);
+                harbingerIncrement.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int amount = Integer.valueOf(harbingerAmount.getText().toString());
+                        if (amount < 99) {
+                            amount += 1;
+                            harbingerAmount.setText(String.valueOf(amount));
+                        }
+                    }
+                });
+                editLayout.addView(harbingerCounter, lp);
+                if (harbingerBox.isChecked()) {
+                    harbingerCounter.setVisibility(VISIBLE);
+                } else {
+                    harbingerCounter.setVisibility(GONE);
+                }
+                harbingerBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked) {
+                            harbingerCounter.setVisibility(VISIBLE);
+                        } else {
+                            harbingerCounter.setVisibility(GONE);
+                        }
+                    }
+                });
+
+                // Relic
+                View relicHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView relicHeadingText = relicHeading.findViewById(R.id.heading);
+                relicHeadingText.setText(R.string.relic_heading);
+                relicHeadingText.setTypeface(teutonic);
+                editLayout.addView(relicHeading, lp);
+                View relicOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                final RadioButton relicOptionOne = relicOptions.findViewById(R.id.option_one);
+                final RadioButton relicOptionTwo = relicOptions.findViewById(R.id.option_two);
+                relicOptionOne.setId(R.id.relic_one);
+                relicOptionTwo.setId(R.id.relic_two);
+                relicOptionOne.setText(getString(R.string.investigators_recovered_relic).trim());
+                relicOptionTwo.setText(getString(R.string.alejandro_recovered_relic).trim());
+                relicOptionOne.setTypeface(arnopro);
+                relicOptionTwo.setTypeface(arnopro);
+                editLayout.addView(relicOptions, lp);
+                if (globalVariables.Relic == 1) {
+                    relicOptionOne.setChecked(true);
+                } else if (globalVariables.Relic == 2) {
+                    relicOptionTwo.setChecked(true);
+                }
+
+                // Custody
+                final View custodyHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView custodyHeadingText = custodyHeading.findViewById(R.id.heading);
+                custodyHeadingText.setText(R.string.custody_heading);
+                custodyHeadingText.setTypeface(teutonic);
+                editLayout.addView(custodyHeading, lp);
+                final View custodyOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton custodyOptionOne = custodyOptions.findViewById(R.id.option_one);
+                RadioButton custodyOptionTwo = custodyOptions.findViewById(R.id.option_two);
+                custodyOptionOne.setId(R.id.custody_one);
+                custodyOptionTwo.setId(R.id.custody_two);
+                custodyOptionOne.setText(getString(R.string.custody_alejandro).trim());
+                custodyOptionTwo.setText(getString(R.string.custody_harlan).trim());
+                custodyOptionOne.setTypeface(arnopro);
+                custodyOptionTwo.setTypeface(arnopro);
+                editLayout.addView(custodyOptions, lp);
+                if (globalVariables.Custody == 1) {
+                    custodyOptionOne.setChecked(true);
+                } else if (globalVariables.Custody == 2) {
+                    custodyOptionTwo.setChecked(true);
+                }
+                if (relicOptionOne.isChecked()) {
+                    custodyHeading.setVisibility(VISIBLE);
+                    custodyOptions.setVisibility(VISIBLE);
+                } else if (relicOptionTwo.isChecked()) {
+                    custodyHeading.setVisibility(GONE);
+                    custodyOptions.setVisibility(GONE);
+                }
+                relicOptionOne.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (relicOptionOne.isChecked()) {
+                            custodyHeading.setVisibility(VISIBLE);
+                            custodyOptions.setVisibility(VISIBLE);
+                        } else if (relicOptionTwo.isChecked()) {
+                            custodyHeading.setVisibility(GONE);
+                            custodyOptions.setVisibility(GONE);
+                        }
+                    }
+                });
+            }
+        }
+
         if (globalVariables.Rougarou > 0) {
             // Rougarou
-            View rougarouHeading = View.inflate(this, R.layout.d_item_heading, null);
+            View rougarouHeading = View.inflate(this, R.layout.e_item_heading, null);
             TextView rougarouHeadingText = rougarouHeading.findViewById(R.id.heading);
             rougarouHeadingText.setText(R.string.rougarou_scenario);
             rougarouHeadingText.setTypeface(teutonic);
             editLayout.addView(rougarouHeading, lp);
-            View rougarouOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+            View rougarouOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
             RadioButton rougarouOptionOne = rougarouOptions.findViewById(R.id.option_one);
             RadioButton rougarouOptionTwo = rougarouOptions.findViewById(R.id.option_two);
             RadioButton rougarouOptionThree = rougarouOptions.findViewById(R.id.option_three);
@@ -1625,12 +1884,12 @@ public class EditLogActivity extends AppCompatActivity {
 
         if (globalVariables.Carnevale > 0) {
             // Carnevale
-            View carnevaleHeading = View.inflate(this, R.layout.d_item_heading, null);
+            View carnevaleHeading = View.inflate(this, R.layout.e_item_heading, null);
             TextView carnevaleHeadingText = carnevaleHeading.findViewById(R.id.heading);
             carnevaleHeadingText.setText(R.string.carnevale_scenario);
             carnevaleHeadingText.setTypeface(teutonic);
             editLayout.addView(carnevaleHeading, lp);
-            View carnevaleOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+            View carnevaleOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
             RadioButton carnevaleOptionOne = carnevaleOptions.findViewById(R.id.option_one);
             RadioButton carnevaleOptionTwo = carnevaleOptions.findViewById(R.id.option_two);
             RadioButton carnevaleOptionThree = carnevaleOptions.findViewById(R.id.option_three);
@@ -1654,7 +1913,7 @@ public class EditLogActivity extends AppCompatActivity {
             }
 
             // Carnevale reward
-            View carnevaleRewardOptions = View.inflate(this, R.layout.d_item_radiogroup, null);
+            View carnevaleRewardOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
             RadioButton carnevaleRewardOptionOne = carnevaleRewardOptions.findViewById(R.id.option_one);
             RadioButton carnevaleRewardOptionTwo = carnevaleRewardOptions.findViewById(R.id.option_two);
             RadioButton carnevaleRewardOptionThree = carnevaleRewardOptions.findViewById(R.id.option_three);

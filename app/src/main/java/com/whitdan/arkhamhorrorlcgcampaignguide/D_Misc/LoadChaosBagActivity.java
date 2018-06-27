@@ -26,6 +26,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc.CustomChaosBagActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamDbHelper;
@@ -104,6 +105,7 @@ public class LoadChaosBagActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     globalVariables.ChaosBagID = -1;
+                    globalVariables.seal = new ArrayList<>();
 
                     // Get a writable database
                     ArkhamDbHelper dbHelper = new ArkhamDbHelper(LoadChaosBagActivity.this);
