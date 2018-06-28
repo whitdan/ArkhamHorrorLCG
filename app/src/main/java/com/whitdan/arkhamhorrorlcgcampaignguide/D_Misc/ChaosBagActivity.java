@@ -455,7 +455,7 @@ public class ChaosBagActivity extends AppCompatActivity {
             switch (globalVariables.CurrentCampaign) {
                 // Night of the Zealot
                 case 1:
-                    if (scenario > 2) {
+                    if (globalVariables.CurrentScenario == 3 || scenario > 3) {
                         chaosbag.add(14);
                     }
                     break;
@@ -475,7 +475,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                     if (globalVariables.AdamLynchHaroldWalsted == 1) {
                         chaosbag.add(13);
                     }
-                    if (scenario > 4) {
+                    if (globalVariables.CurrentScenario == 5 || scenario > 5) {
                         switch (globalVariables.CurrentDifficulty) {
                             case 0:
                                 chaosbag.add(4);
@@ -491,7 +491,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 break;
                         }
                     }
-                    if (scenario > 8) {
+                    if (globalVariables.CurrentScenario == 9 || scenario > 9) {
                         switch (globalVariables.CurrentDifficulty) {
                             case 0:
                                 chaosbag.add(5);
@@ -529,7 +529,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                             chaosbag.add(14);
                             break;
                     }
-                    if (scenario > 4) {
+                    if (globalVariables.CurrentScenario == 5 || scenario > 5) {
                         switch (globalVariables.CurrentDifficulty) {
                             case 0:
                                 chaosbag.add(4);
@@ -545,7 +545,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 break;
                         }
                     }
-                    if(scenario > 8){
+                    if(globalVariables.CurrentScenario == 9 || scenario > 9){
                         switch (globalVariables.CurrentDifficulty) {
                             case 0:
                                 chaosbag.add(5);
