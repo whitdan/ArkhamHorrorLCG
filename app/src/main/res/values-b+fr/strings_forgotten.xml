@@ -10,9 +10,712 @@
     <string name="forgotten_scenario_seven">Scénario 7 : Les Profondeurs de Yoth</string>
     <string name="forgotten_scenario_eight">Scénario 8 : Paradoxes Temporels</string>
     <string name="forgotten_interlude_one">Interlude 1: Nuits Agitées</string>
-    <string name="forgotten_interlude_two">Interlude 2: La Fin de l'Expédition</string>
-    <string name="forgotten_interlude_three">Interlude 3: L'Appel de la Jungle</string>
+    <string name="forgotten_interlude_two">Interlude 2: La Fin de l’Expédition</string>
+    <string name="forgotten_interlude_three">Interlude 3: L’Appel de la Jungle</string>
     <string name="forgotten_interlude_four">Interlude 4: Les Captifs</string>
     <string name="forgotten_interlude_five">Interlude 5: Les Ténèbres</string>
     <string name="forgotten_epilogue">Épilogue</string>
+	
+	 <!--Miscellaneous-->
+    <string name="vengeance_counter">Vengeance : </string>
+    <string name="advanced_act_three">A avancé à l’Acte 3</string>
+    <string name="untamed_ichtaca_one">Scénario terminé à l’Acte 1 ou 2</string>
+    <string name="untamed_ichtaca_two">Vous avez combattu Ichtaca</string>
+    <string name="untamed_ichtaca_three">Ichtaca ouvre la voie</string>
+    <string name="harbinger">Le Hérault de Valusia est toujours en jeu ou mis de côté</string>
+    <string name="harbinger_damage">Dégâts sur le Hérault de Valusia : </string>
+    <string name="eztli_resolution_three_option_one">« Nous ne pouvons pas arrêter maintenant — 
+		nous devons retourner à l’intérieur ! »</string>
+    <string name="eztli_resolution_three_option_two">« C’est trop dangereux. 
+		Cet endroit doit être détruit. » </string>
+	
+	<!--Supplies-->
+    <string name="supplies">Équipement</string>
+    <string name="choose_supplies">Choisissez votre équipement</string>
+    <string name="points_available">pts disponibles</string>
+    <string name="not_enough_points">Vous n’avez pas assez de points disponibles.</string>
+    <string name="provisions_description">Provisions (1pt) :
+        <i>De l’eau et de la nourriture pour une personne. Incontournable pour tout voyage.</i></string>
+    <string name="medicine_description">Médicaments (2pts) :
+		<i>Pour lutter contre les maladies, les infections et les venins.</i></string>
+    <string name="rope_description">Corde (3pts) :
+        <i>Un long rouleau de solide cordage. Essentiel pour grimper ou faire de la spéléologie.</i></string>
+    <string name="blanket_description">Duvet (2pts) :
+		<i>Pour tenir chaud la nuit.</i></string>
+    <string name="canteen_description">Gourde (2pts) :
+		<i>À remplir dans les ruisseaux et les rivières.</i></string>
+    <string name="torches_description">Torches (3pts) : 
+		<i>Pour éclairer les lieux obscurs ou allumer des torches murales.</i></string>
+    <string name="compass_description">Boussole (2pts) :
+		<i>Pour vous guider lorsque vous êtes irrémédiablement perdu.</i></string>
+    <string name="map_description">Plan (3pts) : 
+		<i>Il n’y a rien dessus, mais avec le temps vous devriez être capable de le compléter.</i></string>
+    <string name="binoculars_description">Jumelles (2pts) : 
+		<i>Pour vous aider à observer des lieux éloignés.</i></string>
+    <string name="chalk_description">Craie (2pts) : 
+		<i>Pour écrire sur de la pierre.</i></string>
+    <string name="pendant_description">Pendentif (1pt) :
+        <i>Totalement inutile, mais les souvenirs chers apportent du réconfort aux voyageurs qui sont
+		loin de chez eux.</i></string>
+    <string name="provisions_choose">Provisions (1pt) :</string>
+    <string name="medicine_choose">Médicaments (2pts) :</string>
+    <string name="rope_choose">Corde (3pts)</string>
+    <string name="blanket_choose">Duvet (2pts)</string>
+    <string name="canteen_choose">Gourde (2pts)</string>
+    <string name="torches_choose">Torches (3pts)</string>
+    <string name="compass_choose">Boussole	(2pts)</string>
+    <string name="map_choose">Plan (3pts)</string>
+    <string name="binoculars_choose">Jumelles (2pts)</string>
+    <string name="chalk_choose">Craie (2pts)</string>
+    <string name="pendant_choose">Pendentif (1pt)</string>
+    <string name="provisions">Provisions</string>
+    <string name="medicine">Médicaments</string>
+    <string name="rope">Corde</string>
+    <string name="blanket">Duvet</string>
+    <string name="canteen">Gourde</string>
+    <string name="torches">Torches</string>
+    <string name="compass">Boussole</string>
+    <string name="map">Plan</string>
+    <string name="binoculars">Jumelles</string>
+    <string name="chalk">Craie</string>
+    <string name="pendant">Pendentif</string>
+    <string name="no_supplies">Aucun équipement</string>
+
+
+    <!--Campaign log-->
+    <string name="yigs_fury">Colère de Yig : </string>
+    <string name="forced_wait">Les investigateurs ont été forcés d’attendre des vivres supplémentaires.\n\n</string>
+    <string name="cleared_path">Les investigateurs se sont frayé un chemin jusqu’aux ruines de la cité Eztli.\n\n</string>
+    <string name="ichtaca_observed">Ichtaca a observé votre progression avec intérêt.\n\n</string>
+    <string name="ichtaca_trust">Les investigateurs ont gagné la confiance d’Ichtaca.\n\n</string>
+    <string name="ichtaca_wary">Ichtaca se méfie des investigateurs.\n\n</string>
+    <string name="alejandro_remained">Alejandro a choisi de rester au campement.\n\n</string>
+    <string name="alejandro_followed">Alejandro a suivi les investigateurs dans les ruines. \n\n</string>
+    <string name="investigators_recovered_relic">Les investigateurs ont trouvé la Relique des Âges.\n\n</string>
+    <string name="alejandro_recovered_relic">Alejandro a trouvé la Relique des Âges.\n\n</string>
+    <string name="harbinger_alive">Le Hérault est toujours vivant.</string>
+    <string name="custody_alejandro">Les investigateurs ont confié la relique à Alejandro.\n\n
+		Les investigateurs ont gagné la confiance d’Alejandro.\n\n</string>
+    <string name="custody_harlan">Les investigateurs ont confié la relique à Harlan Earnstone.\n\n
+		Alejandro poursuit ses recherches de son côté.\n\n</string>
+
+    <!--Edit log-->
+    <string name="yigs_fury_heading">Colère de Yig</string>
+    <string name="ruins_heading">Ruines Eztli</string>
+    <string name="ichtaca_heading">Ichtaca</string>
+    <string name="alejandro_heading">Alejandro</string>
+    <string name="harbinger_heading">Hérault de Valusia</string>
+    <string name="relic_heading">Relique des Âges</string>
+    <string name="custody_heading">Garde de la Relique</string>
+
+    <!--Chaos bag-->
+    <string name="untamed_skull_one">–X. X est le nombre de points de vengeance dans la pile de victoire.</string>
+    <string name="untamed_skull_two">–X. X est le nombre de points de vengeance dans la pile de victoire, plus un.</string>
+    <string name="untamed_cultist_one">–X. X est le nombre de lieux en jeu (5 max).</string>
+    <string name="untamed_cultist_two">–X. X est le nombre de lieux en jeu.</string>
+    <string name="untamed_tablet_one">–X. X est le nombre de cartes dans le deck Exploration (5 max).</string>
+    <string name="untamed_tablet_two">–X. X est le nombre de cartes dans le deck Exploration (3 min).</string>
+    <string name="untamed_thing_one">–2. Si vous êtes empoisonné, ce test échoue automatiquement à la place.</string>
+    <string name="untamed_thing_two">–3. Si vous êtes empoisonné, ce test échoue automatiquement à la place. Si vous 
+		n’êtes pas empoisonné et que vous échouez, placez une faiblesse Empoisonné mise de de côté dans votre zone de menace.</string>
+
+    <string name="eztli_skull_one">–1 (–3 à la place s’il y a une fatalité dans votre lieu).</string>
+    <string name="eztli_skull_two">–2 (–4 à la place s’il y a une fatalité dans votre lieu).</string>
+    <string name="eztli_cultist_tablet_one">–X. X est le nombre de lieux avec une fatalité sur eux.</string>
+    <string name="eztli_cultist_tablet_two">–X. X est le nombre de fatalités sur les lieux en jeu.</string>
+    <string name="eztli_thing_one">Révélez un autre pion. Si vous échouez, placez 1 fatalité sur votre lieu.</string>
+    <string name="eztli_thing_two">Révélez un autre pion. Placez 1 fatalité sur votre lieu.</string>
+
+
+    <!--Campaign introduction-->
+    <string name="forgotten_introduction"><b>Prologue</b>\n
+    \nMardi 2 juin 1925\n
+    \nIl semble que nous n’aurons pas de repos cet été.\n
+    \nAujourd’hui, j’ai rencontré mon vieil ami Harlan Earnstone, chercheur en 	Histoire
+		à l’Université Miskatonic. Il disait avoir un travail à me confier, mais je ne savais honnêtement pas
+		à quoi m’attendre.\n
+    \nHarlan m’a présenté l’un de ses collègues : Alejandra Vela, un historien célèbre
+		de l’autre côté de la frontière sud. M. Vela est diplômé d’une prestigieuse univesité
+		de Mexia et a passé de nombreuses années à étudier l’Empire aztèque.
+		Il prétend avoir trouvé des preuves de l’existence d’une cité-état aztèque encore inconnue appelée Eztli.
+		Mais ses découvertes aussi étranges qu’inédites n’ont pas été prises au sérieux par l’université et il
+		est devenu un paria auprès de ses pairs.\n
+    \nAlejandro est venue à Arkham dans le but de rassembler des fonds pour monter une expédition afin d’explorer
+		les forêts tropicales du sud du Mexique où reposent, selon lui, les ruines encore inviolées
+		de l’altepetl d’Eztli. Sa description des origines de la cité-état défie toutes nos connaissances
+		actuelles sur l’histoire de l’Amérique précolombienne. Malgré cela - ou plutôt à cause de cela, connaissant
+		bien mon vieil ami -, Harlan a été fasciné par les découvertes d’Alejandro. L’Université Miskatonic a
+		accepté de financer l’expédition (quoique chichement), et Harlan compte sur moi pour en faire partie.\n
+    \nSi vous voulez mon avis, il y a de grandes probabilités pour que nous partions à la recherche de quelque chose qui n’existe même pas.
+		Mais s’il y a la moindre chance que ce peuple appelé Eztli ait réellement vécu, les implications
+		historiques seraient alors considérables. Après avoir débattu pendant quelques temps de cette proposition,
+		nous avons finalement accepté l’offre d’Alejandro. Les préparatifs sont en cours et nous devrions décoller 
+		d’ici la fin du mois. Avec un peu de chance, nous pourrons remplir ce journal avec toutes sortes 
+		d’intéressantes découvertes. Sinon, il fera toujours une bonne cale pour le bureau branlant d’Harlan.</string>
+
+
+    <!--Interludes-->
+    <string name="restless_blanket_one">Les investigateurs suivants ont des duvets  et ont un sommeil réparateur :\n\n</string>
+    <string name="restless_blanket_two">\nIls lisent :</string>
+    <string name="restless_restful_sleep">Fort heureusement, j’ai réussi à dormir chaque nuit. Mais tandis que mon corps se reposait,
+		mon esprit était la proie de terribles cauchemars. Une grotte, semblable à une gueule béante et baignée d’une pâle lumière rouge… 
+		les murs grouillant des écailles luisantes de centaines de vipères… il aurait peut-être mieux valu ne pas dormir du tout.\n</string>
+    <string name="restless_no_blanket_one">Les investigateurs suivants n’ont pas de duvet et ont un sommeil agité :\n\n</string>
+    <string name="restless_no_blanket_two">\nIls lisent:</string>
+    <string name="restless_tossing_turning">J’ai à peine dormi au cours de ces nuits passées dans la jungle. Un étrange brouillard envahissait 
+		le campement chaque soir, le plongeant dans un froid intense et singulier. Mon sac de couchage offrait quelque protection contre les 
+		éléments, mais nous n’étions pas préparés à affronter des conditions aussi surnaturelles. Mouches et moustiques bourdonnaient à 
+		mes oreilles chaque fois que je m’apprêtais à m’endormir. Même lorsque je trouvais enfin le sommeil, le rampement d’un insecte ou d’un lézard sur mon visage me réveillait aussitôt. Je gage que je ne vais pas beaucoup dormir durant ce voyage…</string>
+    <string name="restless_no_blanket_option_one">Subissez un traumatisme physique.</string>
+    <string name="restless_no_blanket_option_two">Subissez un traumatisme mental.</string>
+
+    <string name="restless_not_low">Les investigateurs ont assez de provisions.</string>
+    <string name="restless_low_one">Les investigateurs n’ont pas assez de provisions, les vivres sont épuisées.
+        Choisissez</string>
+    <string name="restless_investigator">investigateur</string>
+    <string name="restless_investigators">investigateurs</string>
+    <string name="restless_low_two">pour lire :\n</string>
+    <string name="restless_low">Nous pensions avoir emporté suffisamment d’eau et de nourriture pour tout le monde, mais le voyage a fortement
+		pesé sur nos provisions. Quand le soleil s’est levé et que l’heure de manger est arrivée, nous avons découvert que nous commencions
+		déjà à manquer de provisions.\n</string>
+    <string name="restless_low_effect">Chacun de ces investigateurs débute le scénario suivant avec 3 ressources de moins.</string>
+
+    <string name="restless_choose_lookout">L’investigateur principal doit choisir un investigateur
+		pour être le guetteur du groupe.</string>
+    <string name="restless_binoculars"> (a des jumelles)</string>
+    <string name="restless_lookout_reads">\nCet investigateur lit :</string>
+    <string name="restless_shapes_trees">La plupart des nuits s’étaient déroulées paisiblement  ; mais cette nuit-là, j’ai été surpris par des
+		bruissements dans les branches des arbres à la lisière sud de la clairière où se trouve notre campement. Malgré l’obscurité, j’ai pu utiliser 
+		mes jumelles pour observer des formes qui se déplaçaient à travers les arbres. Ces formes semblaient humaines, mais… pourquoi  ? Pourquoi
+		nous épiaient-elles de loin ? Quel était leur but ?</string>
+    <string name="restless_eyes_dark">Chaque nuit, j’étais épié. Je ne me sentais pas seulement observé : je pouvais réellement voir des yeux
+		briller dans l’obscurité autour du campement. Des yeux jaunes qui me scrutaient. Vigilant, l’arme au poing, j’étais prêt à défendre le campement
+		si nécessaire. Lorsque nos yeux ont fini par se croiser, les ténèbres se sont emparées de mon cœur.</string>
+
+    <string name="restless_poison_one">peuvent utiliser un médicament pour retirer une faiblesse Empoisonné de leur deck.</string>
+    <string name="restless_poison_counter">Médicament utilisé</string>
+    <string name="restless_poisoned_heading">Investigateur toujours empoisonné</string>
+    <string name="restless_poison_two">Les investigateurs n’ont pas de médicaments pour soigner le poison.</string>
+    <string name="restless_poison_three">\n Chaque investigateur qui possède encore une faiblesse Empoisonné dans son deck lit :</string>
+    <string name="restless_poison_spreads">Les jours passaient et le poison continuait de se répandre dans mon corps. La deuxième nuit, 
+		j’étais trempé de sueur. Je commençais à avoir des difficultés à respirer, et je débutais chaque journée en rendant la plus
+		grande partie du dîner de la veille.</string>
+
+    <string name="expeditions_end_one">Vendredi 17 juillet 1925\n
+    \nNous sommes finalement rentrés à Arkham, notre expédition ayant été
+		un « succès ». Alejandro est pressé de rapporter ses découvertes à l’université. Je ne comprends pas comment il parvient à rester
+		aussi optimiste et positif après l’enfer que nous avons traversé dans cette jungle. Toute son attention est focalisée sur cette étrange
+		relique que nous avons découverte dans les ruines. J’aurais aimé en savoir plus sur les origines de cet artefact. Cela me trouble beaucoup.
+		Il bourdonne toujours et pulse d’une énergie surnaturelle que je peux à peine décrire. Tandis que nous voyagions avec l’artefact, nos nuits 
+		étaient emplies de cauchemars étranges : des rêves d’autres mondes et d’autres civilisations.\n
+    \nAlejandro veut apporter la relique au Musée Miskatonic, pour l’exposer avec les autres artefacts eztli que nous avons découverts. Je suis plutôt 
+		mitigé. Au musée, elle pourra bénéficier d’une attention particulière et des historiens pourront l’étudier, pour peut-être découvrir à quoi 
+		elle sert. Cependant, je crains que cette relique ne soit trop dangereuse pour le public. Après tout, nous n’avons toujours aucune idée de ce 
+		qu’est cette chose. Alejandro va détester cette idée, mais peut-être serait-il plus sage de la garder en sécurité quelque part où Harlan et moi
+		pourrions l’étudier en privé. Il faut que je me décide cette nuit. Après-demain, il sera trop tard pour changer d’avis…</string>
+    <string name="expeditions_end_two">Dimanche 19 juillet 1925\n
+    \nJ’ai décidé de confier la relique à Alejandro. Après tout, l’expédition entière était basée sur ses recherches – ce devrait être à lui de 
+		l’étudier. Si quelqu’un peut en découvrir les secrets, c’est bien lui.\n
+    \nLa relique sera la pièce maîtresse d’une nouvelle exposition au musée. Alejandro a déjà beaucoup écrit à propos de nos découvertes, mais son travail
+		ne fait que commencer. De nombreux mystères relatifs à notre expédition demeurent. Comment les Eztli ont-ils pu rester cachés aussi longtemps ?
+		Pourquoi semblaient-ils garder la jungle, et de quoi ? Qui a réellement bâti le temple en ruine que nous avons exploré ? Je n’ai aucun doute
+		sur le fait qu’Alejandro élucidera ces questions si on lui en laisse le temps.\n
+    \nQuant à moi, mon rôle dans cette affaire est terminé. Cependant, je ne parviens pas trouver le repos. Mes pensées me ramènent constamment 
+		vers cette jungle – ces formes ophidiennes dans les ombres, ces flèches d’obsidienne enchâssées dans des corps squelettiques, ces voix déformées hurlant dans les profondeurs caverneuses. Quand je marche dans la rue, je me surprends à me diriger vers le musée sans m’en rendre compte, 
+		comme si je brûlais de voir à nouveau cette relique. Une sensation tenace sourd au fond de mon esprit, comme si j’avais oublié quelque
+		chose d’important. Que dois-je faire pour me débarrasser de –\n
+    \n(Le journal se termine ici, brutalement.)\n
+        \n<b>Si ce n’est pas déjà le cas, n’importe quel investigateur a le droit d’ajouter Alejandro Vela à son deck.</b>\n
+        \n<b>Ajoutez 1 pion Tablette à la réserve du Chaos pour le reste de la campagne.</b>\n
+    \nUn coup sec sur la porte vous fait sursauter. Vous lâchez votre stylo et vous vous levez précipitamment. Il est presque 2:30 du matin.
+		Qui peut bien frapper à votre porte à cette heure ? Vos pensées vagabondent à nouveau vers la jungle et vous imaginez un instant 
+		les créatures serpentines vous attaquant dans votre propre demeure. Réprouvant un frisson, vous prenez une arme et vous vous approchez 
+		doucement de la porte, prêt à frapper si nécessaire. Vous prenez une longue inspiration et ouvrez le battant\n
+    \nDe l’autre côté se tient la silhouette familière d’une femme à la peau sombre, aux longs cheveux bruns et aux yeux jaunes perçants, qui vous 
+		lance un regard dur. Bien qu’elle ait changé d’accoutrement, vous reconnaissez Ichtaca, la guerrière eztli que vous avez rencontrée dans la forêt vierge. Vêtue d’un long manteau et d’un chapeau Bollman, elle ne semble pas très à l’aise. Son visage est crispé de colère. Vous vous apprêtez 
+		à lever votre arme pour vous défendre quand elle laisse échapper un profond soupir et entre lentement chez vous, fermant la porte
+		d’entrée derrière elle. « Quoi que vous ayez fait, vous devez le défaire », commence-t-elle
+		d’une voix sombre. « Sans quoi nous cesserons <i>tous</i> d’exister. »</string>
+    <string name="expeditions_end_three">Dimanche 19 juillet 1925\n
+    \nJ’ai décidé de garder la relique cachée pour l’instant. Alejandro n’est pas content 
+		de ma décision mais, jusqu’à ce qu’on sache de quoi cet orbe est capable, il est
+		important de le conserver dans un lieu sûr où il ne mettra personne en danger.
+		Harlan est d’accord avec moi et il a accepté de conserver la relique dans son
+		bureau privé. Là, nous pourrons l’étudier en secret.\n
+    \nAlejandro a décidé de rester à Arkham pour le moment, afin de compiler ses
+		notes sur l’expédition et d’aider le musée à monter une exposition présentant
+		les autres découvertes, moins dangereuses. Quant à moi, j’espère trouver des
+		réponses à d’autres mystères : comment les Eztli ont-ils pu rester cachés aussi
+		longtemps ? Pourquoi semblaient-ils garder la jungle, et de quoi ? Qui a réellement
+		bâti le temple en ruine que nous avons exploré ?\n
+    \nMes pensées me ramènent constamment vers cette jungle – ces formes ophidiennes
+		dans les ombres, ces flèches d’obsidienne enchâssées dans des corps squelettiques, ces
+		voix déformées hurlant dans les profondeurs caverneuses. Chaque fois que je quitte
+		le bureau d’Harlan, je me surprends à faire demi-tour pour aller contempler à nouveau
+		la relique. Une sensation tenace sourd au fond de mon esprit, comme si j’avais
+		oublié quelque chose d’important. Que dois-je faire pour me débarrasser de –\n
+    \n(Le journal se termine ici, brutalement.)\n
+        \n<b>Si Alejandro Vela est actuellement dans
+			le deck d’un investigateur, retirez-le de ce deck.</b>\n
+    \nUn coup sec sur la porte vous fait sursauter. Vous lâchez votre stylo et vous vous levez
+		précipitamment. Il est presque 2:30 du matin. Qui peut bien frapper à votre porte à
+		cette heure ? Vos pensées vagabondent à nouveau vers la jungle et vous imaginez un
+		instant les créatures serpentines vous attaquant dans votre propre demeure. Réprouvant
+		un frisson, vous prenez une arme et vous vous approchez doucement de la porte,
+		prêt à frapper si nécessaire. Vous prenez une longue inspiration et ouvrez le battant.\n
+    \nDe l’autre côté se tient la silhouette familière d’une femme à la peau sombre,
+		aux longs cheveux bruns et aux yeux jaunes perçants, qui vous lance un regard
+		dur. Bien qu’elle ait changé d’accoutrement, vous reconnaissez Ichtaca, la guerrière
+		eztli que vous avez rencontrée dans la forêt vierge. Vêtue d’un long manteau
+		et d’un chapeau Bollman, elle ne semble pas très à l’aise. Son visage est crispé
+		de colère. Vous vous apprêtez à lever votre arme pour vous défendre quand elle
+		laisse échapper un profond soupir et entre lentement chez vous, fermant la porte
+		d’entrée derrière elle. « Quoi que vous ayez fait, vous devez le défaire », commence-t-elle
+		d’une voix sombre. « Sans quoi nous cesserons <i>tous</i> d’exister. »</string>
+    <string name="expeditions_end_five">Harlan Earnstone fait les cent pas dans votre salon, épongeant son front soucieux
+		avec son mouchoir. « Tout est ma faute. Jamais je n’aurais dû les inciter à
+		entreprendre cette horrible expédition. » Bien que vos chemins ne se soient croisés
+		que quelques fois auparavant, M. Earnstone est devenu un contact précieux
+		au sein de l’Université Miskatonic. Quand la dernière expédition de l’Université
+		est revenue avec seulement quelques survivants et une poignée d’étranges artefacts
+		archaïques, Harlan est venu vous voir à la recherche de conseils.\n
+    \n« Je sais, je sais. Je devrais trouver du réconfort dans le fait que l’expédition a
+		été un succès malgré ses lourdes pertes. Alejandro avait raison depuis le début.
+		Le peuple Eztli existe réellement. Et pourtant… je suis inquiet à propos de certaines
+		de ces trouvailles. » Harlan vous tend un petit journal de cuir. « Avant
+		sa mort tragique, le chef de l’expédition a relaté la majorité des découvertes du
+		groupe dans ce journal. L’un des membres survivants a réussi à emporter le journal
+		avec lui avant de fuir la jungle. Je pense que si vous lisez ces mots, vous comprendrez
+		ce que je veux dire. Les événements qu’ils ont vécus, les créatures qu’ils
+		ont rencontrées… » Harlan frissonne et ajuste ses lunettes de ses mains tremblantes.
+		« Mes inquiétudes ne concernent pas qu’Alejandro, mais tout le monde.
+		Lisez ce journal et, si possible, gardez un œil sur mon collègue. » Vous acceptez
+		de l’aider, mais il reste soucieux. « J’espère seulement que je ne vous entraîne pas
+		vers un sort tout aussi funeste en requérant votre aide. »\n
+    \nVous passez le reste de la nuit à étudier le journal de l’expédition, l’esprit rempli
+		de guerriers aztèques et d’étranges créatures serpentines. Longtemps après le
+		départ d’Harlan, un coup sec sur la porte vous fait sursauter et vous vous levez
+		précipitamment. Il est presque 2:30 du matin. Qui peut bien frapper à votre
+		porte à cette heure ? Vous ouvrez prudemment la porte. De l’autre côté se tient
+		une femme à la peau sombre, aux longs cheveux bruns et aux yeux jaunes perçants,
+		qui vous lance un regard dur. Vêtue d’un long manteau et d’un chapeau
+		Bollman, elle ne semble pas très à l’aise. Son visage est crispé de colère. Un éclair
+		de compréhension traverse votre esprit et vous réalisez d’un coup qui elle est.
+		Après tout, vous venez de lire et relire sa description dans le journal. Ichtaca, la
+		guerrière eztli, laisse échapper un profond soupir et entre lentement chez vous,
+		fermant la porte d’entrée derrière elle. «  Quoi qu’ils aient fait, vous devez le
+		défaire », commence-t-elle d’une voix sombre. « Sans quoi nous cesserons <i>tous</i>
+		d’exister. » </string>
+    <string name="expeditions_end_option_one">Sa place est dans un musée. Alejandro et l’équipe du musée pourront
+		l’étudier et en apprendre plus à son propos.</string>
+    <string name="expeditions_end_option_two">L’artefact est trop dangereux pour être exposé. Nous devrions le garder
+		en sécurité jusqu’à ce que nous en sachions plus à son sujet.</string>
+
+
+    <!--Scenario introductions-->
+    <string name="untamed_introduction">Dimanche 28 juin 1925\n
+    \nCette journée a été infernale. Nous venons juste de finir d’installer notre campement
+		le long de la lisière nord de la forêt, où Alejandro pense que les Eztli
+		vivaient jadis. La végétation y est dense et sauvage. Le ciel est caché par le couvert
+		des arbres, mais je peux deviner au son que fait le vent que des nuages orageux
+		s’amoncellent là-haut\n
+    \nOn nous a maintes fois expliqué les dangers que comportait cette expédition.
+		Nous sommes à des centaines de kilomètres de tout signe de civilisation. À notre
+		époque, personne n’a encore jamais pénétré au cœur de ces contrées. Jusqu’à présent,
+		personne n’avait jamais eu de raison d’essayer. Après tout, cela n’aurait
+		aucun sens de trouver des ruines aztèques dans cette région du Mexique. Et pourtant,
+		nous voilà : à la recherche de ruines qui n’existent peut-être même pas dans
+		un endroit où, selon toute vraisemblance, elles ne devraient pas se trouver.\n
+    \nL’un de nos géomètres est déjà tombé malade et un autre a été mordu par une
+		vipère. Je commence à croire que la jungle ne veut pas de nous. Si le sort continue
+		de s’acharner ainsi, ce sera l’expédition la plus courte de l’histoire de l’Université
+		Miskatonic. Ce soir, c’est repos. Demain, nous nous aventurerons dans les
+		contrées inexplorées..</string>
+
+    <string name="eztli_introduction_one">Mercredi 8 juillet 1925\n
+    \nNos messagers, José et Maria, sont revenus quelques jours plus tard les bras
+		chargés de nourriture, d’eau, d’aspirine et d’armes. Je serais curieux de savoir
+		jusqu’où vont les relations d’Alejandro au Mexique. Pour un historien marginalisé,
+		il a pu obtenir des armes et des munitions bien plus vite que ce que j’avais
+		imaginé. Mais peut-être est-il préférable qu’il taise ses sources.\n
+    \nNous nous sommes aventurés une fois de plus dans la jungle. Cette fois, nous
+		étions prêts. Nous avions appris de notre précédente excursion et nous nous
+		sommes frayé un chemin jusqu’aux gorges du fleuve, bien plus loin au sud que
+		ce que nous avions osé auparavant. Finalement, nous avons atteint les ruines
+		qu’Alejandro cherchait et nous avons bientôt pénétré dans ce qu’il pensait être le
+		temple principal. Bizarrement, les créatures serpentines que nous avions rencontrées
+		plus tôt n’ont pas attaqué en force comme nous le craignions. Avaient-elles
+		fui ? Ou étaient-elles terrées quelque part, attendant la nuit pour nous attaquer
+		par surprise pendant notre sommeil ?</string>
+    <string name="eztli_introduction_two">Vendredi 3 juillet 1925\n
+    \nNous avons passé la majeure partie de la journée d’hier à déménager notre campement
+		à l’entrée des ruines. Avec les créatures ophidiennes qui surveillent la
+		région, nous avons décidé qu’un petit groupe aurait de meilleures chances de se
+		glisser dans le temple principal sans se faire remarquer. J’ai demandé à Maria, la
+		naturaliste de l’expédition, de prendre l’un des camions et d’attendre à la lisière
+		nord de la forêt. José, notre cartographe, gardera le campement jusqu’à notre
+		retour. Nous sommes livrés à nous-mêmes ; mais au moins, nous avons une solution
+		de repli au cas où les choses tourneraient mal…</string>
+
+
+    <!--Scenario setup-->
+    <string name="untamed_sets">Une Contrée Sauvage, Forêt Vierge, Serpents, Expédition, Gardiens du Temps,
+		Agents de Yig, Poison et Antiques Fléaux.</string>
+    <string name="untamed_locations">Mettez en jeu le Campement de l’Expédition.\n
+        \nChaque investigateur commence la partie dans le Campement de l’Expédition.\n</string>
+    <string name="untamed_set_aside"> Les trois lieux monoface
+		<b><i>Ruines</i></b>, le set de rencontre <i>Agents de Yig</i>, les quatre faiblesses
+		<i>Empoisonné</i>, le soutien Alejandro Vela et l’ennemi Ichtaca\n
+        \nLe set de rencontre <i>Agents de Yig</i>  est reconnaissable à l’icône suivante :</string>
+    <string name="untamed_additional">Constituez le deck Exploration en prenant les cinq lieux mono-face
+		<b><i>Jungle</i></b> et en les mélangeant avec un exemplaire de chacune des cartes
+		Traîtrise suivantes : Perdu dans la Nature, Prolifération, Morsure de
+		Serpent, Épuisement des Réserves et Pluie de Flèches</string>
+    <string name="untamed_additional_lead">Choisissez Ursula Downs, Leo Anderson ou Monterey Jack pour être le chef de l’expédition. 
+		Cet investigateur débute les scénarios I et II en tant qu’investigateur principal.\n</string>
+
+    <string name="eztli_sets">Le Fléau des Eztli, Agents de Yig, Venin de Yig, Flux Temporel, 
+		Pièges Mortels, Ruines Oubliées, Poison et Un Froid Mordant.</string>
+    <string name="eztli_locations">Mettez en jeu l’Entrée des Ruines. \n
+        \nChaque investigateur commence la partie dans l’Entrée des Ruines.\n</string>
+    <string name="eztli_set_aside">L’ennemi Hérault de Valusia, le lieu Chambre du Temps, le soutien Relique des Âges,
+		et  toutes les faiblesses Empoisonné qui ne sont pas déjà dans le deck d’un investigateur.\n</string>
+    <string name="eztli_additional">Constituez le deck Exploration en prenant les cinq lieux mono-face
+		<b><i>Antique</i></b> et en les mélangeant avec un exemplaire de chacune des
+		cartes Traîtrise suivantes  : Mauvais Présage, Obscurité Profonde,
+		Erreur Fatale, Enseveli et Froid de la Crypte.</string>
+    <string name="eztli_additional_place">Placez</string>
+    <string name="eztli_additional_doom">fatalités sur l’Entrée des Ruines.\n\n</string>
+    <string name="eztli_low_rations">investigateurs commencent la partie avec 3 ressources de moins.\n\n</string>
+    <string name="eztli_additional_lead">Celui par Ursula Downs, Leo Anderson ou Monterey Jack qui a été choisi pour être
+        le chef de l’expédition dans le Scénario 1 commence le Scénario II comme investigateur principal.</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="untamed_no_resolution">Mercredi 1er juillet 1925\n
+    \nJe n’ai toujours aucune idée de la manière dont nous sommes rentrés
+		en vie au campement.\n
+    \nLa jungle était plus dangereuse que tout ce que nous aurions pu imaginer.
+		Je sais que cela ressemble aux divagations d’un dément, mais
+		je ne peux l’expliquer autrement. Certes, être perdu dans la jungle
+		n’était pas une partie de plaisir, mais c’était là le cadet de nos soucis.
+		La forêt était <i>gardée</i>. Gardée par des horreurs inimaginables : des
+		créatures ophidiennes animées par la colère et la haine, et qui nous
+		ont pourchassés sans relâche.\n
+    \nMais les hommes de la forêt vierge se sont révélés tout aussi dangereux.
+		Ils ressemblent à des guerriers aztèques, du moins en ce qui concerne
+		les vêtements et le langage. Ils ont visiblement réussi à survivre malgré
+		la chute de l’Empire aztèque, il y a de cela plusieurs siècles. Comment
+		sont-ils parvenus à rester cachés si longtemps ? Cela reste un mystère.
+		Je pensais qu’Alejandro serait avide d’en apprendre plus sur eux, mais
+		il semble plus inquiet que fasciné. Je suppose qu’il a de bonnes raisons
+		d’être incrédule : rien ne tourne rond dans cette expédition.\n
+    \nLes créatures serpentines nous ont poursuivis pendant ce qui m’a paru
+		être des jours. Nous sommes finalement parvenus à rentrer au camp,
+		mais à quel prix ? Nous avons tout perdu, et nombre d’entre nous ont
+		été blessés ou empoisonnés par le venin des serpents. Nous n’avons pas
+		d’autre choix que d’envoyer des messagers vers la ville la plus proche
+		pour nous ravitailler et attendre en pansant nos plaies.</string>
+    <string name="untamed_resolution_one">Jeudi 2 juillet 1925\n
+    \nAprès de nombreuses heures passées à explorer, nous avons enfin
+		découvert les ruines qu’Alejandro cherchait ; mais nous n’étions guère
+		préparés à ce que nous avons rencontré dans la forêt. La jungle était
+		<i>gardée</i>. Surveillée par des horreurs inimaginables  : des créatures
+		ophidiennes animées par la colère et la haine, et qui nous ont pourchassés
+		sans relâche en brandissant des armes rudimentaires et en
+		communiquant au moyen de sifflements aigus.\n
+    \nMais les hommes de la forêt vierge se sont révélés tout aussi dangereux.
+		Ils ressemblent à des guerriers aztèques, du moins en ce qui concerne
+		les vêtements et le langage. Ils ont visiblement réussi à survivre malgré
+		la chute de l’Empire aztèque, il y a de cela plusieurs siècles. Comment
+		sont-ils parvenus à rester cachés si longtemps ? Cela reste un mystère.
+		La guerrière nommée Ichtaca est particulièrement intrigante. Nous
+		sommes parvenus à calmer le jeu lors de notre première rencontre avec
+		elle. Étrangement, elle a accepté de nous guider à travers la jungle, pour
+		disparaître ensuite mystérieusement une fois les ruines atteintes.
+		J’ai le sentiment que nous la reverrons.\n
+    \nAlejandro n’était pas d’accord avec notre décision de faire confiance
+		aux guerriers eztli. Il a décidé de rester au camp jusqu’à nouvel
+		ordre, gêné qu’il est de leur présence. Je pensais qu’il serait avide d’en
+		apprendre plus sur eux mais j’imagine que cette découverte est déconcertante,
+		même pour un esprit aussi ouvert que le sien. Je suppose qu’il
+		a le droit d’être suspicieux : rien ne tourne rond dans cette expédition.\n
+    \nNous avons déblayé la route qui mène à ce qu’Alejandro croit être le
+		temple principal. Nous avons peu de temps pour nous reposer. Les créatures
+		serpentines ont l’air de vouloir nous arrêter, nous ne pouvons donc
+		pas nous attarder plus que nécessaire. Bientôt, nous entrerons dans les
+		ruines afin de découvrir quels secrets se cachent à l’intérieur</string>
+    <string name="untamed_resolution_two">Jeudi 2 juillet 1925\n
+    \nAprès de nombreuses heures passées à explorer, nous avons enfin
+		découvert les ruines qu’Alejandro cherchait ; mais nous n’étions guère
+		préparés à ce que nous avons rencontré dans la forêt. La jungle était
+		gardée. Surveillée par des horreurs inimaginables : des créatures ophidiennes
+		animées par la colère et la haine, et qui nous ont pourchassés
+		sans relâche en brandissant des armes rudimentaires et en communiquant
+		au moyen de sifflements aigus.\n
+    \nMais les hommes de la forêt vierge se sont révélés tout aussi dangereux.
+		Ils ressemblent à des guerriers aztèques, du moins en ce qui
+		concerne les vêtements et le langage. Ils ont visiblement réussi à survivre
+		malgré la chute de l’Empire aztèque, il y a de cela plusieurs
+		siècles. Comment sont ils parvenus à rester cachés si longtemps ? Cela
+		reste un mystère. Je pensais qu’Alejandro serait avide d’en apprendre
+		plus sur eux, mais il partage nos inquiétudes. Nous sommes parvenus
+		à vaincre leur chef, une guerrière nommée Ichtaca, et à l’interroger.
+		Avant de fuir, elle nous a mis en garde contre les ruines. Malheureusement
+		pour elle, nous refusons de rentrer bredouille chez nous.\n
+    \nAvec Alejandro à notre tête, nous avons déblayé la route qui mène à
+		ce qu’il croit être le temple principal. Nous avons peu de temps pour
+		nous reposer. Les créatures serpentines ont l’air de vouloir nous arrêter,
+		nous ne pouvons donc pas nous attarder plus que nécessaire. Bientôt,
+		nous entrerons dans les ruines afin de découvrir quels secrets se
+		cachent à l’intérieur.\n
+    \n<b>N’importe quel investigateur a le droit d’ajouter Alejandro Vela à son deck.</b></string>
+    <string name="untamed_add_alejandro"><b>N’importe quel investigateur a le droit d’ajouter Alejandro Vela à son deck.</b></string>
+
+    <string name="eztli_resolution_one">(Le texte suivant est griffonné au-dessous de la précédente entrée du journal.)\n
+    \nL’extérieur du temple en ruine semblait bien être de style aztèque.
+		Mais sitôt à l’intérieur, il nous est apparu que cet édifice avait une
+	origine radicalement différente et non-humaine. Ces ruines étaient
+		vivantes. Les gravures des murs étaient illuminées comme si elles
+		étaient alimentées avec de l’électricité, et un sourd bourdonnement
+		d’énergie résonnait à travers les couloirs. Malgré les créatures serpentines,
+		nous sommes parvenus à atteindre un passage caché menant
+		vers les étages inférieurs.\n
+    \nDans la pièce au centre de ces couloirs souterrains, nous avons trouvé
+		notre récompense  : un orbe métallique d’origine inconnue, luisant
+		d’une pâle lumière bleutée et émettant un léger ronronnement. Il
+		était délicatement attaché à une armature de bronze. Cet objet était
+		indéniablement religieux, mais nous savions qu’il n’était pas de facture
+		aztèque.\n
+    \nL’artefact en main, nous sommes sortis des ruines. L’édifice commençait
+		à s’effondrer tout autour de nous, comme si l’orbe était la seule
+		chose qui le maintenait debout. Fournissait-il les ruines en énergie
+		comme une sorte de batterie ? Quelle était donc la vraie nature de cet
+		artefact que les serpents gardaient avec une telle ferveur ?\n
+    \nQuand nous avons enfin atteint la lisière nord de la forêt, Maria nous
+		attendait avec les camions. Nous avons alors déguerpi aussi vite que
+		possible de cette jungle infestée de serpents.\n
+    \n<b>Un investigateur doit ajouter la Relique des Âges à son deck. </b></string>
+    <string name="eztli_resolution_one_defeated_one"><b>Investigateurs Vaincus :</b>\n
+        \nLe temple tremble avec la férocité d’un
+		séisme, vous plaquant au sol. Des créatures serpentines sortent des
+		ombres alentour et vous encerclent totalement. La pensée «  <i>C’est
+		ainsi que tout se termine</i> » vous traverse l’esprit. Pendant un instant,
+		vous contemplez l’absurdité de votre mort. Vous ne pouvez plus
+		qu’espérer que personne d’autre ne sera assez fou pour tenter d’explorer
+		à nouveau ces ruines abandonnées\n
+        \nLes créatures fondent sur vous avant que vous n’ayez le temps
+			de réagir. Vous hurlez de douleur.\n
+        \n<b>Chaque investigateur qui a été vaincu est tué. </b>\n
+        \n<b>Investigateurs survivants:</b>\n
+    \n(Le texte suivant est griffonné au-dessous de la précédente entrée du journal.)\n
+    \nL’extérieur du temple en ruine semblait bien être de style aztèque.
+		Mais sitôt à l’intérieur, il nous est apparu que cet édifice avait une
+	origine radicalement différente et non-humaine. Ces ruines étaient
+		vivantes. Les gravures des murs étaient illuminées comme si elles
+		étaient alimentées avec de l’électricité, et un sourd bourdonnement
+		d’énergie résonnait à travers les couloirs. Malgré les créatures serpentines,
+		nous sommes parvenus à atteindre un passage caché menant
+		vers les étages inférieurs.\n
+    \nDans la pièce au centre de ces couloirs souterrains, nous avons trouvé
+		notre récompense  : un orbe métallique d’origine inconnue, luisant
+		d’une pâle lumière bleutée et émettant un léger ronronnement. Il
+		était délicatement attaché à une armature de bronze. Cet objet était
+		indéniablement religieux, mais nous savions qu’il n’était pas de facture
+		aztèque.\n
+    \nL’artefact en main, nous sommes sortis des ruines. L’édifice commençait
+		à s’effondrer tout autour de nous, comme si l’orbe était la seule
+		chose qui le maintenait debout. Fournissait-il les ruines en énergie
+		comme une sorte de batterie ? Quelle était donc la vraie nature de cet
+		artefact que les serpents gardaient avec une telle ferveur ?\n
+    \nQuand nous avons enfin atteint la lisière nord de la forêt, Maria nous
+		attendait avec les camions. Nous avons alors déguerpi aussi vite que
+		possible de cette jungle infestée de serpents.\n
+    \n<b>Un investigateur doit ajouter la Relique des Âges à son deck. </b></string>
+    <string name="eztli_resolution_one_defeated_two"><b>Investigateurs Vaincus :</b>\n
+       \nLe temple tremble avec la férocité d’un
+		séisme, vous plaquant au sol. Des créatures serpentines sortent des
+		ombres alentour et vous encerclent totalement. La pensée «  <i>C’est
+		ainsi que tout se termine</i> » vous traverse l’esprit. Pendant un instant,
+		vous contemplez l’absurdité de votre mort. Vous ne pouvez plus
+		qu’espérer que personne d’autre ne sera assez fou pour tenter d’explorer
+		à nouveau ces ruines abandonnées.\n
+        \nSoudain, un sifflement éloigné s’adresse aux autres et,
+		après un moment d’hésitation, les serpents se replient dans
+		les ténèbres. Saisissant l’occasion, vous fuyez à toutes jambes.\n
+       \n<b>Investigateurs survivants:</b>\n
+    \n(Le texte suivant est griffonné au-dessous de la précédente entrée du journal.)\n
+    \nL’extérieur du temple en ruine semblait bien être de style aztèque.
+		Mais sitôt à l’intérieur, il nous est apparu que cet édifice avait une
+	origine radicalement différente et non-humaine. Ces ruines étaient
+		vivantes. Les gravures des murs étaient illuminées comme si elles
+		étaient alimentées avec de l’électricité, et un sourd bourdonnement
+		d’énergie résonnait à travers les couloirs. Malgré les créatures serpentines,
+		nous sommes parvenus à atteindre un passage caché menant
+		vers les étages inférieurs.\n
+    \nDans la pièce au centre de ces couloirs souterrains, nous avons trouvé
+		notre récompense  : un orbe métallique d’origine inconnue, luisant
+		d’une pâle lumière bleutée et émettant un léger ronronnement. Il
+		était délicatement attaché à une armature de bronze. Cet objet était
+		indéniablement religieux, mais nous savions qu’il n’était pas de facture
+		aztèque.\n
+    \nL’artefact en main, nous sommes sortis des ruines. L’édifice commençait
+		à s’effondrer tout autour de nous, comme si l’orbe était la seule
+		chose qui le maintenait debout. Fournissait-il les ruines en énergie
+		comme une sorte de batterie ? Quelle était donc la vraie nature de cet
+		artefact que les serpents gardaient avec une telle ferveur ?\n
+    \nQuand nous avons enfin atteint la lisière nord de la forêt, Maria nous
+		attendait avec les camions. Nous avons alors déguerpi aussi vite que
+		possible de cette jungle infestée de serpents.\n
+    \n<b>Un investigateur doit ajouter la Relique des Âges à son deck. </b></string>
+    <string name="eztli_resolution_two">\nLe temple tremble avec la férocité d’un
+		séisme, vous plaquant au sol. Des créatures serpentines sortent des
+		ombres alentour et vous encerclent totalement. La pensée «  <i>C’est
+		ainsi que tout se termine</i> » vous traverse l’esprit. Pendant un instant,
+		vous contemplez l’absurdité de votre mort. Vous ne pouvez plus
+		qu’espérer que personne d’autre ne sera assez fou pour tenter d’explorer
+		à nouveau ces ruines abandonnées.\n
+        \nLes
+		créatures fondent sur vous avant que vous n’ayez le temps
+		de réagir. Vous hurlez de douleur tandis qu’elles vous
+		transpercent de leurs lances acérées.\n
+        \n<b>Chaque investigateur est tué.</b>\n
+        \n(Le texte suivant est griffonné au-dessous de la précédente entrée
+du journal.)\n
+    \nIl n’est pas dans ma nature de laisser les choses inachevées. En
+		mémoire de mes camarades disparus, j’ai pris sur moi de rédiger dans
+		ce journal la fin de notre expédition.\n
+    \nLes autres ne sont jamais sortis du temple. J’ai convaincu deux autres
+		membres de l’expédition, José et Andrea, de partir à leur recherche…
+		mais j’ai bien peur qu’un sort funeste ne les ait également frappés.\n
+    \nQuoi qu’il en soit, mon stratagème a fonctionné. Pendant que José
+		et Andrea cherchaient les autres, je me suis introduit dans le temple
+		et j’ai pris une route différente. Ayant vu ce que j’ai vu et sachant ce
+		que je sais, je ne pouvais pas rentrer à l’université sans preuve de nos
+		découvertes. Pendant que les créatures serpentines étaient occupées,
+		j’ai pu atteindre un passage menant aux étages inférieurs.\n
+    \nDans la pièce au centre de ces couloirs souterrains, j’ai trouvé l’objet.
+		L’orbe composé d’un métal surnaturel était délicatement attaché à
+		une armature de bronze. Il pulsait d’énergie dans ma main et brillait
+		d’une pâle lueur bleutée. N’importe quel idiot verrait qu’il n’avait pas
+		été fabriqué par les Aztèques, mais les autres membres de l’expédition
+		ne pouvaient même pas commencer à imaginer sa véritable nature.
+		Les ruines ont commencé à s’écrouler tandis que je fuyais, mais je n’en
+		avais cure. La relique était tout ce qui comptait à présent\n
+    \nAvec l’artefact en main, je suis retourné au campement et j’ai dit aux
+		autres qu’il était temps de partir. Quand nous avons enfin atteint la
+		lisière nord de la forêt, Maria nous attendait avec les camions.
+		Nous nous dirigeons à présent vers le Texas, où nous traverserons la
+		frontière pour rentrer aux États-Unis.\n
+    \nCe qui est arrivé aux autres est regrettable, mais leur sacrifice ne sera
+		pas vain. Maintenant, mon travail peut continuer.\n
+    \n– Alejandro Vela</string>
+    <string name="eztli_resolution_three">(Le texte suivant est griffonné au-dessous de la précédente entrée
+		du journal.)\n
+    \nTout cela était une erreur, une terrible erreur. Nous sommes parvenus
+		à sortir du temple en vie, mais c’était tout juste. Les ruines étaient
+		vivantes. C’était comme si les murs étaient conscients de notre intrusion
+		et nous haïssaient parce que nous étions là. Ils rejetaient notre
+		présence. Ils voulaient nous voir morts.
+		Nous nous sommes rassemblés à l’extérieur du temple où José nous
+		attendait. Alejandro n’a pas l’intention de rentrer bredouille et
+		veut que nous retournions à l’intérieur. Nous devons décider de la
+		marche à suivre.</string>
+    <string name="eztli_resolution_three_defeated_one"><b>Investigateurs vaincus :</b>\n
+        \nLe temple tremble avec la férocité d’un
+		séisme, vous plaquant au sol. Des créatures serpentines sortent des
+		ombres alentour et vous encerclent totalement. La pensée «  <i>C’est
+		ainsi que tout se termine</i> » vous traverse l’esprit. Pendant un instant,
+		vous contemplez l’absurdité de votre mort. Vous ne pouvez plus
+		qu’espérer que personne d’autre ne sera assez fou pour tenter d’explorer
+		à nouveau ces ruines abandonnées.\n
+        \nLes créatures fondent sur vous avant que vous n’ayez le temps
+		de réagir. Vous hurlez de douleur tandis qu’elles vous
+		transpercent de leurs lances acérées.\n
+        \n<b>Chaque investigateur qui a été vaincu est tué. </b>\n
+        \n<b>Investigateurs survivants :</b>\n
+    \n(Le texte suivant est griffonné au-dessous de la précédente entrée
+		du journal.)\n
+    \nTout cela était une erreur, une terrible erreur. Nous sommes parvenus
+		à sortir du temple en vie, mais c’était tout juste. Les ruines étaient
+		vivantes. C’était comme si les murs étaient conscients de notre intrusion
+		et nous haïssaient parce que nous étions là. Ils rejetaient notre
+		présence. Ils voulaient nous voir morts.
+		Nous nous sommes rassemblés à l’extérieur du temple où José nous
+		attendait. Alejandro n’a pas l’intention de rentrer bredouille et
+		veut que nous retournions à l’intérieur. Nous devons décider de la
+		marche à suivre.</string>
+    <string name="eztli_resolution_three_defeated_two"><b>Investigateurs vaincus :</b>\n
+        \nLe temple tremble avec la férocité d’un
+		séisme, vous plaquant au sol. Des créatures serpentines sortent des
+		ombres alentour et vous encerclent totalement. La pensée «  <i>C’est
+		ainsi que tout se termine</i> » vous traverse l’esprit. Pendant un instant,
+		vous contemplez l’absurdité de votre mort. Vous ne pouvez plus
+		qu’espérer que personne d’autre ne sera assez fou pour tenter d’explorer
+		à nouveau ces ruines abandonnées.\n
+        \nSoudain, un sifflement éloigné s’adresse aux autres et,
+		après un moment d’hésitation, les serpents se replient dans
+		les ténèbres. Saisissant l’occasion, vous fuyez à toutes jambes..\n
+        \n<b>Investigateurs survivants :</b>\n
+    \n((Le texte suivant est griffonné au-dessous de la précédente entrée
+		du journal.)\n
+    \nTout cela était une erreur, une terrible erreur. Nous sommes parvenus
+		à sortir du temple en vie, mais c’était tout juste. Les ruines étaient
+		vivantes. C’était comme si les murs étaient conscients de notre intrusion
+		et nous haïssaient parce que nous étions là. Ils rejetaient notre
+		présence. Ils voulaient nous voir morts.
+		Nous nous sommes rassemblés à l’extérieur du temple où José nous
+		attendait. Alejandro n’a pas l’intention de rentrer bredouille et
+		veut que nous retournions à l’intérieur. Nous devons décider de la
+		marche à suivre.</string>
+    <string name="eztli_resolution_four">(Le texte suivant est griffonné au-dessous de la précédente entrée
+		du journal.)\n
+    \nNous avons pris notre décision. Alejandro a raison : nous sommes allés
+		trop loin pour reculer maintenant. Notre plan est de nous regrouper et
+		de retourner une nouvelle fois dans le temple. Même d’ici, on peut voir
+		que la disposition de l’édifice a changé. Les ruines semblent de nouveau
+		endormies. Avec un peu de chance, nous allons y arriver cette fois…\n
+    \n<b>Les investigateurs doivent rejouer le Scénario II  : Le Fléau des Eztli.</b></string>
+    <string name="eztli_resolution_five">(Le texte suivant est griffonné au-dessous de la précédente entrée
+		du journal.)\n
+    \nNous avons pris notre décision. Pas question de retourner dans ce
+		piège mortel. Heureusement, il existait une autre solution. José avait
+		apporté de la TNT dans les camions, en quantité suffisante pour
+		raser cet endroit infernal.\n
+    \nCette nuit, nous avons eu droit à un magnifique feu d’artifice. La
+		jungle a protesté. Les oiseaux se sont éparpillés dans le ciel, le sol a
+		tremblé et des grognements de haine ont entouré notre campement.
+		Mais la dynamite a fait son office. Une fois la poussière retombée,
+		nous avons fouillé les débris à la recherche de quoi que ce soit d’historique
+		ou de culturel à rapporter à Arkham.\n
+    \nJosé a été le premier à remarquer la lumière bleutée émanant de sous
+		les débris du temple. Les rayons gagnaient en intensité à chaque
+		seconde qui passait. Alors que nous commencions à déblayer les
+		décombres afin de trouver la source de cette lumière, un éclair soudain
+		est apparu et les débris au centre des ruines se sont dispersés. Un orbe
+		métallique d’origine inconnue reposait sous les décombres, émettant
+		un léger bourdonnement. Il était délicatement attaché à une armature
+		de bronze et semblait être un objet religieux. La lueur bleutée émanant
+		de l’objet a pâli lorsque je l’ai touché. Impossible qu’un artefact
+		de ce genre ait été fabriqué par les Aztèques.\n
+    \nL’artefact en main, nous avons quitté les ruines fumantes du temple. 
+		Nous avions assez abusé de l’hospitalité de cette forêt vierge et nous
+		le savions. Autour de nous, la jungle a sifflé. Le sol grouillait de serpents.
+		Dans les ténèbres, nous avons entendu des cris dans une langue
+		que nous ne comprenions pas. Le temps manquait pour démonter le campement ; 
+		nous avons préféré fuir tant que nous en avions la possibilité.
+		Andrea a reçu en pleine gorge une flèche empennée de plumes
+		noires, qui a interrompu à jamais le cri qu’elle s’apprêtait à pousser.
+		José a été attrapé par un boa géant tandis que nous nous dirigions
+		vers les gorges du fleuve au nord. Son cou s’est brisé avant que nous
+		n’ayons pu l’atteindre.\n
+    \nQuand nous avons enfin atteint la lisière nord de la forêt, Maria
+		nous attendait avec les camions. Nous avons roulé sans discontinuer
+		jusqu’à Mexico. Même maintenant, je ne me sens pas en sécurité  :
+		mais qui le pourrait, après avoir vu ce que nous avons vu ?\n
+    \nMaudits soient les Eztli, et maudit soit ce lieu oublié de tous.\n
+    \n<b>Un investigateur doit ajouter la Relique des Âges à son deck. </b></string>
+
+	
+	
 </resources>
