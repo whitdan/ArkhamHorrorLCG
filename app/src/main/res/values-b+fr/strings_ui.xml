@@ -61,6 +61,7 @@
     <string name="decklist_url">Lien vers le deck</string>
     <string name="start_campaign">Démarrer la Campagne</string>
     <string name="confirm_start_campaign">Sauvegarder et démarrer la campagne ?</string>
+	<string name="continue_question">Continuer ?</string>
     <string name="confirm_changes">Confirmer les modifications ?</string>
     <string name="okay">Valider</string>
     <string name="cancel">Annuler</string>
