@@ -680,6 +680,9 @@ public class CampaignLogActivity extends AppCompatActivity {
             suppliesLog.setVisibility(VISIBLE);
             StringBuilder suppliesBuilder = new StringBuilder();
             for(int i = 0; i < globalVariables.Investigators.size(); i++){
+                if(i > 0){
+                    suppliesBuilder.append("\n");
+                }
                 suppliesBuilder.append(investigatorNames[globalVariables.Investigators.get(i).Name]);
                 suppliesBuilder.append("\n");
 

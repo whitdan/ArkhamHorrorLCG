@@ -3,6 +3,7 @@ package com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.CampaignEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.CarcosaEntry;
@@ -25,7 +26,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 28;
+    private static final int DATABASE_VERSION = 30;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -546,6 +547,15 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                         InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE + " INTEGER";
                 String SQL_UPGRADE_TWENTYFIVE_THREE = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
                         InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES + " INTEGER";
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_ONE);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_TWO);
+                db.execSQL(SQL_UPGRADE_TWENTYFIVE_THREE);
+            case 28:
+                Log.i("version", Integer.toString(oldVersion));
+                String SQL_CREATE_FORGOTTEN_TABLE = "CREATE TABLE " + ForgottenEntry.TABLE_NAME + " ("
+                        + ForgottenEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                        + ForgottenEntry.PARENT_ID + " INTEGER NOT NULL);";
+                db.execSQL(SQL_CREATE_FORGOTTEN_TABLE);
                 String SQL_UPGRADE_TWENTYFIVE_FOUR = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
                         ForgottenEntry.COLUMN_YIGS_FURY + " INTEGER";
                 String SQL_UPGRADE_TWENTYFIVE_FIVE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
@@ -564,9 +574,6 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                         ForgottenEntry.COLUMN_EZTLI + " INTEGER";
                 String SQL_UPGRADE_TWENTYFIVE_TWELVE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
                         ForgottenEntry.COLUMN_CUSTODY + " INTEGER";
-                db.execSQL(SQL_UPGRADE_TWENTYFIVE_ONE);
-                db.execSQL(SQL_UPGRADE_TWENTYFIVE_TWO);
-                db.execSQL(SQL_UPGRADE_TWENTYFIVE_THREE);
                 db.execSQL(SQL_UPGRADE_TWENTYFIVE_FOUR);
                 db.execSQL(SQL_UPGRADE_TWENTYFIVE_FIVE);
                 db.execSQL(SQL_UPGRADE_TWENTYFIVE_SIX);

@@ -564,7 +564,7 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                                             globalVariables.Investigators.get(0).Damage += -1;
                                             if (!invFourBox.isChecked() && !invTwoBox.isChecked() && !invThreeBox
                                                     .isChecked
-                                                    ()) {
+                                                            ()) {
                                                 introductionOne.setVisibility(GONE);
                                                 introductionTwo.setVisibility(GONE);
                                             }
@@ -720,6 +720,7 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
         final RadioButton introductionOptionTwo = findViewById(R.id.introduction_option_two);
         final RadioButton introductionOptionThree = findViewById(R.id.introduction_option_three);
         final RadioButton introductionOptionFour = findViewById(R.id.introduction_option_four);
+        final TextView amount = findViewById(R.id.medicine_amount);
 
         switch (globalVariables.CurrentCampaign) {
             case 3:
@@ -856,6 +857,25 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                                     }
                                     break;
                                 }
+                        }
+                        break;
+                    case 5:
+                        int medicine = 0;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            medicine += globalVariables.Investigators.get(i).Medicine;
+                        }
+                        if (medicine > 0) {
+                            int medicineUsed = Integer.valueOf(amount.getText().toString());
+                            for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                if (medicineUsed > globalVariables.Investigators.get(i).Medicine) {
+                                    medicineUsed = medicineUsed - globalVariables.Investigators.get(i).Medicine;
+                                    globalVariables.Investigators.get(i).Medicine = 0;
+                                } else if (medicineUsed != 0) {
+                                    globalVariables.Investigators.get(i).Medicine = globalVariables.Investigators
+                                            .get(i).Medicine - medicineUsed;
+                                    medicineUsed = 0;
+                                }
+                            }
                         }
                         break;
                     case 7:

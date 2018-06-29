@@ -115,6 +115,34 @@
                 android:textSize="@dimen/arnopro_textsize"
                 android:visibility="gone"/>
 
+            <RadioGroup
+                android:id="@+id/introduction_additional_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+                <RadioButton
+                    android:id="@+id/introduction_additional_option_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"/>
+                <RadioButton
+                    android:id="@+id/introduction_additional_option_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:paddingTop="@dimen/checkbox_padding"/>
+
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/introduction_text_additional_two"
                 android:layout_width="wrap_content"
