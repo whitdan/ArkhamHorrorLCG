@@ -62,6 +62,7 @@
     <string name="decklist_url">Enlace al mazo</string>
     <string name="start_campaign">Comenzar campaña</string>
     <string name="confirm_start_campaign">¿Guardar y comenzar la campaña?</string>
+    <string name="continue_question">¿Continuar?</string>
     <string name="confirm_changes">Confirmar cambios</string>
     <string name="okay">Aceptar</string>
     <string name="cancel">Cancelar</string>

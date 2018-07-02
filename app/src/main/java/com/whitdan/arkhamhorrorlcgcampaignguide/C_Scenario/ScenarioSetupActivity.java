@@ -650,7 +650,12 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                             eztliBuilder.append(" ");
                             eztliBuilder.append(Integer.toString(globalVariables.Eztli));
                             eztliBuilder.append(" ");
-                            eztliBuilder.append(getString(R.string.eztli_additional_doom));
+                            if(globalVariables.Eztli == 1){
+                                eztliBuilder.append(getString(R.string.eztli_additional_doom_single));
+                            }
+                            else {
+                                eztliBuilder.append(getString(R.string.eztli_additional_doom_multiple));
+                            }
                         }
                         if (eztliLeader) {
                             eztliBuilder.append(getString(R.string.eztli_additional_lead));
