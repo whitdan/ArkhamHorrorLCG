@@ -677,6 +677,30 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                             additionalTwo.setText(eztliAdditional);
                         }
                         break;
+                    case 8:
+                        sets.setText(R.string.threads_sets);
+                        setsImage.setImageResource(R.drawable.threads_sets);
+                        locations.setText(R.string.threads_locations);
+                        locationPlacement.setVisibility(VISIBLE);
+                        locationPlacement.setImageResource(R.drawable.threads_locations);
+                        setAside.setText(R.string.threads_set_aside);
+                        if(globalVariables.Custody == 2){
+                            if(globalVariables.IchtacasTale == 1){
+                                additional.setText(R.string.threads_additional_three);
+                            } else {
+                                additional.setText(R.string.threads_additional_four);
+                            }
+                        } else {
+                            if(globalVariables.IchtacasTale == 1){
+                                additional.setText(R.string.threads_additional_one);
+                            } else {
+                                additional.setText(R.string.threads_additional_four);
+                            }
+                        }
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.threads_rules_heading);
+                        rules.setText(R.string.threads_rules);
+                        break;
                 }
         }
         if (globalVariables.CurrentScenario > 100) {

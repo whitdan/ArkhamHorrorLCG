@@ -89,7 +89,7 @@ public class ScenarioMainActivity extends AppCompatActivity {
         setup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 8) {
+                if (globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 9) {
                     Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
@@ -170,13 +170,18 @@ public class ScenarioMainActivity extends AppCompatActivity {
                             setupRequired = true;
                         }
                         break;
+                    case 4:
+                        if(globalVariables.CurrentScenario == 8 && globalVariables.IchtacasTale == 0){
+                            setupRequired = true;
+                        }
+                        break;
                 }
                 for (int i = 0; i < globalVariables.Investigators.size(); i++) {
                     if (globalVariables.Investigators.get(i).Status == 2) {
                         investigatorDead = true;
                     }
                 }
-                if (globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 8) {
+                if (globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 9) {
                     Toast toast = Toast.makeText(getBaseContext(), R.string.scenario_not_available, Toast.LENGTH_SHORT);
                     toast.show();
                 } else if (setupRequired) {

@@ -172,10 +172,9 @@
     <string name="restless_not_low">Les investigateurs ont assez de provisions.</string>
     <string name="restless_low_one">Les investigateurs n’ont pas assez de provisions, les vivres sont épuisées.
         Choisissez</string>
-    <string name="restless_investigator">investigateur</string>
-    <string name="restless_investigators">investigateurs</string>
-    <string name="restless_low_two">pour lire :\n</string>
-    <string name="restless_low">Nous pensions avoir emporté suffisamment d’eau et de nourriture pour tout le monde, mais le voyage a fortement
+    <string name="restless_low_two_single_investigator">investigateur pour lire :\n</string>
+	<string name="restless_low_two_multiple_investigator">investigateurs pour lire :\n</string>
+	<string name="restless_low">Nous pensions avoir emporté suffisamment d’eau et de nourriture pour tout le monde, mais le voyage a fortement
 		pesé sur nos provisions. Quand le soleil s’est levé et que l’heure de manger est arrivée, nous avons découvert que nous commencions
 		déjà à manquer de provisions.\n</string>
     <string name="restless_low_effect">Chacun de ces investigateurs débute le scénario suivant avec 3 ressources de moins.</string>
@@ -192,7 +191,10 @@
 		briller dans l’obscurité autour du campement. Des yeux jaunes qui me scrutaient. Vigilant, l’arme au poing, j’étais prêt à défendre le campement
 		si nécessaire. Lorsque nos yeux ont fini par se croiser, les ténèbres se sont emparées de mon cœur.</string>
 
-    <string name="restless_poison_one">peuvent utiliser un médicament pour retirer une faiblesse Empoisonné de leur deck.</string>
+    <string name="restless_poison_one_single_investigator">investigateur peut utiliser un médicament pour retirer
+		une faiblesse Empoisonné de leur deck.</string>
+	<string name="restless_poison_one_mutiple_investigator">investigateurs peuvent utiliser un médicament pour retirer
+		une faiblesse Empoisonné de leur deck.</string>
     <string name="restless_poison_counter">Médicament utilisé</string>
     <string name="restless_poisoned_heading">Investigateur toujours empoisonné</string>
     <string name="restless_poison_two">Les investigateurs n’ont pas de médicaments pour soigner le poison.</string>
@@ -385,8 +387,12 @@
 		cartes Traîtrise suivantes  : Mauvais Présage, Obscurité Profonde,
 		Erreur Fatale, Enseveli et Froid de la Crypte.</string>
     <string name="eztli_additional_place">Placez</string>
-    <string name="eztli_additional_doom">fatalités sur l’Entrée des Ruines.\n\n</string>
-    <string name="eztli_low_rations">investigateurs commencent la partie avec 3 ressources de moins.\n\n</string>
+    <string name="eztli_additional_doom_single">fatalité sur l’Entrée des Ruines.\n\n</string>
+	<string name="eztli_additional_doom_multiple">fatalités sur l’Entrée des Ruines.\n\n</string>
+	<string name="eztli_low_rations_single_investigator">investigateur commence la partie avec 3 ressources de
+		moins.\n\n</string>
+	<string name="eztli_low_rations_multiple_investigator">investigateurs commencent la partie avec 3 ressources de
+		moins.\n\n</string>
     <string name="eztli_additional_lead">Celui par Ursula Downs, Leo Anderson ou Monterey Jack qui a été choisi pour être
         le chef de l’expédition dans le Scénario 1 commence le Scénario II comme investigateur principal.</string>
 

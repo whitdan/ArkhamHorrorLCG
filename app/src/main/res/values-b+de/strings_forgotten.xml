@@ -348,7 +348,8 @@
         <b><i>Uralt</i></b>-Orte herausgesucht und mit jeweils einem Exemplar folgender Verratskarten zusammengemischt:
         Böses Vorzeichen, Tiefe Dunkelheit, Der letzte Fehler, Begraben und Grabeskälte.</string>
     <string name="eztli_additional_place">Platziere</string>
-    <string name="eztli_additional_doom">Verderben auf den Eingang.\n\n</string>
+    <string name="eztli_additional_doom_single">Verderben auf den Eingang.\n\n</string>
+    <string name="eztli_additional_doom_multiple">Verderben auf den Eingang.\n\n</string>
     <string name="eztli_low_rations_single_investigator">Ermittler beginnt das Szenario mit 3 Ressourcen
         weniger.\n\n</string>
     <string name="eztli_low_rations_multiple_investigators">Ermittler beginnen das Szenario mit 3 Ressourcen

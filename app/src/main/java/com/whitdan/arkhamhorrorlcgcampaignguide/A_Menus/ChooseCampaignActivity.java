@@ -120,5 +120,6 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.Eztli = 0;
         globalVariables.YigsFury = 0;
         globalVariables.Harbinger = -1;
+        globalVariables.IchtacasTale = 0;
     }
 }

@@ -763,6 +763,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                 if(!supplies){
                     suppliesBuilder.append("\t\t");
                     suppliesBuilder.append(getResources().getString(R.string.no_supplies));
+                    suppliesBuilder.append("\n");
                 }
             }
             String suppliesLogText = suppliesBuilder.toString().trim();

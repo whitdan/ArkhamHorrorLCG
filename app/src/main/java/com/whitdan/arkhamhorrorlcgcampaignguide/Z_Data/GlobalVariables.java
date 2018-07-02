@@ -137,6 +137,7 @@ public class GlobalVariables extends Application {
     public int Harbinger;
     public int Eztli;
     public int Custody;
+    public int IchtacasTale;
 
     /*
         Side story variables - All of the variables associated with side stories

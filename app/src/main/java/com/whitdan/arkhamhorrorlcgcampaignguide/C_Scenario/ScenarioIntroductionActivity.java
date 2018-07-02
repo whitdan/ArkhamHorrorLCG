@@ -16,11 +16,14 @@ import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 
+import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
 public class ScenarioIntroductionActivity extends AppCompatActivity {
 
     static GlobalVariables globalVariables;
+    static boolean progress;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,7 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c_activity_scenario_introduction);
         globalVariables = (GlobalVariables) this.getApplication();
+        progress = false;
 
         // Set title
         TextView title = findViewById(R.id.current_scenario_name);
@@ -55,7 +59,7 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
         introductionB.setTypeface(arnoproitalic);
         introductionC.setTypeface(arnoproitalic);
         final TextView introductionOne = findViewById(R.id.introduction_text_additional_one);
-        TextView introductionTwo = findViewById(R.id.introduction_text_additional_two);
+        final TextView introductionTwo = findViewById(R.id.introduction_text_additional_two);
         TextView introductionThree = findViewById(R.id.introduction_text_additional_three);
         TextView introductionFour = findViewById(R.id.introduction_text_additional_four);
         TextView introductionFive = findViewById(R.id.introduction_text_additional_five);
@@ -72,6 +76,11 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         introductionOptionOne.setTypeface(arnopro);
         introductionOptionTwo.setTypeface(arnopro);
+        final RadioGroup additionalOptions = findViewById(R.id.introduction_additional_options);
+        final RadioButton additionalOptionOne = findViewById(R.id.introduction_additional_option_one);
+        final RadioButton additionalOptionTwo = findViewById(R.id.introduction_additional_option_two);
+        additionalOptionOne.setTypeface(arnopro);
+        additionalOptionTwo.setTypeface(arnopro);
 
         // Set text
         switch (globalVariables.CurrentCampaign) {
@@ -291,11 +300,62 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                         introduction.setText(R.string.untamed_introduction);
                         break;
                     case 6:
-                        if(globalVariables.Ruins == 1){
+                        if (globalVariables.Ruins == 1) {
                             introduction.setText(R.string.eztli_introduction_one);
-                        } else if (globalVariables.Ruins == 2){
+                        } else if (globalVariables.Ruins == 2) {
                             introduction.setText(R.string.eztli_introduction_two);
                         }
+                        break;
+                    case 8:
+                        if (globalVariables.Custody == 1 || globalVariables.Relic == 2) {
+                            introduction.setText(R.string.threads_introduction_one);
+                        } else if (globalVariables.Custody == 2) {
+                            introduction.setText(R.string.threads_introduction_two);
+                        }
+                        introductionOptions.setVisibility(VISIBLE);
+                        introductionOptionOne.setText(R.string.threads_introduction_option_one);
+                        introductionOptionTwo.setText(R.string.threads_introduction_option_two);
+                        introductionOptions.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                                introductionOne.setVisibility(VISIBLE);
+                                switch(checkedId){
+                                    case R.id.introduction_option_one:
+                                        globalVariables.IchtacasTale = 1;
+                                        introductionOne.setText(R.string.threads_introduction_three);
+                                        progress = true;
+                                        break;
+                                    case R.id.introduction_option_two:
+                                        globalVariables.IchtacasTale = 2;
+                                        if(globalVariables.Custody == 2){
+                                            progress = false;
+                                            introductionOne.setText(R.string.threads_introduction_five);
+                                            additionalOptions.setVisibility(VISIBLE);
+                                            additionalOptionOne.setText(R.string.threads_introduction_option_three);
+                                            additionalOptionTwo.setText(R.string.threads_introduction_option_four);
+                                            additionalOptions.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                                                @Override
+                                                public void onCheckedChanged(RadioGroup group, int checkedId) {
+                                                    if(checkedId == R.id.introduction_additional_option_one){
+                                                        globalVariables.IchtacasTale = 4;
+                                                        introductionTwo.setVisibility(VISIBLE);
+                                                        introductionTwo.setText(R.string.threads_introduction_six);
+                                                        progress = true;
+                                                    } else {
+                                                        globalVariables.IchtacasTale = 3;
+                                                        introductionTwo.setVisibility(GONE);
+                                                        progress = true;
+                                                    }
+                                                }
+                                            });
+                                        } else {
+                                            introductionOne.setText(R.string.threads_introduction_four);
+                                            progress = true;
+                                        }
+                                        break;
+                                }
+                            }
+                        });
                         break;
                 }
         }
@@ -335,7 +395,13 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(ScenarioIntroductionActivity.this, R.string.must_option, Toast
                             .LENGTH_SHORT);
                     toast.show();
-                } else {
+                } else if(globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 8 &&
+                       !progress){
+                    Toast toast = Toast.makeText(ScenarioIntroductionActivity.this, R.string.must_option, Toast
+                            .LENGTH_SHORT);
+                    toast.show();
+                }
+                else {
                     Intent intent = new Intent(ScenarioIntroductionActivity.this, ScenarioSetupActivity.class);
                     startActivity(intent);
                 }
