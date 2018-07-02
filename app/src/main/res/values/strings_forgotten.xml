@@ -348,7 +348,8 @@
         Ancient</i></b> locations and shuffling them together, along with one copy each of the following treachery
         cards: Ill Omen, Deep Dark, Final Mistake, Entombed, and Crypt Chill.</string>
     <string name="eztli_additional_place">Place</string>
-    <string name="eztli_additional_doom">doom on the Entryway.\n\n</string>
+    <string name="eztli_additional_doom_single">doom on the Entryway.\n\n</string>
+    <string name="eztli_additional_doom_multiple">doom on the Entryway.\n\n</string>
     <string name="eztli_low_rations_single_investigator">investigator begins the scenario with 3 fewer
         resources.\n\n</string>
     <string name="eztli_low_rations_multiple_investigators">investigators begin the scenario with 3 fewer
