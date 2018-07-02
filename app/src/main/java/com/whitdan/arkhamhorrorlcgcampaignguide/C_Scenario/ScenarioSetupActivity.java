@@ -658,7 +658,7 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         if(globalVariables.LowRations > 0){
                             eztliBuilder.append(Integer.toString(globalVariables.LowRations));
                             eztliBuilder.append(" ");
-                            if(globalVariables.LowRations > 1) {
+                            if(globalVariables.LowRations == 1) {
                                 eztliBuilder.append(getString(R.string.eztli_low_rations_single_investigator));
                             }
                             else {
