@@ -658,7 +658,12 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         if(globalVariables.LowRations > 0){
                             eztliBuilder.append(Integer.toString(globalVariables.LowRations));
                             eztliBuilder.append(" ");
-                            eztliBuilder.append(getString(R.string.eztli_low_rations));
+                            if(globalVariables.LowRations > 1) {
+                                eztliBuilder.append(getString(R.string.eztli_low_rations_single_investigator));
+                            }
+                            else {
+                                eztliBuilder.append(getString(R.string.eztli_low_rations_multiple_investigators));
+                            }
                         }
                         if(eztliBuilder.length() > 0){
                             additionalTwo.setVisibility(VISIBLE);

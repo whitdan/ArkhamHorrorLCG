@@ -305,9 +305,9 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             lowSupplies.append(Integer.toString(low));
                             lowSupplies.append(" ");
                             if (low == 1) {
-                                lowSupplies.append(getResources().getString(R.string.restless_investigator));
+                                lowSupplies.append(getResources().getString(R.string.restless_low_two_single_investigator));
                             } else {
-                                lowSupplies.append(getResources().getString(R.string.restless_investigators));
+                                lowSupplies.append(getResources().getString(R.string.restless_low_two_multiple_investigator));
                             }
                             lowSupplies.append(" ");
                             lowSupplies.append(getResources().getString(R.string.restless_low_two));
@@ -416,12 +416,10 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             medicineString.append(Integer.toString(medicine));
                             medicineString.append(" ");
                             if (medicine == 1) {
-                                medicineString.append(getResources().getString(R.string.restless_investigator));
+                                medicineString.append(getResources().getString(R.string.restless_poison_one_single_investigator));
                             } else {
-                                medicineString.append(getResources().getString(R.string.restless_investigators));
+                                medicineString.append(getResources().getString(R.string.restless_poison_one_multiple_investigators));
                             }
-                            medicineString.append(" ");
-                            medicineString.append(getResources().getString(R.string.restless_poison_one));
                             introduction.setText(medicineString.toString());
 
                             View medicineHeading = View.inflate(this, R.layout.e_item_heading, null);

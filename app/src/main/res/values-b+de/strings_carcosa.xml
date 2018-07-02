@@ -128,7 +128,7 @@
 
     <!--Chaos bag-->
     <string name="curtain_skull_one">-1 (-3 stattdessen, falls du 3 oder mehr Horror hast).</string>
-    <string name="curtain_skull_two">-X, wobei X die Anzahl deiner Horrormarker ist. (Falls du keinen Horror hast, ist X gleich 1.)</string>
+    <string name="curtain_skull_two">-X. X ist die Anzahl deiner Horrormarker (mindestens 1).</string>
     <string name="curtain_combined_one">-4. Falls auf deinem Ort mindestens 1 Horror liegt, nimm 1 Horror (aus dem
         Markervorrat). Falls kein Horror auf deinem Ort liegt, platziere stattdessen 1 Horror aus dem Markervorrat darauf.</string>
     <string name="curtain_combined_two">-5. Falls auf deinem Ort mindestens 1 Horror liegt, nimm 1 Horror (aus dem
@@ -180,7 +180,7 @@
     <string name="phantom_thing_one">–2. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen ist, 1 Ressource.</string>
     <string name="phantom_thing_two">–3. Falls die Probe misslingt, verlierst du für jeden Punkt, um den sie misslungen ist, 1 Ressource.</string>
 
-    <string name="pallid_skull_one">–X. X ist die Anzahl der Orte, die du vom Startort entfernt bist (max. 5).</string>
+    <string name="pallid_skull_one">–X. X ist die Anzahl der Orte, die du vom Startort entfernt bist (maximal 5).</string>
     <string name="pallid_skull_two">–X. X ist die Anzahl der Orte, die du vom Startort entfernt bist.</string>
     <string name="pallid_cultist_one">–2. Falls dieser Marker während eines Angriffs aufgedeckt wird und die Probe gelingt, fügt der Angriff 1 Schaden weniger zu.</string>
     <string name="pallid_cultist_two">–3. Falls dieser Marker während eines Angriffs aufgedeckt wird und die Probe gelingt, fügt der Angriff keinen Schaden zu.</string>

@@ -15,4 +15,550 @@
     <string name="forgotten_interlude_four">Zwischenspiel 4: Die Gefangenen</string>
     <string name="forgotten_interlude_five">Zwischenspiel 5: Die Dunkelheit</string>
     <string name="forgotten_epilogue">Epilog</string>
+
+
+    <!--Miscellaneous-->
+    <string name="vengeance_counter">Vergeltung: </string>
+    <string name="advanced_act_three">Szene 3 wurde erreicht</string>
+    <string name="untamed_ichtaca_one">Am Ende des Szenarios war Szene 1 oder 2 aktiv</string>
+    <string name="untamed_ichtaca_two">Du hast mit Ichtaca gekämpft</string>
+    <string name="untamed_ichtaca_three">Ichtaca führt</string>
+    <string name="harbinger">Der Vorbote von Valusia ist noch im Spiel oder beiseitegelegt</string>
+    <string name="harbinger_damage">Schaden auf dem Vorboten von Valusia: </string>
+    <string name="eztli_resolution_three_option_one">„Wir können jetzt nicht aufhören — zurück in den Tempel!“</string>
+    <string name="eztli_resolution_three_option_two">„Das ist zu gefährlich. Dieser Ort muss zerstört werden.“</string>
+
+
+    <!--Supplies-->
+    <string name="supplies">Ausrüstung</string>
+    <string name="choose_supplies">Ausrüstung wählen</string>
+    <string name="points_available">Pkte verfügbar</string>
+    <string name="not_enough_points">Du hast dafür nicht genügend Ausrüstungspunkte übrig.</string>
+    <string name="provisions_description">Proviant (1 Pkt):
+        <i>Nahrung und Wasser für eine Person. Unverzichtbar auf jeder Reise.</i></string>
+    <string name="medicine_description">Medizin (2 Pkte): <i>Um Krankheiten, Infektionen oder Gif zu bekämpfen.</i></string>
+    <string name="rope_description">Seil (3 Pkte):
+        <i> Einige Rollen eines stabilen Seils. Unverzichtbar, falls man Klettern oder Höhlen erkunden muss.</i></string>
+    <string name="blanket_description">Decke (2 Pkte): <i>Um sich in der Nacht warm zu halten.</i></string>
+    <string name="canteen_description">Feldflasche (2 Pkte): <i>Kann an Bächen und Flüssen aufgefüllt werden.</i></string>
+    <string name="torches_description">Fackeln (3 Pkte): <i>Zum Beleuchten dunkler Orte oder für das Entzünden von Wandleuchten.</i></string>
+    <string name="compass_description">Kompass (2 Pkte): <i>Kann den Weg weisen, wenn man sich verläuft.</i></string>
+    <string name="map_description">Landkarte (3 Pkte): <i>Bisher noch unbeschriftet, aber mit der Zeit wird man sie
+        sicher mit Informationen füllen können.</i></string>
+    <string name="binoculars_description">Fernglas (2 Pkte): <i>Um weit entfernte Orte betrachten zu können.</i></string>
+    <string name="chalk_description">Kreide (2 Pkte): <i>Für Beschriftungen auf Felswänden.</i></string>
+    <string name="pendant_description">Glücksbringer (1 Pkt):
+        <i>Eigentlich nutzlos, aber angenehme Erinnerungen spenden Reisenden fern der Heimat Behaglichkeit.</i></string>
+    <string name="provisions_choose">Proviant (1 Pkt):</string>
+    <string name="medicine_choose">Medizin (2 Pkte):</string>
+    <string name="rope_choose">Seil (3 Pkte)</string>
+    <string name="blanket_choose">Decke (2 Pkte)</string>
+    <string name="canteen_choose">Feldflasche (2 Pkte)</string>
+    <string name="torches_choose">Fackeln (3 Pkte)</string>
+    <string name="compass_choose">Kompass (2 Pkte)</string>
+    <string name="map_choose">Landkarte (3 Pkte)</string>
+    <string name="binoculars_choose">Fernglas (2pts)</string>
+    <string name="chalk_choose">Kreide (2 Pkte)</string>
+    <string name="pendant_choose">Glücksbringer (1 Pkt)</string>
+    <string name="provisions">Proviant</string>
+    <string name="medicine">Medizin</string>
+    <string name="rope">Seil</string>
+    <string name="blanket">Decke</string>
+    <string name="canteen">Feldflasche</string>
+    <string name="torches">Fackeln</string>
+    <string name="compass">Kompass</string>
+    <string name="map">Landkarte</string>
+    <string name="binoculars">Fernglas</string>
+    <string name="chalk">Kreide</string>
+    <string name="pendant">Glücksbringer</string>
+    <string name="no_supplies">Keine Ausrüstung</string>
+
+
+    <!--Campaign log-->
+    <string name="yigs_fury">Yigs Zorn: </string>
+    <string name="forced_wait">Die Ermittler wurden gezwungen, auf zusätzliche Ausrüstung zu warten.\n\n</string>
+    <string name="cleared_path">Die Ermittler haben sich einen Weg zu den Ruinen der Eztli gebahnt.\n\n</string>
+    <string name="ichtaca_observed">Ichtaca hat das Vorankommen der Ermittler aufmerksam beobachtet.\n\n</string>
+    <string name="ichtaca_trust">Die Ermittler haben Ichtacas Vertrauen gewonnen.\n\n</string>
+    <string name="ichtaca_wary">Ichtaca ist vor den Ermittlern auf der Hut.\n\n</string>
+    <string name="alejandro_remained">Alejandro hat sich entschieden, im Lager zu bleiben.\n\n</string>
+    <string name="alejandro_followed">Alejandro ist den Ermittlern in die Ruinen gefolgt.\n\n</string>
+    <string name="investigators_recovered_relic">Die Ermittler haben das Relikt der Zeitalter geborgen.\n\n</string>
+    <string name="alejandro_recovered_relic">Alejandro hat das Relikt der Zeitalter geborgen.\n\n</string>
+    <string name="harbinger_alive">Der Vorbote ist noch am Leben.</string>
+    <string name="custody_alejandro">Die Ermittler haben die Verantwortung für das Relikt an Alejandro übertragen.\n\n
+    Die Ermitt ler haben Alejandros Vertrauen gewonnen.\n\n</string>
+    <string name="custody_harlan">Die Ermittler haben Harlan Earnstone die Verantwortung für das Relikt übertragen.\n\n
+    Alejandro setzt seine Forschungen allein fort.\n\n</string>
+
+    <!--Edit log-->
+    <string name="yigs_fury_heading">Yigs Zorn</string>
+    <string name="ruins_heading">Der Weg in die Ruinen</string>
+    <string name="ichtaca_heading">Ichtaca</string>
+    <string name="alejandro_heading">Alejandro</string>
+    <string name="harbinger_heading">Der Vorbote von Valusia</string>
+    <string name="relic_heading">Das Relikt der Zeitalter</string>
+    <string name="custody_heading">Verantwortung für das Relikt</string>
+
+    <!--Chaos bag-->
+    <string name="untamed_skull_one">–X. X ist die Anzahl der Vergeltungspunkte im Siegpunktestapel.</string>
+    <string name="untamed_skull_two">–X. X ist die Anzahl der Vergeltungspunkte im Siegpunktestapel plus 1.</string>
+    <string name="untamed_cultist_one">–X. X ist die Anzahl der Orte im Spiel (maximal 5).</string>
+    <string name="untamed_cultist_two">–X. X ist die Anzahl der Orte im Spiel.</string>
+    <string name="untamed_tablet_one">–X. X ist die Anzahl der Karten im Erkundungsdeck (maximal 5).</string>
+    <string name="untamed_tablet_two">–X. X ist die Anzahl der Karten im Erkundungsdeck (mindestens 3).</string>
+    <string name="untamed_thing_one">–2. Falls du vergiftet bist, misslingt die Probe stattdessen automatisch.</string>
+    <string name="untamed_thing_two">–3. Falls du vergiftet bist, misslingt die Probe stattdessen automatisch. Falls du nicht vergiftet
+        bist und die Probe misslingt, bringe eine beiseitegelegte Vergiftet-Schwäche in deiner Bedrohungszone ins Spiel.</string>
+
+    <string name="eztli_skull_one">–1 (–3 stattdessen, falls sich Verderben auf deinem Ort befindet).</string>
+    <string name="eztli_skull_two">–2 (–4 stattdessen, falls sich Verderben auf deinem Ort befindet).</string>
+    <string name="eztli_cultist_tablet_one">–X. X ist die Anzahl der Orte mit Verderbensmarkern darauf.</string>
+    <string name="eztli_cultist_tablet_two">–X. X ist die Gesamtmenge an Verderbensmarkern auf Orten im Spiel.</string>
+    <string name="eztli_thing_one">Enthülle einen weiteren Chaosmarker. Falls die Probe misslingt, platziere 1 Verderbensmarker auf deinen Ort.</string>
+    <string name="eztli_thing_two">Enthülle einen weiteren Chaosmarker und platziere 1 Verderbensmarker auf deinen Ort.</string>
+
+
+    <!--Campaign introduction-->
+    <string name="forgotten_introduction"><b>Prolog</b>\n
+    \nDienstag, 2. Juni 1925\n
+    \nEs scheint, als würden wir für den Rest des Sommers keine Ruhe finden.\n
+    \nHeute habe ich mich mit Harlan Earnstone getrof en. Er ist Geschichtstheoretiker an der Miskatonic-Universität und
+        ein alter Freund von mir. Er sagte, er hätte ein Jobangebot für mich, aber ehrlich gesagt wusste ich nicht genau, was mich erwarten sollte.\n
+    \nHarlan hat mir einen seiner Mitarbeiter vorgestellt: Alejandro Vela, einen bedeutenden Historiker. Er stammt von jenseits
+        der Südgrenze. Mr. Vela hat sein Studium an einer renommierten Universität in Mexiko-Stadt abgeschlossen und viele
+        Jahre der Erfoschung des Aztekenreiches gewidmet. Er behauptet, er habe Beweise für die Existenz eines bisher unbekannten
+        Stadtstaates der Azteken namens Eztli gefunden. Seine merkwürdigen Funde unterscheiden sich von allen bisherigen und
+        wurden von der Universität nicht anerkannt, was ihn unter seinen Kollegen zu einem Außenseiter gemacht hat.\n
+    \nAlejandro ist nach Arkham gekommen, um Sponsoren für eine Expedition in den Regenwald Südmexikos zu finden, in dem er
+        die bislang unentdeckten Ruinen des Altepetl der Eztli vermutet. Seine Beschreibung der Entstehung dieses Stadtstaates
+        widerspricht dem modernen Verständnis der mesoamerikanischen Geschichte. Trotzdem — oder, wie ich meinen alten Freund kenne,
+        gerade deswegen — ist Harlan von Alejandros Entdeckungen fasziniert. Die Miskatonic-Universität hat zugestimmt, die Expedition zu
+        finanzieren (wenn auch nicht besonders großzügig), und Harlan möchte, dass ich an ihr teilnehme.\n
+    \nMeiner Meinung nach besteht eine große Wahrscheinlichkeit, dass wir nach etwas suchen, das gar nicht existiert. Aber wenn auch
+        nur eine geringe Chance besteht, dass das Volk der Eztli existiert hat, wäre das für die Geschichtswissenschaf von ungemeiner Bedeutung.
+        Wir haben lange hin und her diskutiert, aber schlussendlich haben wir Alejandros Angebot akzeptiert. Die Vorbereitungen laufen und
+        wir sollen Ende des Monats aufbrechen. Mit etwas Glück werde ich in diesem Tagebuch noch von vielen interessanten Entdeckungen
+        berichten. Falls nicht, kann es immer noch als Keil dienen, um Harlans schiefen Schreibtisch zu begradigen.</string>
+
+
+    <!--Interludes-->
+    <string name="restless_blanket_one">Die folgenden Ermittler haben Decken und können ruhig schlafen:\n\n</string>
+    <string name="restless_blanket_two">\nSie lesen:</string>
+    <string name="restless_restful_sleep">Glücklicherweise konnte ich in den letzten Nächten gut schlafen. Aber während
+        mein Körper sich ausruhte, wurde mein Geist von Albträumen geplagt. Eine Höhle, die aussah wie ein weit aufgerissenes Maul, von einem
+        düsteren roten Licht erleuchtet… An den Wänden glitzerten die Schuppen von hundert Vipern…
+        Vielleicht wäre es besser gewesen, nicht schlafen zu können.\n</string>
+    <string name="restless_no_blanket_one">Die folgenden Ermittler haben keine Decken und wälzen sich unruhig umher:\n\n</string>
+    <string name="restless_no_blanket_two">\nSie lesen:</string>
+    <string name="restless_tossing_turning">In den Nächten im Dschungel habe ich kaum geschlafen. Jede Nacht waberte ein
+        seltsamer Nebel durch das Lager und erfüllte die Luf mit einer intensiven, eigenartigen Kälte. Mein Schlafsack hat
+        mir etwas Schutz gegen die Elemente geboten, aber wir waren nicht auf so unnatürliches Wet er eingestellt. Jedes Mal,
+        wenn ich einzuschlafen begann, summten Fliegen und Mücken in meinen Ohren. Und wenn ich endlich schlief, kroch ein Insekt
+        oder eine Eidechse über mein Gesicht und ich fuhr aus dem Schlaf hoch. Ich wette, ich werde auf dieser Reise nur sehr wenig Schlaf bekommen…</string>
+    <string name="restless_no_blanket_option_one">Erleide ein körperliches Trauma</string>
+    <string name="restless_no_blanket_option_two">Erleide ein seelisches Trauma</string>
+
+    <string name="restless_not_low">Die Ermittler haben genug Proviant.</string>
+    <string name="restless_low_one">Die Ermittler haben nicht mehr genug Proviant. Wählt</string>
+    <string name="restless_investigator">Ermittler, der den folgenden Absatz lesen muss:</string>
+    <string name="restless_investigators">Ermittler, die den folgenden Absatz lesen müssen:</string>
+    <string name="restless_low_two">\n</string>
+    <string name="restless_low">Eigentlich hat en wir angenommen, unser Proviant und die Wasservorräte würden für alle
+        reichen, aber wir haben bereits zu viel davon auf dieser Reise verbraucht. Als die Sonne aufging und es Zeit zum
+        Essen war, mussten wir feststellen, dass wir bereits keinen Proviant mehr hatten.\n</string>
+    <string name="restless_low_effect">Jeder dieser Ermittler beginnt das nächste Szenario mit 3 Ressourcen weniger.</string>
+
+    <string name="restless_choose_lookout">Der Ermittlungsleiter muss einen Ermittler zum Späher der Gruppe
+        ernennen.</string>
+    <string name="restless_binoculars"> (besitzt ein Fernglas)</string>
+    <string name="restless_lookout_reads">\nDer gewählte Ermittler liest:</string>
+    <string name="restless_shapes_trees">Die meisten Nächte vergingen ereignislos, aber heute Nacht hat mich das
+        Rascheln von Zweigen am südlichen Rand der Lichtung, auf der unser Lager steht, geweckt. Trotz der Dunkelheit
+        konnte ich durch mein Fernglas sehen, dass sich Gestalten in den Bäumen bewegten. Die Gestalten schienen
+        menschlich, aber… warum? Warum beobachten sie uns nur aus der Ferne? Was sind ihre Absichten?</string>
+    <string name="restless_eyes_dark">Jede Nacht wurde ich beobachtet. Es war nicht nur ein Gefühl, ich habe gesehen,
+        wie mich Augen aus der tintenschwarzen Dunkelheit um unser Lager herum betrachteten. Sie wussten, dass wir da
+        waren. Die gelben Augen folgten mir, sahen wie ich wachsam blieb und mit gezogener Waffe bereit war, das Lager
+        zu verteidigen, falls dies nötig werden sollte. Unsere Blicke trafen sich und eine Dunkelheit legte sich über
+        mein Herz.</string>
+
+    <string name="restless_poison_one_single_investigator">Ermittler darf Medizin benutzen, um eine Vergiftet-Schwäche
+        aus seinem Deck zu entfernen.</string>
+    <string name="restless_poison_one_multiple_investigators">Ermittler dürfen Medizin benutzen, um eine
+        Vergiftet-Schwäche aus ihrem Deck zu entfernen.</string>
+    <string name="restless_poison_counter">Verbrauchte Medizin</string>
+    <string name="restless_poisoned_heading">Ermittler, die noch vergiftet sind</string>
+    <string name="restless_poison_two">Die Ermittler haben keine Medizin, mit der sie Vergiftungen kurieren können.</string>
+    <string name="restless_poison_three">\nJeder Ermittler, der noch eine Vergiftet-Schwäche in seinem Deck hat,
+        liest:</string>
+    <string name="restless_poison_spreads">Mit jedem Tag breitete sich das Gift weiter in meinem Körper aus. In der
+        zweiten Nacht war meine Haut mit Schweiß bedeckt. Das Atmen fiel mir schwer und ich fing an, morgens einen
+        Großteil des Essens vom Vorabend auszuwürgen.</string>
+
+    <string name="expeditions_end_one">Freitag, 17. Juli 1925\n
+    \nEndlich sind wir wieder in Arkham und unsere Expedition war ein „Erfolg“. Alejandro kann es kaum erwarten, seine Erkenntnisse der Universität zu berichten.
+        Wie er nach all dem Schrecken, den wir im Dschungel erlebt haben, weiterhin so ein naiver Idealist bleiben kann, werde ich nie verstehen. Seine Aufmerksamkeit
+        gilt nur diesem seltsamen Relikt, das wir in den Ruinen gefunden haben. Ich wünschte, wir wüssten etwas mehr über die Herkunf dieses Artefaktes. Es beunruhigt
+        mich fürchterlich. Es summt die ganze Zeit und pulsiert erfüllt von einer Energie aus der Anderswelt, die ich kaum beschreiben kann. Auf unserer Heimreise mit
+        dem Artefakt wurden wir jede Nacht von bizarren Albträumen geplagt: Träume von anderen Welten und Zivilisationen.\n
+    \nAlejandro will, dass wir das Relikt ins Miskatonic Museum bringen, wo es mit den anderen von uns entdeckten Eztli-Artefakten ausgestellt werden kann.
+        Meine Gefühle sind dem gegenüber gemischter Natur. Im Museum wird dem Relikt die angemessene Sorgfalt zuteil werden, Historiker werden es studieren
+        können und vielleicht auch seinen Zweck entschlüsseln. Aber ich befürchte, dass das Relikt eine zu große Gefahr für die Öffentlichkeit darstellt.
+        Schließlich haben wir noch keine Idee, was dieses verdammte Ding überhaupt ist. Alejandro würde es hassen, aber vielleicht wäre es besser, das Relikt
+        an einem sicheren Ort aufzubewahren, wo Harlan und ich es abseits der Öf entlichkeit studieren können. Ich muss heute Nacht eine Entscheidung treffen,
+        morgen wird es zu spät dafür sein.</string>
+    <string name="expeditions_end_two">Sonntag, 19. Juli 1925\n
+    \nIch habe mich dafür entschieden, dass Relikt Alejandro anzuvertrauen. Immerhin basierte die gesamte Expedition auf seiner Forschung — er sollte
+        derjenige sein, der es studiert. Falls irgendjemand die Geheimnisse dieses Relikts entschlüsseln kann, dann er.\n
+    \nDas Relikt wird das Herzstück einer neuen Ausstellung des Museums. Alejandro hat bereits einige Berichte über unsere Entdeckungen verfasst, aber es liegt
+        noch viel Arbeit vor ihm. Immer noch umgeben viele Geheimnisse unsere Expedition. Wie konnte das Volk von Eztli so lange unentdeckt bleiben? Warum
+        schienen sie den Dschungel zu bewachen? Und vor allem, vor wem? Wer hat die Tempelruinen, die wir dort erkundet haben, wirklich erbaut? Ich zweifle nicht
+        daran, dass Alejandro die Antworten auf diese Geheimnisse finden wird, wenn er genug Zeit dafür hat.\n
+    \nMeine Aufgabe in diesem Unterfangen ist erledigt. Aber ich kann mich noch nicht wirklich entspannen. Meine
+        Gedanken kreisen ohne Unterlass um den Dschungel — schlangenartige Gestalten in den Schatten, Obsidianpfeile,
+        die in Skeletten stecken, verzerrte Stimmen, die in den Höhlen unter der Erde kreischen. Wenn ich durch die
+        Straßen laufe wenden sich meine Schritte unwillkürlich dem Museum zu, als ob ich davon besessen wäre, das Relikt
+        noch einmal zu sehen. Irgendetwas spukt störend in meinem Hinterkopf herum, als hätten wir etwas Wichtiges
+        vergessen. Was muss ich tun, um mich davon zu befreien\n
+    \n(Hier endet das Tagebuch abrupt.)\n
+        \n<b>Falls sich die Karte Alejandro Vela nicht bereits in einem Ermittlerdeck befindet, darf sich ein beliebiger
+        Ermittler entscheiden, sie seinem Deck hinzuzufügen. Sie zählt nicht gegen die Deckgröße des Ermittlers.</b>\n
+        \n<b>Dem Chaosbeutel wird für den Rest der Kampagne ein Tafel-Chaosmarker hinzugefügt.</b>\n
+    \nEs klopf laut an deiner Tür. Du erschrickst, lässt deinen Stif fallen und springst auf. Es ist fast 2:30 Uhr in
+        der Nacht. Wer könnte zu so später Stunde vor deiner Tür stehen? Deine Gedanken schweifen wieder zum Dschungel
+        ab und du hast eine Vision von einer schlangenartigen Kreatur, die dich in deinem eigenen Heim angreift.
+        Schaudernd greifst du nach einer Waffe und gehst kampfbereit vorsichtig zur Vordertür. Dann atmest du tief ein
+        und öffnest die Tür.\n
+    \nAuf der anderen Seite steht eine vertraut wirkende Frau mit brauner Haut, langem braunen Haar und stechend gelben Augen, die
+        dich hart anblicken. Obwohl sie eine andere Kleidung trägt, erkennst du in ihr sofort Ichtaca, die Kriegerin von Eztli, der
+        du im Regenwald begegnet bist. Sie trägt einen langen Mantel und einen Bollman-Hut, dazu Schuhe, in denen sie sich sichtlich
+        unwohl fühlt. Ihr Kiefer ist vor Verärgerung fest zusammengepresst. Schon willst du deine Waffe erheben um dich zu verteidigen,
+        als sie tief seufzt, langsam über die Schwelle deines Heims trit und die Tür hinter sich schließt. „Was auch immer du getan
+        hast, du musst es rückgängig machen“, sagt sie mit dunkler Stimme. „Oder wir werden <i>alle</i> aufhören zu existieren.“</string>
+    <string name="expeditions_end_three">Sonntag, 19. Juli 1925\n
+    \nIch habe mich dafür entschieden, das Relikt vorerst nicht der Öffentlichkeit zugänglich zu machen. Alejandro ist nicht glücklich
+        über meine Entscheidung, aber bis wir wissen, wozu diese Kugel imstande ist, muss sie an einem sicheren Ort auf ewahrt werden,
+        wo sie keine Unbeteiligten in Gefahr bringen kann. Harlan stimmt mir zu und hat bereits angeboten, die Verantwortung für das
+        Relikt zu übernehmen und es in seinem Privatbüro aufzubewahren. Dort können wir es im Geheimen studieren.\n
+    \nAlejandro bleibt vorerst in Arkham, verfasst Berichte über die Expedition und hilft im Museum bei der Zusammenstellung einer
+        Ausstellung unserer anderen, weniger gefährlich anmutenden Funde. Ich dagegen hoffe, Antworten auf andere Geheimnisse zu
+        finden: Wie konnte das Volk von Eztli so lange unentdeckt bleiben? Warum schienen sie den Dschungel zu bewachen? Und vor
+        allem, vor wem? Wer hat die Tempelruinen, die wir dort erkundet haben, wirklich erbaut?\n
+    \nMeine Gedanken kreisen ohne Unterlass um den Dschungel — schlangenartige Gestalten in den Schatten, Obsidianpfeile, die in
+        Skeletten stecken, verzerrte Stimmen, die in den Höhlen unter der Erde kreischen. Jedes Mal, wenn ich Harlans Büro verlasse,
+        ertappe ich mich dabei, wie ich sofort zurückkehren möchte, um das Relikt noch einmal zu betrachten. Irgendetwas spukt störend
+        in meinem Hinterkopf herum, als hätten wir etwas Wichtiges vergessen. Was muss ich tun, um mich davon zu befreien\n
+    \n(Hier endet das Tagebuch abrupt.)\n
+        \n<b>Falls sich die Karte Alejandro Vela in einem Ermittlerdeck befindet, wird sie aus diesem Deck entfernt.</b>\n
+    \nEs klopf laut an deiner Tür. Du erschrickst, lässt deinen Stif fallen und springst auf. Es ist fast 2:30 Uhr in
+        der Nacht. Wer könnte zu so später Stunde vor deiner Tür stehen? Deine Gedanken schweifen wieder zum Dschungel
+        ab und du hast eine Vision von einer schlangenartigen Kreatur, die dich in deinem eigenen Heim angreift.
+        Schaudernd greifst du nach einer Waffe und gehst kampfbereit vorsichtig zur Vordertür. Dann atmest du tief ein
+        und öffnest die Tür.\n
+    \nAuf der anderen Seite steht eine vertraut wirkende Frau mit brauner Haut, langem braunen Haar und stechend gelben Augen, die
+        dich hart anblicken. Obwohl sie eine andere Kleidung trägt, erkennst du in ihr sofort Ichtaca, die Kriegerin von Eztli, der
+        du im Regenwald begegnet bist. Sie trägt einen langen Mantel und einen Bollman-Hut, dazu Schuhe, in denen sie sich sichtlich
+        unwohl fühlt. Ihr Kiefer ist vor Verärgerung fest zusammengepresst. Schon willst du deine Waffe erheben um dich zu verteidigen,
+        als sie tief seufzt, langsam über die Schwelle deines Heims trit und die Tür hinter sich schließt. „Was auch immer du getan
+        hast, du musst es rückgängig machen“, sagt sie mit dunkler Stimme. „Oder wir werden <i>alle</i> aufhören zu existieren.“</string>
+    <string name="expeditions_end_five">Harlan Earnstone geht in deinem Wohnzimmer auf und ab und wischt sich dabei mit einem Taschentuch
+        über sein faltiges Gesicht. „Es ist meine Schuld. Ich hätte sie nie zu dieser fürchterlichen Expedition ermutigen sollen.“ Auch
+        wenn ihr euch nur wenige Male begegnet seid, ist Mr. Earnstone für dich zu einem wichtigen Kontakt an der Miskatonic-Universität
+        geworden. Als von den letzten Expeditionen der Universität nur wenige Überlebende mit einigen merkwürdigen, archaischen Artefakten
+        zurückgekehrt sind, hat er dich um Rat gebeten.\n
+    \n„Ich weiß, ich weiß. Ich sollte Trost darin finden, dass die Expedition trotz der herben Verluste ein Erfolg war.
+        Alejandro hatte von Anfang an recht. Es gibt das Volk von Eztli wirklich. Und dennoch… einige dieser Funde
+        bereiten mir Sorgen.“ Harlan zieht ein kleines, ledergebundenes Tagebuch aus der obersten Schublade seines
+        Schreibtischs und überreicht es dir. „Der Expeditionsleiter hat vor seinem tragischen Tod viele Entdeckungen der
+        Gruppe in diesem Tagebuch festgehalten. Eins der überlebenden Mitglieder hat es bei der Flucht aus dem Lager
+        mitnehmen können. Ich denke, wenn Sie diese Einträge lesen, verstehen Sie, was ich meine. Was ihnen zugestoßen
+        ist, auf was für Kreaturen sie gestoßen sind…“ Schaudernd und mit zitternden Händen rückt Harlan seine Brille
+        zurecht. „Ich mache mir nicht nur um Alejandro Sorgen, sondern um uns alle. Lesen Sie dieses Tagebuch und falls
+        Sie es schaffen, behalten Sie meinen Kollegen im Auge.“ Du bist bereit, ihm zu helfen, aber du kannst seine Bedenken
+        nicht zerstreuen. „Ich kann nur hoffen, dass ich Sie nicht zu einem ähnlichen Schicksal verdamme, indem ich Sie um Hilfe bitte.“\n
+    \nDen Rest des Abends verbringst du mit dem Studium des Tagebuchs der Expedition, während deine Gedankenwelt von merkwürdigen
+        schlangenartigen Kreaturen und Aztekenkriegern beherrscht wird. Lange nach Harlans Aufbruch erschrickst du durch ein lautes
+        Klopfen an deiner Tür und springst auf. Es ist fast 2:30 Uhr in der Nacht. Wer könnte zu so später Stunde vor deiner Tür
+        stehen? Zögernd öffnest du die Vordertür. Auf der anderen Seite steht eine Frau mit brauner Haut, langem braunen Haar und
+        stechend gelben Augen, die dich hart anblicken. Sie trägt einen langen Mantel und einen Bollman-Hut, dazu Schuhe, in denen
+        sie sich sichtlich unwohl fühlt. Ihr Kiefer ist vor Verärgerung fest zusammengepresst. Plötzlich schießt dir ein Gedanke durch
+        den Kopf und du erkennst sofort, wer sie sein muss. Immerhin hast du immer und immer wieder die Beschreibung der Eztli-Kriegerin
+        Ichtaca gelesen. Mit einem tiefen Seufzer trit sie langsam über die Schwelle deines Heims und schließt die Tür hinter sich.
+        „Was auch immer sie getan haben, du musst es rückgängig machen“, sagt sie mit dunkler Stimme. „Oder wir werden <i>alle</i>
+        aufhören zu existieren.“</string>
+    <string name="expeditions_end_option_one">Es gehört in ein Museum. Alejandro und die Mitarbeiter des Museums
+        können es dort studieren und seinen Zweck herausfinden.</string>
+    <string name="expeditions_end_option_two">Es auszustellen wäre zu gefährlich. Es sollte an einem sicheren Ort
+        versteckt werden, bis wir mehr über das Ding wissen.</string>
+
+
+    <!--Scenario introductions-->
+    <string name="untamed_introduction">Sonntag, 28. Juni 1925\n
+    \nDer Tag war die Hölle. Wir haben gerade unser Lager am nördlichen Rand des Regenwaldes errichtet, von dem
+        Alejandro vermutet, dass er einst die Heimat der Eztli war. Der Dschungel ist hier dicht und ungezähmt. Der
+        Himmel versteckt sich hinter dem Blätterdach, aber der frische Wind verrät mir, dass sich ein Sturm zusammenbraut.\n
+    \nMan hat uns mehrfach über die Gefahren unserer Expedition aufgeklärt. Wir sind hunderte von Meilen von jedem Anzeichen von
+        Zivilisation entfernt. Kein Mensch der Moderne hat jemals einen Fuß in diese Wildnis gesetzt. Bis jetzt hatte auch niemand
+        einen Grund dazu. Man hielt es bisher für abwegig, in diesem Teil von Mexiko Ruinen der Azteken zu finden. Und trotzdem sind wir
+        hier, auf der Suche nach Ruinen, die es vermutlich nicht zu entdecken gibt und die, allen Berichten zufolge, nicht einmal existieren.\n
+    \nEiner unserer Kundschaf er ist bereits krank geworden, ein anderer ist von einer Viper gebissen worden. Langsam fange ich an zu glauben,
+        dass der Regenwald uns von hier vertreiben will. Falls diese Unglückssträhne anhält, wird dies die kürzeste Expedition in der Geschichte
+        der Miskatonic-Universität. Heute Nacht werden wir uns ausruhen. Morgen brechen wir dann in die unerforschte Wildnis auf.</string>
+
+    <string name="eztli_introduction_one">Mittwoch, 8. Juli 1925\n
+    \nUnsere Läufer José und Maria kamen einige Tage später zurück. Sie hat en ausreichend Nahrung, Wasser, Aspirin und Waffen
+        dabei. Ich bin neugierig, wie gut Alejandros Verbindungen in Mexiko sind. Für einen Ausgestoßenen aus der Gemeinschaft
+        der Historiker war er schneller in der Lage, Gewehre und Munition zu organisieren, als ich erwartet hatte. Aber vielleicht
+        sollte er seine Quellen besser für sich behalten.\n
+    \nErneut unternahmen wir einen Vorstoß in den Dschungel. Dieses Mal waren wir vorbereitet. Wir hat en durch unsere erste Exkursion gelernt,
+        überwanden die Flussschlucht und drangen tiefer nach Süden vor, als wir es beim ersten Mal gewagt hatten. Schließlich erreichten wir
+        die von Alejandro gesuchten Ruinen und bald schon werden wir das Gebäude betreten, das er für den Haupttempel hält. Merkwürdig war nur,
+        dass die Schlangenkreaturen, auf die wir beim ersten Mal getroffen waren, uns nicht angriffen, wie wir befürchtet hatten. Waren sie
+        vielleicht geflohen? Oder warten sie einfach ab, bereiten einen Hinterhalt vor, während wir in der Nacht schlafen?</string>
+    <string name="eztli_introduction_two">Freitag, 3. Juli 1925\n
+    \nWir haben einen Großteil des gestrigen Tages damit verbracht, unser Lager an den Rand der Ruinen zu verlegen. Da die Schlangenkreaturen
+        immer noch die Gegend bewachen, haben wir entschieden, dass eine kleine Gruppe mehr Erfolg damit haben würde, unbemerkt in den Tempel
+        zu schleichen. Ich habe Maria, der Naturkundlerin der Expedition, gesagt, dass sie sich einen der Wagen nehmen und am Nordrand des
+        Regenwaldes warten soll. Unser Kartograph José bewacht das Lager bis zu unserer Rückkehr. Wir sind auf uns gestellt, aber zumindest
+        konnten wir uns einen Fluchtweg bahnen, falls die Dinge sich ungünstig entwickeln sollten…</string>
+
+
+    <!--Scenario setup-->
+    <string name="untamed_sets">Die ungezähmte Wildnis, Regenwald, Schlangen, Expedition, Wächter der Zeit, Agenten des
+        Yig, Gift und Böses aus uralter Zeit. </string>
+    <string name="untamed_locations">Das Expeditionslager wird ins Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel im Expeditionslager.\n</string>
+    <string name="untamed_set_aside">Die drei einseitig bedruckten <b><i>Ruinen</i></b>-Orte, das Begegnungsset
+        <i>Agents des Yig</i>, die vier Schwächekarten Vergiftet, die Vorteilskarte Alejandro Vela und der Gegner Ichtaca.\n
+        \nDas Begegnungsset <i>Agenten des Yig</i> ist an folgendem Symbol zu erkennen:</string>
+    <string name="untamed_additional">Das Erkundungsdeck wird erstellt. Dazu werden die fünf einseitig bedruckten
+        <b><i>Dschungel</i></b>-Orte herausgesucht und mit jeweils einem Exemplar folgender Verratskarten zusammengemischt:
+        In der Wildnis verlaufen, Überwucherung, Schlangenbiss, Unzureichende Ausrüstung und Pfeile aus den Bäumen.</string>
+    <string name="untamed_additional_lead">Ernennt Ursula Downs, Leo Anderson oder Monterey Jack zum Leiter der
+        Expedition. Dieser Ermittler beginnt die Szenarien I und II als Ermittlungsleiter.\n</string>
+
+    <string name="eztli_sets">Verderben von Eztli, Agenten des Yig, Yigs Gift, Zeitströmung, Tödliche Fallen, Vergessene
+        Ruinen, Gift und Grabeskälte.</string>
+    <string name="eztli_locations">Der Eingang wird ins Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel am Eingang.\n</string>
+    <string name="eztli_set_aside">Der Gegner Vorbote von Valusia, der Ort Kammer der Zeit, die Vorteilskarte Relikt der
+        Zeitalter und jede Vergiftet-Schwäche, die sich nicht bereits in einem Ermittlerdeck befindet.\n</string>
+    <string name="eztli_additional">Das Erkundungsdeck wird erstellt. Dazu werden die fünf einseitig bedruckten
+        <b><i>Uralt</i></b>-Orte herausgesucht und mit jeweils einem Exemplar folgender Verratskarten zusammengemischt:
+        Böses Vorzeichen, Tiefe Dunkelheit, Der letzte Fehler, Begraben und Grabeskälte.</string>
+    <string name="eztli_additional_place">Platziere</string>
+    <string name="eztli_additional_doom">Verderben auf den Eingang.\n\n</string>
+    <string name="eztli_low_rations_single_investigator">Ermittler beginnt das Szenario mit 3 Ressourcen
+        weniger.\n\n</string>
+    <string name="eztli_low_rations_multiple_investigators">Ermittler beginnen das Szenario mit 3 Ressourcen
+        weniger.\n\n</string>
+    <string name="eztli_additional_lead">Derselbe Ermittler, der im ersten Szenario der Ermittlungsleiter war, muss auch
+        in diesem Szenario der Ermittlungsleiter sein.</string>
+
+
+    <!--Scenario resolutions-->
+    <string name="untamed_no_resolution">Mittwoch, 1. Juli 1925\n
+    \nIch kann mir immer noch nicht erklären, wie wir es lebend zum Lager zurückgeschafft haben.\n
+    \nDer Dschungel barg mehr Gefahren als wir uns hät en vorstellen können. Das mag vielleicht wie die Hirngespinste
+        eines Verrückten klingen, aber ich kann es nicht anders erklären. Sich im Dschungel zu verlaufen war kein
+        Spaziergang, aber das war noch unser kleinstes Problem. Der Regenwald wurde bewacht. Bewacht von
+        unvorstellbaren Schrecken: schlangenartige Kreaturen, die getrieben von Wut und Hass Jagd auf uns gemacht haben.\n
+    \nDie menschlichen Bewohner des Dschungels waren vermutlich genau so tödlich. Sie sahen aus und sprachen wie
+        Aztekenkrieger. Als das Reich der Azteken vor vielen Jahrhunderten erobert wurde, haben diese Krieger irgendwie
+        überlebt. Wie haben sie es nur geschafft, so lange unentdeckt zu bleiben? Ich hätte gedacht, Alejandro wäre begierig,
+        mehr über sie zu erfahren, aber er wirkte eher verstört. Ich denke, er hat das Recht zu zweifeln. Nichts an dieser
+        Expedition ergibt einen Sinn.\n
+    \nDie schlangenartigen Kreaturen haben uns tagelang gejagt oder es hat sich zumindest so angefühlt. Schließlich haben
+        wir es doch geschafft, den Weg ins Lager zurückzufinden, aber der Preis dafür war hoch. Wir stehen wieder ganz am
+        Anfang und einige von uns wurden verletzt oder mit Schlangengift vergiftet. Wir haben keine Wahl, wir müssen Läufer
+        zur nächsten Stadt schicken, um weitere Ausrüstung zu holen. Während wir auf sie warten, versuchen wir, uns von
+        unseren Verletzungen zu erholen.</string>
+    <string name="untamed_resolution_one">Donnerstag, 2. Juli 1925\n
+    \nIrgendwie haben wir nach all der Schinderei und stundenlangen Erkunden der Gegend die von Alejandro gesuchten Ruinen gefunden. Aber wir waren nicht im Geringsten
+        auf das vorbereitet, was wir in der Wildnis dieses Dschungels angetroffen haben. Der Regenwald wurde bewacht. Bewacht von unvorstellbaren Schrecken:
+        schlangenartigen Kreaturen, angetrieben von Wut und Hass. Sie haben uns gnadenlos gejagt, trugen primitive Waffen und verständigten sich mit scharfen Zischlauten.\n
+    \nDie menschlichen Bewohner des Dschungels waren vermutlich genauso tödlich. Sie sahen aus und sprachen wie
+        Aztekenkrieger. Als das Reich der Azteken vor vielen Jahrhunderten erobert wurde, haben diese Krieger irgendwie
+        überlebt. Wie haben sie es nur geschafft, so lange unentdeckt zu bleiben? Die Kriegerin namens Ichtaca war
+        besonders faszinierend. Wir konnten bei der ersten Begegnung mit ihr die Situation entschärfen. Überraschenderweise
+        half sie uns dann, indem sie uns durch den Dschungel führte, nur um auf geheimnisvolle Weise wieder zu verschwinden,
+        als wir die Ruinen erreicht hatten. Ich habe das Gefühl, dass dies nicht unsere letzte Begegnung mit ihr gewesen ist.\n
+    \nAlejandro war nicht einverstanden mit unserer Entscheidung, den Eztli-Kriegern zu vertrauen. Er hat sich dafür entschieden,
+        bis auf Weiteres im Lager zu bleiben, da ihre Gegenwart ihn verstört. Ich dachte, er wäre begierig darauf, mehr über sie zu erfahren, aber ich
+        denke, diese Entdeckung ist selbst für ihn und seine aufgeschlossenen Theorien zu viel. Ich denke, er hat das Recht, misstrauisch zu sein.
+        Nichts an dieser Expedition ergibt einen Sinn.\n
+    \nWir haben uns einen Weg zu der Ruine gebahnt, die Alejandro für den Haupttempel der Anlage hält. Zum Ausruhen bleibt allerdings
+        wenig Zeit. Die Schlangenkreaturen scheinen uns auf alten zu wollen, wir können also nicht länger zögern als unbedingt notwendig.
+        Bald werden wir die Ruinen betreten, um die Geheimnisse zu lüften, die sich in ihnen verbergen.</string>
+    <string name="untamed_resolution_two">Donnerstag, 2. Juli 1925\n
+    \nIrgendwie haben wir nach all der Schinderei und stundenlangem Erkunden der Gegend die von Alejandro gesuchten Ruinen
+        gefunden. Aber wir waren nicht im Geringsten auf das vorbereitet, was wir in der Wildnis dieses Dschungels angetroffen
+        haben. Der Regenwald wurde bewacht. Bewacht von unvorstellbaren Schrecken: schlangenartigen Kreaturen, angetrieben von
+        Wut und Hass. Sie haben uns gnadenlos gejagt, trugen primitive Waffen und verständigten sich mit scharfen Zischlauten.\n
+    \nDie menschlichen Bewohner des Dschungels waren vermutlich genau so tödlich. Sie sahen aus und sprachen wie
+        Aztekenkrieger. Als das Reich der Azteken vor vielen Jahrhunderten erobert wurde, haben diese Krieger irgendwie
+        überlebt. Wie haben sie es nur geschafft, so lange unentdeckt zu bleiben? Ich hätte gedacht, Alejandro wäre
+        begierig, mehr über sie zu erfahren, aber er teilte unsere Besorgnis. Wir haben ihre Anführerin, eine Kriegerin
+        namens Ichtaca, abwehren und befragen können. Vor ihrer Flucht hat sie uns gewarnt, nicht in die Nähe der Ruinen
+        zu gehen. Bedauerlicherweise für sie sind wir nicht bereit, mit leeren Händen nach Hause zurückzukehren.\n
+    \nMit Alejandros Führung waren wir in der Lage, uns einen Weg zu dem Gebäude zu bahnen, das er für den Haupttempel der Anlage hält.
+        Zum Ausruhen bleibt allerdings wenig Zeit. Die Schlangenkreaturen scheinen uns aufhalten zu wollen, wir können also nicht länger
+        zögern als unbedingt nötig. Bald werden wir die Ruinen betreten, um die Geheimnisse zu lüften, die sich in ihnen verbergen.\n
+    \n<b>Ein beliebiger Ermittler darf die Karte Alejandro Vela seinem Deck hinzufügen. Sie zählt nicht gegen die Deckgröße des Ermittlers.</b></string>
+    <string name="untamed_add_alejandro"><b>Ein beliebiger Ermittler darf die Karte Alejandro Vela seinem Deck hinzufügen. Sie zählt nicht gegen die Deckgröße des Ermittlers.</b></string>
+
+    <string name="eztli_resolution_one">(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nVon außen scheint der Tempel seinen Ursprung in der aztekischen Kultur zu haben, aber nachdem wir ins Innere vorgedrungen
+        waren, wurde deutlich, dass diese Gebäude einen anderen, nichtmenschlichen Ursprung haben. Die Ruinen selbst waren
+        lebendig. Die Rillen in den Wänden wirkten wie elektrisch beleuchtet und ein leises Summen von Energie ließ die Hallen
+        vibrieren. Trotz der Schlangenkreaturen konnten wir einen geheimen Durchgang erreichen, der tiefer unter die Erde führte.\n
+    \nIn der zentralen Kammer dieser unterirdischen Hallen fanden wir etwas Wertvolles: eine stählerne Kugel unbekannten Ursprungs,
+        die sanft summte und ein düsteres, blaues Licht ausstrahlte. Sie war behutsam an einem Bronzerahmen angebracht, schien von
+        beinahe religiöser Bedeutung zu sein und uns war sofort klar, dass sie nicht von den Azteken geschaffen worden war.\n
+    \nWir nahmen das Artefakt an uns und ergrif en die Flucht aus den Ruinen. Das Gebäude zerfiel bereits um uns herum, als hätte
+        allein die Kugel es bis dahin noch vor dem Einsturz bewahrt. War sie die Kraftquelle der Ruinen, etwa eine Art Batterie?
+        Was war das nur für ein Gerät, das die Schlangenkreaturen so entschlossen bewachten?\n
+    \nAls wir den Nordrand des Regenwaldes erreichten, wartete dort bereits Maria mit den Wagen auf uns. Wir sahen zu, dass wir
+        schnellstmöglich aus diesem von Schlangenkreaturen befallenen Dschungel herauskamen, solange wir noch konnten.\n
+    \n<b>Ein beliebiger Ermittler muss das Relikt der Zeitalter seinem Deck hinzufügen. Diese Karte zählt nicht gegen die Deckgröße des Ermittlers.</b></string>
+    <string name="eztli_resolution_one_defeated_one"><b>Besiegte Ermittler:</b>\n
+        \nDer Tempel wird wie durch ein Erdbeben in seinen Grundfesten erschüttert und du fällst zu Boden. Schlangenkreaturen
+        erscheinen aus den Schat en um dich herum und kreisen dich ein. Der Gedanke <i>„Das ist also das Ende“</i> blitzt in
+        deinem Kopf auf. Einen Moment lang denkst du darüber nach, wie absurd dein Tod sein wird. Du kannst nur hoffen, dass
+        niemand anderes dumm genug sein wird und den Versuch wagt, diese verfluchten Ruinen zu erkunden.\n
+        \nDie Kreaturen greifen dich an, bevor du reagieren kannst. Du schreist in Todesqual, während ihre rasiermesserscharfen
+        Speere dich durchbohren.\n
+        \n<b>Jeder Ermittler, der besiegt worden ist, wird getötet.</b>\n
+        \n<b>Überlebende Ermittler:</b>\n
+    \n(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nVon außen scheint der Tempel seinen Ursprung in der aztekischen Kultur zu haben, aber nachdem wir ins Innere vorgedrungen
+        waren, wurde deutlich, dass diese Gebäude einen anderen, nichtmenschlichen Ursprung haben. Die Ruinen selbst waren
+        lebendig. Die Rillen in den Wänden wirkten wie elektrisch beleuchtet und ein leises Summen von Energie ließ die Hallen
+        vibrieren. Trotz der Schlangenkreaturen konnten wir einen geheimen Durchgang erreichen, der tiefer unter die Erde führte.\n
+    \nIn der zentralen Kammer dieser unterirdischen Hallen fanden wir etwas Wertvolles: eine stählerne Kugel unbekannten Ursprungs,
+        die sanft summte und ein düsteres, blaues Licht ausstrahlte. Sie war behutsam an einem Bronzerahmen angebracht, schien von
+        beinahe religiöser Bedeutung zu sein und uns war sofort klar, dass sie nicht von den Azteken geschaffen worden war.\n
+    \nWir nahmen das Artefakt an uns und ergrif en die Flucht aus den Ruinen. Das Gebäude zerfiel bereits um uns herum, als hätte
+        allein die Kugel es bis dahin noch vor dem Einsturz bewahrt. War sie die Kraftquelle der Ruinen, etwa eine Art Batterie?
+        Was war das nur für ein Gerät, das die Schlangenkreaturen so entschlossen bewachten?\n
+    \nAls wir den Nordrand des Regenwaldes erreichten, wartete dort bereits Maria mit den Wagen auf uns. Wir sahen zu, dass wir
+        schnellstmöglich aus diesem von Schlangenkreaturen befallenen Dschungel herauskamen, solange wir noch konnten.\n
+    \n<b>Ein beliebiger Ermittler muss das Relikt der Zeitalter seinem Deck hinzufügen. Diese Karte zählt nicht gegen die
+        Deckgröße des Ermittlers.</b></string>
+    <string name="eztli_resolution_one_defeated_two"><b>Besiegte Ermittler:</b>\n
+        \nDer Tempel wird wie durch ein Erdbeben in seinen Grundfesten erschüttert und du fällst zu Boden. Schlangenkreaturen
+        erscheinen aus den Schat en um dich herum und kreisen dich ein. Der Gedanke <i>„Das ist also das Ende“</i> blitzt in
+        deinem Kopf auf. Einen Moment lang denkst du darüber nach, wie absurd dein Tod sein wird. Du kannst nur hoffen, dass
+        niemand anderes dumm genug sein wird und den Versuch wagt, diese verfluchten Ruinen zu erkunden.\n
+        \nPlötzlich zischt eine Stimme aus einiger Entfernung den anderen etwas zu und die Schlangen ziehen sich zögerlich in
+        die Dunkelheit zurück. Du rennst um dein Leben. Du darfst kein Risiko eingehen.\n
+        \n<b>Überlebende Ermittler:</b>\n
+    \n(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nVon außen scheint der Tempel seinen Ursprung in der aztekischen Kultur zu haben, aber nachdem wir ins Innere vorgedrungen
+        waren, wurde deutlich, dass diese Gebäude einen anderen, nichtmenschlichen Ursprung haben. Die Ruinen selbst waren
+        lebendig. Die Rillen in den Wänden wirkten wie elektrisch beleuchtet und ein leises Summen von Energie ließ die Hallen
+        vibrieren. Trotz der Schlangenkreaturen konnten wir einen geheimen Durchgang erreichen, der tiefer unter die Erde führte.\n
+    \nIn der zentralen Kammer dieser unterirdischen Hallen fanden wir etwas Wertvolles: eine stählerne Kugel unbekannten Ursprungs,
+        die sanft summte und ein düsteres, blaues Licht ausstrahlte. Sie war behutsam an einem Bronzerahmen angebracht, schien von
+        beinahe religiöser Bedeutung zu sein und uns war sofort klar, dass sie nicht von den Azteken geschaffen worden war.\n
+    \nWir nahmen das Artefakt an uns und ergrif en die Flucht aus den Ruinen. Das Gebäude zerfiel bereits um uns herum, als hätte
+        allein die Kugel es bis dahin noch vor dem Einsturz bewahrt. War sie die Kraftquelle der Ruinen, etwa eine Art Batterie?
+        Was war das nur für ein Gerät, das die Schlangenkreaturen so entschlossen bewachten?\n
+    \nAls wir den Nordrand des Regenwaldes erreichten, wartete dort bereits Maria mit den Wagen auf uns. Wir sahen zu, dass wir
+        schnellstmöglich aus diesem von Schlangenkreaturen befallenen Dschungel herauskamen, solange wir noch konnten.\n
+    \n<b>Ein beliebiger Ermittler muss das Relikt der Zeitalter seinem Deck hinzufügen. Diese Karte zählt nicht gegen die
+        Deckgröße des Ermittlers.</b></string>
+    <string name="eztli_resolution_two"><b>Besiegte Ermittler:</b>\n
+        \nDer Tempel wird wie durch ein Erdbeben in seinen Grundfesten erschüttert und du fällst zu Boden. Schlangenkreaturen
+        erscheinen aus den Schat en um dich herum und kreisen dich ein. Der Gedanke <i>„Das ist also das Ende“</i> blitzt in
+        deinem Kopf auf. Einen Moment lang denkst du darüber nach, wie absurd dein Tod sein wird. Du kannst nur hoffen, dass
+        niemand anderes dumm genug sein wird und den Versuch wagt, diese verfluchten Ruinen zu erkunden.\n
+        \nDie Kreaturen greifen dich an, bevor du reagieren kannst. Du schreist in Todesqual, während ihre rasiermesserscharfen
+        Speere dich durchbohren.\n
+        \n<b>Alle Ermittler werden getötet.</b>\n
+        \n(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nEs ist nicht meine Art, Dinge nicht zuende zu bringen. Für meine gefallenen Kameraden habe ich es auf mich genommen, den
+        Rest unserer Expedition in diesem Tagebuch festzuhalten.\n
+    \nDie anderen haben es nicht lebend aus dem Tempel geschafft. Ich habe zwei der übrigen Mitglieder der Expedition, José und Andrea, überzeugen können,
+        sich auf die Suche nach den anderen zu machen. Aber jetzt fürchte ich, dass auch diese beiden einem furchtbaren Schicksal zum Opfer gefallen sind.\n
+    \nAber glücklicherweise war es den Preis wert. Während José und Andrea die anderen suchten, schlich ich auf einem anderen Weg in den Tempel.
+        Nach dem, was wir gesehen haben und mit dem Wissen, das wir jetzt haben, kann ich nicht ohne einen Beweis für unsere Entdeckung an die
+        Universität zurückkehren. Solange die Schlangenkreaturen abgelenkt waren, konnte ich zu einem versteckten Durchgang vordringen, der tiefer
+        unter die Erde führte.\n
+    \nIn der zentralen Kammer dieser unterirdischen Hallen fand ich die Vorrichtung. Die Kugel bestand aus einem widernatürlichen Stahl und war
+        behutsam an einem Bronzerahmen befestigt. Sie pulsierte vor Energie in meinen Händen und strahlte ein düsteres, blaues Licht aus. Jeder Narr
+        konnte erkennen, dass sie nicht von den Azteken geschaffen worden sein konnte, aber die anderen Mitglieder der Expedition haben nicht im Ansatz
+        verstanden, welche Bedeutung sie hat. Die Ruinen begannen einzustürzen als ich sie verließ, aber das war unwichtig. Nur noch das Relikt war
+        von Bedeutung.\n
+    \nMit dem Artefakt kehrte ich ins Lager zurück und berichtete den Anderen, dass es Zeit war, aufzubrechen. Als wir den Nordrand des Dschungels
+        erreichten, wartete dort bereits Maria mit den Wagen auf uns. Nun sind wir auf dem Weg nach Texas, wo wir die Grenze zu den Vereinigten Staaten
+        überqueren werden.\n
+    \nEs ist eine Schande, was den anderen zugestoßen ist. Ihr Opfer war aber nicht vergebens. Nun kann meine Arbeit fortgesetzt werden.\n
+    \n– Alejandro Vela</string>
+    <string name="eztli_resolution_three">(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nEs war ein Fehler. Es war alles ein furchtbarer Fehler. Wir konnten nur knapp mit unserem Leben aus dem Tempel fliehen. Die Ruinen selbst waren
+        lebendig. Die Wände schienen zu wissen, dass wir in die Anlage eingedrungen waren, und sie hassten uns für unsere Gegenwart. Sie wollten, dass
+        wir verschwinden. Sie wollten unseren Tod.\n
+        Draußen vor dem Tempel trafen wir uns mit dem bereits wartenden José. Alejandro ist aber nicht bereit, mit leeren Händen nach Hause zurückzukehren
+        und will uns überzeugen, erneut in den Tempel zu gehen. Nun müssen wir entscheiden, was wir als nächstes tun werden.</string>
+    <string name="eztli_resolution_three_defeated_one"><b>Besiegte Ermittler:</b>\n
+    \nDer Tempel wird wie durch ein Erdbeben in seinen Grundfesten erschüttert und du fällst zu Boden. Schlangenkreaturen
+    erscheinen aus den Schat en um dich herum und kreisen dich ein. Der Gedanke <i>„Das ist also das Ende“</i> blitzt in
+    deinem Kopf auf. Einen Moment lang denkst du darüber nach, wie absurd dein Tod sein wird. Du kannst nur hoffen, dass
+    niemand anderes dumm genug sein wird und den Versuch wagt, diese verfluchten Ruinen zu erkunden.\n
+    \nDie Kreaturen greifen dich an, bevor du reagieren kannst. Du schreist in Todesqual, während ihre rasiermesserscharfen
+    Speere dich durchbohren.\n
+    \n<b>Jeder Ermittler, der besiegt worden ist, wird getötet.</b>\n
+    \n<b>Überlebende Ermittler:</b>\n
+    \n(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nEs war ein Fehler. Es war alles ein furchtbarer Fehler. Wir konnten nur knapp mit unserem Leben aus dem Tempel fliehen. Die Ruinen selbst waren
+        lebendig. Die Wände schienen zu wissen, dass wir in die Anlage eingedrungen waren, und sie hassten uns für unsere Gegenwart. Sie wollten, dass
+        wir verschwinden. Sie wollten unseren Tod.\n
+        Draußen vor dem Tempel trafen wir uns mit dem bereits wartenden José. Alejandro ist aber nicht bereit, mit leeren Händen nach Hause zurückzukehren
+        und will uns überzeugen, erneut in den Tempel zu gehen. Nun müssen wir entscheiden, was wir als nächstes tun werden.</string>
+    <string name="eztli_resolution_three_defeated_two"><b>Besiegte Ermittler:</b>\n
+        \nDer Tempel wird wie durch ein Erdbeben in seinen Grundfesten erschüttert und du fällst zu Boden. Schlangenkreaturen
+        erscheinen aus den Schat en um dich herum und kreisen dich ein. Der Gedanke <i>„Das ist also das Ende“</i> blitzt in
+        deinem Kopf auf. Einen Moment lang denkst du darüber nach, wie absurd dein Tod sein wird. Du kannst nur hoffen, dass
+        niemand anderes dumm genug sein wird und den Versuch wagt, diese verfluchten Ruinen zu erkunden.\n
+        \nPlötzlich zischt eine Stimme aus einiger Entfernung den anderen etwas zu und die Schlangen ziehen sich zögerlich in
+        die Dunkelheit zurück. Du rennst um dein Leben. Du darfst kein Risiko eingehen.\n
+        \n<b>Überlebende Ermittler:</b>\n
+    \n(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nEs war ein Fehler. Es war alles ein furchtbarer Fehler. Wir konnten nur knapp mit unserem Leben aus dem Tempel fliehen. Die Ruinen selbst waren
+        lebendig. Die Wände schienen zu wissen, dass wir in die Anlage eingedrungen waren, und sie hassten uns für unsere Gegenwart. Sie wollten, dass
+        wir verschwinden. Sie wollten unseren Tod.\n
+        Draußen vor dem Tempel trafen wir uns mit dem bereits wartenden José. Alejandro ist aber nicht bereit, mit leeren Händen nach Hause zurückzukehren
+        und will uns überzeugen, erneut in den Tempel zu gehen. Nun müssen wir entscheiden, was wir als nächstes tun werden.</string>
+    <string name="eztli_resolution_four">(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nWir haben unsere Entscheidung getroffen. Alejandro hat recht: Wir sind zu weit gekommen um jetzt aufzugeben. Unser Plan ist es, uns neu
+        aufzuteilen und noch einmal in den Tempel gehen. Selbst von hier aus können wir erkennen, dass der Tempel sich verformt und verändert hat.
+        Die Ruinen scheinen wieder in ihren Ruhezustand verfallen zu sein. Mit etwas Glück schaffen wir es dieses Mal…\n
+    \n<b>Die Ermittler müssen Szenario II: Das Verderben von Eztli erneut spielen.</b></string>
+    <string name="eztli_resolution_five">(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
+    \nWir hat en unsere Entscheidung getrof en. Wir würden auf keinen Fall noch einmal einen Fuß in diese Todesfalle setzen. Zum Glück gab
+        es eine Alternative. José hatte TNT aus den Wagen geholt, mehr als genug, um diesen verdammten Ort dem Erdboden gleich zu machen.\n
+    \nIn dieser Nacht hielten wir ein gewaltiges Feuerwerk ab. Der Dschungel protestierte. Vögel stiegen zum Himmel auf, der Boden grollte
+        und hasserfülltes Knurren ertönte rund um unser Lager. Aber das Dynamit hat ganze Arbeit geleistet. Als sich der Staub gelegt hatte,
+        begannen wir damit, die Trümmer nach Gegenständen mit historischer oder kultureller Bedeutung zu durchsuchen, die wir mit uns nach Arkham
+        nehmen könnten.\n
+    \nJosé bemerkte das blaue Licht zuerst, das unter den Überresten des Tempels hervorschimmerte. Das Strahlen wurden von Minute zu Minute
+        intensiver. Wir versuchten die Quelle des Lichtes freizulegen, als es plötzlich blitzte und die Trümmer in der Mitte der Ruine zusammenfielen.
+        Eine Stahlkugel von unbekannter Herkunft lag oben auf dem Geröll und summte sanft. Sie war behutsam an einen Bronzerahmen angebracht und schien
+        von beinahe religiöser Bedeutung zu sein. Das blaue Leuchten aus dem Gerät wurde dunkler, als ich es berührte. So ein Gerät konnte auf keinen
+        Fall von den Azteken geschaffen worden sein.\n
+    \nWir nahmen das Artefakt mit und ließen den schwelenden Tempel hinter uns. Wir waren schon zu lange im Dschungel und hatten nicht den
+        geringsten Zweifel daran, dass wir hier schon lange nicht mehr willkommen waren.\n
+    \nUm uns herum zischte der Dschungel. Am Boden wimmelte es von sich schlängelnden und kriechenden Schlangen. In der Dunkelheit hörten
+        wir Rufe in einer uns unbekannten Sprache. Es blieb keine Zeit, das Lager abzubrechen, wir rannten, sobald wir die Gelegenheit dazu sahen.
+        Ein schwarz gefiederter Pfeil drang in Andreas Kehle. Ihr verzerrtes Gesicht trägt nun für die Ewigkeit die Grimasse ihres überraschten Schreis.
+        José wurde von einer riesigen Boa ergriffen, während wir in nördliche Richtung in die Flussschlucht flohen. Sein Genick brach, bevor wir
+        irgendetwas tun konnten.\n
+    \nAls wir den Nordrand des Dschungels erreichten, wartete dort bereits Maria mit den Wagen auf uns. Wir hielten nicht an, bis wir Mexiko-Stadt
+        erreicht hatten. Selbst jetzt fühle ich mich nicht sicher. Aber wer könnte das schon, nachdem man das gesehen hat, was wir gesehen haben?\n
+    \nZur Hölle mit Eztli und zur Hölle mit diesem verdammten Ort.\n
+    \n<b>Ein beliebiger Ermittler muss das Relikt der Zeitalter seinem Deck hinzufügen. Diese Karte zählt nicht gegen die
+        Deckgröße des Ermittlers.</b></string>
+
 </resources>

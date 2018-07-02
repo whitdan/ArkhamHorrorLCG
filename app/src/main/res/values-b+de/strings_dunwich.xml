@@ -166,7 +166,7 @@
     <string name="essex_thing_two">-3. Falls die Probe misslingt, wähle für jeden Punkt, um den sie misslingt, eine
         Karte von deiner Hand und lege sie ab.</string>
 
-    <string name="blood_skull_one">-1 für jeden Ort im Spiel ohne Begegnungskarte darunter (max. -4).</string>
+    <string name="blood_skull_one">-1 für jeden Ort im Spiel ohne Begegnungskarte darunter (maximal -4).</string>
     <string name="blood_skull_two">-1 für jeden Ort im Spiel ohne Begegnungskarte darunter.</string>
     <string name="blood_cultist_one">-2. Falls die Probe misslingt, lege 1 Hinweis aus dem Markervorrat auf deinen
         Ort.</string>
@@ -186,9 +186,9 @@
     <string name="undimensioned_cultist_two">Enthülle einen weiteren Marker. Falls diese Probe misslingt, nimm 1
         Horror und 1 Schaden.</string>
     <string name="undimensioned_tablet_one">0. Du musst entweder alle Hinweismarker von einer Brut von Yog-Sothoth im
-        Spiel entfernen (min. 1) oder der Modifikator dieses Markers ist stattdessen -4.</string>
+        Spiel entfernen (mindestens 1) oder der Modifikator dieses Markers ist stattdessen -4.</string>
     <string name="undimensioned_tablet_two">0. Du musst entweder alle Hinweismarker von einer Brut von Yog-Sothoth im
-        Spiel entfernen (min. 1) oder diese Probe misslingt automatisch.</string>
+        Spiel entfernen (mindestens 1) oder diese Probe misslingt automatisch.</string>
     <string name="undimensioned_thing_one">-3. Falls dieser Marker während eines Angriffs- oder Entkommens-Versuchs
         gegen eine Brut von Yog-Sothoth enthüllt wird, greift diese dich sofort an.</string>
     <string name="undimensioned_thing_two">-5. Falls dieser Marker während eines Angriffs- oder Entkommens-Versuchs
@@ -202,14 +202,14 @@
         auf, die zu dieser Probe beigetragen wurde.</string>
     <string name="doom_cultist_two">Enthülle einen weiteren Marker. Hebe die Effekte und Symbole jeder Fertigkeitskarte
         auf, die zu dieser Probe beigetragen wurde.</string>
-    <string name="doom_tablet_one">-2 (-4 stattdessen, falls es Agenda 2 ist).</string>
-    <string name="doom_tablet_two">-3. Falls es Agenda 2 ist, misslingt die Probe stattdessen automatisch.</string>
+    <string name="doom_tablet_one">-2 (-4 stattdessen, falls Agenda 2 aktiv ist).</string>
+    <string name="doom_tablet_two">-3. Falls Agenda 2 aktiv ist, misslingt die Probe stattdessen automatisch.</string>
     <string name="doom_thing_one">-X. Lege die obersten 2 Karten deines Decks ab. X ist die Summe der aufgedruckten
         Kosten der abgelegten Karten.</string>
     <string name="doom_thing_two">-X. Lege die obersten 3 Karten deines Decks ab. X ist die Summe der aufgedruckten
         Kosten der abgelegten Karten.</string>
 
-    <string name="lost_skull_one">-1 für jeden <b><i>Außerdimensional</i></b>-Ort im Spiel (max -5).</string>
+    <string name="lost_skull_one">-1 für jeden <b><i>Außerdimensional</i></b>-Ort im Spiel (maximal -5).</string>
     <string name="lost_skull_two">-1 für jeden <b><i>Außerdimensional</i></b>-Ort im Spiel.</string>
     <string name="lost_cultist_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, lege nach der Probe
         Karten oben vom Begegnungsdeck ab, bis ein Ort abgelegt wird. Bringe diesen Ort ins Spiel und bewege dich
@@ -223,7 +223,7 @@
         an.</string>
     <string name="lost_thing_one">-X. X ist der Schleierwert deines Ortes. Falls die Probe misslingt und dein Ort
         <b><i>Außerdimensional</i></b> ist, lege ihn ab.</string>
-    <string name="lost_thing_two">-X. X ist zwei mal der Schleierwert deines Ortes. Falls die Probe misslingt und dein
+    <string name="lost_thing_two">-X. X ist der doppelte Schleierwert deines Ortes. Falls die Probe misslingt und dein
         Ort <b><i>Außerdimensional</i></b> ist, lege ihn ab.</string>
 
 
