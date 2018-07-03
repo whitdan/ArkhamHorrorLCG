@@ -193,7 +193,7 @@
 
     <string name="restless_poison_one_single_investigator">investigateur peut utiliser un médicament pour retirer
 		une faiblesse Empoisonné de leur deck.</string>
-	<string name="restless_poison_one_mutiple_investigator">investigateurs peuvent utiliser un médicament pour retirer
+	<string name="restless_poison_one_multiple_investigators">investigateurs peuvent utiliser un médicament pour retirer
 		une faiblesse Empoisonné de leur deck.</string>
     <string name="restless_poison_counter">Médicament utilisé</string>
     <string name="restless_poisoned_heading">Investigateur toujours empoisonné</string>
@@ -358,6 +358,92 @@
 		nord de la forêt. José, notre cartographe, gardera le campement jusqu’à notre
 		retour. Nous sommes livrés à nous-mêmes ; mais au moins, nous avons une solution
 		de repli au cas où les choses tourneraient mal…</string>
+		
+		
+		<string name="threads_introduction_one">Ichtaca dort dans votre salon cette nuit. L’esprit tiraillé entre
+		inquiétude et incrédulité, vous ne parvenez pas à dormir. Son histoire est absurde mais
+		vous vous sentez obligé d’y croire malgré tout. Vous avez su que la relique des ruines
+		eztli cachait quelque chose dès que vous avez posé les yeux dessus. Quand vous sortez
+		de votre chambre le lendemain matin, votre « invitée » est assise à la table de votre
+		salle à manger, les bras croisés sur la poitrine. Ses yeux perçants scrutent le moindre de
+		vos mouvements tel un oiseau fixant sa proie. Aucune amabilité n’est échangée. « Où
+		se trouve la relique maintenant  ?  » demande impatiemment Ichtaca. «  Où l’avez-vous
+		emportée  ?  » Vous lui expliquez que la relique est en sécurité entre de bonnes
+		mains. Elle secoue la tête, les poings serrés de frustration. « Je vous assure que ce n’est
+		pas le cas. »\n
+    \nLaissant pour l’instant de côté vos nombreuses questions, vous
+		appelez votre contact au musée de l’Université Miskatonic. Malgré l’heure matinale,
+		le Dr Horowitz devrait être dans son bureau, se préparant à la longue journée qui
+		l’attend. L’opératrice vous met en relation après une courte attente. Elli vous salue sur
+		un ton inhabituellement sec, d’une voix tremblante. À peine avez-vous mentionné la
+		relique qu’elle s’esclaffe. « Pas vous aussi ! M. Walsted a pratiquement démoli la porte
+		de mon bureau, et deux journalistes m’ont harcelée toute la matinée ! »\n
+    \nVous lui demandez ce qui ne va pas et elle pousse un long soupir. « La relique a disparu »,
+		explique-t-elle. « Aucun des agents de sécurité ne sait ce qui s’est passé. Une minute avant
+		elle était dans sa vitrine, la suivante elle avait disparu. » Elli s’adresse soudain à quelqu’un
+		d’autre, « Un moment s’il vous plaît ! Je suis au téléphone ! » Elle s’excuse platement et
+		raccroche dans la foulée.\n
+    \nBien évidemment, Alejandro ne répond pas au téléphone et aucun de ses collègues ne
+		l’a vu depuis hier. « Vous me croyez maintenant ? » demande Ichtaca en se levant et
+		en rassemblant ses affaires. « Nous avons perdu assez de temps. Retrouvez la relique et
+		rejoignez-moi ici ce soir. Ne me suivez <i>surtout</i> pas. »</string>
+    <string name="threads_introduction_two">Ichtaca dort dans votre salon cette nuit. L’esprit tiraillé entre
+		inquiétude et incrédulité, vous ne parvenez pas à dormir. Son histoire est absurde mais
+		vous vous sentez obligé d’y croire malgré tout. Vous avez su que la relique des ruines
+		eztli cachait quelque chose dès que vous avez posé les yeux dessus. Quand vous sortez
+		de votre chambre le lendemain matin, votre « invitée » est assise à la table de votre
+		salle à manger, les bras croisés sur la poitrine. Ses yeux perçants scrutent le moindre de
+		vos mouvements tel un oiseau fixant sa proie. Aucune amabilité n’est échangée. « Où
+		se trouve la relique maintenant  ?  » demande impatiemment Ichtaca. «  Où l’avez-vous
+		emportée  ?  » Vous lui expliquez que la relique est en sécurité entre de bonnes
+		mains. Elle secoue la tête, les poings serrés de frustration. « Je vous assure que ce n’est
+		pas le cas. »\n
+    \nLaissant pour l’instant de côté vos nombreuses questions, vous
+		appelez le bureau d’Harlan à l’université. Bien que le soleil pointe à peine à l’horizon,
+		vous savez que l’homme est un lève-tôt. L’opératrice vous met en relation après une
+		courte attente. La voix d’Harlan est sèche et hésitante. Il vous coupe la parole sitôt que
+		vous mentionnez la relique. « Non ! » s’exclame-t-il. « Ils écoutent. Ils savent que
+		je la garde ici. Ils ont déjà pris Alejandro. » Vous tentez de le calmer pour qu’il vous
+		explique de quoi il retourne, mais il abrège la conversation. « Je dois y aller. Ils sont
+		là ! – » La ligne est coupée. \n
+    \nBien évidemment, Alejandro ne répond pas au téléphone et aucun de ses collègues ne
+		l’a vu depuis hier. « Vous me croyez maintenant ? » demande Ichtaca en se levant et
+		en rassemblant ses affaires. « Nous avons perdu assez de temps. Retrouvez la relique et
+		rejoignez-moi ici ce soir. Ne me suivez <i>surtout</i> pas. »</string>
+    <string name="threads_introduction_option_one">« Vous n’irez nulle part avant de m’avoir expliqué ce qui se passe. »</string>
+    <string name="threads_introduction_option_two">« Comme vous voulez. »</string>
+    <string name="threads_introduction_three"> Ichtaca serre les dents et s’arrête un instant. Vous vous attendez à ce
+		qu’elle refuse de vous répondre et s’en aille mais, curieusement, elle se radoucit. D’après
+		elle, son peuple a de tout temps protégé la relique des intrus qui souhaitaient l’utiliser
+		à des fins néfastes. Ses propos sont cryptiques, elle parle par énigmes et par images,
+		tout en refusant d’expliquer d’où vient son peuple et comment il a réussi à rester caché
+		aussi longtemps. Quand vous demandez à en savoir plus sur la relique, elle affirme
+		seulement que celle-ci contrôle le flux du temps et qu’il ne faut pas y toucher.\n
+    \n« Elle doit revenir à sa véritable place », explique-t-elle. Son regard est déterminé et
+		inébranlable. « Vous comprenez ? Elle ne doit pas tomber entre de mauvaises mains.
+		Si vous m’aider à la retrouver, je vous aiderai en retour. Promettez-moi juste de <i>ne pas
+		l’utiliser</i>. »\n
+    \n<b>Souvenez-vous que « vous avez écouté l’histoire d’Ichtaca ».</b>\n
+    \n<b>Ajoutez 1 pion Cultiste à la réserve du Chaos pour le reste de la campagne</b></string>
+    <string name="threads_introduction_four">Avec une vitesse déconcertante, Ichtaca bande son arc richement
+décoré et vous claque la porte au nez en sortant.\n
+    \n<b>Souvenez-vous que « Ichtaca est partie sans vous ».</b></string>
+    <string name="threads_introduction_five">Avec une vitesse déconcertante, Ichtaca bande son arc richement
+décoré et vous claque la porte au nez en sortant.\n
+    \n<b>Souvenez-vous que « Ichtaca est partie sans vous ».</b></string>
+    \nUne fois Ichtaca partie, vous pesez prudemment ses mots et vous
+		vous souvenez des événements qui ont mené à cette situation. Vous n’avez pas fait
+		confiance à Alejandro concernant la relique des Eztli, et vous avez laissé Ichtaca partir
+			sans poser la moindre question. Êtes-vous en train de devenir paranoïaque ? …</string>
+    <string name="threads_introduction_option_three">« Nous devrions nous méfier d’eux. »</string>
+    <string name="threads_introduction_option_four">« Après tout, je devrais peut-être les écouter... »</string>
+    <string name="threads_introduction_six"><b>Retirez tous les pions Cultiste et Tablette de la
+		réserve du Chaos et remplacez-les par 1 pion Chose Ancienne.</b>\n
+    \n<b>Pour le reste de la
+		campagne, aucun investigateur ne peut inclure Alejandro Vela ou Ichtaca
+		dans son deck. Chaque fois qu’un investigateur se voit offrir la possibilité
+		d’inclure l’un ou l’autre, chaque investigateur reçoit 2 points d’expérience
+		à la place.</b></string>
 
 
     <!--Scenario setup-->
@@ -391,11 +477,103 @@
 	<string name="eztli_additional_doom_multiple">fatalités sur l’Entrée des Ruines.\n\n</string>
 	<string name="eztli_low_rations_single_investigator">investigateur commence la partie avec 3 ressources de
 		moins.\n\n</string>
-	<string name="eztli_low_rations_multiple_investigator">investigateurs commencent la partie avec 3 ressources de
+	<string name="eztli_low_rations_multiple_investigators">investigateurs commencent la partie avec 3 ressources de
 		moins.\n\n</string>
     <string name="eztli_additional_lead">Celui par Ursula Downs, Leo Anderson ou Monterey Jack qui a été choisi pour être
         le chef de l’expédition dans le Scénario 1 commence le Scénario II comme investigateur principal.</string>
-
+	
+	<string name="threads_sets">Les Fils du Destin,
+		Confrérie Pnakotique, Les Masques de Minuit, Portes Closes, Maigres Bêtes de
+		la Nuit et Sombre Culte.\n
+    \nQuand vous réunissez les cartes du set de rencontre Les Masques de Minuit, ne
+		prenez que les 5 cartes Traîtrise (2x Fausse Piste et 3x Ombre Chasseresse) ainsi
+		que les lieux suivants : Quartier Nord, Centre-Ville (Première Banque d’Arkham),
+		Quartier Est, Université Miskatonic et Quartier de la Rivière</string>
+    <string name="threads_locations">Mettez en jeu le Quartier Nord, le Centre-Ville, le Quartier Est, l’Université
+		Miskatonic, le Quartier de la Rivière, le Restaurant de Velma et la Boutique de
+	Curiosités.\n
+    \nChaque investigateur débute la partie dans le Quartier de la Rivière.\n</string>
+    <string name="threads_set_aside">L’Hôtel de Ville, Ichtaca (La Gardienne Oubliée) et le Journal de l’Expédition.\n
+    \nAvant de piocher les mains de départ, cherchez Alejandro Vela et la Relique des Âges dans la collection et dans le deck de chaque joueur 
+		et mettez-les de côté, hors jeu.\n</string>
+    <string name="threads_additional_one"> Retirez les cartes Acte suivantes du deck « a/b » :\n
+    \n\t\u2022 Harlan est en Danger !, les deux
+		exemplaires de La Malédiction d’Harlan et l’un des deux exemplaires de
+		À l’Exposition, pris au hasard.\n
+    \nLes investigateurs doivent choisir l’une des options suivantes et ajuster le
+		contenu du deck « c/d » en conséquence :\n
+    \n\t\u2022 Si vous souhaitez aller voir la police pour l’informer de la disparition
+		d’Alejandro, retirez les cartes Acte suivantes du deck «  c/d  »  : À la
+		Recherche d’Alejandro, les deux exemplaires de Des Amis Haut Placés et
+		l’un des deux exemplaires de Au Poste, pris au hasard.\n
+    \n\t\u2022 Si vous préférez chercher Alejandro vous-même, retirez les cartes Acte
+		suivantes du deck « c/d » à la place : Service des Personnes Disparues, les
+		deux exemplaires de Au Poste et l’un des deux exemplaires de Des Amis
+		Haut Placés, pris au hasard. \n
+    \nRetirez les cartes Acte suivantes du deck « e/f » :\n
+    \n\t\u2022  L’Épreuve de la Chasseresse, les deux exemplaires de La Grotte des Ténèbres et l’un des deux exemplaires d’Étranges Reliques,
+		pris au hasard.\n</string>
+    <string name="threads_additional_two">Retirez les cartes Acte suivantes du deck « a/b » :\n
+   \n\t\u2022 Harlan est en Danger !, les deux
+		exemplaires de La Malédiction d’Harlan et l’un des deux exemplaires de
+		À l’Exposition, pris au hasard.\n
+   \nLes investigateurs doivent choisir l’une des options suivantes et ajuster le
+		contenu du deck « c/d » en conséquence :\n
+     \n\t\u2022 Si vous souhaitez aller voir la police pour l’informer de la disparition
+		d’Alejandro, retirez les cartes Acte suivantes du deck «  c/d  »  : À la
+		Recherche d’Alejandro, les deux exemplaires de Des Amis Haut Placés et
+		l’un des deux exemplaires de Au Poste, pris au hasard.\n
+    \n\t\u2022 Si vous préférez chercher Alejandro vous-même, retirez les cartes Acte
+		suivantes du deck « c/d » à la place : Service des Personnes Disparues, les
+		deux exemplaires de Au Poste et l’un des deux exemplaires de Des Amis
+		Haut Placés, pris au hasard. \n
+     \nRetirez les cartes Acte suivantes du deck « e/f » :\n
+    \n\t\u2022 L’Enquête de la Gardienne, les deux exemplaires
+		d’Étranges Reliques et l’un des deux exemplaires de La Grotte des
+		Ténèbres, pris au hasard.\n</string>
+    <string name="threads_additional_three">Retirez les cartes Acte suivantes du deck « a/b » :\n
+    \n\t\u2022 La Relique a Disparu !,
+		les deux exemplaires de À l’Exposition et l’un des deux exemplaires de La
+		Malédiction d’Harlan, pris au hasard\n
+    \nLes investigateurs doivent choisir l’une des options suivantes et ajuster le
+		contenu du deck « c/d » en conséquence :\n
+    \n\t\u2022 Si vous souhaitez aller voir la police pour l’informer de la disparition
+d’Alejandro, retirez les cartes Acte suivantes du deck «  c/d  »  : À la
+Recherche d’Alejandro, les deux exemplaires de Des Amis Haut Placés et
+l’un des deux exemplaires de Au Poste, pris au hasard.\n
+    \n\t\u2022 Si vous préférez chercher Alejandro vous-même, retirez les cartes Acte
+suivantes du deck « c/d » à la place : Service des Personnes Disparues, les
+deux exemplaires de Au Poste et l’un des deux exemplaires de Des Amis
+Haut Placés, pris au hasard. \n
+   \nRetirez les cartes Acte suivantes du deck « e/f » :\n
+    \n\t\u2022  L’Épreuve de la Chasseresse, les deux exemplaires de La Grotte des Ténèbres et l’un des deux exemplaires d’Étranges Reliques,
+		pris au hasard.\n</string>
+    <string name="threads_additional_four">Retirez les cartes Acte suivantes du deck « a/b » :\n
+    \n\t\u2022 La Relique a Disparu !,
+		les deux exemplaires de À l’Exposition et l’un des deux exemplaires de La
+		Malédiction d’Harlan, pris au hasard\n
+    \nLes investigateurs doivent choisir l’une des options suivantes et ajuster le
+		contenu du deck « c/d » en conséquence :\n
+    \n\t\u2022 Si vous souhaitez aller voir la police pour l’informer de la disparition
+d’Alejandro, retirez les cartes Acte suivantes du deck «  c/d  »  : À la
+Recherche d’Alejandro, les deux exemplaires de Des Amis Haut Placés et
+l’un des deux exemplaires de Au Poste, pris au hasard.\n
+    \n\t\u2022 Si vous préférez chercher Alejandro vous-même, retirez les cartes Acte
+suivantes du deck « c/d » à la place : Service des Personnes Disparues, les
+deux exemplaires de Au Poste et l’un des deux exemplaires de Des Amis
+Haut Placés, pris au hasard. \n
+   \nRetirez les cartes Acte suivantes du deck « e/f » :\n
+   \n\t\u2022 L’Enquête de la Gardienne, les deux exemplaires
+		d’Étranges Reliques et l’un des deux exemplaires de La Grotte des
+		Ténèbres, pris au hasard.\n</string>
+    <string name="threads_rules_heading">Trois Actes, Trois Fils</string>
+    <string name="threads_rules">Ce scénario contient trois decks Acte différents – un deck «  a/b  », un deck
+« c/d » et un deck « e/f ». Chacun de ces decks Acte est construit séparément en
+suivant l’ordre numérique, comme d’habitude. Lors du scénario, les trois decks
+Acte seront en jeu et les joueurs auront le droit de choisir quels actes avancer et
+lesquels ignorer. Les textes des trois actes sont considérés comme actifs à tout
+moment. Vous n’aurez peut-être pas le temps d’accomplir les trois tâches, alors
+choisissez judicieusement quelles pistes suivre.</string>
 
     <!--Scenario resolutions-->
     <string name="untamed_no_resolution">Mercredi 1er juillet 1925\n
