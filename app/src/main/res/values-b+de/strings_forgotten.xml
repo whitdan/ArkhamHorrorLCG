@@ -161,9 +161,8 @@
 
     <string name="restless_not_low">Die Ermittler haben genug Proviant.</string>
     <string name="restless_low_one">Die Ermittler haben nicht mehr genug Proviant. Wählt</string>
-    <string name="restless_investigator">Ermittler, der den folgenden Absatz lesen muss:</string>
-    <string name="restless_investigators">Ermittler, die den folgenden Absatz lesen müssen:</string>
-    <string name="restless_low_two">\n</string>
+    <string name="restless_low_two_single_investigator">Ermittler, der den folgenden Absatz lesen muss:</string>
+    <string name="restless_low_two_multiple_investigator">Ermittler, die den folgenden Absatz lesen müssen:</string>
     <string name="restless_low">Eigentlich hat en wir angenommen, unser Proviant und die Wasservorräte würden für alle
         reichen, aber wir haben bereits zu viel davon auf dieser Reise verbraucht. Als die Sonne aufging und es Zeit zum
         Essen war, mussten wir feststellen, dass wir bereits keinen Proviant mehr hatten.\n</string>

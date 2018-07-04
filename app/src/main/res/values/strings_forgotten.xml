@@ -86,7 +86,7 @@
     <string name="gasoline">Gasoline</string>
     <string name="pocketknife">Pocketknife</string>
     <string name="pickaxe">Pickaxe</string>
-    <string name="no_supplies">No supplies</string>
+    <string name="no_supplies">You have no supplies.</string>
 
 
     <!--Campaign log-->
