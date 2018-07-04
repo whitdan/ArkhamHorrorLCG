@@ -121,5 +121,8 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.YigsFury = 0;
         globalVariables.Harbinger = -1;
         globalVariables.IchtacasTale = 0;
+        globalVariables.MissingRelic = 0;
+        globalVariables.MissingAlejandro = 0;
+        globalVariables.MissingIchtaca = 0;
     }
 }

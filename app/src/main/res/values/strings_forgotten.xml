@@ -14,6 +14,7 @@
     <string name="forgotten_interlude_three">Interlude 3: The Jungle Beckons</string>
     <string name="forgotten_interlude_four">Interlude 4: Those Held Captive</string>
     <string name="forgotten_interlude_five">Interlude 5: The Darkness</string>
+    <string name="forgotten_resupply">Resupply Point</string>
     <string name="forgotten_epilogue">Epilogue</string>
 
 
@@ -27,6 +28,14 @@
     <string name="harbinger_damage">Damage on the Harbinger of Valusia: </string>
     <string name="eztli_resolution_three_option_one">“We can’t stop now—we have to go back inside!”</string>
     <string name="eztli_resolution_three_option_two">“It’s too dangerous. This place must be destroyed.”</string>
+    <string name="act_ones_completed">Act 1 cards completed: </string>
+    <string name="act_3b_completed">Act 3b completed</string>
+    <string name="act_3d_completed">Act 3d completed</string>
+    <string name="act_3f_completed">Act 3f completed</string>
+    <string name="xp_available">XP available</string>
+    <string name="remove_poisoned">Remove Poisoned weakness (3XP)</string>
+    <string name="remove_physical">Remove physical trauma (5XP)\n(Current trauma:</string>
+    <string name="remove_mental">Remove mental trauma (5XP)\n(Current trauma:</string>
 
 
     <!--Supplies-->
@@ -60,6 +69,9 @@
     <string name="binoculars_choose">Binoculars (2pts)</string>
     <string name="chalk_choose">Chalk (2pts)</string>
     <string name="pendant_choose">Pendant (1pt)</string>
+    <string name="gasoline_choose">Gasoline (1pt)</string>
+    <string name="pocketknife_choose">Pocketknife (2pts)</string>
+    <string name="pickaxe_choose">Pickaxe (2pts)</string>
     <string name="provisions">Provisions</string>
     <string name="medicine">Medicine</string>
     <string name="rope">Rope</string>
@@ -71,6 +83,9 @@
     <string name="binoculars">Binoculars</string>
     <string name="chalk">Chalk</string>
     <string name="pendant">Pendant</string>
+    <string name="gasoline">Gasoline</string>
+    <string name="pocketknife">Pocketknife</string>
+    <string name="pickaxe">Pickaxe</string>
     <string name="no_supplies">No supplies</string>
 
 
@@ -90,6 +105,13 @@
         have earned Alejandro’s trust.\n\n</string>
     <string name="custody_harlan">The investigators gave custody of the relic to Harlan Earnstone.\n\nAlejandro is
         continuing his research on his own.\n\n</string>
+    <string name="forging_own_path">You are forging your own path.\n\n</string>
+    <string name="relic_missing">The relic is missing.\n\n</string>
+    <string name="found_relic">The investigators found the missing relic.\n\n</string>
+    <string name="alejandro_missing">Alejandro is missing.\n\n</string>
+    <string name="rescued_alejandro">The investigators rescued Alejandro.\n\n</string>
+    <string name="ichtaca_dark">Ichtaca is in the dark.\n\n</string>
+    <string name="bond_ichtaca">The investigators forged a bond with Icthaca.\n\n</string>
 
     <!--Edit log-->
     <string name="yigs_fury_heading">Yig’s Fury</string>
@@ -99,6 +121,12 @@
     <string name="harbinger_heading">Harbinger of Valusia</string>
     <string name="relic_heading">Relic of Ages</string>
     <string name="custody_heading">Custody of the Relic</string>
+    <string name="ichtaca_tale_heading">Ichtaca’s Tale</string>
+    <string name="listened_ichtaca">You listened to Ichtaca’s tale.</string>
+    <string name="ichtaca_left">Ichtaca left without you.</string>
+    <string name="missing_relic_heading">Missing Relic</string>
+    <string name="missing_alejandro_heading">Missing Alejandro</string>
+    <string name="missing_ichtaca_heading">Missing Ichtaca</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X is the number of vengeance points in the victory display.</string>
@@ -117,6 +145,15 @@
     <string name="eztli_cultist_tablet_two">–X. X is the total amount of doom on locations in play.</string>
     <string name="eztli_thing_one">Reveal another chaos token. If you fail, place 1 doom on your location.</string>
     <string name="eztli_thing_two">Reveal another chaos token. Place 1 doom on your location.</string>
+
+    <string name="threads_skull_one">–X. X is the highest number of doom on a <b><i>Cultist</i></b> enemy.</string>
+    <string name="threads_skull_two">–X. X is the total number of doom in play.</string>
+    <string name="threads_cultist_one">–2. If you do not succeed by at least 1, take 1 damage.</string>
+    <string name="threads_cultist_two">–2. If you do not succeed by at least 2, take 1 direct damage.</string>
+    <string name="threads_tablet_one">–2. If you do not succeed by at least 1, place 1 doom on the nearest <b><i>Cultist</i></b> enemy.</string>
+    <string name="threads_tablet_two">–2. If you do not succeed by at least 2, place 1 doom on each <b><i>Cultist</i></b> enemy.</string>
+    <string name="threads_thing_one">–2. If you fail, lose 1 of your clues.</string>
+    <string name="threads_thing_two">–3. If you fail, lose 1 of your clues.</string>
 
 
     <!--Campaign introduction-->
@@ -703,5 +740,29 @@
         seen?\n
     \nTo hell with the Eztli and to hell with this forsaken place.\n
     \n<b>One investigator must add the Relic of Ages to his or her deck.</b></string>
+
+    <string name="threads_resolution">You arrive back at your house and take stock of the situation. Your
+        investigation throughout the city has uncovered the existence of a secret cabal within Arkham. From what you
+        can tell, they call themselves the Brotherhood, and they seem to know more about the Eztli relic and
+        Alejandro’s previous expedition than even you do. Their methods are secret and furtive, and their motives
+        elude you still. However, one piece of vital information has come to light.\n
+    \n“They seek a place known as the Nexus of N’kai,” Ichtaca claims. A map of Central America lies on the table
+        before you, marked with the previous expedition’s trail. “I have heard of this place, but its exact location
+        is not known to me.” Once again, your mysterious guide appears to know more than she lets on.\n
+    \nWith no other leads to follow, you are left with no choice. Once more you must journey into uncharted territory
+        in search of answers…but will anyone return this time?\n
+    \n<b>The lead investigator earns the Expedition Journal card and may include it in his or her deck.</b></string>
+    <string name="threads_resolution_one_one">If the Relic of Ages is not already part of an investigator’s deck, any
+        one investigator must choose to include it in his or her deck. For the remainder of the campaign, anytime the
+        owner of the Relic of Ages leaves the campaign for any reason, choose another investigator and add it to that
+        investigator’s deck.\n\n</string>
+    <string name="threads_resolution_one_two">If the Relic of Ages is part of an investigator’s deck, remove it
+        from that investigator’s deck for the remainder of the campaign.\n\n</string>
+    <string name="threads_resolution_two_one">If Alejandro Vela is not already part of an investigator’s deck, any
+        one investigator may choose to include him in his or her deck.\n\n</string>
+    <string name="threads_resolution_two_two"> If Alejandro Vela is part of an investigator’s deck, remove it from
+        that investigator’s deck for the remainder of the campaign.\n\n</string>
+    <string name="threads_resolution_three_one">Any one investigator may choose to include Ichtaca (The Forgotten
+        Guardian) in his or her deck.</string>
 
 </resources>

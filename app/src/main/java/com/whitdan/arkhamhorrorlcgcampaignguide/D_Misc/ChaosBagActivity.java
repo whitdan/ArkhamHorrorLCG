@@ -223,7 +223,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                 }
                 break;
             case 4:
-                switch(globalVariables.CurrentScenario){
+                switch (globalVariables.CurrentScenario) {
                     case 1:
                         if (globalVariables.Ichtaca > 0) {
                             box.setChecked(true);
@@ -545,7 +545,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 break;
                         }
                     }
-                    if(globalVariables.CurrentScenario == 9 || scenario > 9){
+                    if (globalVariables.CurrentScenario == 9 || scenario > 9) {
                         switch (globalVariables.CurrentDifficulty) {
                             case 0:
                                 chaosbag.add(5);
@@ -576,6 +576,19 @@ public class ChaosBagActivity extends AppCompatActivity {
                     if (scenario > 7) {
                         if (globalVariables.Custody == 1) {
                             chaosbag.add(13);
+                        }
+                    }
+                    if (scenario > 8 || globalVariables.CurrentScenario == 8) {
+                        if (globalVariables.IchtacasTale == 1) {
+                            chaosbag.add(12);
+                        }
+                        if (globalVariables.IchtacasTale == 4) {
+                            for (int i = chaosbag.size() - 1; i >= 0; i--) {
+                                if (chaosbag.get(i) == 12 || chaosbag.get(i) == 13) {
+                                    chaosbag.remove(i);
+                                }
+                            }
+                            chaosbag.add(14);
                         }
                     }
                     break;
@@ -916,7 +929,7 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     private void setupScenarioCard(Activity activity) {
         LinearLayout scenarioLayout = activity.findViewById(R.id.scenario_card_layout);
-        if ((globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 1) || globalVariables
+        if ((globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 10) || globalVariables
                 .CurrentCampaign == 1000) {
             scenarioLayout.setVisibility(GONE);
         }
@@ -1198,7 +1211,7 @@ public class ChaosBagActivity extends AppCompatActivity {
                 break;
             // Forgotten Age
             case 4:
-                switch(globalVariables.CurrentScenario){
+                switch (globalVariables.CurrentScenario) {
                     case 1:
                         if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
                             skull.setText(R.string.untamed_skull_one);
@@ -1224,6 +1237,19 @@ public class ChaosBagActivity extends AppCompatActivity {
                             skull.setText(R.string.eztli_skull_two);
                             cultistTablet.setText(R.string.eztli_cultist_tablet_two);
                             thing.setText(R.string.eztli_thing_two);
+                        }
+                        break;
+                    case 8:
+                        if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
+                            skull.setText(R.string.threads_skull_one);
+                            cultist.setText(R.string.threads_cultist_one);
+                            tablet.setText(R.string.threads_tablet_one);
+                            thing.setText(R.string.threads_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3) {
+                            skull.setText(R.string.threads_skull_two);
+                            cultist.setText(R.string.threads_cultist_two);
+                            tablet.setText(R.string.threads_tablet_two);
+                            thing.setText(R.string.threads_thing_two);
                         }
                         break;
                 }

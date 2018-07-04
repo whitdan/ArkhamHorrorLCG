@@ -29,6 +29,7 @@ import android.widget.Toast;
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.CampaignFinishedActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.CampaignLogActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc.ChooseSuppliesActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.CampaignEntry;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.InvestigatorEntry;
@@ -76,6 +77,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         Typeface arnopro = Typeface.createFromAsset(getAssets(), "fonts/arnopro.otf");
         Typeface arnoprobold = Typeface.createFromAsset(getAssets(), "fonts/arnoprobold.otf");
         Typeface arnoproitalic = Typeface.createFromAsset(getAssets(), "fonts/arnoproitalic.otf");
+        Typeface arnoprobolditalic = Typeface.createFromAsset(getAssets(), "fonts/arnoprobolditalic.otf");
         Typeface wolgastbold = Typeface.createFromAsset(getAssets(), "fonts/wolgastbold.otf");
         TextView title = findViewById(R.id.current_scenario_name);
         title.setTypeface(teutonic);
@@ -273,6 +275,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         resolutionTwo.setVisibility(GONE);
                         resolutionThree.setVisibility(VISIBLE);
                         break;
+                    case 8:
+                        resolutionTwo.setVisibility(GONE);
+                        break;
                 }
                 break;
         }
@@ -287,8 +292,10 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         // Setup all additional views (mostly additional checkboxes) if required for the scenario
         final CheckBox additionalCheckbox = findViewById(R.id.additional_checkbox_one);
         final CheckBox additionalCheckboxTwo = findViewById(R.id.additional_checkbox_two);
+        final CheckBox additionalCheckboxThree = findViewById(R.id.additional_checkbox_three);
         additionalCheckbox.setTypeface(arnopro);
         additionalCheckboxTwo.setTypeface(arnopro);
+        additionalCheckboxThree.setTypeface(arnopro);
         TextView additionalGroupHeading = findViewById(R.id.additional_group_heading);
         additionalGroupHeading.setTypeface(teutonic);
         final TextView selectInvestigatorHeading = findViewById(R.id.select_investigator_heading);
@@ -982,29 +989,35 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 }
                 break;
             case 4:
-                // Vengeance view
-                vengeanceCounter = 0;
-                additionalCounterLayout.setVisibility(VISIBLE);
-                additionalCounter.setText(R.string.vengeance_counter);
-                additionalAmount.setText(String.valueOf(vengeanceCounter));
-                additionalDecrement.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (vengeanceCounter > 0) {
-                            vengeanceCounter += -1;
-                            additionalAmount.setText(String.valueOf(vengeanceCounter));
-                        }
-                    }
-                });
-                additionalIncrement.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if (vengeanceCounter < 99) {
-                            vengeanceCounter += 1;
-                            additionalAmount.setText(String.valueOf(vengeanceCounter));
-                        }
-                    }
-                });
+                switch (globalVariables.CurrentScenario) {
+                    case 1:
+                    case 6:
+                        // Vengeance view
+                        vengeanceCounter = 0;
+                        additionalCounterLayout.setVisibility(VISIBLE);
+                        additionalCounter.setText(R.string.vengeance_counter);
+                        additionalAmount.setText(String.valueOf(vengeanceCounter));
+                        additionalDecrement.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (vengeanceCounter > 0) {
+                                    vengeanceCounter += -1;
+                                    additionalAmount.setText(String.valueOf(vengeanceCounter));
+                                }
+                            }
+                        });
+                        additionalIncrement.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (vengeanceCounter < 99) {
+                                    vengeanceCounter += 1;
+                                    additionalAmount.setText(String.valueOf(vengeanceCounter));
+                                }
+                            }
+                        });
+
+                }
+
                 switch (globalVariables.CurrentScenario) {
                     case 6:
                         selectInvestigator.setVisibility(VISIBLE);
@@ -1018,18 +1031,72 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             public void onCheckedChanged(CompoundButton buttonView, boolean
                                     isChecked) {
                                 if (isChecked) {
-                                    selectInvestigator.setPadding(0,0,0,0);
+                                    selectInvestigator.setPadding(0, 0, 0, 0);
                                     investigatorCounters.setVisibility(VISIBLE);
                                     counterOne.setVisibility(VISIBLE);
                                     counterOneName.setText(R.string
                                             .harbinger_damage);
                                 } else {
-                                    selectInvestigator.setPadding(0,0,0,getResources().getDimensionPixelSize(R
+                                    selectInvestigator.setPadding(0, 0, 0, getResources().getDimensionPixelSize(R
                                             .dimen.activity_vertical_margin));
                                     investigatorCounters.setVisibility(GONE);
                                 }
                             }
                         });
+                        break;
+                    case 8:
+                        // Act ones completed view
+                        vengeanceCounter = 0;
+                        additionalCounterLayout.setVisibility(VISIBLE);
+                        additionalCounter.setText(R.string.act_ones_completed);
+                        additionalAmount.setText(String.valueOf(vengeanceCounter));
+                        additionalDecrement.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (vengeanceCounter > 0) {
+                                    vengeanceCounter += -1;
+                                    additionalAmount.setText(String.valueOf(vengeanceCounter));
+                                }
+                            }
+                        });
+                        additionalIncrement.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (vengeanceCounter < 3) {
+                                    vengeanceCounter += 1;
+                                    additionalAmount.setText(String.valueOf(vengeanceCounter));
+                                }
+                            }
+                        });
+
+                        // Checkboxes
+                        additionalCheckbox.setVisibility(VISIBLE);
+                        additionalCheckbox.setText(R.string.act_3b_completed);
+                        additionalCheckbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                refreshResolution();
+                            }
+                        });
+                        additionalCheckboxTwo.setVisibility(VISIBLE);
+                        additionalCheckboxTwo.setText(R.string.act_3d_completed);
+                        additionalCheckboxTwo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                refreshResolution();
+                            }
+                        });
+                        additionalCheckboxThree.setVisibility(VISIBLE);
+                        additionalCheckboxThree.setText(R.string.act_3f_completed);
+                        additionalCheckboxThree.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener
+                                () {
+                            @Override
+                            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                refreshResolution();
+                            }
+                        });
+
+                        resolutionAdditional.setTypeface(arnoproitalic, Typeface.BOLD);
                         break;
                 }
                 break;
@@ -1095,14 +1162,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     break;
             }
         }
-        //       if (weakness) {
+
         weaknessButton.setVisibility(VISIBLE);
-  /*      } else {
-            LinearLayout buttonBar = findViewById(R.id.button_bar);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, (int)
-                    getResources().getDimension(R.dimen.button_height));
-            buttonBar.setLayoutParams(params);
-        }*/
         weaknessButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -1202,11 +1263,11 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         }
                         break;
                     case 4:
-                        switch(globalVariables.CurrentScenario){
+                        switch (globalVariables.CurrentScenario) {
                             case 1:
                                 // If no resolution, make sure an option was selected
-                                if(globalVariables.ScenarioResolution == 0 && !selectInvestigatorOne.isChecked() &&
-                                        !selectInvestigatorTwo.isChecked() && !selectInvestigatorFive.isChecked()){
+                                if (globalVariables.ScenarioResolution == 0 && !selectInvestigatorOne.isChecked() &&
+                                        !selectInvestigatorTwo.isChecked() && !selectInvestigatorFive.isChecked()) {
                                     dialog = false;
                                     Toast toast = Toast.makeText(ScenarioResolutionActivity.this, R.string
                                             .must_option, Toast
@@ -1216,7 +1277,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 break;
                             case 6:
                                 // If resolution three, make sure an option was selected
-                                if(globalVariables.ScenarioResolution == 3 && resolutionOptions.getCheckedRadioButtonId() == -1){
+                                if (globalVariables.ScenarioResolution == 3 && resolutionOptions
+                                        .getCheckedRadioButtonId() == -1) {
                                     dialog = false;
                                     Toast toast = Toast.makeText(ScenarioResolutionActivity.this, R.string
                                             .must_option, Toast
@@ -1316,32 +1378,39 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 }
             }
 
-            // Clear and reset the select resolution checkbox to refresh the resolution text
-            RadioGroup selectResolution = findViewById(R.id.select_resolution);
-            RadioButton noResolution = findViewById(R.id.no_resolution);
-            RadioButton resolutionOne = findViewById(R.id.resolution_one);
-            RadioButton resolutionTwo = findViewById(R.id.resolution_two);
-            RadioButton resolutionThree = findViewById(R.id.resolution_three);
-            RadioButton resolutionFour = findViewById(R.id.resolution_four);
-            if (globalVariables.ScenarioResolution != -1) {
-                selectResolution.clearCheck();
-                switch (globalVariables.ScenarioResolution) {
-                    case 0:
-                        noResolution.setChecked(true);
-                        break;
-                    case 1:
-                        resolutionOne.setChecked(true);
-                        break;
-                    case 2:
-                        resolutionTwo.setChecked(true);
-                        break;
-                    case 3:
-                        resolutionThree.setChecked(true);
-                        break;
-                    case 4:
-                        resolutionFour.setChecked(true);
-                        break;
-                }
+            refreshResolution();
+        }
+    }
+
+    /*
+        Refresh resolution
+     */
+    private void refreshResolution() {
+        // Clear and reset the select resolution checkbox to refresh the resolution text
+        RadioGroup selectResolution = findViewById(R.id.select_resolution);
+        RadioButton noResolution = findViewById(R.id.no_resolution);
+        RadioButton resolutionOne = findViewById(R.id.resolution_one);
+        RadioButton resolutionTwo = findViewById(R.id.resolution_two);
+        RadioButton resolutionThree = findViewById(R.id.resolution_three);
+        RadioButton resolutionFour = findViewById(R.id.resolution_four);
+        if (globalVariables.ScenarioResolution != -1) {
+            selectResolution.clearCheck();
+            switch (globalVariables.ScenarioResolution) {
+                case 0:
+                    noResolution.setChecked(true);
+                    break;
+                case 1:
+                    resolutionOne.setChecked(true);
+                    break;
+                case 2:
+                    resolutionTwo.setChecked(true);
+                    break;
+                case 3:
+                    resolutionThree.setChecked(true);
+                    break;
+                case 4:
+                    resolutionFour.setChecked(true);
+                    break;
             }
         }
     }
@@ -1410,6 +1479,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             final TextView resolutionTextViewAdditional = parent.findViewById(R.id.resolution_text_additional);
             final CheckBox additional = findViewById(R.id.additional_checkbox_one);
             final CheckBox additionalTwo = findViewById(R.id.additional_checkbox_two);
+            final CheckBox additionalThree = findViewById(R.id.additional_checkbox_three);
             final TextView selectInvestigatorHeading = findViewById(R.id.select_investigator_heading);
             final LinearLayout selectInvestigator = findViewById(R.id.select_investigator);
             final LinearLayout selectInvestigatorRight = findViewById(R.id.select_investigator_right);
@@ -2124,9 +2194,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     selectInvestigatorOne.setText(R.string.untamed_ichtaca_one);
                                     selectInvestigatorTwo.setText(R.string.untamed_ichtaca_two);
                                     selectInvestigatorFive.setText(R.string.untamed_ichtaca_three);
-                                    if(globalVariables.Ichtaca == 1){
+                                    if (globalVariables.Ichtaca == 1) {
                                         selectInvestigatorFive.setChecked(true);
-                                    } else if(globalVariables.Ichtaca == 2){
+                                    } else if (globalVariables.Ichtaca == 2) {
                                         selectInvestigatorTwo.setChecked(true);
                                     }
                                     break;
@@ -2209,6 +2279,27 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 resolutionOptions.setVisibility(GONE);
                                 resolutionTextViewAdditional.setVisibility(GONE);
                             }
+                            break;
+                        // Threads of Fate
+                        case 8:
+                            resolutionTextView.setText(R.string.threads_resolution);
+                            resolutionTextViewAdditional.setVisibility(VISIBLE);
+                            StringBuilder threadsResolution = new StringBuilder();
+                            if (additional.isChecked()) {
+                                threadsResolution.append(getString(R.string.threads_resolution_one_one));
+                            } else {
+                                threadsResolution.append(getString(R.string.threads_resolution_one_two));
+                            }
+                            if (additionalTwo.isChecked()) {
+                                threadsResolution.append(getString(R.string.threads_resolution_two_one));
+                            } else {
+                                threadsResolution.append(getString(R.string.threads_resolution_two_two));
+                            }
+                            if (additionalThree.isChecked()) {
+                                threadsResolution.append(getString(R.string.threads_resolution_three_one));
+                            }
+                            String threads = threadsResolution.toString().trim();
+                            resolutionTextViewAdditional.setText(threads);
                             break;
                     }
                     break;
@@ -2500,6 +2591,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 case 7:
                                     intent = new Intent(getActivity(), ScenarioInterludeActivity.class);
                                     break;
+                                case 9:
+                                    intent = new Intent(getActivity(), ChooseSuppliesActivity.class);
+                                    break;
                             }
                     }
                     startActivity(intent);
@@ -2526,6 +2620,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         // Get all the relevant checkboxes and views
         CheckBox additionalCheckbox = activity.findViewById(R.id.additional_checkbox_one);
         CheckBox additionalCheckboxTwo = activity.findViewById(R.id.additional_checkbox_two);
+        CheckBox additionalCheckboxThree = activity.findViewById(R.id.additional_checkbox_three);
         CheckBox investigatorOne = activity.findViewById(R.id.select_investigator_one);
         CheckBox investigatorTwo = activity.findViewById(R.id.select_investigator_two);
         CheckBox investigatorThree = activity.findViewById(R.id.select_investigator_three);
@@ -3571,14 +3666,14 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
                             if (globalVariables.Investigators.get(i).TempStatus > 1) {
                                 defeated = true;
-                                if(globalVariables.YigsFury >= 4){
+                                if (globalVariables.YigsFury >= 4) {
                                     globalVariables.Investigators.get(i).Damage = globalVariables
                                             .Investigators.get(i).Health;
                                 }
                             }
                         }
                         boolean resolutionThree = false;
-                        if(investigatorOne.isChecked()){
+                        if (investigatorOne.isChecked()) {
                             globalVariables.Harbinger = Integer.valueOf(counterOne.getText().toString());
                         } else {
                             globalVariables.Harbinger = -1;
@@ -3597,7 +3692,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 }
                                 break;
                             case 1:
-                                if (defeated && globalVariables.YigsFury < 4){
+                                if (defeated && globalVariables.YigsFury < 4) {
                                     globalVariables.YigsFury = globalVariables.YigsFury + 3;
                                 }
                                 globalVariables.YigsFury += vengeanceCounter;
@@ -3607,23 +3702,44 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 }
                                 break;
                             case 3:
-                                if (defeated && globalVariables.YigsFury < 4){
+                                if (defeated && globalVariables.YigsFury < 4) {
                                     globalVariables.YigsFury = globalVariables.YigsFury + 3;
                                 }
                                 resolutionThree = true;
                                 break;
                         }
-                        if(resolutionThree){
-                            if(optionOne.isChecked()){
+                        if (resolutionThree) {
+                            if (optionOne.isChecked()) {
                                 globalVariables.CurrentScenario = globalVariables.CurrentScenario - 1;
                                 globalVariables.Eztli = globalVariables.Eztli + 1;
-                            } else if(optionTwo.isChecked()){
+                            } else if (optionTwo.isChecked()) {
                                 globalVariables.Relic = 1;
                                 globalVariables.YigsFury += (vengeanceCounter + 10);
                                 for (int i = 0; i < globalVariables.Investigators.size(); i++) {
                                     globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
                                 }
                             }
+                        }
+                        break;
+                    // Threads of Fate
+                    case 8:
+                        if(additionalCheckbox.isChecked()){
+                            globalVariables.MissingRelic = 2;
+                        } else {
+                            globalVariables.MissingRelic = 1;
+                        }
+                        if(additionalCheckboxTwo.isChecked()){
+                            globalVariables.MissingAlejandro = 2;
+                        } else {
+                            globalVariables.MissingAlejandro = 1;
+                        }
+                        if(additionalCheckboxThree.isChecked()){
+                            globalVariables.MissingIchtaca = 2;
+                        } else {
+                            globalVariables.MissingIchtaca = 1;
+                        }
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            globalVariables.Investigators.get(i).AvailableXP += (globalVariables.VictoryDisplay + vengeanceCounter);
                         }
                         break;
                 }
@@ -4048,7 +4164,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         }
 
         // Update all forgotten variables
-        if(globalVariables.CurrentCampaign == 4){
+        if (globalVariables.CurrentCampaign == 4) {
             ContentValues forgottenValues = new ContentValues();
             forgottenValues.put(ForgottenEntry.COLUMN_YIGS_FURY, globalVariables.YigsFury);
             forgottenValues.put(ForgottenEntry.COLUMN_RUINS, globalVariables.Ruins);
@@ -4059,6 +4175,10 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             forgottenValues.put(ForgottenEntry.COLUMN_HARBINGER, globalVariables.Harbinger);
             forgottenValues.put(ForgottenEntry.COLUMN_EZTLI, globalVariables.Eztli);
             forgottenValues.put(ForgottenEntry.COLUMN_CUSTODY, globalVariables.Custody);
+            forgottenValues.put(ForgottenEntry.COLUMN_ICHTACAS_TALE, globalVariables.IchtacasTale);
+            forgottenValues.put(ForgottenEntry.COLUMN_MISSING_RELIC, globalVariables.MissingRelic);
+            forgottenValues.put(ForgottenEntry.COLUMN_MISSING_ALEJANDRO, globalVariables.MissingAlejandro);
+            forgottenValues.put(ForgottenEntry.COLUMN_MISSING_ICHTACA, globalVariables.MissingIchtaca);
 
             String forgottenSelection = ForgottenEntry.PARENT_ID + " LIKE ?";
             String[] forgottenSelectionArgs = {Long.toString(globalVariables.CampaignID)};
@@ -4131,8 +4251,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     .SavedInvestigators.get(i).Decklist);
             investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS, globalVariables.SavedInvestigators
                     .get(i).Provisions);
-            investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE, globalVariables.SavedInvestigators.get
-                    (i).Medicine);
+            investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE, globalVariables.SavedInvestigators
+                    .get
+                            (i).Medicine);
             investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES, globalVariables.SavedInvestigators
                     .get(i).Supplies);
             db.insert(InvestigatorEntry.TABLE_NAME, null, investigatorValues);

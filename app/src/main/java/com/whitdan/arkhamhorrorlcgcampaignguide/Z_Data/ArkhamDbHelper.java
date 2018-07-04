@@ -26,7 +26,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 30;
+    private static final int DATABASE_VERSION = 31;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -190,7 +190,11 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + ForgottenEntry.COLUMN_RELIC + " INTEGER, "
                 + ForgottenEntry.COLUMN_HARBINGER + " INTEGER, "
                 + ForgottenEntry.COLUMN_EZTLI + " INTEGER, "
-                + ForgottenEntry.COLUMN_CUSTODY + " INTEGER);";
+                + ForgottenEntry.COLUMN_CUSTODY + " INTEGER, "
+                + ForgottenEntry.COLUMN_ICHTACAS_TALE + " INTEGER, "
+                + ForgottenEntry.COLUMN_MISSING_RELIC + " INTEGER, "
+                + ForgottenEntry.COLUMN_MISSING_ALEJANDRO + " INTEGER, "
+                + ForgottenEntry.COLUMN_MISSING_ICHTACA + "INTEGER);";
 
         // Chaos bag table
         String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ChaosBagEntry.TABLE_NAME + " ("
@@ -583,6 +587,20 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_TWENTYFIVE_TEN);
                 db.execSQL(SQL_UPGRADE_TWENTYFIVE_ELEVEN);
                 db.execSQL(SQL_UPGRADE_TWENTYFIVE_TWELVE);
+            case 29:
+            case 30:
+                String SQL_UPGRADE_TWENTYSIX_ONE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_ICHTACAS_TALE + " INTEGER";
+                String SQL_UPGRADE_TWENTYSIX_TWO = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_MISSING_RELIC + " INTEGER";
+                String SQL_UPGRADE_TWENTYSIX_THREE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_MISSING_ALEJANDRO + " INTEGER";
+                String SQL_UPGRADE_TWENTYSIX_FOUR = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_MISSING_ICHTACA + " INTEGER";
+                db.execSQL(SQL_UPGRADE_TWENTYSIX_ONE);
+                db.execSQL(SQL_UPGRADE_TWENTYSIX_TWO);
+                db.execSQL(SQL_UPGRADE_TWENTYSIX_THREE);
+                db.execSQL(SQL_UPGRADE_TWENTYSIX_FOUR);
         }
     }
 }

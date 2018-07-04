@@ -22,6 +22,7 @@ import android.widget.TextView;
 import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioInterludeActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioMainActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.D_Misc.CampaignFinishedActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.E_EditMisc.ChooseSuppliesActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.CampaignEntry;
@@ -249,30 +250,33 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             currentScenarioName.setText(R.string.forgotten_scenario_three);
                             break;
                         case 9:
-                            currentScenarioName.setText(R.string.forgotten_scenario_four);
+                            currentScenarioName.setText(R.string.forgotten_resupply);
                             break;
                         case 10:
-                            currentScenarioName.setText(R.string.forgotten_interlude_three);
+                            currentScenarioName.setText(R.string.forgotten_scenario_four);
                             break;
                         case 11:
-                            currentScenarioName.setText(R.string.forgotten_scenario_five);
+                            currentScenarioName.setText(R.string.forgotten_interlude_three);
                             break;
                         case 12:
-                            currentScenarioName.setText(R.string.forgotten_scenario_six);
+                            currentScenarioName.setText(R.string.forgotten_scenario_five);
                             break;
                         case 13:
-                            currentScenarioName.setText(R.string.forgotten_interlude_four);
+                            currentScenarioName.setText(R.string.forgotten_scenario_six);
                             break;
                         case 14:
-                            currentScenarioName.setText(R.string.forgotten_scenario_seven);
+                            currentScenarioName.setText(R.string.forgotten_interlude_four);
                             break;
                         case 15:
-                            currentScenarioName.setText(R.string.forgotten_interlude_five);
+                            currentScenarioName.setText(R.string.forgotten_scenario_seven);
                             break;
                         case 16:
-                            currentScenarioName.setText(R.string.forgotten_scenario_eight);
+                            currentScenarioName.setText(R.string.forgotten_interlude_five);
                             break;
                         case 17:
+                            currentScenarioName.setText(R.string.forgotten_scenario_eight);
+                            break;
+                        case 18:
                             currentScenarioName.setText(R.string.forgotten_epilogue);
                             break;
                     }
@@ -793,7 +797,11 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         ForgottenEntry.COLUMN_RELIC,
                         ForgottenEntry.COLUMN_HARBINGER,
                         ForgottenEntry.COLUMN_EZTLI,
-                        ForgottenEntry.COLUMN_CUSTODY
+                        ForgottenEntry.COLUMN_CUSTODY,
+                        ForgottenEntry.COLUMN_ICHTACAS_TALE,
+                        ForgottenEntry.COLUMN_MISSING_RELIC,
+                        ForgottenEntry.COLUMN_MISSING_ALEJANDRO,
+                        ForgottenEntry.COLUMN_MISSING_ICHTACA
                 };
                 String forgottenSelection = ForgottenEntry.PARENT_ID + " = ?";
                 Cursor forgottenCursor = db.query(
@@ -824,6 +832,14 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             .COLUMN_EZTLI));
                     globalVariables.Custody = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
                             .COLUMN_CUSTODY));
+                    globalVariables.IchtacasTale = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_ICHTACAS_TALE));
+                    globalVariables.MissingRelic = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_MISSING_RELIC));
+                    globalVariables.MissingAlejandro = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_MISSING_ALEJANDRO));
+                    globalVariables.MissingIchtaca = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_MISSING_ICHTACA));
                 }
                 if (forgottenCursor.getCount() <= 0) {
                     corrupt = true;
@@ -883,6 +899,9 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             case 5:
                             case 7:
                                 intent = new Intent(context, ScenarioInterludeActivity.class);
+                                break;
+                            case 9:
+                                intent = new Intent(context, ChooseSuppliesActivity.class);
                                 break;
                         }
                         break;

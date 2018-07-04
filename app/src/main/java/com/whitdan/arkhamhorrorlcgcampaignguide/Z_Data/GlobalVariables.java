@@ -138,6 +138,9 @@ public class GlobalVariables extends Application {
     public int Eztli;
     public int Custody;
     public int IchtacasTale;
+    public int MissingRelic;
+    public int MissingAlejandro;
+    public int MissingIchtaca;
 
     /*
         Side story variables - All of the variables associated with side stories
@@ -280,31 +283,31 @@ public class GlobalVariables extends Application {
                     case 8:
                         title.setText(R.string.forgotten_scenario_three);
                         break;
-                    case 9:
+                    case 10:
                         title.setText(R.string.forgotten_scenario_four);
                         break;
-                    case 10:
+                    case 11:
                         title.setText(R.string.forgotten_interlude_three);
                         break;
-                    case 11:
+                    case 12:
                         title.setText(R.string.forgotten_scenario_five);
                         break;
-                    case 12:
+                    case 13:
                         title.setText(R.string.forgotten_scenario_six);
                         break;
-                    case 13:
+                    case 14:
                         title.setText(R.string.forgotten_interlude_four);
                         break;
-                    case 14:
+                    case 15:
                         title.setText(R.string.forgotten_scenario_seven);
                         break;
-                    case 15:
+                    case 16:
                         title.setText(R.string.forgotten_interlude_five);
                         break;
-                    case 16:
+                    case 17:
                         title.setText(R.string.forgotten_scenario_eight);
                         break;
-                    case 17:
+                    case 18:
                         title.setText(R.string.forgotten_epilogue);
                         break;
                 }

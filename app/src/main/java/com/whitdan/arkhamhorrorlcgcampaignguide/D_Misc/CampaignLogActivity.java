@@ -670,6 +670,28 @@ public class CampaignLogActivity extends AppCompatActivity {
                 } else if (globalVariables.Custody == 2){
                     forgottenBuilder.append(getString(R.string.custody_harlan));
                 }
+                if(globalVariables.IchtacasTale == 4){
+                    forgottenBuilder.append(getString(R.string.forging_own_path));
+                }
+            }
+
+            // Threads of Fate log
+            if(scenario > 8 || globalVariables.ForgottenCompleted == 1){
+                if(globalVariables.MissingRelic == 1){
+                    forgottenBuilder.append(getString(R.string.relic_missing));
+                } else if(globalVariables.MissingRelic == 2) {
+                    forgottenBuilder.append(getString(R.string.found_relic));
+                }
+                if(globalVariables.MissingAlejandro == 1){
+                    forgottenBuilder.append(getString(R.string.alejandro_missing));
+                } else if(globalVariables.MissingAlejandro == 2){
+                    forgottenBuilder.append(getString(R.string.rescued_alejandro));
+                }
+                if(globalVariables.MissingIchtaca == 1){
+                    forgottenBuilder.append(getString(R.string.ichtaca_dark));
+                } else if(globalVariables.MissingIchtaca == 2){
+                    forgottenBuilder.append(getString(R.string.bond_ichtaca));
+                }
             }
 
             String forgottenLogText = forgottenBuilder.toString().trim();
@@ -757,6 +779,24 @@ public class CampaignLogActivity extends AppCompatActivity {
                 if(globalVariables.Investigators.get(i).Supplies % 23 == 0){
                     suppliesBuilder.append("\t\t");
                     suppliesBuilder.append(getResources().getString(R.string.pendant));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 29 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.gasoline));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 31 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.pocketknife));
+                    suppliesBuilder.append("\n");
+                    supplies = true;
+                }
+                if(globalVariables.Investigators.get(i).Supplies % 37 == 0){
+                    suppliesBuilder.append("\t\t");
+                    suppliesBuilder.append(getResources().getString(R.string.pickaxe));
                     suppliesBuilder.append("\n");
                     supplies = true;
                 }

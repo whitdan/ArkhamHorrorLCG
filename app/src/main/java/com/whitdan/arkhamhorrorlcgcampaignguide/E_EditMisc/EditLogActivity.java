@@ -1691,11 +1691,11 @@ public class EditLogActivity extends AppCompatActivity {
                 ichtacaOptionTwo.setTypeface(arnopro);
                 ichtacaOptionThree.setTypeface(arnopro);
                 editLayout.addView(ichtacaOptions, lp);
-                if (globalVariables.Rougarou == 1) {
+                if (globalVariables.Ichtaca == 1) {
                     ichtacaOptionOne.setChecked(true);
-                } else if (globalVariables.Rougarou == 2) {
+                } else if (globalVariables.Ichtaca == 2) {
                     ichtacaOptionTwo.setChecked(true);
-                } else if (globalVariables.Rougarou == 3) {
+                } else if (globalVariables.Ichtaca == 3) {
                     ichtacaOptionThree.setChecked(true);
                 }
 
@@ -1848,6 +1848,104 @@ public class EditLogActivity extends AppCompatActivity {
                         }
                     }
                 });
+
+                // Ichtaca's Tale
+                View ichtacaTaleHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView ichtacaTaleHeadingText = ichtacaTaleHeading.findViewById(R.id.heading);
+                ichtacaTaleHeadingText.setText(R.string.ichtaca_tale_heading);
+                ichtacaTaleHeadingText.setTypeface(teutonic);
+                editLayout.addView(ichtacaTaleHeading, lp);
+                View ichtacaTaleOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton ichtacaTaleOptionOne = ichtacaTaleOptions.findViewById(R.id.option_one);
+                RadioButton ichtacaTaleOptionTwo = ichtacaTaleOptions.findViewById(R.id.option_two);
+                RadioButton ichtacaTaleOptionThree = ichtacaTaleOptions.findViewById(R.id.option_three);
+                ichtacaTaleOptionThree.setVisibility(VISIBLE);
+                ichtacaTaleOptionOne.setId(R.id.ichtaca_tale_one);
+                ichtacaTaleOptionTwo.setId(R.id.ichtaca_tale_two);
+                ichtacaTaleOptionThree.setId(R.id.ichtaca_tale_three);
+                ichtacaTaleOptionOne.setText(getString(R.string.listened_ichtaca).trim());
+                ichtacaTaleOptionTwo.setText(getString(R.string.ichtaca_left).trim());
+                ichtacaTaleOptionThree.setText(getString(R.string.forging_own_path).trim());
+                ichtacaTaleOptionOne.setTypeface(arnopro);
+                ichtacaTaleOptionTwo.setTypeface(arnopro);
+                ichtacaTaleOptionThree.setTypeface(arnopro);
+                editLayout.addView(ichtacaTaleOptions, lp);
+                if (globalVariables.IchtacasTale == 1) {
+                    ichtacaTaleOptionOne.setChecked(true);
+                } else if (globalVariables.IchtacasTale == 2) {
+                    ichtacaTaleOptionTwo.setChecked(true);
+                } else if (globalVariables.IchtacasTale == 4) {
+                    ichtacaTaleOptionThree.setChecked(true);
+                }
+            }
+
+            // Threads of Fate
+            if(scenario > 8){
+                // Missing relic
+                final View missingRelicHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView missingRelicHeadingText = missingRelicHeading.findViewById(R.id.heading);
+                missingRelicHeadingText.setText(R.string.missing_relic_heading);
+                missingRelicHeadingText.setTypeface(teutonic);
+                editLayout.addView(missingRelicHeading, lp);
+                final View missingRelicOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton missingRelicOptionOne = missingRelicOptions.findViewById(R.id.option_one);
+                RadioButton missingRelicOptionTwo = missingRelicOptions.findViewById(R.id.option_two);
+                missingRelicOptionOne.setId(R.id.missing_relic_one);
+                missingRelicOptionTwo.setId(R.id.missing_relic_two);
+                missingRelicOptionOne.setText(getString(R.string.relic_missing).trim());
+                missingRelicOptionTwo.setText(getString(R.string.found_relic).trim());
+                missingRelicOptionOne.setTypeface(arnopro);
+                missingRelicOptionTwo.setTypeface(arnopro);
+                editLayout.addView(missingRelicOptions, lp);
+                if (globalVariables.MissingRelic == 1) {
+                    missingRelicOptionOne.setChecked(true);
+                } else if (globalVariables.MissingRelic == 2) {
+                    missingRelicOptionTwo.setChecked(true);
+                }
+
+                // Missing Alejandro
+                final View missingAlejandroHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView missingAlejandroHeadingText = missingAlejandroHeading.findViewById(R.id.heading);
+                missingAlejandroHeadingText.setText(R.string.missing_alejandro_heading);
+                missingAlejandroHeadingText.setTypeface(teutonic);
+                editLayout.addView(missingAlejandroHeading, lp);
+                final View missingAlejandroOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton missingAlejandroOptionOne = missingAlejandroOptions.findViewById(R.id.option_one);
+                RadioButton missingAlejandroOptionTwo = missingAlejandroOptions.findViewById(R.id.option_two);
+                missingAlejandroOptionOne.setId(R.id.missing_alejandro_one);
+                missingAlejandroOptionTwo.setId(R.id.missing_alejandro_two);
+                missingAlejandroOptionOne.setText(getString(R.string.alejandro_missing).trim());
+                missingAlejandroOptionTwo.setText(getString(R.string.rescued_alejandro).trim());
+                missingAlejandroOptionOne.setTypeface(arnopro);
+                missingAlejandroOptionTwo.setTypeface(arnopro);
+                editLayout.addView(missingAlejandroOptions, lp);
+                if (globalVariables.MissingAlejandro == 1) {
+                    missingAlejandroOptionOne.setChecked(true);
+                } else if (globalVariables.MissingAlejandro == 2) {
+                    missingAlejandroOptionTwo.setChecked(true);
+                }
+
+                // Missing Ichtaca
+                final View missingIchtacaHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView missingIchtacaHeadingText = missingIchtacaHeading.findViewById(R.id.heading);
+                missingIchtacaHeadingText.setText(R.string.missing_ichtaca_heading);
+                missingIchtacaHeadingText.setTypeface(teutonic);
+                editLayout.addView(missingIchtacaHeading, lp);
+                final View missingIchtacaOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton missingIchtacaOptionOne = missingIchtacaOptions.findViewById(R.id.option_one);
+                RadioButton missingIchtacaOptionTwo = missingIchtacaOptions.findViewById(R.id.option_two);
+                missingIchtacaOptionOne.setId(R.id.missing_ichtaca_one);
+                missingIchtacaOptionTwo.setId(R.id.missing_ichtaca_two);
+                missingIchtacaOptionOne.setText(getString(R.string.ichtaca_dark).trim());
+                missingIchtacaOptionTwo.setText(getString(R.string.bond_ichtaca).trim());
+                missingIchtacaOptionOne.setTypeface(arnopro);
+                missingIchtacaOptionTwo.setTypeface(arnopro);
+                editLayout.addView(missingIchtacaOptions, lp);
+                if (globalVariables.MissingIchtaca == 1) {
+                    missingIchtacaOptionOne.setChecked(true);
+                } else if (globalVariables.MissingIchtaca == 2) {
+                    missingIchtacaOptionTwo.setChecked(true);
+                }
             }
         }
 
@@ -2621,6 +2719,105 @@ public class EditLogActivity extends AppCompatActivity {
                             globalVariables.Path = 2;
                         } else if (pathThree.isChecked()) {
                             globalVariables.Path = 0;
+                        }
+                    }
+                }
+
+                // Forgotten Age
+                if(globalVariables.CurrentCampaign == 4){
+                    if(scenario > 1){
+                        TextView yigsFury = findViewById(R.id.yigs_fury);
+                        globalVariables.YigsFury = Integer.valueOf(yigsFury.getText().toString());
+
+                        RadioButton ruinsOne = findViewById(R.id.ruins_one);
+                        RadioButton ruinsTwo = findViewById(R.id.ruins_two);
+                        if(ruinsOne.isChecked()){
+                            globalVariables.Ruins = 1;
+                        } else if (ruinsTwo.isChecked()){
+                            globalVariables.Ruins = 2;
+                        }
+
+                        RadioButton ichtacaOne = findViewById(R.id.ichtaca_one);
+                        RadioButton ichtacaTwo = findViewById(R.id.ichtaca_two);
+                        RadioButton ichtacaThree = findViewById(R.id.ichtaca_three);
+                        if(ichtacaOne.isChecked()){
+                            globalVariables.Ichtaca = 1;
+                        } else if(ichtacaTwo.isChecked()){
+                            globalVariables.Ichtaca = 2;
+                        } else if(ichtacaThree.isChecked()){
+                            globalVariables.Ichtaca = 3;
+                        }
+
+                        RadioButton alejandroOne = findViewById(R.id.alejandro_one);
+                        RadioButton alejandroTwo = findViewById(R.id.alejandro_two);
+                        if(alejandroOne.isChecked()){
+                            globalVariables.Alejandro = 1;
+                        } else if(alejandroTwo.isChecked()){
+                            globalVariables.Alejandro = 2;
+                        }
+                    }
+
+                    if(scenario > 6){
+                        CheckBox harbingerBox = findViewById(R.id.harbinger);
+                        TextView harbingerAmount = findViewById(R.id.harbinger_damage);
+                        if(!harbingerBox.isChecked()){
+                            globalVariables.Harbinger = -1;
+                        } else {
+                            globalVariables.Harbinger = Integer.valueOf(harbingerAmount.getText().toString());
+                        }
+
+                        RadioButton relicOne = findViewById(R.id.relic_one);
+                        RadioButton relicTwo = findViewById(R.id.relic_two);
+                        if(relicOne.isChecked()){
+                            globalVariables.Relic = 1;
+                        } else if(relicTwo.isChecked()){
+                            globalVariables.Relic = 2;
+                            globalVariables.Custody = 0;
+                        }
+
+                        RadioButton custodyOne = findViewById(R.id.custody_one);
+                        RadioButton custodyTwo = findViewById(R.id.custody_two);
+                        if(custodyOne.isChecked()){
+                            globalVariables.Custody = 1;
+                        } else if(custodyTwo.isChecked()){
+                            globalVariables.Custody = 2;
+                        }
+
+                        RadioButton ichtacasTaleOne = findViewById(R.id.ichtaca_tale_one);
+                        RadioButton ichtacasTaleTwo = findViewById(R.id.ichtaca_tale_two);
+                        RadioButton ichtacasTaleThree = findViewById(R.id.ichtaca_tale_three);
+                        if(ichtacasTaleOne.isChecked()){
+                            globalVariables.IchtacasTale = 1;
+                        } else if(ichtacasTaleTwo.isChecked()){
+                            globalVariables.IchtacasTale = 2;
+                        } else if(ichtacasTaleThree.isChecked()){
+                            globalVariables.IchtacasTale = 4;
+                        }
+                    }
+
+                    if(scenario > 8){
+                        RadioButton missingRelicOne = findViewById(R.id.missing_relic_one);
+                        RadioButton missingRelicTwo = findViewById(R.id.missing_relic_two);
+                        if(missingRelicOne.isChecked()){
+                            globalVariables.MissingRelic = 1;
+                        } else if(missingRelicTwo.isChecked()){
+                            globalVariables.MissingRelic = 2;
+                        }
+
+                        RadioButton missingAlejandroOne = findViewById(R.id.missing_alejandro_one);
+                        RadioButton missingAlejandroTwo = findViewById(R.id.missing_alejandro_two);
+                        if(missingAlejandroOne.isChecked()){
+                            globalVariables.MissingAlejandro = 1;
+                        } else if(missingAlejandroTwo.isChecked()){
+                            globalVariables.MissingAlejandro = 2;
+                        }
+
+                        RadioButton missingIchtacaOne = findViewById(R.id.missing_ichtaca_one);
+                        RadioButton missingIchtacaTwo = findViewById(R.id.missing_ichtaca_two);
+                        if(missingIchtacaOne.isChecked()){
+                            globalVariables.MissingIchtaca = 1;
+                        } else if(missingIchtacaTwo.isChecked()){
+                            globalVariables.MissingIchtaca = 2;
                         }
                     }
                 }

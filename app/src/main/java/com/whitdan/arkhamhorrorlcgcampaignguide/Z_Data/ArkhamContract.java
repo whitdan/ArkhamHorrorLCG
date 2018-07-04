@@ -174,6 +174,10 @@ public class ArkhamContract {
         public static final String COLUMN_HARBINGER = "harbinger";
         public static final String COLUMN_EZTLI = "eztli";
         public static final String COLUMN_CUSTODY = "custody";
+        public static final String COLUMN_ICHTACAS_TALE = "ichtacas_tale";
+        public static final String COLUMN_MISSING_RELIC = "missing_relic";
+        public static final String COLUMN_MISSING_ALEJANDRO = "missing_alejandro";
+        public static final String COLUMN_MISSING_ICHTACA = "missing_ichtaca";
     }
 
     public static class ChaosBagEntry implements BaseColumns{

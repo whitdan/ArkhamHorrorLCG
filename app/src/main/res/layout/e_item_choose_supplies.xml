@@ -39,6 +39,17 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/available_xp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="@dimen/checkbox_padding"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/arnopro_textsize"
+        android:visibility="gone"/>
+
+    <TextView
         android:id="@+id/killed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -135,6 +146,42 @@
                 android:layout_weight="1"
                 android:src="@drawable/button_increment"/>
         </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/physical_trauma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_style"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"
+            android:layout_marginTop="@dimen/checkbox_padding"
+            android:layout_marginLeft="@dimen/checkbox_padding"
+            android:text="@string/remove_physical"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/mental_trauma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_style"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"
+            android:layout_marginTop="@dimen/checkbox_padding"
+            android:layout_marginLeft="@dimen/checkbox_padding"
+            android:text="@string/remove_mental"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/poisoned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_style"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/arnopro_textsize"
+            android:layout_marginTop="@dimen/checkbox_padding"
+            android:layout_marginLeft="@dimen/checkbox_padding"
+            android:text="@string/remove_poisoned"
+            android:visibility="gone"/>
 
         <LinearLayout
             android:layout_width="match_parent"

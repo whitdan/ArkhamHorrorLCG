@@ -135,6 +135,15 @@
     <item name="relic_two" type="id" />
     <item name="custody_one" type="id" />
     <item name="custody_two" type="id" />
+    <item name="ichtaca_tale_one" type="id" />
+    <item name="ichtaca_tale_two" type="id" />
+    <item name="ichtaca_tale_three" type="id" />
+    <item name="missing_relic_one" type="id" />
+    <item name="missing_relic_two" type="id" />
+    <item name="missing_alejandro_one" type="id" />
+    <item name="missing_alejandro_two" type="id" />
+    <item name="missing_ichtaca_one" type="id" />
+    <item name="missing_ichtaca_two" type="id" />
 
 
     <item name="rougarou_one" type="id" />

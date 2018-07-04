@@ -18,10 +18,12 @@ import android.widget.TextView;
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.B_CampaignSetup.CampaignInvestigatorsActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioMainActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioResolutionActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.GlobalVariables;
 
 import static android.view.View.GONE;
+import static android.view.View.VISIBLE;
 
 public class ChooseSuppliesActivity extends AppCompatActivity {
 
@@ -77,6 +79,10 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
         TextView choose = findViewById(R.id.choose_supplies);
         choose.setTypeface(teutonic);
 
+        if (globalVariables.CurrentScenario == 9) {
+            choose.setText(R.string.forgotten_resupply);
+        }
+
         // Setup then add selection layout for each investigator
         LinearLayout suppliesLayout = findViewById(R.id.supplies_layout);
         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
@@ -108,6 +114,22 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
                 case 4:
                     points = 4;
                     break;
+            }
+            if (globalVariables.CurrentScenario == 9) {
+                switch (globalVariables.Investigators.size()) {
+                    case 1:
+                        points = 8;
+                        break;
+                    case 2:
+                        points = 5;
+                        break;
+                    case 3:
+                        points = 4;
+                        break;
+                    case 4:
+                        points = 3;
+                        break;
+                }
             }
             String ptsAvailable = Integer.toString(points) + " " + getResources().getString(R.string.points_available);
             supplyPoints.setText(ptsAvailable);
@@ -196,6 +218,9 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             });
 
             // Checkboxes
+            CheckBox poisoned = selectSupplies.findViewById(R.id.poisoned);
+            CheckBox physical = selectSupplies.findViewById(R.id.physical_trauma);
+            CheckBox mental = selectSupplies.findViewById(R.id.mental_trauma);
             CheckBox rope = selectSupplies.findViewById(R.id.rope);
             CheckBox blanket = selectSupplies.findViewById(R.id.blanket);
             CheckBox canteen = selectSupplies.findViewById(R.id.canteen);
@@ -205,6 +230,9 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             CheckBox binoculars = selectSupplies.findViewById(R.id.binoculars);
             CheckBox chalk = selectSupplies.findViewById(R.id.chalk);
             CheckBox pendant = selectSupplies.findViewById(R.id.pendant);
+            poisoned.setTypeface(arnopro);
+            physical.setTypeface(arnopro);
+            mental.setTypeface(arnopro);
             rope.setTypeface(arnopro);
             blanket.setTypeface(arnopro);
             canteen.setTypeface(arnopro);
@@ -224,6 +252,44 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             chalk.setOnCheckedChangeListener(new SuppliesCheckboxListener(i, supplyPoints));
             pendant.setOnCheckedChangeListener(new SuppliesCheckboxListener(i, supplyPoints));
 
+            // Further views
+            TextView availableXP = selectSupplies.findViewById(R.id.available_xp);
+            availableXP.setTypeface(arnoprobold);
+
+            // Setup views for resupply point
+            if (globalVariables.CurrentScenario == 9) {
+                rope.setText(R.string.gasoline_choose);
+                torches.setText(R.string.pocketknife_choose);
+                map.setText(R.string.pickaxe_choose);
+                pendant.setVisibility(GONE);
+                if (globalVariables.Investigators.get(currentInvestigator).AvailableXP >= 3) {
+                    poisoned.setVisibility(VISIBLE);
+                    poisoned.setOnCheckedChangeListener(new OtherCheckboxListener(i, availableXP));
+                }
+                if (globalVariables.Investigators.get(currentInvestigator).Horror != 0 && globalVariables
+                        .Investigators.get(currentInvestigator).AvailableXP >= 5) {
+                    mental.setVisibility(VISIBLE);
+                    String mentTrauma = getString(R.string.remove_mental) + " " + Integer.toString(globalVariables
+                            .Investigators.get(currentInvestigator).Horror) + ")";
+                    mental.setText(mentTrauma);
+                    mental.setOnCheckedChangeListener(new OtherCheckboxListener(i, availableXP));
+                }
+                if (globalVariables.Investigators.get(currentInvestigator).Damage != 0 && globalVariables
+                        .Investigators.get(currentInvestigator).AvailableXP >= 5) {
+                    physical.setVisibility(VISIBLE);
+                    String physTrauma = getString(R.string.remove_physical) + " " + Integer.toString(globalVariables
+                            .Investigators.get(currentInvestigator).Damage) + ")";
+                    physical.setText(physTrauma);
+                    physical.setOnCheckedChangeListener(new OtherCheckboxListener(i, availableXP));
+                }
+                if (globalVariables.Investigators.get(currentInvestigator).AvailableXP >= 3) {
+                    availableXP.setVisibility(VISIBLE);
+                    String available = Integer.toString(globalVariables.Investigators.get(currentInvestigator)
+                            .AvailableXP) + " " + getString(R.string.xp_available);
+                    availableXP.setText(available);
+                }
+            }
+
             suppliesLayout.addView(selectSupplies);
         }
 
@@ -235,6 +301,10 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             public void onClick(View view) {
                 finish();
                 Intent intent = new Intent(ChooseSuppliesActivity.this, CampaignInvestigatorsActivity.class);
+                if (globalVariables.CurrentScenario == 9) {
+                    intent = new Intent(ChooseSuppliesActivity.this, MainMenuActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                }
                 startActivity(intent);
             }
         });
@@ -306,6 +376,25 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
                     array = 23;
                     break;
             }
+            if (globalVariables.CurrentScenario == 9) {
+                switch (buttonView.getId()) {
+                    case R.id.rope:
+                        // Gasoline
+                        points = 1;
+                        array = 29;
+                        break;
+                    case R.id.torches:
+                        // Pocketknife
+                        points = 2;
+                        array = 31;
+                        break;
+                    case R.id.map:
+                        // Pickaxe
+                        points = 2;
+                        array = 37;
+                        break;
+                }
+            }
             if (isChecked) {
                 if (globalVariables.Investigators.get(currentInvestigator).SupplyPoints < points) {
                     buttonView.setChecked(false);
@@ -327,6 +416,73 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
                         .points_available);
                 supplyPoints.setText(ptsAvailable);
             }
+        }
+    }
+
+    private class OtherCheckboxListener implements CompoundButton.OnCheckedChangeListener {
+        private int currentInvestigator;
+        TextView availableXP;
+
+        public OtherCheckboxListener(int current, TextView XP) {
+            currentInvestigator = current;
+            availableXP = XP;
+        }
+
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            CheckBox physical = findViewById(R.id.physical_trauma);
+            CheckBox mental = findViewById(R.id.mental_trauma);
+            switch (buttonView.getId()) {
+                case R.id.poisoned:
+                    if (isChecked) {
+                        if (globalVariables.Investigators.get(currentInvestigator).AvailableXP < 3) {
+                            buttonView.setChecked(false);
+                        } else {
+                            globalVariables.Investigators.get(currentInvestigator).AvailableXP += -3;
+                        }
+                    } else {
+                        globalVariables.Investigators.get(currentInvestigator).AvailableXP += 3;
+                    }
+                    break;
+                case R.id.physical_trauma:
+                    if (isChecked) {
+                        if (globalVariables.Investigators.get(currentInvestigator).AvailableXP < 5 && !mental
+                                .isChecked()) {
+                            buttonView.setChecked(false);
+                        } else {
+                            if (mental.isChecked()) {
+                                mental.setChecked(false);
+                            }
+                            globalVariables.Investigators.get(currentInvestigator).AvailableXP += -5;
+                            globalVariables.Investigators.get(currentInvestigator).Damage += -1;
+                        }
+                    } else {
+                        globalVariables.Investigators.get(currentInvestigator).AvailableXP += 5;
+                        globalVariables.Investigators.get(currentInvestigator).Damage += 1;
+                    }
+                    break;
+                case R.id.mental_trauma:
+                    if (isChecked) {
+                        if (globalVariables.Investigators.get(currentInvestigator).AvailableXP < 5 && !physical
+                                .isChecked()) {
+                            buttonView.setChecked(false);
+                        } else {
+                            if (physical.isChecked()) {
+                                physical.setChecked(false);
+                            }
+                            globalVariables.Investigators.get(currentInvestigator).AvailableXP += -5;
+                            globalVariables.Investigators.get(currentInvestigator).Horror += -1;
+                        }
+                    } else {
+                        globalVariables.Investigators.get(currentInvestigator).AvailableXP += 5;
+                        globalVariables.Investigators.get(currentInvestigator).Horror += 1;
+                    }
+                    break;
+            }
+            int current = globalVariables.Investigators.get(currentInvestigator).AvailableXP;
+            String xpAvailable = Integer.toString(current) + " " + getResources().getString(R.string
+                    .xp_available);
+            availableXP.setText(xpAvailable);
         }
     }
 
@@ -357,7 +513,7 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             // Set campaign title
             TextView campaignName = v.findViewById(R.id.campaign_name);
             campaignName.setTypeface(wolgast);
-            campaignName.setText(campaign);
+            campaignName.setText(R.string.forgotten_campaign);
 
             /*
                 Show the right views for the number of investigators and set the right font to the name
@@ -367,19 +523,33 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             lineOne.setVisibility(GONE);
             lineTwo.setVisibility(GONE);
 
+            if(globalVariables.CurrentScenario == 9){
+                okayButton.setText(R.string.continue_button);
+                campaignName.setText(R.string.forgotten_resupply);
+                confirm.setText(R.string.continue_question);
+            }
+
             okayButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    // Set current scenario to first scenario
-                    globalVariables.CurrentScenario = 1;
+                    if (globalVariables.CurrentScenario == 9) {
+                        globalVariables.CurrentScenario += 1;
+                        ScenarioResolutionActivity.saveCampaign(getActivity(), globalVariables);
+                        Intent intent = new Intent(getActivity(), ScenarioMainActivity.class);
+                        startActivity(intent);
+                        dismiss();
+                    } else {
+                        // Set current scenario to first scenario
+                        globalVariables.CurrentScenario = 1;
 
-                    // Save the new campaign
-                    CampaignInvestigatorsActivity.newCampaign(getActivity(), campaign);
+                        // Save the new campaign
+                        CampaignInvestigatorsActivity.newCampaign(getActivity(), campaign);
 
-                    // Go to scenario setup
-                    Intent intent = new Intent(getActivity(), ScenarioMainActivity.class);
-                    startActivity(intent);
-                    dismiss();
+                        // Go to scenario setup
+                        Intent intent = new Intent(getActivity(), ScenarioMainActivity.class);
+                        startActivity(intent);
+                        dismiss();
+                    }
                 }
             });
 
@@ -393,7 +563,6 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             builder.setView(v);
             return builder.create();
         }
-
     }
 }
 

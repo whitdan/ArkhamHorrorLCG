@@ -309,8 +309,6 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             } else {
                                 lowSupplies.append(getResources().getString(R.string.restless_low_two_multiple_investigator));
                             }
-                            lowSupplies.append(" ");
-                            lowSupplies.append(getResources().getString(R.string.restless_low_two));
                             introduction.setText(lowSupplies.toString());
                             introductionOne.setVisibility(VISIBLE);
                             introductionOne.setText(R.string.restless_low);

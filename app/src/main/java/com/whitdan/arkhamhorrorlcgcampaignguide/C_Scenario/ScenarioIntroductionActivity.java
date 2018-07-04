@@ -342,7 +342,6 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                                                         introductionTwo.setText(R.string.threads_introduction_six);
                                                         progress = true;
                                                     } else {
-                                                        globalVariables.IchtacasTale = 3;
                                                         introductionTwo.setVisibility(GONE);
                                                         progress = true;
                                                     }
