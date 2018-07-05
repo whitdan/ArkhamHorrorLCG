@@ -14,6 +14,7 @@
     <string name="forgotten_interlude_three">Zwischenspiel 3: Der Dschungel lockt</string>
     <string name="forgotten_interlude_four">Zwischenspiel 4: Die Gefangenen</string>
     <string name="forgotten_interlude_five">Zwischenspiel 5: Die Dunkelheit</string>
+    <string name="forgotten_resupply">Erneuerung der Ausrüstung</string>
     <string name="forgotten_epilogue">Epilog</string>
 
 
@@ -27,6 +28,14 @@
     <string name="harbinger_damage">Schaden auf dem Vorboten von Valusia: </string>
     <string name="eztli_resolution_three_option_one">„Wir können jetzt nicht aufhören — zurück in den Tempel!“</string>
     <string name="eztli_resolution_three_option_two">„Das ist zu gefährlich. Dieser Ort muss zerstört werden.“</string>
+    <string name="act_ones_completed">Abgeschlossene Szene 1-Karten: </string>
+    <string name="act_3b_completed">Szene 3b abgeschlossen</string>
+    <string name="act_3d_completed">Szene 3d abgeschlossen</string>
+    <string name="act_3f_completed">Szene 3f abgeschlossen</string>
+    <string name="xp_available">Verfügbare EP</string>
+    <string name="remove_poisoned">Vergiftet-Schwäche entfernen (3EP)</string>
+    <string name="remove_physical">Körperliches Trauma entfernen (5EP)\n(Aktuelle Traumata:</string>
+    <string name="remove_mental">Seelisches Trauma entfernen (5EP)\n(Aktuelle Traumata:</string>
 
 
     <!--Supplies-->
@@ -60,6 +69,9 @@
     <string name="binoculars_choose">Fernglas (2pts)</string>
     <string name="chalk_choose">Kreide (2 Pkte)</string>
     <string name="pendant_choose">Glücksbringer (1 Pkt)</string>
+    <string name="gasoline_choose">Benzin (1 Pkt)</string>
+    <string name="pocketknife_choose">Taschenmesser (2 Pkte)</string>
+    <string name="pickaxe_choose">Spitzhacke (2 Pkte)</string>
     <string name="provisions">Proviant</string>
     <string name="medicine">Medizin</string>
     <string name="rope">Seil</string>
@@ -71,6 +83,9 @@
     <string name="binoculars">Fernglas</string>
     <string name="chalk">Kreide</string>
     <string name="pendant">Glücksbringer</string>
+    <string name="gasoline">Benzin</string>
+    <string name="pocketknife">Taschenmesser</string>
+    <string name="pickaxe">Spitzhacke</string>
     <string name="no_supplies">Keine Ausrüstung</string>
 
 
@@ -87,9 +102,16 @@
     <string name="alejandro_recovered_relic">Alejandro hat das Relikt der Zeitalter geborgen.\n\n</string>
     <string name="harbinger_alive">Der Vorbote ist noch am Leben.</string>
     <string name="custody_alejandro">Die Ermittler haben die Verantwortung für das Relikt an Alejandro übertragen.\n\n
-    Die Ermitt ler haben Alejandros Vertrauen gewonnen.\n\n</string>
+    Die Ermittler haben Alejandros Vertrauen gewonnen.\n\n</string>
     <string name="custody_harlan">Die Ermittler haben Harlan Earnstone die Verantwortung für das Relikt übertragen.\n\n
     Alejandro setzt seine Forschungen allein fort.\n\n</string>
+    <string name="forging_own_path">Die Ermittler haben ihren eigenen Weg gewählt.\n\n</string>
+    <string name="relic_missing">Das Relikt ist verschwunden.\n\n</string>
+    <string name="found_relic">Die Ermittler haben das verschwundene Relikt gefunden.\n\n</string>
+    <string name="alejandro_missing">Alejandro ist verschwunden.\n\n</string>
+    <string name="rescued_alejandro">Die Ermittler haben Alejandro gerettet.\n\n</string>
+    <string name="ichtaca_dark">Ichtaca ist im Dunkeln.\n\n</string>
+    <string name="bond_ichtaca">Die Ermittler haben ein Bündnis mit Ichtaca geschlossen.\n\n</string>
 
     <!--Edit log-->
     <string name="yigs_fury_heading">Yigs Zorn</string>
@@ -99,6 +121,12 @@
     <string name="harbinger_heading">Der Vorbote von Valusia</string>
     <string name="relic_heading">Das Relikt der Zeitalter</string>
     <string name="custody_heading">Verantwortung für das Relikt</string>
+    <string name="ichtaca_tale_heading">Ichtacas Geschichte</string>
+    <string name="listened_ichtaca">Du hast dir Ichtacas Geschichte angehört.</string>
+    <string name="ichtaca_left">Ichtaca ist ohne dich gegangen.</string>
+    <string name="missing_relic_heading">Das Verschwinden des Relikts</string>
+    <string name="missing_alejandro_heading">Alejandros Vreschwinden</string>
+    <string name="missing_ichtaca_heading">Ichtacas Verschwinden</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X ist die Anzahl der Vergeltungspunkte im Siegpunktestapel.</string>
@@ -117,6 +145,15 @@
     <string name="eztli_cultist_tablet_two">–X. X ist die Gesamtmenge an Verderbensmarkern auf Orten im Spiel.</string>
     <string name="eztli_thing_one">Enthülle einen weiteren Chaosmarker. Falls die Probe misslingt, platziere 1 Verderbensmarker auf deinen Ort.</string>
     <string name="eztli_thing_two">Enthülle einen weiteren Chaosmarker und platziere 1 Verderbensmarker auf deinen Ort.</string>
+
+    <string name="threads_skull_one">–X. X ist die höchste Anzahl an Verderbensmarkern auf einem <b><i>Kultist</i></b>-Gegner.</string>
+    <string name="threads_skull_two">–X. X ist die Gesamtzahl der Verderbensmarker im Spiel.</string>
+    <string name="threads_cultist_one">–2. Falls die Probe nicht um mindestens 1 gelingt, nimmst du 1 Schaden.</string>
+    <string name="threads_cultist_two">–2. Falls die Probe nicht um mindestens 2 gelingt, nimmst du 1 direkten Schaden.</string>
+    <string name="threads_tablet_one">–2. Falls die Probe nicht um mindestens 1 gelingt, platziere 1 Verderben auf den nächstgelegenen <b><i>Kultist</i></b>-Gegner.</string>
+    <string name="threads_tablet_two">–2. Falls die Probe nicht um mindestens 2 gelingt, platziere 1 Verderben auf jeden <b><i>Kultist</i></b>-Gegner.</string>
+    <string name="threads_thing_one">–2. Falls die Probe misslingt, verlierst du 1 deiner Hinweise.</string>
+    <string name="threads_thing_two">–3. Falls die Probe misslingt, verlierst du 1 deiner Hinweise.</string>
 
 
     <!--Campaign introduction-->
@@ -160,10 +197,11 @@
     <string name="restless_no_blanket_option_two">Erleide ein seelisches Trauma</string>
 
     <string name="restless_not_low">Die Ermittler haben genug Proviant.</string>
-    <string name="restless_low_one">Die Ermittler haben nicht mehr genug Proviant. Wählt</string>
+    <string name="restless_low_one">Die Ermittler haben nicht mehr genug Proviant.
+        Wählt</string>
     <string name="restless_low_two_single_investigator">Ermittler, der den folgenden Absatz lesen muss:</string>
     <string name="restless_low_two_multiple_investigator">Ermittler, die den folgenden Absatz lesen müssen:</string>
-    <string name="restless_low">Eigentlich hat en wir angenommen, unser Proviant und die Wasservorräte würden für alle
+    <string name="restless_low">Eigentlich hatten wir angenommen, unser Proviant und die Wasservorräte würden für alle
         reichen, aber wir haben bereits zu viel davon auf dieser Reise verbraucht. Als die Sonne aufging und es Zeit zum
         Essen war, mussten wir feststellen, dass wir bereits keinen Proviant mehr hatten.\n</string>
     <string name="restless_low_effect">Jeder dieser Ermittler beginnt das nächste Szenario mit 3 Ressourcen weniger.</string>
@@ -322,6 +360,73 @@
         Regenwaldes warten soll. Unser Kartograph José bewacht das Lager bis zu unserer Rückkehr. Wir sind auf uns gestellt, aber zumindest
         konnten wir uns einen Fluchtweg bahnen, falls die Dinge sich ungünstig entwickeln sollten…</string>
 
+    <string name="threads_introduction_one">Ichtaca verbringt die Nacht auf der Couch in deinem Wohnzimmer. Du selbst findest in dieser Nacht
+        keinen Schlaf mehr, deine Gedanken schwanken zwischen Sorge und Ungläubigkeit. Ihre Geschichte erscheint absurd, aber irgendetwas in
+        dir möchte sie trotzdem glauben. Seit dem Zeitpunkt, an dem du das Relikt aus den Ruinen der Eztli zum ersten Mal gesehen hast, weißt
+        du, dass es eine tiefere Bedeutung haben muss. Als du am nächsten Morgen aus deinem Schlafzimmer trittst, sitzt dein ungeladener Gast
+        bereits mit fest vor der Brust verschränkten Armen an deinem Esszimmertisch. Ihr bohrender Blick folgt jeder deiner Bewegungen wie der
+        eines Raubvogels, der seine Beute beobachtet. Ihr tauscht keine Höflichkeiten aus. „Wo ist das Relikt jetzt?“, fragt Ichtaca ungeduldig.
+        „Wohin hast du es gebracht?“ Du erklärst ihr, dass es sich in Sicherheit und in guten Händen befindet. Sie schüttelt den Kopf und an
+        ihren weißen Fingerknöcheln erkennst du, wie frustriert sie ist. „Ich kann dir versichern, das ist es nicht.“\n
+    \nDu stellst deine Fragen vorerst zurück und rufst deine Kontaktperson im Museum der Miskatonic Universität an. Trotz der frühen Morgenstunde
+        sollte Dr. Horowitz bereits im Büro sein und sich auf den langen Tag vorbereiten, der vor ihr liegt. Tatsächlich musst du nicht lange
+        warten, bis dich die Telefonistin durchstellt. Ellis Begrüßung ist ungewohnt barsch, ihre Stimme bebt und bricht. Sobald du sie nach dem
+        Relikt fragst, antwortet sie spöttisch: „Nicht auch noch du! Mr. Walsted rennt mir hier quasi schon die Tür ein und zwei Reporter
+        belästigen mich bereits den ganzen Morgen!“\n
+    \nAuf deine Frage, welche Probleme es denn gäbe, seufzt sie tief. „Das Relikt ist verschwunden“, erklärt sie. „Keiner der Wachmänner kann
+        erklären, wie das passieren konnte. In der einen Minute befand es sich noch im Schaukasten, kurz darauf war es verschwunden. Und bevor
+        du fragst, Mr. Vela ist ebenfalls nirgendwo zu finden.“ Plötzlich schreit sie jemand anderen an: „Einen Moment, bitte! Ich telefoniere!“
+        Kurz angebunden entschuldigt sie sich noch bei dir und legt dann auf.\n
+    \nTatsächlich nimmt Alejandro deinen Anruf nicht entgegen und keiner seiner Mitarbeiter hat ihn seit gestern gesehen. „Glaubst du mir
+        jetzt?“, fragt Ichtaca. Sie steht auf und sammelt ihre Sachen zusammen. „Wir haben genug Zeit verschwendet. Finde das Relikt und triff
+        mich dann heute Abend wieder hier. Aber folge mir <i>nicht</i>.“</string>
+    <string name="threads_introduction_two">Ichtaca verbringt die Nacht auf der Couch in deinem Wohnzimmer. Du selbst findest in dieser Nacht
+        keinen Schlaf mehr, deine Gedanken schwanken zwischen Sorge und Ungläubigkeit. Ihre Geschichte erscheint absurd, aber irgendetwas in
+        dir möchte sie trotzdem glauben. Seit dem Zeitpunkt, an dem du das Relikt aus den Ruinen der Eztli zum ersten Mal gesehen hast, weißt
+        du, dass es eine tiefere Bedeutung haben muss. Als du am nächsten Morgen aus deinem Schlafzimmer trittst, sitzt dein ungeladener Gast
+        bereits mit fest vor der Brust verschränkten Armen an deinem Esszimmertisch. Ihr bohrender Blick folgt jeder deiner Bewegungen wie der
+        eines Raubvogels, der seine Beute beobachtet. Ihr tauscht keine Höflichkeiten aus. „Wo ist das Relikt jetzt?“, fragt Ichtaca ungeduldig.
+        „Wohin hast du es gebracht?“ Du erklärst ihr, dass es sich in Sicherheit und in guten Händen befindet. Sie schüttelt den Kopf und an
+        ihren weißen Fingerknöcheln erkennst du, wie frustriert sie ist. „Ich kann dir versichern, das ist es nicht.“\n
+    \nDu stellst deine Fragen vorerst zurück und rufst in Harlans Büro in der Universität an. Die Sonne geht zwar gerade erst am Horizont auf,
+        aber du kennst ihn als notorischen Frühaufsteher. Tatsächlich musst du nicht lange warten, bis dich die Telefonistin durchstellt.
+        Harlans Stimme klingt zittrig und rau. Als du nach dem Relikt fragst, unterbricht er dich sofort. „Frag nicht!“, brüllt er. „Sie hören
+        uns zu. Sie wissen, dass ich es hier aufbewahre. Sie haben bereits Alejandro in ihre Gewalt gebracht.“ Du versuchst ihn zu beruhigen,
+        damit du ihn fragen kannst, was er damit meint, aber er bricht das Gespräch jäh ab. „Ich muss los. Sie sind hier! …“ Im nächsten Moment
+        ist die Leitung tot.\n
+    \nTatsächlich nimmt Alejandro deinen Anruf ebenfalls nicht entgegen und keiner seiner Mitarbeiter hat ihn seit gestern gesehen. „Glaubst du
+        mir jetzt?“, fragt Ichtaca. Sie steht auf und sammelt ihre Sachen zusammen. „Wir haben genug Zeit verschwendet. Finde das Relikt und
+        triff mich dann heute abend wieder hier. Aber folge mir <i>nicht</i>.“</string>
+    <string name="threads_introduction_option_one">„Du gehst nirgendwo hin, bevor du mir gesagt hast, was hier vor sich geht.“</string>
+    <string name="threads_introduction_option_two"> „Wie du willst.“</string>
+    <string name="threads_introduction_three">Ichtaca knirscht mit den Zähnen und hält einen Moment inne. Du erwartest schon, dass sie ablehnen
+        und deine Wohnung verlassen wird, ohne deine Fragen zu beantworten. Zu deiner Überraschung lenkt sie ein. Ichtaca berichtet dir, dass ihr
+        Volk seit ewigen Zeiten das Relikt vor Eindringlingen schützt, die es für schändliche Zwecke benutzen würden. Ihre Erzählung ist
+        kryptisch, rätselhaft und unglaublich. Sie weigert sich dir zu verraten, woher ihr Volk stammt und wie sie es geschafft haben, so lange
+        unbemerkt zu bleiben. Als du sie eindringlich nach dem Relikt fragst, sagt sie nur, dass es den Fluss der Zeit kontrolliert und dass man
+        damit nicht herumspielen sollte.\n
+    \n„Es muss es an seinen angestammten Platz zurückkehren“, erklärt sie. Ihr Blick sagt eindeutig, dass sie in diesem Punkt nicht nachgeben
+        wird. „Verstehst du das? Es darf auf keinen Fall in falsche Hände fallen. Falls du mir helfen kannst, es zurückzuholen, werde ich dir
+        ebenfalls helfen. Versprich mir nur, dass du es <i>nicht</i> verwenden wirst.“\n
+    \n<b>Merke dir: „Du hast dir Ichtacas Geschichte angehört.“</b>\n
+    \n<b>Dem Chaosbeutel wird für den Rest der Kampagne ein Kultist-Chaosmarker hinzugefügt.</b></string>
+    <string name="threads_introduction_four">Ichtaca spannt mit erschreckender Geschwindigkeit die Sehne ihres reich verzierten Bogens. Dann
+        verlässt sie dich und schlägt die Tür deiner Wohnung hinter sich zu.\n
+    \n<b>Merke dir: „Ichtaca ist ohne dich gegangen.“</b></string>
+    <string name="threads_introduction_five">Ichtaca spannt mit erschreckender Geschwindigkeit die Sehne ihres reich verzierten Bogens. Dann
+        verlässt sie dich und schlägt die Tür deiner Wohnung hinter sich zu.\n
+    \n<b>Merke dir: „Ichtaca ist ohne dich gegangen.“</b>\n
+    \nNach Ichtacas Aufbruch denkst du sorgfältig über ihre Worte nach und erinnerst dich an die Ereignisse, die dich an diesen Punkt geführt
+        haben. Du hast Alejandro nicht vertraut, was das Relikt der Eztli angeht, und du hast zugelassen, dass Ichtaca aufbricht ohne sie zu
+        befragen. Bist du einfach nur paranoid? …</string>
+    <string name="threads_introduction_option_three">„Etwas Misstrauen ist sicher gerechtfertig.“</string>
+    <string name="threads_introduction_option_four">„Vielleicht sollte ich mir doch anhören, was sie zu sagen haben…“</string>
+    <string name="threads_introduction_six"><b>Alle Kultist- und Tafel-Chaosmarker werden aus dem Chaosbeutel entfernt. Danach wird dem
+        Chaosbeutel ein Älteres Wesen-Chaosmarker hinzugefügt.</b>\n
+    \n<b>Für den Rest der Kampagne können die Decks der Ermittler Alejandro Vela oder Ichtaca nicht enthalten. Immer wenn ein Ermittler die
+        Gelegenheit erhalten würde, einen der beiden seinem Deck hinzufügen, erhält jeder Ermittler stattdessen 2 Erfahrungspunkte.</b></string>
+
+
 
     <!--Scenario setup-->
     <string name="untamed_sets">Die ungezähmte Wildnis, Regenwald, Schlangen, Expedition, Wächter der Zeit, Agenten des
@@ -356,6 +461,81 @@
     <string name="eztli_additional_lead">Derselbe Ermittler, der im ersten Szenario der Ermittlungsleiter war, muss auch
         in diesem Szenario der Ermittlungsleiter sein.</string>
 
+    <string name="threads_sets">Fäden des Schicksals, Pnakotische Bruderschaft, Die Mitternachtsmasken, Verschlossene Türen,
+        Dunkeldürre und Dunkler Kult.\n
+    \nAus dem Begegnungsset Die Mitternachtsmasken werden nur die 5 Verratskarten (2x Falsche Fährte und 3x Hetzender Schatten)
+        sowie die folgenden Orte verwendet: Nordstadt, Innenstadt (Bank von Arkham), Oststadt, Miskatonic Universität und
+        Hafenviertel.</string>
+    <string name="threads_locations">Nordstadt, Innenstadt, Oststadt, Miskatonic Universität, Hafenviertel, Velma’s
+        Diner und der Raritätenladen werden ins Spiel gebracht.\n
+    \nJeder Ermittler beginnt das Spiel im Hafenviertel.\n</string>
+    <string name="threads_set_aside">Der Ort Rathaus und die Vorteilskarten Ichtaca (Die vergessene Wächterin) und
+        Tagebuch der Expedition.\n
+    \nVor dem Ziehen der Starthände werden die Sammlung und die Decks aller Spieler nach den Vorteilskarten Alejandro Vela und
+        Relikt der Zeitalter durchsucht und diese Karten als nicht im Spiel befindlich beiseitegelegt.\n</string>
+    <string name="threads_additional_one">Die folgenden Szenenkarten werden aus dem „a/b“-Deck entfernt:\n
+    \n\t\u2022 Harlan ist in Gefahr!, beide Exemplare von Harlans Fluch und ein zufällig bestimmtes Exemplar von In der
+        Ausstellung.\n
+    \nDie Ermittler müssen eine der folgenden beiden Optionen wählen und das „c/d“-Szenendeck entsprechend anpassen:\n
+    \n\t\u2022 Falls die Ermittler die Polizei über Alejandros Verschwinden informieren wollen, werden die folgenden Karten aus
+        dem „c/d“-Deck entfernt: Die Suche nach Alejandro, beide Exemplare von Einflussreiche Freunde und ein zufällig
+        bestimmtes Exemplar von Auf dem Revier.\n
+    \n\t\u2022 Falls die Ermittler Alejandro ohne die Hilfe der Polizei suchen wollen, werden stattdessen die folgenden Karten aus
+        dem „c/d“-Deck entfernt:
+        Vermisste Personen, beide Exemplare von Auf dem Revier und ein zufällig bestimmtes Exemplar von Einflussreiche
+        Freunde.\n
+    \nAus dem „e/f“-Deck werden die folgenden Szenenkarten entfernt:\n
+    \n\t\u2022 Prüfung der Jägerin, beide Exemplare von Die Höhle der Dunkelheit und ein zufällig bestimmtes Exemplar von
+        Fremdartige Relikte.\n</string>
+    <string name="threads_additional_two">Die folgenden Szenenkarten werden aus dem „a/b“-Deck entfernt:\n
+    \n\t\u2022 Harlan ist in Gefahr!, beide Exemplare von Harlans Fluch und ein zufällig bestimmtes Exemplar von In der
+        Ausstellung.\n
+    \nDie Ermittler müssen eine der folgenden beiden Optionen wählen und das „c/d“-Szenendeck entsprechend anpassen:\n
+    \n\t\u2022 Falls die Ermittler die Polizei über Alejandros Verschwinden informieren wollen, werden die folgenden Karten aus
+        dem „c/d“-Deck entfernt: Die Suche nach Alejandro, beide Exemplare von Einflussreiche Freunde und ein zufällig
+        bestimmtes Exemplar von Auf dem Revier.\n
+    \n\t\u2022 Falls die Ermittler Alejandro ohne die Hilfe der Polizei suchen wollen, werden stattdessen die folgenden Karten aus
+        dem „c/d“-Deck entfernt:
+        Vermisste Personen, beide Exemplare von Auf dem Revier und ein zufällig bestimmtes Exemplar von Einflussreiche
+        Freunde.\n
+    \nAus dem „e/f“-Deck werden die folgenden Szenenkarten entfernt:\n
+    \n\t\u2022 Die Untersuchung der Wächterin, beide Exemplare von Fremdartige Relikte und ein zufällig bestimmtes Exemplar
+        von Die Höhle der Dunkelheit.\n</string>
+    <string name="threads_additional_three">Die folgenden Szenenkarten werden aus dem „a/b“-Deck entfernt:\n
+    \n\t\u2022 Das Relikt ist verschwunden!, beide Exemplare von In der Ausstellung und ein zufällig bestimmtes Exemplar von
+        Harlans Fluch.\n
+    \nDie Ermittler müssen eine der folgenden beiden Optionen wählen und das „c/d“-Szenendeck entsprechend anpassen:\n
+    \n\t\u2022 Falls die Ermittler die Polizei über Alejandros Verschwinden informieren wollen, werden die folgenden Karten aus
+        dem „c/d“-Deck entfernt: Die Suche nach Alejandro, beide Exemplare von Einflussreiche Freunde und ein zufällig
+        bestimmtes Exemplar von Auf dem Revier.\n
+    \n\t\u2022 Falls die Ermittler Alejandro ohne die Hilfe der Polizei suchen wollen, werden stattdessen die folgenden Karten aus
+        dem „c/d“-Deck entfernt:
+        Vermisste Personen, beide Exemplare von Auf dem Revier und ein zufällig bestimmtes Exemplar von Einflussreiche
+        Freunde.\n
+    \nAus dem „e/f“-Deck werden die folgenden Szenenkarten entfernt:\n
+    \n\t\u2022 Prüfung der Jägerin, beide Exemplare von Die Höhle der Dunkelheit und ein zufällig bestimmtes Exemplar von
+        Fremdartige Relikte.\n</string>
+    <string name="threads_additional_four">Die folgenden Szenenkarten werden aus dem „a/b“-Deck entfernt:\n
+    \n\t\u2022 Das Relikt ist verschwunden!, beide Exemplare von In der Ausstellung und ein zufällig bestimmtes Exemplar von
+        Harlans Fluch.\n
+    \nDie Ermittler müssen eine der folgenden beiden Optionen wählen und das „c/d“-Szenendeck entsprechend anpassen:\n
+    \n\t\u2022 Falls die Ermittler die Polizei über Alejandros Verschwinden informieren wollen, werden die folgenden Karten aus
+        dem „c/d“-Deck entfernt: Die Suche nach Alejandro, beide Exemplare von Einflussreiche Freunde und ein zufällig
+        bestimmtes Exemplar von Auf dem Revier.\n
+    \n\t\u2022 Falls die Ermittler Alejandro ohne die Hilfe der Polizei suchen wollen, werden stattdessen die folgenden Karten aus
+        dem „c/d“-Deck entfernt:
+        Vermisste Personen, beide Exemplare von Auf dem Revier und ein zufällig bestimmtes Exemplar von Einflussreiche
+        Freunde.\n
+    \nAus dem „e/f“-Deck werden die folgenden Szenenkarten entfernt:\n
+    \n\t\u2022 Die Untersuchung der Wächterin, beide Exemplare von Fremdartige Relikte und ein zufällig bestimmtes Exemplar
+        von Die Höhle der Dunkelheit.\n</string>
+    <string name="threads_rules_heading">Drei Szenen, drei Fäden</string>
+    <string name="threads_rules">Dieses Szenario enthält drei verschiedene Szenendecks – ein „a/b“-Deck, ein „c/d“-Deck und
+        ein „e/f“-Deck. Jedes dieser Szenendecks wird separat nach den üblichen Regeln in numerischer Reihenfolge erstellt.
+        Während des Szenarios sind alle drei Szenendecks im Spiel und die Spieler dürfen wählen, welche Szenen sie
+        weiterverfolgen und welche sie vorerst ignorieren. Der Text aller drei Szenen gilt zu jedem Zeitpunkt als aktiv.
+        Möglicherweise haben die Spieler nicht ausreichend Zeit, um alle drei Aufgaben zu erledigen. Deshalb sollten sie
+        wohlüberlegte Entscheidungen treffen, welchen Spuren sie folgen wollen!</string>
 
     <!--Scenario resolutions-->
     <string name="untamed_no_resolution">Mittwoch, 1. Juli 1925\n
@@ -478,7 +658,7 @@
         Speere dich durchbohren.\n
         \n<b>Alle Ermittler werden getötet.</b>\n
         \n(Folgender Text wurde unter den vorherigen Tagebucheintrag gekritzelt.)\n
-    \nEs ist nicht meine Art, Dinge nicht zuende zu bringen. Für meine gefallenen Kameraden habe ich es auf mich genommen, den
+    \nEs ist nicht meine Art, Dinge nicht zu Ende zu bringen. Für meine gefallenen Kameraden habe ich es auf mich genommen, den
         Rest unserer Expedition in diesem Tagebuch festzuhalten.\n
     \nDie anderen haben es nicht lebend aus dem Tempel geschafft. Ich habe zwei der übrigen Mitglieder der Expedition, José und Andrea, überzeugen können,
         sich auf die Suche nach den anderen zu machen. Aber jetzt fürchte ich, dass auch diese beiden einem furchtbaren Schicksal zum Opfer gefallen sind.\n
@@ -560,5 +740,29 @@
     \nZur Hölle mit Eztli und zur Hölle mit diesem verdammten Ort.\n
     \n<b>Ein beliebiger Ermittler muss das Relikt der Zeitalter seinem Deck hinzufügen. Diese Karte zählt nicht gegen die
         Deckgröße des Ermittlers.</b></string>
+
+    <string name="threads_resolution">Du kehrst zurück in dein Haus und überdenkst die Lage. Deine Ermittlungen in der
+        Stadt haben ergeben, dass eine geheime Verbindung in Arkham existiert. Du hast erfahren, dass sie sich Die
+        Bruderschaft nennt und sogar mehr über das Relikt der Eztli und Alejandros vorherige Expedition zu wissen
+        scheint als du. Sie agiert im Geheimen und schlägt aus dem Hinterhalt zu. Über ihre Motive kannst du noch nichts
+        sagen. Aber ein wichtiges Detail hast du erfahren.\n
+    \n„Die Bruderschaft sucht einen Ort, der als der Nexus von N’kai bekannt ist“, behauptet Ichtaca. Auf dem Tisch vor dir liegt
+        eine Karte von Mittelamerika, auf welcher der Weg der vorherigen Expedition eingezeichnet ist. „Ich habe von diesem Ort
+        gehört, weiß aber nicht, wo genau er sich befindet.“ Erneut scheint deine geheimnisvolle Führerin mehr zu wissen, als sie zugibt.\n
+    \nDa du keine anderen Spuren hast, denen du folgen könntest, bleibt dir nichts anderes übrig. Wieder einmal musst du auf der Suche
+        nach Antworten in unbekanntes Gebiet vorstoßen… aber wird dieses Mal jemand zurückkehren?\n
+    \n<b>Der Ermittlungsleiter darf die Karte Tagebuch der Expedition seinem Deck hinzufügen. Sie zählt nicht gegen die Deckgröße.</b></string>
+    <string name="threads_resolution_one_one">Falls sich das Relikt der Zeitalter nicht bereits in einem Ermittlerdeck befindet, muss ein beliebiger
+        Ermittler es seinem Deck hinzufügen. Diese Karte zählt nicht gegen die Deckgröße jenes Ermittlers. Für den Rest der Kampagne wird jedes Mal,
+        wenn der Besitzer der Karte Relikt der Zeitalter aus irgendeinem Grund nicht an einem Szenario teilnimmt, ein neuer Ermittler gewählt, zu
+        dessen Deck sie hinzugefügt wird.\n\n</string>
+    <string name="threads_resolution_one_two">Falls sich das Relikt der Zeitalter in einem Ermittlerdeck befindet, wird diese Karte aus dem Deck
+        dieses Ermittlers entfernt.\n\n</string>
+    <string name="threads_resolution_two_one">Falls sich Alejandro Vela nicht bereits in einem Ermittlerdeck befindet, darf ein beliebiger
+        Ermittler wählen, diese Karte seinem Deck hinzufügen.\n\n</string>
+    <string name="threads_resolution_two_two">Falls sich Alejandro Vela in einem Ermittlerdeck befindet, wird diese Karte aus dem Deck dieses
+        Ermittlers entfernt.\n\n</string>
+    <string name="threads_resolution_three_one">Ein beliebiger Ermittler darf wählen, die Karte Ichtaca (Die vergessene Wächterin) seinem
+        Deck hinzuzufügen.</string>
 
 </resources>
