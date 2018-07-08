@@ -9,17 +9,18 @@
     <string name="forgotten_scenario_six">Escenario 6: La Ciudad de los Archivos</string>
     <string name="forgotten_scenario_seven">Escenario 7: Las profundidades de Yoth</string>
     <string name="forgotten_scenario_eight">Escenario 8: Eones destrozados</string>
-    <string name="forgotten_interlude_one">Interlude 1: Noches inquietas</string>
-    <string name="forgotten_interlude_two">Interlude 2: Fin de la expedición</string>
-    <string name="forgotten_interlude_three">Interlude 3: La atracción de la jungla</string>
-    <string name="forgotten_interlude_four">Interlude 4: Los que son prisioneros</string>
-    <string name="forgotten_interlude_five">Interlude 5: La oscuridad</string>
+    <string name="forgotten_interlude_one">Interludio 1: Noches inquietas</string>
+    <string name="forgotten_interlude_two">Interludio 2: Fin de la expedición</string>
+    <string name="forgotten_interlude_three">Interludio 3: La atracción de la jungla</string>
+    <string name="forgotten_interlude_four">Interludio 4: Los que son prisioneros</string>
+    <string name="forgotten_interlude_five">Interludio 5: La oscuridad</string>
+    <string name="forgotten_resupply">Punto de reabastecimiento</string>
     <string name="forgotten_epilogue">Epílogo</string>
 
 
     <!--Miscellaneous-->
     <string name="vengeance_counter">Venganza: </string>
-    <string name="advanced_act_three">Advanced to Act 3</string>
+    <string name="advanced_act_three">Se avanzó al Acto 3</string>
     <string name="untamed_ichtaca_one">El escenario acabó en el acto 1 o 2</string>
     <string name="untamed_ichtaca_two">Habéis combatido con Ichtaca</string>
     <string name="untamed_ichtaca_three">Ichtaca os guía</string>
@@ -27,13 +28,21 @@
     <string name="harbinger_damage">Daño sobre el Heraldo de Valusia: </string>
     <string name="eztli_resolution_three_option_one">“No podemos detenernos ahora: ¡debemos volver dentro!”</string>
     <string name="eztli_resolution_three_option_two">“Es demasiado peligroso. Debemos destruir este lugar.”</string>
+    <string name="act_ones_completed">Cartas de Acto 1 completadas: </string>
+    <string name="act_3b_completed">Acto 3b completado</string>
+    <string name="act_3d_completed">Acto 3d completado</string>
+    <string name="act_3f_completed">Acto 3f completado</string>
+    <string name="xp_available">PE disponibles</string>
+    <string name="remove_poisoned">Quitar Debilidad Envenenado (3PE)</string>
+    <string name="remove_physical">Curar trauma físico (5PE)\n(Trauma actual:</string>
+    <string name="remove_mental">Curar trauma mental (5PE)\n(Trauma actual:</string>
 
 
     <!--Supplies-->
     <string name="supplies">Suministros</string>
     <string name="choose_supplies">Elegir suministros</string>
     <string name="points_available">pts disponibles</string>
-    <string name="not_enough_points">You do not have enough supply points available.</string>
+    <string name="not_enough_points">No tienes suficientes puntos de suministro disponibles.</string>
     <string name="provisions_description">Provisiones (1pt):
         <i>Agua y comida para una persona. Imprescindible en cualquier viaje.</i></string>
     <string name="medicine_description">Medicinas (2pts):
@@ -72,6 +81,9 @@
     <string name="binoculars">Prismáticos</string>
     <string name="chalk">Tiza</string>
     <string name="pendant">Colgante</string>
+    <string name="gasoline">Gasolina</string>
+    <string name="pocketknife">Navaja</string>
+    <string name="pickaxe">Pico</string>
     <string name="no_supplies">Sin suministros</string>
 
 
@@ -91,6 +103,13 @@
     Los investigadores se han ganado la confianza de Alejandro.\n\n</string>
     <string name="custody_harlan">Los investigadores le dieron la custodia de la reliquia a Harlan Earnstone.\n\n
     Alejandro continúa su investigación por su cuenta.\n\n</string>
+    <string name="forging_own_path">Los investigadores se están forjando su propio camino.\n\n</string>
+    <string name="relic_missing">La reliquia ha desaparecido.\n\n</string>
+    <string name="found_relic">Los investigadores encontraro la reliquia desaparecida.\n\n</string>
+    <string name="alejandro_missing">Alejandro ha desaparecido.\n\n</string>
+    <string name="rescued_alejandro">Los investigadores rescataron a Alejandro.\n\n</string>
+    <string name="ichtaca_dark">Ichtaca está al margen.\n\n</string>
+    <string name="bond_ichtaca">Los investigadores forjaron un vínculo con Ichtaca.\n\n</string>
 
     <!--Edit log-->
     <string name="yigs_fury_heading">Furia de Yig</string>
@@ -100,6 +119,12 @@
     <string name="harbinger_heading">El Heraldo de Valusia</string>
     <string name="relic_heading">La Reliquia de las eras</string>
     <string name="custody_heading">Custodio de la Reliquia</string>
+    <string name="ichtaca_tale_heading">El relato de Ichtaca</string>
+    <string name="listened_ichtaca">Los investigadores escucharon el relato de Ichtaca.</string>
+    <string name="ichtaca_left">Ichtaca se fue sin los investigadores.</string>
+    <string name="missing_relic_heading">Reliquia desaparecida</string>
+    <string name="missing_alejandro_heading">Alejandro desaparecido</string>
+    <string name="missing_ichtaca_heading">Ichtaca desaparecida</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X es la cantidad de puntos de venganza que hay en la zona de victoria.</string>
@@ -120,6 +145,17 @@
     <string name="eztli_thing_one">Revela otra ficha de Caos. Si fracasas, coloca 1 ficha de Perdición en tu Lugar.</string>
     <string name="eztli_thing_two">Revela otra ficha de Caos. Coloca 1 ficha de Perdición en tu Lugar.</string>
 
+    <string name="threads_skull_one">–X. X es la cantidad más alta de fichas de Perdición que haya sobre
+    	un Enemigo <b><i>Sectario</i></b>.</string>
+    <string name="threads_skull_two">–X. X es la cantidad total de fichas de Perdición en juego.</string>
+    <string name="threads_cultist_one">–2. Si no tienes éxito por al menos 1, recibe 1 punto de daño.</string>
+    <string name="threads_cultist_two">–2. Si no tienes éxito por al menos 2, recibe 1 punto de daño directo.</string>
+    <string name="threads_tablet_one">–2. Si no tienes éxito por al menos 1, coloca 1 ficha de Perdición sobre el
+    	Enemigo <b><i>Sectario</i></b> más cercano.</string>
+    <string name="threads_tablet_two">–2. Si no tienes éxito por al menos 2, coloca 1 ficha de Perdición sobre cada
+    	Enemigo <b><i>Sectario</i></b>.</string>
+    <string name="threads_thing_one">–2. Si fracasas, pierde 1 de tus pistas.</string>
+    <string name="threads_thing_two">–3. Si fracasas, pierde 1 de tus pistas.</string>
 
     <!--Campaign introduction-->
     <string name="forgotten_introduction"><b>Prólogo</b>\n
@@ -261,7 +297,7 @@
     \n(La entrada del diario termina de forma abrupta.)\n
         \n<b>Si no está ya en el mazo de un investigador, un investigador cualquiera puede
     		elegir añadir a Alejandro Vela a su mazo.</b>\n
-        \n<b>Añade 1 ficha de Tablilla a la bolsa de caos durante el resto de la campaña.</b>\n
+        \n<b>Añade 1 ficha de Lápida a la bolsa de caos durante el resto de la campaña.</b>\n
     \nSe te cae la pluma cuando una fuerte llamada en la puerta te sobresalta, te pones
 		en pie de un salto. Son casi las 2:30 de la madrugada. ¿Quién podría venir a
 		verte a esta hora? Tus pensamientos se van inconscientemente a la jungla, y te
@@ -402,6 +438,82 @@
 		Estamos solos, pero al menos hemos despejado una ruta de huida por
 		si las cosas se ponen feas…</string>
 
+	<string name="threads_introduction_one">La noche pasa, e Ichtaca se queda descansando en tu sala de estar. No
+        logras dormir ni un minuto durante el resto de la noche, pues tus pensamientos vagan entre la preocupación
+        y la incredulidad. Su historia es ridícula, pero aun así no puedes evitar sentir el impulso de creértela.
+        Supiste que la reliquia de las ruinas de Eztli tenía algún propósito mayor desde el momento en el que le
+        pusiste la vista encima. Cuando sales de tu cuarto la mañana siguiente, tu huésped no deseada está sentada
+        a la mesa del comedor, con los brazos cruzados sobre el pecho. Sus penetrantes ojos siguen cada uno de tus
+        movimientos como un ave que observa a su presa. No hay saludos.\n
+    \n—¿Dónde está la reliquia ahora? —pregunta Ichtaca con impaciencia—. ¿Dónde la has llevado?\n
+    \nLe explicas que está segura, en buenas manos. Sacude la cabeza y ves que tiene los nudillos blancos de
+        frustación.\n
+    \n—Te aseguro que no lo está.\n
+    \nDejas a un lado momentáneamente las muchas preguntas que tienes y llamas a tu contacto del museo de la Universidad
+        Miskatonic. Pese a lo temprano que es, la Dra. Horowitz estará en su despacho, preparando el largo día que tiene
+        por delante. La operadora te conecta tras un ligero retraso. Elli te saluda de forma inusualmente brusca, con
+        voz temblorosa y entrecortada. En cuanto le preguntas sobre la reliquia, se burla diciendo: —¿Tú también? Al Sr.
+        Walsted sólo le falta echarme la puerta abajo de tanto llamar, ¡y hay dos periodistas que llevan toda la mañana
+        incordiándome!\n
+    \nLe preguntas que cúal es el problema y ella da un hondo suspiro antes de responder: —La reliquia ha desaparecido —te
+        explica—. Ninguno de los guardias de seguridad sabe qué ha ocurrido. Estaba en su vitrina y al momento había
+        desaparecido. Y antes de que me lo preguntes, no, el Sr. Vela tampoco aparece por ninguna parte.\n
+    \nSe para un momento para gritarle a otra persona: —¡Un momento, por favor! ¡Estoy hablando por teléfono! —Se disculpa
+        secamente y te cuelga un instante después.\n
+    \nComo cabía esperar, Alejandro no contesta al teléfono, y ninguno de sus colegas lo ha visto desde ayer.\n
+    \n—¿Me crees ya? —te pregunta Ichtaca mientras se pone en pie y recoge sus cosas—. Ya hemos perdido suficiente tiempo.
+        Encuentra la reliquia y reúnete aquí conmigo esta noche. <i>No</i> me sigas.</string>
+    <string name="threads_introduction_two">La noche pasa, e Ichtaca se queda descansando en tu sala de estar. No
+        logras dormir ni un minuto durante el resto de la noche, pues tus pensamientos vagan entre la preocupación
+        y la incredulidad. Su historia es ridícula, pero aun así no puedes evitar sentir el impulso de creértela.
+        Supiste que la reliquia de las ruinas de Eztli tenía algún propósito mayor desde el momento en el que le
+        pusiste la vista encima. Cuando sales de tu cuarto la mañana siguiente, tu huésped no deseada está sentada
+        a la mesa del comedor, con los brazos cruzados sobre el pecho. Sus penetrantes ojos siguen cada uno de tus
+        movimientos como un ave que observa a su presa. No hay saludos.\n
+    \n—¿Dónde está la reliquia ahora? —pregunta Ichtaca con impaciencia—. ¿Dónde la has llevado?\n
+    \nLe explicas que está segura, en buenas manos. Sacude la cabeza y ves que tiene los nudillos blancos de
+        frustación.\n
+    \n—Te aseguro que no lo está.\n
+    \nDejas a un lado momentáneamente las muchas preguntas que tienes y llamas al despacho de Harlan en la universidad.
+        Aunque el sol apenas comienza a asomar por el horizonte, sabes que siempre ha sido muy madrugador. La operadora
+        te conecta tras un ligero retraso. La voz de Harlan suena temblorosa y áspera. Te interrumpe en cuanto le
+        preguntas por la reliquia: —¡No! —gruñe—. Están escuchando. Saben que la guardo aquí. Ya se han llevado a Alejandro.\n
+    \nIntentas calmarlo para poder preguntarle qué quiere decir con eso, pero interrumpe la conversación: —Tengo que colgar.
+        ¡Están aquí!\n
+    \nLa línea se corta\n
+    \nComo cabía esperar, Alejandro no contesta al teléfono, y ninguno de sus colegas lo ha visto desde ayer.\n
+    \n—¿Me crees ya? —te pregunta Ichtaca mientras se pone en pie y recoge sus cosas—. Ya hemos perdido suficiente tiempo.
+        Encuentra la reliquia y reúnete aquí conmigo esta noche. <i>No</i> me sigas.</string>
+    <string name="threads_introduction_option_one">—No te vas a ninguna parte hasta que me digas qué está pasando.</string>
+    <string name="threads_introduction_option_two">—Como quieras.</string>
+    <string name="threads_introduction_three">Ichtaca rechina los dientes y se detiene. Esperas que se niegue y se marche sin
+        contestar tus preguntas, pero, sorprendentemente, accede a hacerlo. Según Ichtaca, su pueblo lleva siglos protegiendo
+        la reliquia de los intrusos que pretenden usarla para propósitos siniestros. Habla de forma enigmática, con historias
+        fantásticas y medio acertijos, aunque se niega a explicarte de dónde procede su pueblo y cómo han permanecido ocultos
+        tanto tiempo. Cuando insistes sobre la reliquia, lo único que dice es que controla el flujo del tiempo, y que no hay
+        que jugar con ella.\n
+    \n—Debe volver al lugar donde pertenece —te explica, con una mirada firme que no se aparta de ti ni por un instante—. ¿Lo
+        entiendes? No puede caer en malas manos. Si me ayudas a recuperarla, yo también te ayudaré a ti. Pero prométeme que
+        <i>no la usarás</i>.\n
+    \n<b>Recuerda que “los investigadores han escuchado el relato de Ichtaca”.</b>\n
+    \n<b>Añade 1 ficha de Sectario a la bolsa de Caos durante el resto de la campaña.</b></string>
+    <string name="threads_introduction_four">Ichtaca encorda su intricadamente decorado arco con una velocidad aterradora y
+        cierra de un portaco cuando se marcha.\n
+    \n<b>Recuerda que “Ichtaca se fue sin los investigadores”.</b></string>
+    <string name="threads_introduction_five">Ichtaca encorda su intricadamente decorado arco con una velocidad aterradora y
+        cierra de un portaco cuando se marcha.\n
+    \n<b>Recuerda que “Ichtaca se fue sin los investigadores”.</b>\n
+    \nCuando Ichtaca se ha marchado, piensas detenidamente en lo que dijo, y repasas los acontecimientos que se han sucedido
+        hasta llegar a este punto. No le confiaste a Alejandro la reliquia de Eztli y dejaste que Ichtaca se fuese sin hacerle
+        más preguntas. ¿Estás siendo paranoico…?</string>
+    <string name="threads_introduction_option_three">—Deberíamos recelar de ellos.</string>
+    <string name="threads_introduction_option_four">—Quizá debería hacerles caso después de todo…</string>
+    <string name="threads_introduction_six"><b>Retira todas las fichas de Sectario y Lápida de la bolsa de caos y sustitúyelas
+        por 1 ficha de Antiguo.</b>\n
+    \n<b>Durante el resto de la campaña, ningún investigador puede incluir a Alejandro Vela ni a Ichtaca en su mazo. En cualquier
+        momento en el que un investigador fuese a recibir la opción de incluir a cualquiera de ellos, en lugar de eso cada
+        investigador obtiene 2 puntos de experiencia.</b></string>
+
 
     <!--Scenario setup-->
     <string name="untamed_sets">Naturaleza salvaje, Selva, Serpientes, Expedición, Guardianes del tiempo,
@@ -438,6 +550,77 @@
     <string name="eztli_low_rations_multiple_investigators">investigadores comienzan el escenario con 3 recursos menos.\n\n</string>
     <string name="eztli_additional_lead">Si Ursula Downs, Leo Anderson o Monterey Jack fue elegido como líder de la
     	expedición en el Escenario 1, comienza el Escenario 2 como el investigador jefe.</string>
+
+    <string name="threads_sets">Los hilos del destino, Hermandad pnakótica, Las máscaras de medianoche, Puertas cerradas,
+        Ángeles descarnados y Secta oscura.\n
+    \nAl reunir el conjunto de encuentros Las máscaras de medianoche, coge sólo las 5 cartas de Traición (2x Pista Falsa y
+        y 3x Sombra acechante) y los siguientes Lugares: Barrio Norte, Centro (Primer Banco de Arkham), Barrio Este, Universidad
+        Miskatonic y Barrio Fluvial.</string>
+    <string name="threads_locations">Pon los siguientes Lugares en juego: Barrio Norte, Centro, Barrio Este, Universidad
+        Miskatonic, Barrio Fluvial, Restaurante de Velma y Tienda de curiosidades.\n
+    \nCada investigador comienza la partida en el Barrio Fluvial.\n</string>
+    <string name="threads_set_aside">el Lugar Ayuntamiento, el Apoyo Ichtaca (La guardiana olvidada) y el Apoyo Diario de
+        expedición.\n
+    \nAntes de robar las manos iniciales, busca a Alejandro Vela y la Reliquia de las eras en la colección y en los mazos
+        de todos los jugadores y ponlos aparte, fuera del juego.\n</string>
+    <string name="threads_additional_one">Retira las siguientes cartas de Acto del mazo “a/b”:\n
+    \n\t\u2022 ¡Harlan está en peligro!, las dos copias de La maldición de Harlan y  una de las dos copias de En la
+        exposición, al azar.\n
+    \nLos investigadores deben elegir una de las siguientes opciones, y ajustar el contenido del mazo “c/d” en función
+        de los escogido:\n
+    \n\t\u2022 Si quieres ir a la policía para informarles de la desaparición de Alejandro, retira las siguientes cartas
+        de Acto del mazo “c/d”: La búsqueda de Alejandro, las dos copias de Amigos influyentes y una de las dos copias de
+        En la comisaria, al azar.\n
+    \n\t\u2022 Si quieres buscar a Alejandro por tu cuenta, retira las siguientes cartas de Acto del mazo “c/d”: Personas
+        desaparecidas, las dos copias de En la comisaria y una de las dos copias de Amigos influyentes, al azar.\n
+    \nRetira las siguientes cartas de Acto del mazo “e/f”:\n
+    \n\t\u2022 La prueba de la cazadora, las dos copias de La cueva de la oscuridad y una de las dos copias de Reliquias
+        extrañas, al azar.\n</string>
+    <string name="threads_additional_two">Retira las siguientes cartas de Acto del mazo “a/b”:\n
+    \n\t\u2022 ¡Harlan está en peligro!, las dos copias de La maldición de Harlan y  una de las dos copias de En la
+        exposición, al azar.\n
+    \nLos investigadores deben elegir una de las siguientes opciones, y ajustar el contenido del mazo “c/d” en función
+        de los escogido:\n
+    \n\t\u2022 Si quieres ir a la policía para informarles de la desaparición de Alejandro, retira las siguientes cartas
+        de Acto del mazo “c/d”: La búsqueda de Alejandro, las dos copias de Amigos influyentes y una de las dos copias de
+        En la comisaria, al azar.\n
+    \n\t\u2022 Si quieres buscar a Alejandro por tu cuenta, retira las siguientes cartas de Acto del mazo “c/d”: Personas
+        desaparecidas, las dos copias de En la comisaria y una de las dos copias de Amigos influyentes, al azar.\n
+    \nRetira las siguientes cartas de Acto del mazo “e/f”:\n
+    \n\t\u2022 La investigación de la guardiana, las dos copias de Reliquias extrañas y una de las dos copias de La cueva
+        de la oscuridad, al azar.\n</string>
+    <string name="threads_additional_three">Retira las siguientes cartas de Acto del mazo “a/b”:\n
+    \n\t\u2022 ¡La reliquia ha desaparecido!, las dos copias de En la exposición y una de las dos copias de La maldición
+        de Harlan, al azar.\n
+    \nLos investigadores deben elegir una de las siguientes opciones, y ajustar el contenido del mazo “c/d” en función
+        de los escogido:\n
+    \n\t\u2022 Si quieres ir a la policía para informarles de la desaparición de Alejandro, retira las siguientes cartas
+        de Acto del mazo “c/d”: La búsqueda de Alejandro, las dos copias de Amigos influyentes y una de las dos copias de
+        En la comisaria, al azar.\n
+    \n\t\u2022 Si quieres buscar a Alejandro por tu cuenta, retira las siguientes cartas de Acto del mazo “c/d”: Personas
+        desaparecidas, las dos copias de En la comisaria y una de las dos copias de Amigos influyentes, al azar.\n
+    \nRetira las siguientes cartas de Acto del mazo “e/f”:\n
+    \n\t\u2022 La prueba de la cazadora, las dos copias de La cueva de la oscuridad y una de las dos copias de Reliquias
+        extrañas, al azar.\n</string>
+    <string name="threads_additional_four">Retira las siguientes cartas de Acto del mazo “a/b”:\n
+    \n\t\u2022 ¡La reliquia ha desaparecido!, las dos copias de En la exposición y una de las dos copias de La maldición
+        de Harlan, al azar.\n
+    \nLos investigadores deben elegir una de las siguientes opciones, y ajustar el contenido del mazo “c/d” en función
+        de los escogido:\n
+    \n\t\u2022 Si quieres ir a la policía para informarles de la desaparición de Alejandro, retira las siguientes cartas
+        de Acto del mazo “c/d”: La búsqueda de Alejandro, las dos copias de Amigos influyentes y una de las dos copias de
+        En la comisaria, al azar.\n
+    \n\t\u2022 Si quieres buscar a Alejandro por tu cuenta, retira las siguientes cartas de Acto del mazo “c/d”: Personas
+        desaparecidas, las dos copias de En la comisaria y una de las dos copias de Amigos influyentes, al azar.\n
+    \nRetira las siguientes cartas de Acto del mazo “e/f”:\n
+    \n\t\u2022 La investigación de la guardiana, las dos copias de Reliquias extrañas y una de las dos copias de La cueva
+        de la oscuridad, al azar.\n</string>
+    <string name="threads_rules_heading">Tres actos, tres hilos</string>
+    <string name="threads_rules">Este escenario contiene tres mazos de Acto distintos: un mazo “a/b”, un mazo “c/d” y un 
+        mazo “e/f”. Cada uno de estos mazos de Acto se crea por separado y en orden númerico, como de costumbre. A lo largo
+        de este escenario, estarán en juego los tres mazos de Acto, y los jugadores pueden elegir en qué Actos actuar y
+        cuáles ignorar. El texto de los tres Actos se considera activo en todo momento. Puede que no tengas tiempo de
+        completar las tres tareas, ¡así que elige bien cuál quieres emprender!</string>
 
 
     <!--Scenario resolutions-->
@@ -767,5 +950,30 @@
 		podría sentirse a salvo tras haber visto lo que hemos visto?\n
     \nQue le den a Eztli y a este condenado lugar.\n
     \n<b>Un investigador debe añadir la Reliquia de las eras a su mazo.</b></string>
+
+    <string name="threads_resolution">Llegas de vuelta a tu casa y haces balance de la situación. Tu investigación
+        por toda la ciudad ha puesto al descubierto la existencia de una cábala secreta en Arkham. Por lo que sabes,
+        se llaman la <i>Hermandad</i>, y parecen saber mucho más que tú sobre la reliquia de Eztli y la anterior
+        expedición de Alejandro. Sus métodos son secretos y furtivos, y aún desconoces sus motivos. Sin embargo, ha
+        aparecido un dato vital como información.\n
+    \n—Buscan un lugar conocido como el Nexo de N'kai —afirma Ichtaca. Sobre la mesa hay un mapa de Centroamérica en
+        el que está marcado el rumbo de la expedición anterior—. He oído hablar de ese lugar, pero no conozco su
+        ubicación exacta.\n
+    \nUna vez más, tu misteriosa guía parece saber más de lo que dice, y sin otras pistas que seguir, no tienes
+        elección. Tendrás que aventurarte una vez más por territorio desconocido en busca de respuestas… pero ¿logrará
+        regresar alguien esta vez?\n
+    \n<b>El investigador jefe obtiene la carta Diario de expedición y puede incluirla en su mazo.</b></string>
+    <string name="threads_resolution_one_one">Si la Reliquia de las eras no forma parte aún del mazo de un investigador,
+        un investigador cualquiera debe elegir incluirla en su mazo. Durante el resto de la campaña, en cualquier
+        momento en el que el propietario de la Reliquia de las eras salga de la campaña por algún motivo, elige a otro
+        investigador y añádela al mazo de ese investigador.\n\n</string>
+    <string name="threads_resolution_one_two">Si la Reliquia de las eras es parte del mazo de un investigador, retírala
+        del mazo de ese investigador durante el resto de la campaña.\n\n</string>
+    <string name="threads_resolution_two_one">Si Alejandro Vela no forma parte aún del mazo de un investigador, un
+        investigador cualquiera puede elegir incluirlo en su mazo.\n\n</string>
+    <string name="threads_resolution_two_two">Si Alejandro Vela es parte del mazo de un investigador, retíralo del mazo
+        de ese investigador durante el resto de la campaña.\n\n</string>
+    <string name="threads_resolution_three_one">Un investigador cualquiera puede elegir incluir a Ichtaca (La guardiana
+        olvidada) en su mazo.</string>
 
 </resources>
