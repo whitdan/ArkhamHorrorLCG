@@ -194,7 +194,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + ForgottenEntry.COLUMN_ICHTACAS_TALE + " INTEGER, "
                 + ForgottenEntry.COLUMN_MISSING_RELIC + " INTEGER, "
                 + ForgottenEntry.COLUMN_MISSING_ALEJANDRO + " INTEGER, "
-                + ForgottenEntry.COLUMN_MISSING_ICHTACA + "INTEGER);";
+                + ForgottenEntry.COLUMN_MISSING_ICHTACA + " INTEGER);";
 
         // Chaos bag table
         String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ChaosBagEntry.TABLE_NAME + " ("

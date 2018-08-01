@@ -1,5 +1,7 @@
 package com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus;
 
+// TODO: export/import, standalones
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

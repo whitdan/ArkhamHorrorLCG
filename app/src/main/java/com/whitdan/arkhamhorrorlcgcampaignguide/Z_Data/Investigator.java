@@ -82,4 +82,5 @@ public class Investigator {
     public int Provisions;
     public int Medicine;
     public int Supplies;
+    public int ResuppliesOne;
 }

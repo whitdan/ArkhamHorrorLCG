@@ -88,7 +88,11 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
             View selectSupplies = View.inflate(this, R.layout.e_item_choose_supplies, null);
             final int currentInvestigator = i;
-            globalVariables.Investigators.get(i).Supplies = 1;
+            if (globalVariables.CurrentScenario == 0) {
+                globalVariables.Investigators.get(i).Supplies = 1;
+            } else if (globalVariables.CurrentScenario == 9) {
+                globalVariables.Investigators.get(i).ResuppliesOne = 1;
+            }
 
             // Investigator name
             TextView name = selectSupplies.findViewById(R.id.investigator_name);
@@ -140,7 +144,12 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             provisions.setTypeface(arnopro);
             final TextView provisionsAmount = selectSupplies.findViewById(R.id.provisions_amount);
             provisionsAmount.setTypeface(wolgastbold);
-            provisionsAmount.setText("0");
+            if (globalVariables.Investigators.get(currentInvestigator).Provisions > 0) {
+                provisionsAmount.setText(Integer.toString(globalVariables.Investigators.get(currentInvestigator)
+                        .Provisions));
+            } else {
+                provisionsAmount.setText("0");
+            }
             ImageView provisionsDecrement = selectSupplies.findViewById(R.id.provisions_decrement);
             ImageView provisionsIncrement = selectSupplies.findViewById(R.id.provisions_increment);
             provisionsDecrement.setOnClickListener(new View.OnClickListener() {
@@ -181,7 +190,12 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             medicine.setTypeface(arnopro);
             final TextView medicineAmount = selectSupplies.findViewById(R.id.medicine_amount);
             medicineAmount.setTypeface(wolgastbold);
-            medicineAmount.setText("0");
+            if (globalVariables.Investigators.get(currentInvestigator).Medicine > 0) {
+                medicineAmount.setText(Integer.toString(globalVariables.Investigators.get(currentInvestigator)
+                        .Medicine));
+            } else {
+                medicineAmount.setText("0");
+            }
             ImageView medicineDecrement = selectSupplies.findViewById(R.id.medicine_decrement);
             ImageView medicineIncrement = selectSupplies.findViewById(R.id.medicine_increment);
             medicineDecrement.setOnClickListener(new View.OnClickListener() {
@@ -262,6 +276,23 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
                 torches.setText(R.string.pocketknife_choose);
                 map.setText(R.string.pickaxe_choose);
                 pendant.setVisibility(GONE);
+
+                if (globalVariables.Investigators.get(currentInvestigator).Supplies % 3 == 0) {
+                    blanket.setVisibility(GONE);
+                }
+                if (globalVariables.Investigators.get(currentInvestigator).Supplies % 5 == 0) {
+                    canteen.setVisibility(GONE);
+                }
+                if (globalVariables.Investigators.get(currentInvestigator).Supplies % 11 == 0) {
+                    compass.setVisibility(GONE);
+                }
+                if (globalVariables.Investigators.get(currentInvestigator).Supplies % 17 == 0) {
+                    binoculars.setVisibility(GONE);
+                }
+                if (globalVariables.Investigators.get(currentInvestigator).Supplies % 19 == 0) {
+                    chalk.setVisibility(GONE);
+                }
+
                 if (globalVariables.Investigators.get(currentInvestigator).AvailableXP >= 3) {
                     poisoned.setVisibility(VISIBLE);
                     poisoned.setOnCheckedChangeListener(new OtherCheckboxListener(i, availableXP));
@@ -376,7 +407,7 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
                     array = 23;
                     break;
             }
-            if (globalVariables.CurrentScenario == 9) {
+            /*if (globalVariables.CurrentScenario == 9) {
                 switch (buttonView.getId()) {
                     case R.id.rope:
                         // Gasoline
@@ -394,13 +425,18 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
                         array = 37;
                         break;
                 }
-            }
+            }*/
             if (isChecked) {
                 if (globalVariables.Investigators.get(currentInvestigator).SupplyPoints < points) {
                     buttonView.setChecked(false);
                 } else {
-                    globalVariables.Investigators.get(currentInvestigator).Supplies = globalVariables.Investigators
-                            .get(currentInvestigator).Supplies * array;
+                    if (globalVariables.CurrentScenario == 0) {
+                        globalVariables.Investigators.get(currentInvestigator).Supplies = globalVariables.Investigators
+                                .get(currentInvestigator).Supplies * array;
+                    } else if (globalVariables.CurrentScenario == 9){
+                        globalVariables.Investigators.get(currentInvestigator).ResuppliesOne = globalVariables.Investigators
+                                .get(currentInvestigator).ResuppliesOne * array;
+                    }
                     globalVariables.Investigators.get(currentInvestigator).SupplyPoints += -points;
                     int currentPoints = globalVariables.Investigators.get(currentInvestigator).SupplyPoints;
                     String ptsAvailable = Integer.toString(currentPoints) + " " + getResources().getString(R.string
@@ -408,8 +444,13 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
                     supplyPoints.setText(ptsAvailable);
                 }
             } else {
-                globalVariables.Investigators.get(currentInvestigator).Supplies = globalVariables.Investigators
-                        .get(currentInvestigator).Supplies / array;
+                if (globalVariables.CurrentScenario == 0) {
+                    globalVariables.Investigators.get(currentInvestigator).Supplies = globalVariables.Investigators
+                            .get(currentInvestigator).Supplies / array;
+                } else if (globalVariables.CurrentScenario == 9){
+                    globalVariables.Investigators.get(currentInvestigator).ResuppliesOne = globalVariables.Investigators
+                            .get(currentInvestigator).ResuppliesOne / array;
+                }
                 globalVariables.Investigators.get(currentInvestigator).SupplyPoints += points;
                 int currentPoints = globalVariables.Investigators.get(currentInvestigator).SupplyPoints;
                 String ptsAvailable = Integer.toString(currentPoints) + " " + getResources().getString(R.string
@@ -523,7 +564,7 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
             lineOne.setVisibility(GONE);
             lineTwo.setVisibility(GONE);
 
-            if(globalVariables.CurrentScenario == 9){
+            if (globalVariables.CurrentScenario == 9) {
                 okayButton.setText(R.string.continue_button);
                 campaignName.setText(R.string.forgotten_resupply);
                 confirm.setText(R.string.continue_question);

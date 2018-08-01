@@ -2290,13 +2290,15 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             } else {
                                 threadsResolution.append(getString(R.string.threads_resolution_one_two));
                             }
-                            if (additionalTwo.isChecked()) {
-                                threadsResolution.append(getString(R.string.threads_resolution_two_one));
-                            } else {
-                                threadsResolution.append(getString(R.string.threads_resolution_two_two));
-                            }
-                            if (additionalThree.isChecked()) {
-                                threadsResolution.append(getString(R.string.threads_resolution_three_one));
+                            if (globalVariables.IchtacasTale != 4) {
+                                if (additionalTwo.isChecked()) {
+                                    threadsResolution.append(getString(R.string.threads_resolution_two_one));
+                                } else {
+                                    threadsResolution.append(getString(R.string.threads_resolution_two_two));
+                                }
+                                if (additionalThree.isChecked()) {
+                                    threadsResolution.append(getString(R.string.threads_resolution_three_one));
+                                }
                             }
                             String threads = threadsResolution.toString().trim();
                             resolutionTextViewAdditional.setText(threads);
@@ -3723,23 +3725,30 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         break;
                     // Threads of Fate
                     case 8:
-                        if(additionalCheckbox.isChecked()){
+                        if (additionalCheckbox.isChecked()) {
                             globalVariables.MissingRelic = 2;
                         } else {
                             globalVariables.MissingRelic = 1;
                         }
-                        if(additionalCheckboxTwo.isChecked()){
+                        if (additionalCheckboxTwo.isChecked()) {
                             globalVariables.MissingAlejandro = 2;
                         } else {
                             globalVariables.MissingAlejandro = 1;
                         }
-                        if(additionalCheckboxThree.isChecked()){
+                        if (additionalCheckboxThree.isChecked()) {
                             globalVariables.MissingIchtaca = 2;
                         } else {
                             globalVariables.MissingIchtaca = 1;
                         }
                         for (int i = 0; i < globalVariables.Investigators.size(); i++) {
-                            globalVariables.Investigators.get(i).AvailableXP += (globalVariables.VictoryDisplay + vengeanceCounter);
+                            globalVariables.Investigators.get(i).AvailableXP += (globalVariables.VictoryDisplay +
+                                    vengeanceCounter);
+                            if (globalVariables.IchtacasTale == 4 && additionalCheckboxTwo.isChecked()) {
+                                globalVariables.Investigators.get(i).AvailableXP += 2;
+                            }
+                            if (globalVariables.IchtacasTale == 4 && additionalCheckboxThree.isChecked()) {
+                                globalVariables.Investigators.get(i).AvailableXP += 2;
+                            }
                         }
                         break;
                 }
