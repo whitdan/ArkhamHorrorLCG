@@ -14,6 +14,7 @@
     <string name="forgotten_interlude_three">Interlude 3: L’Appel de la Jungle</string>
     <string name="forgotten_interlude_four">Interlude 4: Les Captifs</string>
     <string name="forgotten_interlude_five">Interlude 5: Les Ténèbres</string>
+	<string name="forgotten_resupply">Rééquipement</string>
     <string name="forgotten_epilogue">Épilogue</string>
 	
 	 <!--Miscellaneous-->
@@ -28,6 +29,14 @@
 		nous devons retourner à l’intérieur ! »</string>
     <string name="eztli_resolution_three_option_two">« C’est trop dangereux. 
 		Cet endroit doit être détruit. » </string>
+	<string name="act_ones_completed">Cartes Acte 1 terminées : </string>
+    <string name="act_3b_completed">Acte 3b terminé</string>
+    <string name="act_3d_completed">Acte 3d terminé</string>
+    <string name="act_3f_completed">Acte 3f terminé</string>
+    <string name="xp_available">XP disponible</string>
+    <string name="remove_poisoned">Retirer une faiblesse Empoisonné (3XP)</string>
+    <string name="remove_physical">Retirer un traumatisme physique (5XP)\n(Traumatismes actuels :</string>
+    <string name="remove_mental">Retirer un traumatisme mental (5XP)\n(Traumatismes actuels :</string>
 	
 	<!--Supplies-->
     <string name="supplies">Équipement</string>
@@ -68,6 +77,9 @@
     <string name="binoculars_choose">Jumelles (2pts)</string>
     <string name="chalk_choose">Craie (2pts)</string>
     <string name="pendant_choose">Pendentif (1pt)</string>
+	<string name="gasoline_choose">Essence (1pt)</string>
+    <string name="pocketknife_choose">Canif (2pts)</string>
+    <string name="pickaxe_choose">Pioche (2pts)</string>
     <string name="provisions">Provisions</string>
     <string name="medicine">Médicaments</string>
     <string name="rope">Corde</string>
@@ -79,6 +91,9 @@
     <string name="binoculars">Jumelles</string>
     <string name="chalk">Craie</string>
     <string name="pendant">Pendentif</string>
+	<string name="gasoline">Essence</string>
+    <string name="pocketknife">Canif</string>
+    <string name="pickaxe">Pioche</string>
     <string name="no_supplies">Aucun équipement</string>
 
 
@@ -98,7 +113,15 @@
 		Les investigateurs ont gagné la confiance d’Alejandro.\n\n</string>
     <string name="custody_harlan">Les investigateurs ont confié la relique à Harlan Earnstone.\n\n
 		Alejandro poursuit ses recherches de son côté.\n\n</string>
-
+	<string name="forging_own_path">Vous suivez votre propre voie.\n\n</string>
+    <string name="relic_missing">La relique a disparu.\n\n</string>
+    <string name="found_relic">Les investigateurs ont trouvé la relique perdue.\n\n</string>
+    <string name="alejandro_missing">Alejandro a disparu.\n\n</string>
+    <string name="rescued_alejandro">Les investigateurs ont secouru Alejandro.\n\n</string>
+    <string name="ichtaca_dark">Ichtaca est dans les Ténèbres.\n\n</string>
+    <string name="bond_ichtaca">Les investigateurs ont tissé un lien avec Ichtaca.\n\n</string>	
+		
+		
     <!--Edit log-->
     <string name="yigs_fury_heading">Colère de Yig</string>
     <string name="ruins_heading">Ruines Eztli</string>
@@ -107,6 +130,12 @@
     <string name="harbinger_heading">Hérault de Valusia</string>
     <string name="relic_heading">Relique des Âges</string>
     <string name="custody_heading">Garde de la Relique</string>
+	<string name="ichtaca_tale_heading">Histoire d’Ichtaca</string>
+    <string name="listened_ichtaca">Vous avez écouté l’histoire d’Ichtaca.</string>
+    <string name="ichtaca_left">Ichtaca est partie sans vous.</string>
+    <string name="missing_relic_heading">Relique disparue</string>
+    <string name="missing_alejandro_heading">Alejandro disparu</string>
+    <string name="missing_ichtaca_heading">Ichtaca disparue</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X est le nombre de points de vengeance dans la pile de victoire.</string>
@@ -125,6 +154,15 @@
     <string name="eztli_cultist_tablet_two">–X. X est le nombre de fatalités sur les lieux en jeu.</string>
     <string name="eztli_thing_one">Révélez un autre pion. Si vous échouez, placez 1 fatalité sur votre lieu.</string>
     <string name="eztli_thing_two">Révélez un autre pion. Placez 1 fatalité sur votre lieu.</string>
+	
+	 <string name="threads_skull_one">–X. X est le plus grand nombre de fatalités sur un ennemi <b><i>Cultiste</i></b>.</string>
+    <string name="threads_skull_two">–X. X est le nombre de fatalités en jeu.</string>
+    <string name="threads_cultist_one">–2. Si vous ne réussissez pas avec une différence d'au moins 1, subissez 1 blessure.</string>
+    <string name="threads_cultist_two">–2. Si vous ne réussissez pas avec une différence d'au moins 2, subissez 1 blessure directe.</string>
+    <string name="threads_tablet_one">–2. Si vous ne réussissez pas avec une différence d'au moins 1, placez 1 fatalité sur l'ennemi <b><i>Cultiste</i></b> le plus proche.</string>
+    <string name="threads_tablet_two">–2. Si vous ne réussissez pas avec une différence d'au moins 2, placez 1 fatalité sur chaque ennemi <b><i>Cultiste</i></b>.</string>
+    <string name="threads_thing_one">–2. Si vous échouez, perdez 1 de vos indices.</string>
+    <string name="threads_thing_two">–3. Si vous échouez, perdez 1 de vos indices.</string>
 
 
     <!--Campaign introduction-->
@@ -901,5 +939,41 @@ du journal.)\n
     \n<b>Un investigateur doit ajouter la Relique des Âges à son deck. </b></string>
 
 	
+    <string name="threads_resolution">Vous rentrez chez vous et faites le point sur la situation. Votre
+		enquête au cœur de la ville a révélé l’existence d’une cabale secrète à Arkham.
+		De ce que vous avez vu, ses membres s’appellent eux-mêmes la Fraternité et ils
+		semblent en savoir plus que vous sur la relique des Eztli et la précédente expédition
+		d’Alejandro. Leurs méthodes sont discrètes et leurs motivations vous
+		échappent toujours. Cependant, un élément important a été mis en lumière.\n
+    \n« Ils cherchent un endroit appelé le Nexus de N’kai », déclare Ichtaca. Une
+		carte d’Amérique Centrale est dépliée sur la table devant vous ; le trajet de
+		l’expédition précédente y est indiqué. « J’ai entendu parler de cet endroit,
+		mais je ne connais pas son emplacement exact. » Une fois encore, votre mystérieuse
+		guide semble en savoir plus qu’elle ne veut bien le dire.\n
+    \nSans autre piste à suivre, vous n’avez pas le choix. Une fois de plus, vous allez
+		devoir vous aventurer en territoire inconnu à la recherche de réponses… mais
+		quelqu’un en reviendra-t-il cette fois ?\n
+    \n<b>L’investigateur principal reçoit la carte Journal de l’Expédition et a
+		le droit de l’inclure dans son deck. </b></string>
+    <string name="threads_resolution_one_one"> Si la
+		Relique des Âges ne faisait pas déjà partie du deck d’un investigateur,
+		n’importe quel investigateur doit choisir de l’inclure
+		dans son deck. Cette carte ne compte pas dans la Taille du Deck
+		de cet investigateur. Pour le reste de la campagne, chaque fois
+		que le possesseur de la Relique des Âges quitte la campagne pour
+		quelque raison que ce soit, choisissez un autre investigateur et
+		ajoutez la relique à son deck.\n\n</string>
+    <string name="threads_resolution_one_two">Si la Relique des
+		Âges fait partie du deck d’un investigateur, retirez-la de son deck
+		pour le reste de la campagne.\n\n</string>
+    <string name="threads_resolution_two_one">Si Alejandro Vela
+		ne faisait pas déjà partie du deck d’un investigateur, n’importe
+		quel investigateur a le droit de l’inclure dans son deck.\n\n</string>
+    <string name="threads_resolution_two_two">Si Alejandro Vela
+		fait partie du deck d’un investigateur, retirez-le de son deck pour
+		le reste de la campagne.\n\n</string>
+    <string name="threads_resolution_three_one">N’importe
+		quel investigateur a le droit d’inclure Ichtaca (La Gardienne
+		Oubliée) dans son deck</string>
 	
 </resources>
