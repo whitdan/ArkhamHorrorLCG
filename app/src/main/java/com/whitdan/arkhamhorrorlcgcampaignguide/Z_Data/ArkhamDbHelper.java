@@ -26,7 +26,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 31;
+    private static final int DATABASE_VERSION = 32;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -102,7 +102,8 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST + " STRING, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS + " INTEGER, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE + " INTEGER, "
-                + InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES + " INTEGER);";
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES + " INTEGER"
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE + " INTEGER);";
 
         // Night of the Zealot table
         String SQL_CREATE_NIGHT_TABLE = "CREATE TABLE " + NightEntry.TABLE_NAME + " ("
@@ -194,7 +195,9 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + ForgottenEntry.COLUMN_ICHTACAS_TALE + " INTEGER, "
                 + ForgottenEntry.COLUMN_MISSING_RELIC + " INTEGER, "
                 + ForgottenEntry.COLUMN_MISSING_ALEJANDRO + " INTEGER, "
-                + ForgottenEntry.COLUMN_MISSING_ICHTACA + " INTEGER);";
+                + ForgottenEntry.COLUMN_MISSING_ICHTACA + " INTEGER, "
+                + ForgottenEntry.COLUMN_PATHS_KNOWN + " INTEGER, "
+                + ForgottenEntry.COLUMN_ICHTACA_CONFIDENCE + " INTEGER);";
 
         // Chaos bag table
         String SQL_CREATE_CHAOS_BAG_TABLE = "CREATE TABLE " + ChaosBagEntry.TABLE_NAME + " ("
@@ -601,6 +604,16 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_UPGRADE_TWENTYSIX_TWO);
                 db.execSQL(SQL_UPGRADE_TWENTYSIX_THREE);
                 db.execSQL(SQL_UPGRADE_TWENTYSIX_FOUR);
+            case 31:
+                String SQL_UPGRADE_TWENTYSEVEN_ONE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_PATHS_KNOWN + " INTEGER";
+                String SQL_UPGRADE_TWENTYSEVEN_TWO = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_ICHTACA_CONFIDENCE + " INTEGER";
+                String SQL_UPGRADE_TWENTYSEVEN_THREE = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN "
+                        + InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE + " INTEGER";
+                db.execSQL(SQL_UPGRADE_TWENTYSEVEN_ONE);
+                db.execSQL(SQL_UPGRADE_TWENTYSEVEN_TWO);
+                db.execSQL(SQL_UPGRADE_TWENTYSEVEN_THREE);
         }
     }
 }

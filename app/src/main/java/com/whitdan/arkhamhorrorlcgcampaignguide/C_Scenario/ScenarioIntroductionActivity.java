@@ -358,6 +358,46 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                             }
                         });
                         break;
+                    case 10:
+                        StringBuilder boundaryIntroductionBuilder = new StringBuilder();
+                        boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_one));
+                        if(globalVariables.MissingIchtaca == 2){
+                            boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_two_a));
+                        } else if(globalVariables.MissingIchtaca == 1){
+                            boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_two_b));
+                        }
+                        if(globalVariables.MissingRelic == 2){
+                            boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_three_a));
+                        } else if(globalVariables.MissingRelic == 1){
+                            boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_three_b));
+                        }
+                        if(globalVariables.MissingAlejandro == 2){
+                            boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_four_a));
+                        } else if(globalVariables.MissingAlejandro == 1){
+                            boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_four_b));
+                        }
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            if (globalVariables.GasolineUsed != 1) {
+                                if(globalVariables.Investigators.get(i).Supplies % 29 == 0){
+                                    globalVariables.Investigators.get(i).Supplies = globalVariables.Investigators.get
+                                            (i).Supplies / 29;
+                                    globalVariables.GasolineUsed = 1;
+                                } else if(globalVariables.Investigators.get(i).ResuppliesOne % 2 == 0){
+                                    globalVariables.Investigators.get(i).ResuppliesOne = globalVariables.Investigators.get
+                                            (i).ResuppliesOne / 2;
+                                    globalVariables.GasolineUsed = 1;
+                                } else {
+                                    globalVariables.GasolineUsed = 2;
+                                }
+                            }
+                        }
+                        if(globalVariables.GasolineUsed == 2){
+                            boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_five));
+                        }
+                        boundaryIntroductionBuilder.append(getString(R.string.boundary_introduction_six));
+                        String boundaryIntroduction = boundaryIntroductionBuilder.toString();
+                        introduction.setText(boundaryIntroduction);
+                        break;
                 }
         }
 

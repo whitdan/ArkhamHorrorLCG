@@ -305,9 +305,11 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             lowSupplies.append(Integer.toString(low));
                             lowSupplies.append(" ");
                             if (low == 1) {
-                                lowSupplies.append(getResources().getString(R.string.restless_low_two_single_investigator));
+                                lowSupplies.append(getResources().getString(R.string
+                                        .restless_low_two_single_investigator));
                             } else {
-                                lowSupplies.append(getResources().getString(R.string.restless_low_two_multiple_investigator));
+                                lowSupplies.append(getResources().getString(R.string
+                                        .restless_low_two_multiple_investigator));
                             }
                             introduction.setText(lowSupplies.toString());
                             introductionOne.setVisibility(VISIBLE);
@@ -414,9 +416,11 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             medicineString.append(Integer.toString(medicine));
                             medicineString.append(" ");
                             if (medicine == 1) {
-                                medicineString.append(getResources().getString(R.string.restless_poison_one_single_investigator));
+                                medicineString.append(getResources().getString(R.string
+                                        .restless_poison_one_single_investigator));
                             } else {
-                                medicineString.append(getResources().getString(R.string.restless_poison_one_multiple_investigators));
+                                medicineString.append(getResources().getString(R.string
+                                        .restless_poison_one_multiple_investigators));
                             }
                             introduction.setText(medicineString.toString());
 
@@ -479,7 +483,7 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                         invThreeBox.setTypeface(arnopro);
                         additionalLayout.addView(invThree, lp);
                         invThree.setVisibility(GONE);
-                        final View invFour = View.inflate(this, R.layout.e_item_checkbox, null);
+                        View invFour = View.inflate(this, R.layout.e_item_checkbox, null);
                         final CheckBox invFourBox = invFour.findViewById(R.id.checkbox);
                         invFourBox.setTypeface(arnopro);
                         additionalLayout.addView(invFour, lp);
@@ -599,7 +603,320 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             introduction.setText(R.string.expeditions_end_five);
                         }
                         break;
+                    case 11:
+                        introduction.setText(R.string.jungle_beckons_introduction);
+                        break;
+                    case 12:
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            if (globalVariables.GasolineUsed != 3) {
+                                if (globalVariables.Investigators.get(i).Supplies % 29 == 0) {
+                                    globalVariables.Investigators.get(i).Supplies = globalVariables.Investigators.get
+                                            (i).Supplies / 29;
+                                    globalVariables.GasolineUsed = 3;
+                                } else if (globalVariables.Investigators.get(i).ResuppliesOne % 2 == 0) {
+                                    globalVariables.Investigators.get(i).ResuppliesOne = globalVariables
+                                            .Investigators.get
+                                                    (i).ResuppliesOne / 2;
+                                    globalVariables.GasolineUsed = 3;
+                                } else {
+                                    globalVariables.GasolineUsed = 4;
+                                }
+                            }
+                        }
+                        if (globalVariables.GasolineUsed == 3) {
+                            introduction.setTypeface(arnoprobold);
+                            introduction.setText(R.string.jungle_enough_gas);
+                        } else if (globalVariables.GasolineUsed == 4) {
+                            introduction.setText(R.string.jungle_out_gas);
+                        }
+                        break;
+                    case 13:
+                        boolean map = false;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            if (globalVariables.Investigators.get(i).Supplies % 13 == 0) {
+                                map = true;
+                            }
+                        }
+                        if (map) {
+                            introduction.setText(R.string.jungle_map);
+                        } else {
+                            introduction.setText(R.string.jungle_no_map);
+                        }
+                        break;
+                    case 14:
+                        provisions = 0;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            provisions += globalVariables.Investigators.get(i).Provisions;
+                        }
+                        introduction.setTypeface(arnoprobold);
+                        if ((globalVariables.Investigators.size() - provisions) <= 0) {
+                            introduction.setText(R.string.restless_not_low);
+                            int investigators = globalVariables.Investigators.size();
+                            for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                if (investigators > globalVariables.Investigators.get(i).Provisions) {
+                                    investigators = investigators - globalVariables.Investigators.get(i).Provisions;
+                                    globalVariables.Investigators.get(i).Provisions = 0;
+                                } else if (investigators != 0) {
+                                    globalVariables.Investigators.get(i).Provisions = globalVariables.Investigators
+                                            .get(i).Provisions - investigators;
+                                    investigators = 0;
+                                }
+                            }
+                            globalVariables.LowRations = 0;
+                        } else {
+                            for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                globalVariables.Investigators.get(i).Provisions = 0;
+                            }
+                            int low = globalVariables.Investigators.size() - provisions;
+                            globalVariables.LowRations = low;
+                            StringBuilder lowSupplies = new StringBuilder();
+                            lowSupplies.append(getResources().getString(R.string.restless_low_one));
+                            lowSupplies.append(" ");
+                            lowSupplies.append(Integer.toString(low));
+                            lowSupplies.append(" ");
+                            if (low == 1) {
+                                lowSupplies.append(getResources().getString(R.string
+                                        .restless_low_two_single_investigator));
+                            } else {
+                                lowSupplies.append(getResources().getString(R.string
+                                        .restless_low_two_multiple_investigator));
+                            }
+                            introduction.setText(lowSupplies.toString());
+                            introductionOne.setVisibility(VISIBLE);
+                            introductionOne.setText(R.string.jungle_low);
+                            introductionTwo.setVisibility(VISIBLE);
+                            introductionTwo.setTypeface(arnoprobold);
+                            introductionTwo.setText(R.string.restless_low_effect);
+                        }
+                        break;
+                    case 15:
+                        medicine = 0;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            medicine += globalVariables.Investigators.get(i).Medicine;
+                        }
+                        introduction.setTypeface(arnoprobold);
+                        if (medicine > 0) {
+                            StringBuilder medicineString = new StringBuilder();
+                            medicineString.append(Integer.toString(medicine));
+                            medicineString.append(" ");
+                            if (medicine == 1) {
+                                medicineString.append(getResources().getString(R.string
+                                        .restless_poison_one_single_investigator));
+                            } else {
+                                medicineString.append(getResources().getString(R.string
+                                        .restless_poison_one_multiple_investigators));
+                            }
+                            introduction.setText(medicineString.toString());
+
+                            View medicineHeading = View.inflate(this, R.layout.e_item_heading, null);
+                            TextView medicineHeadingText = medicineHeading.findViewById(R.id.heading);
+                            medicineHeadingText.setText(R.string.restless_poison_counter);
+                            medicineHeadingText.setTypeface(teutonic);
+                            additionalLayout.addView(medicineHeading, lp);
+                            View medicineCounter = View.inflate(this, R.layout.e_item_counter, null);
+                            final TextView amount = medicineCounter.findViewById(R.id.amount);
+                            amount.setId(R.id.medicine_amount);
+                            amount.setText("0");
+                            amount.setTypeface(arnopro);
+                            ImageView decrement = medicineCounter.findViewById(R.id.decrement);
+                            ImageView increment = medicineCounter.findViewById(R.id.increment);
+                            additionalLayout.addView(medicineCounter, lp);
+                            decrement.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    int current = Integer.valueOf(amount.getText().toString());
+                                    if (current > 0) {
+                                        current--;
+                                        amount.setText(Integer.toString(current));
+                                    }
+                                }
+                            });
+                            final int medicineAmount = medicine;
+                            increment.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    int current = Integer.valueOf(amount.getText().toString());
+                                    if (current < medicineAmount && current < globalVariables.Investigators.size()) {
+                                        current++;
+                                        amount.setText(Integer.toString(current));
+                                    }
+                                }
+                            });
+                        } else {
+                            introduction.setText(R.string.restless_poison_two);
+                        }
+
+                        poisonedHeading = View.inflate(this, R.layout.e_item_heading, null);
+                        poisonedHeadingText = poisonedHeading.findViewById(R.id.heading);
+                        poisonedHeadingText.setText(R.string.restless_poisoned_heading);
+                        poisonedHeadingText.setTypeface(teutonic);
+                        additionalLayout.addView(poisonedHeading, lp);
+
+                        invOne = View.inflate(this, R.layout.e_item_checkbox, null);
+                        final CheckBox invOneBoxTwo = invOne.findViewById(R.id.checkbox);
+                        invOneBoxTwo.setTypeface(arnopro);
+                        additionalLayout.addView(invOne, lp);
+                        invOne.setVisibility(GONE);
+                        invTwo = View.inflate(this, R.layout.e_item_checkbox, null);
+                        final CheckBox invTwoBoxTwo = invTwo.findViewById(R.id.checkbox);
+                        invTwoBoxTwo.setTypeface(arnopro);
+                        additionalLayout.addView(invTwo, lp);
+                        invTwo.setVisibility(GONE);
+                        invThree = View.inflate(this, R.layout.e_item_checkbox, null);
+                        final CheckBox invThreeBoxTwo = invThree.findViewById(R.id.checkbox);
+                        invThreeBoxTwo.setTypeface(arnopro);
+                        additionalLayout.addView(invThree, lp);
+                        invThree.setVisibility(GONE);
+                        invFour = View.inflate(this, R.layout.e_item_checkbox, null);
+                        final CheckBox invFourBoxTwo = invFour.findViewById(R.id.checkbox);
+                        invFourBoxTwo.setTypeface(arnopro);
+                        additionalLayout.addView(invFour, lp);
+                        invFour.setVisibility(GONE);
+
+                        switch (globalVariables.Investigators.size()) {
+                            case 4:
+                                invFour.setVisibility(VISIBLE);
+                                invFourBoxTwo.setText(investigatorNames[globalVariables.Investigators.get(3).Name]);
+                                invFourBoxTwo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            globalVariables.Investigators.get(3).Damage += 1;
+                                            introductionOne.setVisibility(VISIBLE);
+                                            introductionTwo.setVisibility(VISIBLE);
+                                        } else {
+                                            globalVariables.Investigators.get(3).Damage += -1;
+                                            if (!invOneBoxTwo.isChecked() && !invTwoBoxTwo.isChecked() &&
+                                                    !invThreeBoxTwo
+                                                    .isChecked()) {
+                                                introductionOne.setVisibility(GONE);
+                                                introductionTwo.setVisibility(GONE);
+                                            }
+                                        }
+                                    }
+                                });
+                            case 3:
+                                invThree.setVisibility(VISIBLE);
+                                invThreeBoxTwo.setText(investigatorNames[globalVariables.Investigators.get(2).Name]);
+                                invThreeBoxTwo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            globalVariables.Investigators.get(2).Damage += 1;
+                                            introductionOne.setVisibility(VISIBLE);
+                                            introductionTwo.setVisibility(VISIBLE);
+                                        } else {
+                                            globalVariables.Investigators.get(2).Damage += -1;
+                                            if (!invOneBoxTwo.isChecked() && !invTwoBoxTwo.isChecked() && !invFourBoxTwo
+                                                    .isChecked()) {
+                                                introductionOne.setVisibility(GONE);
+                                                introductionTwo.setVisibility(GONE);
+                                            }
+                                        }
+                                    }
+                                });
+                            case 2:
+                                invTwo.setVisibility(VISIBLE);
+                                invTwoBoxTwo.setText(investigatorNames[globalVariables.Investigators.get(1).Name]);
+                                invTwoBoxTwo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            globalVariables.Investigators.get(1).Damage += 1;
+                                            introductionOne.setVisibility(VISIBLE);
+                                            introductionTwo.setVisibility(VISIBLE);
+                                        } else {
+                                            globalVariables.Investigators.get(1).Damage += -1;
+                                            if (!invOneBoxTwo.isChecked() && !invFourBoxTwo.isChecked() &&
+                                                    !invThreeBoxTwo
+                                                    .isChecked()) {
+                                                introductionOne.setVisibility(GONE);
+                                                introductionTwo.setVisibility(GONE);
+                                            }
+                                        }
+                                    }
+                                });
+                            case 1:
+                                invOne.setVisibility(VISIBLE);
+                                invOneBoxTwo.setText(investigatorNames[globalVariables.Investigators.get(0).Name]);
+                                invOneBoxTwo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            globalVariables.Investigators.get(0).Damage += 1;
+                                            introductionOne.setVisibility(VISIBLE);
+                                            introductionTwo.setVisibility(VISIBLE);
+                                        } else {
+                                            globalVariables.Investigators.get(0).Damage += -1;
+                                            if (!invFourBoxTwo.isChecked() && !invTwoBoxTwo.isChecked() &&
+                                                    !invThreeBoxTwo
+                                                    .isChecked
+                                                            ()) {
+                                                introductionOne.setVisibility(GONE);
+                                                introductionTwo.setVisibility(GONE);
+                                            }
+                                        }
+                                    }
+                                });
+                        }
+
+                        introductionOne.setTypeface(arnoprobold);
+                        introductionOne.setText(R.string.restless_poison_three);
+                        introductionTwo.setText(R.string.jungle_poison_spreads);
+                        break;
+                    case 16:
+                        StringBuilder canteen = new StringBuilder();
+                        canteen.append(getResources().getString(R.string.jungle_canteen_one));
+                        int canteenCount = 0;
+                        StringBuilder noCanteen = new StringBuilder();
+                        noCanteen.append(getResources().getString(R.string.jungle_no_canteen_one));
+                        int noCanteenCount = 0;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            if (globalVariables.Investigators.get(i).Supplies % 5 == 0 ||
+                                    globalVariables.Investigators.get(i).ResuppliesOne % 5 == 0) {
+                                canteen.append("\t");
+                                canteen.append(investigatorNames[globalVariables.Investigators.get(i).Name]);
+                                canteen.append("\n");
+                                canteenCount++;
+                            } else {
+                                noCanteen.append("\t");
+                                noCanteen.append(investigatorNames[globalVariables.Investigators.get(i).Name]);
+                                noCanteen.append("\n");
+                                noCanteenCount++;
+                            }
+                        }
+                        canteen.append(getResources().getString(R.string.jungle_canteen_two));
+                        noCanteen.append(getResources().getString(R.string.jungle_no_canteen_two));
+
+                        introduction.setText(R.string.jungle_trudge);
+
+                        if (canteenCount > 0) {
+                            introductionOne.setVisibility(VISIBLE);
+                            introductionOne.setTypeface(arnoprobold);
+                            introductionOne.setText(canteen.toString());
+                            introductionTwo.setVisibility(VISIBLE);
+                            introductionTwo.setText(R.string.jungle_patterns);
+                        }
+
+                        if (noCanteenCount > 0) {
+                            introductionThree.setVisibility(VISIBLE);
+                            introductionThree.setTypeface(arnoprobold);
+                            introductionThree.setText(noCanteen.toString());
+                            introductionFour.setVisibility(VISIBLE);
+                            introductionFour.setText(R.string.jungle_secrets);
+                        }
+                        break;
+                    case 17:
+                        if(globalVariables.Ichtaca == 1 && globalVariables.IchtacasTale == 1 && globalVariables
+                                .MissingIchtaca == 2 && globalVariables.IchtacaConfidence == 1){
+                            introduction.setText(R.string.jungle_faith_restored);
+                            globalVariables.IchtacaConfidence = 2;
+                        } else {
+                            introduction.setText(R.string.jungle_no_faith);
+                        }
+                        break;
                 }
+                break;
         }
 
         if (globalVariables.CurrentScenario > 100) {
@@ -696,7 +1013,14 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             case 3:
                             case 4:
                             case 5:
-                                intent = new Intent(ScenarioInterludeActivity.this, ScenarioInterludeActivity.class);
+                            case 12:
+                            case 13:
+                            case 14:
+                            case 15:
+                            case 16:
+                            case 17:
+                                intent = new Intent(ScenarioInterludeActivity.this, ScenarioInterludeActivity
+                                        .class);
                         }
                     }
                     startActivity(intent);

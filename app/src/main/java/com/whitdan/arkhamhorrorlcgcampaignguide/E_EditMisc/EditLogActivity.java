@@ -1947,6 +1947,60 @@ public class EditLogActivity extends AppCompatActivity {
                     missingIchtacaOptionTwo.setChecked(true);
                 }
             }
+
+            // Boundary Beyond
+            if(scenario > 10){
+                // Paths known
+                View pathsHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView pathsHeadingText = pathsHeading.findViewById(R.id.heading);
+                pathsHeadingText.setText(R.string.paths_heading);
+                pathsHeadingText.setTypeface(teutonic);
+                editLayout.addView(pathsHeading, lp);
+                View pathsCounter = View.inflate(this, R.layout.e_item_counter, null);
+                final TextView pathsAmount = pathsCounter.findViewById(R.id.amount);
+                pathsAmount.setId(R.id.paths);
+                pathsAmount.setText(String.valueOf(globalVariables.PathsKnown));
+                pathsAmount.setTypeface(arnopro);
+                ImageView pathsDecrement = pathsCounter.findViewById(R.id.decrement);
+                pathsDecrement.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int amount = Integer.valueOf(pathsAmount.getText().toString());
+                        if (amount > 0) {
+                            amount += -1;
+                            pathsAmount.setText(String.valueOf(amount));
+                        }
+                    }
+                });
+                ImageView pathsIncrement = pathsCounter.findViewById(R.id.increment);
+                pathsIncrement.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int amount = Integer.valueOf(pathsAmount.getText().toString());
+                        if (amount < 5) {
+                            amount += 1;
+                            pathsAmount.setText(String.valueOf(amount));
+                        }
+                    }
+                });
+                editLayout.addView(pathsCounter, lp);
+
+                // Ichtaca's Confidence
+                View confidenceHeading = View.inflate(this, R.layout.e_item_heading, null);
+                TextView confidenceHeadingText = confidenceHeading.findViewById(R.id.heading);
+                confidenceHeadingText.setText(R.string.confidence_heading);
+                confidenceHeadingText.setTypeface(teutonic);
+                editLayout.addView(confidenceHeading, lp);
+                View confidence = View.inflate(this, R.layout.e_item_checkbox, null);
+                CheckBox confidenceBox = confidence.findViewById(R.id.checkbox);
+                confidenceBox.setId(R.id.confidence);
+                confidenceBox.setText(R.string.confidence);
+                confidenceBox.setTypeface(arnopro);
+                editLayout.addView(confidence, lp);
+                if (globalVariables.IchtacaConfidence == 1) {
+                    confidenceBox.setChecked(true);
+                }
+            }
         }
 
         if (globalVariables.Rougarou > 0) {
@@ -2818,6 +2872,18 @@ public class EditLogActivity extends AppCompatActivity {
                             globalVariables.MissingIchtaca = 1;
                         } else if(missingIchtacaTwo.isChecked()){
                             globalVariables.MissingIchtaca = 2;
+                        }
+                    }
+
+                    if(scenario > 10){
+                        TextView paths = findViewById(R.id.paths);
+                        globalVariables.PathsKnown = Integer.valueOf(paths.getText().toString());
+
+                        CheckBox confidence = findViewById(R.id.confidence);
+                        if(confidence.isChecked()){
+                            globalVariables.IchtacaConfidence = 1;
+                        } else {
+                            globalVariables.IchtacaConfidence = 0;
                         }
                     }
                 }

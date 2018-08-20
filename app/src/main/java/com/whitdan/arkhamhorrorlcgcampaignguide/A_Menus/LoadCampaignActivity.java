@@ -230,7 +230,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     break;
                 case 4:
                     currentCampaignName.setText(R.string.forgotten_campaign);
-                    switch(currentScenario){
+                    switch (currentScenario) {
                         case 1:
                             currentScenarioName.setText(R.string.forgotten_scenario_one);
                             break;
@@ -458,7 +458,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS,
                     InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE,
-                    InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES,
+                    InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE
             };
             String investigatorSelection = InvestigatorEntry.PARENT_ID + " = ?";
             Cursor investigatorCursor = db.query(
@@ -507,6 +508,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             .getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE));
                     globalVariables.Investigators.get(i).Supplies = investigatorCursor.getInt(investigatorCursor
                             .getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES));
+                    globalVariables.Investigators.get(i).ResuppliesOne = investigatorCursor.getInt(investigatorCursor
+                            .getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE));
                     count++;
                 } else if (status == 3) {
                     globalVariables.SavedInvestigators.add(new Investigator(name, player, deckName, deck));
@@ -529,6 +532,8 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             (investigatorCursor.getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE));
                     globalVariables.SavedInvestigators.get(i - count).Supplies = investigatorCursor.getInt
                             (investigatorCursor.getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES));
+                    globalVariables.SavedInvestigators.get(i - count).ResuppliesOne = investigatorCursor.getInt
+                            (investigatorCursor.getColumnIndex(InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE));
                 }
             }
             investigatorCursor.close();
@@ -578,7 +583,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                                     .COLUMN_PETER_INTERROGATED)));
                     globalVariables.HermanInterrogated = (nightCursor.getInt(nightCursor.getColumnIndexOrThrow
                             (NightEntry
-                            .COLUMN_HERMAN_INTERROGATED)));
+                                    .COLUMN_HERMAN_INTERROGATED)));
                     globalVariables.VictoriaInterrogated = (nightCursor.getInt(nightCursor.getColumnIndexOrThrow
                             (NightEntry
                                     .COLUMN_VICTORIA_INTERROGATED)));
@@ -586,7 +591,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             .COLUMN_RUTH_INTERROGATED)));
                     globalVariables.MaskedInterrogated = (nightCursor.getInt(nightCursor.getColumnIndexOrThrow
                             (NightEntry
-                            .COLUMN_MASKED_INTERROGATED)));
+                                    .COLUMN_MASKED_INTERROGATED)));
                     globalVariables.Umordhoth = (nightCursor.getInt(nightCursor.getColumnIndexOrThrow(NightEntry
                             .COLUMN_UMORDHOTH_STATUS)));
                 }
@@ -660,7 +665,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             (ArkhamContract.DunwichEntry.COLUMN_ZEBULON_WHATELEY)));
                     globalVariables.EarlSawyer = (dunwichCursor.getInt(dunwichCursor.getColumnIndexOrThrow
                             (ArkhamContract
-                            .DunwichEntry.COLUMN_EARL_SAWYER)));
+                                    .DunwichEntry.COLUMN_EARL_SAWYER)));
                     globalVariables.AllySacrificed = (dunwichCursor.getInt(dunwichCursor.getColumnIndexOrThrow
                             (ArkhamContract.DunwichEntry.COLUMN_ALLY_SACRIFICED)));
                     globalVariables.TownsfolkAction = (dunwichCursor.getInt(dunwichCursor.getColumnIndexOrThrow
@@ -671,7 +676,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             (ArkhamContract.DunwichEntry.COLUMN_INVESTIGATORS_GATE)));
                     globalVariables.YogSothoth = (dunwichCursor.getInt(dunwichCursor.getColumnIndexOrThrow
                             (ArkhamContract
-                            .DunwichEntry.COLUMN_YOG_SOTHOTH)));
+                                    .DunwichEntry.COLUMN_YOG_SOTHOTH)));
                 }
                 if (dunwichCursor.getCount() <= 0) {
                     corrupt = true;
@@ -754,7 +759,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             (ArkhamContract.CarcosaEntry.COLUMN_DANIEL)));
                     globalVariables.DanielsWarning = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
                             (ArkhamContract
-                            .CarcosaEntry.COLUMN_DANIELS_WARNING)));
+                                    .CarcosaEntry.COLUMN_DANIELS_WARNING)));
                     globalVariables.DreamsAction = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
                             (ArkhamContract.CarcosaEntry.COLUMN_DREAMS)));
                     globalVariables.Nigel = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
@@ -771,13 +776,17 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             .CarcosaEntry.COLUMN_PATH)));
                     globalVariables.Hastur = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
                             .CarcosaEntry.COLUMN_HASTUR)));
-                    globalVariables.InvOnePossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                    globalVariables.InvOnePossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
+                            (ArkhamContract
                             .CarcosaEntry.COLUMN_INV_ONE_POSSESSED)));
-                    globalVariables.InvTwoPossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                    globalVariables.InvTwoPossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
+                            (ArkhamContract
                             .CarcosaEntry.COLUMN_INV_TWO_POSSESSED)));
-                    globalVariables.InvThreePossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                    globalVariables.InvThreePossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
+                            (ArkhamContract
                             .CarcosaEntry.COLUMN_INV_THREE_POSSESSED)));
-                    globalVariables.InvFourPossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow(ArkhamContract
+                    globalVariables.InvFourPossessed = (carcosaCursor.getInt(carcosaCursor.getColumnIndexOrThrow
+                            (ArkhamContract
                             .CarcosaEntry.COLUMN_INV_FOUR_POSSESSED)));
                 }
                 if (carcosaCursor.getCount() <= 0) {
@@ -801,7 +810,9 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         ForgottenEntry.COLUMN_ICHTACAS_TALE,
                         ForgottenEntry.COLUMN_MISSING_RELIC,
                         ForgottenEntry.COLUMN_MISSING_ALEJANDRO,
-                        ForgottenEntry.COLUMN_MISSING_ICHTACA
+                        ForgottenEntry.COLUMN_MISSING_ICHTACA,
+                        ForgottenEntry.COLUMN_PATHS_KNOWN,
+                        ForgottenEntry.COLUMN_ICHTACA_CONFIDENCE
                 };
                 String forgottenSelection = ForgottenEntry.PARENT_ID + " = ?";
                 Cursor forgottenCursor = db.query(
@@ -836,10 +847,17 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             .COLUMN_ICHTACAS_TALE));
                     globalVariables.MissingRelic = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
                             .COLUMN_MISSING_RELIC));
-                    globalVariables.MissingAlejandro = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.MissingAlejandro = forgottenCursor.getInt(forgottenCursor.getColumnIndex
+                            (ForgottenEntry
                             .COLUMN_MISSING_ALEJANDRO));
-                    globalVariables.MissingIchtaca = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.MissingIchtaca = forgottenCursor.getInt(forgottenCursor.getColumnIndex
+                            (ForgottenEntry
                             .COLUMN_MISSING_ICHTACA));
+                    globalVariables.PathsKnown = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                            .COLUMN_PATHS_KNOWN));
+                    globalVariables.IchtacaConfidence = forgottenCursor.getInt(forgottenCursor.getColumnIndex
+                            (ForgottenEntry
+                            .COLUMN_ICHTACA_CONFIDENCE));
                 }
                 if (forgottenCursor.getCount() <= 0) {
                     corrupt = true;
@@ -898,6 +916,13 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             case 4:
                             case 5:
                             case 7:
+                            case 11:
+                            case 12:
+                            case 13:
+                            case 14:
+                            case 15:
+                            case 16:
+                            case 17:
                                 intent = new Intent(context, ScenarioInterludeActivity.class);
                                 break;
                             case 9:

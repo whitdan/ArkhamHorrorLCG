@@ -591,6 +591,11 @@ public class ChaosBagActivity extends AppCompatActivity {
                             chaosbag.add(14);
                         }
                     }
+                    if(scenario > 17){
+                        if(globalVariables.IchtacaConfidence == 2){
+                            chaosbag.add(12);
+                        }
+                    }
                     break;
             }
         }
@@ -929,7 +934,7 @@ public class ChaosBagActivity extends AppCompatActivity {
 
     private void setupScenarioCard(Activity activity) {
         LinearLayout scenarioLayout = activity.findViewById(R.id.scenario_card_layout);
-        if ((globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 10) || globalVariables
+        if ((globalVariables.CurrentCampaign == 4 && globalVariables.CurrentScenario == 18) || globalVariables
                 .CurrentCampaign == 1000) {
             scenarioLayout.setVisibility(GONE);
         }
@@ -1252,6 +1257,18 @@ public class ChaosBagActivity extends AppCompatActivity {
                             thing.setText(R.string.threads_thing_two);
                         }
                         break;
+                    case 10:
+                        if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
+                            skull.setText(R.string.boundary_skull_one);
+                            cultist.setText(R.string.boundary_cultist_one);
+                            tablet.setText(R.string.boundary_tablet_one);
+                            thing.setText(R.string.boundary_thing_one);
+                        } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3) {
+                            skull.setText(R.string.boundary_skull_two);
+                            cultist.setText(R.string.boundary_cultist_two);
+                            tablet.setText(R.string.boundary_tablet_two);
+                            thing.setText(R.string.boundary_thing_two);
+                        }
                 }
                 break;
         }

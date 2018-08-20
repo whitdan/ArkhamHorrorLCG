@@ -701,6 +701,46 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         rulesHeading.setText(R.string.threads_rules_heading);
                         rules.setText(R.string.threads_rules);
                         break;
+                    case 10:
+                        if(globalVariables.IchtacasTale == 1 && globalVariables.IchtacasTale == 1){
+                            sets.setText(R.string.boundary_sets_one);
+                            setsImage.setImageResource(R.drawable.boundary_sets_one);
+                        } else if(globalVariables.Ichtaca == 2 && globalVariables.Custody == 1 && globalVariables
+                                .IchtacasTale != 4){
+                            sets.setText(R.string.boundary_sets_two);
+                            setsImage.setImageResource(R.drawable.boundary_sets_two);
+                        } else {
+                            sets.setText(R.string.boundary_sets_three);
+                            setsImage.setImageResource(R.drawable.boundary_sets_three);
+                        }
+                        locations.setText(R.string.boundary_locations);
+                        locationPlacement.setVisibility(VISIBLE);
+                        locationPlacement.setImageResource(R.drawable.boundary_locations);
+                        setAside.setText(R.string.boundary_set_aside);
+                        additional.setText(R.string.boundary_additional);
+                        additionalTwo.setVisibility(VISIBLE);
+                        StringBuilder boundaryAdditionalBuilder = new StringBuilder();
+                        if(globalVariables.MissingIchtaca == 1){
+                            boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_silent));
+                        }
+                        if(globalVariables.MissingRelic == 2){
+                            boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_thrumming));
+                        } else if(globalVariables.MissingRelic == 1){
+                            boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_concern));
+                        }
+                        if(globalVariables.MissingAlejandro == 2){
+                            boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_thoughts));
+                        }
+                        if(globalVariables.GasolineUsed == 2){
+                            boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_gas));
+                        }
+                        String boundaryAdditional = boundaryAdditionalBuilder.toString().trim();
+                        boundaryAdditional = boundaryAdditional + "\n";
+                        additionalTwo.setText(boundaryAdditional);
+                        rulesLayout.setVisibility(VISIBLE);
+                        rulesHeading.setText(R.string.boundary_rules_heading);
+                        rules.setText(R.string.boundary_rules);
+                        break;
                 }
         }
         if (globalVariables.CurrentScenario > 100) {

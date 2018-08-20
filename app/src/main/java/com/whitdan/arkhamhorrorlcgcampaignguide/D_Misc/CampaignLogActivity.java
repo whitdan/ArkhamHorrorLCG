@@ -694,6 +694,16 @@ public class CampaignLogActivity extends AppCompatActivity {
                 }
             }
 
+            // Boundary Beyond log
+            if (scenario > 9 || globalVariables.ForgottenCompleted == 1){
+                String paths = Integer.toString(globalVariables.PathsKnown) + " " + getResources().getString(R.string
+                        .paths_known);
+                forgottenBuilder.append(paths);
+                if(globalVariables.IchtacaConfidence == 1 && globalVariables.PathsKnown >= 3){
+                    forgottenBuilder.append(getString(R.string.ichtaca_confidence));
+                }
+            }
+
             String forgottenLogText = forgottenBuilder.toString().trim();
             forgottenLog.setText(forgottenLogText);
 

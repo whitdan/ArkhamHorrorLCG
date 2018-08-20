@@ -141,6 +141,9 @@ public class GlobalVariables extends Application {
     public int MissingRelic;
     public int MissingAlejandro;
     public int MissingIchtaca;
+    public int GasolineUsed;
+    public int PathsKnown;
+    public int IchtacaConfidence;
 
     /*
         Side story variables - All of the variables associated with side stories
@@ -287,27 +290,36 @@ public class GlobalVariables extends Application {
                         title.setText(R.string.forgotten_scenario_four);
                         break;
                     case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                    case 15:
+                    case 16:
+                    case 17:
                         title.setText(R.string.forgotten_interlude_three);
                         break;
-                    case 12:
-                        title.setText(R.string.forgotten_scenario_five);
+                    case 18:
+                        title.setText(R.string.forgotten_scenario_five_a);
                         break;
-                    case 13:
+                    case 19:
+                        title.setText(R.string.forgotten_scenario_five_b);
+                        break;
+                    case 20:
                         title.setText(R.string.forgotten_scenario_six);
                         break;
-                    case 14:
+                    case 21:
                         title.setText(R.string.forgotten_interlude_four);
                         break;
-                    case 15:
+                    case 22:
                         title.setText(R.string.forgotten_scenario_seven);
                         break;
-                    case 16:
+                    case 23:
                         title.setText(R.string.forgotten_interlude_five);
                         break;
-                    case 17:
+                    case 24:
                         title.setText(R.string.forgotten_scenario_eight);
                         break;
-                    case 18:
+                    case 25:
                         title.setText(R.string.forgotten_epilogue);
                         break;
                 }

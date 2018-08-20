@@ -144,6 +144,8 @@
     <item name="missing_alejandro_two" type="id" />
     <item name="missing_ichtaca_one" type="id" />
     <item name="missing_ichtaca_two" type="id" />
+    <item name="paths" type="id" />
+    <item name="confidence" type="id" />
 
 
     <item name="rougarou_one" type="id" />

@@ -82,6 +82,7 @@ public class ArkhamContract {
         public static final String COLUMN_INVESTIGATOR_PROVISIONS = "provisions";
         public static final String COLUMN_INVESTIGATOR_MEDICINE = "medicine";
         public static final String COLUMN_INVESTIGATOR_SUPPLIES = "supplies";
+        public static final String COLUMN_INVESTIGATOR_RESUPPLIES_ONE = "resupplies_one";
     }
 
     public static class NightEntry implements BaseColumns{
@@ -178,6 +179,8 @@ public class ArkhamContract {
         public static final String COLUMN_MISSING_RELIC = "missing_relic";
         public static final String COLUMN_MISSING_ALEJANDRO = "missing_alejandro";
         public static final String COLUMN_MISSING_ICHTACA = "missing_ichtaca";
+        public static final String COLUMN_PATHS_KNOWN = "paths_known";
+        public static final String COLUMN_ICHTACA_CONFIDENCE = "ichtaca_confidence";
     }
 
     public static class ChaosBagEntry implements BaseColumns{

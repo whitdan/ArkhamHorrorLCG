@@ -992,6 +992,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 switch (globalVariables.CurrentScenario) {
                     case 1:
                     case 6:
+                    case 10:
                         // Vengeance view
                         vengeanceCounter = 0;
                         additionalCounterLayout.setVisibility(VISIBLE);
@@ -1097,6 +1098,39 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         });
 
                         resolutionAdditional.setTypeface(arnoproitalic, Typeface.BOLD);
+                        break;
+                    case 10:
+                        // Tenochtitlan locations
+                        investigatorCounters.setVisibility(VISIBLE);
+                        counterTwo.setVisibility(VISIBLE);
+                        counterTwoName.setText(R.string.tenochtitlan_locations);
+
+                        // Harbinger of Valusia
+                        if (globalVariables.Harbinger != -1) {
+                            selectInvestigator.setVisibility(VISIBLE);
+                            selectInvestigatorRight.setVisibility(GONE);
+                            selectInvestigatorOne.setVisibility(VISIBLE);
+                            selectInvestigatorOne.setText(R.string.harbinger);
+                            selectInvestigatorOne.setOnCheckedChangeListener(new CompoundButton
+                                    .OnCheckedChangeListener() {
+
+                                @Override
+                                public void onCheckedChanged(CompoundButton buttonView, boolean
+                                        isChecked) {
+                                    if (isChecked) {
+                                        selectInvestigator.setPadding(0, 0, 0, 0);
+                                        counterOne.setVisibility(VISIBLE);
+                                        counterOneName.setText(R.string
+                                                .harbinger_damage);
+                                        counterOneAmount.setText(Integer.toString(globalVariables.Harbinger));
+                                    } else {
+                                        selectInvestigator.setPadding(0, 0, 0, getResources().getDimensionPixelSize(R
+                                                .dimen.activity_vertical_margin));
+                                        counterOne.setVisibility(GONE);
+                                    }
+                                }
+                            });
+                        }
                         break;
                 }
                 break;
@@ -2303,6 +2337,39 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             String threads = threadsResolution.toString().trim();
                             resolutionTextViewAdditional.setText(threads);
                             break;
+                        // The Boundary Beyond
+                        case 10:
+                            switch (globalVariables.ScenarioResolution) {
+                                case 0:
+                                    resolutionTextView.setText(R.string.boundary_no_resolution);
+                                    break;
+                                case 1:
+                                    resolutionTextView.setText(R.string.boundary_resolution_one);
+                                    break;
+                                case 2:
+                                    resolutionTextView.setText(R.string.boundary_resolution_two);
+                                    break;
+                            }
+                            if (globalVariables.ScenarioResolution != 1) {
+                                additional.setVisibility(VISIBLE);
+                                additional.setText(R.string.act_two_finished);
+                                additional.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                    @Override
+                                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                                        if (isChecked) {
+                                            resolutionTextViewAdditional.setVisibility(VISIBLE);
+                                            resolutionTextViewAdditional.setText(R.string
+                                                    .boundary_resolution_additional);
+                                        } else {
+                                            resolutionTextViewAdditional.setVisibility(GONE);
+                                        }
+                                    }
+                                });
+                            } else {
+                                additional.setVisibility(GONE);
+                                resolutionTextViewAdditional.setVisibility(GONE);
+                            }
+                            break;
                     }
                     break;
             }
@@ -2595,6 +2662,9 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     break;
                                 case 9:
                                     intent = new Intent(getActivity(), ChooseSuppliesActivity.class);
+                                    break;
+                                case 11:
+                                    intent = new Intent(getActivity(), ScenarioInterludeActivity.class);
                                     break;
                             }
                     }
@@ -3751,6 +3821,25 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                             }
                         }
                         break;
+                    // Boundary Beyond
+                    case 10:
+                        globalVariables.PathsKnown = Integer.valueOf(counterTwo.getText().toString());
+                        if (globalVariables.ScenarioResolution == 1) {
+                            globalVariables.IchtacaConfidence = 1;
+                        } else {
+                            globalVariables.IchtacaConfidence = 0;
+                        }
+                        if (investigatorOne.isChecked()) {
+                            globalVariables.Harbinger = Integer.valueOf(counterOne.getText().toString());
+                        } else {
+                            globalVariables.Harbinger = -1;
+                        }
+                        globalVariables.YigsFury += vengeanceCounter;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay +
+                                    Integer.valueOf(counterTwo.getText().toString());
+                        }
+                        break;
                 }
                 break;
         }
@@ -4188,6 +4277,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             forgottenValues.put(ForgottenEntry.COLUMN_MISSING_RELIC, globalVariables.MissingRelic);
             forgottenValues.put(ForgottenEntry.COLUMN_MISSING_ALEJANDRO, globalVariables.MissingAlejandro);
             forgottenValues.put(ForgottenEntry.COLUMN_MISSING_ICHTACA, globalVariables.MissingIchtaca);
+            forgottenValues.put(ForgottenEntry.COLUMN_PATHS_KNOWN, globalVariables.PathsKnown);
+            forgottenValues.put(ForgottenEntry.COLUMN_ICHTACA_CONFIDENCE, globalVariables.IchtacaConfidence);
 
             String forgottenSelection = ForgottenEntry.PARENT_ID + " LIKE ?";
             String[] forgottenSelectionArgs = {Long.toString(globalVariables.CampaignID)};
@@ -4233,6 +4324,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     (i).Medicine);
             investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES, globalVariables.Investigators
                     .get(i).Supplies);
+            investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE, globalVariables
+                    .Investigators.get(i).ResuppliesOne);
             db.insert(InvestigatorEntry.TABLE_NAME, null, investigatorValues);
         }
         for (int i = 0; i < globalVariables.SavedInvestigators.size(); i++) {
@@ -4261,10 +4354,11 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS, globalVariables.SavedInvestigators
                     .get(i).Provisions);
             investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE, globalVariables.SavedInvestigators
-                    .get
-                            (i).Medicine);
+                    .get(i).Medicine);
             investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES, globalVariables.SavedInvestigators
                     .get(i).Supplies);
+            investigatorValues.put(InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE, globalVariables
+                    .SavedInvestigators.get(i).ResuppliesOne);
             db.insert(InvestigatorEntry.TABLE_NAME, null, investigatorValues);
         }
     }
