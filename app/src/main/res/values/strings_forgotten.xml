@@ -115,7 +115,8 @@
     <string name="rescued_alejandro">The investigators rescued Alejandro.\n\n</string>
     <string name="ichtaca_dark">Ichtaca is in the dark.\n\n</string>
     <string name="bond_ichtaca">The investigators forged a bond with Icthaca.\n\n</string>
-    <string name="paths_known">paths are known to you.\n\n</string>
+    <string name="paths_known_1"></string>
+    <string name="paths_known_2">paths are known to you.\n\n</string>
     <string name="ichtaca_confidence">Ichtaca has confidence in you.\n\n</string>
 
     <!--Edit log-->

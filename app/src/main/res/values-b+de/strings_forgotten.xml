@@ -5,7 +5,8 @@
     <string name="forgotten_scenario_two">Szenario 2: Das Verderben von Eztli</string>
     <string name="forgotten_scenario_three">Szenario 3: Fäden des Schicksals</string>
     <string name="forgotten_scenario_four">Szenario 4: Die jenseitige Grenze</string>
-    <string name="forgotten_scenario_five">Szenario 5: Das Herz der Älteren</string>
+    <string name="forgotten_scenario_five_a">Szenario 5-A: Das Herz der Älteren, Teil 1</string>
+    <string name="forgotten_scenario_five_b">Szenario 5-B: Das Herz der Älteren, Teil 2</string>
     <string name="forgotten_scenario_six">Szenario 6: Die Archivstadt</string>
     <string name="forgotten_scenario_seven">Szenario 7: Die Tiefen von Yoth</string>
     <string name="forgotten_scenario_eight">Szenario 8: Zerstörte Zeitalter</string>
@@ -36,6 +37,8 @@
     <string name="remove_poisoned">Vergiftet-Schwäche entfernen (3EP)</string>
     <string name="remove_physical">Körperliches Trauma entfernen (5EP)\n(Aktuelle Traumata:</string>
     <string name="remove_mental">Seelisches Trauma entfernen (5EP)\n(Aktuelle Traumata:</string>
+    <string name="tenochtitlan_locations"><b><i>Tenochtitlán</i></b>-Orte im Siegpunktestapel:</string>
+    <string name="act_two_finished">Bei Spielende war Szene 2 aktiv</string>
 
 
     <!--Supplies-->
@@ -112,6 +115,9 @@
     <string name="rescued_alejandro">Die Ermittler haben Alejandro gerettet.\n\n</string>
     <string name="ichtaca_dark">Ichtaca ist im Dunkeln.\n\n</string>
     <string name="bond_ichtaca">Die Ermittler haben ein Bündnis mit Ichtaca geschlossen.\n\n</string>
+    <string name="paths_known_1">Du kennst</string>
+    <string name="paths_known_2">Wege.\n\n</string>
+    <string name="ichtaca_confidence">Ichtaca vertraut dir.\n\n</string>
 
     <!--Edit log-->
     <string name="yigs_fury_heading">Yigs Zorn</string>
@@ -127,6 +133,9 @@
     <string name="missing_relic_heading">Das Verschwinden des Relikts</string>
     <string name="missing_alejandro_heading">Alejandros Vreschwinden</string>
     <string name="missing_ichtaca_heading">Ichtacas Verschwinden</string>
+    <string name="paths_heading">Wege, die du kennst</string>
+    <string name="confidence_heading">Ichtacas Vertrauen</string>
+    <string name="confidence">Ichtaca vertraut dir</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X ist die Anzahl der Vergeltungspunkte im Siegpunktestapel.</string>
@@ -155,6 +164,20 @@
     <string name="threads_thing_one">–2. Falls die Probe misslingt, verlierst du 1 deiner Hinweise.</string>
     <string name="threads_thing_two">–3. Falls die Probe misslingt, verlierst du 1 deiner Hinweise.</string>
 
+    <string name="boundary_skull_one">–1 (–3 stattdessen, falls du dich an einem <b><i>Uralt</i></b>-Ort befindest).</string>
+    <string name="boundary_skull_two">–2 (–4 stattdessen, falls du dich an einem <b><i>Uralt</i></b>-Ort befindest).</string>
+    <string name="boundary_cultist_one">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere 1
+        Verderben auf einen <b><i>Kultist</i></b>-Gegner.</string>
+    <string name="boundary_cultist_two">Enthülle einen weiteren Marker. Falls die Probe misslingt, platziere je 1
+        Verderben auf jeden <b><i>Kultist</i></b>-Gegner.</string>
+    <string name="boundary_tablet_one">Enthülle einen weiteren Marker. Falls die Probe misslingt und sich ein oder
+        mehrere <b><i>Schlange</i></b>-Gegner an deinem Ort befinden, greift einer von ihnen dich an.</string>
+    <string name="boundary_tablet_two">Enthülle einen weiteren Marker. Falls die Probe misslingt, greift dich jeder
+        <b><i>Schlange</i></b>-Gegner an deinem Ort an.</string>
+    <string name="boundary_thing_one">–4. Falls die Probe misslingt, platziere 1 Hinweis (aus dem Markervorrat) auf den
+        nächstgelegenen <b><i>Uralt</i></b>-Ort.</string>
+    <string name="boundary_thing_two">–4. Platziere 1 Hinweis (aus dem Markervorrat) auf den nächstgelegenen
+        <b><i>Uralt</i></b>-Ort.</string>
 
     <!--Campaign introduction-->
     <string name="forgotten_introduction"><b>Prolog</b>\n
@@ -329,6 +352,52 @@
     <string name="expeditions_end_option_two">Es auszustellen wäre zu gefährlich. Es sollte an einem sicheren Ort
         versteckt werden, bis wir mehr über das Ding wissen.</string>
 
+    <string name="jungle_beckons_introduction">Erneut machst du dich auf den Weg nach Süden und lässt die Sicherheit der Zivilisation
+        hinter dir. Du darfst keine Zeit verschwenden. Der Weg zum Nexus liegt auf vertrautem Gelände, nicht weit vom Weg der
+        vorherigen Expedition. Mit dem ledergebundenen Tagebuch als deinen Führer, verfolgst du die Spuren dieser Expedition. Bald
+        bist du tief im Dschungel, von allen Seiten umgeben von Gefahren – natürlichen und widernatürlichen…</string>
+    <string name="jungle_enough_gas">Die Ermittler haben genug Benzin.</string>
+    <string name="jungle_out_gas">Leider geht dir etwa ein Dutzend Meilen vor dem nördlichen Rand des Regenwaldes das Benzin aus.
+        Da du es eilig hast, entscheidest du dich, den Rest des Weges zu laufen, statt umzudrehen, um zu tanken. Zu Fuß bist du
+        langsamer und verlierst einige Stunden, aber du erreichst den Dschungel erneut.\n
+    \n<b>Beim Ziehen der Starthände während des nächsten Szenarios können die Ermittler keinen Mulligan nehmen.</b></string>
+    <string name="jungle_map">Dank deiner Landkarte, auf der die vorherige Expedition Markierungen vorgenommen hat, bist du in der Lage,
+        einen Weg durch den Regenwald zu finden, ohne dich zu verlaufen. Du erreichst dein Ziel zum geplanten Zeitpunkt.</string>
+    <string name="jungle_no_map">Die Ermittler haben keine Landkarte.</string>
+    <string name="jungle_low">Auf dem Weg durch den Dschungel stellst du fest, dass der Weg zum Nexus weiter ist, als du gedacht hast.
+        Du hast bei deinem überstürzten Auf bruch nicht mehr Nahrung jagen oder sammeln können. Der Hunger verwirrt deinen Geist und
+        bohrt schmerzhaft in deinem Magen.</string>
+    <string name="jungle_poison_spreads"> Das Gift kriecht durch deinen gesamten Körper und richtet verheerenden Schaden an deinen
+        inneren Organen an. Ein fürchterliches Fieber brennt in dir, das mit jedem Tag stärker wird. Du kannst kaum noch Nahrung bei
+        dir behalten. Dein Körper fühlt sich an, als ob ihm alle Kraft entzogen worden wäre.</string>
+    <string name="jungle_trudge">Als du durch den üppigen Dschungel wanderst, kommst du an einigen dir vertrauten, überwucherten
+        Tempelruinen vorbei. Dort bemerkst du dank deiner scharfen Augen ein Muster auf der Steinwand des zerfallenen Gebäudes. Als du
+        es genauer untersuchst, stellt du fest, dass Schlingpflanzen und getrocknete Erde diese aufwendig geschnitzten Hieroglyphen
+        bisher vor dir verborgen haben.</string>
+    <string name="jungle_canteen_one">Die folgenden Ermittler haben eine Feldflasche:\n\n</string>
+    <string name="jungle_canteen_two">\nSie lesen:</string>
+    <string name="jungle_patterns">Du greifst zu deiner Feldflasche und gießt Wasser auf die Steinwand. Es fällt dir nun leichter,
+        den Dreck abzuwaschen und die steifen Ranken zu entfernen. Das Muster der Glyphen ist nun deutlich sichtbar und obwohl du seine
+        Bedeutung immer noch nicht verstehst, deutet doch besonders die Wiederholung von sechs Glyphen auf eine spezielle Anweisung hin…\n
+    \n<b>Jeder Ermittler, der eine Feldflasche hat, beginnt das nächste Szenario mit einem Hinweis (aus dem Markervorrat).</b>\n</string>
+    <string name="jungle_no_canteen_one">Die folgenden Ermittler haben keine Feldflasche:\n\n</string>
+    <string name="jungle_no_canteen_two">\nSie lesen:</string>
+    <string name="jungle_secrets">Was du auch versuchst, mit bloßen Händen schaffst du es nicht, den Dreck abzukratzen und die Ranken zu
+        entfernen. Dir bleibt keine Wahl als dieses Geheimnis hinter dir lassen.</string>
+    <string name="jungle_no_faith">Am zweiten Abend im Dschungel geschieht nichts außergewöhnliches.</string>
+    <string name="jungle_faith_restored">Am zweiten Abend im Dschungel sitzt du mit deinen Gefährten an einem schwachen Lagerfeuer,
+        das euch warm hält und ihr versucht euch trotz der Aufgabe, die vor euch liegt, zu entspannen. Ichtaca tritt ans Lagerfeuer
+        und nimmt dir gegenüber Platz. Ihre Augen sind auf den Boden gerichtet und ihre Schultern werden von einer schweren Last
+        niedergedrückt. „Ich habe das Gefühl, mich bei dir entschuldigen zu müssen,“ gibt sie zu und starrt ins flackernde Feuer. „Du
+        hast dich als weise und respektvoll erwiesen und ich habe dich nur herumkommandiert und immer wieder in Gefahr gebracht.“ Ein
+        langes, friedliches Schweigen macht sich zwischen euch breit. „Vielleicht gibt es für die Menschheit doch noch Hoffnung“, sagt
+        sie leise, als ihr Blick den deinen trifft. Spricht sie für dich? Oder auch für sich selbst?\n
+    \nNach einer Weile steht Ichtaca wieder auf. „Ich vertraue dir die erste Wache an. Sei auf der Hut vor den Schlangen. Sie werden
+        sicher nach uns Ausschau halten.“ Für den Rest der Nacht bleibt es ruhig im Lager, nur das beruhigende Knistern des Lagerfeuers
+        und das Zirpen des Insektenchors füllen die Nachtluft.\n
+    \n<b>Dem Chaosbeutel wird für den Rest der Kampagne 1 Kultist-Chaosmarker hinzugefügt.</b></string>
+
+
 
     <!--Scenario introductions-->
     <string name="untamed_introduction">Sonntag, 28. Juni 1925\n
@@ -399,12 +468,12 @@
         triff mich dann heute abend wieder hier. Aber folge mir <i>nicht</i>.“</string>
     <string name="threads_introduction_option_one">„Du gehst nirgendwo hin, bevor du mir gesagt hast, was hier vor sich geht.“</string>
     <string name="threads_introduction_option_two"> „Wie du willst.“</string>
-    <string name="threads_introduction_three">Ichtaca knirscht mit den Zähnen und hält einen Moment inne. Du erwartest schon, dass sie ablehnen
-        und deine Wohnung verlassen wird, ohne deine Fragen zu beantworten. Zu deiner Überraschung lenkt sie ein. Ichtaca berichtet dir, dass ihr
-        Volk seit ewigen Zeiten das Relikt vor Eindringlingen schützt, die es für schändliche Zwecke benutzen würden. Ihre Erzählung ist
-        kryptisch, rätselhaft und unglaublich. Sie weigert sich dir zu verraten, woher ihr Volk stammt und wie sie es geschafft haben, so lange
-        unbemerkt zu bleiben. Als du sie eindringlich nach dem Relikt fragst, sagt sie nur, dass es den Fluss der Zeit kontrolliert und dass man
-        damit nicht herumspielen sollte.\n
+    <string name="threads_introduction_three">Ichtaca knirscht mit den Zähnen und hält einen Moment inne. Du erwartest schon, dass sie
+        ablehnen und deine Wohnung verlassen wird, ohne deine Fragen zu beantworten. Zu deiner Überraschung lenkt sie ein. Ichtaca berichtet
+        dir, dass ihr Volk seit ewigen Zeiten das Relikt vor Eindringlingen schützt, die es für schändliche Zwecke benutzen würden. Ihre
+        Erzählung ist kryptisch, rätselhaft und unglaublich. Sie weigert sich dir zu verraten, woher ihr Volk stammt und wie sie es geschafft
+        haben, so lange unbemerkt zu bleiben. Als du sie eindringlich nach dem Relikt fragst, sagt sie nur, dass es den Fluss der Zeit
+        kontrolliert und dass man damit nicht herumspielen sollte.\n
     \n„Es muss es an seinen angestammten Platz zurückkehren“, erklärt sie. Ihr Blick sagt eindeutig, dass sie in diesem Punkt nicht nachgeben
         wird. „Verstehst du das? Es darf auf keinen Fall in falsche Hände fallen. Falls du mir helfen kannst, es zurückzuholen, werde ich dir
         ebenfalls helfen. Versprich mir nur, dass du es <i>nicht</i> verwenden wirst.“\n
@@ -426,6 +495,72 @@
     \n<b>Für den Rest der Kampagne können die Decks der Ermittler Alejandro Vela oder Ichtaca nicht enthalten. Immer wenn ein Ermittler die
         Gelegenheit erhalten würde, einen der beiden seinem Deck hinzufügen, erhält jeder Ermittler stattdessen 2 Erfahrungspunkte.</b></string>
 
+    <string name="boundary_introduction_one">Gelbe Sonnenstrahlen brennen heiß auf dich herab, als du mit deinem Auto über
+        die staubigen Highways des südlichen Texas an San Antonio vorbeifährst. Dein Auf bruch von Arkham nach Mexiko-Stadt
+        ist nun einige Tage her. Dort hoffst du Antworten von einigen Mitarbeitern Alejandros zu erhalten – oder noch besser:
+        von seinen Gegnern in der akademischen Welt. Deine letzten Ermittlungen in Arkham haben viel Interessantes zutage
+        gebracht, aber trotz all diesem neuen Wissen ist die Spur doch kalt geworden. Die „Bruderschaft“, die du in Arkham
+        enthüllt hast, ist aus der Stadt verschwunden. Ihre Mitglieder haben nur wenige Informationen über ihre nächsten
+        Ziele zurückgelassen. Du kennst nur den Namen „Nexus von N’kai“. Dabei soll es sich um einen machtvollen Ort handeln,
+        den Ichtaca für das eigentliche Ziel der Bruderschaft hält. Rätselhaft wie immer sitzt die Kriegerin der Eztli auf
+        dem Beifahrersitz neben dir. Sie ist nervös und angespannt wie eine Sprungfeder, der Ledersitz des Fords bietet ihr
+        offensichtlich nur wenig Bequemlichkeit.\n\n</string>
+    <string name="boundary_introduction_two_a">„Wie weit ist es noch?“, fragt Ichtaca wohl zum hundertsten Mal seit der
+        Abreise aus Arkham. „Wir müssen Anahuac so schnell wie möglich erreichen. Je länger wir brauchen, desto mehr Zeit hat
+        die Bruderschaft, um den Nexus zu erreichen.“ Du erkennst den alten aztekischen Namen für das Tal von Mexiko und
+        informierst Ichtaca, dass du innerhalb der nächsten Stunde über die Grenze nach Mexiko fahren wirst. Sie verschränkt
+        ihre Arme und knirscht mit den Zähnen.\n\n</string>
+    <string name="boundary_introduction_two_b">Ichtaca ist während des größten Teils der Reise still und nachdenklich. Deine
+        Fragen werden nur von einer Mauer aus Schweigen und einem stählernen Blick beantwortet. Was auch immer sie plant, sie
+        wird dich nicht einweihen.\n\n</string>
+    <string name="boundary_introduction_three_a">Auf der Reise nach Süden befindet sich das Gerät, das du aus den Klauen der
+        Bruderschaft zurückgeholt hast, in ein dünnes Bettlaken gewickelt auf dem Rücksitz deines Wagens, wo es pausenlos
+        vor sich hin summt. Dein Verständnis über die Natur des Relikts wächst immer weiter.\n\n</string>
+    <string name="boundary_introduction_three_b">Der Verlust des Eztli-Relikts lastet schwer auf deiner Seele. Ganz sicher
+        war sein Wert nicht nur akademischer Natur. Es hat eine Macht, die du noch nicht einmal im Ansatz erahnen kannst. Du bist
+        dir sicher, dass diese undurchsichtige Bruderschaft hinter seinem Verschwinden steckt, doch zu welchem Zweck?\n\n</string>
+    <string name="boundary_introduction_four_a">Im Verlauf der Reise kritzelt Alejandro pausenlos in seinem Tagebuch. Das
+        Geräusch des auf Papier kratzenden Bleistiftes erinnert dich ständig an seine Gegenwart. Er kauert sich mit dem
+        Tagebuch zwischen seinen Knien auf dem Rücksitz zusammen und an seiner gerunzelten Stirn erkennst du, dass er tief
+        in Gedanken versunken ist. „Diese ‚Bruderschaft‘ ist unsere geringste Sorge“, sagt er dann in einem Tonfall, der
+        keinen Widerspruch duldet. „Ich habe versucht die Glyphen auf dem Gerät zu entschlüsseln. Die Symbole sind definitiv
+        nicht aztekisch, stammen aber auch nicht von den Maya oder einer anderen Zivilisation Mesoamerikas. Ich glaube,
+        dieses Relikt gehört an einen anderen Ort. An einen Ort, von dem es gestohlen wurde. Sind Sie nicht ebenfalls meiner
+        Meinung, Miss Ichtaca?\n
+    \nIchtacas ohnehin schon grimmiger Ausdruck verfinstert sich noch weiter. Ihre Augen werden zu schmalen Schlitzen. Sie
+        macht sich nicht einmal die Mühe, sich Alejandro auf dem Rücksitz zuzuwenden, ehe sie antwortet. „Es gehört an einen
+        Ort, wo aufdringliche Gelehrte seine Macht nicht missbrauchen können“, antwortet sie mit kalter Stimme und unterbindet
+        damit jede Diskussion.\n
+    \nDank Alejandros Verbindungen ist die Überquerung der mexikanischen Grenze weniger anstrengend, als du befürchtet hattest.
+        Ihr werdet durch die Zollkontrollen gewinkt, niemand wirf t euch auch nur einen fragenden Blick zu und bald schon seid
+        ihr auf dem Weg nach Mexiko-Stadt.\n\n</string>
+    <string name="boundary_introduction_four_b">Ihr verbringt die Nacht kurz vor der Grenze. Dein Blick wandert immer wieder
+        zu dem leeren Sitz auf der Rückbank und du fragst dich, wo Alejandro gerade ist.\n\n</string>
+    <string name="boundary_introduction_five">Treibstoff stellt auf der gesamten Reise in den Süden ein Problem dar. Auf dem
+        Weg kannst du zwar einige Male an Gemischtwarenläden und Eisenhandlungen auf tanken, aber schließlich bleibt dein Wagen
+        kurz vor der Südgrenze am Straßenrand einfach stehen. Du und Ichtaca seid gezwungen, einige Meilen in den nächsten Ort
+        zu laufen, um neues Benzin zu holen. Dies wirft euch einige Stunden zurück.\n\n</string>
+    <string name="boundary_introduction_six">Nach deiner Ankunft in Mexiko-Stadt stellst du entmutigt fest, dass auch hier nur
+        wenige Informationen über die Bruderschaft oder den Nexus zu finden sind. Deine Suche in den Archiven der Bibliotheken
+        der Stadt und der Universität bleibt erfolglos. Du findest keine früheren Kollegen von Alejandro in der Stadt und von
+        seinen früheren Widersachern ist nur eine bereit mit dir zu sprechen: eine Frau namens Padma Amrita, die Alejandros
+        Veröffentlichungen vor seiner Ankunft in Arkham studiert hat. Sie stimmt einem spätabendlichen Treffen in einer angesagten
+        Lounge im Südteil der Stadt zu. Ichtaca hält sich in der Nähe auf und beobachtet deine neue Informantin schweigend.\n
+    \nPadma weiß viel über Alejandros Forschung und behauptet sogar vom Nexus von N’kai gehört zu haben weigert sich aber dir zu sagen,
+        wie du ihn finden kannst. „Das ist vergebliche Mühe“, sagt sie dir. „Dort ist nichts zu finden. Es ist nur ein Mythos.
+        Vertrauen Sie mir, es haben bereits viele danach gesucht. Aber keiner hat ihn gefunden.“ Du weist sie darauf hin, dass das Volk
+        der Eztli kein Mythos war, und sie antwortet mit einem charmanten Lächeln. „Vielleicht nicht, aber doch zumindest die Behauptung,
+        dass die Eztli überlebt haben? Seit Jahrhunderten unentdeckt?“ Sie lacht laut auf. „Alles nur Gerede, so einfach ist das. Kommen
+        Sie, Sie erwarten doch nicht, dass echte Gelehrte an so etwas glauben, oder?“ Dein Blick wandert zu Ichtaca, die die ganze
+        Unterhaltung mit vor der Brust verschränkten Armen mitgehört hat. Ihre Fingernägel bohren sich in die Haut ihrer Unterarme.
+        Padmas Blick gleitet ebenfalls zu ihr, auf ihren Lippen liegt die Andeutung eines Lächelns. „Wie dem auch sei, es tut mir leid,
+        ich habe keine weiteren Informationen für Sie. Nur ein Einfaltspinsel würde diese ‚Forschung‘ weiter betreiben. Einen schönen Tag
+        noch.“ Padma verlässt dich mit einem verführerischen Lächeln, ein süßer Duft verbleibt nach ihrem Aufbruch in der Luft.\n
+    \nSobald sie außer Sichtweite ist, setzt sich Ichtaca neben dich und ihr diskutiert euer weiteres Vorgehen. Nach einer Woche voller
+        Rückschläge ist sie ungeduldig. Du schlägst einige weitere Gesprächspartner vor, aber ihre Gedanken sind ganz woanders. Nach
+        eurer Rückkehr ins Hotel zieht sie sich sofort in ihr Zimmer zurück, um Vorbereitungen für den morgigen Tag zu treffen. Du
+        entscheidest dich ebenfalls dich für die Nacht zurückzuziehen und fällst bald in einen traumlosen Schlaf. Aber in den Winkeln
+        deines Bewusstseins kannst du hören, wie Ichtaca eine kryptische Beschwörung rezitiert…</string>
 
 
     <!--Scenario setup-->
@@ -442,7 +577,7 @@
     <string name="untamed_additional_lead">Ernennt Ursula Downs, Leo Anderson oder Monterey Jack zum Leiter der
         Expedition. Dieser Ermittler beginnt die Szenarien I und II als Ermittlungsleiter.\n</string>
 
-    <string name="eztli_sets">Verderben von Eztli, Agenten des Yig, Yigs Gift, Zeitströmung, Tödliche Fallen, Vergessene
+    <string name="eztli_sets">Das Verderben von Eztli, Agenten des Yig, Yigs Gift, Zeitströmung, Tödliche Fallen, Vergessene
         Ruinen, Gift und Grabeskälte.</string>
     <string name="eztli_locations">Der Eingang wird ins Spiel gebracht.\n
         \nJeder Ermittler beginnt das Spiel am Eingang.\n</string>
@@ -536,6 +671,35 @@
         weiterverfolgen und welche sie vorerst ignorieren. Der Text aller drei Szenen gilt zu jedem Zeitpunkt als aktiv.
         Möglicherweise haben die Spieler nicht ausreichend Zeit, um alle drei Aufgaben zu erledigen. Deshalb sollten sie
         wohlüberlegte Entscheidungen treffen, welchen Spuren sie folgen wollen!</string>
+
+    <string name="boundary_sets_one">Die jenseitige Grenze, Zeitströmung, Gift, Pnakotische Bruderschaft und Dunkler Kult.</string>
+    <string name="boundary_sets_two">Die jenseitige Grenze, Zeitströmung, Gift, Yigs Gift und Wächter der Zeit.</string>
+    <string name="boundary_sets_three">Die jenseitige Grenze, Zeitströmung, Gift, Pnakotische Bruderschaft und
+        Wächter der Zeit.</string>
+    <string name="boundary_locations">Die Orte Kathedrale von Mexiko-Stadt, Zócalo, Tempelruinen, Xochimilco, Chapultepec-Park
+        und Coyoacán werden ins Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel entweder auf dem Zócalo oder in Coyoacán (nach eigener Wahl).\n</string>
+    <string name="boundary_set_aside">Der Gegner Padma Amrita, jede Vergiftet-Schwäche, die sich nicht bereits im Deck eines
+        Ermittlers befindet, Szene 3a und Agenda 3a (sie sind nicht Teil des Szenen- bzw. Agendadecks – noch nicht…).\n</string>
+    <string name="boundary_additional">Das Erkundungsdeck wird erstellt. Dazu werden die 12 einseitig bedruckten
+        <b><i>Uralt</i></b>-Orte herausgesucht und mit jeweils einem Exemplar der folgenden Begegnungskarten zusammengemischt:
+        Fenster zu einer anderen Zeit, Destabilisierung der Zeitlinie, Ein Riss in der Zeit und Verloren in der Zeit.\n</string>
+    <string name="boundary_additional_silent">Jeder Ermittler beginnt das Szenario mit 2 Karten weniger auf der Hand.\n\n</string>
+    <string name="boundary_additional_thrumming">Der Ermittler, in dessen Deck sich die Karte Das Relikt der Zeitalter (…ein
+        Gerät irgendeiner Art) befindet, ersetzt diese Karte durch Das Relikt der Zeitalter (Es kommt der Zukunft zuvor).\n\n</string>
+    <string name="boundary_additional_concern">Die Karte Das Relikt der Zeitalter (Es kommt der Zukunft zuvor) wird aus dem
+        Spiel entfernt.\n\n</string>
+    <string name="boundary_additional_thoughts">Jeder Ermittler beginnt das Szenario mit 2 zusätzlichen Ressourcen.\n\n</string>
+    <string name="boundary_additional_gas">Beim Ziehen der Starthände für dieses Szenario können die Ermittler keinen Mulligan
+        nehmen.\n\n</string>
+    <string name="boundary_rules_heading">Ersetzen von Orten</string>
+    <string name="boundary_rules">Im Verlauf dieses Szenarios könnten die Ermittler die A nweisung erhalten, neue Orte auf bereits
+        exisitierende zu legen. Sobald ein Ort auf einen Ort gelegt wird, der sich bereits im Spiel befindet, nimmt er dessen Platz
+        ein. Alle Marker, Verstärkungen, Ermittler, Gegner und sonstige Karten, die sich am früheren Ort befunden haben, befinden
+        sich nun am neuen Ort (sie haben sich nicht „bewegt“ – der Ort hat sich einfach geändert). Falls ein Ort das Spiel verlässt
+        und sich ein anderer Ort darunter befindet, nimmt er dessen Platz ein. Alle Marker, Verstärkungen, Ermittler, Gegner und
+        sonstige Karten, die sich am Ort befinden, der das Spiel verlässst, befinden sich nun am früheren Ort</string>
+
 
     <!--Scenario resolutions-->
     <string name="untamed_no_resolution">Mittwoch, 1. Juli 1925\n
@@ -764,5 +928,58 @@
         Ermittlers entfernt.\n\n</string>
     <string name="threads_resolution_three_one">Ein beliebiger Ermittler darf wählen, die Karte Ichtaca (Die vergessene Wächterin) seinem
         Deck hinzuzufügen.</string>
+
+    <string name="boundary_no_resolution">Als du deine Augen das nächste Mal öf fnest, befindest du dich wieder in deinem Bett im
+        Hotelzimmer. Du versuchst deine Augen mit deiner Hand vor dem Sonnenlicht zu schützen, das blendend durch die Schlafzimmervorhänge
+        dringt. Das grelle Licht fühlt sich wie eine angezogene Schraubzwinge um deine Schläfen an. Dünne Weihrauchwolken wabern durch die
+        Luft.\n
+    \nDas Aufstehen fällt dir unglaublich schwer. Eine leise Stimme ganz hinten in deinem Hinterkopf versucht dir einzureden, dass alles
+        nur ein Produkt deiner Einbildung war, ein Albtraum, hervorgerufen durch Erschöpfung. Es ist die Stimme der Selbsterhaltung, die
+        dich davor warnt, diesen Weg in den Wahnsinn, den du beschritten hast, weiter zu verfolgen. Du ignorierst sie und stehst auf.
+        Deine Beine zittern vor Furcht und Erschöpfung. Leise rufst du nach Ichtaca, weil du dich fragst, ob sie sich ebenfalls an die
+        Ereignisse der letzten Nacht erinnert – oder ob sie überhaupt dabei war. Du findest sie auf dem Boden liegend mit dem Rücken an
+        die Tür des Hotelzimmers gelehnt vor. Sie ist ohnmächtig und reagiert nicht, ihr Gesicht ist kreidebleich. Nach einigen
+        sorgenvollen Minuten gelingt es dir endlich, sie zu wecken. Sie erreicht keuchend das Bewusstsein wieder, hustet hef tig und
+        Krämpfe wie von einer Besessenheit schütteln ihren Körper. „Die Höhle. Das Maul am Himmel, getaucht in rotes Licht. Hast du es
+        gesehen?“\n
+    \nPulsierende Kopfschmerzen quälen dich, als du versuchst dich an die Ereignisse der letzten Nacht zu erinnern und du schüttelst den Kopf.
+        „Das muss der Weg zum Nexus sein“, fährt sie fort und stützt ihren Kopf mit einer Hand. Du versuchst ihr beim Aufstehen zu helfen,
+        aber sie stößt dich weg. „Was habe ich mir dabei nur gedacht? Die Grenze wird immer dünner. Nur eine geringe Spannung und sie hätte
+        reißen können.“ Ihr Blick fällt auf dich. „Ich hätte dich nicht da reinziehen sollen. Aber ob du willst oder nicht, du bist darin
+        verwickelt. Es ist zu spät, um umzukehren. Ich weiß, wo wir den Nexus finden und du musst mit mir kommen.“</string>
+    <string name="boundary_resolution_one">Eine wilde Ansammlung von Farben und Lichtern dringt von allen Seiten auf dich ein, als dein Geist
+        langsam in seinen Normalzustand zurückkehrt. Als du deine Augen das nächste Mal öf fnest, liegst du auf dem zentralen Platz der Stadt,
+        in deinem Kopf dreht sich immer noch alles vom Gefühl, in die Tiefe zu stürzen. Eine leise Stimme ganz hinten in deinem Geist versucht
+        dir einzureden, dass alles nur ein Produkt deiner Einbildung war, ein Tagtraum. Es ist die Stimme der Selbsterhaltung , die dich davor
+        warnt, diesen Weg in den Wahnsinn, den du beschritten hast, weiter zu verfolgen. Du ignorierst sie und stehst auf. Deine Beine zittern
+        vor Furcht und Erschöpfung.\n
+    \n„Diese Frau… Sie muss erkannt haben, wer ich bin, und mir durch die Bresche, die ich geschlagen habe, gefolgt sein. Vielleicht will
+        auch sie wissen, wo der Nexus ist“, sagt Ichtaca kryptisch. Pulsierende Kopfschmerzen quälen dich, als du versuchst dich an die
+        Ereignisse der letzten Stunden zu erinnern. „Du hast es gesehen, oder nicht? Die Höhle. Das Maul am Himmel, in rotes Licht getaucht“,
+        fährt sie fort und sucht den Himmel ab. „Es muss der Weg zum Nexus sein.“\n
+    \nEs fällt dir schwer, dich genau zu erinnern, was auf der anderen Seite geschehen ist, aber das Bild der roten Höhle taucht flackernd in
+        deiner Erinnerung auf. Du bestätigst Ichtaca, dass auch du die Höhle gesehen hast, und fragst sie, woher sie weiß, dass sie zum Nexus
+        führt. Ihr blutunterlaufener Blick trifft den deinen und du meinst die Spur eines Lächelns auf ihren Lippen zu entdecken. „Einen Blick
+        über die Grenze direkt in die Fäden der Zeit selbst zu werfen ist keine einfache Sache… Vielleicht steckt mehr in dir, als es den
+        Anschein hat“, antwortet sie und scheint die Ironie ihrer Bemerkung nicht zu bemerken. Obwohl sie dich ohne eine Antwort verlässt,
+        verstehst du, welche Antwort unausgesprochen im Raum steht: Der Weg, den du in diesem Nebel zerbrochener Zeitlinien und unerklärlicher
+        Phänomene gesehen hast, war „eine Zukunft“.\nEine Zukunft, die du wahr werden lassen willst.</string>
+    <string name="boundary_resolution_two">Die Grenze am Horizont schimmert, als sich der Weg nach Hause vor deinen Augen schließt. Dieser
+        widernatürliche Nebel und die Gewichtslosigkeit, die du in dieser Vision erlebt hast, verschwinden und plötzlich wird dir klar, dass
+        es sich nicht um einen Traum handelt. Du bist in einer Zeit gefangen, die nicht die deine ist, und nirgendwo ist Ichtaca zu sehen.\n
+    \nDu wanderst herum und es fühlt sich an, als würden Stunden vergehen. Tage. Wochen. Dein Geist kann es nicht mehr ertragen. Die
+        Erkenntnis, dass du vielleicht für immer hier gefangen bist, ist beängstigend. Verzweif lung und Hof fnungslosigkeit ergreifen Besitz
+        von deinem Geist, ein Anfall von Wahnsinn und Einsamkeit, dem du nicht entkommen kannst. Du erinnerst dich nicht mehr, wie lange deine
+        Ankunft hier her ist. Du hast weder geschlafen noch gegessen.\n
+    \nPlötzlich, nachdem du eine Ewigkeit gewartet hast, bricht die Grenze und der Himmel wird von einem blendenden weißen Licht überflutet.
+        Als du deine Augen das nächste Mal öffnest, liegst du auf dem zentralen Platz der Stadt, in deinem Kopf dreht sich immer noch alles
+        von dem Gefühl, in die Tiefe zu stürzen. Ichtaca hilft dir beim Aufstehen, deine Beine zittern vor Furcht und Erschöpfung. Du fragst
+        sie, wie lange du weg warst, aber sie schüttelt nur den Kopf. „Es ist egal. Jetzt bist du hier.“ Du ignorierst ihre ausweichende
+        Antwort, aber innerlich kochst du vor Wut. Hat sie dich absichtlich zurückgelassen oder war es ein Versehen? „Du hast es gesehen,
+        oder nicht?“ fragt sie. „Die Höhle. Das Maul am Himmel, getaucht in rotes Licht.“ Du siehst sie mit leerem Blick an, deine Erinnerung
+        ist plötzlich verschwommen. „Es ist gleichgültig“, fährt sie fort. „Ich weiß jetzt, wo wir den Nexus finden und du musst mit mir
+        kommen.“</string>
+    <string name="boundary_resolution_additional"><b>Füge jeden Tenochtitlán-Ort im Spiel, auf dem keine Hinweise liegen, dem Siegpunktestapel
+        hinzu.</b></string>
 
 </resources>
