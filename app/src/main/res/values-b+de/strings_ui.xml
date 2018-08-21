@@ -57,7 +57,7 @@
     <string name="continue_button">Fortsetzen</string>
     <string name="difficulty">Chaosbeutel zusammenstellen</string>
     <string name="chaos_bag">Chaosbeutel</string>
-    <string name="campaign_name">Name der Kampagne (erforderlich)</string>
+    <string name="campaign_name">Name der Kampagne</string>
     <string name="saved_investigators">Gespeicherte Ermittler</string>
     <string name="select_investigators">Ermittler auswählen</string>
     <string name="new_investigators">Neue Ermittler</string>
@@ -87,13 +87,13 @@
     <string name="archaic_glyphs_dialog">Ein Ermittler hat die Glyphen übersetzt</string>
     <string name="archaic_glyphs">Du hast die Glyphen übersetzt.\n\n</string>
     <string name="charons_obol">Charons Obolus</string>
-    <string name="charons_obol_in_play">Ermittler mit Charons Obolus im Spiel:</string>
+    <string name="charons_obol_in_play">Charons Obolus im Spiel</string>
     <string name="ancient_stone_dialog">Ein Ermittler hat den Stein identifiziert</string>
     <string name="ancient_stone">Du hast den Stein identifiziert. (</string>
     <string name="test_difficulty">Schwierigkeit der Probe:</string>
 
     <string name="default_chaos_bag">Standard</string>
-    <string name="chaos_bag_name">Name des Chaosbeutels (erforderlich)</string>
+    <string name="chaos_bag_name">Name des Chaosbeutels</string>
     <string name="campaign_chaos_tokens">Automatisch Chaosmarker der Kampagne hinzufügen</string>
     <string name="campaign_chaos_tokens_list">+ Chaosmarker der Kampagne</string>
     <string name="select_chaos_bag">Chaosbeutel wählen</string>

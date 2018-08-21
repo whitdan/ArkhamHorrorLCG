@@ -696,8 +696,8 @@ public class CampaignLogActivity extends AppCompatActivity {
 
             // Boundary Beyond log
             if (scenario > 9 || globalVariables.ForgottenCompleted == 1){
-                String paths = getResources().getString(R.string.paths_known_1) + " " +
-                        Integer.toString(globalVariables.PathsKnown) + " " +
+                String paths = getResources().getString(R.string.paths_known_1) +
+                        Integer.toString(globalVariables.PathsKnown) +
                         getResources().getString(R.string.paths_known_2);
                 forgottenBuilder.append(paths);
                 if(globalVariables.IchtacaConfidence == 1 && globalVariables.PathsKnown >= 3){
