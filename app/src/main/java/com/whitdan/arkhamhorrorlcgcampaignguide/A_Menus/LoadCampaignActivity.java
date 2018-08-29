@@ -256,27 +256,36 @@ public class LoadCampaignActivity extends AppCompatActivity {
                             currentScenarioName.setText(R.string.forgotten_scenario_four);
                             break;
                         case 11:
+                        case 12:
+                        case 13:
+                        case 14:
+                        case 15:
+                        case 16:
+                        case 17:
                             currentScenarioName.setText(R.string.forgotten_interlude_three);
                             break;
-                        case 12:
-                            currentScenarioName.setText(R.string.forgotten_scenario_five);
+                        case 18:
+                            currentScenarioName.setText(R.string.forgotten_scenario_five_a);
                             break;
-                        case 13:
+                        case 19:
+                            currentScenarioName.setText(R.string.forgotten_scenario_five_b);
+                            break;
+                        case 20:
                             currentScenarioName.setText(R.string.forgotten_scenario_six);
                             break;
-                        case 14:
+                        case 21:
                             currentScenarioName.setText(R.string.forgotten_interlude_four);
                             break;
-                        case 15:
+                        case 22:
                             currentScenarioName.setText(R.string.forgotten_scenario_seven);
                             break;
-                        case 16:
+                        case 23:
                             currentScenarioName.setText(R.string.forgotten_interlude_five);
                             break;
-                        case 17:
+                        case 24:
                             currentScenarioName.setText(R.string.forgotten_scenario_eight);
                             break;
-                        case 18:
+                        case 25:
                             currentScenarioName.setText(R.string.forgotten_epilogue);
                             break;
                     }

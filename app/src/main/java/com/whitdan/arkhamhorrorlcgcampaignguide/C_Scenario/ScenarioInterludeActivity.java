@@ -640,6 +640,7 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                         if (map) {
                             introduction.setText(R.string.jungle_map);
                         } else {
+                            introduction.setTypeface(arnoprobold);
                             introduction.setText(R.string.jungle_no_map);
                         }
                         break;
