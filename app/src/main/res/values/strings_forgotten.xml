@@ -118,6 +118,8 @@
     <string name="paths_known_1"></string>
     <string name="paths_known_2"> paths are known to you.\n\n</string>
     <string name="ichtaca_confidence">Ichtaca has confidence in you.\n\n</string>
+    <string name="ichtaca_faith">Ichtaca’s faith is restored.\n\n</string>
+    <string name="mapped_forward">The investigators mapped out the way forward.\n\n</string>
 
     <!--Edit log-->
     <string name="yigs_fury_heading">Yig’s Fury</string>
@@ -135,7 +137,7 @@
     <string name="missing_ichtaca_heading">Missing Ichtaca</string>
     <string name="paths_heading">Paths known to you</string>
     <string name="confidence_heading">Ichtaca’s Confidence</string>
-    <string name="confidence">Ichtaca has confidence in you</string>
+    <string name="no_confidence">Ichtaca does not have confidence in you.</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X is the number of vengeance points in the victory display.</string>

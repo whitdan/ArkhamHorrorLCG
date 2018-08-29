@@ -1991,14 +1991,27 @@ public class EditLogActivity extends AppCompatActivity {
                 confidenceHeadingText.setText(R.string.confidence_heading);
                 confidenceHeadingText.setTypeface(teutonic);
                 editLayout.addView(confidenceHeading, lp);
-                View confidence = View.inflate(this, R.layout.e_item_checkbox, null);
-                CheckBox confidenceBox = confidence.findViewById(R.id.checkbox);
-                confidenceBox.setId(R.id.confidence);
-                confidenceBox.setText(R.string.confidence);
-                confidenceBox.setTypeface(arnopro);
-                editLayout.addView(confidence, lp);
+                final View confidenceOptions = View.inflate(this, R.layout.e_item_radiogroup, null);
+                RadioButton confidenceOptionOne = confidenceOptions.findViewById(R.id.option_two);
+                RadioButton confidenceOptionTwo = confidenceOptions.findViewById(R.id.option_three);
+                RadioButton confidenceOptionThree = confidenceOptions.findViewById(R.id.option_one);
+                confidenceOptionTwo.setVisibility(VISIBLE);
+                confidenceOptionOne.setId(R.id.confidence_one);
+                confidenceOptionTwo.setId(R.id.confidence_two);
+                confidenceOptionThree.setId(R.id.confidence_three);
+                confidenceOptionOne.setText(getString(R.string.ichtaca_confidence).trim());
+                confidenceOptionTwo.setText(getString(R.string.ichtaca_faith).trim());
+                confidenceOptionThree.setText(getString(R.string.no_confidence));
+                confidenceOptionOne.setTypeface(arnopro);
+                confidenceOptionTwo.setTypeface(arnopro);
+                confidenceOptionThree.setTypeface(arnopro);
+                editLayout.addView(confidenceOptions, lp);
                 if (globalVariables.IchtacaConfidence == 1) {
-                    confidenceBox.setChecked(true);
+                    confidenceOptionOne.setChecked(true);
+                } else if (globalVariables.IchtacaConfidence == 2) {
+                    confidenceOptionTwo.setChecked(true);
+                } else {
+                    confidenceOptionThree.setChecked(true);
                 }
             }
         }
@@ -2879,11 +2892,15 @@ public class EditLogActivity extends AppCompatActivity {
                         TextView paths = findViewById(R.id.paths);
                         globalVariables.PathsKnown = Integer.valueOf(paths.getText().toString());
 
-                        CheckBox confidence = findViewById(R.id.confidence);
-                        if(confidence.isChecked()){
-                            globalVariables.IchtacaConfidence = 1;
-                        } else {
+                        RadioButton confidenceOne = findViewById(R.id.confidence_one);
+                        RadioButton confidenceTwo = findViewById(R.id.confidence_two);
+                        RadioButton confidenceThree = findViewById(R.id.confidence_three);
+                        if(confidenceOne.isChecked()){
                             globalVariables.IchtacaConfidence = 0;
+                        } else if (confidenceTwo.isChecked()) {
+                            globalVariables.IchtacaConfidence = 1;
+                        } else if(confidenceThree.isChecked()){
+                            globalVariables.IchtacaConfidence = 2;
                         }
                     }
                 }
