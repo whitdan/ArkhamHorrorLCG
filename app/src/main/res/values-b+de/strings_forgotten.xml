@@ -135,7 +135,7 @@
     <string name="missing_ichtaca_heading">Ichtacas Verschwinden</string>
     <string name="paths_heading">Wege, die du kennst</string>
     <string name="confidence_heading">Ichtacas Vertrauen</string>
-    <string name="confidence">Ichtaca vertraut dir</string>
+    <string name="no_confidence">Ichtaca vertraut dir</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X ist die Anzahl der Vergeltungspunkte im Siegpunktestapel.</string>

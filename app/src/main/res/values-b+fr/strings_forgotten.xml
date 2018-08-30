@@ -5,8 +5,9 @@
     <string name="forgotten_scenario_two">Scénario 2 : Le Fléau des Eztli</string>
     <string name="forgotten_scenario_three">Scénario 3 : Les Fils du Destin</string>
     <string name="forgotten_scenario_four">Scénario 4 : Par-delà les Limites</string>
-    <string name="forgotten_scenario_five">Scénario 5 : Le Cœur des Anciens</string>
-    <string name="forgotten_scenario_six">Scénario 6 : La Cité des Archives</string>
+    <string name="forgotten_scenario_five_a">Scénario 5 : Le Cœur des Anciens</string>
+	<string name="forgotten_scenario_five_b">Scénario 5 : Le Cœur des Anciens</string>
+	<string name="forgotten_scenario_six">Scénario 6 : La Cité des Archives</string>
     <string name="forgotten_scenario_seven">Scénario 7 : Les Profondeurs de Yoth</string>
     <string name="forgotten_scenario_eight">Scénario 8 : Paradoxes Temporels</string>
     <string name="forgotten_interlude_one">Interlude 1: Nuits Agitées</string>
@@ -157,10 +158,14 @@
 	
 	 <string name="threads_skull_one">–X. X est le plus grand nombre de fatalités sur un ennemi <b><i>Cultiste</i></b>.</string>
     <string name="threads_skull_two">–X. X est le nombre de fatalités en jeu.</string>
-    <string name="threads_cultist_one">–2. Si vous ne réussissez pas avec une différence d'au moins 1, subissez 1 blessure.</string>
-    <string name="threads_cultist_two">–2. Si vous ne réussissez pas avec une différence d'au moins 2, subissez 1 blessure directe.</string>
-    <string name="threads_tablet_one">–2. Si vous ne réussissez pas avec une différence d'au moins 1, placez 1 fatalité sur l'ennemi <b><i>Cultiste</i></b> le plus proche.</string>
-    <string name="threads_tablet_two">–2. Si vous ne réussissez pas avec une différence d'au moins 2, placez 1 fatalité sur chaque ennemi <b><i>Cultiste</i></b>.</string>
+    <string name="threads_cultist_one">–2. Si vous ne réussissez pas avec une différence d\'au moins 1, subissez 1
+        blessure.</string>
+    <string name="threads_cultist_two">–2. Si vous ne réussissez pas avec une différence d\'au moins 2, subissez 1
+        blessure directe.</string>
+    <string name="threads_tablet_one">–2. Si vous ne réussissez pas avec une différence d\'au moins 1, placez 1
+        fatalité sur l'ennemi <b><i>Cultiste</i></b> le plus proche.</string>
+    <string name="threads_tablet_two">–2. Si vous ne réussissez pas avec une différence d\'au moins 2, placez 1
+        fatalité sur chaque ennemi <b><i>Cultiste</i></b>.</string>
     <string name="threads_thing_one">–2. Si vous échouez, perdez 1 de vos indices.</string>
     <string name="threads_thing_two">–3. Si vous échouez, perdez 1 de vos indices.</string>
 
