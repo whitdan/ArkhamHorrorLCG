@@ -51,6 +51,8 @@ public class Investigator {
         this.TotalXP = startingXP[Name];
         this.AvailableXP = this.TotalXP;
         this.SpentXP = 0;
+        this.Supplies = 1;
+        this.ResuppliesOne = 1;
     }
 
     // Basic attributes for all investigators

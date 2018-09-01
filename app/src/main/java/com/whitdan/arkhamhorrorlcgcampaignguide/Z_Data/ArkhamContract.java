@@ -179,6 +179,7 @@ public class ArkhamContract {
         public static final String COLUMN_MISSING_RELIC = "missing_relic";
         public static final String COLUMN_MISSING_ALEJANDRO = "missing_alejandro";
         public static final String COLUMN_MISSING_ICHTACA = "missing_ichtaca";
+        public static final String COLUMN_GASOLINE_USED = "gasoline_used";
         public static final String COLUMN_PATHS_KNOWN = "paths_known";
         public static final String COLUMN_ICHTACA_CONFIDENCE = "ichtaca_confidence";
     }

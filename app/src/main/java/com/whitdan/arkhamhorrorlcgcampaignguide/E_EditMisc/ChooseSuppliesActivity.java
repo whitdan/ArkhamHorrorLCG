@@ -407,25 +407,22 @@ public class ChooseSuppliesActivity extends AppCompatActivity {
                     array = 23;
                     break;
             }
-            /*if (globalVariables.CurrentScenario == 9) {
+            if (globalVariables.CurrentScenario == 9) {
                 switch (buttonView.getId()) {
                     case R.id.rope:
                         // Gasoline
                         points = 1;
-                        array = 29;
                         break;
                     case R.id.torches:
                         // Pocketknife
                         points = 2;
-                        array = 31;
                         break;
                     case R.id.map:
                         // Pickaxe
                         points = 2;
-                        array = 37;
                         break;
                 }
-            }*/
+            }
             if (isChecked) {
                 if (globalVariables.Investigators.get(currentInvestigator).SupplyPoints < points) {
                     buttonView.setChecked(false);

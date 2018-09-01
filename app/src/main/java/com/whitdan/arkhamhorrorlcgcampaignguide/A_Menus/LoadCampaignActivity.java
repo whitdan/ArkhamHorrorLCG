@@ -820,6 +820,7 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         ForgottenEntry.COLUMN_MISSING_RELIC,
                         ForgottenEntry.COLUMN_MISSING_ALEJANDRO,
                         ForgottenEntry.COLUMN_MISSING_ICHTACA,
+                        ForgottenEntry.COLUMN_GASOLINE_USED,
                         ForgottenEntry.COLUMN_PATHS_KNOWN,
                         ForgottenEntry.COLUMN_ICHTACA_CONFIDENCE
                 };
@@ -834,37 +835,39 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         null
                 );
                 while (forgottenCursor.moveToNext()) {
-                    globalVariables.YigsFury = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.YigsFury = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_YIGS_FURY));
-                    globalVariables.Ruins = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.Ruins = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_RUINS));
-                    globalVariables.Ichtaca = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.Ichtaca = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_ICHTACA));
-                    globalVariables.Alejandro = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.Alejandro = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_ALEJANDRO));
-                    globalVariables.LowRations = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.LowRations = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_LOW_RATIONS));
-                    globalVariables.Relic = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.Relic = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_RELIC));
-                    globalVariables.Harbinger = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.Harbinger = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_HARBINGER));
-                    globalVariables.Eztli = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.Eztli = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_EZTLI));
-                    globalVariables.Custody = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.Custody = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_CUSTODY));
-                    globalVariables.IchtacasTale = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.IchtacasTale = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_ICHTACAS_TALE));
-                    globalVariables.MissingRelic = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.MissingRelic = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_MISSING_RELIC));
-                    globalVariables.MissingAlejandro = forgottenCursor.getInt(forgottenCursor.getColumnIndex
+                    globalVariables.MissingAlejandro = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow
                             (ForgottenEntry
                             .COLUMN_MISSING_ALEJANDRO));
-                    globalVariables.MissingIchtaca = forgottenCursor.getInt(forgottenCursor.getColumnIndex
+                    globalVariables.MissingIchtaca = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow
                             (ForgottenEntry
                             .COLUMN_MISSING_ICHTACA));
-                    globalVariables.PathsKnown = forgottenCursor.getInt(forgottenCursor.getColumnIndex(ForgottenEntry
+                    globalVariables.GasolineUsed = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow
+                            (ForgottenEntry.COLUMN_GASOLINE_USED));
+                    globalVariables.PathsKnown = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow(ForgottenEntry
                             .COLUMN_PATHS_KNOWN));
-                    globalVariables.IchtacaConfidence = forgottenCursor.getInt(forgottenCursor.getColumnIndex
+                    globalVariables.IchtacaConfidence = forgottenCursor.getInt(forgottenCursor.getColumnIndexOrThrow
                             (ForgottenEntry
                             .COLUMN_ICHTACA_CONFIDENCE));
                 }

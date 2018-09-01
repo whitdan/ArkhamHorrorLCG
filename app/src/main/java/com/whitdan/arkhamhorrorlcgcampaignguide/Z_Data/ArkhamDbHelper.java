@@ -2,6 +2,7 @@ package com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
@@ -26,7 +27,7 @@ import static com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.Inv
 public class ArkhamDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "campaigns.db";
-    private static final int DATABASE_VERSION = 32;
+    private static final int DATABASE_VERSION = 33;
 
     public ArkhamDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -102,7 +103,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_DECKLIST + " STRING, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_PROVISIONS + " INTEGER, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_MEDICINE + " INTEGER, "
-                + InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES + " INTEGER"
+                + InvestigatorEntry.COLUMN_INVESTIGATOR_SUPPLIES + " INTEGER, "
                 + InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE + " INTEGER);";
 
         // Night of the Zealot table
@@ -196,6 +197,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + ForgottenEntry.COLUMN_MISSING_RELIC + " INTEGER, "
                 + ForgottenEntry.COLUMN_MISSING_ALEJANDRO + " INTEGER, "
                 + ForgottenEntry.COLUMN_MISSING_ICHTACA + " INTEGER, "
+                + ForgottenEntry.COLUMN_GASOLINE_USED + " INTEGER, "
                 + ForgottenEntry.COLUMN_PATHS_KNOWN + " INTEGER, "
                 + ForgottenEntry.COLUMN_ICHTACA_CONFIDENCE + " INTEGER);";
 
@@ -517,9 +519,9 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
             case 25:
                 String SQL_UPGRADE_TWENTYTHREE_ONE = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
                         CampaignEntry
-                        .COLUMN_CAROLYN_INUSE + " INTEGER";
+                                .COLUMN_CAROLYN_INUSE + " INTEGER";
                 String SQL_UPGRADE_TWENTYTHREE_TWO = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
-                    CampaignEntry.COLUMN_SILAS_INUSE + " INTEGER";
+                        CampaignEntry.COLUMN_SILAS_INUSE + " INTEGER";
                 String SQL_UPGRADE_TWENTYTHREE_THREE = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
                         CampaignEntry.COLUMN_LEO_INUSE + " INTEGER";
                 String SQL_UPGRADE_TWENTYTHREE_FOUR = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
@@ -568,7 +570,7 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 String SQL_UPGRADE_TWENTYFIVE_FIVE = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
                         ForgottenEntry.COLUMN_RUINS + " INTEGER";
                 String SQL_UPGRADE_TWENTYFIVE_SIX = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
-                        ForgottenEntry.COLUMN_ICHTACA+ " INTEGER";
+                        ForgottenEntry.COLUMN_ICHTACA + " INTEGER";
                 String SQL_UPGRADE_TWENTYFIVE_SEVEN = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
                         ForgottenEntry.COLUMN_ALEJANDRO + " INTEGER";
                 String SQL_UPGRADE_TWENTYFIVE_EIGHT = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
@@ -611,9 +613,20 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                         ForgottenEntry.COLUMN_ICHTACA_CONFIDENCE + " INTEGER";
                 String SQL_UPGRADE_TWENTYSEVEN_THREE = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN "
                         + InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE + " INTEGER";
+                String SQL_UPGRADE_TWENTYSEVEN_FOUR = "ALTER TABLE " + ForgottenEntry.TABLE_NAME + " ADD COLUMN " +
+                        ForgottenEntry.COLUMN_GASOLINE_USED + " INTEGER";
                 db.execSQL(SQL_UPGRADE_TWENTYSEVEN_ONE);
                 db.execSQL(SQL_UPGRADE_TWENTYSEVEN_TWO);
                 db.execSQL(SQL_UPGRADE_TWENTYSEVEN_THREE);
+                db.execSQL(SQL_UPGRADE_TWENTYSEVEN_FOUR);
+            case 32:
+                String SQL_UPGRADE_TWENTYEIGHT = "ALTER TABLE " + InvestigatorEntry.TABLE_NAME + " ADD COLUMN " +
+                        InvestigatorEntry.COLUMN_INVESTIGATOR_RESUPPLIES_ONE + " INTEGER";
+                try {
+                    db.execSQL(SQL_UPGRADE_TWENTYEIGHT);
+                } catch (SQLiteException ex) {
+                    Log.w("SQLiteException", "Altering " + InvestigatorEntry.TABLE_NAME + ": " + ex.getMessage());
+                }
         }
     }
 }

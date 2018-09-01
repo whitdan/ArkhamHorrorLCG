@@ -4277,6 +4277,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             forgottenValues.put(ForgottenEntry.COLUMN_MISSING_RELIC, globalVariables.MissingRelic);
             forgottenValues.put(ForgottenEntry.COLUMN_MISSING_ALEJANDRO, globalVariables.MissingAlejandro);
             forgottenValues.put(ForgottenEntry.COLUMN_MISSING_ICHTACA, globalVariables.MissingIchtaca);
+            forgottenValues.put(ForgottenEntry.COLUMN_GASOLINE_USED, globalVariables.GasolineUsed);
             forgottenValues.put(ForgottenEntry.COLUMN_PATHS_KNOWN, globalVariables.PathsKnown);
             forgottenValues.put(ForgottenEntry.COLUMN_ICHTACA_CONFIDENCE, globalVariables.IchtacaConfidence);
 
