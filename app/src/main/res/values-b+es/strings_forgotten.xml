@@ -5,8 +5,8 @@
     <string name="forgotten_scenario_two">Escenario 2: La perdición de Eztli</string>
     <string name="forgotten_scenario_three">Escenario 3: Los hilos del destino</string>
     <string name="forgotten_scenario_four">Escenario 4: El límite del otro lado</string>
-    <string name="forgotten_scenario_five_a">Escenario 5: El corazón de los ancianos</string>
-    <string name="forgotten_scenario_five_b">Escenario 5: El corazón de los ancianos</string>
+    <string name="forgotten_scenario_five_a">Escenario 5-A: El corazón de los ancianos, parte 1</string>
+    <string name="forgotten_scenario_five_b">Escenario 5-B: El corazón de los ancianos, parte 2</string>
     <string name="forgotten_scenario_six">Escenario 6: La Ciudad de los Archivos</string>
     <string name="forgotten_scenario_seven">Escenario 7: Las profundidades de Yoth</string>
     <string name="forgotten_scenario_eight">Escenario 8: Eones destrozados</string>
@@ -37,6 +37,8 @@
     <string name="remove_poisoned">Quitar Debilidad Envenenado (3PE)</string>
     <string name="remove_physical">Curar trauma físico (5PE)\n(Trauma actual:</string>
     <string name="remove_mental">Curar trauma mental (5PE)\n(Trauma actual:</string>
+    <string name="tenochtitlan_locations">Lugares Tenochtitlán en la zona de victoria:</string>
+    <string name="act_two_finished">Escenario terminado en el Acto 2</string>
 
 
     <!--Supplies-->
@@ -111,6 +113,11 @@
     <string name="rescued_alejandro">Los investigadores rescataron a Alejandro.\n\n</string>
     <string name="ichtaca_dark">Ichtaca está al margen.\n\n</string>
     <string name="bond_ichtaca">Los investigadores forjaron un vínculo con Ichtaca.\n\n</string>
+    <string name="paths_known_1">Los investigadores conocen</string>
+    <string name="paths_known_2"> caminos.\n\n</string>
+    <string name="ichtaca_confidence">Ichtaca tiene confianza en los investigadores.\n\n</string>
+    <string name="ichtaca_faith">Ichtaca ha recuperado la fe.\n\n</string>
+    <string name="mapped_forward">Los investigadores cartografiaron el camino.\n\n</string>
 
     <!--Edit log-->
     <string name="yigs_fury_heading">Furia de Yig</string>
@@ -126,6 +133,9 @@
     <string name="missing_relic_heading">Reliquia desaparecida</string>
     <string name="missing_alejandro_heading">Alejandro desaparecido</string>
     <string name="missing_ichtaca_heading">Ichtaca desaparecida</string>
+    <string name="paths_heading">Paths known to you</string>
+    <string name="confidence_heading">Ichtaca’s Confidence</string>
+    <string name="no_confidence">Ichtaca does not have confidence in you.</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X es la cantidad de puntos de venganza que hay en la zona de victoria.</string>
@@ -157,6 +167,21 @@
     	Enemigo <b><i>Sectario</i></b>.</string>
     <string name="threads_thing_one">–2. Si fracasas, pierde 1 de tus pistas.</string>
     <string name="threads_thing_two">–3. Si fracasas, pierde 1 de tus pistas.</string>
+
+    <string name="boundary_skull_one">–1, o bien -3 si estás en un Lugar <b><i>Antiguo</i></b>.</string>
+    <string name="boundary_skull_two">–2, o bien -4 si estás en un Lugar <b><i>Antiguo</i></b>.</string>
+    <string name="boundary_cultist_one">Revela otra ficha. Si fracasas, coloca 1 ficha de Perdición sobre un
+        Enemigo <b><i>Sectario</i></b>.</string>
+    <string name="boundary_cultist_two">Revela otra ficha. Si fracasas, coloca 1 ficha de Perdición sobre cada
+        Enemigo <b><i>Sectario</i></b>.</string>
+    <string name="boundary_tablet_one">Revela otra ficha. Si fracasas y hay un Enemigo <b><i>Serpiente</i></b> en
+        tu Lugar, te ataca.</string>
+    <string name="boundary_tablet_two">Revela otra ficha. Si fracasas, cada Enemigo <b><i>Serpiente</i></b> en
+        tu Lugar te ataca.</string>
+    <string name="boundary_thing_one">–4. Si fracasas, coloca 1 pista (de la reserva de fichas) en el Lugar <b><i>Antiguo</b></i>
+        más cercano.</string>
+    <string name="boundary_thing_two">–4. Coloca 1 pista (de la reserva de fichas) en el Lugar <b><i>Antiguo</b></i>
+        más cercano.</string>
 
     <!--Campaign introduction-->
     <string name="forgotten_introduction"><b>Prólogo</b>\n
@@ -392,6 +417,57 @@
     <string name="expeditions_end_option_two">Es demasiado peligroso como para estar expuesto. Deberíamos
 		mantenerlo oculto y a salvo hasta que sepamos más sobre él.</string>
 
+    <string name="jungle_beckons_introduction">Vuelves a dirigirte hacia el sur una vez más, dejando atrás la seguridad
+        de la civilización. No hay tiempo que perder. El camino hacia el Nexo está en terreno conocido, no demasiado
+        lejos de la ruta de la expedición anterior. Usando el diario encuadernado en cuero como guía, sigues los pasos
+        de la expedición. Pronto estás metido de lleno en la jungla, rodeado de peligros por todas partes, algunos
+        naturales y otros extraños…</string>
+    <string name="jungle_enough_gas">Los investigadores tienen gasolina suficiente.</string>
+    <string name="jungle_out_gas">Por desgracia, a una docena de kilómetros o así del límite norte de la selva, tu coche
+        se quedó sin gasolina. Puesto que el tiempo apremia, decides ir andando el resto del camino en lugar de volver
+        para repostar. Viajar a pie te retrasa varias horas, pero pronto llegas a la jungla una vez más.\n
+    \n<b>Al robar las manos iniciales durante este escenario, los investigadores no pueden cambiar su mano inicial.</b></string>
+    <string name="jungle_map">Gracias a tu mapa, que tiene indicaciones de la expedición anterior, logras recorrer un
+        camino por la jungla sin perderte y llegas a tu destino por tu cuenta.</string>
+    <string name="jungle_no_map">Los investigadores no tienen un mapa.</string>
+    <string name="jungle_low">Atravesar la jungla para encontrar el camino hacia el Nexo ha llevado más de lo que esperabas,
+        y la prisa no te ha permitido cazar o buscar comida. El hambre te nubla la mente y hace un doloroso agujero en
+        tu estómago.</string>
+    <string name="jungle_poison_spreads">El veneno sigue recorriendo tu cuerpo, causando estragos en tus órganos internos.
+        Una terrible fiebre arde en tu interior y crece en intensidad con cada día que pasa. Vomitas casi todo lo que
+        comes. Notas el cuerpo como si te hubieran dejado completamente sin energía.</string>
+    <string name="jungle_trudge">Mientras avanzas fatigosamente por la exuberante jungla y pasas juno a unas familiares
+        ruinas de un templo cubiertas de vegetación, tu aguda vista ve un diseño en el muro de piedra de la estructura.
+        Al examinarlo más de cerca, descubres que las enredaderas y la tierra han ocultado unos elaborados jeroglíficos
+        grabados.</string>
+    <string name="jungle_canteen_one">Los siguientes investigadores tienen una cantimplora:\n\n</string>
+    <string name="jungle_canteen_two">\nLeen:</string>
+    <string name="jungle_patterns">Sacas tu cantimplora y echas agua sobre las paredes de piedra, quitando así la tierra
+        y haciendo que las rígidas enredaderas sean más fáciles de retirar. Ahora puedes ver claramente el diseño de los
+        símbolos, y aunque su significado sigue siendo un misterio, la repetición de seis símbolos en particular parece
+        indicar una instrucción concreta…\n
+    \n<b>Cada investigador que tenga una cantimplora comienza el siguiente escenario con una 1 pista (de la reserva
+        de fichas).</b>\n</string>
+    <string name="jungle_no_canteen_one">Los siguientes investigadores no tienen una cantimplora:\n\n</string>
+    <string name="jungle_no_canteen_two">\nLeen:</string>
+    <string name="jungle_secrets">Por más que lo intentas, no logras quitar la tierra y las enredaderas sólo con tus manos.
+        No tienes más elección que olvidarte de este misterio.</string>
+    <string name="jungle_no_faith">No sucede nada durante el crepúsculo de vuestra segunda noche en la jungla.</string>
+    <string name="jungle_faith_restored">Durante el crepúsculo de vuestra segunda noche en la jungla, tú y tus compañeros
+        estáis sentados frente a una tenue hoguera para manteneros calientes y tratar de seguir relajados pese a la tarea
+        que os espera. Ichtaca se acerca a la hoguera y se sienta enfrente de vosotros. Tiene los ojos fijos en el suelo,
+        y los hombros hundidos como por un molesto peso.\n
+    \n—Creo que debo pediros disculpas —admite mientras mira el titilante fuego—. Habéis demostrado ser tan sabios como
+        formidables, y lo único que he hecho yo es daros órdenes y poneros en peligro cada dos por tres.\n
+    \nSe produce una larga y tranquila pausa tras sus palabras.\n
+    \n—Puede que al final sí que haya esperanza para la humanidad —dice entre dientes mientras su mirada se posa en las
+        vuestras. ¿Lo dice por vosotros? ¿O también por ella?\n
+    \nTras unos momentos, Ichtaca se pone en pie y añade: —Confío en vosotros para la primera guardia. Estad atentos por
+        si veis serpientes. Seguramente nos estén buscando.\n
+    \nEl campamento queda en silencio durante el resto de la noche, excepto por el reconfortante crepitar de la hoguera
+        y el coro de insectos cuyo canto llena el aire nocturno.\n
+    \n<b>Añade 1 ficha de Sectario a la bolsa de caos durante el resto de la campaña.</b></string>
+
 
     <!--Scenario introductions-->
     <string name="untamed_introduction">Domingo, 28 de junio de 1925\n
@@ -515,6 +591,70 @@
         momento en el que un investigador fuese a recibir la opción de incluir a cualquiera de ellos, en lugar de eso cada
         investigador obtiene 2 puntos de experiencia.</b></string>
 
+    <string name="boundary_introduction_one">Rayos de cálida luz solar amarilla cae sobre ti mientras tu coche recorre
+        a toda velocidad las polvorientas autopistas de Texas, cerca de San Antonio. Han pasado varios días desde que
+        saliste de Arkham rumbo a Ciudad de México, donde quizá puedas conseguir respuestas de los colegas de Alejandro,
+        o mejor aún, de sus adversarios en el mundo académico. Tus recientes investigaciones en Arkham han sacado muchas
+        cosas a la luz, pero pese todo el conocimiento descubierto, el rastro se enfrió poco después. La “Hermandad” que
+        revelaste en Arkham prácticamente se ha desvanecido de la ciudad. Sus miembros apenas dejaron información respecto
+        a su siguiente objetivo, aparte del nombre “El Nexo de N’kai”, un lugar de poder que Ichtaca cree que podría ser
+        el destino final de la Hermandad. La guerrara eztli va sentada a tu lado en el asiento del copiloto, tan enigmática
+        como siempre. Está tensa y alterada, y el asiente de cuero del Ford no le resulta cómodo.\n\n</string>
+    <string name="boundary_introduction_two_a">—¿Cuánto falta? —pregunta Ichtaca por enésima vez desde que salisteis de
+        Arkham—. Debemos llegar a Anahuac tan rápido como podamos. Cuanto más tardemos, más tiempo tendrá la Hermandad para
+        llegar al Nexo.\n
+    \nReconoces el antiguo nombre azteca del Valle de México, e informas a Ichtaca de que cruzaréis la frontera de México en
+        menos de una hora. Ella se cruza de brazos y aprieta los dientes.\n\n</string>
+    <string name="boundary_introduction_two_b">Ichtaca pasa callada y pensativa la mayor parte de vuestro viaje. Tus preguntas
+        chocan con un muro de silencio y una mirada dura. Sea lo que sea lo que tiene planeado hacer, te está manteniendo
+        al margen.\n\n</string>
+    <string name="boundary_introduction_three_a">Durante el viaje hacia el sur, el artefacto que recuperaste de las garras
+        de la Hermandad sigue su zumbido constante, envuelto en una fina sábana en el asiento trasero de tu coche. Tu
+        comprensión de la naturaleza de la reliquia se vuelve más profunda.\n\n</string>
+    <string name="boundary_introduction_three_b">La pérdida de la reliquia eztli pesa en ti como una losa. Está claro que
+        su valor es mayor que el puramente académico. Contiene un poder en su interior que ni siquiera logras imaginar.
+        Tienes la certeza de que la siniestra Hermandad está detrás de su desaparición, pero ¿con qué fin?\n\n</string>
+    <string name="boundary_introduction_four_a">Durante todo el viaje, Alejandro garabatea incesantemente en su diario,
+        y el sonido del lápiz contra el papel es un recordatorio constante de su presencia. Permanece acurrucado en el
+        asiento de atrás del coche, sujetando el diario con las rodillas y sumido en sus pensamientos con el ceño fruncido.\n
+    \n—Esta “Hermandad” es la menos de nuestras preocupaciones —dice con rotundidad—. He estado tratando de descifrar los
+        símbolos que tiene el artefacto. Está claro que no son aztecas, ni mayas, ni de ninguna otra civilización mesoamericana.
+        Creo que la reliquia pertenece a algún otro lugar. Tuvieron que llevársela de alguna parte. ¿No le parece, señorita
+        Ichtaca?\n
+    \nLa ya de por sí adusta expresión de Ichtaca se endurece más aún cuando entrecierra los ojos. No se molesta en darse la
+        vuelta para dirigirse a Alejandro: —Pertenece a un sitio en el que entrometidos eruditos no puedan abusar de su poder
+        —replica con frialdad, poniendo fin a la conversación.\n
+    \nGracias a los contactos de Alejandro, cruzar la frontera de México es un proceso menos estresante de lo que imaginabas.
+        Os dejan pasar la aduana sin apenas miraros, y en poco tiempo estáis de camino a Ciudad de México.\n\n</string>
+    <string name="boundary_introduction_four_b">Os paráis a descansar y pasar la noche al norte de la frontera. Tu mirada no
+        puede evitar detenerse en el asiento vacío de atrás, y te preguntas dónde estará Alejandro en ese momento.\n\n</string>
+    <string name="boundary_introduction_five">La gasolina es un problema constante durante el viaje hacia el sur. Lográis
+        repostar varias veces por el camnino en diversas tiendas, pero el coche acaba por pararse en la cuneta a no mucha
+        distancia de la frontera sur. Tú e Ichtaca os veis obligados a caminar varios kilómetros hasta la ciudad más cercana
+        para repostar, lo que os hace perder varias horas.\n\n</string>
+    <string name="boundary_introduction_six">Tras llegar a Ciudad de México, la poca información que encuentras sobre la
+        Hermandad o el Nexo es descorazonadora. Revisas los archivos de las bibliotecas y universidades de la ciudad, pero
+        no hay nada de interés. No logras encontrar ninguno  de los antiguos colegas de Alejandro en la ciudad, y hasta sus
+        enemigos se niegan a hablar contigo, excepto una mujer llamada Padma Amrita, que estudió el trabajo de Alejandro
+        antes de que éste llegase a Arkham. Acepta reunirse contigo en un local de moda en la parte sur de la ciudad muy
+        avanzada la noche. Ichtaca permanece a poca distancia, observando en silencio a tu nueva informadora.\n
+    \nPadma sabe mucho sobre la investigación de Alejandro, y hasta firma haber oído hablar del Nexo de N'Kai, aunque se
+        niega a contarte cómo encontrarlo: —Es una pérdida de tiempo —te dice. No hay nada que encontrar. Es sólo un mito.
+        Hágame caso, mucha gente lo ha buscado, y nadie lo ha encontrado.\n
+    \nMencionas que el pueblo eztli no era un mito, y ella responde con una encantadora sonrisa: —Puede que no, pero ¿todo
+        eso de que los eztli siguen vivos? ¿Que nadie los ha descubierto durante siglos? —se ríe cordialmente—. Paparruchas,
+        simple y llanamente. Venga, no esperará que cualquier estudioso de verdad vaya a creerse eso, ¿no?\n
+    \nVuelves tu mirada hacia Ichtaca, que está escuchando la conversación con los brazos cruzados y las uñas clavadas en sus
+        antebrazos. Los ojos de Padma siguen tu mirada, y una sonrisa burlona asoma en sus labios.\n
+    \n—En cualquier caso, debo disculparme, pero no tengo información para usted. Sólo un bobo continuaría con esta “investigación”.
+        Que tenga una buena noche.
+    \nPadma se va con otra atractiva sonrisa, dejando un dulce aroma tras su marcha.\n
+    \nCuando desaparece de vista, Ichtaca se sienta a tu lado y debatís qué hacer a continuación. Tras una semana de fracaso
+        tras fracaso, se ha vuelto impaciente. Haces algunas sugerencias más sobre con quién podríais hablar, pero tiene la
+        mente en otra parte. Cuando volvéis al hotel, se encierra inmediatamente en su habitación para prepararse para el día
+        siguiente. Decides dejarlo por hoy, y tu mente no tarda mucho en caer lentamente en un letargo sin sueños. Sin embargo,
+        una parte periférica de tu consciencia puede oír a Ichtaca recitando un misterioso ensalmo…</string>
+
 
     <!--Scenario setup-->
     <string name="untamed_sets">Naturaleza salvaje, Selva, Serpientes, Expedición, Guardianes del tiempo,
@@ -622,6 +762,34 @@
         de este escenario, estarán en juego los tres mazos de Acto, y los jugadores pueden elegir en qué Actos actuar y
         cuáles ignorar. El texto de los tres Actos se considera activo en todo momento. Puede que no tengas tiempo de
         completar las tres tareas, ¡así que elige bien cuál quieres emprender!</string>
+
+    <string name="boundary_sets_one">El límite del otro lado, Flujo temporal, Veneno, Hermandad pnakótica y Secta oscura.</string>
+    <string name="boundary_sets_two">El límite del otro lado, Flujo temporal, Veneno, Ponzoña de Yig y Guardianes del tiempo.</string>
+    <string name="boundary_sets_three">El límite del otro lado, Flujo temporal, Veneno, Hermandad pnakótica y
+        Guardianes del tiempo.</string>
+    <string name="boundary_locations">Pin en juego los siguientes Lugares: Catedral metropolitana, Zócalo, Ruinas del templo,
+        Xochimilco, Parque Chapultepec y Coyoacán.\n
+        \nCada investigador comienza la partida en el Zócalo o en Coyoacán (a su elección).\n</string>
+    <string name="boundary_set_aside">El Enemigo Padma Amrita, todas las cartas de Debilidad Envenenado que no estén en los mazos
+        de los investigadores, y el Acto 3a y el Plan 3a, que no son parte de los mazos de Acto y de Plan, por ahora…\n</string>
+    <string name="boundary_additional">Crea el mazo de Exploración. Para ello, coge los 12 Lugares <b><i>Antiguo</i></b> de una
+        sola cara y barájalos junto con 1 copia de cada una de las siguientes cartas de Encuentro: Ventana a otro tiempo,
+        Desestabilización de la línea temporal, Una grieta en el tiempo y Perdidos en el tiempo.\n</string>
+    <string name="boundary_additional_silent">Cada investigador comienza este escenario con 2 cartas menos en la mano.\n\n</string>
+    <string name="boundary_additional_thrumming">El investigador que tenga la Reliquia de las eras (…Una especia de dispositivo)
+        en su mazo la cambia por la nueva versión de la Reliquia de las eras que incluye este pack de Mitos: Reliquia de las Eras
+        (Anticipando el futuro).\n\n</string>
+    <string name="boundary_additional_concern">Retira de la partida la Reliquia de las Eras (Anticipando el futuro).\n\n</string>
+    <string name="boundary_additional_thoughts">Cada investigador comienza este escenario con 2 recursos adicionales.\n\n</string>
+    <string name="boundary_additional_gas">Al robar las manos iniciales durante este escenario, los investigadores no pueden
+        cambiar su mano inicial.\n\n</string>
+    <string name="boundary_rules_heading">Sustituir Lugares</string>
+    <string name="boundary_rules">Durante este escenario, podrías tener que colocar nuevos Lugares sobre Lugares ya existentes.
+        Cuando un Lugar se coloca sobre un Lugar que ya está en juego, lo sustituye. Todas las fichas, cartas vinculadas, investigadores,
+        Enemigos y otras cartas que estén en el Lugar anterior ahora se consideran en el Lugar nuevo (no se han “movido”, el Lugar
+        simplemente ha cambiado). Si un Lugar abanadona el juego y hay otro Lugar bajo él, ese Lugar lo sustituye. Todas las fichas,
+        cartas vinculadas, investigadores, Enemigos y otras cartas que estén en el Lugar que abandona el juego ahora se consideran
+        en el Lugar anterior.</string>
 
 
     <!--Scenario resolutions-->
@@ -957,7 +1125,7 @@
         se llaman la <i>Hermandad</i>, y parecen saber mucho más que tú sobre la reliquia de Eztli y la anterior
         expedición de Alejandro. Sus métodos son secretos y furtivos, y aún desconoces sus motivos. Sin embargo, ha
         aparecido un dato vital como información.\n
-    \n—Buscan un lugar conocido como el Nexo de N'kai —afirma Ichtaca. Sobre la mesa hay un mapa de Centroamérica en
+    \n—Buscan un lugar conocido como el Nexo de N’kai —afirma Ichtaca. Sobre la mesa hay un mapa de Centroamérica en
         el que está marcado el rumbo de la expedición anterior—. He oído hablar de ese lugar, pero no conozco su
         ubicación exacta.\n
     \nUna vez más, tu misteriosa guía parece saber más de lo que dice, y sin otras pistas que seguir, no tienes
@@ -976,5 +1144,59 @@
         de ese investigador durante el resto de la campaña.\n\n</string>
     <string name="threads_resolution_three_one">Un investigador cualquiera puede elegir incluir a Ichtaca (La guardiana
         olvidada) en su mazo.</string>
+
+    <string name="boundary_no_resolution">Cuando abres los ojos, te encuentras de vuelta en la cama de tu hote. Levantas
+        la mano para protegerte los ojos de la luz del sol que atraviesa las cortinas de la habitación. La brillante luz
+        es como un torno que te aplasta las sienes. Unas finas volutas de humo de incienso llenan el aire.\n
+    \nPonerte en pie requiere un esfuerzo colosal. Oyes una vocecilla en tu mente que te dice que todo ha sido producto
+        de tu imaginación, una pesadilla alimentada por tu cansancio. Es la voz de la supervivencia que te advierte
+        que dejes el camino hacia la demencia que has emprendido. La ignoras y te levantas, con las piernas temblorosas
+        de terror y agotamiento. Llamas a Ichtaca en voz baja, preguntándote si recuerda lo que ocurrió anoche, o si
+        acaso estuvo allí. La encuentras desplomada en el suelo, con la espalda apoyada en la puerta de la habitación.
+        Está insconciente y no responde, y tiene el rostro ceniciento. Tras varios preocupantes minutos tratando de
+        despertarla, por fin tienes éxito. Vuelve en sí tosiendo violentamente y convulsionándose como si estuviera
+        poseída: —La cueva. Las fauces en el cielo, bañadas de rojo. ¿Lo viste?\n
+    \nTu cabeza palpita de dolor mientras intentas recordar los acontecimientos de la noche anterior, y sacudes la cabeza:
+        —Debe ser el camino que lleva al Nexo —dice mientras agarra la cabeza firmemente con una mano. Tratas de ayudarla
+        a ponerse en pie, pero te aparta de un empujón.\n
+    \n—¿En qué estaba pensando? La frontera se está volviendo más delgada. Si se aplica tensión, podría romperse —prosigue
+        antes de volver la mirada hacia ti—. No debería haberte involucrado en esto. Pero, te guste o no, estás involucrado.
+        Es demasiado tarde para echarse atrás. Sé dónde encontrar el Nexo, y debes acompañarme.</string>
+    <string name="boundary_resolution_one">Te ves asaltado por un caleidoscopio de luces y colores mientras tu mente se
+        precipita de vuelta a su lugar. Cuando vuelves a abrir los ojos, te encuentras tumbado en la plaza central de la
+        ciudad, y la cabeza te sigue dando vueltas por la sensación de caer en picado. Oyes una vocecilla en tu mente que
+        te dice que todo ha sido producto de tu imaginación, un sueño lúcido. Es la voz de la supervivencia que te advierte
+        que dejes el camino hacia la demencia que has emprendido. La ignoras y te levantas, con las piernas temblorosas de
+        terror y agotamiento.\n
+    \n—Esa mujer…  Debe de haberse dado cuenta de quién soy y me siguió por la brecha que hice. Puede que también quisiera
+        descubrir la ubicación del Nexo —dice Ichtaca de forma enigmática. Tu cabeza palpita de dolor mientras intentas
+        recordar los acontecimientos de las últimas horas:\n
+    \n—Lo viste, ¿verdad? La cueva. Las fauces en el cielo, bañadas de rojo —prosigue mientras contempla el cielo—. Debe ser
+        el camino que lleva al Nexo.\n
+    \nTe resulta difícil recordar con precisión lo que ocurrió en el otro lado, pero la imagen de la caverna roja viene y va
+        en tu memoria. Le confirmas a Ichtaca que tú también viste la caverna, y le preguntas que cómo sabe que lleva al
+        Nexo. Sus ojos inyectados en sangre se clavan en los tuyos, y crees ver el esbozo de una sonrisa burlona asomando
+        en sus labios.\n
+    \n—Es algo difícil…  Mirar más allá del límite y ver los hilos del tiempo. Quizá seas algo más de lo que aparentas —responde,
+        sin darse cuenta de la ironía de su frase. Aunque se marcha sin contestar tu pregunta, entiendes la respuesta que no
+        ha sido pronunciada: En la bruma de las líneas temporales rotas y fenómenos inexplicables, el camino que viste era
+        un “futuro”. Un futuro que tienes intención de hacer que se cumpla.</string>
+    <string name="boundary_resolution_two">El límite que surca el horizonte brilla cuando el camino de vuelta a casa se cierra
+        ante tus ojos. La irreal bruma y la sensación de ingravidez que has experimentado durante esta visión desaparecen, y
+        te asalta la repentina comprensión de que esto no es un sueño. Estás atrapado en un tiempo que no es el tuyo, y no ves
+        a Ichtaca por ninguna parte.\n
+    \nVagas durante lo que parecen ser horas. Días. Semanas. Tu mente no puede soportarlo más. Saber que podrías estar atrapado
+        aquí para siempre es aterrador. La desesperación y la angustia hacen presa de tu mente, y se produce un choque entre
+        locura y soledad del que no puedes escapar. Ya ni recuerdas cuánto hace desde que llegaste aquí. No has dormido ni comido.\n
+    \nDe pronto, tras una eternidad de espera, el límite se agrieta, y el cielo queda inundado por una cegadora luz blanca. Cuando
+        vuelves a abrir los ojos, te encuentras tumabdo en la plaza central de la ciudad, y la cabeza te sigue dando vueltas por
+        la sensación de caer en picado. Ichtaca te ayuda a ponerte en pie, y te tiemblan las piernas de terror y agotamiento. Le
+        preguntas cuánto tiempo llevas insconciente, y ella sacude con la cabeza: —No importa. Ya estás aquí.\n
+    \nIgnoras su evasiva respuesta, pero el resentimiento brota como agua hirviendo. ¿Te dejó atrás a propósito o por accidente?\n
+    \n—Lo viste, ¿verdad? —te pregunta—. La cueva. Las fauces en el cielo, bañadas de rojo.\n
+    \nTe la quedas mirando con perplejidad, pues tu memoria se ha vuelto borrosa de repente.\n
+    \n—No importa —añade—. Sé dónde encontrar el Nexo, y debes acompañarme.</string>
+    <string name="boundary_resolution_additional"><b>Añade a la zona de victoria todos los Lugares Tenochtitlán que
+        estén en juego y no tengan pistas.</b></string>
 
 </resources>
