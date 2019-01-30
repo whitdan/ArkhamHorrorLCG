@@ -31,7 +31,7 @@ ADD CHARACTER
 5.  a_dialog_expansions_owned
 6.  SettingsMenuActivity
 7.  b_activity_campaign_investigators
-8.  d_activity_edit_team
+8.  e_activity_edit_team
 9.  CampaignInvestigatorsActivity
 10. EditTeamActivity
 11. ScenarioResolutionActivity

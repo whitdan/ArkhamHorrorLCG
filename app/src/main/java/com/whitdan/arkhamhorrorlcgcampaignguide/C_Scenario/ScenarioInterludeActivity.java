@@ -639,9 +639,11 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                         }
                         if (map) {
                             introduction.setText(R.string.jungle_map);
+                            globalVariables.Mapped = 1;
                         } else {
                             introduction.setTypeface(arnoprobold);
                             introduction.setText(R.string.jungle_no_map);
+                            globalVariables.Mapped = 0;
                         }
                         break;
                     case 14:
@@ -916,6 +918,9 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             introduction.setText(R.string.jungle_no_faith);
                         }
                         break;
+                    case 18:
+                        introduction.setText(R.string.heart_one_resolution_one);
+                        break;
                 }
                 break;
         }
@@ -1022,6 +1027,14 @@ public class ScenarioInterludeActivity extends AppCompatActivity {
                             case 17:
                                 intent = new Intent(ScenarioInterludeActivity.this, ScenarioInterludeActivity
                                         .class);
+                                break;
+                            case 18:
+                                if(globalVariables.PathsKnown == 6){
+                                    intent = new Intent(ScenarioInterludeActivity.this,
+                                            ScenarioInterludeActivity.class);
+                                    globalVariables.JungleWatches = getResources().getString(R.string.none);
+                                }
+                                break;
                         }
                     }
                     startActivity(intent);

@@ -22,6 +22,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -90,6 +91,9 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             case 4:
                 title.setText(R.string.forgotten_campaign);
                 break;
+            case 5:
+                title.setText(R.string.circle_campaign);
+                break;
         }
 
         // Set fonts to relevant elements
@@ -105,51 +109,167 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         /*
             Setup checkboxes
           */
-        LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
-        LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
-        LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
-        LinearLayout forgottenCheckboxes = findViewById(R.id.forgotten_investigators);
-        LinearLayout marieCheckbox = findViewById(R.id.marie_promo);
+        final LinearLayout coreCheckboxes = findViewById(R.id.core_investigators);
+        final LinearLayout dunwichCheckboxes = findViewById(R.id.dunwich_investigators);
+        final LinearLayout carcosaCheckboxes = findViewById(R.id.carcosa_investigators);
+        final LinearLayout forgottenCheckboxes = findViewById(R.id.forgotten_investigators);
+        final LinearLayout circleCheckboxes = findViewById(R.id.circle_investigators);
+        final LinearLayout investigatorCheckboxes = findViewById(R.id.promo);
         LinearLayout normanCheckbox = findViewById(R.id.norman_promo);
-        LinearLayout carolynCheckbox = findViewById(R.id.carolyn_promo);
         LinearLayout silasCheckbox = findViewById(R.id.silas_promo);
+
+        // Setup buttons
+        final ImageView nightButton = findViewById(R.id.notz);
+        final ImageView dunwichButton = findViewById(R.id.dunwich);
+        final ImageView carcosaButton = findViewById(R.id.carcosa);
+        final ImageView forgottenButton = findViewById(R.id.forgotten);
+        final ImageView circleButton = findViewById(R.id.circle);
+        final ImageView promo = findViewById(R.id.investigator);
+        nightButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nightButton.setImageResource(R.drawable.notz_pressed);
+                dunwichButton.setImageResource(R.drawable.dunwich);
+                carcosaButton.setImageResource(R.drawable.carcosa);
+                forgottenButton.setImageResource(R.drawable.forgotten);
+                promo.setImageResource(R.drawable.investigator);
+                coreCheckboxes.setVisibility(VISIBLE);
+                dunwichCheckboxes.setVisibility(GONE);
+                carcosaCheckboxes.setVisibility(GONE);
+                forgottenCheckboxes.setVisibility(GONE);
+                investigatorCheckboxes.setVisibility(GONE);
+                circleButton.setImageResource(R.drawable.circle);
+                circleCheckboxes.setVisibility(GONE);
+            }
+        });
+        dunwichButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nightButton.setImageResource(R.drawable.notz);
+                dunwichButton.setImageResource(R.drawable.dunwich_pressed);
+                carcosaButton.setImageResource(R.drawable.carcosa);
+                forgottenButton.setImageResource(R.drawable.forgotten);
+                promo.setImageResource(R.drawable.investigator);
+                coreCheckboxes.setVisibility(GONE);
+                dunwichCheckboxes.setVisibility(VISIBLE);
+                carcosaCheckboxes.setVisibility(GONE);
+                forgottenCheckboxes.setVisibility(GONE);
+                investigatorCheckboxes.setVisibility(GONE);
+                circleButton.setImageResource(R.drawable.circle);
+                circleCheckboxes.setVisibility(GONE);
+            }
+        });
+        carcosaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nightButton.setImageResource(R.drawable.notz);
+                dunwichButton.setImageResource(R.drawable.dunwich);
+                carcosaButton.setImageResource(R.drawable.carcosa_pressed);
+                forgottenButton.setImageResource(R.drawable.forgotten);
+                promo.setImageResource(R.drawable.investigator);
+                coreCheckboxes.setVisibility(GONE);
+                dunwichCheckboxes.setVisibility(GONE);
+                carcosaCheckboxes.setVisibility(VISIBLE);
+                forgottenCheckboxes.setVisibility(GONE);
+                investigatorCheckboxes.setVisibility(GONE);
+                circleButton.setImageResource(R.drawable.circle);
+                circleCheckboxes.setVisibility(GONE);
+            }
+        });
+        forgottenButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nightButton.setImageResource(R.drawable.notz);
+                dunwichButton.setImageResource(R.drawable.dunwich);
+                carcosaButton.setImageResource(R.drawable.carcosa);
+                forgottenButton.setImageResource(R.drawable.forgotten_pressed);
+                promo.setImageResource(R.drawable.investigator);
+                coreCheckboxes.setVisibility(GONE);
+                dunwichCheckboxes.setVisibility(GONE);
+                carcosaCheckboxes.setVisibility(GONE);
+                forgottenCheckboxes.setVisibility(VISIBLE);
+                investigatorCheckboxes.setVisibility(GONE);
+                circleButton.setImageResource(R.drawable.circle);
+                circleCheckboxes.setVisibility(GONE);
+            }
+        });
+        circleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nightButton.setImageResource(R.drawable.notz);
+                dunwichButton.setImageResource(R.drawable.dunwich);
+                carcosaButton.setImageResource(R.drawable.carcosa);
+                forgottenButton.setImageResource(R.drawable.forgotten);
+                promo.setImageResource(R.drawable.investigator);
+                coreCheckboxes.setVisibility(GONE);
+                dunwichCheckboxes.setVisibility(GONE);
+                carcosaCheckboxes.setVisibility(GONE);
+                forgottenCheckboxes.setVisibility(GONE);
+                investigatorCheckboxes.setVisibility(GONE);
+                circleButton.setImageResource(R.drawable.circle_pressed);
+                circleCheckboxes.setVisibility(VISIBLE);
+            }
+        });
+        promo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nightButton.setImageResource(R.drawable.notz);
+                dunwichButton.setImageResource(R.drawable.dunwich);
+                carcosaButton.setImageResource(R.drawable.carcosa);
+                forgottenButton.setImageResource(R.drawable.forgotten);
+                promo.setImageResource(R.drawable.investigator_pressed);
+                coreCheckboxes.setVisibility(GONE);
+                dunwichCheckboxes.setVisibility(GONE);
+                carcosaCheckboxes.setVisibility(GONE);
+                forgottenCheckboxes.setVisibility(GONE);
+                investigatorCheckboxes.setVisibility(VISIBLE);
+                circleButton.setImageResource(R.drawable.circle);
+                circleCheckboxes.setVisibility(GONE);
+            }
+        });
+
         // Hide investigators if expansion isn't owned
         String sharedPrefs = getResources().getString(R.string.shared_prefs);
         String dunwichOwnedString = getResources().getString(R.string.dunwich_setting);
         String carcosaOwnedString = getResources().getString(R.string.carcosa_setting);
         String forgottenOwnedString = getResources().getString(R.string.forgotten_setting);
-        String marieOwnedString = getResources().getString(R.string.marie_lambeau);
+        String circleOwnedString = getResources().getString(R.string.circle_setting);
         String normanOwnedString = getResources().getString(R.string.norman_withers);
-        String carolynOwnedString = getResources().getString(R.string.carolyn_fern);
         String silasOwnedString = getResources().getString(R.string.silas_marsh);
         SharedPreferences settings = getSharedPreferences(sharedPrefs, 0);
         boolean dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
         boolean carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
         boolean forgottenOwned = settings.getBoolean(forgottenOwnedString, true);
-        boolean marieOwned = settings.getBoolean(marieOwnedString, false);
+        boolean circleOwned = settings.getBoolean(circleOwnedString, true);
         boolean normanOwned = settings.getBoolean(normanOwnedString, false);
-        boolean carolynOwned = settings.getBoolean(carolynOwnedString, false);
         boolean silasOwned = settings.getBoolean(silasOwnedString, false);
         if (!dunwichOwned) {
             dunwichCheckboxes.setVisibility(GONE);
+            dunwichButton.setVisibility(GONE);
         }
         if (!carcosaOwned) {
             carcosaCheckboxes.setVisibility(GONE);
+            carcosaButton.setVisibility(GONE);
         }
         if (!forgottenOwned) {
             forgottenCheckboxes.setVisibility(GONE);
+            forgottenButton.setVisibility(GONE);
         }
-        if (!marieOwned) {
-            marieCheckbox.setVisibility(GONE);
+        if(!circleOwned) {
+            circleCheckboxes.setVisibility(GONE);
+            circleButton.setVisibility(GONE);
         }
+        boolean promoCount = false;
         if (!normanOwned) {
             normanCheckbox.setVisibility(GONE);
-        }
-        if (!carolynOwned) {
-            carolynCheckbox.setVisibility(GONE);
+            promoCount = true;
         }
         if (!silasOwned) {
             silasCheckbox.setVisibility(GONE);
+            promoCount = true;
+        }
+        if(promoCount){
+            promo.setVisibility(GONE);
         }
         // Set fonts and listeners to all checkboxes
         for (int i = 0; i < coreCheckboxes.getChildCount(); i++) {
@@ -167,13 +287,10 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
             }
         }
         for (int i = 0; i < carcosaCheckboxes.getChildCount(); i++) {
-            LinearLayout layout = (LinearLayout) carcosaCheckboxes.getChildAt(i);
-            for (int a = 0; a < layout.getChildCount(); a++) {
-                View view = layout.getChildAt(a);
-                if (view instanceof CheckBox) {
-                    ((CheckBox) view).setTypeface(arnopro);
-                    ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
-                }
+            View view = carcosaCheckboxes.getChildAt(i);
+            if (view instanceof CheckBox) {
+                ((CheckBox) view).setTypeface(arnopro);
+                ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
             }
         }
         for (int i = 0; i < forgottenCheckboxes.getChildCount(); i++) {
@@ -183,8 +300,8 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                 ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
             }
         }
-        for (int i = 0; i < marieCheckbox.getChildCount(); i++) {
-            View view = marieCheckbox.getChildAt(i);
+        for (int i = 0; i < circleCheckboxes.getChildCount(); i++) {
+            View view = circleCheckboxes.getChildAt(i);
             if (view instanceof CheckBox) {
                 ((CheckBox) view).setTypeface(arnopro);
                 ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
@@ -192,13 +309,6 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         }
         for (int i = 0; i < normanCheckbox.getChildCount(); i++) {
             View view = normanCheckbox.getChildAt(i);
-            if (view instanceof CheckBox) {
-                ((CheckBox) view).setTypeface(arnopro);
-                ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
-            }
-        }
-        for (int i = 0; i < carolynCheckbox.getChildCount(); i++) {
-            View view = carolynCheckbox.getChildAt(i);
             if (view instanceof CheckBox) {
                 ((CheckBox) view).setTypeface(arnopro);
                 ((CheckBox) view).setOnCheckedChangeListener(new InvestigatorCheckboxListener());
@@ -280,7 +390,7 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
-            View parent = (View) buttonView.getParent().getParent().getParent().getParent();
+            View parent = (View) buttonView.getParent().getParent().getParent().getParent().getParent();
             int removeInvestigator = -1;
 
             /*
@@ -687,6 +797,70 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                             investigators--;
                             for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
                                 if (globalVariables.InvestigatorNames.get(i) == Investigator.SILAS_MARSH) {
+                                    removeInvestigator = i;
+                                    globalVariables.InvestigatorNames.remove(i);
+                                }
+                            }
+                        }
+                        break;
+                    case R.id.joe_diamond:
+                        if (isChecked && investigators < 4) {
+                            globalVariables.InvestigatorNames.add(Investigator.JOE_DIAMOND);
+                            investigators++;
+                        } else if (isChecked) {
+                            buttonView.setChecked(false);
+                        } else {
+                            investigators--;
+                            for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                                if (globalVariables.InvestigatorNames.get(i) == Investigator.JOE_DIAMOND) {
+                                    removeInvestigator = i;
+                                    globalVariables.InvestigatorNames.remove(i);
+                                }
+                            }
+                        }
+                        break;
+                    case R.id.preston_fairmont:
+                        if (isChecked && investigators < 4) {
+                            globalVariables.InvestigatorNames.add(Investigator.PRESTON_FAIRMONT);
+                            investigators++;
+                        } else if (isChecked) {
+                            buttonView.setChecked(false);
+                        } else {
+                            investigators--;
+                            for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                                if (globalVariables.InvestigatorNames.get(i) == Investigator.PRESTON_FAIRMONT) {
+                                    removeInvestigator = i;
+                                    globalVariables.InvestigatorNames.remove(i);
+                                }
+                            }
+                        }
+                        break;
+                    case R.id.diana_stanley:
+                        if (isChecked && investigators < 4) {
+                            globalVariables.InvestigatorNames.add(Investigator.DIANA_STANLEY);
+                            investigators++;
+                        } else if (isChecked) {
+                            buttonView.setChecked(false);
+                        } else {
+                            investigators--;
+                            for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                                if (globalVariables.InvestigatorNames.get(i) == Investigator.DIANA_STANLEY) {
+                                    removeInvestigator = i;
+                                    globalVariables.InvestigatorNames.remove(i);
+                                }
+                            }
+                        }
+                        break;
+                    case R.id.rita_young:
+                        if (isChecked && investigators < 4) {
+                            globalVariables.InvestigatorNames.add(Investigator.RITA_YOUNG);
+                            investigators++;
+                        } else if (isChecked) {
+                            buttonView.setChecked(false);
+                        } else {
+                            investigators--;
+                            for (int i = 0; i < globalVariables.InvestigatorNames.size(); i++) {
+                                if (globalVariables.InvestigatorNames.get(i) == Investigator.RITA_YOUNG) {
                                     removeInvestigator = i;
                                     globalVariables.InvestigatorNames.remove(i);
                                 }
@@ -1223,6 +1397,14 @@ public class CampaignInvestigatorsActivity extends AppCompatActivity {
                 .FATHER_MATEO]);
         campaignValues.put(CampaignEntry.COLUMN_CALVIN_INUSE, globalVariables.InvestigatorsInUse[Investigator
                 .CALVIN_WRIGHT]);
+        campaignValues.put(CampaignEntry.COLUMN_JOE_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .JOE_DIAMOND]);
+        campaignValues.put(CampaignEntry.COLUMN_PRESTON_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .PRESTON_FAIRMONT]);
+        campaignValues.put(CampaignEntry.COLUMN_DIANA_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .DIANA_STANLEY]);
+        campaignValues.put(CampaignEntry.COLUMN_RITA_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .RITA_YOUNG]);
         long newCampaignId = db.insert(CampaignEntry.TABLE_NAME, null, campaignValues);
         globalVariables.CampaignID = newCampaignId;
 

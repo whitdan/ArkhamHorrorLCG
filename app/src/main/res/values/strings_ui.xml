@@ -137,6 +137,7 @@
     <string name="r_two">R2</string>
     <string name="r_three">R3</string>
     <string name="r_four">R4</string>
+    <string name="r_five">R5</string>
     <string name="no_resolution">No Resolution</string>
     <string name="resolution_one">Resolution One</string>
     <string name="resolution_two">Resolution Two</string>
@@ -212,6 +213,10 @@
         <item>Finn Edwards</item>
         <item>Father Mateo</item>
         <item>Calvin Wright</item>
+        <item>Joe Diamond</item>
+        <item>Preston Fairmont</item>
+        <item>Diana Stanley</item>
+        <item>Rita Young</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -238,12 +243,18 @@
     <string name="finn_edwards">Finn Edwards</string>
     <string name="father_mateo">Father Mateo</string>
     <string name="calvin_wright">Calvin Wright</string>
+    <string name="joe_diamond">Joe Diamond</string>
+    <string name="preston_fairmont">Preston Fairmont</string>
+    <string name="diana_stanley">Diana Stanley</string>
+    <string name="rita_young">Rita Young</string>
 
     <string name="cover_up">Unresolved Cover Up in play</string>
     <string name="hospital_debts">Unresolved Hospital Debts in play</string>
     <string name="smite_the_wicked">Unresolved Smite the Wicked in play</string>
     <string name="searching_for_izzie">Unresolved Searching for Izzie in play</string>
     <string name="angered_spirits">Unresolved Angered Spirits in play</string>
+    <string name="unsolved_case">Unsolved Case in play</string>
+    <string name="lodge_debts">Lodge "Debts" in hand</string>
     <string name="voice_of_the_messenger">Voice of the Messenger resolved</string>
     <string name="voice_of_the_messenger_heading">Voice of the Messenger</string>
     <string name="voice_of_the_messenger_text">Trauma suffered from Voice of the Messenger:</string>
@@ -259,5 +270,6 @@
     <string name="dunwich_setting" translatable="false">Dunwich setting</string>
     <string name="carcosa_setting" translatable="false">Carcosa setting</string>
     <string name="forgotten_setting" translatable="false">Forgotten setting</string>
+    <string name="circle_setting" translatable="false">Circle setting</string>
     <string name="language_setting" translatable="false">Language setting</string>
 </resources>

@@ -82,7 +82,6 @@ public class ScenarioMainActivity extends AppCompatActivity {
             investigatorList.addView(item);
         }
 
-
         // Set buttons
         Button setup = findViewById(R.id.scenario_setup_button);
         setup.setTypeface(teutonic);

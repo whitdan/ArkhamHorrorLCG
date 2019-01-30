@@ -54,6 +54,10 @@ public class ArkhamContract {
         public static final String COLUMN_FINN_INUSE = "finn";
         public static final String COLUMN_MATEO_INUSE = "mateo";
         public static final String COLUMN_CALVIN_INUSE = "calvin";
+        public static final String COLUMN_JOE_INUSE = "joe";
+        public static final String COLUMN_PRESTON_INUSE = "preston";
+        public static final String COLUMN_DIANA_INUSE = "diana";
+        public static final String COLUMN_RITA_INUSE = "rita";
         public static final String COLUMN_ROUGAROU_STATUS = "rougarou_status";
         public static final String COLUMN_STRANGE_SOLUTION = "strange_solution";
         public static final String COLUMN_ARCHAIC_GLYPHS = "archaic_glyphs";

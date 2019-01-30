@@ -39,7 +39,7 @@
     <string name="remove_physical">Retirer un traumatisme physique (5XP)\n(Traumatismes actuels :</string>
     <string name="remove_mental">Retirer un traumatisme mental (5XP)\n(Traumatismes actuels :</string>
 	 <string name="tenochtitlan_locations">Lieux Tenochtitlán dans la pile de victoire :</string>
-	  <string name="act_two_finished">Scénario terminé à l'Acte 2</string>
+	  <string name="act_two_finished">Scénario terminé à l\'Acte 2</string>
 	
 	<!--Supplies-->
     <string name="supplies">Équipement</string>
@@ -126,8 +126,8 @@
 	<string name="paths_known_1">Vous connaissez </string>
     <string name="paths_known_2">chemins.\n\n</string>
     <string name="ichtaca_confidence">Ichtaca vous fait confiance.\n\n</string>
-    <string name="ichtaca_faith">La foi d'Ichtaca a été restoré.\n\n</string>
-    <string name="mapped_forward">Les investigateurs ont cartograhié la voie d'accès.\n\n</string>
+    <string name="ichtaca_faith">La foi d\'Ichtaca a été restoré.\n\n</string>
+    <string name="mapped_forward">Les investigateurs ont cartograhié la voie d\'accès.\n\n</string>
 		
     <!--Edit log-->
     <string name="yigs_fury_heading">Colère de Yig</string>
@@ -144,7 +144,7 @@
     <string name="missing_alejandro_heading">Alejandro disparu</string>
     <string name="missing_ichtaca_heading">Ichtaca disparue</string>
 	<string name="paths_heading">Chemins connus</string>
-    <string name="confidence_heading">Confiance d'Ichtaca</string>
+    <string name="confidence_heading">Confiance d\'Ichtaca</string>
     <string name="no_confidence">Ichtaca ne vous fait pas confiance.</string>
 
     <!--Chaos bag-->
@@ -172,7 +172,7 @@
     <string name="threads_cultist_two">–2. Si vous ne réussissez pas avec une différence d\'au moins 2, subissez 1
         blessure directe.</string>
     <string name="threads_tablet_one">–2. Si vous ne réussissez pas avec une différence d\'au moins 1, placez 1
-        fatalité sur l'ennemi <b><i>Cultiste</i></b> le plus proche.</string>
+        fatalité sur l\'ennemi <b><i>Cultiste</i></b> le plus proche.</string>
     <string name="threads_tablet_two">–2. Si vous ne réussissez pas avec une différence d\'au moins 2, placez 1
         fatalité sur chaque ennemi <b><i>Cultiste</i></b>.</string>
     <string name="threads_thing_one">–2. Si vous échouez, perdez 1 de vos indices.</string>
@@ -183,7 +183,8 @@
     <string name="boundary_cultist_one">Révélez un autre pion. Si vous échouez, placez 1 fatalité sur un ennemi
         <b><i>Cultiste</i></b>.</string>
     <string name="boundary_cultist_two">Révélez un autre pion. Si vous échouez, placez 1 fatalité sur chaque ennemi <b><i>Cultiste</i></b>.</string>
-    <string name="boundary_tablet_one">Révélez un autre pion. Si vous échouez et qu'il y a un ennemi <b><i>Serpent</i></b>dans votre lieu, il vous attaque.</string>
+    <string name="boundary_tablet_one">Révélez un autre pion. Si vous échouez et qu\'il y a un ennemi <b><i>Serpent
+	</i></b>dans votre lieu, il vous attaque.</string>
     <string name="boundary_tablet_two">Révélez un autre pion. Si vous échouez, chaque ennemi <b><i>Serpent</i></b> dans votre lieu vous attaque.</string>
     <string name="boundary_thing_one">–4. Si vous échouez, placez 1 indice (de la réserve) sur le lieu <b><i>Antique</i></b>
 		le plus proche.</string>
@@ -381,7 +382,7 @@
 		vous le confort de la civilisation. Il n’y a pas de temps à perdre. Le chemin vers le Nexus s’étire en terrain
 		connu, non loin du trajet de la dernière expédition. Vous vous retrouvez bientôt dans
 		la jungle, cerné par toutes sortes de dangers – certains naturels, d’autres inhabituels… </string>
-    <string name="jungle_enough_gas">Les investigateurs ont assez d'essence.</string>
+    <string name="jungle_enough_gas">Les investigateurs ont assez d\'essence.</string>
     <string name="jungle_out_gas">Malheureusement, votre voiture se retrouve à court d’essence
 		à une vingtaine de kilomètres au nord de la lisière de la forêt vierge.
 		Pressé par le temps, vous décidez de continuer à pied plutôt que de faire
@@ -392,7 +393,7 @@
     <string name="jungle_map">Grâce à votre plan annoté lors de la précédente
 		expédition, vous parvenez à vous frayer un chemin à travers la jungle sans
 		vous perdre et atteignez votre destination par vos propres moyens.</string>
-    <string name="jungle_no_map">Les investigateurs n'ont pas de plan.</string>
+    <string name="jungle_no_map">Les investigateurs n\'ont pas de plan.</string>
     <string name="jungle_low">Traverser la jungle pour trouver la route du
 		Nexus prend plus de temps que vous ne l’aviez prévu et, dans votre hâte,
 		vous n’avez pas pu chasser ou cueillir davantage de nourriture. La faim vous
@@ -792,8 +793,8 @@ choisissez judicieusement quelles pistes suivre.</string>
     <string name="boundary_locations">Mettez en jeu la Cathédrale Métropolitaine, Zócalo, les Ruines du Temple,
 		Xochimilco, le Parc de Chapultepec et Coyoacán.\n
         \nChaque investigateur débute la partie soit à Zócalo, soit à Coyoacán (au choix de l’investigateur).\n</string>
-    <string name="boundary_set_aside">L'ennemi Padma Amrita, chaque faiblesse Poison qui n'est pas déjà dans le deck
-        d'un investigateur, l'Acte 3a et l'Intrigue 3a (Ils ne font pas partie du
+    <string name="boundary_set_aside">L\'ennemi Padma Amrita, chaque faiblesse Poison qui n\'est pas déjà dans le deck
+        d\'un investigateur, l\'Acte 3a et l\'Intrigue 3a (Ils ne font pas partie du
 		deck Acte ou du deck Intrigue pour l’instant…).\n</string>
     <string name="boundary_additional">Constituez le deck Exploration. Pour ce faire, prenez les 12 lieux 
         <b><i>Antique</i></b> mono-face et mélangez-les avec 1 exemplaire de chacune des cartes Rencontre

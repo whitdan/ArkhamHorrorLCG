@@ -165,17 +165,15 @@ public class SettingsMenuActivity extends AppCompatActivity {
         boolean dunwichOwned;
         boolean carcosaOwned;
         boolean forgottenOwned;
-        boolean marieOwned;
+        boolean circleOwned;
         boolean normanOwned;
-        boolean carolynOwned;
         boolean silasOwned;
         SharedPreferences settings;
         String dunwichOwnedString;
         String carcosaOwnedString;
         String forgottenOwnedString;
-        String marieOwnedString;
+        String circleOwnedString;
         String normanOwnedString;
-        String carolynOwnedString;
         String silasOwnedString;
         String sharedPrefs;
 
@@ -186,17 +184,15 @@ public class SettingsMenuActivity extends AppCompatActivity {
             dunwichOwnedString = getActivity().getResources().getString(R.string.dunwich_setting);
             carcosaOwnedString = getActivity().getResources().getString(R.string.carcosa_setting);
             forgottenOwnedString = getActivity().getResources().getString(R.string.forgotten_setting);
-            marieOwnedString = getActivity().getResources().getString(R.string.marie_lambeau);
+            circleOwnedString = getActivity().getResources().getString(R.string.circle_setting);
             normanOwnedString = getActivity().getResources().getString(R.string.norman_withers);
-            carolynOwnedString = getActivity().getResources().getString(R.string.carolyn_fern);
             silasOwnedString = getActivity().getResources().getString(R.string.silas_marsh);
             settings = getActivity().getSharedPreferences(sharedPrefs, 0);
             dunwichOwned = settings.getBoolean(dunwichOwnedString, true);
             carcosaOwned = settings.getBoolean(carcosaOwnedString, true);
             forgottenOwned = settings.getBoolean(forgottenOwnedString, true);
-            marieOwned = settings.getBoolean(marieOwnedString, false);
+            circleOwned = settings.getBoolean(circleOwnedString, true);
             normanOwned = settings.getBoolean(normanOwnedString, false);
-            carolynOwned = settings.getBoolean(carolynOwnedString, false);
             silasOwned = settings.getBoolean(silasOwnedString, false);
 
             // Get the layout inflater and inflate the view
@@ -207,16 +203,14 @@ public class SettingsMenuActivity extends AppCompatActivity {
             final CheckBox dunwich = v.findViewById(R.id.dunwich_owned);
             final CheckBox carcosa = v.findViewById(R.id.carcosa_owned);
             final CheckBox forgotten = v.findViewById(R.id.forgotten_owned);
-            final CheckBox marie = v.findViewById(R.id.marie_xpac);
+            final CheckBox circle = v.findViewById(R.id.circle_owned);
             final CheckBox norman = v.findViewById(R.id.norman_xpac);
-            final CheckBox carolyn = v.findViewById(R.id.carolyn_xpac);
             final CheckBox silas = v.findViewById(R.id.silas_xpac);
             dunwich.setChecked(dunwichOwned);
             carcosa.setChecked(carcosaOwned);
             forgotten.setChecked(forgottenOwned);
-            marie.setChecked(marieOwned);
+            circle.setChecked(circleOwned);
             norman.setChecked(normanOwned);
-            carolyn.setChecked(carolynOwned);
             silas.setChecked(silasOwned);
 
             // Set fonts
@@ -224,9 +218,8 @@ public class SettingsMenuActivity extends AppCompatActivity {
             dunwich.setTypeface(arnopro);
             carcosa.setTypeface(arnopro);
             forgotten.setTypeface(arnopro);
-            marie.setTypeface(arnopro);
+            circle.setTypeface(arnopro);
             norman.setTypeface(arnopro);
-            carolyn.setTypeface(arnopro);
             silas.setTypeface(arnopro);
             Typeface teutonic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/teutonic.ttf");
             TextView title = v.findViewById(R.id.expansions_owned);
@@ -245,9 +238,8 @@ public class SettingsMenuActivity extends AppCompatActivity {
                     editor.putBoolean(dunwichOwnedString, dunwich.isChecked());
                     editor.putBoolean(carcosaOwnedString, carcosa.isChecked());
                     editor.putBoolean(forgottenOwnedString, forgotten.isChecked());
-                    editor.putBoolean(marieOwnedString, marie.isChecked());
+                    editor.putBoolean(circleOwnedString, circle.isChecked());
                     editor.putBoolean(normanOwnedString, norman.isChecked());
-                    editor.putBoolean(carolynOwnedString, carolyn.isChecked());
                     editor.putBoolean(silasOwnedString, silas.isChecked());
                     editor.apply();
                     dismiss();

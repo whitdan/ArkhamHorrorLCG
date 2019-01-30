@@ -350,6 +350,10 @@ public class LoadCampaignActivity extends AppCompatActivity {
                     CampaignEntry.COLUMN_FINN_INUSE,
                     CampaignEntry.COLUMN_MATEO_INUSE,
                     CampaignEntry.COLUMN_CALVIN_INUSE,
+                    CampaignEntry.COLUMN_JOE_INUSE,
+                    CampaignEntry.COLUMN_PRESTON_INUSE,
+                    CampaignEntry.COLUMN_DIANA_INUSE,
+                    CampaignEntry.COLUMN_RITA_INUSE,
                     CampaignEntry.COLUMN_ROUGAROU_STATUS,
                     CampaignEntry.COLUMN_STRANGE_SOLUTION,
                     CampaignEntry.COLUMN_ARCHAIC_GLYPHS,
@@ -438,6 +442,14 @@ public class LoadCampaignActivity extends AppCompatActivity {
                         .getColumnIndexOrThrow(CampaignEntry.COLUMN_MATEO_INUSE));
                 globalVariables.InvestigatorsInUse[Investigator.CALVIN_WRIGHT] = campaignCursor.getInt(campaignCursor
                         .getColumnIndexOrThrow(CampaignEntry.COLUMN_CALVIN_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.JOE_DIAMOND] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_JOE_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.PRESTON_FAIRMONT] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_PRESTON_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.RITA_YOUNG] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_RITA_INUSE));
+                globalVariables.InvestigatorsInUse[Investigator.DIANA_STANLEY] = campaignCursor.getInt(campaignCursor
+                        .getColumnIndexOrThrow(CampaignEntry.COLUMN_DIANA_INUSE));
                 globalVariables.Rougarou = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow
                         (CampaignEntry.COLUMN_ROUGAROU_STATUS)));
                 globalVariables.StrangeSolution = (campaignCursor.getInt(campaignCursor.getColumnIndexOrThrow

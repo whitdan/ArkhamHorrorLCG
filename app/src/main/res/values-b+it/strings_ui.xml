@@ -178,6 +178,10 @@
         <item>Finn Edwards</item>
         <item>Father Mateo</item>
         <item>Calvin Wright</item>
+        <item>Joe Diamond</item>
+        <item>Preston Fairmont</item>
+        <item>Diana Stanley</item>
+        <item>Rita Young</item>
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
@@ -208,7 +212,7 @@
     <string name="voice_of_the_messenger_text">Traumi sofferti a causa di Voce del Messaggero:</string>
     <string name="doomed">Il destino si avvicina</string>
     <string name="doomed_log">Il destino si avvicina.\n\n</string>
-    <string name="accursed_fate">L'ora è vicina</string>
-    <string name="accursed_fate_log">L'ora è vicina.\n\n</string>
-    <string name="bell_tolls">L'ora della tua fine è giunta.</string>
+    <string name="accursed_fate">L\'ora è vicina</string>
+    <string name="accursed_fate_log">L\'ora è vicina.\n\n</string>
+    <string name="bell_tolls">L\'ora della tua fine è giunta.</string>
 </resources>

@@ -93,7 +93,7 @@ public class ChooseCampaignActivity extends AppCompatActivity {
         globalVariables.CampaignVersion = 2;
         globalVariables.Notes = null;
         globalVariables.ChaosBagID = -1;
-        globalVariables.InvestigatorsInUse = new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+        globalVariables.InvestigatorsInUse = new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
         globalVariables.CurrentDifficulty = 1;
         globalVariables.NightCompleted = 0;
         globalVariables.DunwichCompleted = 0;

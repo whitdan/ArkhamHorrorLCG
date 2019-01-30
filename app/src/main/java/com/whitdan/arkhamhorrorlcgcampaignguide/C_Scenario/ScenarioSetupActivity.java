@@ -645,32 +645,30 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                             }
                         }
                         StringBuilder eztliBuilder = new StringBuilder();
-                        if(globalVariables.Eztli > 0){
+                        if (globalVariables.Eztli > 0) {
                             eztliBuilder.append(getString(R.string.eztli_additional_place));
                             eztliBuilder.append(" ");
                             eztliBuilder.append(Integer.toString(globalVariables.Eztli));
                             eztliBuilder.append(" ");
-                            if(globalVariables.Eztli == 1){
+                            if (globalVariables.Eztli == 1) {
                                 eztliBuilder.append(getString(R.string.eztli_additional_doom_single));
-                            }
-                            else {
+                            } else {
                                 eztliBuilder.append(getString(R.string.eztli_additional_doom_multiple));
                             }
                         }
                         if (eztliLeader) {
                             eztliBuilder.append(getString(R.string.eztli_additional_lead));
                         }
-                        if(globalVariables.LowRations > 0){
+                        if (globalVariables.LowRations > 0) {
                             eztliBuilder.append(Integer.toString(globalVariables.LowRations));
                             eztliBuilder.append(" ");
-                            if(globalVariables.LowRations == 1) {
+                            if (globalVariables.LowRations == 1) {
                                 eztliBuilder.append(getString(R.string.eztli_low_rations_single_investigator));
-                            }
-                            else {
+                            } else {
                                 eztliBuilder.append(getString(R.string.eztli_low_rations_multiple_investigators));
                             }
                         }
-                        if(eztliBuilder.length() > 0){
+                        if (eztliBuilder.length() > 0) {
                             additionalTwo.setVisibility(VISIBLE);
                             String eztliAdditional = eztliBuilder.toString().trim();
                             eztliAdditional = eztliAdditional + "\n";
@@ -684,14 +682,14 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         locationPlacement.setVisibility(VISIBLE);
                         locationPlacement.setImageResource(R.drawable.threads_locations);
                         setAside.setText(R.string.threads_set_aside);
-                        if(globalVariables.Custody == 2){
-                            if(globalVariables.IchtacasTale == 1){
+                        if (globalVariables.Custody == 2) {
+                            if (globalVariables.IchtacasTale == 1) {
                                 additional.setText(R.string.threads_additional_three);
                             } else {
                                 additional.setText(R.string.threads_additional_four);
                             }
                         } else {
-                            if(globalVariables.IchtacasTale == 1){
+                            if (globalVariables.IchtacasTale == 1) {
                                 additional.setText(R.string.threads_additional_one);
                             } else {
                                 additional.setText(R.string.threads_additional_four);
@@ -702,11 +700,11 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         rules.setText(R.string.threads_rules);
                         break;
                     case 10:
-                        if(globalVariables.IchtacasTale == 1 && globalVariables.IchtacasTale == 1){
+                        if (globalVariables.IchtacasTale == 1 && globalVariables.IchtacasTale == 1) {
                             sets.setText(R.string.boundary_sets_one);
                             setsImage.setImageResource(R.drawable.boundary_sets_one);
-                        } else if(globalVariables.Ichtaca == 2 && globalVariables.Custody == 1 && globalVariables
-                                .IchtacasTale != 4){
+                        } else if (globalVariables.Ichtaca == 2 && globalVariables.Custody == 1 && globalVariables
+                                .IchtacasTale != 4) {
                             sets.setText(R.string.boundary_sets_two);
                             setsImage.setImageResource(R.drawable.boundary_sets_two);
                         } else {
@@ -720,18 +718,18 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         additional.setText(R.string.boundary_additional);
                         additionalTwo.setVisibility(VISIBLE);
                         StringBuilder boundaryAdditionalBuilder = new StringBuilder();
-                        if(globalVariables.MissingIchtaca == 1){
+                        if (globalVariables.MissingIchtaca == 1) {
                             boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_silent));
                         }
-                        if(globalVariables.MissingRelic == 2){
+                        if (globalVariables.MissingRelic == 2) {
                             boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_thrumming));
-                        } else if(globalVariables.MissingRelic == 1){
+                        } else if (globalVariables.MissingRelic == 1) {
                             boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_concern));
                         }
-                        if(globalVariables.MissingAlejandro == 2){
+                        if (globalVariables.MissingAlejandro == 2) {
                             boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_thoughts));
                         }
-                        if(globalVariables.GasolineUsed == 2){
+                        if (globalVariables.GasolineUsed == 2) {
                             boundaryAdditionalBuilder.append(getString(R.string.boundary_additional_gas));
                         }
                         String boundaryAdditional = boundaryAdditionalBuilder.toString().trim();
@@ -740,6 +738,38 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                         rulesLayout.setVisibility(VISIBLE);
                         rulesHeading.setText(R.string.boundary_rules_heading);
                         rules.setText(R.string.boundary_rules);
+                        break;
+                    case 18:
+                        sets.setText(R.string.heart_one_sets);
+                        setsImage.setImageResource(R.drawable.heart_one_sets);
+                        locations.setText(R.string.heart_one_locations);
+                        setAside.setText(R.string.heart_one_set_aside);
+                        if (globalVariables.Mapped == 1) {
+                            additional.setText(R.string.heart_one_additional_one);
+                        } else {
+                            additional.setText(R.string.heart_one_additional_two);
+                        }
+                        additionalTwo.setVisibility(VISIBLE);
+                        StringBuilder heartOneAdditionalBuilder = new StringBuilder();
+                        heartOneAdditionalBuilder.append(R.string.heart_one_additional_place);
+                        heartOneAdditionalBuilder.append(Integer.toString(globalVariables.PathsKnown));
+                        heartOneAdditionalBuilder.append(R.string.heart_one_additional_tokens);
+                        if(globalVariables.JungleWatches.equals("0")){
+                            heartOneAdditionalBuilder.append(R.string.heart_one_additional_replay);
+                        }
+                        String heartOneAdditional = heartOneAdditionalBuilder.toString().trim();
+                        additionalTwo.setText(heartOneAdditional);
+                        break;
+                    case 19:
+                        sets.setText(R.string.heart_two_sets);
+                        setsImage.setImageResource(R.drawable.heart_two_sets);
+                        locations.setText(R.string.heart_two_locations);
+                        setAside.setText(R.string.heart_two_set_aside);
+                        additional.setText(R.string.heart_two_additional);
+                        String heartTwoAdditional =
+                                getResources().getString(R.string.heart_two_additional_two) + globalVariables.JungleWatches;
+                        additionalTwo.setVisibility(VISIBLE);
+                        additionalTwo.setText(heartTwoAdditional);
                         break;
                 }
         }

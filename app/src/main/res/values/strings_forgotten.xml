@@ -17,6 +17,7 @@
     <string name="forgotten_interlude_five">Interlude 5: The Darkness</string>
     <string name="forgotten_resupply">Resupply Point</string>
     <string name="forgotten_epilogue">Epilogue</string>
+    <string name="forgotten_secret_scenario">Secret Scenario 9: Turn Back Time</string>
 
 
     <!--Miscellaneous-->
@@ -39,6 +40,9 @@
     <string name="remove_mental">Remove mental trauma (5XP)\n(Current trauma:</string>
     <string name="tenochtitlan_locations">Tenochtitlán locations in victory display:</string>
     <string name="act_two_finished">Scenario ended on Act 2</string>
+    <string name="none">None</string>
+    <string name="heart_pillar_tokens">Pillar tokens on Mouth of K\'n-yan: </string>
+    <string name="vengeance_enemies">Cards with Vengeance X in the victory display</string>
 
 
     <!--Supplies-->
@@ -564,6 +568,43 @@
         meandering hazily into a dreamless slumber. In the far recesses of your awareness, however, you can hear
         Ichtaca reciting a cryptic incantation…</string>
 
+    <string name="heart_one_intro">It has been several days since your party ventured forth into the rainforest once
+        more, and each day, the hazards you face grow more dangerous and frequent. Securing enough food and supplies
+        for the journey is a constant struggle, and you are harassed at every turn by the jungle’s inhabitants.
+        Fortunately, you have seen no sign yet of the serpent people who attacked the previous expedition, but you’re
+        positive they are out there. Watching. Waiting.\n
+    \nOn the morning of the sixth day, you find the entrance. It is a huge cave opening, partially obscured by trees,
+        brush, and vines. You nearly missed the great cavern maw altogether, despite its enormity. Surrounding the
+        cavern’s entrance are six stone pillars, each covered in strange grooves and carvings that glow with a dim
+        red hue. Perhaps one of your guides will understand what this means?</string>
+    <string name="heart_one_intro_option_one">Let’s consult with Ichtaca.</string>
+    <string name="heart_one_intro_option_two">Let’s consult with Alejandro.</string>
+    <string name="heart_one_intro_option_three">Let’s consult the expedition journal.</string>
+    <string name="heart_one_intro_option_four">I wish we knew more about this...</string>
+    <string name="heart_one_intro_one">“The entrance is warded against intruders,” Ichtaca says cryptically, her eyes
+        closed as though probing the cavern with unnatural senses. “These pillars are the key. Each is a test of wit
+        and will.” She steps toward one of them and touches it with her palm, and its glow brightens. You notice now
+        that the grooves along the pillar’s foundation depict a pattern you have seen somewhere before. If Ichtaca
+        believes this place to be warded, you trust her opinion—there must be some way to break these wards…</string>
+    <string name="heart_one_intro_two">Alejandro examines each of the pillars studiously. “It is a lock of some sort.
+        Look here, see? The grooves do not line up perfectly.” He twists one of the pillars, and you can see the
+        pattern along its side shifting. “I wager if we entered the cave, we would not get very far without these
+        pillars in the correct formation. Just a hunch, I suppose…But I think we should examine this area further
+        before we proceed.” You know Alejandro well enough by now to know that his hunches tend to be correct.</string>
+    <string name="heart_one_intro_three">The previous expedition’s journal doesn’t have all the answers, but as you
+        browse its pages, you are struck by a familiar diagram—one drawn by Lorenzo, an expedition member who never
+        made it back to Arkham. It is a delicate recreation of a carving that was on the wall of one of the Eztli
+        ruins. Many of the patterns and hieroglyphs you see in this drawing are shared among these pillars. It cannot
+        simply be a coincidence. These pillars are surely the key to finding your way to N’kai…</string>
+
+    <string name="heart_two_intro">You descend down miles of steep, cold stone. The tunnels are chokingly narrow at
+        first, filled with rubble and detritus. Finally, you reach level ground, and the cavern’s true nature reveals
+        itself before you. It is as though there were an entire world below the surface; the cavern’s ceiling is like
+        a stone curtain of sky above you. Even more vast and terrifying are the endless depths below you, beyond the
+        edges of stone chasms and archaic bridges. On all sides, this underground realm seems to extend beyond the
+        boundary of your sight; you wonder just how far it reaches. Perhaps the entirety of the known surface of the
+        Earth is but the top layer of another world…</string>
+
 
     <!--Scenario setup-->
     <string name="untamed_sets">The Untamed Wilds, Rainforest, Serpents, Expedition, Guardians of Time, Agents of
@@ -701,6 +742,38 @@
         there is another location underneath it, that location takes its place. All tokens, attachments,
         investigators, enemies, and other cards at the location leaving play are considered to now be at the former
         location.</string>
+
+    <string name="heart_one_sets">Pillars of Judgment, Heart of the Elders, Rainforest, Serpents, Expedition, and
+        Poison.</string>
+    <string name="heart_one_locations">Put the Mouth of K’n-yan into play, <i>(The Cavern’s Maw)</i> side faceup.\n
+        \nEach investigator begins play at the Mouth of K’n-yan <i>(The Cavern’s Maw)</i>.\n</string>
+    <string name="heart_one_set_aside">Each Poisoned weakness that is not already in an investigator’s deck.\n</string>
+    <string name="heart_one_additional_one">Create the exploration deck. This is done by taking the 6 single-sided
+        <b><i>Jungle</i></b> locations and shuffling them together, along with 1 copy each of the following encounter
+        cards: Pitfall, Ants!, Lost in the Wilds, and Low on Supplies.\n
+    \nRandomly choose one of the following 3 <b><i>Ruins</i></b> locations: Overgrown Ruins, Temple of the Fang, and
+        Stone Altar. Put that location into play. Remove the other 2 from the game.\n</string>
+    <string name="heart_one_additional_two">Create the exploration deck. This is done by taking the 6 single-sided
+        <b><i>Jungle</i></b> locations and shuffling them together, along with 1 copy each of the following encounter
+        cards: Pitfall, Ants!, Lost in the Wilds, and Low on Supplies.\n
+    \nRandomly choose one of the following 3 <b><i>Ruins</i></b> locations: Overgrown Ruins, Temple of the Fang, and
+        Stone Altar. Shuffle the randomly chosen location into the exploration deck. Remove the other 2 from the
+        game.\n</string>
+    <string name="heart_one_additional_place">\nPlace </string>
+    <string name="heart_one_additional_tokens"> resource(s) on the Mouth of K’n-yan, as pillar token(s).\n</string>
+    <string name="heart_one_additional_replay">\nIf have reached act 2 before, flip act 1a over and place it in the
+        Mouth of K’n-yan.</string>
+
+    <string name="heart_two_sets">K’n-yan, Heart of the Elders, Agents of Yig, Yig’s Venom, Forgotten Ruins, Deadly
+        Traps, and Poison.</string>
+    <string name="heart_two_locations">Put the Mouth of K’n-yan into play, <i>(The Depths Beneath)</i> side faceup.\n
+        \nEach investigator begins play at the Mouth of K’n-yan <i>(The Depths Beneath)</i>.\n</string>
+    <string name="heart_two_set_aside">The Descent to Yoth location, and each Poisoned weakness that is not
+        already in an investigator’s deck.\n</string>
+    <string name="heart_two_additional">Create the exploration deck. This is done by taking the 5 remaining
+        single-sided locations from the <i>K’n-yan</i> encounter set and shuffling them together, along with 1 copy
+        each of the following encounter cards: Pitfall, No Turning Back, Deep Dark, and Final Mistake.</string>
+    <string name="heart_two_additional_two">Add the following cards to the victory display: </string>
 
 
     <!--Scenario resolutions-->
@@ -983,5 +1056,14 @@
         journey with me.”</string>
     <string name="boundary_resolution_additional"><b>Add each Tenochtitlán location in play that has no clues on it
         to the victory display.</b></string>
+
+    <string name="heart_one_no_resolution">The hazards of the jungle are too dangerous for you to continue exploring.
+        If you remain any longer, these odd pillars will mark your grave. You decide to flee for now, returning to a
+        familiar clearing several miles away where you can recuperate. You know that you must eventually return to
+        the pillars and figure out the pattern that will open the way forward…but for now, at least you are safe.\n
+    \n<b>The investigators must replay Scenario 5-A: Heart of the Elders, Part 1.</b></string>
+    <string name="heart_one_resolution_one">Swallowing your fear, you enter the cavern…</string>
+    <string name="heart_one_resolution_one_additional"><b>Investigators may not spend experience or alter their decks
+        before the next scenario.</b></string>
 
 </resources>

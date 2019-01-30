@@ -46,7 +46,7 @@ public class GlobalVariables extends Application {
     public String[] PlayerNames = new String[4];
     public String[] DeckNames = new String[4];
     public String[] DeckLists = new String[4];
-    public int[] InvestigatorsInUse = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    public int[] InvestigatorsInUse = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
                                                                         // Matches up to the names in the string array
 
     /*
@@ -144,6 +144,9 @@ public class GlobalVariables extends Application {
     public int GasolineUsed;
     public int PathsKnown;
     public int IchtacaConfidence;
+
+    public int Mapped;
+    public String JungleWatches;
 
     /*
         Side story variables - All of the variables associated with side stories
@@ -308,19 +311,31 @@ public class GlobalVariables extends Application {
                         title.setText(R.string.forgotten_scenario_six);
                         break;
                     case 21:
+                    case 22:
+                    case 23:
+                    case 24:
+                    case 25:
+                    case 26:
                         title.setText(R.string.forgotten_interlude_four);
                         break;
-                    case 22:
+                    case 27:
                         title.setText(R.string.forgotten_scenario_seven);
                         break;
-                    case 23:
+                    case 28:
+                    case 29:
+                    case 30:
+                    case 31:
+                    case 32:
                         title.setText(R.string.forgotten_interlude_five);
                         break;
-                    case 24:
+                    case 33:
                         title.setText(R.string.forgotten_scenario_eight);
                         break;
-                    case 25:
+                    case 34:
                         title.setText(R.string.forgotten_epilogue);
+                        break;
+                    case 35:
+                        title.setText(R.string.forgotten_secret_scenario);
                         break;
                 }
         }

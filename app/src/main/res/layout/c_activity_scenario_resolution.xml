@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/normal_screen_bg"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,8 +25,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
                 android:textScaleX="1.2"
@@ -89,8 +89,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:text="@string/resigned"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
@@ -100,8 +100,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -115,8 +115,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -159,8 +159,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:text="@string/resigned"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
@@ -170,8 +170,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -185,8 +185,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -229,8 +229,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:text="@string/resigned"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
@@ -240,8 +240,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -255,8 +255,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -299,8 +299,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:text="@string/resigned"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
@@ -310,8 +310,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -325,8 +325,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -366,8 +366,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:text="@string/no_r"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"/>
@@ -377,8 +377,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:text="@string/r_one"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"/>
@@ -388,8 +388,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:text="@string/r_two"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"/>
@@ -399,8 +399,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:text="@string/r_three"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"
@@ -411,9 +411,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:text="@string/r_four"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/arnopro_textsize"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/resolution_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_style"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
+                    android:text="@string/r_five"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"
                     android:visibility="gone"/>
@@ -508,16 +520,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/checkbox_padding"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/checkbox_padding">
 
                 <CheckBox
                     android:id="@+id/additional_checkbox_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"
                     android:visibility="gone"/>
@@ -527,8 +539,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"
                     android:visibility="gone"/>
@@ -538,8 +550,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"
                     android:visibility="gone"/>
@@ -570,8 +582,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"/>
 
@@ -580,8 +592,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_style"
-                    android:paddingBottom="@dimen/checkbox_padding"
                     android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/checkbox_padding"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/arnopro_textsize"/>
 
@@ -630,8 +642,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"
                         android:visibility="gone"/>
@@ -641,8 +653,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"
                         android:visibility="gone"/>
@@ -652,8 +664,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"
                         android:visibility="gone"/>
@@ -672,8 +684,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"
                         android:visibility="gone"/>
@@ -683,8 +695,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"
                         android:visibility="gone"/>
@@ -723,8 +735,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -733,8 +745,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -743,8 +755,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -753,8 +765,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"
                         android:visibility="gone"/>
@@ -772,8 +784,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -782,8 +794,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
 
@@ -792,8 +804,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/checkbox_style"
-                        android:paddingBottom="@dimen/checkbox_padding"
                         android:paddingTop="@dimen/checkbox_padding"
+                        android:paddingBottom="@dimen/checkbox_padding"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/arnopro_textsize"/>
                 </LinearLayout>
@@ -998,6 +1010,47 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/box_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/box_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="@string/notes"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="1.2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/text_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/checkbox_padding"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/arnopro_textsize"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/underline"/>
+            </LinearLayout>
 
             <android.support.v4.widget.Space
                 android:layout_width="match_parent"
@@ -1042,8 +1095,8 @@
                 android:id="@+id/campaign_log_button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/checkbox_padding"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:background="@drawable/button_style"
                 android:includeFontPadding="false"
                 android:text="@string/campaign_log"
@@ -1059,9 +1112,9 @@
                     android:id="@+id/back_button"
                     android:layout_width="120dp"
                     android:layout_height="50dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:background="@drawable/button_style"
                     android:includeFontPadding="false"
                     android:text="@string/back"
@@ -1073,9 +1126,9 @@
                     android:id="@+id/continue_button"
                     android:layout_width="160dp"
                     android:layout_height="70dp"
-                    android:layout_alignParentBottom="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
                     android:background="@drawable/button_style"
                     android:includeFontPadding="false"
                     android:text="@string/finish_scenario"

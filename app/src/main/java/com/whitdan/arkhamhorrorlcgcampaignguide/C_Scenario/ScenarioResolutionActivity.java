@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -225,6 +226,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         RadioButton resolutionTwo = findViewById(R.id.resolution_two);
         RadioButton resolutionThree = findViewById(R.id.resolution_three);
         RadioButton resolutionFour = findViewById(R.id.resolution_four);
+        RadioButton resolutionFive = findViewById(R.id.resolution_five);
         switch (globalVariables.CurrentCampaign) {
             case 1:
                 switch (globalVariables.CurrentScenario) {
@@ -276,7 +278,15 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         resolutionThree.setVisibility(VISIBLE);
                         break;
                     case 8:
+                    case 18:
+                    case 20:
+                    case 35:
                         resolutionTwo.setVisibility(GONE);
+                        break;
+                    case 33:
+                        resolutionThree.setVisibility(VISIBLE);
+                        resolutionFour.setVisibility(VISIBLE);
+                        resolutionFive.setVisibility(VISIBLE);
                         break;
                 }
                 break;
@@ -993,6 +1003,7 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     case 1:
                     case 6:
                     case 10:
+                    case 19:
                         // Vengeance view
                         vengeanceCounter = 0;
                         additionalCounterLayout.setVisibility(VISIBLE);
@@ -1105,6 +1116,34 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                         counterTwo.setVisibility(VISIBLE);
                         counterTwoName.setText(R.string.tenochtitlan_locations);
 
+                        // Harbinger of Valusia
+                        if (globalVariables.Harbinger != -1) {
+                            selectInvestigator.setVisibility(VISIBLE);
+                            selectInvestigatorRight.setVisibility(GONE);
+                            selectInvestigatorOne.setVisibility(VISIBLE);
+                            selectInvestigatorOne.setText(R.string.harbinger);
+                            selectInvestigatorOne.setOnCheckedChangeListener(new CompoundButton
+                                    .OnCheckedChangeListener() {
+
+                                @Override
+                                public void onCheckedChanged(CompoundButton buttonView, boolean
+                                        isChecked) {
+                                    if (isChecked) {
+                                        selectInvestigator.setPadding(0, 0, 0, 0);
+                                        counterOne.setVisibility(VISIBLE);
+                                        counterOneName.setText(R.string
+                                                .harbinger_damage);
+                                        counterOneAmount.setText(Integer.toString(globalVariables.Harbinger));
+                                    } else {
+                                        selectInvestigator.setPadding(0, 0, 0, getResources().getDimensionPixelSize(R
+                                                .dimen.activity_vertical_margin));
+                                        counterOne.setVisibility(GONE);
+                                    }
+                                }
+                            });
+                        }
+                        break;
+                    case 19:
                         // Harbinger of Valusia
                         if (globalVariables.Harbinger != -1) {
                             selectInvestigator.setVisibility(VISIBLE);
@@ -1525,6 +1564,10 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
             final RadioGroup resolutionOptions = findViewById(R.id.resolution_options);
             final RadioButton resolutionOptionOne = findViewById(R.id.resolution_option_one);
             final RadioButton resolutionOptionTwo = findViewById(R.id.resolution_option_two);
+            final LinearLayout additionalCounterLayout = findViewById(R.id.additional_counter_layout);
+            final TextView additionalCounter = findViewById(R.id.additional_counter);
+            final LinearLayout textBoxLayout = findViewById(R.id.box_layout);
+            final TextView textBoxHeading = findViewById(R.id.box_heading);
 
             // Set resolution
             switch (i) {
@@ -2370,6 +2413,44 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 resolutionTextViewAdditional.setVisibility(GONE);
                             }
                             break;
+                        // Heart of the Elders A
+                        case 18:
+                            switch (globalVariables.ScenarioResolution) {
+                                case 0:
+                                    additionalCounterLayout.setVisibility(VISIBLE);
+                                    additionalCounter.setText(R.string.heart_pillar_tokens);
+                                    textBoxLayout.setVisibility(GONE);
+                                    resolutionTextView.setText(R.string.heart_one_no_resolution);
+                                    resolutionTextViewAdditional.setVisibility(GONE);
+                                    break;
+                                case 1:
+                                    additionalCounterLayout.setVisibility(GONE);
+                                    textBoxLayout.setVisibility(VISIBLE);
+                                    textBoxHeading.setText(R.string.vengeance_enemies);
+                                    resolutionTextView.setText(R.string.heart_one_resolution_one);
+                                    resolutionTextViewAdditional.setVisibility(VISIBLE);
+                                    resolutionTextViewAdditional.setText(R.string.heart_one_resolution_one_additional);
+                                    break;
+                            }
+                            break;
+                            // Heart of the Elders B
+                       /* case 19:
+                            switch(globalVariables.ScenarioResolution){
+                                case 0:
+                                    if(globalVariables.MissingAlejandro == 2){
+                                        resolutionTextView.setText(R.string.heart_two_no_resolution_one);
+                                    } else if (globalVariables.MissingAlejandro == 1){
+                                        resolutionTextView.setText(R.string.heart_two_no_resolution_two);
+                                    }
+                                    break;
+                                case 1:
+                                    resolutionTextView.setText(R.string.heart_two_resolution_one);
+                                    break;
+                                case 2:
+                                    resolutionTextView.setText(R.string.heart_two_resolution_two);
+                                    break;
+                            }
+                            break;*/
                     }
                     break;
             }
@@ -2709,6 +2790,8 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
         TextView counterTwo = activity.findViewById(R.id.investigator_counter_two_amount);
         TextView counterThree = activity.findViewById(R.id.investigator_counter_three_amount);
         TextView counterFour = activity.findViewById(R.id.investigator_counter_four_amount);
+        TextView additionalCounter = activity.findViewById(R.id.additional_amount);
+        EditText textBox = activity.findViewById(R.id.text_box);
         RadioButton optionOne = activity.findViewById(R.id.resolution_option_one);
         RadioButton optionTwo = activity.findViewById(R.id.resolution_option_two);
 
@@ -3840,6 +3923,37 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                     Integer.valueOf(counterTwo.getText().toString());
                         }
                         break;
+                    // Heart of the Elders A
+                    case 18:
+                        switch (globalVariables.ScenarioResolution) {
+                            case 0:
+                                int paths = Integer.valueOf(additionalCounter.getText().toString());
+                                if (paths > globalVariables.PathsKnown) {
+                                    globalVariables.PathsKnown = paths;
+                                }
+                                globalVariables.JungleWatches = "0";
+                                globalVariables.CurrentScenario = globalVariables.CurrentScenario - 1;
+                                break;
+                            case 1:
+                                globalVariables.JungleWatches = textBox.getText().toString().trim();
+                                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                                    globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                                }
+                                break;
+                        }
+                        break;
+                        // Heart of the Elders B
+                    case 19:
+                        if (investigatorOne.isChecked()) {
+                            globalVariables.Harbinger = Integer.valueOf(counterOne.getText().toString());
+                        } else {
+                            globalVariables.Harbinger = -1;
+                        }
+                        globalVariables.YigsFury += vengeanceCounter;
+                        for (int i = 0; i < globalVariables.Investigators.size(); i++) {
+                            globalVariables.Investigators.get(i).AvailableXP += globalVariables.VictoryDisplay;
+                        }
+                        break;
                 }
                 break;
         }
@@ -3928,9 +4042,11 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     case Investigator.ROLAND_BANKS:
                     case Investigator.ZOEY_SAMARAS:
                     case Investigator.JENNY_BARNES:
+                    case Investigator.PRESTON_FAIRMONT:
                         currentInvestigator.Horror += 1;
                         break;
                     case Investigator.SKIDS_OTOOLE:
+                    case Investigator.JOE_DIAMOND:
                         if (xpEarned >= 2) {
                             currentInvestigator.AvailableXP += -2;
                             currentInvestigator.TotalXP += -2;
@@ -4140,6 +4256,14 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 .FATHER_MATEO]);
         campaignValues.put(CampaignEntry.COLUMN_CALVIN_INUSE, globalVariables.InvestigatorsInUse[Investigator
                 .CALVIN_WRIGHT]);
+        campaignValues.put(CampaignEntry.COLUMN_JOE_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .JOE_DIAMOND]);
+        campaignValues.put(CampaignEntry.COLUMN_PRESTON_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .PRESTON_FAIRMONT]);
+        campaignValues.put(CampaignEntry.COLUMN_DIANA_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .DIANA_STANLEY]);
+        campaignValues.put(CampaignEntry.COLUMN_RITA_INUSE, globalVariables.InvestigatorsInUse[Investigator
+                .RITA_YOUNG]);
         campaignValues.put(CampaignEntry.COLUMN_ROUGAROU_STATUS, globalVariables.Rougarou);
         campaignValues.put(CampaignEntry.COLUMN_STRANGE_SOLUTION, globalVariables.StrangeSolution);
         campaignValues.put(CampaignEntry.COLUMN_ARCHAIC_GLYPHS, globalVariables.ArchaicGlyphs);
@@ -4767,6 +4891,14 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                     case Investigator.AKACHI_ONYELE:
                         box.setVisibility(VISIBLE);
                         box.setText(R.string.angered_spirits);
+                        break;
+                    case Investigator.JOE_DIAMOND:
+                        box.setVisibility(VISIBLE);
+                        box.setText(R.string.unsolved_case);
+                        break;
+                    case Investigator.PRESTON_FAIRMONT:
+                        box.setVisibility(VISIBLE);
+                        box.setText(R.string.lodge_debts);
                         break;
                     case Investigator.CALVIN_WRIGHT:
                         box.setVisibility(VISIBLE);

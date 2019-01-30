@@ -77,6 +77,10 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 + CampaignEntry.COLUMN_FINN_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_MATEO_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_CALVIN_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_JOE_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_PRESTON_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_DIANA_INUSE + " INTEGER, "
+                + CampaignEntry.COLUMN_RITA_INUSE + " INTEGER, "
                 + CampaignEntry.COLUMN_ROUGAROU_STATUS + " INTEGER, "
                 + CampaignEntry.COLUMN_STRANGE_SOLUTION + " INTEGER, "
                 + CampaignEntry.COLUMN_ARCHAIC_GLYPHS + " INTEGER, "
@@ -627,6 +631,19 @@ public class ArkhamDbHelper extends SQLiteOpenHelper {
                 } catch (SQLiteException ex) {
                     Log.w("SQLiteException", "Altering " + InvestigatorEntry.TABLE_NAME + ": " + ex.getMessage());
                 }
+            case 33:
+                String SQL_UPGRADE_TWENTYNINE_ONE = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_JOE_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYNINE_TWO = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_PRESTON_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYNINE_THREE = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_DIANA_INUSE + " INTEGER";
+                String SQL_UPGRADE_TWENTYNINE_FOUR = "ALTER TABLE " + CampaignEntry.TABLE_NAME + " ADD COLUMN " +
+                        CampaignEntry.COLUMN_RITA_INUSE + " INTEGER";
+                db.execSQL(SQL_UPGRADE_TWENTYNINE_ONE);
+                db.execSQL(SQL_UPGRADE_TWENTYNINE_TWO);
+                db.execSQL(SQL_UPGRADE_TWENTYNINE_THREE);
+                db.execSQL(SQL_UPGRADE_TWENTYNINE_FOUR);
         }
     }
 }

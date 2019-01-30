@@ -695,7 +695,7 @@ public class CampaignLogActivity extends AppCompatActivity {
             }
 
             // Boundary Beyond log
-            if (scenario > 9 || globalVariables.ForgottenCompleted == 1) {
+            if (scenario > 17 || globalVariables.ForgottenCompleted == 1) {
                 String paths = Integer.toString(globalVariables.PathsKnown) + " " + getResources().getString(R.string
                         .paths_known_2);
                 forgottenBuilder.append(paths);
@@ -705,13 +705,7 @@ public class CampaignLogActivity extends AppCompatActivity {
                     forgottenBuilder.append(getString(R.string.ichtaca_confidence));
                     forgottenBuilder.append(getString(R.string.ichtaca_faith));
                 }
-                boolean map = false;
-                for (int i = 0; i < globalVariables.Investigators.size(); i++) {
-                    if (globalVariables.Investigators.get(i).Supplies % 13 == 0) {
-                        map = true;
-                    }
-                }
-                if (map) {
+                if (globalVariables.Mapped == 1) {
                     forgottenBuilder.append(getString(R.string.mapped_forward));
                 }
             }
