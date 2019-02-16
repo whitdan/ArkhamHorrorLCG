@@ -13,7 +13,6 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +29,7 @@ import android.widget.TextView;
 
 import com.whitdan.arkhamhorrorlcgcampaignguide.A_Menus.MainMenuActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioResolutionActivity;
+import com.whitdan.arkhamhorrorlcgcampaignguide.C_Scenario.ScenarioSetupActivity;
 import com.whitdan.arkhamhorrorlcgcampaignguide.R;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract;
 import com.whitdan.arkhamhorrorlcgcampaignguide.Z_Data.ArkhamContract.ChaosBagEntry;
@@ -385,11 +385,26 @@ public class ChaosBagActivity extends AppCompatActivity {
             setupBag(this, false);
             standard.setChecked(true);
             continueButton.setVisibility(VISIBLE);
+            if (globalVariables.CurrentScenario == 103 || globalVariables.CurrentScenario == 104 || globalVariables.CurrentScenario == 105) {
+                if(globalVariables.LabyrinthsCounter == 1){
+                    continueButton.setText(R.string.act_two_setup);
+                } else if (globalVariables.LabyrinthsCounter == 2){
+                    continueButton.setText(R.string.act_three_setup);
+                }
+            }
             continueButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(ChaosBagActivity.this, ScenarioResolutionActivity.class);
-                    startActivity(intent);
+                    if ((globalVariables.CurrentScenario == 103 || globalVariables.CurrentScenario == 104 || globalVariables.CurrentScenario == 105) && (globalVariables.LabyrinthsCounter == 1 || globalVariables.LabyrinthsCounter == 2)) {
+                        {
+                            globalVariables.LabyrinthsCounter++;
+                            Intent intent = new Intent(ChaosBagActivity.this, ScenarioSetupActivity.class);
+                            startActivity(intent);
+                        }
+                    } else {
+                        Intent intent = new Intent(ChaosBagActivity.this, ScenarioResolutionActivity.class);
+                        startActivity(intent);
+                    }
                 }
             });
         }
@@ -591,8 +606,8 @@ public class ChaosBagActivity extends AppCompatActivity {
                             chaosbag.add(14);
                         }
                     }
-                    if(scenario > 17){
-                        if(globalVariables.IchtacaConfidence == 2){
+                    if (scenario > 17) {
+                        if (globalVariables.IchtacaConfidence == 2) {
                             chaosbag.add(12);
                         }
                     }
@@ -759,8 +774,40 @@ public class ChaosBagActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
+                    // Labyrinths A
+                    case 103:
+                        switch (globalVariables.CurrentDifficulty) {
+                            case 1:
+                                bag = new int[]{0, 1, 3, 3, 2, 1, 1, 1, 0, 0, 0, 2, 0, 0, 2, 1, 1};
+                                break;
+                            case 2:
+                                bag = new int[]{0, 1, 1, 3, 3, 1, 1, 1, 1, 0, 0, 2, 0, 0, 2, 1, 1};
+                                break;
+                        }
+                        break;
+                        // Labyrinths B
+                    case 104:
+                        switch (globalVariables.CurrentDifficulty) {
+                            case 1:
+                                bag = new int[]{0, 1, 3, 3, 2, 1, 1, 1, 0, 0, 0, 2, 0, 2, 0, 1, 1};
+                                break;
+                            case 2:
+                                bag = new int[]{0, 1, 1, 3, 3, 1, 1, 1, 1, 0, 0, 2, 0, 2, 0, 1, 1};
+                                break;
+                        }
+                        break;
+                        // Labyrinths C
+                    case 105:
+                        switch (globalVariables.CurrentDifficulty) {
+                            case 1:
+                                bag = new int[]{0, 1, 3, 3, 2, 1, 1, 1, 0, 0, 0, 2, 2, 0, 0, 1, 1};
+                                break;
+                            case 2:
+                                bag = new int[]{0, 1, 1, 3, 3, 1, 1, 1, 1, 0, 0, 2, 2, 0, 0, 1, 1};
+                                break;
+                        }
+                        break;
                 }
-                Log.i("Difficulty: ", Integer.toString(globalVariables.CurrentDifficulty));
             }
         } else {
             // Get access to a writable SQLite database
@@ -1299,6 +1346,21 @@ public class ChaosBagActivity extends AppCompatActivity {
                         cultist.setText(R.string.carnevale_cultist_two);
                         tablet.setText(R.string.carnevale_tablet_two);
                         thing.setText(R.string.carnevale_thing_two);
+                    }
+                    break;
+                case 103:
+                case 104:
+                case 105:
+                    if (globalVariables.CurrentDifficulty == 0 || globalVariables.CurrentDifficulty == 1) {
+                        skull.setText(R.string.labyrinths_skull_one);
+                        cultist.setText(R.string.labyrinths_cultist_one);
+                        tablet.setText(R.string.labyrinths_tablet_one);
+                        thing.setText(R.string.labyrinths_thing_one);
+                    } else if (globalVariables.CurrentDifficulty == 2 || globalVariables.CurrentDifficulty == 3) {
+                        skull.setText(R.string.labyrinths_skull_two);
+                        cultist.setText(R.string.labyrinths_cultist_two);
+                        tablet.setText(R.string.labyrinths_tablet_two);
+                        thing.setText(R.string.labyrinths_thing_two);
                     }
                     break;
             }

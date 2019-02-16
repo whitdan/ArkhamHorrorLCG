@@ -75,6 +75,8 @@ public class ScenarioSetupActivity extends AppCompatActivity {
         TextView additional = findViewById(R.id.additional);
         TextView additionalTwo = findViewById(R.id.additional_two);
         TextView rules = findViewById(R.id.rules);
+        ImageView dividerOne = findViewById(R.id.divider_one);
+        ImageView dividerTwo = findViewById(R.id.divider_two);
 
         sets.setTypeface(arnopro);
         setsTwo.setTypeface(arnopro);
@@ -793,9 +795,125 @@ public class ScenarioSetupActivity extends AppCompatActivity {
                     locations.setText(R.string.carnevale_locations);
                     additional.setText(R.string.carnevale_additional);
                     break;
+                case 103:
+                    switch(globalVariables.LabyrinthsCounter){
+                        case 1:
+                            sets.setText(R.string.labyrinths_sets);
+                            setsImage.setImageResource(R.drawable.labyrinths_sets);
+                            setsTwo.setVisibility(VISIBLE);
+                            setsTwoImage.setVisibility(VISIBLE);
+                            setsTwo.setText(R.string.labyrinths_sets_two);
+                            setsTwoImage.setImageResource(R.drawable.labyrinths_sets_two);
+                            setAside.setText(R.string.labyrinths_set_aside);
+                            locations.setText(R.string.labyrinths_a_locations);
+                            additional.setText(R.string.labyrinths_a_additional);
+                            break;
+                        case 2:
+                            subTitle.setText(R.string.act_two_setup);
+                            setsHeading.setVisibility(GONE);
+                            sets.setVisibility(GONE);
+                            setsImage.setVisibility(GONE);
+                            setAsideHeading.setVisibility(GONE);
+                            setAside.setVisibility(GONE);
+                            dividerOne.setVisibility(GONE);
+                            dividerTwo.setVisibility(GONE);
+                            locations.setText(R.string.labyrinths_a_locations_two);
+                            additional.setText(R.string.labyrinths_a_additional_two);
+                            break;
+                        case 3:
+                            subTitle.setText(R.string.act_three_setup);
+                            setsHeading.setVisibility(GONE);
+                            sets.setVisibility(GONE);
+                            setsImage.setVisibility(GONE);
+                            setAsideHeading.setVisibility(GONE);
+                            setAside.setVisibility(GONE);
+                            dividerOne.setVisibility(GONE);
+                            dividerTwo.setVisibility(GONE);
+                            locations.setText(R.string.labyrinths_locations_three);
+                            additional.setText(R.string.labyrinths_additional_three);
+                            break;
+                    }
+                    break;
+                case 104:
+                    switch(globalVariables.LabyrinthsCounter){
+                        case 1:
+                            sets.setText(R.string.labyrinths_sets);
+                            setsImage.setImageResource(R.drawable.labyrinths_sets);
+                            setsTwo.setVisibility(VISIBLE);
+                            setsTwoImage.setVisibility(VISIBLE);
+                            setsTwo.setText(R.string.labyrinths_sets_two);
+                            setsTwoImage.setImageResource(R.drawable.labyrinths_sets_two);
+                            setAside.setText(R.string.labyrinths_set_aside);
+                            locations.setText(R.string.labyrinths_b_locations);
+                            additional.setText(R.string.labyrinths_b_additional);
+                            break;
+                        case 2:
+                            subTitle.setText(R.string.act_two_setup);
+                            setsHeading.setVisibility(GONE);
+                            sets.setVisibility(GONE);
+                            setsImage.setVisibility(GONE);
+                            setAsideHeading.setVisibility(GONE);
+                            setAside.setVisibility(GONE);
+                            dividerOne.setVisibility(GONE);
+                            dividerTwo.setVisibility(GONE);
+                            locations.setText(R.string.labyrinths_b_locations_two);
+                            additional.setText(R.string.labyrinths_b_additional_two);
+                            break;
+                        case 3:
+                            subTitle.setText(R.string.act_three_setup);
+                            setsHeading.setVisibility(GONE);
+                            sets.setVisibility(GONE);
+                            setsImage.setVisibility(GONE);
+                            setAsideHeading.setVisibility(GONE);
+                            setAside.setVisibility(GONE);
+                            dividerOne.setVisibility(GONE);
+                            dividerTwo.setVisibility(GONE);
+                            locations.setText(R.string.labyrinths_locations_three);
+                            additional.setText(R.string.labyrinths_additional_three);
+                            break;
+                    }
+                    break;
+                case 105:
+                    switch(globalVariables.LabyrinthsCounter){
+                        case 1:
+                            sets.setText(R.string.labyrinths_sets);
+                            setsImage.setImageResource(R.drawable.labyrinths_sets);
+                            setsTwo.setVisibility(VISIBLE);
+                            setsTwoImage.setVisibility(VISIBLE);
+                            setsTwo.setText(R.string.labyrinths_sets_two);
+                            setsTwoImage.setImageResource(R.drawable.labyrinths_sets_two);
+                            setAside.setText(R.string.labyrinths_set_aside);
+                            locations.setText(R.string.labyrinths_c_locations);
+                            additional.setText(R.string.labyrinths_c_additional);
+                            break;
+                        case 2:
+                            subTitle.setText(R.string.act_two_setup);
+                            setsHeading.setVisibility(GONE);
+                            sets.setVisibility(GONE);
+                            setsImage.setVisibility(GONE);
+                            setAsideHeading.setVisibility(GONE);
+                            setAside.setVisibility(GONE);
+                            dividerOne.setVisibility(GONE);
+                            dividerTwo.setVisibility(GONE);
+                            locations.setText(R.string.labyrinths_c_locations_two);
+                            additional.setText(R.string.labyrinths_c_additional_two);
+                            break;
+                        case 3:
+                            subTitle.setText(R.string.act_three_setup);
+                            setsHeading.setVisibility(GONE);
+                            sets.setVisibility(GONE);
+                            setsImage.setVisibility(GONE);
+                            setAsideHeading.setVisibility(GONE);
+                            setAside.setVisibility(GONE);
+                            dividerOne.setVisibility(GONE);
+                            dividerTwo.setVisibility(GONE);
+                            locations.setText(R.string.labyrinths_locations_three);
+                            additional.setText(R.string.labyrinths_additional_three);
+                            break;
+                    }
+                    break;
             }
         }
-
 
         // Set buttons
         Button log = findViewById(R.id.campaign_log_button);

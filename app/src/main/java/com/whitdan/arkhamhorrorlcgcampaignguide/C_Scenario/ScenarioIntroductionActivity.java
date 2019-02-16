@@ -488,6 +488,15 @@ public class ScenarioIntroductionActivity extends AppCompatActivity {
                 case 102:
                     introduction.setText(R.string.carnevale_introduction);
                     break;
+                case 103:
+                    introduction.setText(R.string.labyrinths_a_introduction);
+                    break;
+                case 104:
+                    introduction.setText(R.string.labyrinths_b_introduction);
+                    break;
+                case 105:
+                    introduction.setText(R.string.labyrinths_c_introduction);
+                    break;
             }
         }
 

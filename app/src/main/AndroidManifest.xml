@@ -9,6 +9,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".A_Menus.LabyrinthsSelectActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".A_Menus.MainMenuActivity"
             android:label="@string/app_name"

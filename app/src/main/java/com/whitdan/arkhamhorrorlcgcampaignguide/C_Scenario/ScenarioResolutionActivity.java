@@ -296,6 +296,12 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                 case 101:
                     resolutionThree.setVisibility(VISIBLE);
                     break;
+                case 103:
+                case 104:
+                case 105:
+                    resolutionThree.setVisibility(VISIBLE);
+                    resolutionFour.setVisibility(VISIBLE);
+                    break;
             }
         }
 
@@ -2487,6 +2493,25 @@ public class ScenarioResolutionActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
+                        // Labyrinths of Lunacy
+                    case 103:
+                    case 104:
+                    case 105:
+                        switch(globalVariables.ScenarioResolution){
+                            case 0:
+                            case 1:
+                                resolutionTextView.setText(R.string.labyrinths_resolution_one);
+                                break;
+                            case 2:
+                                resolutionTextView.setText(R.string.labyrinths_resolution_two);
+                                break;
+                            case 3:
+                                resolutionTextView.setText(R.string.labyrinths_resolution_three);
+                                break;
+                            case 4:
+                                resolutionTextView.setText(R.string.labyrinths_resolution_four);
+                                break;
+                        }
                 }
             }
         }

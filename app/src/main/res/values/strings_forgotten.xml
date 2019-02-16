@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="forgotten_campaign">The Forgotten Age</string>
+    <string name="forgotten_campaign">The Forgotten Age (Beta)</string>
     <string name="forgotten_scenario_one">Scenario 1: The Untamed Wilds</string>
     <string name="forgotten_scenario_two">Scenario 2: The Doom of Eztli</string>
     <string name="forgotten_scenario_three">Scenario 3: Threads of Fate</string>

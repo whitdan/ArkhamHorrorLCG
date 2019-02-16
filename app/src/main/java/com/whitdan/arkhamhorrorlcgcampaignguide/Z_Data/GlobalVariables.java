@@ -155,6 +155,7 @@ public class GlobalVariables extends Application {
     public int Rougarou;
     public int Carnevale;
     public int CarnevaleReward;
+    public int LabyrinthsCounter;
 
     /*
         Player cards - All of the variables associated with specific player cards
@@ -346,6 +347,11 @@ public class GlobalVariables extends Application {
                     break;
                 case 102:
                     title.setText(R.string.carnevale_scenario);
+                    break;
+                case 103:
+                case 104:
+                case 105:
+                    title.setText(R.string.labyrinths_scenario);
                     break;
             }
         }
