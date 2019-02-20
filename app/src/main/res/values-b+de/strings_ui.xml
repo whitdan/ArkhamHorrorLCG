@@ -188,7 +188,7 @@
         <item>Keine</item>
         <item>Roland Banks</item>
         <item>Daisy Walker</item>
-        <item>Skids O\'Toole</item>
+        <item>Skids O’Toole</item>
         <item>Agnes Baker</item>
         <item>Wendy Adams</item>
         <item>Zoey Samaras</item>
@@ -218,7 +218,7 @@
     </string-array>
     <string name="roland_banks">Roland Banks</string>
     <string name="daisy_walker">Daisy Walker</string>
-    <string name="skids_otoole">Skids O\'Toole</string>
+    <string name="skids_otoole">Skids O’Toole</string>
     <string name="agnes_baker">Agnes Baker</string>
     <string name="wendy_adams">Wendy Adams</string>
     <string name="zoey_samaras">Zoey Samaras</string>
@@ -241,6 +241,10 @@
     <string name="finn_edwards">Finn Edwards</string>
     <string name="father_mateo">Pater Mateo</string>
     <string name="calvin_wright">Calvin Wright</string>
+    <string name="joe_diamond">Joe Diamond</string>
+    <string name="preston_fairmont">Preston Fairmont</string>
+    <string name="diana_stanley">Diana Stanley</string>
+    <string name="rita_young">Rita Young</string>
 
     <string name="cover_up">Nicht abgeschlossenes <i>Vertuschen</i> im Spiel</string>
     <string name="hospital_debts">Nicht bezahlte <i>Krankenhausrechnungen</i> im Spiel</string>

@@ -3,6 +3,7 @@
     <string name="side_stories">Nebengeschichten</string>
     <string name="rougarou_scenario">Der Fluch des Rougarou</string>
     <string name="carnevale_scenario">Karneval des Schreckens</string>
+    <string name="labyrinths_scenario">Die Labyrinthe des Irrsinns</string>
 
     <!--Campaign log-->
     <string name="rougarou_alive">Der Rougarou sucht auch weiterhin den Bayou heim.\n\n</string>
@@ -14,6 +15,12 @@
     <string name="carnevale_retreated">Cnidathqua hat sich zurückgezogen, um seine Wunden zu lecken.\n\n</string>
     <string name="carnevale_sacrifice_made"></string>
     <string name="carnevale_abbess_satisfied"></string>
+
+    <string name="group_a">Gruppe A</string>
+    <string name="group_b">Gruppe B</string>
+    <string name="group_c">Gruppe C</string>
+    <string name="act_two_setup">Aufbau für Szene 2</string>
+    <string name="act_three_setup">Aufbau für Szene 3</string>
 
 
     <!--Chaos bag-->
@@ -35,11 +42,20 @@
     <string name="carnevale_thing_one">-4. Falls die Probe misslingt und sich Cnidathqua im Spiel befindet, greift er dich an.</string>
     <string name="carnevale_thing_two">-6. Falls die Probe misslingt und sich Cnidathqua im Spiel befindet, greift er dich an.</string>
 
+    <string name="labyrinths_skull_one">–1. Enthülle einen weiteren Marker.</string>
+    <string name="labyrinths_skull_two">–1. Enthülle einen weiteren Marker. Falls die Probe misslingt, musst du entweder 1 Schaden oder 1 Horror nehmen.</string>
+    <string name="labyrinths_cultist_one">–3. Falls die Probe misslingt, platziere 1 deiner Hinweise auf deinen Ort.</string>
+    <string name="labyrinths_cultist_two">–3. Platziere 1 deiner Hinweise auf deinen Ort.</string>
+    <string name="labyrinths_tablet_one">–4. Falls die Probe misslingt, verlierst du 2 Ressourcen.</string>
+    <string name="labyrinths_tablet_two">–4. Du verlierst 2 Ressourcen.</string>
+    <string name="labyrinths_thing_one">–4. Falls die Probe misslingt, lege eine zufällige Karte von deiner Hand ab.</string>
+    <string name="labyrinths_thing_two">–4. Lege eine zufällige Karte von deiner Hand ab.</string>
+
 
 
     <!--Scenario introductions-->
     <string name="rougarou_introduction"><b>New Orleans im Schreckensgriff!</b>\n
-    \nMinnie Klein, dein Kontakt beim Arkham Advertiser, hat dir bei einer Tasse Kaffee in Velma\'s Diner einen Entwurf
+    \nMinnie Klein, dein Kontakt beim Arkham Advertiser, hat dir bei einer Tasse Kaffee in Velma’s Diner einen Entwurf
         für einen Artikel zukommen lassen. Er wäre gedruckt worden, hätte sich nicht Doyle Jeffries, der Chefredakteur,
         darüber lustig gemacht. „Ich glaube, seine genauen Worte waren ‚Ich drucke doch nicht das Gejammer einiger
         Voodoo-Spinner und behaupte dann, es handle sich um Nachrichten‘“, erklärt sie. Das listige Grinsen in ihrem Gesicht
@@ -67,6 +83,47 @@
         hinter diesem Fall mehr, als auf den ersten Blick ersichtlich ist. Dieser „Zanni“ hat nicht von Darkes Karneval
         gesprochen, sondern vom Karneval in Venedig, der kurz vor dem nächsten Vollmond beginnt…</string>
 
+    <string name="labyrinths_a_introduction">Du wachst an einem fremdartigen Ort auf, kannst dich aber nicht daran erinnern, wie
+        du hierher gekommen bist. Deine Muskeln sind schwach und reagieren nicht. Du kannst nur noch verschwommen sehen. Schon das
+        einfache Heben deiner Füße ist eine enorme Anstrengung. Deine Beine sind wacklig und kaum in der Lage, dein Gewicht zu tragen.\n
+    \nZum ersten Mal seit deinem Erwachen untersuchst du deine Umgebung. Du bist in einem fensterlosen Raum mit Kupferrohren an Wänden
+        und Decke eingesperrt. Von allen Seiten hörst du das leise Zischen austretender Luft. Du bist hier gefangen, ohne Möglichkeit,
+        zu entkommen. Auf dem Boden neben dir liegt ein Zettel. Darauf steht:\n
+    \nGrüße.\n
+    \nIch habe euch für ein Experiment an diesen Ort gebracht. Betrachtet dies als eine Prüfung der menschlichen Willenskraft. Ihr
+        werdet überleben. Oder ihr werdet sterben.\n
+    \nIhr seid nicht allein. Euer Schicksal wird von zwei weiteren Gruppen geteilt. Werdet ihr euer Leben aufs Spiel setzen, um
+        ihnen zu helfen? Oder werdet ihr eure Freiheit auf Kosten ihrer Leben gewinnen?\n
+    \nIch erlaube euch zu entkommen, aber nur wenn ihr euch als willensstark und geistesgegenwärtig erweist. Falls nicht, werden euer
+        Schmerz und euer Leid als Erinnerung daran dienen, dass nicht die Menschen die Erben dieser Erde sind.</string>
+    <string name="labyrinths_b_introduction">Du wachst an einem fremdartigen Ort auf, kannst dich aber nicht daran erinnern, wie
+        du hierher gekommen bist. Deine Muskeln sind schwach und reagieren nicht. Du kannst nur noch verschwommen sehen. Schon das
+        einfache Heben deiner Füße ist eine enorme Anstrengung. Deine Beine sind wacklig und kaum in der Lage, dein Gewicht zu tragen.\n
+    \nZum ersten Mal seit deinem Erwachen untersuchst du deine Umgebung. Du bist in einem großen Tank aus Glas gefangen und das Wasser
+        darin reicht dir bis zu deinen Knöcheln. Durch das trübe Glas siehst du in einem Nebel noch mehr Tanks, die dem deinen gleichen.
+        Du bist hier gefangen, ohne Möglichkeit, zu entkommen. Auf dem Boden neben dem Becken liegt ein Zettel. Darauf steht:\n
+    \nGrüße.\n
+    \nIch habe euch für ein Experiment an diesen Ort gebracht. Betrachtet dies als eine Prüfung der menschlichen Willenskraft. Ihr
+        werdet überleben. Oder ihr werdet sterben.\n
+    \nIhr seid nicht allein. Euer Schicksal wird von zwei weiteren Gruppen geteilt. Werdet ihr euer Leben aufs Spiel setzen, um
+        ihnen zu helfen? Oder werdet ihr eure Freiheit auf Kosten ihrer Leben gewinnen?\n
+    \nIch erlaube euch zu entkommen, aber nur wenn ihr euch als willensstark und geistesgegenwärtig erweist. Falls nicht, werden euer
+        Schmerz und euer Leid als Erinnerung daran dienen, dass nicht die Menschen die Erben dieser Erde sind.</string>
+    <string name="labyrinths_c_introduction">Du wachst an einem fremdartigen Ort auf, kannst dich aber nicht daran erinnern, wie
+        du hierher gekommen bist. Deine Muskeln sind schwach und reagieren nicht. Du kannst nur noch verschwommen sehen. Schon das
+        einfache Heben deiner Füße ist eine enorme Anstrengung. Deine Beine sind wacklig und kaum in der Lage, dein Gewicht zu tragen.\n
+    \nZum ersten Mal seit deinem Erwachen untersuchst du deine Umgebung. Du befindest dich in einem düsteren Raum, der nur von einigen Kerzen
+        beleuchtet wird. Er ist vollgestopft mit alten Fässern, Kisten und morschen Regalen. Du kannst kein Fenster und keine Tür sehen, die
+        aus dem Raum hinausführen könnte. Du bist hier gefangen, ohne Möglichkeit, zu entkommen. Auf dem Boden neben dir liegt ein Zettel.
+        Darauf steht:\n
+    \nGrüße.\n
+    \nIch habe euch für ein Experiment an diesen Ort gebracht. Betrachtet dies als eine Prüfung der menschlichen Willenskraft. Ihr
+        werdet überleben. Oder ihr werdet sterben.\n
+    \nIhr seid nicht allein. Euer Schicksal wird von zwei weiteren Gruppen geteilt. Werdet ihr euer Leben aufs Spiel setzen, um
+        ihnen zu helfen? Oder werdet ihr eure Freiheit auf Kosten ihrer Leben gewinnen?\n
+    \nIch erlaube euch zu entkommen, aber nur wenn ihr euch als willensstark und geistesgegenwärtig erweist. Falls nicht, werden euer
+        Schmerz und euer Leid als Erinnerung daran dienen, dass nicht die Menschen die Erben dieser Erde sind.</string>
+
 
     <!--Scenario setup instructions-->
     <string name="rougarou_sets">Der Bayou.</string>
@@ -89,21 +146,81 @@
         Karnevalsbesucher nach oben an jedem Ort außer dem Markusdom ins Spiel gebracht. Die anderen Kartenseiten
         dürfen nicht angesehen werden.</string>
 
+    <string name="labyrinths_sets">Die Labyrinthe des Irrsinns.</string>
+    <string name="labyrinths_sets_two">Es wird entweder das Begegnungsset <i>Einzelgruppe</i> oder das Begegnungsset <i>Epischer
+        Mehrspielermodus</i> verwendet, je nachdem, ob im Einzelgruppenmodus oder im epischen Mehrspielermodus gespielt wird.
+        Das jeweils andere Begegnungsset wird aus dem Spiel entfernt.</string>
+    <string name="labyrinths_set_aside">Schlüssel der Mysterien, Mysteriöse Spritze, Eixodolon, Eixodolons Haustier, Abbildung der
+        Fäulnis, Abbildung des Hungers, Abbildung des Verfalls, beide Exemplare von Gesichtsloser Entführer und alle übrigen Orte.\n
+        \nFalls im <i>epischen Mehrspielermodus</i> gespielt wird, werden außerdem der Gegner Der Kerkermeister und alle doppelseitigen
+        Handlungskarten beiseitegelegt.\n</string>
+    <string name="labyrinths_a_locations">Ein zufälliger der 3 Kammer der Geheimnisse-Orte wird ins Spiel gebracht. Die anderen
+        Versionen von Kammer der Geheimnisse werden aus dem Spiel entfernt.\n
+        \nJeder Ermittler beginnt das Spiel in der Kammer der Geheimnisse.\n</string>
+    <string name="labyrinths_a_additional">Es werden nur die (Gruppe A)-Versionen der Szenen 1 und 2 verwendet.
+        Die übrigen Versionen dieser Szenen werden aus dem Spiel entfernt.\n
+    \nDer Ermittlungsleiter übernimmt die Kontrolle über Eixodolons Notiz.\n
+    \nDem Chaosbeutel werden 2 Älteres Wesen-Chaosmarker hinzugefügt.\n
+        \nFalls im <i>Einzelgruppenmodus</i> gespielt wird, wird der Schlüssel der Mysterien in der Kammer der Geheimnisse ins
+        Spiel gebracht.</string>
+    <string name="labyrinths_a_locations_two">Die 3 beiseitegelegten Labyrinthischen Flure werden ins Spiel gebracht.\n
+    \nDie Kammer des Verfalls wird ins Spiel gebracht.\n</string>
+    <string name="labyrinths_a_additional_two">Alle beiseitegelegten Gesichtslosen Entführer und der Begegnungs-Ablagestapel
+        werden in das Begegnungsdeck gemischt.\n
+    \nSämtliches Verderben wird aus dem Spiel entfernt und es wird zu Szene 2a &amp; Agena 2a vorgerückt.\n
+        \nFalls im <i>Epischen Mehrspielermodus</i> gespielt wird, wird eine der 3 Gruppen zufällig bestimmt. Diese Gruppe mischt
+        den beiseitegelegten Gegner Der Kerkermeister in das Begegnungsdeck.</string>
+    <string name="labyrinths_locations_three">Das beiseitegelegte Verlassene Lagerhaus wird ins Spiel gebracht.\n
+    \nJeder überlebende Ermittler löst sich von allen Gegnern, die mit ihm in einen Kampf verwickelt sind, und wird in das
+        Verlassene Lagerhaus bewegt.\n</string>
+    <string name="labyrinths_additional_three">Der beiseitegelegte Gegner Eixodolon wird im Verlassenen Lagerhaus ins Spiel gebracht.\n
+    \nSämtliches Verderben wird aus dem Spiel entfernt und es wird zu Szene 3a &amp; Agena 3a vorgerückt.</string>
+
+    <string name="labyrinths_b_locations">Die Kammer des Regens und die Kammer des Leids werden ins Spiel gebracht.\n
+        \nEin zufällig bestimmter Ermittler beginnt das Spiel in der Kammer des Regens. Alle anderen Ermittler beginnen das Spiel
+        in der Kammer des Leids.\n</string>
+    <string name="labyrinths_b_additional">Es werden nur die (Gruppe B)-Versionen der Szenen 1 und 2 verwendet.
+        Die übrigen Versionen dieser Szenen werden aus dem Spiel entfernt.\n
+    \nDer Ermittlungsleiter übernimmt die Kontrolle über Eixodolons Notiz.\n
+    \nDem Chaosbeutel werden 2 Tafel-Chaosmarker hinzugefügt.</string>
+    <string name="labyrinths_b_locations_two">Die 3 beiseitegelegten Labyrinthische Flure werden ins Spiel gebracht.\n
+    \nDie beiseitegelegte Kammer der Fäulnis und die beiseitegelegte Kammer des Gifts werden ins Spiel gebracht.\n</string>
+    <string name="labyrinths_b_additional_two">Alle beiseitegelegten Gesichtslosen Entführer und der Begegnungs-Ablagestapel
+        werden in das Begegnungsdeck gemischt.\n
+    \nSämtliches Verderben wird aus dem Spiel entfernt und es wird zu Szene 2a &amp; Agena 2a vorgerückt.</string>
+
+    <string name="labyrinths_c_locations">Die Kammer des Nacht und die Kammer des Reue werden ins Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel in der Kammer der Nacht.\n</string>
+    <string name="labyrinths_c_additional">Es werden nur die (Gruppe C)-Versionen der Szenen 1 und 2 verwendet.
+        Die übrigen Versionen dieser Szenen werden aus dem Spiel entfernt.\n
+    \nDer Ermittlungsleiter übernimmt die Kontrolle über Eixodolons Notiz.\n
+    \nDem Chaosbeutel werden 2 Kultist-Chaosmarker hinzugefügt.\n
+        \nFalls im <i>Einzelgruppenmodus</i> gespielt wird, wird ein zufälliger der 3 Kammer der Geheimnisse-Orte unter die
+        Szenarioübersichtskarte gelegt, ohne die enthüllte Seite anzusehen. Die übrigen Versionen von Kammer der Geheimnisse
+        werden aus dem Spiel entfernt.</string>
+    <string name="labyrinths_c_locations_two">Die 3 beiseitegelegten Labyrinthische Flure werden ins Spiel gebracht.\n
+    \nDie beiseitegelegte Kammer der Hungers wird ins Spiel gebracht.\n</string>
+    <string name="labyrinths_c_additional_two">Alle beiseitegelegten Gesichtslosen Entführer und der Begegnungs-Ablagestapel
+        werden in das Begegnungsdeck gemischt.\n
+    \nSämtliches Verderben wird aus dem Spiel entfernt und es wird zu Szene 2a &amp; Agena 2a vorgerückt.\n
+    \nDie beiseitegelegte Karte Eixodolons Haustier wird neben der Kammer des Hungers ins Spiel gebracht, befindet sich aber
+        an keinem Ort. Solange sie sich an keinem Ort befindet, gilt sie als „weggesperrt“.</string>
+
 
     <!--Scenario Resolutions-->
     <string name="rougarou_no_resolution">Irgendwie schaffst du es, dich vor Anbruch des Morgens in Sicherheit zu
         bringen und ruhst dich bis zum späten Nachmittag aus. Erst als du am nächsten Tag Lady Esprit aufsuchen willst,
         erkennst du, wer das Opfer der letzten Nacht war. Schweren Herzens und voller Trauer begräbst du ihre Leiche,
-        anstatt dich an die Behörden zu wenden — je weniger Menschen in die Tiefen des Bayou eindringen, desto
+        anstatt dich an die Behörden zu wenden – je weniger Menschen in die Tiefen des Bayou eindringen, desto
         besser.</string>
     <string name="rougarou_resolution_one">Irgendwie schaffst du es, dich vor Anbruch des Morgens in Sicherheit zu
         bringen und ruhst dich bis zum späten Nachmittag aus. Erst als du am nächsten Tag Lady Esprit aufsuchen willst,
         erkennst du, wer das Opfer der letzten Nacht war. Schweren Herzens und voller Trauer begräbst du ihre Leiche,
-        anstatt dich an die Behörden zu wenden — je weniger Menschen in die Tiefen des Bayou eindringen, desto
+        anstatt dich an die Behörden zu wenden – je weniger Menschen in die Tiefen des Bayou eindringen, desto
         besser.</string>
     <string name="rougarou_resolution_two">Die Kreatur heult mitleiderregend auf, während schlammiges Blut aus ihren
         Wunden strömt. Als der Körper schließlich in den Schlamm fällt, verwandelt er sich zurück in seine ursprüngliche
-        Form — in einen jungen, dunkelhäutigen Mann mit schmerzverzerrtem Gesicht. Du bringst die Leiche zurück zu Lady
+        Form – in einen jungen, dunkelhäutigen Mann mit schmerzverzerrtem Gesicht. Du bringst die Leiche zurück zu Lady
         Esprit, die seltsame magische Rituale vollzieht, um die Beschmutzung des Landes durch den Fluch aufzuheben.
         „Zögere nicht zu fragen, falls du je meine Hilfe benötigtst“, sagt die geheimnisvolle Frau zu dir.\n
         \n<b>Entferne die Schwäche Der Fluch des Rougarou aus dem Deck ihres Trägers.</b>\n
@@ -114,7 +231,7 @@
         dunkelhäutigen Mannes annimmt. Er scheint erst jetzt zu verstehen, was er getan hat. Er ist damit einverstanden,
         sich an einen abgelegenen Ort zurückzuziehen, wo er niemandem mehr Schaden zufügen kann. Aber der Fluch lebt
         weiter. Er sieht es in deinen Augen und greift nach deinem Arm. „Überlassen Sie ihm nicht die Kontrolle“, warnt
-        er. „Ich war schwach, aber Sie — ich kann erkennen, dass Sie stark sind. Halten Sie den Fluch unter Kontrolle —
+        er. „Ich war schwach, aber Sie – ich kann erkennen, dass Sie stark sind. Halten Sie den Fluch unter Kontrolle —
         Schaffen Sie das, was ich nicht konnte.“\n
     \n<b>Der Träger der Schwäche Der Fluch des Rougarou muss die Karte Monströse Verwandlung seinem Deck hinzufügen. Diese
         Karte zählt nicht gegen die Deckgröße des Ermittlers.</b></string>
@@ -162,9 +279,72 @@
     \n<b>Jeder Ermittler muss die Sammlung nach einer zufälligen <i>Wahnsinn</i>-, <i>Verletzung</i>- oder
             <i>Monster</i>-Grundschwäche durchsuchen und sie für den Rest der Kampagne seinem Deck hinzufügen.</b></string>
     <string name="carnevale_abbess">Die Äbtissin ist zufrieden</string>
-    <string name="carnevale_reward_abbess">„Grazie mille — vielen Dank für Ihre Hilfe“, sagt Allegria, als du zum Dom
+    <string name="carnevale_reward_abbess">„Grazie mille – vielen Dank für Ihre Hilfe“, sagt Allegria, als du zum Dom
         zurückkehrst. „Dank Ihnen gab es nur wenige Todesfälle. Ich zittere beim Gedanken daran, was hätte passieren können,
         wenn Sie nicht gekommen wären. Sollten Sie jemals Hilfe benötigen, zögern Sie nicht, sich an mich zu wenden.“\n
     \n<b>Ein beliebiger Ermittler darf sich entscheiden, die Karte Äbtissin Allegria Di Biase seinem Deck hinzuzufügen. Diese
             Karte zählt nicht gegen die Deckgröße des Ermittlers.</b></string>
+
+    <string name="labyrinths_resolution_one">In den falschen Händen ist dein Leid eine mächtige Waffe. Dein Blut nährt das
+        arkane Symbol, das in den Zementboden im Herzen des Labyrinths eingraviert ist. Für das grausame Genie, das für deine
+        Gefangenschaft hier verantwortlich ist, ist dies ein Moment des Triumphs und der Genugtuung. Die gesamte Welt wird
+        diesen Schmerz fühlen. Diese Furcht. Diese Verzweiflung.\n
+    \n<b>Die Ermittler haben das Spiel verloren.</b></string>
+    <string name="labyrinths_resolution_two">Das Genie sinkt auf die Knie und seine Maske bekommt Risse. Blut tropft aus seinen
+        offenen Wunden auf den Zementboden. „Glaubst du wirklich, dass du entkommen kannst?“, keucht es. Seine verzerrte Stimme
+        klingt schmerzerfüllt, aber auch triumphierend. „Denkst du wirklich… ich würde dir jemals gestatten diesen Ort zu
+        verlassen?“ Sein Körper fällt zu Boden. Du siehst eine Fluchtmöglichkeit und eilst zu den eisernen Türen, die dich im
+        Lagerhaus gefangen halten. Deine verzweifelten Anstrengungen, das Vorhängeschloss zu knacken und die schweren Türen zu
+        öffnen, sind letztendlich von Erfolg gekrönt.\n
+    \nEin plötzlicher Hauch kalter Abendluft weht über dich hinweg. Du bist erstaunt, die hölzernen Docks auf beiden Seiten des
+        Miskatonic zu sehen. Einige Enten quaken überrascht und schwimmen vom nächstgelegenen Dock weg. Das Wasser schwappt über
+        das Ufer. Du hörst die Stimmen von Dockarbeitern, die ihrer Arbeit nachgehen. Die untergehende Sonne zu deiner Linken sagt
+        dir, dass sie bald Feierabend haben müssen. Nach wenigen Schritten brichst du zusammen. Du bist zu erschöpft und deine
+        Verletzungen sind zu schwer. „Wer ist da?“, hörst du einen Dockarbeiter rufen. „Hier ist jemand verletzt – schnell, bringt
+        ihn ins St. Mary’s!“ Als ein muskulöser Mann dich hochhebt, wirst du ohnmächtig.\n
+    \nDu wachst an einem fremdartigen Ort auf kannst dich aber nicht daran erinnern, wie du hierher gekommen bist. Deine Muskeln sind
+        schwach und reagieren nicht. Du kannst nur noch verschwommen sehen. Schon das einfache Heben deiner Füße ist eine enorme
+        Anstrengung. Deine Beine sind wacklig und kaum in der Lage, dein Gewicht zu tragen. Auf einem Zettel auf dem Boden neben dir
+        steht:\n
+    \nGrüße. Ich habe euch für ein Experiment an diesen Ort gebracht. Betrachtet dies als eine Prüfung der menschlichen Willenskraft.
+        Ihr werdet überleben. Oder ihr werdet sterben…\n
+    \n<b>Die Ermittler haben überlebt, aber in einer anderen Zeitlinie befindet sich ein neuer Gast im Labyrinth.</b></string>
+    <string name="labyrinths_resolution_three">Das Genie sinkt auf die Knie und seine Maske bekommt Risse. Blut tropft aus seinen
+        offenen Wunden auf den Zementboden. „Glaubst du wirklich, dass du mich töten kannst?“, keucht es. Seine verzerrte Stimme
+        ist schmerzerfüllt, aber auch voller Stolz. „Ich bin an jedem Ort und in jeder Zeit. Dies ist nur eines der Gefäße. Es gibt
+        weitere. Und selbst, wenn einer von ihnen sich bewährt, werde ich doch nie wirklich sterben.“ Sein Körper fällt starr zu Boden.
+        Du siehst eine Fluchtmöglichkeit und eilst zu den eisernen Türen, die dich im Lagerhaus gefangen halten. Deine verzweifelten
+        Anstrengungen, das Vorhängeschloss zu knacken und die schweren Türen zu öffnen, sind letztendlich von Erfolg gekrönt.\n
+    \nEin plötzlicher Hauch kalter Abendluft weht über dich hinweg. Du bist erstaunt, die hölzernen Docks auf beiden Seiten des
+        Miskatonic zu sehen. Einige Enten quaken überrascht und schwimmen vom nächstgelegenen Dock weg. Das Wasser schwappt über das
+        Ufer. Dann hörst du die Stimmen von Dockarbeitern, die ihrer Arbeit nachgehen. Die untergehende Sonne zu deiner Linken sagt dir,
+        dass sie bald Feierabend haben müssen. Nach wenigen Schritten brichst du zusammen. Du bist zu erschöpft und deine Verletzungen
+        sind zu schwer. „Wer ist da?", hörst du einen Dockarbeiter rufen. „Hier ist jemand verletzt – schnell, bringt ihn ins St.
+        Mary’s!“ Ein muskulöser Mann hebt dich hoch und du wirst ins Krankenhaus gefahren.\n
+    \nIrgendwie hast du es aus dem höllischen Labyrinth deines Entführers geschafft, aber seine letzten Worte suchen deinen Geist heim.
+        Was meinte er mit „andere“? Du erinnerst dich an deine merkwürdigen Visionen in seinem Irrgarten und ein fürchterlicher Gedanke
+        beginnt sich in deinem Geist festzusetzen. Der Entführer hat andere Gruppen erwähnt, aber du bast sie nie gefunden und weißt auch
+        nicht, ob auch sie lebend entkommen sind. Aufgeregt berichtest du der Polizei, dass es noch weitere Opfer gibt, und bestehst
+        darauf, dass sie die Docks durchsuchen. Aber dort gibt es keine Spur von dem Lagerhaus, aus dem du entkommen bist, oder von dem
+        Genie, das dich dort eingesperrt hat…\n
+    \n<b>Die Ermittler haben überlebt, aber Eixodolon ist ebenfalls noch am Leben.</b></string>
+    <string name="labyrinths_resolution_four">Das Genie sinkt auf die Knie und seine Maske bekommt Risse. Blut tropft aus seinen offenen
+        Wunden auf den Zementboden. Die Konturen seines Körpers verzerren sich und verschwimmen, als ob sich das Gewebe von Raum und Zeit
+        verschieben würde. „Das Ritual ist also schiefgegangen!“ Sein bitteres Gelächter wird zu einem Schmerzensschrei. „Vielleicht hat
+        die Menschheit doch noch eine Chance! Dieses Leid, diese Qual! Menschen sollten eine solche Macht nicht haben. Sie steht den
+        Jenseitigen zu!“ Scharf saugt er Luft ein und atmet pfeifend aus, dann bricht er zusammen. „Folgt nicht dem Weg, dem ich gefolgt
+        bin“, fleht er, „er führt nur zu… Verzweiflung.“ Dann setzt sein Atem aus.\n
+    \nIrgendwie hast du es geschafft, deinen Entführer zu besiegen, aber es bleiben viele Fragen offen. Du entscheidest dich dafür, das
+        Labyrinth weiter zu erkunden und findest schließlich einen Weg, die Eisentüren aufzubrechen, die dich in einen anderen Bereich der
+        Anlage führen. Zu deiner Überraschung findest du dort keine weiteren Gefangenen im Labyrinth – nur die Spuren ihrer Kämpfe und
+        Hinweise auf ihr Überleben.\n
+    \nMit einem einzigen festen Schlag kannst du das Vorhängeschloss der Eisentüren des Lagerhauses knacken. Das Geräusch von Metall auf
+        Metall schwillt an und klingt dreimal so laut in deinen Ohren. Du glaubst nicht, dass dein Entführer vorgesehen hatte, dass du
+        diesen Ort lebend verlässt. Aber irgendwie hast du es geschafft, allen Widrigkeiten zu trotzen. Nun fragst du dich, ob die anderen
+        in diesem Moment ebenfalls diese schweren Türen öffnen.\n
+    \nEin plötzlicher Hauch kalter Abendluft weht über dich hinweg. Du bist erstaunt, die hölzernen Docks auf beiden Seiten des Miskatonic
+        zu sehen. Einige Enten quaken überrascht und schwimmen vom nächstgelegenen Dock weg. Das Wasser schwappt über das Ufer. Dann hörst
+        du die Stimmen von Dockarbeitern, die ihrer Arbeit nachgehen. Die untergehende Sonne zu deiner Linken sagt dir, dass sie bald
+        Feierabend haben müssen. Du siehst zu, wie die Sonne hinter dem Horizont verschwindet. Und die anderen tun dasselbe.\n
+    \n<b>Die Ermittler haben das Spiel gewonnen!</b></string>
 </resources>
