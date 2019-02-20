@@ -155,9 +155,9 @@
     <string name="echoes_thing_two">-4. Falls sich ein Gegner an deinem Ort befindet, nimm 1 Horror.</string>
 
     <string name="unspeakable_skull_one">-1. Falls die Probe misslingt, bestimme zufällig einen der beiseitegelegten
-        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn anzusehen.</string>
+        <b><i>Monster</i></b>-Gegner und platziere ihn unter das Szenendeck, ohne ihn anzusehen.</string>
     <string name="unspeakable_skull_two">Enthülle einen weiteren Marker. Falls die Probe misslingt, bestimme zufällig
-        einen der beiseitegelegten <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck, ohne ihn
+        einen der beiseitegelegten <b><i>Monster</i></b>-Gegner und platziere ihn unter das Szenendeck, ohne ihn
         anzusehen. (Nur einmal pro Probe.)</string>
     <string name="unspeakable_cultist_one">-X. X ist die Anzahl deines Horrors.</string>
     <string name="unspeakable_cultist_two">-X. X ist die Anzahl deines Horrors. Falls die Probe misslingt, nimm 1 Horror.</string>
@@ -165,9 +165,9 @@
     <string name="unspeakable_tablet_two">-X. X ist der Grund-Schleierwert deines Ortes. Falls die Probe misslingt,
         nimm 1 Horror.</string>
     <string name="unspeakable_thing_one">0. Bestimme entweder zufällig einen der beiseitegelegten
-        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck ohne ihn anzusehen, oder diese Probe misslingt automatisch.</string>
+        <b><i>Monster</i></b>-Gegner und platziere ihn unter das Szenendeck ohne ihn anzusehen, oder diese Probe misslingt automatisch.</string>
     <string name="unspeakable_thing_two">0. Bestimme entweder zufällig einen der beiseitegelegten
-        <b><i>Monster</i></b>-Gegner und platziere ihn under das Szenendeck ohne ihn anzusehen, oder diese Probe misslingt automatisch.</string>
+        <b><i>Monster</i></b>-Gegner und platziere ihn unter das Szenendeck ohne ihn anzusehen, oder diese Probe misslingt automatisch.</string>
 
     <string name="phantom_skull_one">–X. X ist die Anzahl an Verderbensmarkern im Spiel (maximal 5).</string>
     <string name="phantom_skull_two">–X. X ist die Anzahl an Verderbensmarkern im Spiel.</string>
@@ -227,7 +227,7 @@
         Stadtgespräch. Alles wirkte so harmlos… und doch hast du Beweise dafür, dass hier etwas Böses vor sich geht.
         Es fing mit dem Verschwinden eines der Bühnenarbeiter am Theater an – ein gerade mal siebzehn Jahre alter Junge,
         der eines Abends nicht zur Probe erschien und seitdem nie wieder gesehen wurde. Danach, etwa zwei Wochen vor der
-        Aufführung, wurde die Leiche eines Musikers mit einer Pistole im Mund gefunden. Aber am beängstigsten war wohl
+        Aufführung, wurde die Leiche eines Musikers mit einer Pistole im Mund gefunden. Aber am beängstigendsten war wohl
         der verrückte Mann, den die Polizei am Independence Square aufgegriffen hat, wo er gegen „die Rückkehr des
         Königs“ wetterte. Er wurde ins Sanatorium von Arkham gebracht. Du warst sehr überrascht, als du feststellen
         musstest, dass er mit seinen Wahnvorstellungen nicht alleine war.\n
@@ -601,7 +601,7 @@
         <i>Der König in Gelb</i> überall auf der Welt als Geldgeber fungiert hat, hast du erfahren, dass Nigel Engram
         ein exzentrischer Mann ist, dessen Leidenschaft beinahe an Manie grenzt. Man sagt, dass er, seit er <i>Der König
         in Gelb</i> entdeckt hat, nichts anderes mehr inszeniert hat. Jordan hat Mr. Engram zum ersten Mal in einem Café
-        in Montparnasse getroffen, dem „L\'agneau Perdu“. Dorthin wird dich deine Reise zuerst führen, weil du hoffst
+        in Montparnasse getroffen, dem „L’agneau Perdu“. Dorthin wird dich deine Reise zuerst führen, weil du hoffst
         Mr. Engram dort zu finden…</string>
 
     <string name="pallid_introduction_one_one">Du fährst aus dem Schlaf hoch, die Luft ist schmutzig und abgestanden und
@@ -668,14 +668,14 @@
         einsame Welt des Schmerzes. In der Ferne siehst du die fremdartigen Türme einer verzerrten Stadt in die Wolken
         reichen. Hinter dir spiegeln sich in der dunkeln Oberfläche des Sees, aus dem du gerade aufgetaucht bist, die
         Zwillingssonnen. Als du zurück in die schlammigen Tiefen blickst, entdeckst du keine Spur von der Kapelle, von
-        der aus du gesprungen bist, oder von Mont Saint-Michel, nicht einmal von der Erde. Dies ist Carcosa — das Reich
+        der aus du gesprungen bist, oder von Mont Saint-Michel, nicht einmal von der Erde. Dies ist Carcosa – das Reich
         des Wahnsinns in den Sternen, über das Hastur uneingeschränkt gebietet.</string>
     <string name="dim_introduction_above">Du landest auf schwarzem Obsidian, der sich an einer Turmspitze entlang
         windet. Du hustest Blut und ein stechender Schmerz fährt durch deine Eingeweide, als ob du dir eine Rippe
         gebrochen hättest. Vor dir liegt eine verzerrte, fremdartige Stadt. Ihre sich windenden Straßen und die von
         jeglicher Norm abweichende Bauweise zeigen nicht das kleinste Bisschen Ordnung oder Struktur. In der Ferne
         spiegelt ein schlammiger See das Gleißen der Zwillingssonnen wider. Als du aufsiehst, bemerkst du hinter den
-        Wolken die auf den Kopf gestellte Abtei von Mont Saint-Michel. Dies ist Carcosa — das Reich des Wahnsinns in
+        Wolken die auf den Kopf gestellte Abtei von Mont Saint-Michel. Dies ist Carcosa – das Reich des Wahnsinns in
         den Sternen, über das Hastur uneingeschränkt gebietet.</string>
 
     <string name="carcosa_epilogue_one"><b>Nur Ermittler, die am Ende der Kampagne besessen waren, dürfen den folgenden
@@ -810,17 +810,17 @@
 
     <string name="phantom_sets">Ein Phantom der Wahrheit, Böse Vorzeichen, Byakhee, Der Fremde, Anhänger von Hastur
         und Die Mitternachtsmasken.\n
-    \nAus dem Begegnungsset <c>Die Mitternachtsmasken</c> werden nur die 5 Verratskarten herausgesucht (2x Falsche
+    \nAus dem Begegnungsset <i>Die Mitternachtsmasken</i> werden nur die 5 Verratskarten herausgesucht (2x Falsche
         Fährte und 3x Hetzdender Schatten).</string>
     <string name="phantom_locations_one">Je ein zufällig bestimmtes Exemplar der Orte Montmartre, Opéra Garnier und
         Le Marais werden ins Spiel gebracht. Die anderen Exemplare dieser Orte werden aus dem Spiel entfernt.\n
     \nDie übrigen Orte (Montparnasse, Gare d\’Orsay, Grand Guignol, Canal Saint-Martin, Friedhof Père Lachaise,
-        Notre-Dame und Gardens of Luxembourg) werden ins Spiel gebracht.\n
-    \nJeder Ermittler beginnt das Spiel auf dem Gare d\'Orsay.\n</string>
+        Notre-Dame und Jardin du Luxembourg) werden ins Spiel gebracht.\n
+    \nJeder Ermittler beginnt das Spiel auf dem Gare d’Orsay.\n</string>
     <string name="phantom_locations_two">Je ein zufällig bestimmtes Exemplar der Orte Montmartre, Opéra Garnier und
         Le Marais werden ins Spiel gebracht. Die anderen Exemplare dieser Orte werden aus dem Spiel entfernt.\n
     \nDie übrigen Orte (Montparnasse, Gare d\’Orsay, Grand Guignol, Canal Saint-Martin, Friedhof Père Lachaise,
-        Notre-Dame und Gardens of Luxembourg) werden ins Spiel gebracht.\n
+        Notre-Dame und Jardin du Luxembourg) werden ins Spiel gebracht.\n
     \nJeder Ermittler beginnt das Spiel in Montparnasse.\n</string>
     <string name="phantom_set_aside">Der Organist und alle verbliebenen Exemplare der Schwäche Verlorene
         Seele.\n</string>
@@ -1139,7 +1139,7 @@
         kauert ein Mann, der vor Kälte zittert – oder vielleicht wegen der Hoffnungslosigkeit seiner Situation oder
         beidem: „Keine Maske“, murmelt er immer wieder, „keine Maske, keine Maske…“ Zögernd gehst du ein paar
         Schritte auf ihn zu, aber noch bevor du ihn erreichst, öffnet sich ein Metallriegel an der Tür seiner Zelle und
-        du hörst, wie ein Pfleger nach ihm ruft. „Daniel, es ist Zeit“, sagter „Daniel, wach auf Wach auf Daniel.“ Dann
+        du hörst, wie ein Pfleger nach ihm ruft. „Daniel, es ist Zeit“, sagt er. „Daniel, wach auf Wach auf Daniel.“ Dann
         erwachst du.\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden je 1
             Kultist-, Tafel- und Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
@@ -1187,7 +1187,7 @@
         kauert ein Mann, der vor Kälte zittert – oder vielleicht wegen der Hoffnungslosigkeit seiner Situation oder
         beidem: „Keine Maske“, murmelt er immer wieder, „keine Maske, keine Maske…“ Zögernd gehst du ein paar
         Schritte auf ihn zu, aber noch bevor du ihn erreichst, öffnet sich ein Metallriegel an der Tür seiner Zelle und
-        du hörst, wie ein Pfleger nach ihm ruft. „Daniel, es ist Zeit“, sagter „Daniel, wach auf Wach auf Daniel.“ Dann
+        du hörst, wie ein Pfleger nach ihm ruft. „Daniel, es ist Zeit“, sagt er. „Daniel, wach auf Wach auf Daniel.“ Dann
         erwachst du.\n
     \n<b>Alle Kultist-, Tafel- und Älteres Wesen-Chaosmarker werden aus dem Chaosbeutel entfernt. Dann werden je 1
             Kultist-, Tafel- und Älteres Wesen-Chaosmarker dem Chaosbeutel hinzugefügt.</b></string>
@@ -1433,14 +1433,14 @@
         Türme von Carcosa vor dem zersprungenen Mond.\n
     \n<b>Dir ist ein fürchterliches Schicksal widerfahren, nicht wahr?</b>\n
     \n<b>Alle Ermittler werden wahnsinnig.</b>\n
-    \n<b>Die Ermittler haben die Kamagne verloren.</b></string>
+    \n<b>Die Ermittler haben die Kampagne verloren.</b></string>
 
     <string name="dim_resolution_one">Du stehst auf der Empore des Turms der Abtei von Mont Saint-Michel und ein
         nasskalter Wind fährt durch deine Haare. Die Bleiche Maske ruht in deiner Hand. Ihr fehlt jegliche Wärme. Du
-        kannst dich kaum dazu überwinden, sie anzusehen. Nun kannst du dich an alles erinnern — wie alles anfing, wie
+        kannst dich kaum dazu überwinden, sie anzusehen. Nun kannst du dich an alles erinnern – wie alles anfing, wie
         es endete und alles, was dazwischen geschehen ist. Du musst nur noch eine Sache erledigen. Du schleuderst die
         Maske mit aller Kraft in die Luft und siehst zu, wie sie in die sturmumtosten Wellen unter dir fällt.\n
-    \n<b>Jeder Ermittler konnte sich gegen den gefährlichsten aller Feinde durchsetzen — gegen sich selbst.</b>\n
+    \n<b>Jeder Ermittler konnte sich gegen den gefährlichsten aller Feinde durchsetzen – gegen sich selbst.</b>\n
     \n<b>Die Ermittler haben die Kampagne gewonnen!</b></string>
     <string name="dim_resolution_two">Donnernder Applaus lässt dich aus dem Schlaf hochfahren. Das Publikum im Theater
         springt auf und jubelt scheinbar endlos. Einige Mäzene in der ersten Reihe werfen den Schauspielern, die sich
@@ -1477,7 +1477,7 @@
         Türme von Carcosa vor dem zersprungenen Mond.\n
     \n<b>Dir ist ein fürchterliches Schicksal widerfahren, nicht wahr?</b>\n
     \n<b>Alle Ermittler werden wahnsinnig.</b>\n
-    \n<b>Die Ermittler haben die Kamagne verloren.</b></string>
+    \n<b>Die Ermittler haben die Kampagne verloren.</b></string>
     <string name="dim_resolution_five">Die Welt da draußen wird nie erfahren, wie du versucht hast, sie zu retten. Sie
         behandeln dich mit Mitleid, mit Zorn und Verachtung, aber du kennst die Wahrheit. Sie haben sich ihrem
         fürchterlichen Schicksal ergeben, aber du versuchst weiterhin jeden Tag, ihnen die Botschaft zu überbringen. Du
@@ -1488,5 +1488,5 @@
         nimmt sich deine Warnung zu Herzen.\n
     \n<b>Du hast doch nicht geglaubt entkommen zu können, oder?</b>\n
     \n<b>Alle Ermittler werden wahnsinnig.</b>\n
-    \n<b>Die Ermittler haben die Kamagne verloren.</b></string>
+    \n<b>Die Ermittler haben die Kampagne verloren.</b></string>
 </resources>
