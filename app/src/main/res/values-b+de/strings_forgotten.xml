@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="forgotten_campaign">Das vergessene Zeitalter</string>
+    <string name="forgotten_campaign">Das vergessene Zeitalter (Beta)</string>
     <string name="forgotten_scenario_one">Szenario 1: Die ungezähmte Wildnis</string>
     <string name="forgotten_scenario_two">Szenario 2: Das Verderben von Eztli</string>
     <string name="forgotten_scenario_three">Szenario 3: Fäden des Schicksals</string>
@@ -17,6 +17,7 @@
     <string name="forgotten_interlude_five">Zwischenspiel 5: Die Dunkelheit</string>
     <string name="forgotten_resupply">Erneuerung der Ausrüstung</string>
     <string name="forgotten_epilogue">Epilog</string>
+    <string name="forgotten_secret_scenario">Geheimes Szenario 9: Die Zeit zurückdrehen</string>
 
 
     <!--Miscellaneous-->
@@ -27,7 +28,7 @@
     <string name="untamed_ichtaca_three">Ichtaca führt</string>
     <string name="harbinger">Der Vorbote von Valusia ist noch im Spiel oder beiseitegelegt</string>
     <string name="harbinger_damage">Schaden auf dem Vorboten von Valusia: </string>
-    <string name="eztli_resolution_three_option_one">„Wir können jetzt nicht aufhören — zurück in den Tempel!“</string>
+    <string name="eztli_resolution_three_option_one">„Wir können jetzt nicht aufhören – zurück in den Tempel!“</string>
     <string name="eztli_resolution_three_option_two">„Das ist zu gefährlich. Dieser Ort muss zerstört werden.“</string>
     <string name="act_ones_completed">Abgeschlossene Szene 1-Karten: </string>
     <string name="act_3b_completed">Szene 3b abgeschlossen</string>
@@ -39,6 +40,9 @@
     <string name="remove_mental">Seelisches Trauma entfernen (5EP)\n(Aktuelle Traumata:</string>
     <string name="tenochtitlan_locations"><b><i>Tenochtitlán</i></b>-Orte im Siegpunktestapel:</string>
     <string name="act_two_finished">Bei Spielende war Szene 2 aktiv</string>
+    <string name="none">Keine</string>
+    <string name="heart_pillar_tokens">Säulenmarker auf dem Maul von K’n-yan: </string>
+    <string name="vengeance_enemies">Karten mit Vergeltung im Siegpunktestapel</string>
 
 
     <!--Supplies-->
@@ -48,7 +52,7 @@
     <string name="not_enough_points">Du hast dafür nicht genügend Ausrüstungspunkte übrig.</string>
     <string name="provisions_description">Proviant (1 Pkt):
         <i>Nahrung und Wasser für eine Person. Unverzichtbar auf jeder Reise.</i></string>
-    <string name="medicine_description">Medizin (2 Pkte): <i>Um Krankheiten, Infektionen oder Gif zu bekämpfen.</i></string>
+    <string name="medicine_description">Medizin (2 Pkte): <i>Um Krankheiten, Infektionen oder Gift zu bekämpfen.</i></string>
     <string name="rope_description">Seil (3 Pkte):
         <i> Einige Rollen eines stabilen Seils. Unverzichtbar, falls man Klettern oder Höhlen erkunden muss.</i></string>
     <string name="blanket_description">Decke (2 Pkte): <i>Um sich in der Nacht warm zu halten.</i></string>
@@ -118,6 +122,8 @@
     <string name="paths_known_1">Du kennst </string>
     <string name="paths_known_2"> Wege.\n\n</string>
     <string name="ichtaca_confidence">Ichtaca vertraut dir.\n\n</string>
+    <string name="ichtaca_faith">Ichtacas Vertrauen wurde wiederhergestellt.\n\n</string>
+    <string name="mapped_forward">Die Ermittler haben mithilfe der Landkarte den Weg gefunden.\n\n</string>
 
     <!--Edit log-->
     <string name="yigs_fury_heading">Yigs Zorn</string>
@@ -131,11 +137,11 @@
     <string name="listened_ichtaca">Du hast dir Ichtacas Geschichte angehört.</string>
     <string name="ichtaca_left">Ichtaca ist ohne dich gegangen.</string>
     <string name="missing_relic_heading">Das Verschwinden des Relikts</string>
-    <string name="missing_alejandro_heading">Alejandros Vreschwinden</string>
+    <string name="missing_alejandro_heading">Alejandros Verschwinden</string>
     <string name="missing_ichtaca_heading">Ichtacas Verschwinden</string>
     <string name="paths_heading">Wege, die du kennst</string>
     <string name="confidence_heading">Ichtacas Vertrauen</string>
-    <string name="no_confidence">Ichtaca vertraut dir</string>
+    <string name="no_confidence">Ichtaca vertraut dir nicht.</string>
 
     <!--Chaos bag-->
     <string name="untamed_skull_one">–X. X ist die Anzahl der Vergeltungspunkte im Siegpunktestapel.</string>
@@ -151,7 +157,7 @@
     <string name="eztli_skull_one">–1 (–3 stattdessen, falls sich Verderben auf deinem Ort befindet).</string>
     <string name="eztli_skull_two">–2 (–4 stattdessen, falls sich Verderben auf deinem Ort befindet).</string>
     <string name="eztli_cultist_tablet_one">–X. X ist die Anzahl der Orte mit Verderbensmarkern darauf.</string>
-    <string name="eztli_cultist_tablet_two">–X. X ist die Gesamtmenge an Verderbensmarkern auf Orten im Spiel.</string>
+    <string name="eztli_cultist_tablet_two">–X. X ist die Gesamtmenge an Verderbensmarkern auf allen Orten im Spiel.</string>
     <string name="eztli_thing_one">Enthülle einen weiteren Chaosmarker. Falls die Probe misslingt, platziere 1 Verderbensmarker auf deinen Ort.</string>
     <string name="eztli_thing_two">Enthülle einen weiteren Chaosmarker und platziere 1 Verderbensmarker auf deinen Ort.</string>
 
@@ -183,20 +189,20 @@
     <string name="forgotten_introduction"><b>Prolog</b>\n
     \nDienstag, 2. Juni 1925\n
     \nEs scheint, als würden wir für den Rest des Sommers keine Ruhe finden.\n
-    \nHeute habe ich mich mit Harlan Earnstone getrof en. Er ist Geschichtstheoretiker an der Miskatonic-Universität und
+    \nHeute habe ich mich mit Harlan Earnstone getroffen. Er ist Geschichtstheoretiker an der Miskatonic-Universität und
         ein alter Freund von mir. Er sagte, er hätte ein Jobangebot für mich, aber ehrlich gesagt wusste ich nicht genau, was mich erwarten sollte.\n
     \nHarlan hat mir einen seiner Mitarbeiter vorgestellt: Alejandro Vela, einen bedeutenden Historiker. Er stammt von jenseits
         der Südgrenze. Mr. Vela hat sein Studium an einer renommierten Universität in Mexiko-Stadt abgeschlossen und viele
-        Jahre der Erfoschung des Aztekenreiches gewidmet. Er behauptet, er habe Beweise für die Existenz eines bisher unbekannten
+        Jahre der Erforschung des Aztekenreiches gewidmet. Er behauptet, er habe Beweise für die Existenz eines bisher unbekannten
         Stadtstaates der Azteken namens Eztli gefunden. Seine merkwürdigen Funde unterscheiden sich von allen bisherigen und
         wurden von der Universität nicht anerkannt, was ihn unter seinen Kollegen zu einem Außenseiter gemacht hat.\n
     \nAlejandro ist nach Arkham gekommen, um Sponsoren für eine Expedition in den Regenwald Südmexikos zu finden, in dem er
         die bislang unentdeckten Ruinen des Altepetl der Eztli vermutet. Seine Beschreibung der Entstehung dieses Stadtstaates
-        widerspricht dem modernen Verständnis der mesoamerikanischen Geschichte. Trotzdem — oder, wie ich meinen alten Freund kenne,
-        gerade deswegen — ist Harlan von Alejandros Entdeckungen fasziniert. Die Miskatonic-Universität hat zugestimmt, die Expedition zu
+        widerspricht dem modernen Verständnis der mesoamerikanischen Geschichte. Trotzdem – oder, wie ich meinen alten Freund kenne,
+        gerade deswegen – ist Harlan von Alejandros Entdeckungen fasziniert. Die Miskatonic-Universität hat zugestimmt, die Expedition zu
         finanzieren (wenn auch nicht besonders großzügig), und Harlan möchte, dass ich an ihr teilnehme.\n
     \nMeiner Meinung nach besteht eine große Wahrscheinlichkeit, dass wir nach etwas suchen, das gar nicht existiert. Aber wenn auch
-        nur eine geringe Chance besteht, dass das Volk der Eztli existiert hat, wäre das für die Geschichtswissenschaf von ungemeiner Bedeutung.
+        nur eine geringe Chance besteht, dass das Volk der Eztli existiert hat, wäre das für die Geschichtswissenschaft von ungemeiner Bedeutung.
         Wir haben lange hin und her diskutiert, aber schlussendlich haben wir Alejandros Angebot akzeptiert. Die Vorbereitungen laufen und
         wir sollen Ende des Monats aufbrechen. Mit etwas Glück werde ich in diesem Tagebuch noch von vielen interessanten Entdeckungen
         berichten. Falls nicht, kann es immer noch als Keil dienen, um Harlans schiefen Schreibtisch zu begradigen.</string>
@@ -269,14 +275,14 @@
         an einem sicheren Ort aufzubewahren, wo Harlan und ich es abseits der Öf entlichkeit studieren können. Ich muss heute Nacht eine Entscheidung treffen,
         morgen wird es zu spät dafür sein.</string>
     <string name="expeditions_end_two">Sonntag, 19. Juli 1925\n
-    \nIch habe mich dafür entschieden, dass Relikt Alejandro anzuvertrauen. Immerhin basierte die gesamte Expedition auf seiner Forschung — er sollte
+    \nIch habe mich dafür entschieden, dass Relikt Alejandro anzuvertrauen. Immerhin basierte die gesamte Expedition auf seiner Forschung – er sollte
         derjenige sein, der es studiert. Falls irgendjemand die Geheimnisse dieses Relikts entschlüsseln kann, dann er.\n
     \nDas Relikt wird das Herzstück einer neuen Ausstellung des Museums. Alejandro hat bereits einige Berichte über unsere Entdeckungen verfasst, aber es liegt
         noch viel Arbeit vor ihm. Immer noch umgeben viele Geheimnisse unsere Expedition. Wie konnte das Volk von Eztli so lange unentdeckt bleiben? Warum
         schienen sie den Dschungel zu bewachen? Und vor allem, vor wem? Wer hat die Tempelruinen, die wir dort erkundet haben, wirklich erbaut? Ich zweifle nicht
         daran, dass Alejandro die Antworten auf diese Geheimnisse finden wird, wenn er genug Zeit dafür hat.\n
     \nMeine Aufgabe in diesem Unterfangen ist erledigt. Aber ich kann mich noch nicht wirklich entspannen. Meine
-        Gedanken kreisen ohne Unterlass um den Dschungel — schlangenartige Gestalten in den Schatten, Obsidianpfeile,
+        Gedanken kreisen ohne Unterlass um den Dschungel – schlangenartige Gestalten in den Schatten, Obsidianpfeile,
         die in Skeletten stecken, verzerrte Stimmen, die in den Höhlen unter der Erde kreischen. Wenn ich durch die
         Straßen laufe wenden sich meine Schritte unwillkürlich dem Museum zu, als ob ich davon besessen wäre, das Relikt
         noch einmal zu sehen. Irgendetwas spukt störend in meinem Hinterkopf herum, als hätten wir etwas Wichtiges
@@ -305,7 +311,7 @@
         Ausstellung unserer anderen, weniger gefährlich anmutenden Funde. Ich dagegen hoffe, Antworten auf andere Geheimnisse zu
         finden: Wie konnte das Volk von Eztli so lange unentdeckt bleiben? Warum schienen sie den Dschungel zu bewachen? Und vor
         allem, vor wem? Wer hat die Tempelruinen, die wir dort erkundet haben, wirklich erbaut?\n
-    \nMeine Gedanken kreisen ohne Unterlass um den Dschungel — schlangenartige Gestalten in den Schatten, Obsidianpfeile, die in
+    \nMeine Gedanken kreisen ohne Unterlass um den Dschungel – schlangenartige Gestalten in den Schatten, Obsidianpfeile, die in
         Skeletten stecken, verzerrte Stimmen, die in den Höhlen unter der Erde kreischen. Jedes Mal, wenn ich Harlans Büro verlasse,
         ertappe ich mich dabei, wie ich sofort zurückkehren möchte, um das Relikt noch einmal zu betrachten. Irgendetwas spukt störend
         in meinem Hinterkopf herum, als hätten wir etwas Wichtiges vergessen. Was muss ich tun, um mich davon zu befreien\n
@@ -532,7 +538,7 @@
         Ort, wo aufdringliche Gelehrte seine Macht nicht missbrauchen können“, antwortet sie mit kalter Stimme und unterbindet
         damit jede Diskussion.\n
     \nDank Alejandros Verbindungen ist die Überquerung der mexikanischen Grenze weniger anstrengend, als du befürchtet hattest.
-        Ihr werdet durch die Zollkontrollen gewinkt, niemand wirf t euch auch nur einen fragenden Blick zu und bald schon seid
+        Ihr werdet durch die Zollkontrollen gewinkt, niemand wirft euch auch nur einen fragenden Blick zu und bald schon seid
         ihr auf dem Weg nach Mexiko-Stadt.\n\n</string>
     <string name="boundary_introduction_four_b">Ihr verbringt die Nacht kurz vor der Grenze. Dein Blick wandert immer wieder
         zu dem leeren Sitz auf der Rückbank und du fragst dich, wo Alejandro gerade ist.\n\n</string>
@@ -561,6 +567,42 @@
         eurer Rückkehr ins Hotel zieht sie sich sofort in ihr Zimmer zurück, um Vorbereitungen für den morgigen Tag zu treffen. Du
         entscheidest dich ebenfalls dich für die Nacht zurückzuziehen und fällst bald in einen traumlosen Schlaf. Aber in den Winkeln
         deines Bewusstseins kannst du hören, wie Ichtaca eine kryptische Beschwörung rezitiert…</string>
+
+    <string name="heart_one_intro">Der erneute Aufbruch deiner Gruppe in den Regenwald ist einige Tage her und mit jedem Tag nehmen die
+        Gefahren zu und werden häufiger. Genug Nahrung und Vorräte für die Reise zu finden, ist ein dauerhafter Kampf und hinter jeder
+        Wegbiegung fallen die Bewohner des Dschungels über dich her. Glücklicherweise hast du bisher noch keine Spur von dem Schlangenvolk
+        gesehen, das die vorherige Expedition überfallen hat, aber du bist dir sicher, dass sie da draußen sind. Dass sie dich beobachten.
+        Dass sie warten.\n
+    \nAm Morgen des sechsten Tages findest du den Eingang. Es ist eine riesige Höhle, teilweise durch Bäume, Büsche und Ranken verdeckt.
+        Beinahe hättest du den gewaltigen Schlund der Höhle trotz seiner Größe übersehen. Um den Eingang der Höhle herum befinden sich
+        sechs Steinsäulen, die mit merkwürdigen Einkerbungen und Schnitzereien verziert sind, von denen ein rotes Glühen ausgeht. Vielleicht
+        versteht einer deiner Führer deren Bedeutung?</string>
+    <string name="heart_one_intro_option_one">Vielleicht weiß Ichtaca mehr.</string>
+    <string name="heart_one_intro_option_two">Vielleicht weiß Alejandro mehr.</string>
+    <string name="heart_one_intro_option_three">Vielleicht steht etwas im Tagebuch der Expedition.</string>
+    <string name="heart_one_intro_option_four">Ich wünschte, wir wüssten mehr darüber…</string>
+    <string name="heart_one_intro_one">„Der Eingang wird vor Eindringlingen bewacht“, sagt Ichtaca kryptisch. Ihre Augen sind geschlossen,
+        als würde sie mit ihren unnatürlichen Sinnen in die Höhle´vordringen. „Diese Säulen sind der Schlüssel. Jede von ihnen ist eine
+        Prüfung der Schläue und der Willenskraft.“ Sie tritt zu einer der Säulen und berührt sie mit ihrer Handfläche. Das Leuchten wird
+        stärker. Nun bemerkst du, dass die Einkerbungen am Fuß der Säule ein Muster bilden, das du irgendwo schon einmal gesehen hast. Falls
+        Ichtaca glaubt, dass dieser Ort bewacht wird, vertraust du ihr – aber es muss einen Weg geben, um diese Siegel zu durchbrechen…</string>
+    <string name="heart_one_intro_two">Alejandro untersucht jede der Säulen gründlich. „Es ist eine Art Schloss. Sieh dir das mal an, kannst
+        du es erkennen?“ Die Einkerbungen sind nicht genau ausgerichtet. Er dreht eine der Säulen und du siehst, dass sich das Muster an ihrer
+        Seite verschiebt. „Ich würde wetten, wenn wir die Höhle betreten, würden wir nicht sehr weit kommen, wenn sich diese Säulen nicht in
+        der richtigen Ausrichtung befinden. Das ist nur so eine Ahnung… Aber ich denke, wir sollten diese Gegend genauer untersuchen, bevor
+        wir weitergehen.“ Du kennst Alejandro inzwischen gut genug, um zu wissen, dass seine Ahnungen meistens zutreffen.</string>
+    <string name="heart_one_intro_three">Das Tagebuch der vorherigen Expedition enthält nicht alle Antworten, aber als du die Seiten
+        durchblätterst, fällt dir eine vertraute Zeichnung ins Auge – gezeichnet von Lorenzo, einem Mitglied der Expedition, der es nicht zurück
+        nach Arkham geschafft hat. Es ist eine genaue Nachbildung einer Schnitzerei, die sich an den Wänden einer der Eztli-Ruinen befand.
+        Viele der Muster und Hieroglyphen in dieser Zeichnung befinden sich auch auf diesen Säulen. Das kann kein einfacher Zufall sein. Diese
+        Säulen sind bestimmt der Schlüssel, den du brauchst, um den Weg nach N’kai zu finden…</string>
+
+    <string name="heart_two_intro">Meilenweit dringst du durch steile, kalte Tunnel in die Tiefe vor. Die Tunnel sind zunächst beklemmend eng
+        und voller Geröll und Trümmer. Endlich erreichst du eine ebene Fläche und die wahre Natur der Höhle offenbart sich vor dir. Es scheint,
+        als gäbe es hier eine ganze Welt unter der Erdoberfläche, die Decke der Höhle scheint wie ein steinerner Schleier den Himmel dieser Welt
+        zu bilden. Voller Schrecken blickst du in die endlosen Tiefen unter dir, über die steinernen Klippen tiefer Schluchten hinaus und auf
+        archaisch anmutende Brücken. Dieses unterirdische Reich scheint in alle Richtungen weiter zu reichen, als du sehen kannst. Du fragst dich,
+        wie groß es wirklich ist. Vielleicht ist die bekannte Oberfläche der Erde nur die oberste Ebene einer anderen Welt…</string>
 
 
     <!--Scenario setup-->
@@ -693,12 +735,45 @@
     <string name="boundary_additional_gas">Beim Ziehen der Starthände für dieses Szenario können die Ermittler keinen Mulligan
         nehmen.\n\n</string>
     <string name="boundary_rules_heading">Ersetzen von Orten</string>
-    <string name="boundary_rules">Im Verlauf dieses Szenarios könnten die Ermittler die A nweisung erhalten, neue Orte auf bereits
+    <string name="boundary_rules">Im Verlauf dieses Szenarios könnten die Ermittler die Anweisung erhalten, neue Orte auf bereits
         exisitierende zu legen. Sobald ein Ort auf einen Ort gelegt wird, der sich bereits im Spiel befindet, nimmt er dessen Platz
         ein. Alle Marker, Verstärkungen, Ermittler, Gegner und sonstige Karten, die sich am früheren Ort befunden haben, befinden
         sich nun am neuen Ort (sie haben sich nicht „bewegt“ – der Ort hat sich einfach geändert). Falls ein Ort das Spiel verlässt
         und sich ein anderer Ort darunter befindet, nimmt er dessen Platz ein. Alle Marker, Verstärkungen, Ermittler, Gegner und
-        sonstige Karten, die sich am Ort befinden, der das Spiel verlässst, befinden sich nun am früheren Ort</string>
+        sonstige Karten, die sich am Ort befinden, der das Spiel verlässt, befinden sich nun am früheren Ort.</string>
+
+    <string name="heart_one_sets">Säulen des Urteils, Das Herz der Älteren, Regenwald, Schlangen, Expedition und Gift.</string>
+    <string name="heart_one_locations">Der Ort Maul von K’n-yan wird mit der Seite <i>(Der Schlund der Höhle)</i> nach oben ins
+        Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel am Maul von K’n-yan.\n</string>
+    <string name="heart_one_set_aside">Jede Vergiftet-Schwäche, die sich nicht bereits im Deck eines Ermittlers befindet.\n</string>
+    <string name="heart_one_additional_one">Das Erkundungsdeck wird erstellt. Dazu werden die 6 einseitig bedruckten
+        <b><i>Dschungel</i></b>-Orte herausgesucht und mit jeweils 1 Exemplar folgender Begegnungskarten zusammengemischt: Fallgrube,
+        Ameisen!, In der Wildnis verlaufen und Versorgungsengpass.\n
+    \nEin zufällig bestimmter der 3 einseitig bedruckten <b><i>Ruinen</i></b>-Orte wird ins Spiel gebracht. Die anderen beiden werden
+        aus dem Spiel entfernt.\n</string>
+    <string name="heart_one_additional_two">Das Erkundungsdeck wird erstellt. Dazu werden die 6 einseitig bedruckten
+        <b><i>Dschungel</i></b>-Orte herausgesucht und mit jeweils einem Exemplar der folgenden Begegnungskarten zusammengemischt:
+        Fallgrube, Ameisen!, In der Wildnis verlaufen und Versorgungsengpass.\n
+    \nEin zufällig bestimmter der 3 einseitig bedruckten <b><i>Ruinen</i></b>-Orte wird ebenfalls ins Erkundungsdeck gemischt. Die
+        anderen beiden werden aus dem Spiel entfernt.\n</string>
+    <string name="heart_one_additional_place">\nPlatziere </string>
+    <string name="heart_one_additional_tokens"> Ressource(n) als Säulenmarker auf das Maul von K’n-yan.\n</string>
+    <string name="heart_one_additional_replay">\nFalls dieses Szenario in dieser Kampagne bereits gespielt und dabei Szene 2 erreicht
+        wurde, wird Szene 1a umgedreht und im Maul von K’n-yan platziert.</string>
+
+    <string name="heart_two_sets">K’n-yan, Das Herz der Älteren, Agenten des Yig, Yigs Gift, Vergessene Ruinen, Tödliche Fallen und
+        Gift.</string>
+    <string name="heart_two_locations">Der Ort Maul von K’n-yan wird mit der Seite <i>(Die Tiefen unter der Erde)</i> nach oben ins
+        Spiel gebracht.\n
+        \nJeder Ermittler beginnt das Spiel im Maul von K’n-yan.\n\n</string>
+    <string name="heart_two_set_aside">Abstieg nach Yoth und jede Vergiftet-Schwäche, die sich nicht bereits im Deck eines Ermittlers
+        befindet.\n</string>
+    <string name="heart_two_additional">Das Erkundungsdeck wird erstellt. Dazu werden die 5 übrigen einseitig bedruckten Orte aus dem
+        Begegnungsset <i>K’n-yan</i> herausgesucht und mit jeweils einem Exemplar der folgenden Begegnungskarten zusammengemischt:
+        Fallgrube, Kein zurück, Tiefe Dunkelheit und Der letzte Fehler.</string>
+    <string name="heart_two_additional_two">Die folgenden Karten werden aus der Sammlung herausgesucht und dem Siegpunktestapel
+        hinzugefügt: </string>
 
 
     <!--Scenario resolutions-->
@@ -929,7 +1004,7 @@
     <string name="threads_resolution_three_one">Ein beliebiger Ermittler darf wählen, die Karte Ichtaca (Die vergessene Wächterin) seinem
         Deck hinzuzufügen.</string>
 
-    <string name="boundary_no_resolution">Als du deine Augen das nächste Mal öf fnest, befindest du dich wieder in deinem Bett im
+    <string name="boundary_no_resolution">Als du deine Augen das nächste Mal öffnest, befindest du dich wieder in deinem Bett im
         Hotelzimmer. Du versuchst deine Augen mit deiner Hand vor dem Sonnenlicht zu schützen, das blendend durch die Schlafzimmervorhänge
         dringt. Das grelle Licht fühlt sich wie eine angezogene Schraubzwinge um deine Schläfen an. Dünne Weihrauchwolken wabern durch die
         Luft.\n
@@ -948,7 +1023,7 @@
         reißen können.“ Ihr Blick fällt auf dich. „Ich hätte dich nicht da reinziehen sollen. Aber ob du willst oder nicht, du bist darin
         verwickelt. Es ist zu spät, um umzukehren. Ich weiß, wo wir den Nexus finden und du musst mit mir kommen.“</string>
     <string name="boundary_resolution_one">Eine wilde Ansammlung von Farben und Lichtern dringt von allen Seiten auf dich ein, als dein Geist
-        langsam in seinen Normalzustand zurückkehrt. Als du deine Augen das nächste Mal öf fnest, liegst du auf dem zentralen Platz der Stadt,
+        langsam in seinen Normalzustand zurückkehrt. Als du deine Augen das nächste Mal öffnest, liegst du auf dem zentralen Platz der Stadt,
         in deinem Kopf dreht sich immer noch alles vom Gefühl, in die Tiefe zu stürzen. Eine leise Stimme ganz hinten in deinem Geist versucht
         dir einzureden, dass alles nur ein Produkt deiner Einbildung war, ein Tagtraum. Es ist die Stimme der Selbsterhaltung , die dich davor
         warnt, diesen Weg in den Wahnsinn, den du beschritten hast, weiter zu verfolgen. Du ignorierst sie und stehst auf. Deine Beine zittern
@@ -968,7 +1043,7 @@
         widernatürliche Nebel und die Gewichtslosigkeit, die du in dieser Vision erlebt hast, verschwinden und plötzlich wird dir klar, dass
         es sich nicht um einen Traum handelt. Du bist in einer Zeit gefangen, die nicht die deine ist, und nirgendwo ist Ichtaca zu sehen.\n
     \nDu wanderst herum und es fühlt sich an, als würden Stunden vergehen. Tage. Wochen. Dein Geist kann es nicht mehr ertragen. Die
-        Erkenntnis, dass du vielleicht für immer hier gefangen bist, ist beängstigend. Verzweif lung und Hof fnungslosigkeit ergreifen Besitz
+        Erkenntnis, dass du vielleicht für immer hier gefangen bist, ist beängstigend. Verzweiflung und Hof fnungslosigkeit ergreifen Besitz
         von deinem Geist, ein Anfall von Wahnsinn und Einsamkeit, dem du nicht entkommen kannst. Du erinnerst dich nicht mehr, wie lange deine
         Ankunft hier her ist. Du hast weder geschlafen noch gegessen.\n
     \nPlötzlich, nachdem du eine Ewigkeit gewartet hast, bricht die Grenze und der Himmel wird von einem blendenden weißen Licht überflutet.
@@ -981,5 +1056,14 @@
         kommen.“</string>
     <string name="boundary_resolution_additional"><b>Füge jeden Tenochtitlán-Ort im Spiel, auf dem keine Hinweise liegen, dem Siegpunktestapel
         hinzu.</b></string>
+
+    <string name="heart_one_no_resolution">Die Gefahren des Dschungels sind zu groß, du musst die Nachforschungen abbrechen. Falls du noch
+        länger hier bleibst, werden diese merkwürdigen Steinsäulen dein Grab markieren. Du entscheidest dich für die Flucht und kehrst zu
+        einer vertrauten Lichtung in einigen Meilen Entfernung zurück, wo du wieder zu Kräften kommen kannst. Du weißt, dass du irgendwann zu
+        den Säulen zurückgehen und das Muster ergründen musst, das den Weg freigibt… aber im Moment bist du zumindest in Sicherheit.\n
+    \n<b>Die Ermittler müssen Szenario 5-A: Herz der Älteren, Teil 1 erneut spielen.</b></string>
+    <string name="heart_one_resolution_one">Du unterdrückst deine Angst und betrittst die Höhle…</string>
+    <string name="heart_one_resolution_one_additional"><b>Die Ermittler dürfen zwischen diesem und dem nächsten Szenario keine Erfahrungspunkte
+        ausgeben und ihre Decks nicht verändern.</b></string>
 
 </resources>
