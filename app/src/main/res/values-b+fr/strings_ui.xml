@@ -127,6 +127,7 @@
     <string name="r_two">C2</string>
     <string name="r_three">C3</string>
     <string name="r_four">C4</string>
+    <string name="r_five">C5</string>
     <string name="no_resolution">Aucune Conclusion</string>
     <string name="resolution_one">Conclusion Un</string>
     <string name="resolution_two">Conclusion Deux</string>
@@ -162,7 +163,7 @@
 
     <!--Investigator names-->
     <string-array name="investigators">
-        <item>None</item>
+        <item>Aucun</item>
         <item>Roland Banks</item>
         <item>Daisy Walker</item>
         <item>Skids O’Toole</item>
@@ -218,6 +219,10 @@
     <string name="finn_edwards">Finn Edwards</string>
     <string name="father_mateo">Father Mateo</string>
     <string name="calvin_wright">Calvin Wright</string>
+	<string name="joe_diamond">Joe Diamond</string>
+    <string name="preston_fairmont">Preston Fairmont</string>
+    <string name="diana_stanley">Diana Stanley</string>
+    <string name="rita_young">Rita Young</string>
 
     <string name="cover_up">Effacer les Traces non résolu en jeu</string>
     <string name="hospital_debts">Frais d’Hôpitaux non résolu en jeu</string>

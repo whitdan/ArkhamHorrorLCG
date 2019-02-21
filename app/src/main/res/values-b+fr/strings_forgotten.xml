@@ -17,6 +17,7 @@
     <string name="forgotten_interlude_five">Interlude 5: Les Ténèbres</string>
 	<string name="forgotten_resupply">Rééquipement</string>
     <string name="forgotten_epilogue">Épilogue</string>
+    <string name="forgotten_epilogue">Scénario Secret 9 : Remonter le Temps</string>
 	
 	 <!--Miscellaneous-->
     <string name="vengeance_counter">Vengeance : </string>
@@ -40,6 +41,9 @@
     <string name="remove_mental">Retirer un traumatisme mental (5XP)\n(Traumatismes actuels :</string>
 	 <string name="tenochtitlan_locations">Lieux Tenochtitlán dans la pile de victoire :</string>
 	  <string name="act_two_finished">Scénario terminé à l\'Acte 2</string>
+	  <string name="none">Aucun</string>
+    <string name="heart_pillar_tokens">Pions Pilier sur la Bouche K\'n-yan: </string>
+    <string name="vengeance_enemies">Cartes avec Vengeance X dans la pile de victoire</string>
 	
 	<!--Supplies-->
     <string name="supplies">Équipement</string>
@@ -655,8 +659,21 @@ décoré et vous claque la porte au nez en sortant.\n
 		dans sa chambre afin de se préparer pour le lendemain. Vous vous installez pour dormir et
 		sombrez bien vite dans un sommeil sans rêve. Dans un coin reculé de votre conscience, vous
 		pouvez cependant entendre Ichtaca réciter une incantation cryptique…</string>
+		
+	
+	<string name="heart_one_intro">Plusieurs jours ont passé depuis que votre groupe s’est aventuré dans la forêt vierge, et les dangers que vous affrontez sont plus grands et plus nombreux à chaque étape. Conserver assez de vivres pour le voyage est une lutte de chaque instant, et vous êtes régulièrement assailli par les habitants de la jungle. Par chance, vous n’avez vu aucun signe des hommes-serpents qui ont attaqué la précédente expédition, mais vous êtes certain qu’ils sont là. À observer. À attendre.\n
+\nAu matin du sixième jour, vous trouvez l’entrée. C’est celle d’une large grotte partiellement cachée par des arbres, des broussailles et des plantes grimpantes. Vous avez failli manquer l’immense gueule de la caverne malgré sa taille. Six piliers de pierre entourent l’entrée, chacun recouvert d’étranges sillons et gravures qui luisent d’une lumière rouge ténue. Peut-être l’un de vos guides comprendra-t-il leur signification ? </string>
+    <string name="heart_one_intro_option_one">Consultons Ichtaca.</string>
+    <string name="heart_one_intro_option_two">Consultons Alejandro.</string>
+    <string name="heart_one_intro_option_three">Consultons le journal de l’expédition.</string>
+    <string name="heart_one_intro_option_four">J’aurais aimé que nous en sachions davantage à ce sujet...</string>
+    <string name="heart_one_intro_one">« L’entrée est protégée contre les intrus », annonce Ichtaca, les yeux fermés comme si elle analysait la caverne avec un sens surnaturel. « Ces piliers sont la clé. Chacun est une épreuve d’intelligence et de volonté. » Elle avance vers l’une des colonnes et la touche avec la paume de sa main. Elle se met à briller plus intensément. Vous remarquez à présent que les sillons au pied du pilier forment un motif qui vous semble familier. Si Ichtaca pense que cet endroit est protégé, vous la croyez – il doit bien y avoir un moyen de briser ces protections… </string>
+    <string name="heart_one_intro_two">Alejandro examine attentivement chacun des piliers. « C’est une sorte de serrure. Regardez ici, vous voyez ? Les sillons ne sont pas parfaitement alignés. » Il fait pivoter l’une des colonnes, et vous voyez le motif sur son flanc se modifier. « J’ai peur que nous n’allions pas très loin si nous entrons dans la grotte sans que les piliers soient disposés correctement. Ce n’est qu’une intuition, cependant… mais je pense que nous devrions examiner la zone plus attentivement avant d’entrer. » Vous connaissez Alejandro depuis suffisamment longtemps pour savoir que son instinct a tendance à être fiable. 
+</string>
+    <string name="heart_one_intro_three">Le journal de la précédente expédition ne recèle pas toutes les réponses ; mais en tournant les pages, vous tombez sur un schéma familier – une œuvre de Lorenzo, l’un des membres de l’expédition qui n’est jamais rentré à Arkham. C’est une reproduction détaillée d’une gravure qui se trouvait sur l’un des murs des ruines eztli. Beaucoup des motifs et des hiéroglyphes que vous avez vus sont communs à tous les piliers. Cela ne peut pas être une coïncidence. Ces colonnes sont sans doute la clé de la voie menant à N’kai… </string>
 
-
+	<string name="heart_two_intro">Vous descendez le long de la pierre froide. Les tunnels sont atrocement étroits et, au début, envahis de gravats et de débris. Vous atteignez enfin le sol, et la véritable nature de la caverne se dévoile devant vous. C’est comme s’il y avait un monde entier sous la surface : le plafond de la caverne forme une sorte de rideau de pierre céleste au-dessus de vous. Encore plus vastes et terrifiantes sont les profondeurs sans fin qui s’étirent au-dessous de vous, par-delà les rebords de pierre et les ponts archaïques. De tous côtés, ce royaume souterrain semble s’étendre à perte de vue ; vous vous demandez jusqu’où il va. Peut-être que la surface entière de la Terre n’est que la couche supérieure d’un autre monde… </string>
+		
     <!--Scenario setup-->
     <string name="untamed_sets">Une Contrée Sauvage, Forêt Vierge, Serpents, Expédition, Gardiens du Temps,
 		Agents de Yig, Poison et Antiques Fléaux.</string>
@@ -820,6 +837,31 @@ choisissez judicieusement quelles pistes suivre.</string>
 		Tous les pions, attachements, investigateurs, ennemis ou autres cartes dans le lieu
 		qui quitte le jeu sont maintenant considérés comme étant dans le lieu précédent.
 </string>
+
+	<string name="heart_one_sets">Piliers du Jugement, Le Cœur des Anciens, Forêt Vierge, Serpents, Expédition et Poison.</string>
+    <string name="heart_one_locations">Mettez la Bouche de K’n-yan en jeu, face <i>(La Gueule de la Caverne)</i> visible.\n
+        \nChaque investigateur commence la partie dans la Bouche de K’n-yan <i>(La Gueule de la Caverne)</i>.\n</string>
+    <string name="heart_one_set_aside">Chaque faiblesse Empoisonné qui n\'est pas déjà dans le deck d\'un investigateur.\n</string>
+    <string name="heart_one_additional_one">Constituez le deck Exploration en prenant les 6 lieux
+        <b><i>Jungle</i></b> mono-face et en les mélangeant avec 1 exemplaire de chacune des cartes Rencontre suivantes : Chausse-Trappe, Des Fourmis !, Perdu dans la Nature et Épuisement des Réserves.\n
+    \nPrenez l\'un des 3 lieux <b><i>Ruines</i></b> suivants au hasard : Ruines Couvertes de Verdure, Temple du Croc et Autel de Pierre. Mettez ce lieu en jeu. Retirez les 2 autres de la partie.\n</string>
+    <string name="heart_one_additional_two">Constituez le deck Exploration en prenant les 6 lieux
+        <b><i>Jungle</i></b> mono-face et en les mélangeant avec 1 exemplaire de chacune des cartes Rencontre suivantes : Chausse-Trappe, Des Fourmis !, Perdu dans la Nature et Épuisement des Réserves.\n
+    \nPrenez l\'un des 3 lieux <b><i>Ruines</i></b> suivants au hasard : Ruines Couvertes de Verdure, Temple du Croc et Autel de Pierre. Mélangez ce lieu dans le deck Exploration. Retirez les 2 autres de la partie.\n</string>
+    <string name="heart_one_additional_place">\nPlacez </string>
+    <string name="heart_one_additional_tokens"> ressource(s) sur la Bouche de K’n-yan, en tant que pion(s) Pilier.\n</string>
+    <string name="heart_one_additional_replay">\nSi vous avez déjà atteint l\'Acte 2 avant, retournez l\'Acte 1a et placez-le dans la Bouche de K’n-yan.</string>
+		
+		 <string name="heart_two_sets">K’n-yan, Le Cœur des Anciens, Agents de Yig, Venin de Yig, Ruines Oubliées, Pièges Mortels et Poison.</string>
+    <string name="heart_two_locations">Mettez en jeu la Bouche de K’n-yan, face <i>(Les Profondeurs Insondables)</i> visible.\n
+        \nChaque investigateur débute la partie dans la Bouche de K’n-yan <i>(Les Profondeurs Insondables)</i>.\n</string>
+    <string name="heart_two_set_aside">Le lieu Descente de Yoth, et chaque faiblesse Empoisoné  qui n\'est pas
+	déjà dans le deck d\'un investigateur.\n</string>
+    <string name="heart_two_additional">Constituez le deck Exploration en prenant les 5 lieux mono-face restants
+        du set de rencontre <i>K’n-yan</i> et en les mélangeant avec 1 exemplaire de chacune des cartes Rencontre
+		suivantes : Chausse-Trappe, Demi-Tour Impossible, Obscurité Profonde et Erreur Fatale.</string>
+    <string name="heart_two_additional_two">Ajoutez les cartes suivantes à la pile de victoire : </string>
+	
 
     <!--Scenario resolutions-->
     <string name="untamed_no_resolution">Mercredi 1er juillet 1925\n
@@ -1262,5 +1304,10 @@ du journal.)\n
     <string name="boundary_resolution_additional"><b>Ajoutez à la
 		pile de victoire chaque lieu Tenochtitlán en jeu qui n’a pas d’indice
 		sur lui.</b></string>
+		
+	<string name="heart_one_no_resolution">Les périls de la jungle sont trop insurmontables pour que vous poursuiviez votre exploration. Si vous restez plus longtemps, ces étranges piliers deviendront votre tombe. Vous fuyez jusqu’à une clairière familière située à quelques lieues de là, où vous pourrez récupérer. Vous savez que vous devrez revenir vers les piliers et trouver le motif qui ouvrira la voie… mais pour l’instant du moins, vous êtes sauf.\n
+    \n<b>Les investigateurs doivent rejouer le Scénario 5-A : Le Cœur des Anciens, Partie 1.</b></string>
+    <string name="heart_one_resolution_one">Ravalant votre peur, vous pénétrez dans la caverne… </string>
+    <string name="heart_one_resolution_one_additional"><b>Les investigateur n’ont pas le droit de dépenser d’expérience ou de modifier leurs decks avant le prochain scénario.</b></string>	
 	
 </resources>
