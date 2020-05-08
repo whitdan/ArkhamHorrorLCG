@@ -8,8 +8,8 @@
 	<string name="group_a">Groupe A</string>
     <string name="group_b">Groupe B</string>
     <string name="group_c">Groupe C</string>
-    <string name="act_two_setup">Mise en Place de l'Acte 2</string>
-    <string name="act_three_setup">Mise en Place de l'Acte 3</string>
+    <string name="act_two_setup">Mise en Place de l\'Acte 2</string>
+    <string name="act_three_setup">Mise en Place de l\'Acte 3</string>
 
     <!--Campaign log-->
     <string name="rougarou_alive">Le Rougarou continue de hanter le bayou. La faiblesse La Malédiction du Rougarou est ajouté
@@ -89,24 +89,24 @@
 		avant la prochaine pleine lune</string>
 
 	<string name="labyrinths_a_introduction">Vous vous réveillez dans un lieu étrange, sans le moindre souvenir de ce qui vous est arrivé. Vos muscles sont engourdis et peu réactifs. Votre vue est troublée. Vous lever vous demande un effort presque surhumain. Vos jambes sont flageolantes et peuvent à peine soutenir votre poids. \n
-    \nPour la première fois depuis votre réveil, vous jetez un œil autour de vous. Vous êtes enfermé dans une chambre sans fenêtre, remplie de tuyaux de cuivre. Le léger bruissement de l'air qui s'en échappe vous entoure de toutes parts. Vous êtes prisonnier, sans aucune échappatoire. Une note repose non loin sur le sol. Elle dit :\n
+    \nPour la première fois depuis votre réveil, vous jetez un œil autour de vous. Vous êtes enfermé dans une chambre sans fenêtre, remplie de tuyaux de cuivre. Le léger bruissement de l\'air qui s\'en échappe vous entoure de toutes parts. Vous êtes prisonnier, sans aucune échappatoire. Une note repose non loin sur le sol. Elle dit :\n
     \nSalutations, \n
-    \nJe vous ai amenés ici pour une expérience. Voyez cela comme une mise à l'épreuve de la volonté humaine. Vous survivrez. Ou vous mourrez. \n
-    \nVous n'êtes pas seuls. Deux autres groupes partagent votre solr.Risquerez-vous vos vies pour les aider ? Ou vous frayerez-vous un chemin vers la sortie sur leurs cadavres ? \n
-    \nJe vous laisserai partir si vous faites preuve de force, de volonté et d'intelligence. Dans le cas contraire, vos douleurs et vos tourments vous rappelleront que les humains ne sont pas les héritiers de la Terre. 
+    \nJe vous ai amenés ici pour une expérience. Voyez cela comme une mise à l\'épreuve de la volonté humaine. Vous survivrez. Ou vous mourrez. \n
+    \nVous n\'êtes pas seuls. Deux autres groupes partagent votre solr.Risquerez-vous vos vies pour les aider ? Ou vous frayerez-vous un chemin vers la sortie sur leurs cadavres ? \n
+    \nJe vous laisserai partir si vous faites preuve de force, de volonté et d\'intelligence. Dans le cas contraire, vos douleurs et vos tourments vous rappelleront que les humains ne sont pas les héritiers de la Terre. 
 </string>
     <string name="labyrinths_b_introduction">Vous vous réveillez dans un lieu étrange, sans le moindre souvenir de ce qui vous est arrivé. Vos muscles sont engourdis et peu réactifs. Votre vue est troublée. Vous lever vous demande un effort presque surhumain. Vos jambes sont flageolantes et peuvent à peine soutenir votre poids. \n
-    \nPour la première fois depuis votre réveil, vous jetez un œil autour de vous. Vous êtes enfermé dans un grand réservoir de verre, et le niveau de l'eau monte jusqu'à vos chevilles. À travers le verre sale, vous pouvez apercevoir d'autres réservoirs identiques, baignés de brume. Vous êtes prisonnier, sans aucune échappatoire. Une note repose sur le sol à l'extérieur du réservoir. Elle dit : \n
+    \nPour la première fois depuis votre réveil, vous jetez un œil autour de vous. Vous êtes enfermé dans un grand réservoir de verre, et le niveau de l\'eau monte jusqu\'à vos chevilles. À travers le verre sale, vous pouvez apercevoir d\'autres réservoirs identiques, baignés de brume. Vous êtes prisonnier, sans aucune échappatoire. Une note repose sur le sol à l\'extérieur du réservoir. Elle dit : \n
     \nSalutations, \n
-    \nJe vous ai amenés ici pour une expérience. Voyez cela comme une mise à l'épreuve de la volonté humaine. Vous survivrez. Ou vous mourrez. \n
-    \nVous n'êtes pas seuls. Deux autres groupes partagent votre solr.Risquerez-vous vos vies pour les aider ? Ou vous frayerez-vous un chemin vers la sortie sur leurs cadavres ? \n
-    \nJe vous laisserai partir si vous faites preuve de force, de volonté et d'intelligence. Dans le cas contraire, vos douleurs et vos tourments vous rappelleront que les humains ne sont pas les héritiers de la Terre. </string>
+    \nJe vous ai amenés ici pour une expérience. Voyez cela comme une mise à l\'épreuve de la volonté humaine. Vous survivrez. Ou vous mourrez. \n
+    \nVous n\'êtes pas seuls. Deux autres groupes partagent votre solr.Risquerez-vous vos vies pour les aider ? Ou vous frayerez-vous un chemin vers la sortie sur leurs cadavres ? \n
+    \nJe vous laisserai partir si vous faites preuve de force, de volonté et d\'intelligence. Dans le cas contraire, vos douleurs et vos tourments vous rappelleront que les humains ne sont pas les héritiers de la Terre. </string>
     <string name="labyrinths_c_introduction">Vous vous réveillez dans un lieu étrange, sans le moindre souvenir de ce qui vous est arrivé. Vos muscles sont engourdis et peu réactifs. Votre vue est troublée. Vous lever vous demande un effort presque surhumain. Vos jambes sont flageolantes et peuvent à peine soutenir votre poids. \n
-    \nPour la première fois depuis votre réveil, vous jetez un œil autour de vous. Vous vous trouvez dans une chambre obscure seulement éclairée par quelques bougies. De vieux tonneaux, des caisses et des étagères décrépies emplissent l'étroite pièce. Il semble n'y avoir aucune porte ou fenêtre menant vers l'extérieur. Vous êtes prisonnier, sans aucune échappatoire. Une note repose sur le sol non loin. Elle dit :\n
+    \nPour la première fois depuis votre réveil, vous jetez un œil autour de vous. Vous vous trouvez dans une chambre obscure seulement éclairée par quelques bougies. De vieux tonneaux, des caisses et des étagères décrépies emplissent l\'étroite pièce. Il semble n\'y avoir aucune porte ou fenêtre menant vers l\'extérieur. Vous êtes prisonnier, sans aucune échappatoire. Une note repose sur le sol non loin. Elle dit :\n
     \nSalutations, \n
-    \nJe vous ai amenés ici pour une expérience. Voyez cela comme une mise à l'épreuve de la volonté humaine. Vous survivrez. Ou vous mourrez. \n
-    \nVous n'êtes pas seuls. Deux autres groupes partagent votre solr.Risquerez-vous vos vies pour les aider ? Ou vous frayerez-vous un chemin vers la sortie sur leurs cadavres ? \n
-    \nJe vous laisserai partir si vous faites preuve de force, de volonté et d'intelligence. Dans le cas contraire, vos douleurs et vos tourments vous rappelleront que les humains ne sont pas les héritiers de la Terre. </string>
+    \nJe vous ai amenés ici pour une expérience. Voyez cela comme une mise à l\'épreuve de la volonté humaine. Vous survivrez. Ou vous mourrez. \n
+    \nVous n\'êtes pas seuls. Deux autres groupes partagent votre solr.Risquerez-vous vos vies pour les aider ? Ou vous frayerez-vous un chemin vers la sortie sur leurs cadavres ? \n
+    \nJe vous laisserai partir si vous faites preuve de force, de volonté et d\'intelligence. Dans le cas contraire, vos douleurs et vos tourments vous rappelleront que les humains ne sont pas les héritiers de la Terre. </string>
 
     <!--Scenario setup instructions-->
     <string name="rougarou_sets">Le Bayou.</string>
@@ -129,45 +129,45 @@
 		Saint-Marc. La face Carnavalier Masqué doit être visible ; ne regardez pas l’autre face de ces cartes.</string>
 
 	<string name="labyrinths_sets">Les Labyrinthes de la Folie</string>
-    <string name="labyrinths_sets_two">Utilisez uniquement les cartes du set de rencontre <i>Groupe Unique</i> ou <i>Multijoueur Épique</i> et retirez les cartes de l'autre set de rencontre de la partie, en fonction de si vous jouez en  <i>Mode Groupe Unique</i> ou en <i>Mode Multijoueur Épique</i> respectivement.</string>
-    <string name="labyrinths_set_aside">Clé des Mystères, Mystérieuse Seringue, Eixodolon, Familier d'Eixodolon, Diagramme de la Putréfaction, Diagramme de la Faim, Diagramme de la Décrépitude, toutes les copies de Ravisseur Sans Visage, et tous les autres lieux.\n
+    <string name="labyrinths_sets_two">Utilisez uniquement les cartes du set de rencontre <i>Groupe Unique</i> ou <i>Multijoueur Épique</i> et retirez les cartes de l\'autre set de rencontre de la partie, en fonction de si vous jouez en  <i>Mode Groupe Unique</i> ou en <i>Mode Multijoueur Épique</i> respectivement.</string>
+    <string name="labyrinths_set_aside">Clé des Mystères, Mystérieuse Seringue, Eixodolon, Familier d\'Eixodolon, Diagramme de la Putréfaction, Diagramme de la Faim, Diagramme de la Décrépitude, toutes les copies de Ravisseur Sans Visage, et tous les autres lieux.\n
         \nSi vous jouez en <i>Mode Multijoueur Épique</i>, mettez également de côté 
-     l'ennemi Le Geôlier et toutes les cartes Histoire recto-verso.\n</string>
+     l\'ennemi Le Geôlier et toutes les cartes Histoire recto-verso.\n</string>
     <string name="labyrinths_a_locations">Sélectionnez au hasard 1 des 3 
      exemplaires de la Chambre des Secrets et mettez le en jeu.
         Retirez les deux autres exemplaires de la partie.\n
         \nChaque investigateur commence la partie dans la Chambre des Secrets.\n</string>
-    <string name="labyrinths_a_additional">Construisez le deck Acte en n'utilisant que les versions (Groupe A) des Actes 1 et 2.
+    <string name="labyrinths_a_additional">Construisez le deck Acte en n\'utilisant que les versions (Groupe A) des Actes 1 et 2.
         Retirez les autres versions de ces Actes de la partie.\n
-    \n L'investigateur principal prend le contrôle de la Note d'Eixodolon.\n
+    \n L\'investigateur principal prend le contrôle de la Note d\'Eixodolon.\n
     \nAjoutez 2 pions Chose Ancienne dans la Réserve du Chaos.\n
         \nSi vous jouez en <i>Mode Groupe Unique</i>, placez la Clé des Mystères en jeu dans la Chambre des Secrets.</string>
     <string name="labyrinths_a_locations_two">Mettez en jeu les 3 Couloirs Labyrinthiques.\n
     \nMettez en jeu la Chambre de la Décrépitude.\n</string>
     <string name="labyrinths_a_additional_two">Mélangez chaque Ravisseur Sans Visage et la pile de défausse Rencontre dans le deck Rencontre. \n
-    \nRetirez toutes les fatalités en jeu et passez à l'Acte 2a et à l'Intrigue 2a.\n
-        \nSi vous jouez en <i>Mode Multijoueur Épique</i>, choisissez l'un des trois groupes au hasard. Ce groupe mélange Le Geôlier dans le deck Rencontre. </string>
-    <string name="labyrinths_locations_three">Mettez en jeu l'Entrepôt Désaffecté.\n
-    \nDésengagez tous les ennemis engagés et déplacez chaque investigateur survivant vers l'Entrepôt Désaffecté. \n</string>
-    <string name="labyrinths_additional_three">Mettez en jeu l'ennemi Eixodolon dans l'Entrepôt Désaffecté. \n
-    \nRetirez toutes les fatalités en jeu et passez à l'Acte 3a et à l'Intrigue 3a.</string>
+    \nRetirez toutes les fatalités en jeu et passez à l\'Acte 2a et à l\'Intrigue 2a.\n
+        \nSi vous jouez en <i>Mode Multijoueur Épique</i>, choisissez l\'un des trois groupes au hasard. Ce groupe mélange Le Geôlier dans le deck Rencontre. </string>
+    <string name="labyrinths_locations_three">Mettez en jeu l\'Entrepôt Désaffecté.\n
+    \nDésengagez tous les ennemis engagés et déplacez chaque investigateur survivant vers l\'Entrepôt Désaffecté. \n</string>
+    <string name="labyrinths_additional_three">Mettez en jeu l\'ennemi Eixodolon dans l\'Entrepôt Désaffecté. \n
+    \nRetirez toutes les fatalités en jeu et passez à l\'Acte 3a et à l\'Intrigue 3a.</string>
 
-    <string name="labyrinths_b_locations">Mettez en jeu les lieux Chambre de la Pluie et Chambre de l'Affliction.\n
-        \nDésignez un investigateur au hasard ; ce dernier commence la partie dans la Chambre de la Pluie. Les autres commencent la partie dans la Chambre de l'Affliction.\n</string>
-    <string name="labyrinths_b_additional">Construisez le deck Acte en n'utilisant que les versions (Groupe B) des Actes 1 et 2.
+    <string name="labyrinths_b_locations">Mettez en jeu les lieux Chambre de la Pluie et Chambre de l\'Affliction.\n
+        \nDésignez un investigateur au hasard ; ce dernier commence la partie dans la Chambre de la Pluie. Les autres commencent la partie dans la Chambre de l\'Affliction.\n</string>
+    <string name="labyrinths_b_additional">Construisez le deck Acte en n\'utilisant que les versions (Groupe B) des Actes 1 et 2.
         Retirez les autres versions de ces Actes de la partie.\n
-    \nL'investigateur principal prend le contrôle de la Note d'Eixodolon.\n
+    \nL\'investigateur principal prend le contrôle de la Note d\'Eixodolon.\n
     \nAjoutez 2 pions Tablette dans la Réserve du Chaos.</string>
     <string name="labyrinths_b_locations_two">Mettez en jeu les 3 Couloirs Labyrinthiques.\n
     \nMettez en jeu la Chambre de la Décrépitude, et la Chambre du Poison.\n</string>
     <string name="labyrinths_b_additional_two">Mélangez chaque Ravisseur Sans Visage et la pile de défausse Rencontre dans le deck Rencontre.\n
-    \nRetirez toutes les fatalités en jeu et passez à l'Acte 2a et à l'Intrigue 2a.</string>
+    \nRetirez toutes les fatalités en jeu et passez à l\'Acte 2a et à l\'Intrigue 2a.</string>
 
     <string name="labyrinths_c_locations">Mettez en jeu les lieux Chambre de la Nuit et Chambre des Regrets.\n
         \nChaque investigateur commence la partie dans la Chambre de la Nuit.\n</string>
-    <string name="labyrinths_c_additional">Construisez le deck Acte en n'utilisant que les versions (Groupe C) des Actes 1 et 2.
+    <string name="labyrinths_c_additional">Construisez le deck Acte en n\'utilisant que les versions (Groupe C) des Actes 1 et 2.
         Retirez les autres versions de ces Actes de la partie.\n
-    \nL'investigateur principal prend le contrôle de la Note d'Eixodolon.\n
+    \nL\'investigateur principal prend le contrôle de la Note d\'Eixodolon.\n
     \nAjoutez 2 pions Cultiste dans la Réserve du Chaos.\n
         \nSi vous jouez en <i>Mode Groupe Unique</i>, sélectionnez au hasard 1 des 3 
      exemplaires de la Chambre des Secrets et placez-le sous la carte de référence 
@@ -175,8 +175,8 @@
     <string name="labyrinths_c_locations_two">Mettez en jeu les 3 Couloirs Labyrinthiques.\n
     \nMettez en jeu la Chambre de la Faim.\n</string>
     <string name="labyrinths_c_additional_two">Mélangez chaque Ravisseur Sans Visage et la pile de défausse Rencontre dans le deck Rencontre.\n
-    \nRetirez toutes les fatalités en jeu et passez à l'Acte 2a et à l'Intrigue 2a.\n
-    \nMettez en jeu le Familier d'Eixodolon à côté de la Chambre de la Faim, mais pas dans un lieu. Tant qu'il n'est pas dans un lieu, il est considéré comme étant enfermé.</string>
+    \nRetirez toutes les fatalités en jeu et passez à l\'Acte 2a et à l\'Intrigue 2a.\n
+    \nMettez en jeu le Familier d\'Eixodolon à côté de la Chambre de la Faim, mais pas dans un lieu. Tant qu\'il n\'est pas dans un lieu, il est considéré comme étant enfermé.</string>
 		
     <!--Scenario Resolutions-->
     <string name="rougarou_no_resolution">Vous parvenez tout juste à vous mettre à l’abri avant l’aube et vous 
@@ -245,22 +245,22 @@
     \n<b>N’importe quel investigateur a le droit d’ajouter l’Abbesse Allegria Di Biase à son deck.</b></string>
 	
 	
-	 <string name="labyrinths_resolution_one">Entre de mauvaises mains, vos tourments deviennent une arme puissante. Votre sang alimente les glyphes ésotériques gravés dans le sol en ciment au cœur du labyrinthe. Pour le cruel instigateur de votre enlèvement, c'est un moment de triomphe et de jubilation. Le monde entier va ressentir cette douleur. Cette peur. Ce désespoir. \n
+	 <string name="labyrinths_resolution_one">Entre de mauvaises mains, vos tourments deviennent une arme puissante. Votre sang alimente les glyphes ésotériques gravés dans le sol en ciment au cœur du labyrinthe. Pour le cruel instigateur de votre enlèvement, c\'est un moment de triomphe et de jubilation. Le monde entier va ressentir cette douleur. Cette peur. Ce désespoir. \n
     \n<b>Les investigateurs ont perdu. </b></string>
-    <string name="labyrinths_resolution_two">L'instigateur de toute cette histoire tombe à genoux, le masque brisé. Du sang s'échappe de ses plaies béantes et coulent sur le sol en ciment. «Vous pensez réellement que vous allez pouvoir vous échapper ?» souffle-t-il. Sa voix est déformée par la douleur mais néanmoins triomphante. « Vous pensez réellement... que je vais vous laisser quitter cet endroit ?» Son corps s'effondre au sol. Voyant une opportunité de vous enfuir, vous vous ruez sur les portes en fer qui vous retiennent dans l'entrepôt. Dans un effort désespéré, vous parvenez à briser le cadenas et à ouvrir les lourdes portes. \n
-    \nLa brise fraîche du soir s'engouffre autour de vous. Vous constatez avec surprise que vous vous trouvez sur les docks du fleuve Miskatonic. Quelques canards cancanent de surprise et prennent la fuite. L'eau clapote sur la rive. Vous pouvez entendre les dockers aller et venir, tout à leur travail qui touche à sa fin alors que le soleil se couche à votre gauche. Vous faites quelques pas et vous écroulez au sol, trop exténué et blessé pour aller plus loin. « Qui va là ? » s'exclame un docker. « Quelqu'un est blessé - vite, il faut aller à Sainte Marie ! » Vous sombrez dans l'inconscience au moment où un homme tout en muscles vous prend dans ses bras. \n
+    <string name="labyrinths_resolution_two">L\'instigateur de toute cette histoire tombe à genoux, le masque brisé. Du sang s\'échappe de ses plaies béantes et coulent sur le sol en ciment. «Vous pensez réellement que vous allez pouvoir vous échapper ?» souffle-t-il. Sa voix est déformée par la douleur mais néanmoins triomphante. « Vous pensez réellement... que je vais vous laisser quitter cet endroit ?» Son corps s\'effondre au sol. Voyant une opportunité de vous enfuir, vous vous ruez sur les portes en fer qui vous retiennent dans l\'entrepôt. Dans un effort désespéré, vous parvenez à briser le cadenas et à ouvrir les lourdes portes. \n
+    \nLa brise fraîche du soir s\'engouffre autour de vous. Vous constatez avec surprise que vous vous trouvez sur les docks du fleuve Miskatonic. Quelques canards cancanent de surprise et prennent la fuite. L\'eau clapote sur la rive. Vous pouvez entendre les dockers aller et venir, tout à leur travail qui touche à sa fin alors que le soleil se couche à votre gauche. Vous faites quelques pas et vous écroulez au sol, trop exténué et blessé pour aller plus loin. « Qui va là ? » s\'exclame un docker. « Quelqu\'un est blessé - vite, il faut aller à Sainte Marie ! » Vous sombrez dans l\'inconscience au moment où un homme tout en muscles vous prend dans ses bras. \n
     \nVous vous réveillez dans un lieu étrange, sans le moindre souvenir de ce qui vous est arrivé. Vos muscles sont engourdis et peu réactifs. Votre vue est troublée. Vous lever vous demande un effort presque surhumain. Vos jambes sont flageolantes et peuvent à peine soutenir votre poids. Une note repose sur le sol non loin. Elle dit : \n
-    \Salutations, Je vous ai amenés ici pour une expérience. Voyez cela comme une mise à l'épreuve de la volonté humaine. Vous survivrez. Ou vous mourrez... 
+    \Salutations, Je vous ai amenés ici pour une expérience. Voyez cela comme une mise à l\'épreuve de la volonté humaine. Vous survivrez. Ou vous mourrez... 
 \n
     \n<b>Les investigateurs ont survécu, mais sur une autre ligne temporelle, le labyrinthe a un nouvel invité.</b></string>
-    <string name="labyrinths_resolution_three">L'instigateur de toute cette histoire tombe à genoux, le masque brisé. Du sang s'échappe de ses plaies béantes et coulent sur le sol en ciment. «Vous pensez réellement pouvoir me tuer ?» souffle-t-il. Sa voix est déformée par la douleur mais néanmoins fière. « Je suis partout et tout le temps. Cet avatar n'est pas le seul. Il y en a d'autres. Et même si l'un d'entre eux est vaincu, je ne mourrai jamais vraiment. » Son corps s'écrase mollement au sol. Voyant une opportunité de vous enfuir, vous vous ruez sur les portes en fer qui vous retiennent dans l'entrepôt. Dans un effort désespéré, vous parvenez à briser le cadenas et à ouvrir les lourdes portes. \n
-    \nLa brise fraîche du soir s'engouffre autour de vous. Vous constatez avec surprise que vous vous trouvez sur les docks du fleuve Miskatonic. Quelques canards cancanent de surprise et prennent la fuite. L'eau clapote sur la rive. Vous pouvez entendre les dockers aller et venir, tout à leur travail qui touche à sa fin alors que le soleil se couche à votre gauche. Vous faites quelques pas et vous écroulez au sol, trop exténué et blessé pour aller plus loin. « Qui va là ? » s'exclame un docker. « Quelqu'un est blessé - vite, il faut aller à Sainte Marie ! » Vous sombrez dans l'inconscience au moment où un homme tout en muscles vous prend dans ses bras.\n
-    \nVous êtes parvenu à fuir l'infernal labyrinthe de votre ravisseur mais ses derniers mots hantent vos pensées. Que voulait-il dire par « d'autres » ? Vous vous remémorez les étranges visions que vous avez eues dans le dédale et de terribles pensées s'insinuent dans votre esprit. Le kidnappeur a mentionné d'autres groupes, mais vous n'avez jamais été capable de les trouver, et vous ne savez pas s'ils ont pu s'en tirer vivants. Vous avez bien prévenu la police qu'il y en avait d'autres, et bien insisté sur le fait qu'il fallait fouiller les docks mais il n'y a aucune trace de l'entrepôt dont vous vous êtes échappé, ni de l'instigateur de votre enlèvement...\n
+    <string name="labyrinths_resolution_three">L\'instigateur de toute cette histoire tombe à genoux, le masque brisé. Du sang s\'échappe de ses plaies béantes et coulent sur le sol en ciment. «Vous pensez réellement pouvoir me tuer ?» souffle-t-il. Sa voix est déformée par la douleur mais néanmoins fière. « Je suis partout et tout le temps. Cet avatar n\'est pas le seul. Il y en a d\'autres. Et même si l\'un d\'entre eux est vaincu, je ne mourrai jamais vraiment. » Son corps s\'écrase mollement au sol. Voyant une opportunité de vous enfuir, vous vous ruez sur les portes en fer qui vous retiennent dans l\'entrepôt. Dans un effort désespéré, vous parvenez à briser le cadenas et à ouvrir les lourdes portes. \n
+    \nLa brise fraîche du soir s\'engouffre autour de vous. Vous constatez avec surprise que vous vous trouvez sur les docks du fleuve Miskatonic. Quelques canards cancanent de surprise et prennent la fuite. L\'eau clapote sur la rive. Vous pouvez entendre les dockers aller et venir, tout à leur travail qui touche à sa fin alors que le soleil se couche à votre gauche. Vous faites quelques pas et vous écroulez au sol, trop exténué et blessé pour aller plus loin. « Qui va là ? » s\'exclame un docker. « Quelqu\'un est blessé - vite, il faut aller à Sainte Marie ! » Vous sombrez dans l\'inconscience au moment où un homme tout en muscles vous prend dans ses bras.\n
+    \nVous êtes parvenu à fuir l\'infernal labyrinthe de votre ravisseur mais ses derniers mots hantent vos pensées. Que voulait-il dire par « d\'autres » ? Vous vous remémorez les étranges visions que vous avez eues dans le dédale et de terribles pensées s\'insinuent dans votre esprit. Le kidnappeur a mentionné d\'autres groupes, mais vous n\'avez jamais été capable de les trouver, et vous ne savez pas s\'ils ont pu s\'en tirer vivants. Vous avez bien prévenu la police qu\'il y en avait d\'autres, et bien insisté sur le fait qu\'il fallait fouiller les docks mais il n\'y a aucune trace de l\'entrepôt dont vous vous êtes échappé, ni de l\'instigateur de votre enlèvement...\n
     \n<b>Les investigateurs ont survécu, mais Eixodolon vit toujours.</b></string>
-    <string name="labyrinths_resolution_four">L'instigateur de toute cette histoire tombe à genoux, le masque brisé. Du sang s'échappe de ses plaies béantes et coulent sur le sol en ciment. Les contours de sa silhouette tremblent et deviennent flous, comme une ride dans la structure de l'espace-temps. «Ainsi, le rituel a échoué !» Sa voix grésillante se mue en un cri d'agonie. « Peut-être que l'humanité a une chance après tout. Cette douleur, cette souffrance ! Un tel pouvoir n'est pas fait pour les humains. Il est pour ceux d'au-delà ! » Il halète et souffle en s'écroulant au sol. « Ne suivez pas la voie que j'ai choisie, » implore-t-il, « elle ne mène qu'au... désespoir. » Sa respiration s'éteint. \n
-    \nVous avez vaincu votre geôlier mais nombre de questions demeurent. Vous décidez d'explorer plus avant le labyrinthe et trouvez un moyen de forcer les portes de fer qui mènent à d'autres sections de ce complexe. À votre grande surprise, vous ne trouvez aucun signe d'autres victimes piégées dans le labyrinthe - juste des signes de leurs luttes, et de leur survie. \n
-    \nIl suffit d'un solide coup pour briser le cadenas verrouillant les portes de fer de l'entrepôt. Le son du métal cognant sur le métal paraît décupé. Vous ne pensez pas que votre kidnappeur ait une seconde envisagé que vous lui échappiez, mais vous avez néanmoins réussi à fuir. Vous vous demandez si les autres sont eux aussi en train d'ouvrir ces lourdes portes. \n
-    \nLa brise fraîche du soir s'engouffre autour de vous. Vous constatez avec surprise que vous vous trouvez sur les docks du fleuve Miskatonic. Quelques canards cancanent de surprise et prennent la fuite. L'eau clapote sur la rive. Vous pouvez entendre les dockers aller et venir, tout à leur travail qui touche à sa fin alors que le soleil se couche à votre gauche. Vous contemplez le soleilk qui se couche à l'horizon, et les autres contemplent à leur tour. 
+    <string name="labyrinths_resolution_four">L\'instigateur de toute cette histoire tombe à genoux, le masque brisé. Du sang s\'échappe de ses plaies béantes et coulent sur le sol en ciment. Les contours de sa silhouette tremblent et deviennent flous, comme une ride dans la structure de l\'espace-temps. «Ainsi, le rituel a échoué !» Sa voix grésillante se mue en un cri d\'agonie. « Peut-être que l\'humanité a une chance après tout. Cette douleur, cette souffrance ! Un tel pouvoir n\'est pas fait pour les humains. Il est pour ceux d\'au-delà ! » Il halète et souffle en s\'écroulant au sol. « Ne suivez pas la voie que j\'ai choisie, » implore-t-il, « elle ne mène qu\'au... désespoir. » Sa respiration s\'éteint. \n
+    \nVous avez vaincu votre geôlier mais nombre de questions demeurent. Vous décidez d\'explorer plus avant le labyrinthe et trouvez un moyen de forcer les portes de fer qui mènent à d\'autres sections de ce complexe. À votre grande surprise, vous ne trouvez aucun signe d\'autres victimes piégées dans le labyrinthe - juste des signes de leurs luttes, et de leur survie. \n
+    \nIl suffit d\'un solide coup pour briser le cadenas verrouillant les portes de fer de l\'entrepôt. Le son du métal cognant sur le métal paraît décupé. Vous ne pensez pas que votre kidnappeur ait une seconde envisagé que vous lui échappiez, mais vous avez néanmoins réussi à fuir. Vous vous demandez si les autres sont eux aussi en train d\'ouvrir ces lourdes portes. \n
+    \nLa brise fraîche du soir s\'engouffre autour de vous. Vous constatez avec surprise que vous vous trouvez sur les docks du fleuve Miskatonic. Quelques canards cancanent de surprise et prennent la fuite. L\'eau clapote sur la rive. Vous pouvez entendre les dockers aller et venir, tout à leur travail qui touche à sa fin alors que le soleil se couche à votre gauche. Vous contemplez le soleilk qui se couche à l\'horizon, et les autres contemplent à leur tour. 
 \n
     \n<b>Les investigateurs ont gagné ! </b></string>
 </resources>
