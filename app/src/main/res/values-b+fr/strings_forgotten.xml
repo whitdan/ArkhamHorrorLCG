@@ -17,7 +17,7 @@
     <string name="forgotten_interlude_five">Interlude 5: Les Ténèbres</string>
 	<string name="forgotten_resupply">Rééquipement</string>
     <string name="forgotten_epilogue">Épilogue</string>
-    <string name="forgotten_epilogue">Scénario Secret 9 : Remonter le Temps</string>
+    <string name="forgotten_secret_scenario">Scénario Secret 9 : Remonter le Temps</string>
 	
 	 <!--Miscellaneous-->
     <string name="vengeance_counter">Vengeance : </string>
